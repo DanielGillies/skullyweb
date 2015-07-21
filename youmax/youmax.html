@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width">
+    <title>Youmax 7.0 - Complete Youtube Channel on your Website - Jquery plugin</title>
+	
+	<!--jquery-->
+	<script src="./jquery/jquery-1.9.1.min.js"></script>
+	
+	
+	<!--youmax-->
+	<script src="./js/jquery.youmax.min.js"></script>
+	
+
+
+	
+	<style>
+
+      body {
+        font-family: Calibri;
+        font-size: 14px;
+		text-align:center;
+      }
+	  
+
+	  
+		
+	</style>
+
+	</head>
+  <body>
+		<a href="http://www.codehandling.com/2015/02/youmax-50-complete-solution-for.html">
+		<h1>Youmax 7.0 - Complete Youtube Channel on your Website - Jquery plugin</h1>
+		</a>
+<br><br>		
+<div id="youmax" class="youmax"></div>
+
+<br/><br/>
+
+<a href="http://www.codehandling.com/2015/02/youmax-50-complete-solution-for.html">See how to use this plugin - at codehandling</a>
+
+<br/><br/><br/>
+<br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
+
+
+	<script>
+		
+
+	
+	$("#youmax").youmax({
+		apiKey:"AIzaSyDEm5wGLsWi2G3WG40re-DAJcWioQSpJ6o",
+		clientId:"237485577723-lndqepqthdb3lh4gec2skvpfaii9sgh0.apps.googleusercontent.com",
+		channel:"https://www.youtube.com/user/DisneyPixar",
+		//channel:"https://www.youtube.com/user/AdeleVEVO",
+		
+		
+		playList:[
+			"https://www.youtube.com/playlist?list=PL4197273E86798AF8",
+			"https://www.youtube.com/playlist?list=PL3220E77AFDEC955C",
+			"https://www.youtube.com/playlist?list=PL80DA915CF1EABE6B"
+		],
+		searchTab:[{
+			"name":"Search - Inside Out",
+			"restrictToChannels":"https://www.youtube.com/channel/UC_IRYSp4auq7hKLvziWVH6w",
+			"searchQuery":"inside out",
+			"searchOrder":"date"
+		}],
+		selectedTab:"u",
+		displayVideo:"popup",
+		alwaysUseDropdown:true,
+		skin:"block",
+		maxResults:15,
+		innerOffset:25,
+		outerOffset:35,
+		minItemWidth:250,
+		maxItemWidth:400,
+		maxContainerWidth:1080,
+		autoPlayVideo:false,
+		displayFirstVideoOnLoad:false,
+		linkNewPages:true,
+		searchBoxScope:"channel",
+		videoProtocol:"https:",
+		autoLoadComments: true,
+		alignPopupToTop: true,
+		commentOrder:"relevance", //time|relevance
+		featuredVideo:'https://www.youtube.com/watch?v=nWivGrCKo4Y',
+		playlistSearchFile:'./json/searchlist.json',
+		userWebsite:"http://www.codehandling.com",
+		videoMode:"wide",
+		shareLink:"youtube",
+		facebookAppId:"",
+		widgetMode:false,
+		
+		viewCountType:"comma",
+		likeCommentCountType:"abbr",
+		showEvents:true,
+	});
+		
+
+
+	</script>
+
+  </body>
+</html>
+
+
+
