@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta name="viewport" content="width=device-width">
+    <title>Youmax 7.0 - Complete Youtube Channel on your Website - Jquery plugin</title>
+	
+	<!--jquery-->
+	<script src="./jquery/jquery-1.9.1.min.js"></script>
+	
+	<!--youmax-->
+	
+	<script src="./js/source_unpacked/jquery.imagesloaded.js"></script>
+	<script src="./js/source_unpacked/jquery.wookmark.js"></script>
+	<script src="./js/source_unpacked/magnific_popup_iframe_gallery.js"></script>
+	<script src="./js/source_unpacked/jquery.youmax.js"></script>
+	<script src="./js/source_unpacked/share.js"></script>
+	
+	
+	
+	<link rel="stylesheet" href="./css/src/youmax_block.css"/>
+	
+
+
+	
+	<style>
+
+      body {
+        font-family: Calibri;
+        font-size: 14px;
+		text-align:center;
+      }
+	  
+
+	  /*.youmax-load-more-div-click {background-color: #F95A5A !important;} */
+	  
+	  
+
+	  
+	  
+		
+	</style>
+
+	</head>
+  <body>
+		<a href="http://www.codehandling.com/2015/02/youmax-50-complete-solution-for.html">
+		<h1>Youmax 7.0 - Complete Youtube Channel on your Website - Jquery plugin</h1>
+		</a>
+		
+		
+<br><br>		
+<div id="youmax" class="youmax"></div>
+
+<br/><br/>
+
+<a href="http://www.codehandling.com/2015/02/youmax-50-complete-solution-for.html">See how to use this plugin - at codehandling</a>
+
+<br/><br/><br/>
+<br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
+
+
+
+
+	<script>
+	
+	
+	
+	$("#youmax").youmax({
+		apiKey:"AIzaSyDEm5wGLsWi2G3WG40re-DAJcWioQSpJ6o",
+		clientId:"237485577723-lndqepqthdb3lh4gec2skvpfaii9sgh0.apps.googleusercontent.com",
+		//channel:"https://www.youtube.com/user/DisneyPixar",
+		//channel:"https://www.youtube.com/channel/UCbtluQ_5OvCSvS1D24AlF_A",
+		channel:"https://www.youtube.com/channel/UCKy1dAqELo0zrOtPkf0eTMw",
+		
+		
+		playList:[
+			"https://www.youtube.com/playlist?list=PL4197273E86798AF8",
+			"https://www.youtube.com/playlist?list=PL3220E77AFDEC955C",
+			"https://www.youtube.com/playlist?list=PL80DA915CF1EABE6B"
+		],
+		searchTab:[/*{
+			"name":"Search - Inside Out",
+			"restrictToChannels":"https://www.youtube.com/channel/UC_IRYSp4auq7hKLvziWVH6w",
+			"searchQuery":"inside out",
+			"searchOrder":"date"
+		},*/{
+			name:'live Events', //Name of the tab
+			restrictToChannels:'https://www.youtube.com/channel/UC5fxY7ausirEI6mg3_qEpbA', //Restrict search to these channels
+			searchOrder:'date', //Order descending by date|rating|relevance|title|viewCount
+			eventType:'live' //upcoming|live|completed
+		},{
+			name:'upcoming Events', //Name of the tab
+			restrictToChannels:'https://www.youtube.com/channel/UCvgfXK4nTYKudb0rFR6noLA', //Restrict search to these channels
+			searchOrder:'date', //Order descending by date|rating|relevance|title|viewCount
+			eventType:'upcoming' //upcoming|live|completed
+		},{
+			name:'completed Events', //Name of the tab
+			restrictToChannels:'https://www.youtube.com/channel/UCvgfXK4nTYKudb0rFR6noLA', //Restrict search to these channels
+			searchOrder:'date', //Order descending by date|rating|relevance|title|viewCount
+			eventType:'completed' //upcoming|live|completed
+		}],
+		selectedTab:"u",
+		displayVideo:"newpage",
+		alwaysUseDropdown:false,
+		skin:"block",
+		maxResults:33,
+		innerOffset:25,
+		outerOffset:35,
+		minItemWidth:200,
+		maxItemWidth:300,
+		maxContainerWidth:1080,
+		autoPlayVideo:false,
+		displayFirstVideoOnLoad:false,
+		linkNewPages:true,
+		searchBoxScope:"channel",
+		videoProtocol:"https:",
+		autoLoadComments: false,
+		alignPopupToTop: true,
+		commentOrder:"relevance", //time|relevance
+		featuredVideo:'https://www.youtube.com/watch?v=nWivGrCKo4Y',
+		playlistSearchFile:'./json/searchlist.json',
+		userWebsite:"http://www.codehandling.com",
+		videoMode:"wide",
+		shareLink:"youtube",
+		facebookAppId:"",
+		widgetMode:false,
+		
+		showTitleInVideoPlayer:true,
+		playlistAction:"showvideos",
+		
+		viewCountType:"abbr",
+		likeCommentCountType:"abbr",
+		showEvents:true,
+		loadMode:"loadmore", //paginate-sides
+		hideHeader:false,
+		hideNavigation:false,
+		loadButtonSize:"large",
+		videoPlayerTheme:"light",
+		//minVideoContainerHeight:300,
+		
+		translatorFile:"./json/translation.json"
+		
+		//minItemWidth:250,
+		//maxItemWidth:280,
+
+	});
+
+	
+	
+
+
+
+
+
+
+	</script>
+	
+
+  </body>
+</html>
+
+
+
