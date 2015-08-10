@@ -686,7 +686,7 @@ function resizeVid() {
             } else {
                 vid.css('width', 'auto');
                 vid.css('height', (section.outerHeight() * ratio));
-                vid.css('margin-left', -((section.width() * ratio) / 4));
+                vid.css('margin-left', '0');
             }
     });
 
