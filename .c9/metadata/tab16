@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"changed":false,"filter":false,"title":"skully/img/img-1.jpg - Idle","tooltip":"skully/img/img-1.jpg - Idle","value":"","undoManager":{"mark":-1,"position":-1,"stack":[]},"output":{"id":"output701171","width":1012,"height":288,"scrollTop":-1,"config":{"runner":"Shell command","command":"skully/img/img-1.jpg","debug":true}},"timestamp":1438022922881}
-=======
-{"filter":false,"title":"skully/img/img-1.jpg - Stopped","tooltip":"skully/img/img-1.jpg - Stopped","undoManager":{"mark":-1,"position":-1,"stack":[]},"output":{"id":"output701171","width":742,"height":288,"scrollTop":4,"config":{"runner":"Shell command","command":"skully/img/img-1.jpg","debug":true}},"timestamp":1438022922881,"hash":"67452301efcdab8998badcfe10325476c3d2e1f0"}
->>>>>>> 033955763343bd009fe9a6ece6ea9dcabe7eb1f8
+{"filter":false,"title":"skully/img/img-1.jpg - Idle","tooltip":"skully/img/img-1.jpg - Idle","undoManager":{"mark":-1,"position":-1,"stack":[]},"output":{"id":"output701171","width":1004,"height":288,"scrollTop":534,"config":{"runner":"Shell command","command":"skully/img/img-1.jpg","debug":true}},"timestamp":1438022922881,"hash":"67452301efcdab8998badcfe10325476c3d2e1f0"}
