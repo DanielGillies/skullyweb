@@ -4968,6 +4968,10 @@ video.fillWidth {
 	height: 100%;
 }
 
+video {
+  position: absolute;
+}
+
 /*!---------- 28. BLOG ----------*/
 
 .post-title .label {
