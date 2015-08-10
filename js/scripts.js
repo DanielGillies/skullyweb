@@ -689,6 +689,10 @@ function resizeVid() {
                 vid.css('height', (section.outerHeight() * ratio));
                 vid.css('margin-left', 0);
             }
+        } else {
+            vid.css('width', '100%');
+            vid.css('height', '100%');
+            vid.css('margin-left', '0');
         }
     });
 
