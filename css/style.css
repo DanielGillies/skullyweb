@@ -4944,7 +4944,6 @@ video {
   top: 0;
   left: 0;
   z-index: 2;
-  overflow: hidden;
 }
 
 .fs-vid-background video {
@@ -4955,7 +4954,7 @@ video {
   position: absolute;
   content: '';
   width: 100%;
-  height: 925px;
+  height: 100%;
   top: 0;
   left: 0;
   background: #222222;
@@ -4963,14 +4962,23 @@ video {
   z-index: 2;
 }
 
+#video-container {
+	position: absolute;
+}
+#video-container {
+	top:0%;
+	left:0%;
+	height:100%;
+	width:100%;
+	overflow: hidden;
+}
+video {
+	position:absolute;
+}
 video.fillWidth {
 	width: 100%;
-	height: 100%;
 }
 
-video {
-  position: absolute;
-}
 
 /*!---------- 28. BLOG ----------*/
 
