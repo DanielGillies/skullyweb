@@ -4954,7 +4954,7 @@ video {
 .overlay .fs-vid-background:before {
   position: absolute;
   content: '';
-  width: 100%;
+  width: 925px;
   height: 100%;
   top: 0;
   left: 0;
