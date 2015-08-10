@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"filter":false,"title":"Apache & PHP - Idle","tooltip":"Apache & PHP - Idle","undoManager":{"mark":-1,"position":-1,"stack":[]},"output":{"id":"output468130","width":500,"height":288,"scrollTop":10980,"config":{"command":"","debug":true,"default":true,"name":"Apache & PHP","runner":"Apache httpd (PHP, HTML)"}},"hash":"67452301efcdab8998badcfe10325476c3d2e1f0"}
-=======
-{"changed":false,"filter":false,"title":"Apache & PHP - Stopped","tooltip":"Apache & PHP - Stopped","value":"","undoManager":{"mark":-1,"position":-1,"stack":[]},"output":{"id":"output468130","width":748,"height":288,"scrollTop":5610,"config":{"command":"","debug":true,"default":true,"name":"Apache & PHP","runner":"Apache httpd (PHP, HTML)"}},"timestamp":1438027582593}
->>>>>>> 033955763343bd009fe9a6ece6ea9dcabe7eb1f8
+{"filter":false,"title":"Terminal","undoManager":{"mark":-1,"position":-1,"stack":[]},"terminal":{"id":"code128@skullyweb2_457","cwd":"","width":642,"height":884,"scrollTop":4042},"timestamp":1439235639452,"hash":"67452301efcdab8998badcfe10325476c3d2e1f0"}
