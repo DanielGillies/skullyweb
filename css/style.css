@@ -4963,6 +4963,10 @@ video {
   z-index: 2;
 }
 
+video.fillWidth {
+	width: 100%;
+}
+
 /*!---------- 28. BLOG ----------*/
 
 .post-title .label {
