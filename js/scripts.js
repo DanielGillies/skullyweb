@@ -679,7 +679,8 @@ function resizeVid() {
         var vid = $(this);
             var ratio = (vid.width() / vid.height());
             var section = vid.closest('section');
-            if (section.width() > section.outerHeight()) {
+            if (section.width() > 1150) {
+            // if (section.width() > section.outerHeight()) {
                 // vid.css('width', (section.width() * ratio));
                 // vid.css('margin-left', -((section.width() * ratio) / 4));
                 // vid.css('height', 'auto');
