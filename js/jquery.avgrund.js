@@ -5,7 +5,6 @@
  *  (c) 2012-2013 http://pixelhunter.me/
  *  MIT licensed
  */
-console.log("GOT IT");
 (function (factory) {
 	if (typeof define === 'function' && define.amd) {
 		// AMD
@@ -18,6 +17,7 @@ console.log("GOT IT");
 		factory(jQuery);
 	}
 }(function ($) {
+	console.log("GOT IT");
 	$.fn.avgrund = function (options) {
 		var defaults = {
 			width: 380, // max = 640
