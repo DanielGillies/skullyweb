@@ -222,6 +222,7 @@
 .juicer-feed.colors li.feed-item.juicer,
 .juicer-feed.colored-icons li.feed-item.juicer,
 .juicer-feed.gray li.feed-item.juicer {
+    display: none;
     background: #F17E6F;
     color: white;
 }
@@ -1112,6 +1113,5 @@
     left: -2px;
 }
 
-.juicer-feed .juicer { display: none }
 .juicer-feed .juicer { background: #F17E6F }
 .juicer-feed .juicer:before { content: url(//assets.juicer.io/small-square-489514de1774a4df0456fe88160cb1fa.png) }
