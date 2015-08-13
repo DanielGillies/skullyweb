@@ -5,7 +5,7 @@
  *  (c) 2012-2013 http://pixelhunter.me/
  *  MIT licensed
  */
-
+console.log("GOT IT");
 (function (factory) {
 	if (typeof define === 'function' && define.amd) {
 		// AMD
