@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-{"filter":false,"title":"Apache & PHP - Idle","tooltip":"Apache & PHP - Idle","undoManager":{"mark":-1,"position":-1,"stack":[]},"output":{"id":"output719320","width":1251,"height":288,"scrollTop":-1,"config":{"command":"","debug":true,"default":true,"name":"Apache & PHP","runner":"Apache httpd (PHP, HTML)"}},"timestamp":1437515115916,"hash":"67452301efcdab8998badcfe10325476c3d2e1f0"}
-=======
-{"filter":false,"title":"Apache & PHP - Stopped","tooltip":"Apache & PHP - Stopped","undoManager":{"mark":-1,"position":-1,"stack":[]},"output":{"id":"output719320","width":1116,"height":288,"scrollTop":-1,"config":{"command":"","debug":true,"default":true,"name":"Apache & PHP","runner":"Apache httpd (PHP, HTML)"}},"timestamp":1437515115916,"hash":"67452301efcdab8998badcfe10325476c3d2e1f0"}
->>>>>>> 033955763343bd009fe9a6ece6ea9dcabe7eb1f8
