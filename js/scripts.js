@@ -216,11 +216,11 @@ $(document).ready(function() {
 
             filterTags.forEach(function(tagName) {
                 if (filters.indexOf(tagName) == -1) {
-                    filters += '<li data-filter="' + tagName + '">' + capitaliseFirstLetter(tagName) + '</li>';
+                    filters += '<li data-filter="' + tagName + '" class="active">' + capitaliseFirstLetter(tagName) + '</li>';
                 }
             });
             $(this).closest('.projects')
-                .find('ul.filters').empty().append('<li data-filter="all" class="active">Behind the scenes at skully</li>').append(filters);
+                .find('ul.filters').empty().append(filters);
         });
     });
 
@@ -648,10 +648,6 @@ $(window).load(function() {
         msnry.layout();
     }
 
-    // Resize fullscreen video backgrounds to cover parent
-
-    resizeVid();
-
     // Initialize twitter feed
 
     var setUpTweets = setInterval(function() {
@@ -672,6 +668,13 @@ $(window).load(function() {
 
 
 }); 
+
+$('document').ready(function () {
+	    // Resize fullscreen video backgrounds to cover parent
+
+    resizeVid();
+})
+
 
 function resizeVid() {
 
