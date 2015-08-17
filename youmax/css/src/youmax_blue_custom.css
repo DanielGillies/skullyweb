@@ -971,7 +971,7 @@ color:white;
 font-size:16px;
 }
 
-/*#youmax-search-holder {
+#youmax-search-holder {
   padding: 0px 12px;
   height: 26px;
   display: inline-block;
@@ -992,7 +992,7 @@ font-size:16px;
   outline: none;
   font: 14px Calibri;
   padding-left: 0px;
-}*/
+}
 
 .youmax-search-icon {
   font-size: 14px !important;
@@ -1660,7 +1660,7 @@ margin-right:6px;
 #youmax-search-holder-header {
   padding: 0px 12px;
   height: 26px;
-  display: inline-block;
+  display: none;
   background-color: rgba(255,255,255,0.85);
   margin-top: 75px;
   margin-right: 30px;
@@ -1678,6 +1678,7 @@ margin-right:6px;
   outline: none;
   font: 14px Calibri;
   padding-left: 0px;
+  display: none;
 }
 
 .youmax-search-icon-header {
