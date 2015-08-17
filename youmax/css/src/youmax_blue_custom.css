@@ -971,7 +971,7 @@ color:white;
 font-size:16px;
 }
 
-#youmax-search-holder {
+/*#youmax-search-holder {
   padding: 0px 12px;
   height: 26px;
   display: inline-block;
@@ -992,7 +992,7 @@ font-size:16px;
   outline: none;
   font: 14px Calibri;
   padding-left: 0px;
-}
+}*/
 
 .youmax-search-icon {
   font-size: 14px !important;
