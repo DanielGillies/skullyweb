@@ -373,6 +373,7 @@
             <source src="video/scatman.mp3" type="audio/mpeg">
         </audio>
         <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.fitvids.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/flexslider.min.js"></script>
         <script src="js/lightbox.min.js"></script>
@@ -388,6 +389,11 @@
         <script src="js/velocity.min.js"></script>
         <script src="js/jquery.avgrund.js"></script>
         <script type="text/javascript">
+
+        $(document).ready(function() {
+            $("fs-vid-background").fitVids();
+        });
+
         /* Avgrund jQuery plugin
          * Get plugin, see demo and read documentation here -
          * http://labs.voronianski.com/jquery.avgrund.js/
