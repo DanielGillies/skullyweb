@@ -678,7 +678,7 @@ $('document').ready(function () {
 
 function resizeVid() {
 
-    $('.fs-vid-background iframe').each(function() {
+    $('.fs-vid-background video').each(function() {
         var vid = $(this);
             var ratio = (vid.width() / vid.height());
             var section = vid.closest('section');
