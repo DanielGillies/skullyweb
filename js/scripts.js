@@ -680,6 +680,7 @@ function resizeVid() {
 
     $('.fs-vid-background iframe').each(function() {
         var vid = $(this);
+        vid.css('height', '');
             var ratio = (vid.width() / vid.height());
             var section = vid.closest('section');
             if (section.width() > section.outerHeight()) {
