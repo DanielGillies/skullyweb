@@ -4682,6 +4682,7 @@ td {
 
 iframe {
   border: none;
+  max-width: 100%;
 }
 
 .player {
@@ -4969,6 +4970,10 @@ video {
 
 .fs-vid-background video {
   max-width: 900000px;
+}
+
+.fs-vid-background iframe {
+    max-width: 900000px;
 }
 
 .overlay .fs-vid-background:before {

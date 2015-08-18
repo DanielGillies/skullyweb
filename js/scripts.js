@@ -678,18 +678,20 @@ $('document').ready(function () {
 
 function resizeVid() {
 
-    $('.fs-vid-background iframe').each(function() {
+    $('.fs-vid-background video').each(function() {
         var vid = $(this);
             var ratio = (vid.width() / vid.height());
             var section = vid.closest('section');
+            console.log(section);
             if (section.width() > section.outerHeight()) {
-                vid.style('width', (section.width() * ratio), 'important');
-                vid.style('margin-left', -((section.width() * ratio) / 4), 'important');
-                vid.style('height', 'auto', 'important');
+                console.log('width should be: ' + (section.width() * ratio))
+                vid.css('width', (section.width() * ratio));
+                vid.css('margin-left', -((section.width() * ratio) / 4));
+                vid.css('height', 'auto');
             } else {
-                vid.style('width', 'auto', 'important');
-                vid.style('height', (section.outerHeight() * ratio), 'important');
-                vid.style('margin-left', '0', 'important');
+                vid.css('width', 'auto');
+                vid.css('height', (section.outerHeight() * ratio));
+                vid.css('margin-left', '0');
             }
     });
 
