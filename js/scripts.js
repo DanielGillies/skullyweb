@@ -683,13 +683,13 @@ function resizeVid() {
             var ratio = (vid.width() / vid.height());
             var section = vid.closest('section');
             if (section.width() > section.outerHeight()) {
-                vid.css('width', (section.width() * ratio) + '!important');
-                vid.css('margin-left', -((section.width() * ratio) / 4) + '!important');
-                vid.css('height', 'auto !important');
+                vid.css('width', (section.width() * ratio));
+                vid.css('margin-left', -((section.width() * ratio) / 4));
+                vid.css('height', 'auto');
             } else {
-                vid.css('width', 'auto !important');
-                vid.css('height', (section.outerHeight() * ratio) + '!important');
-                vid.css('margin-left', '0 !important');
+                vid.css('width', 'auto');
+                vid.css('height', (section.outerHeight() * ratio));
+                vid.css('margin-left', '0');
             }
     });
 
