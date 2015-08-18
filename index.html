@@ -390,9 +390,9 @@
         <script src="js/jquery.avgrund.js"></script>
         <script type="text/javascript">
 
-        $(document).ready(function() {
-            $(".fs-vid-background").fitVids();
-        });
+        $(".fs-vid-background").fitVids({ customSelector: "iframe[src^='http://wistia.com']"});
+
+        $(".fs-vid-background").fitVids();
 
         /* Avgrund jQuery plugin
          * Get plugin, see demo and read documentation here -
