@@ -1,0 +1,703 @@
+<svg class="nc-icon" style="display: none;"><symbol id="nc-icon-dna" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="13.6" y1="14" x2="34.4" y2="14" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="12" y1="6" x2="36" y2="6" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="13.6" y1="34" x2="34.4" y2="34" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="12" y1="42" x2="36" y2="42" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M36,46v-6c0-14-24-18-24-32
+	V2" stroke-linejoin="miter"/>
+<path fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M12,46v-6c0-14,24-18,24-32
+	V2" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-dna-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="13.6" y1="14" x2="34.4" y2="14" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="12" y1="6" x2="36" y2="6" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="13.6" y1="34" x2="34.4" y2="34" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="12" y1="42" x2="36" y2="42" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M36,46v-6c0-14-24-18-24-32
+	V2" stroke-linejoin="miter"/>
+<path fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M12,46v-6c0-14,24-18,24-32
+	V2" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-dna-2" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polyline data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	28.8,20 32,24 16,44 10,44 " stroke-linejoin="miter"/>
+<polyline data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	10,4 16,4 19.2,8 " stroke-linejoin="miter"/>
+<polyline fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="28.8,40 32,44 
+	38,44 " stroke-linejoin="miter"/>
+<polyline fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="38,4 32,4 16,24 
+	19.2,28 " stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="32" y1="24" x2="38" y2="24" stroke-linejoin="miter"/>
+<line fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="10" y1="24" x2="16" y2="24" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-dna-2-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polyline data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	28.8,20 32,24 16,44 10,44 " stroke-linejoin="miter"/>
+<polyline data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	10,4 16,4 19.2,8 " stroke-linejoin="miter"/>
+<polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="28.8,40 32,44 
+	38,44 " stroke-linejoin="miter"/>
+<polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="38,4 32,4 16,24 
+	19.2,28 " stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="32" y1="24" x2="38" y2="24" stroke-linejoin="miter"/>
+<line fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="10" y1="24" x2="16" y2="24" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-atom" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<circle data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="2" stroke-linejoin="miter"/>
+<ellipse fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" cx="24" cy="24" rx="8" ry="22" stroke-linejoin="miter" stroke-linecap="square"/>
+<ellipse transform="matrix(0.5 -0.866 0.866 0.5 -8.7846 32.7846)" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" cx="24" cy="24" rx="8" ry="22" stroke-linejoin="miter" stroke-linecap="square"/>
+<ellipse transform="matrix(0.5 0.866 -0.866 0.5 32.7846 -8.7846)" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" cx="24" cy="24" rx="8" ry="22" stroke-linejoin="miter" stroke-linecap="square"/>
+</g></symbol><symbol id="nc-icon-atom-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<circle data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="2" stroke-linejoin="miter"/>
+<ellipse fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" cx="24" cy="24" rx="8" ry="22" stroke-linejoin="miter" stroke-linecap="square"/>
+<ellipse transform="matrix(0.5 -0.866 0.866 0.5 -8.7846 32.7846)" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" cx="24" cy="24" rx="8" ry="22" stroke-linejoin="miter" stroke-linecap="square"/>
+<ellipse transform="matrix(0.5 0.866 -0.866 0.5 32.7846 -8.7846)" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" cx="24" cy="24" rx="8" ry="22" stroke-linejoin="miter" stroke-linecap="square"/>
+</g></symbol><symbol id="nc-icon-atom-4" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="11.6" y1="12.8" x2="16.4" y2="19.2" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="11.6" y1="35.2" x2="16.4" y2="28.8" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="26" y1="24" x2="34" y2="24" stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="8" cy="8" r="6" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="8" cy="40" r="6" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="40" cy="24" r="6" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="20" cy="24" r="6" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-atom-4-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="11.6" y1="12.8" x2="16.4" y2="19.2" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="11.6" y1="35.2" x2="16.4" y2="28.8" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="26" y1="24" x2="34" y2="24" stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="8" cy="8" r="6" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="8" cy="40" r="6" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="40" cy="24" r="6" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="20" cy="24" r="6" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-hat" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polyline data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" points="24.1,34.8 2,40 2,24 
+	" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M24.4,2
+	C12.1,1.8,2,11.7,2,24h16c2.2,0,4,1.8,4,4v0c0,6.6,5.4,12,12,12h0c6.6,0,12-5.4,12-12l0-3.3C46,12.6,36.5,2.2,24.4,2z" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="34" cy="32" r="2" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="34" y1="34" x2="34" y2="46" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-hat-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polyline data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" points="24.1,34.8 2,40 2,24 
+	" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M24.4,2
+	C12.1,1.8,2,11.7,2,24h16c2.2,0,4,1.8,4,4v0c0,6.6,5.4,12,12,12h0c6.6,0,12-5.4,12-12l0-3.3C46,12.6,36.5,2.2,24.4,2z" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="34" cy="32" r="2" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="34" y1="34" x2="34" y2="46" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-connect" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M22,46H10c-2.2,0-4-1.8-4-4
+	V22c0-2.2,1.8-4,4-4h12c2.2,0,4,1.8,4,4v20C26,44.2,24.2,46,22,46z" stroke-linejoin="miter"/>
+<path data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M34,20
+	c0-5.5-4.5-10-10-10" stroke-linejoin="miter"/>
+<path data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M42,20
+	c0-9.9-8.1-18-18-18" stroke-linejoin="miter"/>
+<rect x="12" y="24" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="8" height="14" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-connect-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M22,46H10c-2.2,0-4-1.8-4-4
+	V22c0-2.2,1.8-4,4-4h12c2.2,0,4,1.8,4,4v20C26,44.2,24.2,46,22,46z" stroke-linejoin="miter"/>
+<path data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M34,20
+	c0-5.5-4.5-10-10-10" stroke-linejoin="miter"/>
+<path data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M42,20
+	c0-9.9-8.1-18-18-18" stroke-linejoin="miter"/>
+<rect x="12" y="24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="8" height="14" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-cam" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<circle data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="16" r="8" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="16" r="2" stroke-linejoin="miter"/>
+<line fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="10" y1="46" x2="38" y2="46" stroke-linejoin="miter"/>
+<path fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M34,46c0-12,4-22,4-30
+	S31.7,2,24,2S10,8,10,16c0,8,4,18,4,30" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-cam-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<circle data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="16" r="8" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="16" r="2" stroke-linejoin="miter"/>
+<line fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="10" y1="46" x2="38" y2="46" stroke-linejoin="miter"/>
+<path fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M34,46c0-12,4-22,4-30
+	S31.7,2,24,2S10,8,10,16c0,8,4,18,4,30" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-gps" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="24" y1="40" x2="24" y2="36" stroke-linejoin="miter"/>
+<path data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" d="M33.2,8H40c3.3,0,6,2.7,6,6v26
+	c0,3.3-2.7,6-6,6H8c-3.3,0-6-2.7-6-6V14c0-3.3,2.7-6,6-6h6.8" stroke-linejoin="miter" stroke-linecap="butt"/>
+<polyline data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" points="33.7,14 40,14 40,40 8,40 
+	8,14 14.3,14 " stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="8" y1="40" x2="20.1" y2="23.8" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="40" y1="40" x2="27.9" y2="23.8" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M34,12
+	c0,6.2-10,16.2-10,16.2S14,18.2,14,12c0-6.3,5.2-10,10-10S34,5.7,34,12z" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="12" r="2" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-gps-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="24" y1="40" x2="24" y2="36" stroke-linejoin="miter"/>
+<path data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M33.2,8H40c3.3,0,6,2.7,6,6v26
+	c0,3.3-2.7,6-6,6H8c-3.3,0-6-2.7-6-6V14c0-3.3,2.7-6,6-6h6.8" stroke-linejoin="miter" stroke-linecap="butt"/>
+<polyline data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" points="33.7,14 40,14 40,40 8,40 
+	8,14 14.3,14 " stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="8" y1="40" x2="20.1" y2="23.8" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="40" y1="40" x2="27.9" y2="23.8" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M34,12
+	c0,6.2-10,16.2-10,16.2S14,18.2,14,12c0-6.3,5.2-10,10-10S34,5.7,34,12z" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="12" r="2" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-accessory" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polyline data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	40,26 40,46 8,46 8,26 " stroke-linejoin="miter"/>
+<rect x="2" y="8" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="12" height="18" stroke-linejoin="miter"/>
+<rect x="34" y="8" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="12" height="18" stroke-linejoin="miter"/>
+<polyline fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="4,8 4,2 12,2 
+	12,8 " stroke-linejoin="miter"/>
+<polyline fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="36,8 36,2 44,2 
+	44,8 " stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-accessory-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polyline data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	40,26 40,46 8,46 8,26 " stroke-linejoin="miter"/>
+<rect x="2" y="8" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="12" height="18" stroke-linejoin="miter"/>
+<rect x="34" y="8" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="12" height="18" stroke-linejoin="miter"/>
+<polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="4,8 4,2 12,2 
+	12,8 " stroke-linejoin="miter"/>
+<polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="36,8 36,2 44,2 
+	44,8 " stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-accessory-10" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polyline data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	40,26 40,46 12,46 12,28 " stroke-linejoin="miter"/>
+<path fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M12,28L12,28
+	C6.5,28,2,23.5,2,18V8h20v10C22,23.5,17.5,28,12,28z" stroke-linejoin="miter"/>
+<rect x="34" y="8" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="12" height="18" stroke-linejoin="miter"/>
+<polyline fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="36,8 36,2 44,2 
+	44,8 " stroke-linejoin="miter"/>
+<line fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="6" y1="8" x2="6" y2="2" stroke-linejoin="miter"/>
+<line fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="18" y1="8" x2="18" y2="2" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-accessory-10-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polyline data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	40,26 40,46 12,46 12,28 " stroke-linejoin="miter"/>
+<path fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M12,28L12,28
+	C6.5,28,2,23.5,2,18V8h20v10C22,23.5,17.5,28,12,28z" stroke-linejoin="miter"/>
+<rect x="34" y="8" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="12" height="18" stroke-linejoin="miter"/>
+<polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="36,8 36,2 44,2 
+	44,8 " stroke-linejoin="miter"/>
+<line fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="6" y1="8" x2="6" y2="2" stroke-linejoin="miter"/>
+<line fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="18" y1="8" x2="18" y2="2" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-polygon" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="7.1" y1="34" x2="12.9" y2="13.9" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="37.9" y1="38" x2="9.9" y2="38" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="35.4" y1="14" x2="42.5" y2="33.9" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="18" y1="10" x2="29.9" y2="10" stroke-linejoin="miter" stroke-linecap="butt"/>
+<rect x="10" y="6" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="8" height="8" stroke-linejoin="miter"/>
+<rect x="30" y="6" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="8" height="8" stroke-linejoin="miter"/>
+<rect x="38" y="34" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="8" height="8" stroke-linejoin="miter"/>
+<rect x="2" y="34" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="8" height="8" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-polygon-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="7.1" y1="34" x2="12.9" y2="13.9" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="37.9" y1="38" x2="9.9" y2="38" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="35.4" y1="14" x2="42.5" y2="33.9" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="18" y1="10" x2="29.9" y2="10" stroke-linejoin="miter" stroke-linecap="butt"/>
+<rect x="10" y="6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="8" height="8" stroke-linejoin="miter"/>
+<rect x="30" y="6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="8" height="8" stroke-linejoin="miter"/>
+<rect x="38" y="34" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="8" height="8" stroke-linejoin="miter"/>
+<rect x="2" y="34" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="8" height="8" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-flash" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polygon fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="26,6 6,28 24,28 
+	22,42 42,20 24,20 " stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-flash-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polygon fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="26,6 6,28 24,28 
+	22,42 42,20 24,20 " stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-flash-13" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polygon fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="30,2 16,2 10,24 
+	22,24 18,40 38,16 26,16 " stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-flash-13-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polygon fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="30,2 16,2 10,24 
+	22,24 18,40 38,16 26,16 " stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-aim" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="24" y1="2" x2="24" y2="10" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="46" y1="24" x2="38" y2="24" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="24" y1="46" x2="24" y2="38" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="2" y1="24" x2="10" y2="24" stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="22" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="4" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-aim-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="24" y1="2" x2="24" y2="10" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="46" y1="24" x2="38" y2="24" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="24" y1="46" x2="24" y2="38" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="2" y1="24" x2="10" y2="24" stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="22" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="4" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-camera" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M2,24c0,12.2,9.8,22,22,22
+	s22-9.8,22-22S36.2,2,24,2l0,6" stroke-linejoin="miter"/>
+<path data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M26.8,21.2
+	c1.6,1.6,1.6,4.1,0,5.7c-1.6,1.6-4.1,1.6-5.7,0c-1.6-1.6-9.9-15.6-9.9-15.6S25.3,19.6,26.8,21.2z" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-camera-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M2,24c0,12.2,9.8,22,22,22
+	s22-9.8,22-22S36.2,2,24,2l0,6" stroke-linejoin="miter"/>
+<path data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M26.8,21.2
+	c1.6,1.6,1.6,4.1,0,5.7c-1.6,1.6-4.1,1.6-5.7,0c-1.6-1.6-9.9-15.6-9.9-15.6S25.3,19.6,26.8,21.2z" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-camera-16" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polyline data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" points="20.6,4 46,4 46,28 
+	20,28 " stroke-linejoin="miter" stroke-linecap="butt"/>
+<path fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M26,14c0-6.6-5.4-12-12-12
+	S2,7.4,2,14c0,4.4,2.4,8.3,6,10.4V46h12V24.4C23.6,22.3,26,18.4,26,14z" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="14" cy="14" r="6" stroke-linejoin="miter"/>
+<line fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="34" y1="12" x2="38" y2="12" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-camera-16-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polyline data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" points="20.6,4 46,4 46,28 
+	20,28 " stroke-linejoin="miter" stroke-linecap="butt"/>
+<path fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M26,14c0-6.6-5.4-12-12-12
+	S2,7.4,2,14c0,4.4,2.4,8.3,6,10.4V46h12V24.4C23.6,22.3,26,18.4,26,14z" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="14" cy="14" r="6" stroke-linejoin="miter"/>
+<line fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="34" y1="12" x2="38" y2="12" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-audio" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polyline data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" points="10,40 14,32 34,32 
+	38,40 " stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="14" cy="20" r="4" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="34" cy="20" r="4" stroke-linejoin="miter"/>
+<rect x="2" y="8" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="44" height="32" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-audio-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polyline data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" points="10,40 14,32 34,32 
+	38,40 " stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="14" cy="20" r="4" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="34" cy="20" r="4" stroke-linejoin="miter"/>
+<rect x="2" y="8" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="44" height="32" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-audio-18" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<rect x="8" y="2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="32" height="44" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="30" r="8" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="12" r="4" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="30" r="2" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-audio-18-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<rect x="8" y="2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="32" height="44" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="30" r="8" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="12" r="4" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="30" r="2" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-audio-19" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polyline fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="2,26 6,26 10,20 
+	18,40 28,8 36,34 42,26 46,26 " stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-audio-19-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="2,26 6,26 10,20 
+	18,40 28,8 36,34 42,26 46,26 " stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-audio-20" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="24" y1="16" x2="24" y2="28" stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="28" r="12" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="2" y1="28" x2="4" y2="28" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="8.4" y1="12.4" x2="9.9" y2="13.9" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="24" y1="6" x2="24" y2="8" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="39.6" y1="12.4" x2="38.1" y2="13.9" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="46" y1="28" x2="44" y2="28" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-audio-20-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="24" y1="16" x2="24" y2="28" stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="28" r="12" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="2" y1="28" x2="4" y2="28" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="8.4" y1="12.4" x2="9.9" y2="13.9" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="24" y1="6" x2="24" y2="8" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="39.6" y1="12.4" x2="38.1" y2="13.9" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="46" y1="28" x2="44" y2="28" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-audio-21" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<rect x="2" y="6" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="44" height="36" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="18" cy="24" r="10" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="36" y1="23" x2="36" y2="34" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="36" y1="14" x2="36" y2="18" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="32" y1="18" x2="40" y2="18" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="18" cy="24" r="2" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-audio-21-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<rect x="2" y="6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="44" height="36" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="18" cy="24" r="10" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="36" y1="23" x2="36" y2="34" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="36" y1="14" x2="36" y2="18" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="32" y1="18" x2="40" y2="18" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="18" cy="24" r="2" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-audio-22" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M35.1,31.1
+	c3.9-3.9,3.9-10.2,0-14.1" stroke-linejoin="miter"/>
+<path data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M40.7,36.7
+	c7-7,7-18.4,0-25.5" stroke-linejoin="miter"/>
+<path data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M12.9,31.1
+	C9,27.2,9,20.8,12.9,16.9" stroke-linejoin="miter"/>
+<path data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M7.3,36.7
+	c-7-7-7-18.4,0-25.5" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="4" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-audio-22-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M35.1,31.1
+	c3.9-3.9,3.9-10.2,0-14.1" stroke-linejoin="miter"/>
+<path data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M40.7,36.7
+	c7-7,7-18.4,0-25.5" stroke-linejoin="miter"/>
+<path data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M12.9,31.1
+	C9,27.2,9,20.8,12.9,16.9" stroke-linejoin="miter"/>
+<path data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M7.3,36.7
+	c-7-7-7-18.4,0-25.5" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="4" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-audio-23" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" d="M4,28.7V18C4,9.2,11.2,2,20,2h8
+	c8.8,0,16,7.2,16,16v10.7" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M16,24.4
+	c-1-0.3-2-0.4-3-0.4C6.9,24,2,28.9,2,35c0,6.1,4.9,11,11,11c1,0,2-0.2,3-0.4V24.4z" stroke-linejoin="miter"/>
+<path fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M32,45.6c1,0.3,2,0.4,3,0.4
+	c6.1,0,11-4.9,11-11c0-6.1-4.9-11-11-11c-1,0-2,0.2-3,0.4V45.6z" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-audio-23-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M4,28.7V18C4,9.2,11.2,2,20,2h8
+	c8.8,0,16,7.2,16,16v10.7" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M16,24.4
+	c-1-0.3-2-0.4-3-0.4C6.9,24,2,28.9,2,35c0,6.1,4.9,11,11,11c1,0,2-0.2,3-0.4V24.4z" stroke-linejoin="miter"/>
+<path fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M32,45.6c1,0.3,2,0.4,3,0.4
+	c6.1,0,11-4.9,11-11c0-6.1-4.9-11-11-11c-1,0-2,0.2-3,0.4V45.6z" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-configuration" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="8" y1="26" x2="8" y2="2" stroke-linejoin="miter"/>
+<line fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="8" y1="46" x2="8" y2="40" stroke-linejoin="miter"/>
+<rect x="2" y="32" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="12" height="8" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="24" y1="6" x2="24" y2="2" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="24" y1="46" x2="24" y2="20" stroke-linejoin="miter"/>
+<rect data-color="color-2" x="18" y="12" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="12" height="8" stroke-linejoin="miter"/>
+<line fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="40" y1="26" x2="40" y2="2" stroke-linejoin="miter"/>
+<line fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="40" y1="46" x2="40" y2="40" stroke-linejoin="miter"/>
+<rect x="34" y="32" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="12" height="8" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-configuration-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="8" y1="26" x2="8" y2="2" stroke-linejoin="miter"/>
+<line fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="8" y1="46" x2="8" y2="40" stroke-linejoin="miter"/>
+<rect x="2" y="32" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="12" height="8" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="24" y1="6" x2="24" y2="2" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="24" y1="46" x2="24" y2="20" stroke-linejoin="miter"/>
+<rect data-color="color-2" x="18" y="12" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="12" height="8" stroke-linejoin="miter"/>
+<line fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="40" y1="26" x2="40" y2="2" stroke-linejoin="miter"/>
+<line fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="40" y1="46" x2="40" y2="40" stroke-linejoin="miter"/>
+<rect x="34" y="32" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="12" height="8" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-configuration-25" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<rect x="2" y="2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="44" height="44" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="16" y1="22" x2="16" y2="8" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="16" y1="40" x2="16" y2="36" stroke-linejoin="miter"/>
+<rect data-color="color-2" x="10" y="28" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="12" height="8" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="32" y1="26" x2="32" y2="40" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="32" y1="8" x2="32" y2="12" stroke-linejoin="miter"/>
+<rect data-color="color-2" x="26" y="12" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="12" height="8" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-configuration-25-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<rect x="2" y="2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="44" height="44" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="16" y1="22" x2="16" y2="8" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="16" y1="40" x2="16" y2="36" stroke-linejoin="miter"/>
+<rect data-color="color-2" x="10" y="28" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="12" height="8" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="32" y1="26" x2="32" y2="40" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="32" y1="8" x2="32" y2="12" stroke-linejoin="miter"/>
+<rect data-color="color-2" x="26" y="12" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="12" height="8" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-dashboard" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" d="M12.7,20
+	c-0.4,1.3-0.7,2.6-0.7,4" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" d="M36,24c0-6.6-5.4-12-12-12
+	c-1.4,0-2.7,0.2-4,0.7" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="21.2" y1="21.2" x2="14" y2="14" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="4" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="22" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-dashboard-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M12.7,20
+	c-0.4,1.3-0.7,2.6-0.7,4" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M36,24c0-6.6-5.4-12-12-12
+	c-1.4,0-2.7,0.2-4,0.7" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="21.2" y1="21.2" x2="14" y2="14" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="4" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="22" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-dashboard-27" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="22" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="21.2" y1="21.2" x2="14" y2="14" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="4" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="24" y1="8" x2="24" y2="10" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="40" y1="24" x2="38" y2="24" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="35.3" y1="12.7" x2="33.9" y2="14.1" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="10" y1="24" x2="8" y2="24" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-dashboard-27-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="22" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="21.2" y1="21.2" x2="14" y2="14" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="4" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="24" y1="8" x2="24" y2="10" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="40" y1="24" x2="38" y2="24" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="35.3" y1="12.7" x2="33.9" y2="14.1" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="10" y1="24" x2="8" y2="24" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-gear" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" d="M22.6,33.1L33.4,44
+	c2.8,2.8,7.2,2.8,10,0l0,0c2.8-2.8,2.8-7.2,0-10l-10-10" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="19.6" y1="20.1" x2="13.1" y2="13.6" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M44.9,9.6L39,15.5l-7.1-7.1
+	l5.9-5.9C36.5,2.1,35,1.9,33.5,2c-5.6,0.5-10.1,5.5-10,11.1c0,1.1,0.2,2.2,0.5,3.2l-19.2,17c-2.9,2.5-3,7-0.3,9.7l0,0
+	c2.7,2.7,7.1,2.6,9.7-0.3l17-19.2c1.7,0.5,3.6,0.7,5.6,0.3c4-0.8,7.3-3.8,8.4-7.7C45.7,13.7,45.5,11.5,44.9,9.6z" stroke-linejoin="miter"/>
+<polygon data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	8.8,15 13.1,13.6 14.5,9.4 8.8,3.7 3.2,9.4 " stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="33.4" y1="34" x2="37.4" y2="38" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-gear-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M22.6,33.1L33.4,44
+	c2.8,2.8,7.2,2.8,10,0l0,0c2.8-2.8,2.8-7.2,0-10l-10-10" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="19.6" y1="20.1" x2="13.1" y2="13.6" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M44.9,9.6L39,15.5l-7.1-7.1
+	l5.9-5.9C36.5,2.1,35,1.9,33.5,2c-5.6,0.5-10.1,5.5-10,11.1c0,1.1,0.2,2.2,0.5,3.2l-19.2,17c-2.9,2.5-3,7-0.3,9.7l0,0
+	c2.7,2.7,7.1,2.6,9.7-0.3l17-19.2c1.7,0.5,3.6,0.7,5.6,0.3c4-0.8,7.3-3.8,8.4-7.7C45.7,13.7,45.5,11.5,44.9,9.6z" stroke-linejoin="miter"/>
+<polygon data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	8.8,15 13.1,13.6 14.5,9.4 8.8,3.7 3.2,9.4 " stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="33.4" y1="34" x2="37.4" y2="38" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-analytics" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polyline data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" points="2,24 12,24 18,12 30,36 
+	36,24 46,24 " stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="22" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-analytics-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polyline data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" points="2,24 12,24 18,12 30,36 
+	36,24 46,24 " stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="22" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-marketing" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="22" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="14" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="6" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-marketing-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="22" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="14" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="6" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-battery" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<rect x="8" y="6" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="32" height="40" stroke-linejoin="miter"/>
+<line fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="14" y1="6" x2="14" y2="2" stroke-linejoin="miter"/>
+<line fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="34" y1="6" x2="34" y2="2" stroke-linejoin="miter"/>
+<line fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="8" y1="12" x2="40" y2="12" stroke-linejoin="miter"/>
+<line fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="8" y1="40" x2="40" y2="40" stroke-linejoin="miter"/>
+<polyline data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	26,20 20,26 28,26 22,32 " stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-battery-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<rect x="8" y="6" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="32" height="40" stroke-linejoin="miter"/>
+<line fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="14" y1="6" x2="14" y2="2" stroke-linejoin="miter"/>
+<line fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="34" y1="6" x2="34" y2="2" stroke-linejoin="miter"/>
+<line fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="8" y1="12" x2="40" y2="12" stroke-linejoin="miter"/>
+<line fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="8" y1="40" x2="40" y2="40" stroke-linejoin="miter"/>
+<polyline data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	26,20 20,26 28,26 22,32 " stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-address" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polygon data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" points="10,34 4,46 44,46 38,34 " stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="13" r="11" stroke-linejoin="miter"/>
+<line fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="24" y1="24" x2="24" y2="38" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-address-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polygon data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" points="10,34 4,46 44,46 38,34 " stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="13" r="11" stroke-linejoin="miter"/>
+<line fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="24" y1="24" x2="24" y2="38" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-address-33" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polyline data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" points="19.7,34 10,34 4,46 
+	44,46 38,34 28.3,34 " stroke-linejoin="miter" stroke-linecap="butt"/>
+<path fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M38,16
+	c0,8.6-14,22.8-14,22.8S10,24.6,10,16c0-8.9,7.2-14,14-14S38,7.1,38,16z" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="16" r="4" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-address-33-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<polyline data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" points="19.7,34 10,34 4,46 
+	44,46 38,34 28.3,34 " stroke-linejoin="miter" stroke-linecap="butt"/>
+<path fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M38,16
+	c0,8.6-14,22.8-14,22.8S10,24.6,10,16c0-8.9,7.2-14,14-14S38,7.1,38,16z" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="16" r="4" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-destination" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" d="M36,20h1c5,0,9-4,9-9v0c0-5-4-9-9-9H24
+	" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" d="M26,38H11c-5,0-9-4-9-9v0c0-5,4-9,9-9
+	h13" stroke-linejoin="miter" stroke-linecap="butt"/>
+<polyline fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="20,32 26,38 
+	20,44 " stroke-linejoin="miter"/>
+<line fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="16" y1="2" x2="18" y2="2" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="20" r="6" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-destination-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M36,20h1c5,0,9-4,9-9v0c0-5-4-9-9-9H24
+	" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M26,38H11c-5,0-9-4-9-9v0c0-5,4-9,9-9
+	h13" stroke-linejoin="miter" stroke-linecap="butt"/>
+<polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="20,32 26,38 
+	20,44 " stroke-linejoin="miter"/>
+<line fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="16" y1="2" x2="18" y2="2" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="30" cy="20" r="6" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-friend" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" d="M35.9,30.3
+	C42,31.7,46,34.2,46,37c0,4.4-9.8,8-22,8S2,41.4,2,37c0-2.8,3.9-5.3,9.9-6.7" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,21H18c-3.3,0-6,2.7-6,6
+	v8h24v-8C36,23.7,33.3,21,30,21z" stroke-linejoin="miter"/>
+<path fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M24,17L24,17
+	c-3.3,0-6-2.7-6-6V9c0-3.3,2.7-6,6-6h0c3.3,0,6,2.7,6,6v2C30,14.3,27.3,17,24,17z" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-friend-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M35.9,30.3
+	C42,31.7,46,34.2,46,37c0,4.4-9.8,8-22,8S2,41.4,2,37c0-2.8,3.9-5.3,9.9-6.7" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M30,21H18c-3.3,0-6,2.7-6,6
+	v8h24v-8C36,23.7,33.3,21,30,21z" stroke-linejoin="miter"/>
+<path fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M24,17L24,17
+	c-3.3,0-6-2.7-6-6V9c0-3.3,2.7-6,6-6h0c3.3,0,6,2.7,6,6v2C30,14.3,27.3,17,24,17z" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-earth" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" d="M24,46c-3.9-3.2-4.2-13.6,2-16
+	c3.3-1.3,4.3,5.9,10.8,4.1c1.2-0.3,4.2,1.4,3.1,4.1" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" d="M12.6,9.6c1.3,0.9,2.3,2.1,3.2,3.7
+	c0.8,1.4,2.6,5.1,1,7.3C14.9,23,9.5,23.8,9.5,26c0,1.7,2.4,3.6,3.6,5.5c1.9,2.8,1,5.5,0,7.3c-0.5,0.9-1.3,1.6-2.3,2.2" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" d="M40.5,14.7C42.7,17.9,44,21.8,44,26
+	c0,11-9,20-20,20S4,37,4,26S13,6,24,6c1,0,2,0.1,2.9,0.2" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="34" y1="18" x2="34" y2="24" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="34" cy="10" r="8" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-earth-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M24,46c-3.9-3.2-4.2-13.6,2-16
+	c3.3-1.3,4.3,5.9,10.8,4.1c1.2-0.3,4.2,1.4,3.1,4.1" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M12.6,9.6c1.3,0.9,2.3,2.1,3.2,3.7
+	c0.8,1.4,2.6,5.1,1,7.3C14.9,23,9.5,23.8,9.5,26c0,1.7,2.4,3.6,3.6,5.5c1.9,2.8,1,5.5,0,7.3c-0.5,0.9-1.3,1.6-2.3,2.2" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M40.5,14.7C42.7,17.9,44,21.8,44,26
+	c0,11-9,20-20,20S4,37,4,26S13,6,24,6c1,0,2,0.1,2.9,0.2" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="34" y1="18" x2="34" y2="24" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="34" cy="10" r="8" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-earth-37" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" d="M24,46c-3.9-3.2-4.2-13.6,2-16
+	c3.3-1.3,4.3,5.9,10.8,4.1c1.2-0.3,4.2,1.4,3.1,4.1" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" d="M12.6,9.6c1.3,0.9,2.3,2.1,3.2,3.7
+	c0.8,1.4,2.6,5.1,1,7.3C14.9,23,9.5,23.8,9.5,26c0,1.7,2.4,3.6,3.6,5.5c1.9,2.8,1,5.5,0,7.3c-0.5,0.9-1.3,1.6-2.3,2.2" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" d="M40.4,14.5C42.7,17.8,44,21.7,44,26
+	c0,11-9,20-20,20S4,37,4,26S13,6,24,6c1,0,2,0.1,2.9,0.2" stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="34" cy="10" r="2" stroke-linejoin="miter"/>
+<path data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M42,10
+	c0,4.9-8,12-8,12s-8-7.1-8-12c0-5.1,4.1-8,8-8S42,4.9,42,10z" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-earth-37-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M24,46c-3.9-3.2-4.2-13.6,2-16
+	c3.3-1.3,4.3,5.9,10.8,4.1c1.2-0.3,4.2,1.4,3.1,4.1" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M12.6,9.6c1.3,0.9,2.3,2.1,3.2,3.7
+	c0.8,1.4,2.6,5.1,1,7.3C14.9,23,9.5,23.8,9.5,26c0,1.7,2.4,3.6,3.6,5.5c1.9,2.8,1,5.5,0,7.3c-0.5,0.9-1.3,1.6-2.3,2.2" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M40.4,14.5C42.7,17.8,44,21.7,44,26
+	c0,11-9,20-20,20S4,37,4,26S13,6,24,6c1,0,2,0.1,2.9,0.2" stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="34" cy="10" r="2" stroke-linejoin="miter"/>
+<path data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M42,10
+	c0,4.9-8,12-8,12s-8-7.1-8-12c0-5.1,4.1-8,8-8S42,4.9,42,10z" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-gps-38" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<ellipse data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="40" rx="18" ry="6" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="13" r="11" stroke-linejoin="miter"/>
+<line fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="24" y1="24" x2="24" y2="38" stroke-linejoin="miter"/></g></symbol><symbol id="nc-icon-gps-38-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<ellipse data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="40" rx="18" ry="6" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="13" r="11" stroke-linejoin="miter"/>
+<line fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="24" y1="24" x2="24" y2="38" stroke-linejoin="miter"/></g></symbol><symbol id="nc-icon-crosshair" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="18" stroke-linejoin="miter"/>
+<line fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="24" y1="2" x2="24" y2="10" stroke-linejoin="miter"/>
+<line fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="46" y1="24" x2="38" y2="24" stroke-linejoin="miter"/>
+<line fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="24" y1="46" x2="24" y2="38" stroke-linejoin="miter"/>
+<line fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="2" y1="24" x2="10" y2="24" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="2" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-crosshair-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="18" stroke-linejoin="miter"/>
+<line fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="24" y1="2" x2="24" y2="10" stroke-linejoin="miter"/>
+<line fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="46" y1="24" x2="38" y2="24" stroke-linejoin="miter"/>
+<line fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="24" y1="46" x2="24" y2="38" stroke-linejoin="miter"/>
+<line fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="2" y1="24" x2="10" y2="24" stroke-linejoin="miter"/>
+<circle data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="2" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-address-40" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="18" y1="40" x2="18" y2="28.7" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="30" y1="44" x2="30" y2="28.7" stroke-linejoin="miter" stroke-linecap="butt"/>
+<polyline data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" points="37.4,12.2 46,10 46,40 
+	30,44 18,40 2,44 2,14 10.5,11.9 " stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="16" r="14" stroke-linejoin="miter"/>
+<polygon data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	28,12 26,18 20,20 22,14 " stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-address-40-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="18" y1="40" x2="18" y2="28.7" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="30" y1="44" x2="30" y2="28.7" stroke-linejoin="miter" stroke-linecap="butt"/>
+<polyline data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" points="37.4,12.2 46,10 46,40 
+	30,44 18,40 2,44 2,14 10.5,11.9 " stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="16" r="14" stroke-linejoin="miter"/>
+<polygon data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	28,12 26,18 20,20 22,14 " stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-address-41" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="18" y1="21.1" x2="18" y2="4" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="30" y1="24.4" x2="30" y2="8" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="30" y1="38" x2="30" y2="29.6" stroke-linejoin="miter" stroke-linecap="butt"/>
+<polyline data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" points="17.8,34.1 2,38 2,8 18,4 
+	30,8 46,4 46,34 30,38 23.7,35.9 " stroke-linejoin="miter" stroke-linecap="butt"/>
+<polygon data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	20,42 26,32 36,26 14,20 " stroke-linejoin="miter"/></g></symbol><symbol id="nc-icon-address-41-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="18" y1="21.1" x2="18" y2="4" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="30" y1="24.4" x2="30" y2="8" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="30" y1="38" x2="30" y2="29.6" stroke-linejoin="miter" stroke-linecap="butt"/>
+<polyline data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" points="17.8,34.1 2,38 2,8 18,4 
+	30,8 46,4 46,34 30,38 23.7,35.9 " stroke-linejoin="miter" stroke-linecap="butt"/>
+<polygon data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	20,42 26,32 36,26 14,20 " stroke-linejoin="miter"/></g></symbol><symbol id="nc-icon-explore" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" d="M32.5,32.5
+	C30.3,34.7,27.3,36,24,36c-6.6,0-12-5.4-12-12s5.4-12,12-12c3.3,0,6.3,1.3,8.5,3.5" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="25.4" y1="25.4" x2="39.6" y2="39.6" stroke-linejoin="miter"/>
+<line fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="39.6" y1="8.4" x2="25.4" y2="22.6" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="22" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="2" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-explore-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M32.5,32.5
+	C30.3,34.7,27.3,36,24,36c-6.6,0-12-5.4-12-12s5.4-12,12-12c3.3,0,6.3,1.3,8.5,3.5" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="25.4" y1="25.4" x2="39.6" y2="39.6" stroke-linejoin="miter"/>
+<line fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="39.6" y1="8.4" x2="25.4" y2="22.6" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="22" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="2" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-explore-43" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" d="M42,11.4c2.5,3.6,4,7.9,4,12.6
+	c0,12.2-9.8,22-22,22S2,36.2,2,24S11.8,2,24,2c4.7,0,9,1.4,12.5,3.9" stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="12" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="2" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="40" cy="8" r="4" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-explore-43-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M42,11.4c2.5,3.6,4,7.9,4,12.6
+	c0,12.2-9.8,22-22,22S2,36.2,2,24S11.8,2,24,2c4.7,0,9,1.4,12.5,3.9" stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="12" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="2" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="40" cy="8" r="4" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-compass" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="18" y1="18" x2="30" y2="30" stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="22" stroke-linejoin="miter"/>
+<polygon data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	34,14 30,30 14,34 18,18.2 " stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-compass-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="18" y1="18" x2="30" y2="30" stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="22" stroke-linejoin="miter"/>
+<polygon data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	34,14 30,30 14,34 18,18.2 " stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-compass-45" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="24" y1="2" x2="24" y2="8" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="46" y1="24" x2="40" y2="24" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="24" y1="46" x2="24" y2="40" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="2" y1="24" x2="8" y2="24" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="20" y1="20" x2="28.2" y2="28.2" stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="22" stroke-linejoin="miter"/>
+<polygon data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	32.5,15.5 28.2,28.2 15.5,32.5 19.8,19.8 " stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-compass-45-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="24" y1="2" x2="24" y2="8" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="46" y1="24" x2="40" y2="24" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="24" y1="46" x2="24" y2="40" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="2" y1="24" x2="8" y2="24" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="20" y1="20" x2="28.2" y2="28.2" stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="24" r="22" stroke-linejoin="miter"/>
+<polygon data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="
+	32.5,15.5 28.2,28.2 15.5,32.5 19.8,19.8 " stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-account" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" d="M17.3,30L5.9,36.8
+	c-1.2,0.7-1.9,2-1.9,3.4V46h40v-5.7c0-1.4-0.7-2.7-1.9-3.4L30.7,30" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" d="M36,19.3V20c0,6.6-5.4,12-12,12h0
+	c-6.6,0-12-5.4-12-12v-0.7" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path data-cap="butt" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" d="M12,14c0-6.6,5.4-12,12-12h0
+	c6.6,0,12,5.4,12,12" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M18,22
+	c2.4,0,4.5-1.1,6-2.8c1.5,1.7,3.6,2.8,6,2.8c4.4,0,8-3.6,8-8H10C10,18.4,13.6,22,18,22z" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-account-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<path data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M17.3,30L5.9,36.8
+	c-1.2,0.7-1.9,2-1.9,3.4V46h40v-5.7c0-1.4-0.7-2.7-1.9-3.4L30.7,30" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M36,19.3V20c0,6.6-5.4,12-12,12h0
+	c-6.6,0-12-5.4-12-12v-0.7" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path data-cap="butt" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" d="M12,14c0-6.6,5.4-12,12-12h0
+	c6.6,0,12,5.4,12,12" stroke-linejoin="miter" stroke-linecap="butt"/>
+<path data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M18,22
+	c2.4,0,4.5-1.1,6-2.8c1.5,1.7,3.6,2.8,6,2.8c4.4,0,8-3.6,8-8H10C10,18.4,13.6,22,18,22z" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-business" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="30" y1="22.4" x2="34" y2="29.1" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="16" y1="25.7" x2="20" y2="18.9" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="26" y1="36" x2="17.9" y2="36" stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="10" cy="36" r="8" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="38" cy="36" r="8" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="12" r="8" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-business-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="30" y1="22.4" x2="34" y2="29.1" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="16" y1="25.7" x2="20" y2="18.9" stroke-linejoin="miter" stroke-linecap="butt"/>
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="26" y1="36" x2="17.9" y2="36" stroke-linejoin="miter" stroke-linecap="butt"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="10" cy="36" r="8" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="38" cy="36" r="8" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="12" r="8" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-device" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<circle data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="38" r="2" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="10" y1="12" x2="38" y2="12" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="10" y1="30" x2="38" y2="30" stroke-linejoin="miter"/>
+<path fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M34,46H14c-2.2,0-4-1.8-4-4
+	V6c0-2.2,1.8-4,4-4h20c2.2,0,4,1.8,4,4v36C38,44.2,36.2,46,34,46z" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-device-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<circle data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="24" cy="38" r="2" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="10" y1="12" x2="38" y2="12" stroke-linejoin="miter"/>
+<line data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="10" y1="30" x2="38" y2="30" stroke-linejoin="miter"/>
+<path fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M34,46H14c-2.2,0-4-1.8-4-4
+	V6c0-2.2,1.8-4,4-4h20c2.2,0,4,1.8,4,4v36C38,44.2,36.2,46,34,46z" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-pen" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" x1="24" y1="46" x2="24" y2="4" stroke-linejoin="miter" stroke-linecap="butt"/>
+<polyline fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="18,10 24,4 30,10 
+	" stroke-linejoin="miter"/>
+<polyline data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" points="36,28 36,34 24,42 " stroke-linejoin="miter" stroke-linecap="butt"/>
+<polyline data-cap="butt" data-color="color-2" fill="none" stroke="#e21717" stroke-width="2" stroke-miterlimit="10" points="12,24 12,32 24,40 " stroke-linejoin="miter" stroke-linecap="butt"/>
+<rect x="32" y="20" fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="8" height="8" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#e21717" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="12" cy="20" r="4" stroke-linejoin="miter"/>
+</g></symbol><symbol id="nc-icon-pen-active" viewBox="0 0 48 48"><g  transform="translate(0, 0)">
+<line data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" x1="24" y1="46" x2="24" y2="4" stroke-linejoin="miter" stroke-linecap="butt"/>
+<polyline fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" points="18,10 24,4 30,10 
+	" stroke-linejoin="miter"/>
+<polyline data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" points="36,28 36,34 24,42 " stroke-linejoin="miter" stroke-linecap="butt"/>
+<polyline data-cap="butt" data-color="color-2" fill="none" stroke="#ffffff" stroke-width="2" stroke-miterlimit="10" points="12,24 12,32 24,40 " stroke-linejoin="miter" stroke-linecap="butt"/>
+<rect x="32" y="20" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" width="8" height="8" stroke-linejoin="miter"/>
+<circle fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" cx="12" cy="20" r="4" stroke-linejoin="miter"/>
+</g></symbol></svg>
