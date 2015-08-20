@@ -66,5 +66,17 @@ $(document).ready(function() {
 </div>
 </form>
 <input type="button" id="clicky" value="Show Form">
+
+<script type="text/javascript">
+$.ajaxSetup( {headers: {'Authorization' : 'skullysite a90b37ce9d14edb879e25d2dd718e8d249ff602f5751adbf37efffd7e4b72bfe'}});
+$.get('https://skully.zendesk.com/api/v2/help_center/articles.json', function(data) {
+    console.log(data.articles[0].title);
+    console.log(data.articles[0].body);
+    $("body").append(data.articles[0].title);
+        $("body").append(data.articles[0].body);
+
+});
+</script>
+
 </body>
 </html>
