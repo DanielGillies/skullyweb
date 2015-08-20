@@ -1,400 +1,412 @@
-
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>skully</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/avgrund.css" rel="stylesheet" type="text/css" media="all" />
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
 
-        	<script src="js/jquery.min.js"></script>
-
-
-        <script type="text/javascript">
-      window.heap=window.heap||[],heap.load=function(t,e){window.heap.appid=t,window.heap.config=e;var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=("https:"===document.location.protocol?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+t+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(t){return function(){heap.push([t].concat(Array.prototype.slice.call(arguments,0)))}},p=["clearEventProperties","identify","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
-      heap.load("1485530683");
+<head>
+    <meta charset="utf-8">
+    <title>skully</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/avgrund.css" rel="stylesheet" type="text/css" media="all" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+    window.heap = window.heap || [], heap.load = function(t, e) {
+        window.heap.appid = t, window.heap.config = e;
+        var a = document.createElement("script");
+        a.type = "text/javascript", a.async = !0, a.src = ("https:" === document.location.protocol ? "https:" : "http:") + "//cdn.heapanalytics.com/js/heap-" + t + ".js";
+        var n = document.getElementsByTagName("script")[0];
+        n.parentNode.insertBefore(a, n);
+        for (var o = function(t) {
+                return function() {
+                    heap.push([t].concat(Array.prototype.slice.call(arguments, 0)))
+                }
+            }, p = ["clearEventProperties", "identify", "setEventProperties", "track", "unsetEventProperty"], c = 0; c < p.length; c++) heap[p[c]] = o(p[c])
+    };
+    heap.load("1485530683");
     </script>
-    </head>
-    <body>
+</head>
+
+<body>
     <div class="nav-container">
-    <nav class="bg-dark">
-<div class="nav-container">
-     <a id="top"></a>
-     <nav class="bg-dark">
-       <div class="nav-bar">
-         <div class="module left">
-           <a href="index.html">
-             <img class="logo logo-light" alt="SKULLY" src="img/logo-light.png" />
-             <img class="logo logo-dark" alt="SKULLY" src="img/logo-dark.png" />
-           </a>
-         </div>
-         <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
-           <i class="ti-menu"></i>
-         </div>
-         <div class="module-group right">
-           <div class="module left">
-             <ul class="menu">
-               <li>
-                 <a href="index.html">
+        <nav class="bg-dark">
+            <div class="nav-container">
+                <a id="top"></a>
+                <nav class="bg-dark">
+                    <div class="nav-bar">
+                        <div class="module left">
+                            <a href="index.html">
+                                <img class="logo logo-light" alt="SKULLY" src="img/logo-light.png" />
+                                <img class="logo logo-dark" alt="SKULLY" src="img/logo-dark.png" />
+                            </a>
+                        </div>
+                        <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+                            <i class="ti-menu"></i>
+                        </div>
+                        <div class="module-group right">
+                            <div class="module left">
+                                <ul class="menu">
+                                    <li>
+                                        <a href="index.html">
                    Home
                  </a>
-               </li>
-               
-               <li>
-                 <a href="ar-1.html">
+                                    </li>
+                                    <li>
+                                        <a href="ar-1.html">
                    AR-1
                  </a>
-               </li>
-               
-               <li>
-                 <a href="home-app-landing.html">
+                                    </li>
+                                    <li>
+                                        <a href="home-app-landing.html">
                    APP
                  </a>
-               </li>
-               
-               <li>
-                 <a href="videos.html">
+                                    </li>
+                                    <li>
+                                        <a href="videos.html">
                    VIDEOS
                  </a>
-               </li>
-               
-               <li class="has-dropdown">
-                 <a href="aboutus.html">
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="aboutus.html">
                    ABOUT
                  </a>
-                 <ul>
-                   <li>
-                     <a href="careers.html">
+                                        <ul>
+                                            <li>
+                                                <a href="careers.html">
                        CAREERS
                      </a>
-                   </li>
-                   <li>
-                     <a href="press.html">
+                                            </li>
+                                            <li>
+                                                <a href="press.html">
                        PRESS
                      </a>
-                   </li>
-                 </ul>
-               </li>
-               
-               <li class="has-dropdown">
-                 <a href="page-login.html">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="has-dropdown">
+                                        <a href="page-login.html">
                    SUPPORT
                  </a>
-                 <ul>
-                   <li>
-                     <a href="faq.html">
+                                        <ul>
+                                            <li>
+                                                <a href="faq.html">
                        FAQ
                      </a>
-                   </li>
-                 </ul>
-                 
-               </div>
-               <!--end of menu module-->
-               <div class="module right">
-                 <a class="btn btn-sm btn-filled" href="shop-product-fullwidth.html">STORE</a>
-               </div>
-             </div>
-             <!--end of menu module-->
-             <div class="module widget-handle search-widget-handle left">
-               <div class="search">
-                 <i class="ti-search"></i>
-                 <span class="title">Search Site</span>
-               </div>
-               <div class="function">
-                 <form class="search-form">
-                   <input type="text" placeholder="Type Here" />
-                 </form>
-               </div>
-               
-               
-             </div>
-             <!--end of module group-->
-           </div>
-         </nav>
-       </div>
-    </nav>
-
-
-
-    <!-- ACTUAL PAGE CONTENT -->
- <div class="main-container">
-            <section class="bg-third">
-                   <div class="feed-item mb24">
-                        <div class="row mb16 mb-xs-0">
-                            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
-                            <h4 class="uppercase mb16">TESTIMONIALS</h4>
+                                            </li>
+                                        </ul>
+                            </div>
+                            <!--end of menu module-->
+                            <div class="module right">
+                                <a class="btn btn-sm btn-filled" href="shop-product-fullwidth.html">STORE</a>
                             </div>
                         </div>
-                        <div class="row mb24 mb-xs-16">
-                            <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-
-							<div class="embed-video-container embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/v/R8nE2V8gcsY"></iframe>
-							</div>
+                        <!--end of menu module-->
+                        <div class="module widget-handle search-widget-handle left">
+                            <div class="search">
+                                <i class="ti-search"></i>
+                                <span class="title">Search Site</span>
                             </div>
-                    	</div>
-
-                	</div>
+                            <div class="function">
+                                <form class="search-form">
+                                    <input type="text" placeholder="Type Here" />
+                                </form>
+                            </div>
+                        </div>
+                        <!--end of module group-->
+                    </div>
+                </nav>
+            </div>
+        </nav>
+        <!-- ACTUAL PAGE CONTENT -->
+        <div class="main-container">
+            <section class="bg-third">
+                <div class="feed-item mb24">
+                    <div class="row mb16 mb-xs-0">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+                            <h4 class="uppercase mb16">TESTIMONIALS</h4>
+                        </div>
+                    </div>
+                    <div class="row mb24 mb-xs-16">
+                        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <div class="embed-video-container embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/v/R8nE2V8gcsY"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!--end of container-->
             </section>
             <section class="bg-secondary">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12 text-center">
-            <div class="col-1">
-                            <h5 class="uppercase bold mb16 black">FAQ</h5>
-                            <ul class="accordion accordion-1">
-                                <li>
-                                    <div class="title">
-                                        <span>Does the AR-1 come in my size?</span>
-                                    </div>
-                                    <div class="content">
-                                        <p class="black">
-                                            The SKULLY AR-1 is an intermediate oval head form and comes in sizes between Small and XXL. The fit shape is similar to a Shoei RF-1200 (see sizing chart below). AR-1 is a race fit (snug), so order 1 size larger for a street fit. As part of our commitment to customer satisfaction, if you find the fit is a bit too large or small, we will send you one additional premium padding set free of charge to get the perfect fit. SIZING CHART:</p>
-
-	                    <table class="table black">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Size</th>
-                                                            <th>Hat Size</th>
-                                                            <th>CM</th>
-                                                            <th>Inches</th>
-
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th scope="row">Small</th>
-                                                            <td>
-                                                                <span class="number black">6 7/8 - 7</span></td>
-                                                                <td>
-	                                                                <span class="number black">55 - 56</span></td>
-                                                                <td><span class="number black">21 5/8 - 22</span></td>
-
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row ">Medium</th>
-                                                            <td>
-                                                                <span class="number black">6 5/8 - 6 3/4</span></td>
-                                                                <td>
-	                                                                <span class="number black">53 - 54</span></td>
-                                                                <td><span class="number black">20 7/8 - 20 1/4</span></td>
-
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">Large</th>
-                                                            <td>
-                                                                <span class="number black">7 1/8 - 7 1/4</span></td>
-                                                                <td>
-	                                                                <span class="number black">57 - 58</span></td>
-                                                                <td><span class="number black">22 1/2 - 22 7/8</span></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">Extra Large</th>
-                                                            <td>
-                                                                <span class="number black">7 3/8 - 7 1/2</span></td>
-                                                                <td>
-	                                                                <span class="number black">59 - 60</span></td>
-                                                                <td><span class="number black">23 1/4 - 23 5/8</span></td>
-                                                        </tr>
-														<tr>
-                                                            <th scope="row">XX Large</th>
-                                                            <td>
-                                                                <span class="number black">7 5/8 - 7 3/4</span></td>
-                                                                <td>
-	                                    <span class="number black">61 - 62</span></td>
-                                    <td><span class="number black">24 - 24 3/8</span></td>
-                                </tr>
-
-                           	</tbody>
-                        </table>
-
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="title">
-                                        <span>How can I view and edit my order?</span>
-                                    </div>
-                                    <div class="content">
-                                        <p class="black">
-                                            We have a new customer portal where you can review and edit your preorder and change your shipping address. Please visit http://store.skully.com to access. If you are an Indiegogo backer and have not logged in yet please do the following:
+                            <div class="col-1">
+                                <h5 class="uppercase bold mb16 black">FAQ</h5>
+                                <ul class="accordion accordion-1">
+                                    <li>
+                                        <div class="title">
+                                            <span>Does the AR-1 come in my size?</span>
+                                        </div>
+                                        <div class="content">
+                                            <p class="black">
+                                                The SKULLY AR-1 is available in sizes S-XXL. To determine your size, please use the SKULLY Fit Guide below. The AR-1’s overall shape is similar to the Shoei RF-1200. If you know that you wear a size L Shoei helmet, we recommend ordering your SKULLY AR-1 one size larger because it is close-fitting. We will send you one additional premium padding set free of charge if your helmet feels slightly loose.
+                                            </p>
+                                            <table class="table black">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Size</th>
+                                                        <th>Hat Size</th>
+                                                        <th>CM</th>
+                                                        <th>Inches</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">Small</th>
+                                                        <td>
+                                                            <span class="number black">6 7/8 - 7</span></td>
+                                                        <td>
+                                                            <span class="number black">55 - 56</span></td>
+                                                        <td><span class="number black">21 5/8 - 22</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row ">Medium</th>
+                                                        <td>
+                                                            <span class="number black">6 5/8 - 6 3/4</span></td>
+                                                        <td>
+                                                            <span class="number black">53 - 54</span></td>
+                                                        <td><span class="number black">20 7/8 - 20 1/4</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Large</th>
+                                                        <td>
+                                                            <span class="number black">7 1/8 - 7 1/4</span></td>
+                                                        <td>
+                                                            <span class="number black">57 - 58</span></td>
+                                                        <td><span class="number black">22 1/2 - 22 7/8</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Extra Large</th>
+                                                        <td>
+                                                            <span class="number black">7 3/8 - 7 1/2</span></td>
+                                                        <td>
+                                                            <span class="number black">59 - 60</span></td>
+                                                        <td><span class="number black">23 1/4 - 23 5/8</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">XX Large</th>
+                                                        <td>
+                                                            <span class="number black">7 5/8 - 7 3/4</span></td>
+                                                        <td>
+                                                            <span class="number black">61 - 62</span></td>
+                                                        <td><span class="number black">24 - 24 3/8</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p class="black">When you receive your SKULLY AR-1, try it on and check the following:</p>
+                                                <ul>
+                                                    <li class="black">> The inner lining is close-fitting (fits snugly all the way around your head)</li>
+                                                    <li class="black">> You cannot easily slide a finger along the side of your temple and into the helmet</li>
+                                                    <li class="black">> The cheek pads press up firmly against your cheeks</li>
+                                                    <li class="black">> The top pad presses against the top of your head</li>
+                                                </ul>
+                                                <p class="black">If you can easily move the helmet around with your hands, it is too big. Please email our Customer Support team at connect@skully.com. We are committed to your safety and will exchange your SKULLY AR-1 for one that properly fits.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title">
+                                            <span>How can I view and edit my pre-order?</span>
+                                        </div>
+                                        <div class="content">
+                                            <p class="black">
+                                                Review and edit your pre-order and change your shipping address on the SKULLY Customer Portal. If you were a backer of SKULLY on Indiegogo (Thank you!) and have not logged in yet, please complete the following steps:
+                                                <ul>
+                                                    <li class="black">> Go to http://store.skully.com/login</li>
+                                                    <li class="black">> Click on "Forgot your password?"</li>
+                                                    <li class="black">> Enter the email address associated with your Indiegogo account </li>
+                                                    <li class="black">> View your account and pre-order information once the password has been reset.</li>
+                                                </ul>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title">
+                                            <span>When will my AR-1 ship?</span>
+                                        </div>
+                                        <div class="content">
+                                            <p class="black">SKULLY AR-1 pre-orders will be shipped in the order in which they are received. Pre-orders received before October 31, 2015 will ship no later than December 15, 2015. If you were an early backer of SKULLY on Indiegogo, you will be one of the first to get your helmet because you are awesome. All customers will be notified when their SKULLY AR-1 is being built via email. </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title">
+                                            <span> IS THE AR-1 SAFETY CERTIFIED?</span>
+                                        </div>
+                                        <div class="content">
+                                            <p class="black">The SKULLY AR-1 will ship DOT/ECE certified and is pending AS/NZS 1698:2006 certification. The ECE is the standard safety certification for the American Motorcycle Association, World Superbike Championship, MotoGP™, as well as the majority of independent racing organizations worldwide. With both DOT and ECE certifications, the SKULLY AR-1 has passed the toughest testing standards that exist for motorcycle helmets. </p>
+                                            <p class="black"><strong>What about Snell certification?</strong> ECE testing, the most rigorous and up-to-date standard in the world, is a combination of both DOT and Snell testing procedures. The ECE standard is also recognized by over 50 countries. We chose this route because ECE has a few extra tests added in, and we want to make sure the SKULLY AR-1 protects your noggin (and brain) for as many crash scenarios as possible. Research has shown that Snell helmets are associated with a higher rate of concussion and Traumatic Brain Injury in average crash scenarios compared to DOT/ECE helmets.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title">
+                                            <span>IS THE AR-1 COMPATIBLE WITH MY MOTORCYCLE?</span>
+                                        </div>
+                                        <div class="content">
+                                            <p class="black">The SKULLY AR-1 is compatible with the 2016 Aprilia RSV4 and the 2015 Aprilia Caponord. We will announce more partnerships in the future via email. If your motorcycle has Bluetooth capabilities for telemetry, the AR-1 might be compatible, but we cannot confirm this right now. If you know the capacity of your gas tank and MPG, you can program your motorcycle’s fuel gage information into the AR-1 using the <a href="home-app-landing.html">SKULLY app.</a> For future partnership and compatibility information, please <a href="index.html#signup">join #SKULLYNation</a> for a monthly email update. We want to make the AR-1 compatible for every motorcycle on the road and we’re working hard to achieve this goal.
+</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title">
+                                            <span>What does the SKULLY app do?</span>
+                                        </div>
+                                        <div class="content">
+                                            <p class="black">The SKULLY app does a whole lot of cool things to take your ride to the next level. The app controls the AR-1’s GPS navigation, in-helmet music system, Bluetooth capabilities, and firmware updates. We’ve made sure you won’t have to interrupt your trip to make a phone call or check the map. Learn more about turn-by-turn GPS navigation, Spotify integration, and other features on the <a href="home-app-landing.html">SKULLY App page. </a></p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title">
+                                            <span>Will the HUD obstruct my view while riding?</span>
+                                        </div>
+                                        <div class="content">
+                                            <p class="black"><strong>The heads up display (HUD) will NOT obstruct your view while riding.</strong> Here’s why:
+                                            <ul>
+<li class="black">The HUD is just outside your primary field of view (right hand side).</li>
+<li class="black">The HUD is seamless, appearing to float in the distance, which means you can always concentrate on the road ahead.</li>
+<li class="black">You can quickly see what’s happening behind you or GPS turn-by-turn visual cues because our patented optical technology ensures the that HUD is always in focus.</li>
+<li class="black">The HUD’s infinite focus capability allows you to view and comprehend information instantly without taking your eyes off the road.</li>
+</ul>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title">
+                                            <span>What is the SKULLY limited warranty?</span>
+                                        </div>
+                                        <div class="content">
+                                            <p class="black">The SKULLY AR-1 is covered under Limited Warranty for 12 months from the purchase date for the following:</p>
 <ul>
-<li class="black">> Go to http://store.skully.com/login</li>
-<li class="black">> Click on ""forgot password""</li>
-<li class="black">> Using the email address associated with your Indiegogo account </li>
-<li class="black">> Once you reset your password you should see your account and pre-order info.</li>
+<li class="black">> Defects in materials and workmanship of the AR-1 electronics hardware</li>
+<li class="black">> Defects in materials and workmanship of the original AR-1 firmware/software</li>
+<li class="black">> Battery capacity that has depleted 50% or more compared to original specifications</li>
 </ul>
 
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="title">
-                                        <span>When will my AR-1 ship?</span>
-                                    </div>
-                                    <div class="content">
-                                        <p class="black">You will receive your shipment date when your AR-1 is being built.  If you preordered before the end of October 2015, you should receive your helmet no later than December 15th. Helmet preorders will be fulfilled in the order they were received.  If you backed us early, you will be one of the earliest to receive the AR-1.                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="title">
-                                        <span> Is the AR-1 certified for safety?</span>
-                                    </div>
-                                    <div class="content">
-                                        <p class="black">The SKULLY AR-1 will ship DOT/ECE certified and is currently pending AS/NZS 1698:2006 certification.  ECE is the racing standard for AMA, World SBK, and MotoGP, as well as the largest number of independent racing organizations worldwide. DOT/ECE as a joint standard is one of the most stringent testing standards worldwide.
+<p class="black"><strong>If any of these issues occur, SKULLY will either repair the defect at no cost to you, or exchange the covered equipment for a new replacement.</strong></p>
 
-We did not pursue SNELL approval because it does not grant us any additional homologation. ECE is the racing standard for AMA, World SBK, and MotoGP, as well as the largest number of independent racing organizations worldwide. SNELL is a stand-in certification that allows non-ECE compliant helmets onto ECE racetracks. Further, DOT/ECE as a joint standard is one of the most stringent testing standards worldwide, and includes most of the tests that SNELL requires, but often to a greater extent and with lower energy transfer to the head. SNELL helmets are associated with a higher rate of concussion/TBI in average crash scenarios than DOT/ECE helmets. We want to make sure that we are protecting your brain for the largest majority of scenarios, rather than making sure that it can absorb impacts that would leave the rest of you paralyzed.</p>
-                                    </div>
-                                </li>
-<li>
-                                    <div class="title">
-                                        <span>Does the AR-1 pair with my motorcycle?</span>
-                                    </div>
-                                    <div class="content">
-                                        <p class="black">The AR-1 is fully compatible with the 2016 Aprilia RSV4 and the 2015 Aprilia Caponord.  We will announce more partnerships in the future.  If your current bike has Bluetooth capabilities for telemetry information, the AR-1 might be compatible, but we cannot confirm.  If you know the capacity of the gas tank and MPG, you can program the fuel gauge into your AR-1 via the smartphone app.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="title">
-                                        <span>What does the SKULLY smartphone app do?</span>
-                                    </div>
-                                    <div class="content">
-                                        <p class="black">The app controls the AR-1's GPS, music streaming and firmware updates.</p>
-                                    </div>
-                                </li>
-								<li>
-                                    <div class="title">
-                                        <span>Will the HUD obstruct my view while riding?</span>
-                                    </div>
-                                    <div class="content">
-                                        <p class="black">No. The display is transparent, and we have positioned it outside the rider's primary field of view where it appears to float in the distance. It appears to be about the size of the rider’s outstretched hand. This means you can see the road ahead without any obstruction from the display. This display system simplifies the riding experience because you no longer need to take your eyes off the road to see what is around you or to find your route. With our optical technology, the display is always in focus no matter where you look, allowing instant comprehension of the information.
-</p>
-                                    </div>
-                                </li>
-<li>
-                                    <div class="title">
-                                        <span>What is the SKULLY limited warranty?</span>
-                                    </div>
-                                    <div class="content">
-                                        <p class="black">The SKULLY AR-1 limited warranty covers your AR-1 for 12 months for the following perils:  defects in materials and workmanship of the AR-1 electronics hardware, defects in materials and workmanship of the original AR-1 firmware/software,  battery capacity that has depleted 50% or more from its' original specifications.  If one of these events occur, SKULLY will either repair the defect at no charge, or exchange the covered equipment with a replacement.
+<p class="black">The SKULLY AR-1 Limited Warranty does not cover the following:</p>
 
-The limited warranty does not cover:  accidents such as drops, abuse, misuse, liquid contact, fire, earthquake, external cuases, operating the helmet outside the permitted or intended use or damage from service performed by anyone who is not a representative of SKULLY.  It does not cover lost or stolen helmets, cosmetic damage, consumable parts, preventable maintenance on covered equipment or defects caused by normal wear and tear from normal aging.
+<ul>
+<li class="black">> Accidents such as drops, abuse, misuse, liquid contact, fire, earthquake damage, and external causes</li>
+<li class="black">> Damage that results from operating the helmet outside the permitted or intended use</li>
+<li class="black">> Damage from service performed by anyone who is not a SKULLY representative</li>
+<li class="black">> Lost or stolen helmets</li>
+<li class="black">> Cosmetic damage</li>
+<li class="black">> Consumable parts</li>
+<li class="black">> Preventable maintenance on covered equipment</li>
+<li class="black">> Defects caused by normal wear and tear and equipment aging</li>
+</ul>
 
-If you helmet arrives damaged, you must notify us within 15 days of receiving.  We ask you take pictures if possible and contact us for assistance.
-
-To read to entire warranty policy, visit {warranty}
-</p>
+<p class="black"><strong>If your helmet arrives damaged, you must notify SKULLY within 15 days of its arrival.</strong> If possible, we ask that you take pictures of the helmet and areas of damage before contacting us for assistance. We need as much information as possible to help you! Our complete Limited Warranty policy is always available for your reference.
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="title">
+                                            <span>Which regions of the world does the GPS work in?</span>
+                                        </div>
+                                        <div class="content">
+                                            <p class="black">The SKULLY AR-1’s GPS system works in any country in the world. Using map data powered by a community of contributors, our turn-by-turn navigation is more detailed and up-to-date than other commercially available systems. Our GPS system also displays accurate information to help you avoid traffic jams with real-time traffic alerts and intelligent rerouting. <strong>What if you find yourself outside cellular coverage? </strong>The SKULLY AR-1’s GPS system lets you access stored maps, so you never get lost.   </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <!--end of accordion-->
+                            </div>
+                        </div>
+                        <!--end of row-->
+                    </div>
+                    <!--end of container-->
+            </section>
+            <footer class="footer-1 bg-dark">
+                <!-- FOOTER TEMPLATE -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-6">
+                            <img alt="Logo" class="logo" src="img/logo-light.png" />
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="widget">
+                                <h6 class="title">Latest Updates</h6>
+                                <hr>
+                                <div class="twitter-feed">
+                                    <div class="tweets-feed slides" data-widget-id="623173244095303680">
+                                        <div id="tweets"></div>
                                     </div>
-                                </li>
- <li>
-                                    <div class="title">
-                                        <span>Which regions of the world does the GPS work in?</span>
-                                    </div>
-                                    <div class="content">
-                                        <p class="black">Our GPS system is based on crowd-sourced maps and navigation from almost 200 countries worldwide. The GPS system will be able to navigate using stored maps even when outside cellular coverage. Our crowd-sourced maps are often more detailed and more up to date than commercially available maps.</p>
-                                    </div>
-                                </li>
-
-                            </ul>
-                            <!--end of accordion-->
+                                </div>
+                            </div>
+                            <!--end of widget-->
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="widget">
+                                <h6 class="title">Instagram</h6>
+                                <hr>
+                                <div class="instafeed" data-user-name="skullysystems">
+                                    <ul></ul>
+                                </div>
+                            </div>
+                            <!--end of widget-->
                         </div>
                     </div>
                     <!--end of row-->
-                </div>
-                <!--end of container-->
-            </section>
-
-    <footer class="footer-1 bg-dark">
-        <!-- FOOTER TEMPLATE -->
-<div class="container">
-    <div class="row">
-        <div class="col-md-2 col-sm-6">
-            <img alt="Logo" class="logo" src="img/logo-light.png" />
-        </div>
-        <div class="col-md-6 col-sm-6">
-            <div class="widget">
-                <h6 class="title">Latest Updates</h6>
-                <hr>
-
-                <div class="twitter-feed">
-                    <div class="tweets-feed slides" data-widget-id="623173244095303680">
-                            <div id="tweets"></div>
-
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <span class="sub">&copy; Copyright 2015 - Skully</span>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <ul class="list-inline social-list">
+                                <li>
+                                    <a href="https://twitter.com/skullysystems" target="_blank">
+                                        <i class="ti-twitter-alt"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/SKULLYSystems" target="_blank">
+                                        <i class="ti-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://instagram.com/skullysystems/" target="_blank">
+                                        <i class="ti-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/videos" target="_blank">
+                                        <i class="ti-youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <!--end of container-->
+                <a class="btn btn-sm fade-half back-to-top inner-link" href="#top">Top</a>
+                <!-- |||||||||||||||||||||| -->
+            </footer>
             </div>
-            <!--end of widget-->
-        </div>
-        <div class="col-md-4 col-sm-6">
-            <div class="widget">
-                <h6 class="title">Instagram</h6>
-                <hr>
-                <div class="instafeed" data-user-name="skullysystems">
-                    <ul></ul>
-                </div>
-            </div>
-            <!--end of widget-->
-        </div>
-    </div>
-    <!--end of row-->
-    <div class="row">
-        <div class="col-sm-6">
-            <span class="sub">&copy; Copyright 2015 - Skully</span>
-        </div>
-        <div class="col-sm-6 text-right">
-            <ul class="list-inline social-list">
-                <li>
-                    <a href="https://twitter.com/skullysystems" target="_blank">
-                        <i class="ti-twitter-alt"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/SKULLYSystems" target="_blank">
-                        <i class="ti-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://instagram.com/skullysystems/" target="_blank">
-                        <i class="ti-instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="/videos" target="_blank">
-                        <i class="ti-youtube"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-<!--end of container-->
-<a class="btn btn-sm fade-half back-to-top inner-link" href="#top">Top</a>
-        <!-- |||||||||||||||||||||| -->
-    </footer>
-    </div>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/flexslider.min.js"></script>
+            <script src="js/lightbox.min.js"></script>
+            <script src="js/masonry.min.js"></script>
+            <script src="js/twitterfetcher.min.js"></script>
+            <script src="js/spectragram.min.js"></script>
+            <script src="js/ytplayer.min.js"></script>
+            <script src="js/countdown.min.js"></script>
+            <script src="js/smooth-scroll.min.js"></script>
+            <script src="js/scripts.js"></script>
+            <script src="js/parallax.js"></script>
+</body>
 
-
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/flexslider.min.js"></script>
-    <script src="js/lightbox.min.js"></script>
-    <script src="js/masonry.min.js"></script>
-    <script src="js/twitterfetcher.min.js"></script>
-    <script src="js/spectragram.min.js"></script>
-    <script src="js/ytplayer.min.js"></script>
-    <script src="js/countdown.min.js"></script>
-    <script src="js/smooth-scroll.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="js/parallax.js"></script>
-
-
-
-    </body>
 </html>

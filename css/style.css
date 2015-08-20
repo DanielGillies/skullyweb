@@ -2301,7 +2301,7 @@ form iframe.mail-list-form {
 }
 
 .accordion li.active .content {
-  max-height: 400px;
+  max-height: 800px;
 }
 
 .accordion p:last-child {
