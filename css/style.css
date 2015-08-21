@@ -354,11 +354,18 @@ h1.large {
   font-weight: 100;
 }
 
+h1.large2 {
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 100;
+}
+
 @media all and (max-width: 990px) {
   h1.large {
     font-size: 56px;
     line-height: 64px;
   }
+
 }
 
 h2 {
