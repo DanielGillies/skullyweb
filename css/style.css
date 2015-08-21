@@ -6515,7 +6515,7 @@ footer.bg-dark a {
 
 /* PRESS POPUPS */
 .github, .twitter, .dribble {
-	float: left;
+	/*float: left;*/
 	text-align: center;
 	font-size: 12px;
 	color: white;
