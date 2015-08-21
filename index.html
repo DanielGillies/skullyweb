@@ -287,7 +287,7 @@
                         <div class="col-sm-12 text-center">
                             <h3 class="mb8">Join #SKULLYNation Now</h3>
                             <p>Secret events, cool prizes, exclusive updates.
-                                <br>When we're in town, you'll know.</p>
+                                <br>When we're in town, <span id="hovertext">you'll know.</span></p>
                         </div>
                     </div>
                     <div class="row mb80 mb-xs-24">
@@ -384,6 +384,11 @@
         </div>
         <audio id="eggif">
             <source src="video/scatman.mp3" type="audio/mpeg">
+            <source src="video/scatman.ogg" type="audio/ogg">
+        </audio>
+        <audio id="hoversound">
+            <source src="video/scatman.mp3" type="audio/mpeg">
+            <source src="video/scatman.ogg" type="audio/ogg">
         </audio>
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -401,6 +406,14 @@
         <script src="js/velocity.min.js"></script>
         <script src="js/jquery.avgrund.js"></script>
         <script type="text/javascript">
+
+
+        // HOVER SOUND
+        var audio = $("#hoversound")[0];
+        $("#hovertext").mouseenter(function() {
+            audio.play();
+        });
+
         /* Avgrund jQuery plugin
          * Get plugin, see demo and read documentation here -
          * http://labs.voronianski.com/jquery.avgrund.js/
