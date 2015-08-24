@@ -5,40 +5,17 @@
     <meta charset="utf-8">
     <title>skully</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="../static/css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/flexslider.min.css" rel="stylesheet" type="text/css" media="all" />
+
+    <link href="../static/css/style.css" rel="stylesheet" type="text/css" media="all" />
+
+    <link href="../static/css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../static/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../static/css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="../static/css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link href="../static/css/avgrund.css" rel="stylesheet" type="text/css" media="all" />
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
-    <!--egg js-->
-    <script type="text/javascript" src="https://cdn.rawgit.com/mikeflynn/egg.js/master/egg.min.js"></script>
-    <style type="text/css">
-    #egggif {
-        position: fixed;
-        top: 33%;
-        left: 25%;
-        display: none;
-        z-index: 10000;
-    }
-    </style>
-    <script type="text/javascript">
-    window.heap = window.heap || [], heap.load = function(t, e) {
-        window.heap.appid = t, window.heap.config = e;
-        var a = document.createElement("script");
-        a.type = "text/javascript", a.async = !0, a.src = ("https:" === document.location.protocol ? "https:" : "http:") + "//cdn.heapanalytics.com/js/heap-" + t + ".js";
-        var n = document.getElementsByTagName("script")[0];
-        n.parentNode.insertBefore(a, n);
-        for (var o = function(t) {
-                return function() {
-                    heap.push([t].concat(Array.prototype.slice.call(arguments, 0)))
-                }
-            }, p = ["clearEventProperties", "identify", "setEventProperties", "track", "unsetEventProperty"], c = 0; c < p.length; c++) heap[p[c]] = o(p[c])
-    };
-    heap.load("1485530683");
-    </script>
 </head>
 
 <body>
@@ -47,8 +24,8 @@
        <div class="nav-bar">
          <div class="module left">
            <a href="index.html">
-             <img class="logo logo-light" alt="SKULLY" src="../assets/img/logo-light.png" />
-             <img class="logo logo-dark" alt="SKULLY" src="../assets/img/logo-dark.png" />
+             <img class="logo logo-light" alt="SKULLY" src="../static/img/logo-light.png" />
+             <img class="logo logo-dark" alt="SKULLY" src="../static/img/logo-dark.png" />
            </a>
          </div>
          <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
@@ -117,20 +94,6 @@
                  <a class="btn btn-sm btn-filled" href="shop-product-fullwidth.html">STORE</a>
                </div>
              </div>
-             <!--end of menu module-->
-             <div class="module widget-handle search-widget-handle left">
-               <div class="search">
-                 <i class="ti-search"></i>
-                 <span class="title">Search Site</span>
-               </div>
-               <div class="function">
-                 <form class="search-form">
-                   <input type="text" placeholder="Type Here" />
-                 </form>
-               </div>
-               
-               
-             </div>
              <!--end of module group-->
            </div>
         </nav>
@@ -157,7 +120,7 @@
             <section class="image-square left small">
                 <div class="col-md-6 image">
                     <div class="background-image-holder">
-                        <img alt="image" class="background-image" src="../assets/img/small1.jpg">
+                        <img alt="image" class="background-image" src="../static/img/small1.jpg">
                     </div>
                 </div>
                 <div class="col-md-6 col-md-offset-1 content">
@@ -226,59 +189,15 @@
                     <div class="col-md-8 col-md-offset-2 col-sm-12 text-center">
                             <h4 class="uppercase mb80 black">BEHIND THE SCENES WITH THE CEO</h4>
                         </div>
-                            <!--                            <div class="image-tile inner-title hover-reveal text-center"> -->
                             <script src="//assets.juicer.io/embed.js" type="text/javascript"></script>
                             <link href="//assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css" />
                             <ul class="juicer-feed" data-feed-id="skully" data-per="9" data-pages="1"></ul>
-                            <!--                            </div> -->
-                        <!--
-                        <div class="col-md-4 col-sm-6 masonry-item project" data-filter="SKULLY IN THE NEWS">
-                            <div class="image-tile inner-title hover-reveal text-center">
-                                <a href="#">
-                                    <img alt="Pic" src="img/project-single-5.jpg">
-                                    <div class="title">
-                                        <h5 class="uppercase mb0">Read</h5>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 masonry-item project" data-filter="LIFE WITH SKULLY">
-                            <div class="image-tile inner-title hover-reveal text-center">
-                                <a href="#">
-                                    <img alt="Pic" src="img/project-single-4.jpg">
-                                    <div class="title">
-                                        <h5 class="uppercase mb0">Learn</h5>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 masonry-item project" data-filter="NEWS">
-                            <div class="image-tile inner-title hover-reveal text-center">
-                                <a href="#">
-                                    <img alt="Pic" src="img/project-single-6.jpg">
-                                    <div class="title">
-                                        <h5 class="uppercase mb0">Latest</h5>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 masonry-item project" data-filter="PRODUCTION">
-                            <div class="image-tile inner-title hover-reveal text-center">
-                                <a href="#">
-                                    <img alt="Pic" src="img/project-single-2.jpg">
-                                    <div class="title">
-                                        <h5 class="uppercase mb0">Reinvent</h5>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
--->
                     </div>
                 </div>
             </section>
             <section class="image-bg overlay">
                 <div class="background-image-holder">
-                    <img alt="image" class="background-image" src="../assets/img/home12.jpg">
+                    <img alt="image" class="background-image" src="../static/img/home12.jpg">
                 </div>
                 <div class="container">
                 <a name="signup">
@@ -300,27 +219,21 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12 text-center spread-children-large">
-                            <a style="cursor:pointer;" id="show1"><img alt="pic" class="image-xxs mb-xs-8 fade-1-4" src="../assets/img/press1.png"></a>
-                            <!-- CNN: June 21, 2014 “Game-Changing Gadgets” -->
-                            <a style="cursor:pointer;" id="show2"><img alt="pic" class="image-xxs mb-xs-8 fade-1-4 invert" src="../assets/img/press5.png"></a>
-                            <!-- Popular Science: February 5, 2014 “A Motorcycle Helmet for the Digital World”-->
-                            <a style="cursor:pointer;" id="show3"><img alt="pic" class="image-xxs mb-xs-8 fade-1-4" src="../assets/img/press3.png"></a>
-                            <!--August 14, 2014 “The SKULLY Smart Helmet Is the Fastest Funded Indiegogo Campaign to Hit $1M”
-                                    August 11, 2014 “The SKULLY Smart Motorcycle Helmet Sharpens Your Senses on the Road"
-                                    January 14, 2015 “Smart Helmet Maker SKULLY Has Raised Another $1.5 Million”-->
-                            <a style="cursor:pointer;" id="show4"><img alt="pic" class="image-xxs mb-xs-8 fade-1-4" src="../assets/img/press4.png"></a>
-                            <!--October 15, 2013 "This Slick Augmented-reality Helmet Has a Rearview Camera, Weather Reports"-->
+                            <a style="cursor:pointer;" id="show1"><img alt="pic" class="image-xxs mb-xs-8 fade-1-4" src="../static/img/press1.png"></a>
+                            <a style="cursor:pointer;" id="show2"><img alt="pic" class="image-xxs mb-xs-8 fade-1-4 invert" src="../static/img/press5.png"></a>
+                            <a style="cursor:pointer;" id="show3"><img alt="pic" class="image-xxs mb-xs-8 fade-1-4" src="../static/img/press3.png"></a>
+                            <a style="cursor:pointer;" id="show4"><img alt="pic" class="image-xxs mb-xs-8 fade-1-4" src="../static/img/press4.png"></a>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
         <footer class="footer-1 bg-dark">
-            <!-- FOOTER TEMPLATE -->
+            <!-- FOOTER BEGINS -->
             <div class="container">
                 <div class="row">
                     <div class="col-md-2 col-sm-6">
-                        <img alt="Logo" class="logo" src="../assets/img/logo-light.png" />
+                        <img alt="Logo" class="logo" src="../static/img/logo-light.png" />
                     </div>
                     <div class="col-md-6 col-sm-6">
                         <div class="widget">
@@ -379,9 +292,10 @@
             <!--end of container-->
             <a class="btn btn-sm fade-half back-to-top inner-link" href="#top">Top</a>
             <!-- |||||||||||||||||||||| -->
+            <button class="scatbutton">ITS SCATMAN TIME</button>
         </footer>
         </div>
-        <audio id="eggif">
+        <audio id="scatman">
             <source src="../assets/audio/scatman.mp3" type="audio/mpeg">
             <source src="../assets/audio/scatman.ogg" type="audio/ogg">
         </audio>
@@ -395,7 +309,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/js/lightbox.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
         <script src="../static/js/vendor.js"></script>
-                <script src="../static/js/main.js"></script>
+        <script src="../static/js/main.js"></script>
         <script type="text/javascript">
 
 
@@ -404,6 +318,21 @@
         $("#hovertext").mouseenter(function() {
             console.log("WEFWEFWEFWEF");
             audio.play();
+        });
+
+        // SCATMAN!!! (Bottom right ;P)
+        var audio2 = $("#scatman")[0];
+        $(".scatbutton").click(function() {
+
+            audio2.currentTime = 6;
+            audio2.volume = .3;
+            audio2.play();
+            // setTimeout(function() {audio.pause();}, 7150);
+            setTimeout(function() {
+                audio2.pause();
+            }, 7950);
+            console.log("ITS SCATMAN TIME!!!!");
+
         });
 
         /* Avgrund jQuery plugin
@@ -501,24 +430,6 @@
                 '</div>' +
                 '</div>'
         });
-
-        // EASTER EGG
-        var egg = new Egg();
-        egg.addCode("s,c,a,t,m,a,n", function() {
-            var audio = document.getElementById("eggif");
-            audio.currentTime = 6;
-            audio.volume = .3;
-            audio.play();
-            // setTimeout(function() {audio.pause();}, 7150);
-            setTimeout(function() {
-                audio.pause();
-            }, 7950);
-
-        }, "ITS SCATMAN TIME");
-        egg.addHook(function() {
-            console.log(this.activeEgg.metadata);
-        });
-        egg.listen();
         </script>
 </body>
 

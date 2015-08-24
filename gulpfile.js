@@ -5,37 +5,77 @@ var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var mqpacker = require('css-mqpacker');
 var csswring = require('csswring');
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant')
+var del = require('del');
+
+
+var paths = {
+   css: {
+     src: __dirname + '/assets/css/*.css',
+     dest: __dirname + '/static/css',
+   },
+   vendorjs: {
+     src: __dirname + '/assets/js/vendor/*.js',
+     dest: __dirname + '/static/js',
+   },
+   userjs: {
+     src: __dirname + '/assets/js/*.js',
+     dest: __dirname + '/static/js',
+   },
+   img: {
+    src: __dirname + '/assets/img/*',
+    dest: __dirname + '/static/img'
+ }
+};
 
 gulp.task('vendorjs', function() {
-    return gulp.src('assets/js/vendor/*.js')
+    return gulp.src(paths.vendorjs.src)
     .pipe(concat('vendor.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('static/js'))
+    .pipe(gulp.dest(paths.vendorjs.dest))
 });
 
 gulp.task('js', function() {
-    return gulp.src('assets/js/*.js')
+    return gulp.src(paths.userjs.src)
     .pipe(concat('main.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('static/js'))
+    .pipe(gulp.dest(paths.userjs.dest))
 });
 
 gulp.task('css', function () {
     var processors = [
-        autoprefixer({browsers: ['last 1 version']}),
+        autoprefixer({browsers: ['last 3 versions']}),
         mqpacker,
         csswring
     ];
-    return gulp.src('assets/css/*.css')
+    return gulp.src([paths.css.src, '!'+paths.usercss.src])
         .pipe(postcss(processors))
-        .pipe(gulp.dest('static/css'));
+        .pipe(gulp.dest(paths.css.dest));
+
+});
+
+gulp.task('compress', function () {
+    return gulp.src(paths.img.src)
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        }))
+        .pipe(gulp.dest(paths.img.dest));
+});
+
+gulp.task('clean', function() {
+    del([paths.css.dest, paths.userjs.dest], function() {
+    process.exit(0)
+    });
 });
 
 gulp.task('default', function() {
     gulp.run('vendorjs');
     gulp.run('js');
     gulp.run('css');
-})
+});
 
 
 // var autoprefixer = require('autoprefixer-core');

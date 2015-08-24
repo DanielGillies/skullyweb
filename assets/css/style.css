@@ -42,7 +42,7 @@ Contents
 
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
 
-/*!---------- 1. GLOBAL STYLES ----------*/
+/*---------- 1. GLOBAL STYLES ----------*/
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -205,7 +205,7 @@ hr {
 }
 
 
-/*!---------- 2. MIXINS ----------*/
+/*---------- 2. MIXINS ----------*/
 
 .v-align-children {
   display: -webkit-flex;
@@ -275,7 +275,7 @@ hr {
 }
 
 
-/*!---------- 3. TYPOGRAPHY ----------*/
+/*---------- 3. TYPOGRAPHY ----------*/
 
 @media all and (max-width: 767px) {
   .text-center-xs {
@@ -620,7 +620,7 @@ blockquote .author {
 }
 
 
-/*!---------- 4. COLOURS ----------*/
+/*---------- 4. COLOURS ----------*/
 
 .bg-primary {
   background: #13181d !important;
@@ -667,7 +667,7 @@ blockquote .author {
   color: #0000 !important;
 }
 
-/*!---------- 5. SECTIONS ----------*/
+/*---------- 5. SECTIONS ----------*/
 
 section,
 footer {
@@ -857,7 +857,7 @@ footer.bg-dark li,
 }
 
 
-/*!---------- 6. BUTTONS ----------*/
+/*---------- 6. BUTTONS ----------*/
 
 .btn {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1002,7 +1002,7 @@ body.btn-rounded .btn {
 }
 
 
-/*!---------- 7. NAVIGATION ----------*/
+/*---------- 7. NAVIGATION ----------*/
 
 .nav-container {
   -webkit-backface-visibility: hidden;
@@ -1779,7 +1779,7 @@ nav.bg-dark .nav-bar {
 }
 
 
-/*!---------- 8. TOOLTIPS ----------*/
+/*---------- 8. TOOLTIPS ----------*/
 
 .tooltip {
   font-weight: 600;
@@ -1792,7 +1792,7 @@ nav.bg-dark .nav-bar {
 }
 
 
-/*!---------- 9. ALERTS ----------*/
+/*---------- 9. ALERTS ----------*/
 
 .alert {
   margin-bottom: 24px;
@@ -1832,7 +1832,7 @@ nav.bg-dark .nav-bar {
 }
 
 
-/*!---------- 10. ICONS ----------*/
+/*---------- 10. ICONS ----------*/
 
 .icon {
   font-size: 64px;
@@ -1883,7 +1883,7 @@ nav.bg-dark .nav-bar {
 }
 
 
-/*!---------- 11. FORMS ----------*/
+/*---------- 11. FORMS ----------*/
 
 input,
 select,
@@ -2287,7 +2287,7 @@ form iframe.mail-list-form {
 }
 
 
-/*!---------- 12. ACCORDIONS ----------*/
+/*---------- 12. ACCORDIONS ----------*/
 
 .accordion .title {
   cursor: pointer;
@@ -2421,7 +2421,7 @@ form iframe.mail-list-form {
 }
 
 
-/*!---------- 13. TABBED CONTENT ----------*/
+/*---------- 13. TABBED CONTENT ----------*/
 
 .tabs {
   overflow: hidden;
@@ -2688,7 +2688,7 @@ form iframe.mail-list-form {
 }
 
 
-/*!---------- 14. PROGRESS BARS ----------*/
+/*---------- 14. PROGRESS BARS ----------*/
 
 .progress-bars {
   margin-bottom: 24px;
@@ -2768,7 +2768,7 @@ form iframe.mail-list-form {
 }
 
 
-/*!---------- 15. STATS ----------*/
+/*---------- 15. STATS ----------*/
 
 .stat-2 h1 {
   font-size: 80px;
@@ -2786,7 +2786,7 @@ form iframe.mail-list-form {
 }
 
 
-/*!---------- 16. BREADCRUMBS ----------*/
+/*---------- 16. BREADCRUMBS ----------*/
 
 .breadcrumb {
   margin-bottom: 24px;
@@ -2851,7 +2851,7 @@ form iframe.mail-list-form {
 }
 
 
-/*!---------- 17. PAGINATION ----------*/
+/*---------- 17. PAGINATION ----------*/
 
 .pagination {
   margin: 0;
@@ -2881,7 +2881,7 @@ form iframe.mail-list-form {
 }
 
 
-/*!---------- 18. ICON FEATURES ----------*/
+/*---------- 18. ICON FEATURES ----------*/
 
 .feature.boxed {
   padding: 32px;
@@ -3078,7 +3078,7 @@ form iframe.mail-list-form {
 }
 
 
-/*!---------- 19. PRICING TABLES ----------*/
+/*---------- 19. PRICING TABLES ----------*/
 
 .pricing-table {
   padding: 48px 32px;
@@ -3126,7 +3126,7 @@ form iframe.mail-list-form {
 }
 
 
-/*!---------- 20. PAGE TITLES ----------*/
+/*---------- 20. PAGE TITLES ----------*/
 
 .page-title {
   padding: 0;
@@ -3215,7 +3215,7 @@ form iframe.mail-list-form {
 }
 
 
-/*!---------- 21. WIDGETS ----------*/
+/*---------- 21. WIDGETS ----------*/
 
 .widget {
   margin-bottom: 48px;
@@ -3430,7 +3430,7 @@ form iframe.mail-list-form {
 }
 
 
-/*!---------- 22. IMAGE TILES ----------*/
+/*---------- 22. IMAGE TILES ----------*/
 
 
 /* --------------------------------
@@ -4056,7 +4056,7 @@ img {
 }
 
 
-/*!---------- 23. SLIDERS ----------*/
+/*---------- 23. SLIDERS ----------*/
 
 .image-slider {
   position: relative;
@@ -4293,7 +4293,7 @@ img {
 }
 
 
-/*!---------- 24. IMAGE GALLERIES ----------*/
+/*---------- 24. IMAGE GALLERIES ----------*/
 
 .instafeed.grid-gallery {
   overflow: hidden;
@@ -4436,7 +4436,7 @@ img {
 }
 
 
-/*!---------- 25. INTROS ----------*/
+/*---------- 25. INTROS ----------*/
 
 .cover {
   margin: 0;
@@ -4533,7 +4533,7 @@ img {
 }
 
 
-/*!---------- 26. SHOP ----------*/
+/*---------- 26. SHOP ----------*/
 
 .product-single .image-slider .label {
   font-size: 12px;
@@ -4685,7 +4685,7 @@ td {
 }
 
 
-/*!---------- 27. VIDEO ----------*/
+/*---------- 27. VIDEO ----------*/
 
 iframe {
   border: none;
@@ -4996,7 +4996,7 @@ video {
 }
 
 
-/*!---------- 28. BLOG ----------*/
+/*---------- 28. BLOG ----------*/
 
 .post-title .label {
   margin-right: 16px;
@@ -5233,7 +5233,7 @@ video {
 }
 
 
-/*!---------- 29. IMAGE BLOCKS ----------*/
+/*---------- 29. IMAGE BLOCKS ----------*/
 
 .image-small {
   max-height: 80px;
@@ -5403,7 +5403,7 @@ video {
 }
 
 
-/*!---------- 30. PORTOFLIO ----------*/
+/*---------- 30. PORTOFLIO ----------*/
 
 .filters {
   overflow: hidden;
@@ -5545,7 +5545,7 @@ video {
 }
 
 
-/*!---------- 31. TESTIMONIALS ----------*/
+/*---------- 31. TESTIMONIALS ----------*/
 
 .testimonials h4 {
   line-height: 40px;
@@ -5585,7 +5585,7 @@ video {
 }
 
 
-/*!---------- 32. COUNTDOWNS ----------*/
+/*---------- 32. COUNTDOWNS ----------*/
 
 .countdown {
   font-size: 80px;
@@ -5616,7 +5616,7 @@ video {
 }
 
 
-/*!---------- 33. MAPS ----------*/
+/*---------- 33. MAPS ----------*/
 
 .map-holder {
   overflow: hidden;
@@ -5653,7 +5653,7 @@ video {
 }
 
 
-/*!---------- 34. TWITTER ----------*/
+/*---------- 34. TWITTER ----------*/
 
 .twitter-feed.thirds li {
   width: 33.333333%;
@@ -5705,7 +5705,7 @@ video {
 }
 
 
-/*!---------- 35. FOOTERS ----------*/
+/*---------- 35. FOOTERS ----------*/
 
 footer.bg-dark a {
   color: #fff;
@@ -5771,7 +5771,7 @@ footer.bg-dark a {
 }
 
 
-/*!---------- 36. SPACING ----------*/
+/*---------- 36. SPACING ----------*/
 
 .mr0 {
   margin-right: 0;
@@ -6918,4 +6918,13 @@ header h1 {
   .cd-modal-close {
     top: 70px;
   }
+}
+
+.scatbutton {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: black;
+    background-color: black;
+    border: none;
 }
