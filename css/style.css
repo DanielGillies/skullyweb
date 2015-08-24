@@ -500,6 +500,10 @@ p.lead {
   color: #888888;
 }
 
+.blue {
+    color: #0000FF !important;
+}
+
 .sub {
   font-size: 12px;
 }
@@ -2919,7 +2923,7 @@ form iframe.mail-list-form {
 }
 
 .feature-3 i {
-  color: #EA1C2C;
+  color: #838383;
 }
 
 .feature-4 .left {
