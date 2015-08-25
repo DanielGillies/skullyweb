@@ -164,6 +164,7 @@ $(document).ready(function() {
     // Mobile Menu
     $('.mobile-toggle').click(function() {
         $('.nav-bar').toggleClass('nav-open');
+        $('.has-dropdown').toggleClass('toggle-sub');
         $(this).toggleClass('active');
     });
 
