@@ -10,6 +10,8 @@ var pngquant = require('imagemin-pngquant')
 var del = require('del');
 var watchify = require('watchify');
 var watch = require('gulp-watch');
+var batch = require('gulp-batch');
+var runSequence = require('run-sequence');
 
 var paths = {
    src: __dirname + 'assets',
@@ -29,23 +31,41 @@ var paths = {
      dest: __dirname + '/static/js',
    },
    img: {
-    src: __dirname + '/assets/img',
+    src: __dirname + '/assets/img/*',
     dest: __dirname + '/static/img'
     }
 };
 
-gulp.task('watch22', function() {
-    return gulp.src(paths.src + '/**/*', {base: paths.src})
-    .pipe(watch(paths.src, {base: paths.src}))
-    .pipe(gulp.dest(paths.dest))
-    });
-
 // WATCH TASK
-gulp.task('watch', function() {
-   gulp.watch(paths.css.src, ['css']);
-   gulp.watch(paths.vendorjs.src, ['vendorjs']);
-   gulp.watch(paths.userjs.src, ['js']);
-   gulp.watch(paths.img.src, ['compress']);
+gulp.task('watch', ['watchcss', 'watchjs', 'watchimg', 'watchvendor']);
+
+gulp.task('watchvendor', function() {
+    watch(paths.vendorjs.src, batch(function(events, done) {
+        gulp.start('vendorjs');
+        done();
+    }))
+})
+
+gulp.task('watchcss', function() {
+    watch(paths.css.src, batch(function(events, done) {
+        gulp.start('css');
+        done();
+    }));
+});
+
+gulp.task('watchjs', function() {
+    watch(paths.userjs.src, batch(function(events, done){
+        gulp.start('js');
+        done();
+    }));
+});
+
+gulp.task('watchimg', function() {
+    watch(paths.img.src, batch(function(events, done) {
+        gulp.start('compress');
+        del(paths.img.src);
+        done();
+    }));
 });
 
 gulp.task('vendorjs', function() {
@@ -82,6 +102,17 @@ gulp.task('compress', function () {
             use: [pngquant()]
         }))
         .pipe(gulp.dest(paths.img.dest));
+});
+
+
+gulp.task('cleancss', function() {
+    return del(paths.css.dest, function() {
+    });
+});
+
+gulp.task('cleanjs', function() {
+    return del(paths.userjs.dest, function() {
+    });
 });
 
 gulp.task('clean', function() {
