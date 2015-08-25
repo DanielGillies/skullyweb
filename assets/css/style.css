@@ -3268,6 +3268,18 @@ form iframe.mail-list-form {
   text-transform: uppercase;
 }
 
+.twitter-feed .user img {
+    display: none;
+}
+
+.twitter-feed .tweet {
+    color: #858585;
+}
+
+.twitter-feed .tweet a {
+    color: #A8A8A8;
+}
+
 .widget .twitter-feed .timePosted {
   display: none;
 }
