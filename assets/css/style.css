@@ -2263,7 +2263,7 @@ form iframe.mail-list-form {
 }
 
 .accordion li.active .content {
-  max-height: 800px;
+    max-height: 10000px;
 }
 
 .accordion p:last-child {
