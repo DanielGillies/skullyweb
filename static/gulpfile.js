@@ -12,10 +12,6 @@ var watchify = require('watchify');
 var watch = require('gulp-watch');
 
 var paths = {
-   src: __dirname + 'assets',
-
-   dest: __dirname + 'static',
-
    css: {
      src: __dirname + '/assets/css/*.css',
      dest: __dirname + '/static/css',
@@ -34,11 +30,11 @@ var paths = {
     }
 };
 
-gulp.task('watch22', function() {
-    return gulp.src(paths.src + '/**/*', {base: paths.src})
-    .pipe(watch(paths.src, {base: paths.src}))
-    .pipe(gulp.dest(paths.dest))
-    });
+gulp.task('stream', function () {
+    return gulp.src('assets/*')
+        .pipe(watch('*'))
+        .pipe(gulp.dest('static'));
+});
 
 // WATCH TASK
 gulp.task('watch', function() {
@@ -90,7 +86,13 @@ gulp.task('clean', function() {
     });
 });
 
-gulp.task('default', ['vendorjs', 'js', 'css', 'watch']);
+gulp.task('default', function() {
+    gulp.run('vendorjs');
+    gulp.run('js');
+    gulp.run('css');
+    gulp.run('watch');
+});
+
 
 // var autoprefixer = require('autoprefixer-core');
 // var browserSync = require('browser-sync');
