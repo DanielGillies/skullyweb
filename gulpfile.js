@@ -8,10 +8,8 @@ var csswring = require('csswring');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant')
 var del = require('del');
-var watchify = require('watchify');
 var watch = require('gulp-watch');
 var batch = require('gulp-batch');
-var runSequence = require('run-sequence');
 
 var paths = {
    src: __dirname + 'assets',
