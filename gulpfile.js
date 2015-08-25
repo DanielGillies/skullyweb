@@ -49,7 +49,7 @@ gulp.task('css', function () {
         mqpacker,
         csswring
     ];
-    return gulp.src([paths.css.src, '!'+paths.usercss.src])
+    return gulp.src(paths.css.src)
         .pipe(postcss(processors))
         .pipe(gulp.dest(paths.css.dest));
 

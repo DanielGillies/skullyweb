@@ -3834,7 +3834,7 @@ img {
 .inner-title:before {
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;s
+  -moz-transition: all 0.5s ease;
   content: '';
   position: absolute;
   left: 0;
