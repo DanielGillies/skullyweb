@@ -670,8 +670,7 @@ $(window).load(function() {
 }); 
 
 $('document').ready(function () {
-	    // Resize fullscreen video backgrounds to cover parent
-
+    // Resize fullscreen video backgrounds to cover parent
     resizeVid();
 })
 
