@@ -433,7 +433,7 @@ h6,
 }
 
 h1.uppercase {
-  letter-spacing: 17px;
+  letter-spacing: 14px;
   margin-right: -17px;
 }
 
@@ -5342,9 +5342,10 @@ video {
 
 @media all and (max-width: 990px) {
   .image-square {
+    position: relative;
     height: auto;
     max-height: 100000px;
-    margin-bottom: 48px;
+    /*margin-bottom: 48px;*/
   }
   .image-square .image,
   .image-square .content {
@@ -5352,7 +5353,7 @@ video {
   }
   .image-square .image {
     height: 100vw;
-    margin-bottom: 48px;
+    /*margin-bottom: 48px;*/
     max-height: 500px;
   }
   .image-square .content {
