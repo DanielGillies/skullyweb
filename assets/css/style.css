@@ -1109,6 +1109,8 @@ nav.bg-dark .logo-dark {
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
+    width: 100%;
+
 }
 .menu li a:hover {
   opacity: 1 !important;
