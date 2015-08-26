@@ -17,7 +17,6 @@
 		factory(jQuery);
 	}
 }(function ($) {
-	console.log("GOT IT");
 	$.fn.avgrund = function (options) {
 		var defaults = {
 			width: 380, // max = 640
