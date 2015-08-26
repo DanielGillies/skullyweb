@@ -6907,3 +6907,7 @@ header h1 {
     border: none;
 }
 
+/* FIX FOR JUICER BUTTON */
+.j-paginate {
+    display: none !important;
+}
