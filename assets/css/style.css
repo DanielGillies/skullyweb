@@ -434,7 +434,14 @@ h6,
 
 h1.uppercase {
   letter-spacing: 12px;
-  /*margin-right: -12px;*/
+  margin-right: -12px;
+}
+
+@media all and (max-width: 990px) {
+  h1.uppercase{
+    letter-spacing: 6px;
+    margin-right: 0px;
+  }
 }
 
 h2.uppercase {
@@ -3323,6 +3330,10 @@ form iframe.mail-list-form {
 
 .bg-dark .widget .twitter-feed .slides li:before {
   color: #fff;
+}
+
+.twitter-feed img {
+    display: none;
 }
 
 .widget .instafeed li {
@@ -6911,3 +6922,13 @@ header h1 {
 .j-paginate {
     display: none !important;
 }
+
+.biolink {
+    color: #FFFFFF;
+    font-weight: normal;
+}
+
+.awesomeblue {
+    color: #167896;
+}
+
