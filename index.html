@@ -129,7 +129,7 @@
             <!--end of container-->
             <section class="image-square left small">
             <div class="row">
-                <div class="col-md-6 col-xs-12 image">
+                <div class="face col-md-6 col-xs-12 image">
                     <div class="background-image-holder">
                         <img alt="image" class="background-image" src="static/img/small1.jpg">
                     </div>
@@ -402,7 +402,14 @@
          *
          * (c)2012, MIT Licensed, http://pixelhunter.me
          */
-
+function detectmob() {
+   if(window.innerWidth <= 800 && window.innerHeight <= 600) {
+     return true;
+   } else {
+     return false;
+   }
+}
+if (!detectmob()) {
         $('#show1').avgrund({
             height: 360,
             width: 500,
@@ -490,6 +497,7 @@
                 '</div>' +
                 '</div>'
         });
+}
         </script>
 </body>
 

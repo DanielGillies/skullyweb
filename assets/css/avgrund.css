@@ -4,7 +4,8 @@ html {
 
 .avgrund-popin {
 	position: fixed;
-	background: #fff;
+	background: #555555;
+            color: #FFFFFF;
 	overflow: hidden;
 	visibility: hidden;
 	opacity: 0;
