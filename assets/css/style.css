@@ -5305,7 +5305,6 @@ video {
 .image-square {
   height: 50vw;
   max-height: 640px;
-  overflow: hidden;
   padding: 0;
 }
 
@@ -5344,25 +5343,35 @@ video {
 
 @media all and (max-width: 990px) {
   .image-square {
+    top: 0;
     position: relative;
     height: auto;
-    max-height: 100000px;
-    /*margin-bottom: 48px;*/
+    max-height: 10000px;
+    padding-bottom: 48px;
+  }
+  .image-square.left {
+    height: auto;
+  }
+  .image-square.right {
+    height: auto;
   }
   .image-square .image,
   .image-square .content {
     position: relative;
+    top: 0;
   }
   .image-square .image {
     height: 100vw;
-    /*margin-bottom: 48px;*/
+    margin-bottom: 48px;
     max-height: 500px;
   }
   .image-square .content {
-    top: 0;
     transform: none;
     -webkit-transform: none;
     padding: 0 20%;
+  }
+  .image-square.left.small {
+    height: auto;
   }
 }
 
