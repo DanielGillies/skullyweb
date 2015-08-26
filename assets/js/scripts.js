@@ -677,6 +677,18 @@ $('document').ready(function () {
 })
 
 
+// Hide the tabs on mobile
+
+// Check for mobile
+function detectmob() {
+   if(window.innerWidth <= 990 && window.innerHeight <= 600) {
+     return true;
+   } else {
+     return false;
+   }
+}
+
+
 function resizeVid() {
 
     $('.fs-vid-background video').each(function() {

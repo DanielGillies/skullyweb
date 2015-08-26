@@ -6919,9 +6919,9 @@ header h1 {
 }
 
 /* FIX FOR JUICER BUTTON */
-.j-paginate {
+/*.j-paginate {
     display: none !important;
-}
+}*/
 
 .biolink {
     color: #FFFFFF;
