@@ -433,8 +433,8 @@ h6,
 }
 
 h1.uppercase {
-  letter-spacing: 14px;
-  margin-right: -17px;
+  letter-spacing: 12px;
+  /*margin-right: -12px;*/
 }
 
 h2.uppercase {
