@@ -2,7 +2,7 @@
   "name": "skullysite",
   "version": "0.0.1",
   "description": "Dependencies for skullysite gulpfile",
-  "repository": "https://github.com/skullyhelmets/skullyweb2",
+  "repository": "https://github.com/skullyhelmets/skullyweb",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^5.2.0",

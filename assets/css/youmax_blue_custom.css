@@ -54,7 +54,7 @@
   z-index: 1045; }
 
 .mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content {
-  width: 100%;
+  width: 60%;
   cursor: auto; }
 
 .mfp-ajax-cur {
@@ -78,6 +78,13 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none; }
+
+
+@media all and (max-width: 990px) {
+  .mfp-arrow {
+    display: none !important;
+  }
+}
 
 .mfp-loading.mfp-figure {
   display: none; }
@@ -131,9 +138,8 @@ button::-moz-focus-inner {
   top: 0;
   text-decoration: none;
   text-align: center;
-  opacity: 0.65;
-  filter: alpha(opacity=65);
   padding: 0 0 18px 10px;
+  opacity: 1;
   color: #FFF;
   font-style: normal;
   font-size: 28px;
@@ -407,6 +413,12 @@ overflow: hidden;
 }
 
 
+@media all and (max-width: 990px) {
+  #tiles li {
+  }
+}
+
+
 .wookmark-placeholder {
   border-radius: 2px;
   -moz-border-radius: 2px;
@@ -551,6 +563,12 @@ position: relative;
 background-position: center center;
 background-size: cover;
 /*background-image:none !important;*/
+}
+
+@media all and (max-width: 990px) {
+  #youmax-header {
+    text-align: center;
+  }
 }
 
 #youmax-header-wrapper {
@@ -1415,7 +1433,7 @@ div#youmax-header-counts i.fa-video-camera {
   float: left;
   border-radius: 0px;
   border: 0px;
-  font-size: 18px;
+  font-size: 12px;
   border-left: 1px solid #ccc;
     color: #676767;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
