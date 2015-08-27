@@ -6939,3 +6939,6 @@ header h1 {
     color: #167896;
 }
 
+.maxed {
+    max-height: 350px;
+}
