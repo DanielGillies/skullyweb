@@ -5766,6 +5766,10 @@ footer.bg-dark a {
 
 /*---------- 36. SPACING ----------*/
 
+.pl20 {
+    padding-left: 20px;
+}
+
 .mr0 {
   margin-right: 0;
 }
