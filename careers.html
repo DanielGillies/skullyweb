@@ -362,7 +362,22 @@
         <script src="static/js/vendor.js"></script>
         <script src="static/js/main.js"></script>
 
+    <script type="text/javascript">
 
+function detectmob() {
+   if(window.innerWidth <= 997) {
+     return true;
+   } else {
+     return false;
+   }
+}
+
+    if (detectmob()) {
+$(".tab-content").removeClass("tab-content");
+                                    $(".tabs").removeClass("tabs").addClass("text-left");
+                                    $(".tab-title").removeClass("tab-title").addClass("h4").addClass("uppercase");
+                                }
+    </script>
 
     </body>
 </html>
