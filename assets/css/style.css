@@ -6942,3 +6942,12 @@ header h1 {
 .maxed {
     max-height: 400px;
 }
+
+.botleft {
+    position: absolute;
+    height: 120px;
+    width: 240px;
+    left: 35px;
+    bottom: 35px;
+    z-index: 150;
+}
