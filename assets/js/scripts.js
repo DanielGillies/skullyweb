@@ -274,8 +274,8 @@ $(document).ready(function() {
     
     if($('.instafeed').length){
     	jQuery.fn.spectragram.accessData = {
-			accessToken: '791988178.1fb234f.533baea5e20548cc80a810473287fb0d',
-			clientID: '7b3c70afac0244049c981456912dabfe'
+			accessToken: '791988178.2d41dbd.97f234bc6dd248f18807726f637719c2',
+			clientID: '2d41dbd502f7436fa1cc66d4cbe0174c'
 		};	
     }   
 
