@@ -12,6 +12,7 @@
     <link href="static/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
     <link href="static/css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
     <link href="static/css/avgrund.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="static/css/fov.css" rel="stylesheet" type="text/css" media="all" />
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
 </head>
 
@@ -95,47 +96,59 @@
         </nav>
         <!-- ACTUAL PAGE CONTENT -->
         <div class="main-container">
-            <section class="image-bg fullscreen overlay bg-dark">
+            <section class="image-bg fullscreen overlay bg-dark mh700">
                 <div class="fs-vid-background">
 <video autoplay muted loop>
                         <source src="assets/video/video.webm" type="video/webm">
                         <source src="assets/video/video.mp4" type="video/mp4">
                         <source src="assets/video/video.ogv" type="video/ogv">
                     </video>
-
-                    <div class="botleft">
-                    <a href="//fast.wistia.net/embed/iframe/1nwzz5fh0t?popover=true" class="wistia-popover[height=388,playerColor=414141,width=640]"><img src="https://embed-ssl.wistia.com/deliveries/d8c87a7982ca461396b93a1ea5626869fa315d80.jpg?image_play_button=true&image_play_button_color=414141e0&image_crop_resized=240x135" alt="" /></a>
-<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js"></script>
-                    </div>
                 </div>
                 <div class="container v-align-transform">
-                    <div class="row pt120">
+                    <div class="row">
                         <div class="text-center">
-                            <h1 class="uppercase">SUPERHUMAN BY DESIGN</h1>
+                            <h1 class="uppercase"><span class="index">SUPERHUMAN</span><br><span class="indexdesign"> BY DESIGN</span></h1>
                         </div>
                     </div>
                     <!--end of row-->
                 </div>
+                <div class="botleft">
+                    <a href="//fast.wistia.net/embed/iframe/1nwzz5fh0t?popover=true" class="wistia-popover[height=360,playerColor=414141,width=640]"><img src="https://embed-ssl.wistia.com/deliveries/d8c87a7982ca461396b93a1ea5626869fa315d80.jpg?image_play_button=true&image_play_button_color=414141e0&image_crop_resized=190x107" alt="" /></a>
+<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js"></script>
+                    <img src="static/img/vid_title.png" alt="text">
+                    </div>
             </section>
             <section>
-                <div class="container">
+            <div class="indexvidbar">
+                        <div class="row halved">
+                            <div class="col-sm-3 col-md-3 col-xs-3">
+                                <a style="cursor:pointer;" id="show1"><img alt="pic" class="presslogo image-xxs" src="static/img/press1.png"></a>
+                            </div>
+                            <div class="col-sm-3 col-md-3 col-xs-3">
+                                <a style="cursor:pointer;" id="show2"><img alt="pic" class="presslogo image-xxs invert" src="static/img/press5.png"></a>
+                            </div>
+                            <div class="col-sm-3 col-md-3 col-xs-3">
+                                <a style="cursor:pointer;" id="show3"><img alt="pic" class="presslogo image-xxs" src="static/img/press3.png"></a>
+                            </div>
+                            <div class="col-sm-3 col-md-3 col-xs-3">
+                                <a style="cursor:pointer;" id="show4"><img alt="pic" class="presslogo image-xxs" src="static/img/press4.png"></a>
+                            </div>
+                        </div>
+
+                    </div>
+                <div class="container mt64">
                     <div class="row v-align-children">
-                        <div class="col-sm-4 mb-xs-24">
-                            <h2 class="mb64 mb-xs-32">The First of Its Kind</h2>
+                        <div class="col-sm-6 mb-xs-24">
+                            <h2 class="mb48 mb-xs-32">The First of Its Kind</h2>
                             <div class="mb40 mb-xs-24">
                                 <p class="fade-1-4">
                                     The SKULLY AR-1 will change the way you ride. Period. We set out to design and build a helmet that would make riding safer in the digital age. And the results are beautiful. Beneath the sleek polycarbonate alloy shell lives a sophisticated network of information that enhances your riding experience. Our integrated heads up display, 180° blind spot camera, and built-in audio system heighten your senses beyond comparison. Total awareness is total freedom.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-md-7 col-sm-5 col-sm-6 col-sm-offset-1 text-center">
-                            <div id="wistia_1nwzz5fh0t" class="wistia_embed" style="width:1280px;height:800px;">&nbsp;</div>
-                            <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js"></script>
-                            <script>
-                            wistiaEmbed = Wistia.embed("1nwzz5fh0t", {
-                                videoFoam: true
-                            });
-                            </script>
+                        <div class="col-md-5 col-sm-5 col-sm-6 col-sm-offset-1 text-center">
+                            <iframe src="//fast.wistia.net/embed/iframe/1sjkxd4qqt?videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="1920" height="1080"></iframe><script src="//fast.wistia.net/assets/external/E-v1.js"></script>
+
                         </div>
                     </div>
                     <!--end of row-->
@@ -144,14 +157,77 @@
             </section>
             <section class="bg-secondary">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4 mb-xs-24">
-                            <h1 class="large black mb64 mb-xs-32">See Everything</h2>
-                            <div class="mb40 mb-xs-24">
-                            </div>
-                        </div>
-                        <div class="col-md-7 col-sm-5 col-sm-6 col-sm-offset-1 text-center">
-                            <img alt="Background Image" class="background-image" src="static/img/fov.png" />
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+<div class="product-features sep-top">
+    <input id="fov-toggle" class="hidden" type="checkbox">
+    <input id="mobile-skully-fov" name="fov" class="hidden" type="radio">
+    <input id="mobile-conventional-fov" name="fov" class="hidden" type="radio" checked>
+    <div class="display-large-hide display-medium-hide mobile-fov-buttons">
+        <label for="mobile-skully-fov" class="mobile-fov-button mobile-skully-fov-button">SKULLY</label>
+        <label for="mobile-conventional-fov" class="mobile-fov-button mobile-conventional-fov-button">Conventional</label>
+    </div>
+    <div class="fov-wrapper">
+        <div class="fov-infographics">
+            <img class="traditional-fov" src="static/img/fov_conventional.png">
+            <img class="skully-fov transparent" src="static/img/fov.png">
+        </div>
+        <div class="fov-info circle-info">
+            <img class="circle" src="static/img/180_circle-07.png">
+            <div class="circle-description">
+                <h4 class="black">180&deg; Blind Spot Camera</h4>
+                <p class="black">Conventional mirrors show you a thin slice of reality, a blind spot camera shows <b>everything</b> happening around you.</p>
+            </div>
+            <div class="display-small-hide display-x-large-hide">
+                <label for="fov-toggle"><span class="check-mark">&#10003;</span>Show SKULLY Field of View</label>
+            </div>
+        </div>
+    </div>
+    <div class="misc-features">
+        <div class="circle-info">
+            <img class="circle" src="static/img/180_circle-01.png">
+            <div class="circle-description">
+                <h4 class="black">Heads Up Display</h4>
+                <p class="black">Transparent HUD projects a focused display that appears floating in front-right of view</p>
+            </div>
+        </div>
+        <div class="circle-info">
+            <img class="circle" src="static/img/180_circle-02.png">
+            <div class="circle-description">
+                <h4 class="black">Situational Awareness</h4>
+                <p class="black">Full situational awareness with GPS navigation and a live blindspot camera view</p>
+            </div>
+        </div>
+        <div class="circle-info">
+            <img class="circle" src="static/img/180_circle-04.png">
+            <div class="circle-description">
+                <h4 class="black">Safety</h4>
+                <p class="black">DOT/ECE certified. Featuring a quick release chin strap and a visor that is fog, scratch & glare resistant</p>
+            </div>
+        </div>
+        <div class="circle-info">
+            <img class="circle" src="static/img/180_circle-05.png">
+            <div class="circle-description">
+                <h4 class="black">Connectivity</h4>
+                <p class="black">Fully connected with Bluetooth, internet via smartphone and automatic software updates</p>
+            </div>
+        </div>
+        <div class="circle-info">
+            <img class="circle" src="static/img/180_circle-03.png">
+            <div class="circle-description">
+                <h4 class="black">Perfect Fit</h4>
+                <p class="black">Lightweight, aerodynamic shell fits sizes S-XXL with interchangable padding inserts</p>
+            </div>
+        </div>
+        <div class="circle-info">
+            <img class="circle" src="static/img/180_circle-06.png">
+            <div class="circle-description">
+                <h4 class="black">Intelligent Sound</h4>
+                <p class="black">Intelligent audio system features hands-free calling and music streaming</p>
+            </div>
+        </div></div>
+</div>
+
                         </div>
                     <!--end of row-->
                 </div>
@@ -257,20 +333,6 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="row mt80">
-                            <div class="col-sm-3 col-md-3 col-xs-3">
-                                <a style="cursor:pointer;" id="show1"><img alt="pic" class="image-xxs mb-xs-8 fade-1-4" src="static/img/press1.png"></a>
-                            </div>
-                            <div class="col-sm-3 col-md-3 col-xs-3">
-                                <a style="cursor:pointer;" id="show2"><img alt="pic" class="image-xxs mb-xs-8 fade-1-4 invert" src="static/img/press5.png"></a>
-                            </div>
-                            <div class="col-sm-3 col-md-3 col-xs-3">
-                                <a style="cursor:pointer;" id="show3"><img alt="pic" class="image-xxs mb-xs-8 fade-1-4" src="static/img/press3.png"></a>
-                            </div>
-                            <div class="col-sm-3 col-md-3 col-xs-3">
-                                <a style="cursor:pointer;" id="show4"><img alt="pic" class="image-xxs mb-xs-8 fade-1-4" src="static/img/press4.png"></a>
-                            </div>
-                        </div>
                 </div>
             </section>
             </div>
@@ -364,95 +426,95 @@
             }
         }
 
-        if (!detectmob()) {
-            $('#show1').avgrund({
-                height: 360,
-                width: 500,
-                holderClass: 'custom',
-                showClose: true,
-                showCloseText: 'X',
-                enableStackAnimation: true,
-                template: '<div class="article-title">The CNN Top 10 Inventions</div>' +
-                    '<p>“Augmented reality is getting a lot of talk in the gaming world, with products like Sony\'s and the Oculus Rift promising to make play time more fun. But what if it could make the roads safer? That\'s what the makers of Skully promise with what they\'re..."</p>' +
-                    '<div class="text-center">' +
-                    '<a class="btn btn-filled" target="_blank" href="http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/">READ MORE</a>' +
-                    '</div>' +
-                    '<hr style="margin: 0 !important;">' +
-                    '<div class="social-buttons">' +
-                    '<div id="social-platforms">' +
-                    '<a class="button button-icon button-facebook" target="_blank"href="http://www.facebook.com/sharer.php?u=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>' +
-                    '<a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>' +
-                    '<a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>' +
-                    '</div>' +
-                    '</div>'
-            });
+        // if (!detectmob()) {
+        //     $('#show1').avgrund({
+        //         height: 360,
+        //         width: 500,
+        //         holderClass: 'custom',
+        //         showClose: true,
+        //         showCloseText: 'X',
+        //         enableStackAnimation: true,
+        //         template: '<div class="article-title">The CNN Top 10 Inventions</div>' +
+        //             '<p>“Augmented reality is getting a lot of talk in the gaming world, with products like Sony\'s and the Oculus Rift promising to make play time more fun. But what if it could make the roads safer? That\'s what the makers of Skully promise with what they\'re..."</p>' +
+        //             '<div class="text-center">' +
+        //             '<a class="btn btn-filled" target="_blank" href="http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/">READ MORE</a>' +
+        //             '</div>' +
+        //             '<hr style="margin: 0 !important;">' +
+        //             '<div class="social-buttons">' +
+        //             '<div id="social-platforms">' +
+        //             '<a class="button button-icon button-facebook" target="_blank"href="http://www.facebook.com/sharer.php?u=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>' +
+        //             '<a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>' +
+        //             '<a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>' +
+        //             '</div>' +
+        //             '</div>'
+        //     });
 
-            $('#show2').avgrund({
-                height: 360,
-                width: 500,
-                holderClass: 'custom',
-                showClose: true,
-                showCloseText: 'X',
-                enableStackAnimation: true,
-                template: '<div class="article-title">A Motorcycle Helmet for the Digital World</div>' +
-                    '<p>“At a time when screens are being integrated into everything, Skully engineers saw an opportunity to upgrade something that’s remained largely unchanged for decades: the motorcycle helmet. The P-1 is the first helmet with a digital head-up display..."</p>' +
-                    '<div class="text-center">' +
-                    '<a class="btn btn-filled" target="_blank" href="http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world">READ MORE</a>' +
-                    '</div>' +
-                    '<hr style="margin: 0 !important;">' +
-                    '<div class="social-buttons">' +
-                    '<div id="social-platforms">' +
-                    '<a class="button button-icon button-facebook" target="_blank"href="http://www.facebook.com/sharer.php?u=http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>' +
-                    '<a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>' +
-                    '<a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>' +
-                    '</div>' +
-                    '</div>'
-            });
+        //     $('#show2').avgrund({
+        //         height: 360,
+        //         width: 500,
+        //         holderClass: 'custom',
+        //         showClose: true,
+        //         showCloseText: 'X',
+        //         enableStackAnimation: true,
+        //         template: '<div class="article-title">A Motorcycle Helmet for the Digital World</div>' +
+        //             '<p>“At a time when screens are being integrated into everything, Skully engineers saw an opportunity to upgrade something that’s remained largely unchanged for decades: the motorcycle helmet. The P-1 is the first helmet with a digital head-up display..."</p>' +
+        //             '<div class="text-center">' +
+        //             '<a class="btn btn-filled" target="_blank" href="http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world">READ MORE</a>' +
+        //             '</div>' +
+        //             '<hr style="margin: 0 !important;">' +
+        //             '<div class="social-buttons">' +
+        //             '<div id="social-platforms">' +
+        //             '<a class="button button-icon button-facebook" target="_blank"href="http://www.facebook.com/sharer.php?u=http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>' +
+        //             '<a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>' +
+        //             '<a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>' +
+        //             '</div>' +
+        //             '</div>'
+        //     });
 
-            $('#show3').avgrund({
-                height: 360,
-                width: 500,
-                holderClass: 'custom',
-                showClose: true,
-                showCloseText: 'X',
-                enableStackAnimation: true,
-                template: '<div class="article-title">The Skully Smart Motorcycle Helmet Sharpens Your Senses On The Road</div>' +
-                    '<p>“The stats around motorcycle safety in the United States are pretty bleak, but the folks at Skully are looking to give an added layer of safety to the bike-riding thrill-seekers of the world. The Skully AR-1 helmet started..."</p>' +
-                    '<div class="text-center">' +
-                    '<a class="btn btn-filled" target="_blank" href="http://techcrunch.com/2014/08/11/skully/">READ MORE</a>' +
-                    '</div>' +
-                    '<hr style="margin: 0 !important;">' +
-                    '<div class="social-buttons">' +
-                    '<div id="social-platforms">' +
-                    '<a class="button button-icon button-facebook" target="_blank"href="http://www.facebook.com/sharer.php?u=http://techcrunch.com/2014/08/11/skully/"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>' +
-                    '<a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://techcrunch.com/2014/08/11/skully/"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>' +
-                    '<a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://techcrunch.com/2014/08/11/skully/"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>' +
-                    '</div>' +
-                    '</div>'
-            });
+        //     $('#show3').avgrund({
+        //         height: 360,
+        //         width: 500,
+        //         holderClass: 'custom',
+        //         showClose: true,
+        //         showCloseText: 'X',
+        //         enableStackAnimation: true,
+        //         template: '<div class="article-title">The Skully Smart Motorcycle Helmet Sharpens Your Senses On The Road</div>' +
+        //             '<p>“The stats around motorcycle safety in the United States are pretty bleak, but the folks at Skully are looking to give an added layer of safety to the bike-riding thrill-seekers of the world. The Skully AR-1 helmet started..."</p>' +
+        //             '<div class="text-center">' +
+        //             '<a class="btn btn-filled" target="_blank" href="http://techcrunch.com/2014/08/11/skully/">READ MORE</a>' +
+        //             '</div>' +
+        //             '<hr style="margin: 0 !important;">' +
+        //             '<div class="social-buttons">' +
+        //             '<div id="social-platforms">' +
+        //             '<a class="button button-icon button-facebook" target="_blank"href="http://www.facebook.com/sharer.php?u=http://techcrunch.com/2014/08/11/skully/"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>' +
+        //             '<a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://techcrunch.com/2014/08/11/skully/"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>' +
+        //             '<a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://techcrunch.com/2014/08/11/skully/"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>' +
+        //             '</div>' +
+        //             '</div>'
+        //     });
 
-            $('#show4').avgrund({
-                height: 360,
-                width: 500,
-                holderClass: 'custom',
-                showClose: true,
-                showCloseText: 'X',
-                enableStackAnimation: true,
-                template: '<div class="article-title">This Slick Augmented-reality Helmet Has A Rearview Camera, Weather Reports</div>' +
-                    '<p>“Motorcycle helmets with head-up displays and augmented reality were science fiction just a few years ago. But now major helmet manufacturers and startups are working to incorporate Google Glass-like..."</p>' +
-                    '<div class="text-center">' +
-                    '<a class="btn btn-filled" target="_blank" href="http://www.wired.com/2013/10/skully-helmet/">READ MORE</a>' +
-                    '</div>' +
-                    '<hr style="margin: 0 !important;">' +
-                    '<div class="social-buttons">' +
-                    '<div id="social-platforms">' +
-                    '<a class="button button-icon button-facebook" target="_blank"href="http://www.facebook.com/sharer.php?u=http://www.wired.com/2013/10/skully-helmet/"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>' +
-                    '<a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://www.wired.com/2013/10/skully-helmet/"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>' +
-                    '<a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://www.wired.com/2013/10/skully-helmet/"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>' +
-                    '</div>' +
-                    '</div>'
-            });
-        }
+        //     $('#show4').avgrund({
+        //         height: 360,
+        //         width: 500,
+        //         holderClass: 'custom',
+        //         showClose: true,
+        //         showCloseText: 'X',
+        //         enableStackAnimation: true,
+        //         template: '<div class="article-title">This Slick Augmented-reality Helmet Has A Rearview Camera, Weather Reports</div>' +
+        //             '<p>“Motorcycle helmets with head-up displays and augmented reality were science fiction just a few years ago. But now major helmet manufacturers and startups are working to incorporate Google Glass-like..."</p>' +
+        //             '<div class="text-center">' +
+        //             '<a class="btn btn-filled" target="_blank" href="http://www.wired.com/2013/10/skully-helmet/">READ MORE</a>' +
+        //             '</div>' +
+        //             '<hr style="margin: 0 !important;">' +
+        //             '<div class="social-buttons">' +
+        //             '<div id="social-platforms">' +
+        //             '<a class="button button-icon button-facebook" target="_blank"href="http://www.facebook.com/sharer.php?u=http://www.wired.com/2013/10/skully-helmet/"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>' +
+        //             '<a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://www.wired.com/2013/10/skully-helmet/"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>' +
+        //             '<a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://www.wired.com/2013/10/skully-helmet/"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>' +
+        //             '</div>' +
+        //             '</div>'
+        //     });
+        // }
 
 
         // HOVER SOUND

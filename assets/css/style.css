@@ -770,7 +770,7 @@ footer.bg-dark li,
   left: 0;
   background: #282828;
   opacity: 0.3;
-  z-index: 2;
+  z-index: 3;
 }
 
 .overlay-heavy:before {
@@ -6939,15 +6939,42 @@ header h1 {
     color: #167896;
 }
 
-.maxed {
-    max-height: 400px;
-}
-
 .botleft {
     position: absolute;
-    height: 120px;
-    width: 240px;
     left: 35px;
     bottom: 35px;
-    z-index: 150;
+    z-index: 100;
 }
+
+.mh700 {
+    max-height: 700px;
+}
+
+.indexdesign {
+    font-size: 70px !important;
+    font-weight: bold;
+}
+
+.index {
+    letter-spacing: 8px !important;
+}
+
+.indexvidbar {
+    position: absolute;
+    top: 0;
+    height:75px;
+    background-color: #10112A;
+    width: 100%;
+    z-index: 5;
+}
+
+.halved {
+    position: relative;
+    top: 50%;
+    margin-top: -15px;
+}
+
+.presslogo {
+    width: 85px;
+}
+

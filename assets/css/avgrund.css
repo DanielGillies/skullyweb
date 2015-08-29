@@ -3,15 +3,12 @@ html {
 }
 
 .avgrund-popin {
-	position: fixed;
 	background: #555555;
             color: #FFFFFF;
 	overflow: hidden;
 	visibility: hidden;
 	opacity: 0;
 	filter: alpha(opacity=0);
-	top: 82%;
-	left: 50%;
 	z-index: 1000;
 	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, .5);
 
@@ -20,6 +17,8 @@ html {
 	-ms-transform: scale(0.8);
 	-o-transform: scale(0.8);
 	transform: scale(0.8);
+
+            -webkit-transform: translateZ(0);
 }
 
 .avgrund-overlay {
@@ -61,6 +60,10 @@ body.avgrund-active {
 }
 
 .avgrund-active .avgrund-popin {
+
+            position: fixed;
+            top: 50%;
+            left: 50%;
 	visibility: visible;
 	opacity: .85;
 	filter: alpha(opacity=100);
