@@ -40,7 +40,7 @@ $(document).ready(function() {
         $('.background-image-holder').each(function() {
             $(this).addClass('fadeIn');
         });
-    }, 0);
+    }, 200);
 
     // Initialize Tooltips
 
