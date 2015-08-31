@@ -846,6 +846,10 @@ footer.bg-dark li,
   opacity: 1;
 }
 
+.background-image {
+    display: block;
+}
+
 .parallax > .background-image-holder,
 .parallax .slides li > .background-image-holder {
   height: 100vh;
