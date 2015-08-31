@@ -62,7 +62,7 @@ body.avgrund-active {
 .avgrund-active .avgrund-popin {
 
             position: fixed;
-            top: 50%;
+            top: 10%;
             left: 50%;
 	visibility: visible;
 	opacity: .85;
@@ -109,7 +109,7 @@ body.avgrund-active {
 /* Optional close button styles */
 .avgrund-close {
 	display: block;
-	color: #555;
+	color: #FFF;
 	font-size: 13px;
 	text-decoration: none;
 	text-transform: uppercase;

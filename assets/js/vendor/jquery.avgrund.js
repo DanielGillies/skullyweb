@@ -112,6 +112,7 @@
 
 				body.bind('keyup', onDocumentKeyup)
 					.bind('click', onDocumentClick);
+                                                $('body').css("overflow", "hidden");
 			}
 
 			function deactivate () {
@@ -133,6 +134,8 @@
 				if (typeof options.onUnload === 'function') {
 					options.onUnload(self);
 				}
+
+                                                $("body").css("overflow", "auto");
 			}
 
 			if (options.openOnEvent) {

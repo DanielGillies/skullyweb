@@ -5,7 +5,9 @@ var mr_firstSectionHeight,
     mr_navFixed = false,
     mr_outOfSight = false,
     mr_floatingProjectSections,
-    mr_scrollTop = 0;
+    mr_scrollTop = 0,
+    mobile = detectmob();
+
 
 $(document).ready(function() { 
     "use strict";
@@ -694,6 +696,14 @@ function resizeVid() {
 
 }
 
+function detectmob() {
+            if (window.innerWidth <= 997) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
 function updateNav() {
 
     var scrollY = mr_scrollTop;
@@ -722,7 +732,7 @@ function updateNav() {
         }
     } else {
         if (scrollY > mr_navOuterHeight) {
-            if (!mr_navFixed) {
+            if (!mr_navFixed && !mobile) {
                 mr_nav.addClass('fixed');
                 mr_navFixed = true;
             }
