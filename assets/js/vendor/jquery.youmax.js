@@ -2311,7 +2311,7 @@ var youmaxLoggedInUser = {};
 		$youmaxContainer.find("#youmax-encloser").empty();
 		//$youmaxContainer.find('#youmax-video').hide();
 		$youmaxContainer.find('#youmax-encloser-video').attr('src','');
-		$youmaxContainer.find('#youmax-video-list-div>ul').append('<div class="youmax-loading-div" style="text-align:center; height:200px; font:14px Calibri;"><span style="opacity:0;">.</span><br><br><br><br>loading HD...<br><br><br><br><br><br><span style="opacity:0;">.</span></div>');
+		$youmaxContainer.find('#youmax-video-list-div>ul').append('<div class="youmax-loading-div" style="text-align:center; height:200px; font:14px Calibri;"><span style="opacity:0;">.</span><br><br><br><br>No videos found<br><br><br><br><br><br><span style="opacity:0;">.</span></div>');
 		$youmaxContainer.find('#youmax-showing-title').empty().hide();
 	},
 	

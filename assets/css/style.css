@@ -399,8 +399,11 @@ h6,
 @media all and (max-width: 767px) {
   h1, h1.large, .h1 {
     font-size: 32px;
-    line-height: 40px;
+    line-height: 32px;
     font-weight: 300;
+  }
+  .indexdesign {
+    font-size: 40px;
   }
   h2 {
     font-size: 32px;
@@ -769,7 +772,7 @@ footer.bg-dark li,
   top: 0;
   left: 0;
   background: #282828;
-  opacity: 0.3;
+  opacity: 0.5;
   z-index: 3;
 }
 
@@ -861,12 +864,37 @@ footer.bg-dark li,
   top: 0;
 }
 
+@media all and (max-width: 990px) {
+    .background-image-holder {
+        display: block;
+        z-index: 2;
+    }
+
+    .background-image {
+        display: block;
+        z-index: 2;
+    }
+
+    .fs-vid-background {
+        display: none;
+    }
+
+}
+
 @media all and (max-width: 767px) {
   .parallax > .background-image-holder, .parallax .slides li > .background-image-holder {
     top: 0 !important;
   }
-}
 
+  .watchnow {
+        display: none;
+    }
+
+    .botleft {
+        left: 50% !important;
+        margin-left: -95px;
+    }
+}
 
 /*---------- 6. BUTTONS ----------*/
 
@@ -4972,7 +5000,7 @@ video {
   left: 0;
   background: #49536a;
   opacity: 0.2;
-  z-index: 2;
+  z-index: 3;
 }
 
 
@@ -6955,12 +6983,18 @@ header h1 {
 }
 
 .mh700 {
-    max-height: 800px;
+    max-height: 700px;
 }
 
+.minh570 {
+    min-height: 570px;
+}
+
+@media (min-width: 768px){
 .indexdesign {
-    font-size: 70px !important;
+    font-size: 70px;
     font-weight: bold;
+}
 }
 
 .index {
