@@ -673,12 +673,27 @@ $(window).load(function() {
 
 $('document').ready(function () {
 
-        var bg = $(".container, section, .background-image-holder, .background-image");
-$(window).resize("resizeBackground");
-function resizeBackground() {
-    bg.height($(window).height()+60);
+function greedyJumbotron() {
+    var HEIGHT_CHANGE_TOLERANCE = 100; // Approximately URL bar height in Chrome on tablet
+
+    var jumbotron = $(this);
+    var viewportHeight = $(window).height();
+
+    $(window).resize(function () {
+        if (Math.abs(viewportHeight - $(window).height()) > HEIGHT_CHANGE_TOLERANCE) {
+            viewportHeight = $(window).height();
+            update();
+        }
+    });
+
+    function update() {
+        jumbotron.css('height', viewportHeight + 'px');
+    }
+
+    update();
 }
-resizeBackground();
+
+$('.background-image').each(greedyJumbotron);
 
     // Resize fullscreen video backgrounds to cover parent
     resizeVid();
