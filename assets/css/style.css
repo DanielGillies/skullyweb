@@ -6987,8 +6987,10 @@ header h1 {
 }
 
 .mh700 {
-    max-height: 700px;
+     max-height: 700px;
+     min-height: 699px;
 }
+
 
 .minh570 {
     min-height: 570px;
