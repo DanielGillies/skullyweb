@@ -404,6 +404,7 @@ h6,
   }
   .indexdesign {
     font-size: 40px;
+    line-height: 32px;
   }
   h2 {
     font-size: 32px;
@@ -6988,7 +6989,7 @@ header h1 {
 
 .mh700 {
      max-height: 700px;
-     min-height: 500px;
+     min-height: 575px;
 }
 
 
