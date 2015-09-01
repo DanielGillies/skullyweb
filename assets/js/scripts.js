@@ -673,7 +673,7 @@ $(window).load(function() {
 
 $('document').ready(function () {
 
-        var bg = $(".background-image-holder, .background-image");
+        var bg = $(".container, section, .background-image-holder, .background-image");
 $(window).resize("resizeBackground");
 function resizeBackground() {
     bg.height($(window).height()+60);
