@@ -7297,3 +7297,28 @@ header h1 {
   }
 }
 
+@media all and (max-width: 1000px) {
+    .wistia {
+        display: none;
+    }
+
+    .gif {
+        display: inline-block;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    .wistia {
+        display: block;
+    }
+
+    .gif {
+        display: none;
+    }
+}
+
+@media all and (max-width: 990px) and (min-width: 767px) {
+    .gif {
+        margin-top: 50%;
+    }
+}
