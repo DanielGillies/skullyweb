@@ -669,17 +669,17 @@ $(window).load(function() {
 
     mr_firstSectionHeight = $('.main-container section:nth-of-type(1)').outerHeight(true);
 
-//     var bg = $(".background-image-holder, .background-image");
-// $(window).resize("resizeBackground");
-// function resizeBackground() {
-//     bg.height($(window).height());
-// }
-// resizeBackground();
-
-
 }); 
 
 $('document').ready(function () {
+
+        var bg = $(".background-image-holder, .background-image");
+$(window).resize("resizeBackground");
+function resizeBackground() {
+    bg.height($(window).height()+60);
+}
+resizeBackground();
+
     // Resize fullscreen video backgrounds to cover parent
     resizeVid();
 })
