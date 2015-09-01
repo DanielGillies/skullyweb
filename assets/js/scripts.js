@@ -672,29 +672,21 @@ $(window).load(function() {
 }); 
 
 $('document').ready(function () {
+function hideAddressBar()
+{
+  if(!window.location.hash)
+  {
+      if(document.height < window.outerHeight)
+      {
+          document.body.style.height = (window.outerHeight + 50) + 'px';
+      }
 
-function greedyJumbotron() {
-    var HEIGHT_CHANGE_TOLERANCE = 100; // Approximately URL bar height in Chrome on tablet
-
-    var jumbotron = $(this);
-    var viewportHeight = $(window).height();
-
-    $(window).resize(function () {
-        if (Math.abs(viewportHeight - $(window).height()) > HEIGHT_CHANGE_TOLERANCE) {
-            viewportHeight = $(window).height();
-            update();
-        }
-    });
-
-    function update() {
-        jumbotron.css('height', viewportHeight + 'px');
-    }
-
-    update();
+      setTimeout( function(){ window.scrollTo(0, 1); }, 50 );
+  }
 }
 
-$('.background-image').each(greedyJumbotron);
-
+window.addEventListener("load", function(){ if(!window.pageYOffset){ hideAddressBar(); } } );
+window.addEventListener("orientationchange", hideAddressBar );
     // Resize fullscreen video backgrounds to cover parent
     resizeVid();
 })
