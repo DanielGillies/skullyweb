@@ -45,6 +45,7 @@
 /*---------- 1. GLOBAL STYLES ----------*/
 
 body {
+    height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 13px;
