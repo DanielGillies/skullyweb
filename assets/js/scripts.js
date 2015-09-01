@@ -669,12 +669,12 @@ $(window).load(function() {
 
     mr_firstSectionHeight = $('.main-container section:nth-of-type(1)').outerHeight(true);
 
-    var bg = $(".background-image-holder, .background-image");
-$(window).resize("resizeBackground");
-function resizeBackground() {
-    bg.height($(window).height());
-}
-resizeBackground();
+//     var bg = $(".background-image-holder, .background-image");
+// $(window).resize("resizeBackground");
+// function resizeBackground() {
+//     bg.height($(window).height());
+// }
+// resizeBackground();
 
 
 }); 
