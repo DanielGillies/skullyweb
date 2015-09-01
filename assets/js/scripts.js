@@ -738,7 +738,7 @@ function updateNav() {
             }
 
             if (scrollY > mr_navOuterHeight * 2) {
-                if (!mr_outOfSight) {
+                if (!mr_outOfSight &&!mobile) {
                     mr_nav.addClass('outOfSight');
                     mr_outOfSight = true;
                 }
