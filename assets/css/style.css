@@ -249,12 +249,18 @@ hr {
 }
 
 .v-align-transform {
-  position: relative;
+  position: absolute;
   transform: translate3d(0, -50%, 0);
   -webkit-transform: translate3d(0, -50%, 0);
   top: 50%;
   z-index: 2;
 }
+
+/*@media all and (max-width: 990px) {
+.v-align-transform {
+  vertical-align: middle;
+}
+}*/
 
 .align-bottom {
   position: absolute;
@@ -904,7 +910,6 @@ footer.bg-dark li,
         margin-top: 50% !important;
     }
 }
-
 /*---------- 6. BUTTONS ----------*/
 
 .btn {
@@ -7003,7 +7008,7 @@ header h1 {
 }
 
 .mh700 {
-     max-height: 700px;
+    max-height: 80vh;
      min-height: 575px;
 }
 
