@@ -7316,6 +7316,13 @@ letter-spacing: 2px
 
 }
 
+@media all and (max-width: 767px) {
+    .indeximage {
+        background-position: 70% 50% !important;
+    }
+
+}
+
 /*@media all and (max-width: 1000px) {
     .wistia {
         display: none;
