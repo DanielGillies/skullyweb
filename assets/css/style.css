@@ -1103,6 +1103,17 @@ nav .btn,
   display: inline-block;
   height: 55px;
 }
+@media all and (max-width:891px) {
+    .menu li a {
+        font-size: 24px !important;
+        line-height: 30px;
+    }
+
+    .nav-bar a {
+        font-size: 24px !important;
+    }
+}
+
 .logo {
   max-height: 60%;
 }
