@@ -12,6 +12,8 @@
     <link href="static/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
     <link href="static/css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
     <link href="static/css/avgrund.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Add fancyBox -->
+<link rel="stylesheet" href="static/css/jquery.fancybox.css" type="text/css" media="screen" />
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
 </head>
 
@@ -117,8 +119,13 @@
                     <!--end of row-->
                 </div>
                 <div class="botleft">
-                    <a href="//fast.wistia.net/embed/iframe/1nwzz5fh0t?popover=true" class="wistia-popover[height=720,playerColor=414141,width=1280]"><img src="https://embed-ssl.wistia.com/deliveries/d8c87a7982ca461396b93a1ea5626869fa315d80.jpg?image_play_button=true&image_play_button_color=414141e0&image_crop_resized=190x107" alt="" /></a>
+
+
+                <a href="//fast.wistia.net/embed/iframe/1nwzz5fh0t?popover=true" id="wistiavid" class="wistia-popover[height=720,playerColor=414141,width=1280]"><img src="https://embed-ssl.wistia.com/deliveries/d8c87a7982ca461396b93a1ea5626869fa315d80.jpg?image_play_button=true&image_play_button_color=414141e0&image_crop_resized=190x107" alt="" /></a>
 <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js"></script>
+
+
+                    <!-- <a class="fancybox fancybox.iframe" rel="group" href="//videos.sproutvideo.com/embed/1c9bdcb21d1ae1cc94/6acf37e4c2163db1?type=hd&autoPlay=true&amp;postrollHtml=%3Ca%20target%3D%22_blank%22%20href%3D%22http%3A%2F%2Fstore.skully.com%22%20style%3D%22-webkit-font-smoothing%3A%20antialiased%3B%0A-webkit-user-select%3A%20none%3B%0Abackground-attachment%3A%20scroll%3B%0Abackground-clip%3A%20border-box%3B%0Abackground-color%3A%20rgb(178%2C%2034%2C%2034)%3B%0Abackground-image%3A%20none%3B%0Abackground-origin%3A%20padding-box%3B%0Abackground-size%3A%20auto%3B%0Aborder-bottom-color%3A%20rgb(181%2C%2037%2C%2044)%3B%0Aborder-bottom-left-radius%3A%200px%3B%0Aborder-bottom-right-radius%3A%200px%3B%0Aborder-bottom-style%3A%20solid%3B%0Aborder-bottom-width%3A%201.11111116409302px%3B%0Aborder-image-outset%3A%200px%3B%0Aborder-image-repeat%3A%20stretch%3B%0Aborder-image-slice%3A%20100%25%3B%0Aborder-image-source%3A%20none%3B%0Aborder-image-width%3A%201%3B%0Aborder-left-color%3A%20rgb(181%2C%2037%2C%2044)%3B%0Aborder-left-style%3A%20solid%3B%0Aborder-left-width%3A%201.11111116409302px%3B%0Aborder-right-color%3A%20rgb(181%2C%2037%2C%2044)%3B%0Aborder-right-style%3A%20solid%3B%0Aborder-right-width%3A%201.11111116409302px%3B%0Aborder-top-color%3A%20rgb(181%2C%2037%2C%2044)%3B%0Aborder-top-left-radius%3A%200px%3B%0Aborder-top-right-radius%3A%200px%3B%0Aborder-top-style%3A%20solid%3B%0Aborder-top-width%3A%201.11111116409302px%3B%0Abox-sizing%3A%20border-box%3B%0Acolor%3A%20rgb(255%2C%20255%2C%20255)%3B%0Acursor%3A%20pointer%3B%0Adisplay%3A%20inline-block%3B%0Afont-family%3A%20Raleway%2C%20%27Helvetica%20Neue%27%2C%20Helvetica%2C%20Arial%2C%20sans-serif%3B%0Afont-size%3A%2032px%3B%0Afont-weight%3A%20bold%3B%0Aheight%3A%2075px%3B%0Aletter-spacing%3A%201px%3B%0Aline-height%3A%2068px%3B%0Amargin-bottom%3A%200px%3B%0Amargin-left%3A%200px%3B%0Amargin-right%3A%200px%3B%0Amargin-top%3A%200px%3B%0Amin-width%3A%200px%3B%0Aoutline-color%3A%20rgb(255%2C%20255%2C%20255)%3B%0Aoutline-style%3A%20none%3B%0Aoutline-width%3A%200px%3B%0Apadding-bottom%3A%200px%3B%0Apadding-left%3A%2026px%3B%0Apadding-right%3A%2026px%3B%0Apadding-top%3A%200px%3B%0Atext-align%3A%20center%3B%0Atext-decoration%3A%20none%3B%0Atext-transform%3A%20uppercase%3B%0Atouch-action%3A%20manipulation%3B%0Atransition-delay%3A%200s%3B%0Atransition-duration%3A%200.3s%3B%0Atransition-property%3A%20all%3B%0Atransition-timing-function%3A%20ease%3B%0Avertical-align%3A%20middle%3B%0Awhite-space%3A%20nowrap%3B%0Awidth%3A%20220px%3B%22%3EBUY%20NOW%3C%2Fa%3E%0A&amp;postrollUrl=http%3A%2F%2Fsproutvideo.com&amp;postrollFontSize=36&amp;postrollBgColor=000000&amp;postrollTarget=_blank"><img src="https://embed-ssl.wistia.com/deliveries/d8c87a7982ca461396b93a1ea5626869fa315d80.jpg?image_play_button=true&image_play_button_color=414141e0&image_crop_resized=190x107" alt="" /></a> -->
                     <span class="watchnow">
                     <img src="static/img/vid_title.png" alt="text">
                     </span>
@@ -347,6 +354,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/jquery.flexslider.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/js/lightbox.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
+        <script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
         <script src="static/js/vendor.js"></script>
         <script src="static/js/main.js"></script>
         <script type="text/javascript">
@@ -451,7 +459,6 @@
                     '</div>'
             });
         }
-
 
         // HOVER SOUND
         var audio = $("#hoversound")[0];

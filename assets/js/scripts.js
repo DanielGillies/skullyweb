@@ -672,9 +672,48 @@ $(window).load(function() {
 }); 
 
 $('document').ready(function () {
+
+wistiaJQuery(document).bind("wistia-popover", function(event, iframe) {
+    iframe.wistiaApi.time(75).play();
+  iframe.wistiaApi.bind("end", function() {
+    console.log(document.body);
+    $(".fancybox-inner").append("<a target='_blank' href='http://store.skully.com' class='ctabutton'>BUY NOW</a>");
+      });
+});
+
+
+        // $(".fancybox").fancybox({
+        //     helpers : {
+        //         media: true,
+        //         overlay : {
+        //             css : {
+        //                 'background' : 'rgba(30, 30, 30, 0.95)',
+        //             }
+        //         }
+        //     },
+        //     padding : 0,
+            
+        //     aspecetRatio: true,
+        //     width: 1280,
+        //     openMethod: 'changeIn'
+
+        // });
+
     // Resize fullscreen video backgrounds to cover parent
     resizeVid();
 })
+
+function prepcta() {
+    console.log(document.body);
+    var iframe = document.getElementsByClassName('wistia_embed');
+    console.log(iframe);
+    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+    console.log(innerDoc.onended);
+    var vid = document.getElementById("wistia_14");
+    vid.onended = function() {
+        alert("Starting to load video");
+    };
+}
 
 function resizeVid() {
 
