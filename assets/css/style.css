@@ -7297,7 +7297,7 @@ header h1 {
   }
 }
 
-@media all and (max-width: 1000px) {
+/*@media all and (max-width: 1000px) {
     .wistia {
         display: none;
     }
@@ -7321,4 +7321,4 @@ header h1 {
     .gif {
         margin-top: 50%;
     }
-}
+}*/
