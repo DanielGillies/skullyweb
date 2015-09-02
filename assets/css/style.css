@@ -7009,8 +7009,8 @@ header h1 {
 
 @media (max-width: 700px) {
     .mh700 {
-        min-height: 300px;
-        max-height: 400px;
+        min-height: 400px !important;
+        max-height: 500px !important;
     }
 }
 
