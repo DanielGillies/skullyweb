@@ -674,7 +674,6 @@ $(window).load(function() {
 $('document').ready(function () {
 
 wistiaJQuery(document).bind("wistia-popover", function(event, iframe) {
-    iframe.wistiaApi.time(75).play();
   iframe.wistiaApi.bind("end", function() {
     console.log(document.body);
     $(".fancybox-inner").append("<a target='_blank' href='http://store.skully.com' class='ctabutton'>BUY NOW</a>");
