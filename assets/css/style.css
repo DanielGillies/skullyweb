@@ -899,6 +899,10 @@ footer.bg-dark li,
         left: 50% !important;
         margin-left: -95px;
     }
+
+    .headertext {
+        margin-top: 50% !important;
+    }
 }
 
 /*---------- 6. BUTTONS ----------*/
