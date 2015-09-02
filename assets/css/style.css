@@ -7007,10 +7007,10 @@ header h1 {
     z-index: 100;
 }
 
-@media (min-width: 566px) {
+@media (min-width: 700px) {
     .mh700 {
         min-height: 300px;
-        max-height: 600px;
+        max-height: 400px;
     }
 }
 
