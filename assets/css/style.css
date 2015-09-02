@@ -7007,6 +7007,13 @@ header h1 {
     z-index: 100;
 }
 
+@media (min-width: 566px) {
+    .mh700 {
+        min-height: 575px;
+        max-heigh: 600px;
+    }
+}
+
 .mh700 {
     max-height: 80vh;
      min-height: 575px;
