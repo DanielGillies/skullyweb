@@ -253,7 +253,7 @@ hr {
   transform: translate3d(0, -50%, 0);
   -webkit-transform: translate3d(0, -50%, 0);
   top: 50%;
-  z-index: 2;
+  z-index: 100 !important;
 }
 
 /*@media all and (max-width: 990px) {
@@ -451,6 +451,7 @@ h1.uppercase {
   h1.uppercase{
     letter-spacing: 6px;
     margin-right: 0px;
+    margin-bottom: 10px;
   }
 }
 
@@ -779,7 +780,7 @@ footer.bg-dark li,
   top: 0;
   left: 0;
   background: #282828;
-  opacity: 0.5;
+  opacity: 0.3;
   z-index: 3;
 }
 
@@ -830,7 +831,7 @@ footer.bg-dark li,
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 1;
+  /*z-index: 1;*/
   background: #B22222;
   background-size: cover !important;
   background-position: 50% 50% !important;
