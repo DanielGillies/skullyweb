@@ -249,7 +249,7 @@ hr {
 }
 
 .v-align-transform {
-  position: absolute;
+  position: relative;
   transform: translate3d(0, -50%, 0);
   -webkit-transform: translate3d(0, -50%, 0);
   top: 50%;
