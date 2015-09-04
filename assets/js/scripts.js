@@ -170,15 +170,15 @@ $(document).ready(function() {
         $(this).toggleClass('active');
     });
 
-    $('.menu li').click(function(e) {
-        if (!e) e = window.event;
-        e.stopPropagation();
-        if ($(this).find('ul').length) {
+    // $('.menu li').click(function(e) {
+    //     if (!e) e = window.event;
+    //     e.stopPropagation();
+    //     if ($(this).find('ul').length) {
             // $(this).toggleClass('toggle-sub');
-        } else {
-            $(this).parents('.toggle-sub').removeClass('toggle-sub');
-        }
-    });
+    //     } else {
+    //         $(this).parents('.toggle-sub').removeClass('toggle-sub');
+    //     }
+    // });
 
     $('.module.widget-handle').click(function() {
         $(this).toggleClass('toggle-widget-handle');
