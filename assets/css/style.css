@@ -7368,6 +7368,10 @@ letter-spacing: 2px
 
 }
 
+.boostz {
+    z-index: 100 !important;
+}
+
 /*@media all and (max-width: 1000px) {
     .wistia {
         display: none;
