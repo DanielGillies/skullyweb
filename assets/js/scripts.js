@@ -166,7 +166,7 @@ $(document).ready(function() {
     $('.mobile-toggle').click(function() {
         $('.nav-bar').toggleClass('nav-open');
         $('.dropdownfix').toggleClass('toggle-sub');
-        $('.dropdownfix').toggleClass('has-dropdown');
+        // $('.dropdownfix').toggleClass('has-dropdown');
         $(this).toggleClass('active');
     });
 
