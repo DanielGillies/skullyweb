@@ -470,6 +470,15 @@
                 console.log("ITS SCATMAN TIME!!!!");
 
             });
+
+            $('document').ready(function () {
+                wistiaJQuery(document).bind("wistia-popover", function(event, iframe) {
+  iframe.wistiaApi.bind("end", function() {
+    console.log(document.body);
+    $(".fancybox-inner").append("<a target='_blank' href='http://store.skully.com' class='ctabutton'>BUY NOW</a>");
+      });
+});
+            }); 
             </script>
 </body>
 
