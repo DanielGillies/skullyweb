@@ -166,7 +166,7 @@ $(document).ready(function() {
     $('.mobile-toggle').click(function() {
         $('.nav-bar').toggleClass('nav-open');
         $('.dropdownfix').toggleClass('toggle-sub');
-        // $('.dropdownfix').toggleClass('has-dropdown');
+        $('.dropdownfix').toggleClass('has-dropdown');
         $(this).toggleClass('active');
     });
 
@@ -174,7 +174,7 @@ $(document).ready(function() {
         if (!e) e = window.event;
         e.stopPropagation();
         if ($(this).find('ul').length) {
-            $(this).toggleClass('toggle-sub');
+            // $(this).toggleClass('toggle-sub');
         } else {
             $(this).parents('.toggle-sub').removeClass('toggle-sub');
         }
