@@ -7372,18 +7372,18 @@ letter-spacing: 2px
     z-index: 100 !important;
 }
 
-/*@media all and (max-width: 1000px) {
-    .wistia {
+@media all and (max-width: 767px) {
+    .helmvid {
         display: none;
     }
 
     .gif {
-        display: inline-block;
+        display: block;
     }
 }
 
-@media all and (min-width: 1000px) {
-    .wistia {
+@media all and (min-width: 768px) {
+    .helmvid {
         display: block;
     }
 
@@ -7391,9 +7391,3 @@ letter-spacing: 2px
         display: none;
     }
 }
-
-@media all and (max-width: 990px) and (min-width: 767px) {
-    .gif {
-        margin-top: 50%;
-    }
-}*/
