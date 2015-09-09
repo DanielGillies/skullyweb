@@ -324,7 +324,7 @@ ul,
 ol,
 pre,
 table,
-blockquote,
+/*blockquote,*/
 input,
 select,
 textarea {
@@ -603,7 +603,7 @@ a:hover {
   vertical-align: middle;
 }
 
-blockquote {
+/*blockquote {
   overflow: hidden;
   font-family: "Merriweather", "Georgia", Times New Roman, Times, serif;
   font-size: 20px;
@@ -613,19 +613,19 @@ blockquote {
   padding: 32px;
   color: #777;
   font-weight: 300;
-}
+}*/
 
-.bg-secondary blockquote {
+/*.bg-secondary blockquote {
   background: #fff;
   border-color: #46b575;
 }
-
-blockquote .author {
+*/
+/*blockquote .author {
   font-size: 12px;
   display: block;
   float: right;
   margin-top: 16px;
-}
+}*/
 
 .number {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -635,10 +635,10 @@ blockquote .author {
   br {
     display: none;
   }
-  blockquote {
+/*  blockquote {
     font-size: 16px;
     line-height: 32px;
-  }
+  }*/
 }
 
 .text-left {
