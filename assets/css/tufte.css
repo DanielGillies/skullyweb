@@ -12,27 +12,27 @@ body {
        color: white;
        counter-reset: sidenote-counter; }
 
-h1 { font-weight: 400;
+article h1 { font-weight: 400;
      margin-top: 4rem;
      margin-bottom: 1.5rem;
      font-size: 3.2rem;
      line-height: 1; }
 
-h2 { font-style: italic;
+article h2 { font-style: italic;
      font-weight: 400;
      margin-top: 2.1rem;
      margin-bottom: 0;
      font-size: 2.2rem;
      line-height: 1; }
 
-h3 { font-style: italic;
+article h3 { font-style: italic;
      font-weight: 400;
      font-size: 1.7rem;
      margin-top: 2rem;
      margin-bottom: 0;
      line-height: 1; }
 
-p.subtitle { font-style: italic;
+article p.subtitle { font-style: italic;
              margin-top: 1rem;
              margin-bottom: 1rem;
              font-size: 1.8rem;
@@ -101,9 +101,9 @@ article { position: relative;
 section { padding-top: 1rem;
           padding-bottom: 1rem; }
 
-p, ol, ul { font-size: 1.4rem; }
+article p, article ol, article ul { font-size: 1.4rem; }
 
-p { line-height: 2rem;
+article p { line-height: 2rem;
     margin: 0 0 0px;
     margin-top: 1.4rem;
     margin-bottom: 1.4rem;
@@ -154,7 +154,7 @@ figure.fullwidth figcaption { margin-top: 5px; margin-right: 0; margin-left: 50%
     border-bottom: 1px solid #777;
     padding-bottom: 1px; }*/
 
-img { max-width: 100%; }
+article img { max-width: 100%; }
 
 .sidenote, .marginnote { float: right;
                          clear: right;
@@ -211,7 +211,7 @@ img { max-width: 100%; }
                    -ms-transform: translateX(-100%) translateX(-0.25rem);
                    transform: translateX(-100%) translateX(-0.25rem); }
 
-p, footer, div.table-wrapper { width: 55%; }
+article p, .blockfooter, div.table-wrapper { width: 55%; }
 
 @media screen and (max-width: 760px) { p, footer { width: 90%; }
                                        pre.code { width: 87.5%; }
@@ -270,4 +270,4 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
                                              vertical-align: baseline;
                                              position: relative; }
                             table, table.booktabs { width: 85%; }
-                            img { width: 100%; } }
+                            article img { width: 100%; } }

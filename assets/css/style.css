@@ -3385,6 +3385,10 @@ form iframe.mail-list-form {
   font-size: 13px;
 }
 
+.widget .twitter-feed {
+    font-size: 16px;
+}
+
 .widget .twitter-feed p {
   padding-left: 22px;
   position: relative;
