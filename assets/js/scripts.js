@@ -623,33 +623,33 @@ $(window).load(function() {
 
     // Initialize Masonry
 
-    if ($('.masonry').length) {
-        var container = document.querySelector('.masonry');
-        var msnry = new Masonry(container, {
-            itemSelector: '.masonry-item'
-        });
+    // if ($('.masonry').length) {
+    //     var container = document.querySelector('.masonry');
+    //     var msnry = new Masonry(container, {
+    //         itemSelector: '.masonry-item'
+    //     });
 
-        msnry.on('layoutComplete', function() {
+    //     msnry.on('layoutComplete', function() {
 
-            mr_firstSectionHeight = $('.main-container section:nth-of-type(1)').outerHeight(true);
+    //         mr_firstSectionHeight = $('.main-container section:nth-of-type(1)').outerHeight(true);
 
-            // Fix floating project filters to bottom of projects container
+    //         // Fix floating project filters to bottom of projects container
 
-            if ($('.filters.floating').length) {
-                setupFloatingProjectFilters();
-                updateFloatingFilters();
-                window.addEventListener("scroll", updateFloatingFilters, false);
-            }
+    //         if ($('.filters.floating').length) {
+    //             setupFloatingProjectFilters();
+    //             updateFloatingFilters();
+    //             window.addEventListener("scroll", updateFloatingFilters, false);
+    //         }
 
-            $('.masonry').addClass('fadeIn');
-            $('.masonry-loader').addClass('fadeOut');
-            if ($('.masonryFlyIn').length) {
-                masonryFlyIn();
-            }
-        });
+    //         $('.masonry').addClass('fadeIn');
+    //         $('.masonry-loader').addClass('fadeOut');
+    //         if ($('.masonryFlyIn').length) {
+    //             masonryFlyIn();
+    //         }
+    //     });
 
-        msnry.layout();
-    }
+    //     msnry.layout();
+    // }
 
     // Initialize twitter feed
 
