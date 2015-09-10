@@ -16,82 +16,12 @@
 
 <body>
     <div class="nav-container">
-        <nav class="bg-dark">
-            <div class="nav-bar">
-                <div class="module left">
-                    <a href="index.html">
-                        <img class="logo logo-light" alt="SKULLY" src="static/img/logo-light.png" />
-                        <img class="logo logo-dark" alt="SKULLY" src="static/img/logo-dark.png" />
-                    </a>
-                </div>
-                <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
-                    <i class="ti-menu"></i>
-                </div>
-                <div class="module-group right">
-                    <div class="module left">
-                        <ul class="menu">
-                            <li>
-                                <a href="index.html">
-                   AR-1
-                 </a>
-                            </li>
-                            <li>
-                                <a href="home-app-landing.html">
-                   APP
-                 </a>
-                            </li>
-                            <li>
-                                <a href="videos.html">
-                   VIDEOS
-                 </a>
-                            </li>
-                            <li class="has-dropdown dropdownfix">
-                                <a href="aboutus.html">
-                   ABOUT
-                 </a>
-                                <ul>
-                                    <li>
-                                        <a href="careers.html">
-                       CAREERS
-                     </a>
-                                    </li>
-                                    <li>
-                                        <a href="press.html">
-                       PRESS
-                     </a>
-                                    </li>
-                                    <li>
-                                        <a href="aboutus.html">
-                   ABOUT
-                 </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="has-dropdown dropdownfix">
-                                <a href="page-login.html">
-                   SUPPORT
-                 </a>
-                                <ul>
-                                    <li>
-                                        <a href="faq.html">
-                       FAQ
-                     </a>
-                                    </li>
-                                    <li>
-                                        <a href="page-login.html">
-                   SUPPORT
-                 </a>
-                                    </li>
-                                </ul>
-                    </div>
-                    <!--end of menu module-->
-                    <div class="module right">
-                        <a class="btn btn-sm btn-filled" href="http://store.skully.com">STORE</a>
-                    </div>
-                </div>
-                <!--end of menu module-->
-            </div>
-        </nav>
+    <div id="navbar">
+    </div>
+        
+
+        
+
         <!-- ACTUAL PAGE CONTENT -->
         <div class="main-container">
             <section class="image-bg fullscreen overlay bg-dark mh700">
@@ -342,7 +272,88 @@
                 <source src="assets/audio/motorcycle.mp3" type="audio/mpeg">
                 <source src="assets/audio/motorcycle.ogg" type="audio/ogg">
             </audio>
+            <!-- TEMPLATES -->
+            <script id="nav-template" type="text/x-handlebars-template">
+            <nav class="bg-dark">
+            <div class="nav-bar">
+                <div class="module left">
+                    <a href="index.html">
+                        <img class="logo logo-light" alt="SKULLY" src="static/img/logo-light.png" />
+                        <img class="logo logo-dark" alt="SKULLY" src="static/img/logo-dark.png" />
+                    </a>
+                </div>
+                <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+                    <i class="ti-menu"></i>
+                </div>
+                <div class="module-group right">
+                    <div class="module left">
+                        <ul class="menu">
+                            <li>
+                                <a href="index.html">
+                   AR-1
+                 </a>
+                            </li>
+                            <li>
+                                <a href="home-app-landing.html">
+                   APP
+                 </a>
+                            </li>
+                            <li>
+                                <a href="videos.html">
+                   VIDEOS
+                 </a>
+                            </li>
+                            <li class="has-dropdown dropdownfix">
+                                <a href="aboutus.html">
+                   ABOUT
+                 </a>
+                                <ul>
+                                    <li>
+                                        <a href="careers.html">
+                       CAREERS
+                     </a>
+                                    </li>
+                                    <li>
+                                        <a href="press.html">
+                       PRESS
+                     </a>
+                                    </li>
+                                    <li>
+                                        <a href="aboutus.html">
+                   ABOUT
+                 </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-dropdown dropdownfix">
+                                <a href="page-login.html">
+                   SUPPORT
+                 </a>
+                                <ul>
+                                    <li>
+                                        <a href="faq.html">
+                       FAQ
+                     </a>
+                                    </li>
+                                    <li>
+                                        <a href="page-login.html">
+                   SUPPORT
+                 </a>
+                                    </li>
+                                </ul>
+                    </div>
+                    <!--end of menu module-->
+                    <div class="module right">
+                        <a class="btn btn-sm btn-filled" href="http://store.skully.com">STORE</a>
+                    </div>
+                </div>
+                <!--end of menu module-->
+            </div>
+        </nav>
+            </script>
+
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.2/handlebars.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/jquery.flexslider.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.1/js/lightbox.min.js"></script>
@@ -351,6 +362,13 @@
             <script src="static/js/vendor.js"></script>
             <script src="static/js/main.js"></script>
             <script type="text/javascript">
+
+
+            var source=$("#nav-template").html();
+            var template=Handlebars.compile(source);
+
+            $('#navbar').append(template);
+
             function detectmob() {
                 if (window.innerWidth <= 997) {
                     return true;

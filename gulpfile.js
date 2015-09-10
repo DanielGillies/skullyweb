@@ -10,27 +10,32 @@ var pngquant = require('imagemin-pngquant')
 var del = require('del');
 var watch = require('gulp-watch');
 var batch = require('gulp-batch');
+var handlebars = require('gulp-compile-handlebars');
+var ext_replace = require('gulp-ext-replace');
 
 var paths = {
    src: __dirname + 'assets',
-
    dest: __dirname + 'static',
 
    css: {
      src: __dirname + '/assets/css/*.css',
-     dest: __dirname + '/static/css',
+     dest: __dirname + '/static/css'
    },
    vendorjs: {
      src: __dirname + '/assets/js/vendor/*.js',
-     dest: __dirname + '/static/js',
+     dest: __dirname + '/static/js'
    },
    userjs: {
      src: __dirname + '/assets/js/*.js',
-     dest: __dirname + '/static/js',
+     dest: __dirname + '/static/js'
    },
    img: {
     src: __dirname + '/assets/img/*',
     dest: __dirname + '/static/img'
+    },
+    templates: {
+        src: __dirname + '/assets/templates/*.handlebars',
+        dest: __dirname + '/'
     }
 };
 
@@ -102,7 +107,6 @@ gulp.task('compress', function () {
         .pipe(gulp.dest(paths.img.dest));
 });
 
-
 gulp.task('cleancss', function() {
     return del(paths.css.dest, function() {
     });
@@ -118,5 +122,19 @@ gulp.task('clean', function() {
     process.exit(0)
     });
 });
+
+gulp.task('handlebars', function() {
+    var templateData = {
+    },
+    options = {
+        ignorePartials: true, //ignores the unknown footer2 partial in the handlebars template, defaults to false 
+        batch : ['./src/partials']
+    }
+ 
+    return gulp.src(paths.templates.src)
+        .pipe(handlebars(templateData, options))
+        .pipe(ext_replace('.html'))
+        .pipe(gulp.dest(paths.templates.dest));
+}
 
 gulp.task('default', ['vendorjs', 'js', 'css', 'watch']);
