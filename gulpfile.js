@@ -34,9 +34,10 @@ var paths = {
     dest: __dirname + '/static/img'
     },
     templates: {
-        src: __dirname + '/assets/templates/*.handlebars',
+        src: __dirname + '/assets/templates',
         dest: __dirname + '/'
-    }
+    },
+    partials: __dirname + '/assets/templates/partials'
 };
 
 // WATCH TASK
@@ -123,18 +124,18 @@ gulp.task('clean', function() {
     });
 });
 
-gulp.task('handlebars', function() {
+gulp.task('templates', function() {
     var templateData = {
     },
     options = {
         ignorePartials: true, //ignores the unknown footer2 partial in the handlebars template, defaults to false 
-        batch : ['./src/partials']
+        batch : [paths.partials]
     }
- 
-    return gulp.src(paths.templates.src)
+    console.log(paths.templates.src);
+    return gulp.src(paths.templates.src+'/*')
         .pipe(handlebars(templateData, options))
         .pipe(ext_replace('.html'))
-        .pipe(gulp.dest(paths.templates.dest));
-}
+        .pipe(gulp.dest(''));
+});
 
 gulp.task('default', ['vendorjs', 'js', 'css', 'watch']);
