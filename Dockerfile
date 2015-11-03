@@ -53,7 +53,7 @@ WORKDIR /etc/nginx/html/assets/
 # Move over videos
 RUN mkdir video
 WORKDIR video
-COPY ./assets/video/* ./
+#COPY ./assets/video/* ./
 
 # Go back to assets dir
 WORKDIR ..
