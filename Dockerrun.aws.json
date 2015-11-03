@@ -1,0 +1,17 @@
+{
+  "AWSEBDockerrunVersion": 1,
+  "Authentication": {
+    "Bucket": "skully-application-configs",
+    "Key": "dockercfg"
+  },
+  "Image": {
+    "Name": "skully/skullyweb",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+        "ContainerPort": "80"
+    }
+  ],
+  "Logging": "/var/log/nginx"
+}

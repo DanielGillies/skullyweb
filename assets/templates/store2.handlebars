@@ -1,0 +1,294 @@
+{{> header title="SKULLY Store: AR-1"}}
+<body>
+    <div class="nav-container">
+    {{> navbar}}
+                   
+        <div class="main-container">
+            <div class="view-cart">
+            <a id="cart" class="text-right" href="https://skully.foxycart.com/cart?cart=view"><i class="cart1 ti-shopping-cart icon-md"></i><i class="cart2 ti-shopping-cart-full icon-md"></i></a>
+                <div class="cart-dropdown">
+                    <table>
+                    <thead>
+                    <th>Item</th>
+                    <th>Color</th>
+                    <th>Size</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                    </thead>
+                    <tbody id="cart-dropdown-content">
+                    </tbody>
+                    </table>
+                    <!-- <p data-fc-id="minicart">
+                        <ul>
+                            <li><span data-fc-id="minicart-quantity">0</span>
+                            <span data-fc-id="minicart-singular"> item </span>
+                            <span data-fc-id="minicart-plural"> items </span></li>
+                            <li>$<span data-fc-id="minicart-order-total">0</span></li>
+                            </ul>
+                    </p> -->
+                </div>
+            </div>
+            <section class="bg-primary">
+                <div class="container">
+
+                    <div class="product-single">
+                        <div class="row mb24 mb-xs-48">
+                            <div class="col-md-5 col-sm-6">
+                                 <img id="helmet_img" alt="Image" src="static/img/blackhelmet_store.png" />
+                            </div>
+                            <div class="col-md-5 col-md-offset-1 col-sm-6">
+                                <div class="description">
+                                    <h4 class="uppercase">SKULLY AR-1</h4>
+                                    <div class="mb32 mb-xs-24">
+                                        <span class="number price">$1499.99</span>
+                                    </div>
+                                    <p>
+                                        SKULLY AR-1 is the world's smartest motorcycle helmet. With a blind spot camera and transparent heads up display (HUD), the SKULLY AR-1 not only eliminates blind spots but gives you the most important information right when you need it. 
+                                        </p>
+                                        <p>
+AR-1 allows you to focus on what matters most: the road ahead.
+                                    </p>
+                                </div>
+                                <hr class="mb48 mb-xs-24">
+                                <!-- 
+                                <form class="add-to-cart" action="https://skully.foxycart.com/cart" method="post" accept-charset="utf-8" class="foxycart">
+                                <input type="hidden" name="code" value="SKU1">
+                                <input type="hidden" name="price" value="1499.99">
+                                <input type="hidden" name="name" value="SKULLY AR-1">
+                                <select id="color" name="color">
+                                    <option value="Matte Black">Matte Black</option>
+                                    <option value="Gloss White">Gloss White</option>
+                                </select>
+                                <select id="size" name="size">
+                                    <option value="Small">Small</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="Large">Large</option>
+                                    <option value="X-Large">X-Large</option>
+                                    <option value="XX-Large">XX-Large</option>
+                                </select>
+                                    <input name="quantity" class="gray" id="quantity" type="text" placeholder="QTY" />
+                                    <input type="submit" value="Add To Cart" />
+                                </form> 
+                                -->
+                                <form action="https://skully.foxycart.com/cart" method="post" accept-charset="utf-8" class="add-to-cart foxycart">
+                                <input type="hidden" name="code" value="SKU1">
+                                <input type="hidden" name="price" value="1499.99">
+                                <input type="hidden" name="name" value="SKULLY AR-1">
+
+        <div class="color-picker picker-wrapper">
+            
+            <div class="instructions emphasis">Choose a color:</div>
+            <div class="picker">
+                <div class="col-1-2">
+                    <input type="radio" id="black" name="color" class="color" value="Matte Black" checked>
+                    <label for="black">
+                        <img class="display-small-hide" src="static/img/blackhelmet_store.png">
+                        <div class="display-small-only mobile-color-picker-circle"></div><p>Matte Black</p>
+                    </label>
+                </div>
+                <div class="col-1-2">
+                    <input type="radio" id="white" name="color" class="color" value="Gloss White">
+                    <label for="white">
+                        <img class="display-small-hide" src="static/img/whitehelmet_store.png">
+                        <div class="display-small-only mobile-color-picker-circle"><div></div></div><p>Gloss White</p>
+                    </label>
+                </div>
+            </div>
+            
+        </div>
+
+
+
+<div class="size-picker picker-wrapper">
+
+        <div class="instructions emphasis">Choose a size:</div>
+            <div class="picker">
+                <div class="col-1-5 small">
+                    <input type="radio" id="small" name="size" value="Small">
+                    <label for="small">
+                        <div class="sizing">
+                            <div class="pictograph"></div>
+                        </div>
+                        <p>S</p>
+                    </label>
+                </div>
+                <div class="col-1-5 medium">
+                    <input type="radio" id="medium" name="size" value="Medium" checked>
+                    <label for="medium">
+                        <div class="sizing">
+                            <div class="pictograph"></div>
+                        </div>
+                        <p>M</p>
+                    </label>
+                </div>
+                <div class="col-1-5 large">
+                    <input type="radio" id="large" name="size" value="Large">
+                    <label for="large">
+                        <div class="sizing">
+                            <div class="pictograph"></div>
+                        </div>
+                        <p>L</p>
+                    </label>
+                </div>
+                <div class="col-1-5 x-large">
+                    <input type="radio" id="x-large" name="size" value="X-Large">
+                    <label for="x-large">
+                        <div class="sizing">
+                            <div class="pictograph"></div>
+                        </div>
+                        <p>XL</p>
+                    </label>
+                </div>
+                <div class="col-1-5 xx-large">
+                    <input type="radio" id="xx-large" name="size" value="XX-Large">
+                    <label for="xx-large">
+                        <div class="sizing">
+                            <div class="pictograph"></div>
+                        </div>
+                        <p>XXL</p>
+                    </label>
+                </div>
+            </div>
+            </div>
+<!--                                 <select id="size" name="size">
+                                    <option value="Small||8e5dad98f10ac6b1014333c1555faff856b5c1503a73cf7c3f9cc5d9776b634c">Small</option>
+                                    <option value="Medium||12aa0d14154da0a95258314197237a4dbed5bd73cf69a3d751c4e643c94779ff">Medium</option>
+                                    <option value="Large||3580d87a0c7c40bea6fec883bda6d6671f95aa64753b107052a1626379a2ce33">Large</option>
+                                    <option value="X-Large||c3eae101e90b0e487e56cde26d2cb1def3af2b429df78b2c2370a768d0e1168f">X-Large</option>
+                                    <option value="XX-Large||8efd63ec299061aee922dfc51fc6e5d38992fe55eea03189a34f3605855a013e">XX-Large</option>
+                                </select> -->
+                                    <input name="quantity" class="gray" id="quantity" type="text" placeholder="QTY" />
+                                    <input type="submit" value="Add To Cart" />
+                                </form> 
+
+                                <div data-embed_type="product" data-shop="skullysystems.myshopify.com" data-product_name="SKULLY AR-1" data-product_handle="skully-ar-1" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="Add to cart" data-button_background_color="b22222" data-button_text_color="ffffff"></div>
+<script type="text/javascript">
+document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');
+</script>
+<noscript><a href="https://skullysystems.myshopify.com/cart/5972989700:1" target="_blank">Buy SKULLY AR-1</a></noscript>
+                            </div>
+
+                        </div>
+                        <!--end of row-->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="tabbed-content text-tabs">
+                                    <ul class="tabs">
+                                     <li class="active">
+                                            <div class="tab-title">
+                                                <span>Size Guide</span>
+                                            </div>
+                                            <div class="tab-content">
+                                                <table class="table table-bordered">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Size</th>
+                                                            <th>Hat Size</th>
+                                                            <th>CM</th>
+                                                            <th>Inches</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">Small</th>
+                                                            <td>
+                                                                <span class="number">6 5/8 - 6 3/4</span></td>
+                                                                <td>
+                                                                    <span class="number">53 - 54</span></td>
+                                                                <td><span class="number">20 7/8 - 20 1/4</span></td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Medium</th>
+                                                            <td>
+                                                                <span class="number">6 7/8 - 7</span></td>
+                                                                <td>
+                                                                    <span class="number">55 - 56</span></td>
+                                                                <td><span class="number">21 5/8 - 22</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Large</th>
+                                                            <td>
+                                                                <span class="number">7 1/8 - 7 1/4</span></td>
+                                                                <td>
+                                                                    <span class="number">57 - 58</span></td>
+                                                                <td><span class="number">22 1/2 - 22 7/8</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Extra Large</th>
+                                                            <td>
+                                                                <span class="number">7 3/8 - 7 1/2</span></td>
+                                                                <td>
+                                                                    <span class="number">59 - 60</span></td>
+                                                                <td><span class="number">23 1/4 - 23 5/8</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">XX Large</th>
+                                                            <td>
+                                                                <span class="number">7 5/8 - 7 3/4</span></td>
+                                                                <td>
+                                                                    <span class="number">61 - 62</span></td>
+                                                                <td><span class="number">24 - 24 3/8</span></td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tab-title">
+                                                <span>Description</span>
+                                            </div>
+                                            <div class="tab-content">
+                                                <p>
+                                                    For more information on the AR-1, visit the <a href="/">AR-1 page.</a>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="tab-title">
+                                                <span>Reviews</span>
+                                            </div>
+                                            <div class="tab-content">
+                                                <p class="lead">&quot;I want to own the best motorcycle helmet in the world, to improve my commute factors with the latest technology available and for safety. And SKULLY can provide exactly that.&quot;</p>
+                                        <div class="quote-author">
+                                            <h5 class="uppercase mb0">Cheol</h5>
+                                            <span>Air Force transportation officer on SKULLY AR-1 experience</span>
+                                        </div>
+                                            </div>
+                                        </li>
+                                     </ul>
+                                </div>
+                                <!--end of text tabs-->
+                            </div>
+                        </div>
+                        <!--end of row-->
+                    </div>
+                    <!--end of product single-->
+                    <p class="sub">Want to try it in-store? Check out our <a href="map">Dealer Locator</a>
+                </div>
+                <!--end of container-->
+            </section>
+            {{> footer}}
+        </div>
+        {{> scripts}}
+
+<script type="text/javascript">
+
+$('input[name=color]:radio').change(function(){
+    if ($('input[name=color]:checked').attr('id') == 'black') {
+        $('#helmet_img').fadeOut(200, function() {
+            $('#helmet_img').attr('src', 'static/img/blackhelmet_store.png');
+        }).fadeIn(200);
+    }
+    else {
+        $('#helmet_img').fadeOut(200, function() {
+            $('#helmet_img').attr('src', 'static/img/whitehelmet_store.png');
+        }).fadeIn(200);
+    }
+})
+
+</script>
+    </body>
+</html>
