@@ -224,12 +224,12 @@
             {{> footer extra='<button class="scatbutton">SCAT</button>'}}
             </div>
             <audio id="scatman">
-                <source src="assets/audio/scatman.mp3" type="audio/mpeg">
-                <source src="assets/audio/scatman.ogg" type="audio/ogg">
+                <source src="http://dg6vcgn2vehm4.cloudfront.net/scatman.mp3" type="audio/mpeg">
+                <source src="http://dg6vcgn2vehm4.cloudfront.net/scatman.ogg" type="audio/ogg">
             </audio>
             <audio id="hoversound">
-                <source src="assets/audio/motorcycle.mp3" type="audio/mpeg">
-                <source src="assets/audio/motorcycle.ogg" type="audio/ogg">
+                <source src="http://dg6vcgn2vehm4.cloudfront.net/motorcycle.mp3" type="audio/mpeg">
+                <source src="http://dg6vcgn2vehm4.cloudfront.net/motorcycle.ogg" type="audio/ogg">
             </audio>
             <!-- TEMPLATES -->
 
@@ -391,14 +391,14 @@
                 //     t1.to(".hud-background", 1, {rotationY: 15, transformOrigin: "left 50%", left: "-=20%", opacity: .8, ease: Power1.easeInOut});
                 //     t1.to("#hud-nose", 1, {left: "+=10%"}, "-=.6");
                 //     t1.to("#hud-rear", 1, {rotationY: 15, transformOrigin: "left 50%", scale: 2, left: "-= 30%", top:"-=30%"}, "-=1.6");
-                    TweenMax.to("#hud-bg", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .7, ease: Power1.easeInOut, delay: 1});
-                    TweenMax.to("#hud-nose", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .9, ease: Power1.easeInOut, delay: 1});
-                    TweenMax.to("#hud-rear", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: 1});
-                    TweenMax.to("#hud-mph", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: 1});
+                    TweenMax.to("#hud-bg", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .7, ease: Power1.easeInOut, delay: .3});
+                    TweenMax.to("#hud-nose", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .9, ease: Power1.easeInOut, delay: .3});
+                    TweenMax.to("#hud-rear", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: .3});
+                    TweenMax.to("#hud-mph", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: .3});
 
-                    TweenMax.to("#hud-nose", 1, {left: "+=1%", delay: 2, ease: Power2.easeInOut});
-                    TweenMax.to("#hud-rear", 1.5, {scale: 2, top: "-=35%", left:"-=55%", ease: Power2.easeInOut, delay: 1.5});
-                    TweenMax.to("#hud-mph", 1.5, {scale: 2.5, top: "-=55%", left: "-=80%", ease: Power2.easeInOut, delay: 1.5});
+                    TweenMax.to("#hud-nose", 1, {left: "+=1%", delay: 1.3, ease: Power2.easeInOut});
+                    TweenMax.to("#hud-rear", 1.5, {scale: 2, top: "-=35%", left:"-=55%", ease: Power2.easeInOut, delay: .8});
+                    TweenMax.to("#hud-mph", 1.5, {scale: 2.5, top: "-=55%", left: "-=80%", ease: Power2.easeInOut, delay: .8});
                 }
             });
 

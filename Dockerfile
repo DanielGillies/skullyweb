@@ -46,13 +46,4 @@ COPY ./static/fonts/* ./
 
 ####### DONE WITH STUFF IN STATIC #########
 
-# Create assets dir
-RUN mkdir /etc/nginx/html/assets/
-WORKDIR /etc/nginx/html/assets/
-
-# Move over audio
-RUN mkdir audio
-WORKDIR audio
-COPY ./assets/audio/* ./
-
 EXPOSE 80
