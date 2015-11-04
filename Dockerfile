@@ -50,7 +50,7 @@ COPY ./static/fonts/* ./
 RUN mkdir /etc/nginx/html/assets/
 WORKDIR /etc/nginx/html/assets/
 
-# Move over fonts
+# Move over audio
 RUN mkdir audio
 WORKDIR audio
 COPY ./assets/audio/* ./
