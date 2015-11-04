@@ -8192,3 +8192,119 @@ ol {
 #geolocate {
     display: none;
 }
+
+/******************* IMAGE GRID *********************/
+
+.g2 {
+        padding: 0.25em;
+            overflow: hidden;
+        }
+        .g2 li {
+            position: relative;
+            float: left;
+            text-align: center;
+            width: 33%;
+            padding: 0.25em;
+        }
+        .g2 img {
+            display: block;
+            transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+        }
+    .g2 li:nth-child(3n+1) {
+          clear: left;
+         }
+    
+        @media screen and (min-width: 40em) {
+            .g2 li {
+                width: 20%; 
+            }
+            .g2 li:nth-child(5n+1) {
+                clear: left;
+            }
+            .g2 li:nth-child(n+1) {
+                clear: none;
+            }
+        }
+        @media screen and (min-width: 55em) {
+            .g2 li {
+                width: 14.285714285%; 
+            }
+            .g2 li:nth-child(7n+1) {
+                clear: left;
+            }
+            .g2 li:nth-child(n+1) {
+                clear: none;
+            }
+        }
+        @media screen and (min-width: 72em) {
+            .g2 li {
+                width: 12.5%; 
+            }
+            .g2 li:nth-child(8n+1) {
+                clear: left;
+            }
+            .g2 li:nth-child(n+1) {
+                clear: none;
+            }
+        }
+        @media screen and (min-width: 90em) {
+            .g2 li {
+                width: 10%; 
+            }
+            .g2 li:nth-child(10n+1) {
+                clear: left;
+            }
+            .g2 li:nth-child(n+1) {
+                clear: none;
+            }
+        }
+@media screen and (min-width: 110em) {
+            .g2 li {
+                width: 9.0909090909%; 
+            }
+            .g2 li:nth-child(11n+1) {
+                clear: left;
+            }
+            .g2 li:nth-child(n+1) {
+                clear: none;
+            }
+        }
+
+.g2 li .gridoverlay {
+    opacity: 0;
+    z-index: 100;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+.g2 li:hover .gridoverlay {
+    opacity: 1;
+}
+
+.g2 li:hover img {
+    opacity: .4;
+}
+
+.g2 li .name {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    width: 100%;
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+}
+
+.g2 li .title {
+    width: 100%;
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+}
