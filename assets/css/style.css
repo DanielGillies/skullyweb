@@ -7278,6 +7278,13 @@ header h1 {
     z-index: 100;
 }
 
+.botrow {
+    position: absolute;
+    right: 35px;
+    bottom: 60px;
+    z-index: 100;
+}
+
 .centered {
     position: absolute;
     left: 0;
@@ -7313,6 +7320,11 @@ header h1 {
      min-height: 575px;
 }
 
+.mh700-2 {
+    max-height: 100vh;
+     min-height: 575px;
+}
+
 
 .minh570 {
     min-height: 570px;
@@ -7336,6 +7348,11 @@ header h1 {
     background-color: #10112A;
     width: 100%;
     z-index: 5;
+}
+
+.indexbar {
+    height: 75px;
+    padding: 0;
 }
 
 .halved {
@@ -8307,4 +8324,8 @@ ol {
     bottom: 20%;
     left: 0;
     right: 0;
+}
+
+#ar1index {
+    /*border: 0;*/
 }
