@@ -533,6 +533,10 @@ p.lead {
   color: black !important;
 }
 
+.skullyred {
+    color: #b22222;
+}
+
 .gray {
   color: #888888;
 }
@@ -1928,6 +1932,10 @@ nav.transparent.fixed.bg-dark .module.widget-handle i {
 
 .icon-sm {
   font-size: 32px;
+}
+
+.icon-xs {
+    font-size: 16px;
 }
 @media all and (max-width: 1000px) {
     .icon-md {
@@ -7278,6 +7286,13 @@ header h1 {
     z-index: 100;
 }
 
+.botright {
+    position: absolute;
+    right: 35px;
+    bottom: 20px;
+    z-index: 100;
+}
+
 .botrow {
     color: white;
     position: absolute;
@@ -7677,6 +7692,10 @@ letter-spacing: 2px
     }
 
     .botleft {
+        display: none;
+    }
+
+    .botright {
         display: none;
     }
 
