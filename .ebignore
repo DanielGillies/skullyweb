@@ -2,5 +2,7 @@
 gulpfile.js
 package.json
 /assets/audio/
-.git
-.elasticbeanstalk
+/.git/
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
