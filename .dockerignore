@@ -3,3 +3,7 @@
 !.elasticbeanstalk/*.global.yml
 .git
 /assets/audio/
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+.git
+.gitignore
