@@ -7279,9 +7279,10 @@ header h1 {
 }
 
 .botrow {
+    color: white;
     position: absolute;
-    right: 35px;
-    bottom: 60px;
+    left: 35px;
+    bottom: 20px;
     z-index: 100;
 }
 
