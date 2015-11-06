@@ -3000,8 +3000,8 @@ form iframe.mail-list-form {
     cursor: pointer;
   margin-bottom: 24px;
   height: 375px;
-  background-color: #000;
-  color: #FFF;
+  background-color: #AAA;
+  color: #000;
 }
 
 .mason:hover h6 {
@@ -3013,7 +3013,11 @@ form iframe.mail-list-form {
 }
 
 .mason h4 {
-    color : #FFF;
+    color : #000;
+}
+
+.mason .fade-1-4 {
+    color: black;
 }
 
 .mason a {
@@ -3031,7 +3035,7 @@ form iframe.mail-list-form {
     position: absolute;
     top: 20px;
     left: 20px;
-    color: #FFF;
+    color: #000;
     line-height: 16px;
     letter-spacing: 1.5px;
 }

@@ -12,6 +12,8 @@ COPY nginx.conf /etc/nginx/nginx.conf
 COPY *.html /etc/nginx/html/
 COPY favicon.ico /etc/nginx/html/
 
+RUN chmod +r /etc/nginx/html/favicon.ico 600
+
 # Create static directory
 RUN mkdir /etc/nginx/html/static/
 WORKDIR /etc/nginx/html/static/
