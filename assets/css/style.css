@@ -687,6 +687,10 @@ a:hover {
   background: #10111c;
 }
 
+.bg-white {
+    background: #fff;
+}
+
 
 .bg-tertiary {
   background: rgba(247, 247, 247, 1) !important;
@@ -870,6 +874,10 @@ footer.bg-dark li,
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   opacity: 0;
+  -webkit-transition: background 2s ease;
+-moz-transition: background 2s ease;
+-o-transition: background 2s ease;
+transition: background 2s ease;
 }
 
 .background-image-holder img {
@@ -8348,4 +8356,17 @@ ol {
 
 #ar1index {
     /*border: 0;*/
+}
+
+.bordered {
+    border: 1px solid white;
+}
+
+.bg-secondary .bordered {
+    border-color: black;
+}
+
+.press-articles img {
+    width: 100%;
+    height: 100%;
 }

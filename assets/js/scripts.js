@@ -8,6 +8,18 @@ var mr_firstSectionHeight,
     mr_scrollTop = 0,
     mobile = detectmob();
 
+function swapImage(element, index) {
+    setTimeout(function(){
+        var currSrc = element.children('img').eq(index).attr('src');
+        console.log(currSrc);
+        element.css('background', 'url("' + currSrc + '")');
+        index++;
+        if (index > element.children('img').length -1 ) {
+            index = 0;
+        }
+        swapImage(element, index);
+    }, 8000);
+}
 
 $(document).ready(function() { 
     "use strict";
@@ -33,8 +45,12 @@ $(document).ready(function() {
         var imgSrc = $(this).children('img').attr('src');
         $(this).css('background', 'url("' + imgSrc + '")');
         $(this).children('img').hide();
+        console.log($(this).children('img'));
         $(this).css('background-position', 'initial');
         $(this).css('opacity', '1');
+        if ($(this).children('img').length > 1) {
+            swapImage($(this), 1);
+        }
     });
 
     // Fade in background images
