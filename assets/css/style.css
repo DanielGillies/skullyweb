@@ -8262,7 +8262,7 @@ ol {
           clear: left;
          }
     
-        @media screen and (min-width: 40em) {
+        @media all and (min-width: 768px) {
             .g2 li {
                 width: 20%; 
             }
@@ -8295,7 +8295,7 @@ ol {
                 clear: none;
             }
         }
-        @media screen and (min-width: 90em) {
+        /*@media screen and (min-width: 90em) {
             .g2 li {
                 width: 10%; 
             }
@@ -8305,8 +8305,8 @@ ol {
             .g2 li:nth-child(n+1) {
                 clear: none;
             }
-        }
-@media screen and (min-width: 110em) {
+        }*/
+/*@media screen and (min-width: 110em) {
             .g2 li {
                 width: 9.0909090909%; 
             }
@@ -8316,7 +8316,7 @@ ol {
             .g2 li:nth-child(n+1) {
                 clear: none;
             }
-        }
+        }*/
 
 .g2 li .gridoverlay {
     opacity: 0;
