@@ -12,7 +12,7 @@
     <link href="static/css/budicon.css" rel="stylesheet" type="text/css" media="all" />
     <link href="static/css/avgrund.css" rel="stylesheet" type="text/css" media="all" />
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
-    
+    <link href="static/css/slippry.css" rel="stylesheet" type="text/css" media="all" />
 
     <!-- Google analytics -->
     <script>
@@ -216,16 +216,12 @@
 
         <!-- ACTUAL PAGE CONTENT -->
         <div class="main-container">
-            <section class="image-bg fullscreen overlay bg-dark mh700-2">
+            <section class="image-bg fullscreen overlay bg-dark mh7002 pt0">
                 <div class="background-image-holder indeximage">
-                    <img alt="Background Image" class="indexgif background-image" src="static/img/550.gif">
-                    <div class="fs-vid-background">
-                        <video autoplay muted loop>
-                            <source src="http://dg6vcgn2vehm4.cloudfront.net/EPIC4site.webm" type="video/webm">
-                            <source src="http://dg6vcgn2vehm4.cloudfront.net/EPIC4site.mp4" type="video/mp4">
-                            <source src="http://dg6vcgn2vehm4.cloudfront.net/EPIC4site.ogv" type="video/ogv">
-                        </video>
-                    </div>
+                    <img src="/static/img/index1.jpg" alt="demo1_1">
+                    <img src="/static/img/index2.jpg"  alt="demo1_2">
+                    <img src="/static/img/index3.jpg" alt="demo1_3">
+                    <img src="/static/img/index4.jpg" alt="demo1_4">
                 </div>
                 <div class="centered">
                         <div class="row">
@@ -286,6 +282,26 @@
             <script type="text/javascript">
 
             $("html").css("overflow", "hidden");
+            $('#pictures-demo').slippry({
+              // general elements & wrapper
+              slippryWrapper: '<div class="sy-box pictures-slider" />', // wrapper to wrap everything, including pager
+
+              // options
+              adaptiveHeight: false, // height of the sliders adapts to current slide
+              captions: false, // Position: overlay, below, custom, false
+
+              // pager
+              pager: false,
+              
+              // controls
+              controls: false,
+              autoHover: false,
+
+              // transitions
+              transition: 'fade', // fade, horizontal, kenburns, false
+              kenZoom: 140,
+              speed: 2000 // time the transition takes (ms)
+            });
             </script>
 </body>
 

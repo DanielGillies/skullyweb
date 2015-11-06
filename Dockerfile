@@ -8,8 +8,9 @@ RUN rm /etc/nginx/nginx.conf
 # copy our new nginx config
 COPY nginx.conf /etc/nginx/nginx.conf
 
-# Copy our html files to server
+# Copy our html files and favicon to server
 COPY *.html /etc/nginx/html/
+COPY favicon.ico /etc/nginx/html/
 
 # Create static directory
 RUN mkdir /etc/nginx/html/static/

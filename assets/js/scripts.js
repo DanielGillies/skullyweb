@@ -109,7 +109,7 @@ $(document).ready(function() {
         originalTab.closest('.tabbed-content').find('.content').append(tabContent);
     });
 
-    $('.tabs li').hover(function() {
+    $('.tabs li').click(function() {
         $(this).closest('.tabs').find('li').removeClass('active');
         $(this).addClass('active');
         var liIndex = $(this).index() + 1;
