@@ -214,11 +214,11 @@
 
         <!-- ACTUAL PAGE CONTENT -->
         <div class="main-container">
-            <section class="image-bg fullscreen overlay bg-dark mh700">
+            <section id="vidholder" class="image-bg fullscreen overlay mh700 bg-dark">
                 <div class="background-image-holder indeximage">
                     <img alt="Background Image" class="indexgif background-image" src="static/img/550.gif">
                     <div class="fs-vid-background">
-                        <video autoplay muted loop>
+                        <video id="hero" autoplay muted loop>
                             <source src="http://dg6vcgn2vehm4.cloudfront.net/indexcolor.webm" type="video/webm">
                             <source src="http://dg6vcgn2vehm4.cloudfront.net/indexcolor.mp4" type="video/mp4">
                             <source src="http://dg6vcgn2vehm4.cloudfront.net/indexcolor.ogv" type="video/ogv">
@@ -228,7 +228,7 @@
                 <div class="centered">
                         <div class="row">
                             <div class="text-center">
-                                <h1 class="uppercase"><span class="index">AR-1: BRAINS AND BRAWN</span>
+                                <h1 class="uppercase"><span class="index">BRAINS AND BRAWN</span>
                                 <h3>Made by road scholars and tech brawlers</h3>
                             </div>
                         </div>
@@ -266,7 +266,7 @@
                             <div class="mb40 mb-xs-24">
                                 <h4 class="fade-1-4">
                                     The SKULLY AR-1 is an augmented reality motorcycle helmet that will change the way you ride. An infinite focus heads-up display, rear-view camera, and companion app for hands-free control enhance your safety and heighten your senses. Total awareness is total freedom. 
- <br>
+                                <br>
 
                                 </h4>
                             </div>
@@ -543,6 +543,10 @@
             <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
             <script type="text/javascript">
 
+            $(window).resize(function() {
+                $('#vidholder').css('height',$('#hero').height());
+            });
+
             function detectmob() {
                 if (window.innerWidth <= 997) {
                     return true;
@@ -683,9 +687,10 @@
             /* END DIV VIEW CHECK */
             // WISTIA CTA BUTTON
             $('document').ready(function () {
+                $('#vidholder').css('height',$('#hero').height());
                 wistiaJQuery(document).bind("wistia-popover", function(event, iframe) {
                     iframe.wistiaApi.bind("end", function() {
-                        $(".fancybox-inner").append("<a target='_blank' href='http://skullysystems.myshopify.com/' class='ctabutton'>BUY NOW</a>");
+                        $(".fancybox-inner").append("<a target='_blank' href='http://skullysystems.myshopify.com/' class='ctabutton'>Get Yours</a>");
                     });
                 });
 

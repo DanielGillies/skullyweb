@@ -5180,6 +5180,7 @@ video {
 
 .fs-vid-background video {
   max-width: 900000px;
+  width: 100%;
 }
 
 .fs-vid-background iframe {
@@ -7331,7 +7332,7 @@ header h1 {
     opacity: .9;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 990px) {
     .mh700 {
         min-height: 400px !important;
         max-height: 500px !important;
@@ -7345,7 +7346,7 @@ header h1 {
 
 .mh700 {
     max-height: 87vh;
-     min-height: 575px;
+     /*min-height: 575px;*/
 }
 
 .mh700-2 {
@@ -7669,6 +7670,7 @@ font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .ctabutton {
+    border: 1px solid white;
 position: absolute;
 top: 50%;
 left: 50%;
@@ -7677,7 +7679,7 @@ margin-top:-38px;
 height: 76px;
 width: 230px;
 z-index: 1000;
-background-color: #B22222;
+background-color: #000000;
 color: white;
 text-align: center;
 font-size: 40px;

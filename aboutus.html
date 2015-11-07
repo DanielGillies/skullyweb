@@ -212,11 +212,11 @@
              </nav>
         <!-- ACTUAL PAGE CONTENT -->
         <div class="main-container">
-            <section class="image-bg fullscreen overlay bg-dark mh700">
+            <section id="vidholder" class="image-bg fullscreen overlay bg-dark mh700">
             <div class="background-image-holder">
                     <img alt="Background Image" class="background-image" src="static/img/aboutheader.jpg">
                 <div class="fs-vid-background">
-                    <video autoplay muted loop>
+                    <video id="hero" autoplay muted loop>
                         <source src="http://dg6vcgn2vehm4.cloudfront.net/video2.webm" type="video/webm">
                         <source src="http://dg6vcgn2vehm4.cloudfront.net/video2.mp4" type="video/mp4">
                         <source src="http://dg6vcgn2vehm4.cloudfront.net/video2.ogv" type="video/ogv">
@@ -514,7 +514,14 @@ the boundaries of human-centered design in other sectors.</p>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.2/handlebars.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
         <script>
+
+        $(window).resize(function() {
+                $('#vidholder').css('height',$('#hero').height());
+            });
+
         $(document).ready(function($){
+                            $('#vidholder').css('height',$('#hero').height());
+
     var $timeline_block = $('.cd-timeline-block');
 
     //hide timeline blocks which are outside the viewport

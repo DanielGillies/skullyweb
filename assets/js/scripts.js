@@ -703,7 +703,7 @@ function prepcta() {
 
 function resizeVid() {
 
-    $('.fs-vid-background video').each(function() {
+    $('.fs-vid-background2 video').each(function() {
         var vid = $(this);
             var ratio = (vid.width() / vid.height());
             var section = vid.closest('section');
