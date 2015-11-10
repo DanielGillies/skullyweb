@@ -534,7 +534,7 @@ p.lead {
 }
 
 .skullyred {
-    color: #b22222;
+    color: #b22222 !important;
 }
 
 .gray {
@@ -7347,6 +7347,10 @@ header h1 {
     }
 }
 
+.mh1600 {
+    min-height: 1600px;
+}
+
 .mh800 {
     max-height: 850px;
     min-height: 600px;
@@ -8855,4 +8859,16 @@ Main components
     -o-transform: translateX(0);
     transform: translateX(0);
   }
+}
+
+.ar1font {
+    font-family: 'Michroma' !important;
+}
+
+.bg-secondary .ar1font {
+    color: black;
+}
+
+.bg-secondary .title .ar1font {
+    color: white;
 }
