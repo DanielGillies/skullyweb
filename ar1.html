@@ -219,7 +219,7 @@
                 <div class="background-image-holder indeximage">
                     <img alt="Background Image" class="indexgif background-image" src="static/img/550.gif">
                     <div class="fs-vid-background">
-                        <video id="hero" autoplay muted loop>
+                        <video id="hero" autoplay muted>
                             <source src="http://dg6vcgn2vehm4.cloudfront.net/EPIC4site.webm" type="video/webm">
                             <source src="http://dg6vcgn2vehm4.cloudfront.net/EPIC4site.mp4" type="video/mp4">
                             <source src="http://dg6vcgn2vehm4.cloudfront.net/EPIC4site.ogv" type="video/ogv">
@@ -565,7 +565,9 @@
                 $('#vidholder').css('height',$('#hero').height());
             });
 
-            $("#hero").currentTime = 20;
+            if (document.getElementById("hero").currentTime < 20) {
+                document.getElementById("hero").currentTime = 20;
+            }
     
 
             function detectmob() {
@@ -708,12 +710,16 @@
             /* END DIV VIEW CHECK */
             // WISTIA CTA BUTTON
             $('document').ready(function () {
+                $('#hero').on('ended', function() {
+                    $(this).get(0).play();
+                    $(this).get(0).currentTime = 20;
+                })
                 $('#vidholder').css('height',$('#hero').height());
-                wistiaJQuery(document).bind("wistia-popover", function(event, iframe) {
-                    iframe.wistiaApi.bind("end", function() {
-                        $(".fancybox-inner").append("<a target='_blank' href='http://skullysystems.myshopify.com/' class='ctabutton'>Get Yours</a>");
-                    });
-                });
+                // wistiaJQuery(document).bind("wistia-popover", function(event, iframe) {
+                //     iframe.wistiaApi.bind("end", function() {
+                //         $(".fancybox-inner").append("<a target='_blank' href='http://skullysystems.myshopify.com/' class='ctabutton'>Get Yours</a>");
+                //     });
+                // });
 
                 $(window).scroll(function() {
                 if (isScrolledIntoView($(".hud-animation"))) {

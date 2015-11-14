@@ -8872,3 +8872,7 @@ Main components
 .bg-secondary .title .ar1font {
     color: white;
 }
+
+.btn-mega {
+    width: 30%;
+}

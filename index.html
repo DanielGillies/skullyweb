@@ -13,7 +13,7 @@
     <link href="static/css/avgrund.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Michroma:400,400italic,700normal,700italic|PT+Serif:400,400italic,700normal,700italic">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
-    <link href="static/css/slippry.css" rel="stylesheet" type="text/css" media="all" />
+    
 
     <!-- Google analytics -->
     <script>
@@ -227,9 +227,9 @@
                                 <h1 class="uppercase"><span class="index">SUPERHUMAN</span><br/></h1><span class="indexdesign">BY DESIGN</span>
                             </div>
                             <div class="text-center">
-                                <a href="ar1" id="ar1index" class="mt24 btn ar1font bold">AR-1</a>
+                                <!-- <a href="ar1" id="ar1index" class="mt24 btn ar1font bold">AR-1</a> -->
                                 <br>
-                                <a href="//fast.wistia.net/embed/iframe/1nwzz5fh0t?popover=true" id="wistiavid" class="wistia-popover[height=720,playerColor=414141,width=1280]">Watch Video <i class="bold skullyred ti-arrow-circle-right icon-xs"></i></a>
+                                <a href="//fast.wistia.net/embed/iframe/1nwzz5fh0t?popover=true" id="wistiavid" class="wistia-popover[height=720,playerColor=414141,width=1280]">See it in action <i class="bold skullyred ti-arrow-circle-right icon-xs"></i></a>
                     <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js"></script>
                             </div>
                         </div>
@@ -283,6 +283,15 @@
             <script type="text/javascript">
 
             $("html").css("overflow", "hidden");
+
+            $('document').ready(function () {
+                $('#vidholder').css('height',$('#hero').height());
+                wistiaJQuery(document).bind("wistia-popover", function(event, iframe) {
+                    iframe.wistiaApi.bind("end", function() {
+                        $(".fancybox-inner").append("<a target='_blank' href='index' class='ctabutton'>AR-1</a>");
+                    });
+                });
+            });
             </script>
 </body>
 

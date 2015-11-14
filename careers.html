@@ -215,13 +215,13 @@
              </nav>
         <!-- ACTUAL PAGE CONTENT -->
         <div class="main-container">
-            <section class="image-bg fullscreen overlay bg-dark mh800">
+            <section id="vidholder" class="image-bg fullscreen overlay bg-dark mh700">
                 <div class="background-image-holder indeximage">
                     <img alt="Background Image" class="indexgif background-image" src="static/img/officeimage.png">
                     <div class="fs-vid-background">
-                        <video id="careersvid" autoplay muted loop>
+                        <video id="hero" autoplay muted loop>
+                        <source src="http://dg6vcgn2vehm4.cloudfront.net/officetime.webm" type="video/webm">
                             <source src="http://dg6vcgn2vehm4.cloudfront.net/officetime.mp4" type="video/mp4">
-                            <source src="http://dg6vcgn2vehm4.cloudfront.net/officetime.webm" type="video/webm">
                             <source src="http://dg6vcgn2vehm4.cloudfront.net/officetime.ogv" type="video/ogv">
                         </video>
                     </div>
@@ -493,6 +493,13 @@ $(".tab-content").removeClass("tab-content");
                                     $(".tabs").removeClass("tabs").addClass("text-left");
                                     $(".tab-title").removeClass("tab-title").addClass("h4").addClass("uppercase");
                                 }
+
+                                $(window).resize(function() {
+                $('#vidholder').css('height',$('#hero').height());
+            });
+                                $('document').ready(function () {
+                $('#vidholder').css('height',$('#hero').height());
+            });
     </script>
 
     </body>
