@@ -3004,16 +3004,31 @@ form iframe.mail-list-form {
   color: #000;
 }
 
+.mason .title {
+    position: relative;
+    top: 35%;
+}
+
 .mason:hover h6 {
     opacity: 1;
 }
 
 .mason:hover a {
+    opacity: 1;
     background-color: #FF0000;
 }
 
 .mason h4 {
     color : #000;
+    font-weight: bold;
+    font-size: 23px;
+/*    font-size: 20px;
+    font-weight: bold;
+    text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;  */
 }
 
 .mason .fade-1-4 {
@@ -3021,6 +3036,7 @@ form iframe.mail-list-form {
 }
 
 .mason a {
+    /*opacity: .5;*/
     position: absolute;
     bottom: 30px;
     right: 15px;
@@ -8873,6 +8889,236 @@ Main components
     color: white;
 }
 
+.mason .ar1font {
+    color: black;
+}
+
 .btn-mega {
     width: 30%;
+}
+
+/* PRESS SHIT */
+#press1::after {
+    padding: 32px 32px;
+    content: "";
+    background: url(../../static/img/reuters.png);
+    opacity: .3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+     background-repeat: no-repeat; 
+     background-size: 80%; 
+     background-position: center center;
+}
+
+#press2::after {
+    padding: 32px 32px;
+    content: "";
+    background: url(../../static/img/nytimes.png);
+    opacity: .3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+     background-repeat: no-repeat; 
+     background-size: 80%; 
+     background-position: center center;
+}
+
+#press3::after {
+    padding: 32px 32px;
+    content: "";
+    background: url(../../static/img/engadget.png);
+    opacity: .3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+     background-repeat: no-repeat; 
+     background-size: 80%; 
+     background-position: center center;
+}
+
+#press4::after {
+    padding: 32px 32px;
+    content: "";
+    background: url(../../static/img/venturebeat.png);
+    opacity: .3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+     background-repeat: no-repeat; 
+     background-size: 80%; 
+     background-position: center center;
+}
+
+#press5::after {
+    padding: 32px 32px;
+    content: "";
+    background: url(../../static/img/digitaltrends.png);
+    opacity: .3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+     background-repeat: no-repeat; 
+     background-size: 80%; 
+     background-position: center center;
+}
+
+#press6::after {
+    padding: 32px 32px;
+    content: "";
+    background: url(../../static/img/usatoday.png);
+    opacity: .3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+     background-repeat: no-repeat; 
+     background-size: 80%; 
+     background-position: center center;
+}
+
+#press7::after {
+    padding: 32px 32px;
+    content: "";
+    background: url(../../static/img/svbj.jpg);
+    opacity: .3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+     background-repeat: no-repeat; 
+     background-size: 80%; 
+     background-position: center center;
+}
+
+#press8::after {
+    padding: 32px 32px;
+    content: "";
+    background: url(../../static/img/venturebeat.png);
+    opacity: .3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+     background-repeat: no-repeat; 
+     background-size: 80%; 
+     background-position: center center;
+}
+
+#press9::after {
+    padding: 32px 32px;
+    content: "";
+    background: url(../../static/img/bloomberg.png);
+    opacity: .3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+     background-repeat: no-repeat; 
+     background-size: 80%; 
+     background-position: center center;
+}
+
+#press10::after {
+    padding: 32px 32px;
+    content: "";
+    background: url(../../static/img/WSJ.png);
+    opacity: .3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+     background-repeat: no-repeat; 
+     background-size: 80%; 
+     background-position: center center;
+}
+
+#press11::after {
+    padding: 32px 32px;
+    content: "";
+    background: url(../../static/img/forbes.png);
+    opacity: .3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+     background-repeat: no-repeat; 
+     background-size: 80%; 
+     background-position: center center;
+}
+
+#press12::after {
+    padding: 32px 32px;
+    content: "";
+    background: url(../../static/img/fox.png);
+    opacity: .3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+     background-repeat: no-repeat; 
+     background-size: 80%; 
+     background-position: center center;
+}
+
+#press13::after {
+    padding: 32px 32px;
+    content: "";
+    background: url(../../static/img/TC.png);
+    opacity: .3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+     background-repeat: no-repeat; 
+     background-size: 80%; 
+     background-position: center center;
+}
+
+#press14::after {
+    padding: 32px 32px;
+    content: "";
+    background: url(../../static/img/TC.png);
+    opacity: .3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+     background-repeat: no-repeat; 
+     background-size: 80%; 
+     background-position: center center;
+}
+
+#press15::after {
+    padding: 32px 32px;
+    content: "";
+    background: url(../../static/img/svbj.jpg);
+    opacity: .3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+     background-repeat: no-repeat; 
+     background-size: 80%; 
+     background-position: center center;
 }

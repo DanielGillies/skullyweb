@@ -18,7 +18,7 @@
             </section>
             <section class="bg-dark pt0 pb0">
                 <div class="container event">
-                    <div id="owl-demo" class="mb24 owl-carousel owl-theme">
+                    <!-- <div id="owl-demo" class="mb24 owl-carousel owl-theme">
                         <div class="item"><h3 class="mb0">January</h3></div>
                         <div class="item"><h3 class="mb0">February</h3></div>
                         <div class="item"><h3 class="mb0">March</h3></div>
@@ -31,8 +31,8 @@
                         <div class="item"><h3 class="mb0">October</h3></div>
                         <div class="item"><h3 class="mb0">November</h3></div>
                         <div class="item"><h3 class="mb0">December</h3></div>
-                    </div>
-                    <a href='' id='showall' class="mt0 mb0 text-center">Show All</a>
+                    </div> -->
+                    <!-- <a href='' id='showall' class="mt0 mb0 text-center">Show All</a> -->
                     <div class="row">
                         <div class="col-md-8 col-sm-12">
                             <div id='map'>
@@ -226,70 +226,71 @@ var currMonth;
                 });
                 fade();
 
-                myLayer.setFilter(function(f) {
-                        return f.properties.startDate.substr(0, f.properties.startDate.indexOf('/')) == currMonth+1;
-                    })
-                        myLayer.eachLayer(function(layer) {
-                            var content = "<div class='map-tooltip'>"
-                            + "<h5 class='text-center bold'>" + layer.feature.properties.title + "</h5>" 
-                            + "<p>" + layer.feature.properties.address + "</p>"
-                            + "<p>" + layer.feature.properties.startDate + "-" + layer.feature.properties.endDate + "</p>"
-                            + "<a target='_blank' href=" + layer.feature.properties.directions + ">" + "Get Directions" + "</a>"
-                            + "<br>"
-                            + (layer.feature.properties.url ? "<a target='_blank' href=" + layer.feature.properties.url + ">" + "Visit Dealer Website" + "</a>" : "")
-                            + "<a href='single-event'>Event Page</a>"
-                            + "</div>";
-                            layer.bindPopup(content);
-                        });
+                // myLayer.setFilter(function(f) {
+                //         return f.properties.startDate.substr(0, f.properties.startDate.indexOf('/')) == currMonth+1;
+                //     })
+                        // myLayer.eachLayer(function(layer) {
+                        //     var content = "<div class='map-tooltip'>"
+                        //     + "<h5 class='text-center bold'>" + layer.feature.properties.title + "</h5>" 
+                        //     + "<p>" + layer.feature.properties.address + "</p>"
+                        //     + "<p>" + layer.feature.properties.startDate + "-" + layer.feature.properties.endDate + "</p>"
+                        //     + "<a target='_blank' href=" + layer.feature.properties.directions + ">" + "Get Directions" + "</a>"
+                        //     + "<br>"
+                        //     + (layer.feature.properties.url ? "<a target='_blank' href=" + layer.feature.properties.url + ">" + "Visit Dealer Website" + "</a>" : "")
+                        //     + "<a href='single-event'>Event Page</a>"
+                        //     + "</div>";
+                        //     layer.bindPopup(content);
+                        // });
 
-                $(".owl-next").click(function(){
-                    $(".item").css('opacity', 1);
-                    myLayer.setFilter(function(f) {
-                        return f.properties.startDate.substr(0, f.properties.startDate.indexOf('/')) == currMonth+1;
-                    })
-                    myLayer.eachLayer(function(layer) {
-                        var content = "<div class='map-tooltip'>"
-                        + "<h5 class='text-center bold'>" + layer.feature.properties.title + "</h5>" 
-                        + "<p>" + layer.feature.properties.address + "</p>"
-                        + "<p>" + layer.feature.properties.startDate + "-" + layer.feature.properties.endDate + "</p>"
-                        + "<a target='_blank' href=" + layer.feature.properties.directions + ">" + "Get Directions" + "</a>"
-                        + "<br>"
-                        + (layer.feature.properties.url ? "<a target='_blank' href=" + layer.feature.properties.url + ">" + "Visit Dealer Website" + "</a>" : "")
-                        + "<a href='single-event'>Event Page</a>"
-                        + "</div>";
-                        layer.bindPopup(content);
-                    });
+                // $(".owl-next").click(function(){
+                //     $(".item").css('opacity', 1);
+                //     myLayer.setFilter(function(f) {
+                //         return f.properties.startDate.substr(0, f.properties.startDate.indexOf('/')) == currMonth+1;
+                //     })
+                //     myLayer.eachLayer(function(layer) {
+                //         var content = "<div class='map-tooltip'>"
+                //         + "<h5 class='text-center bold'>" + layer.feature.properties.title + "</h5>" 
+                //         + "<p>" + layer.feature.properties.address + "</p>"
+                //         + "<p>" + layer.feature.properties.startDate + "-" + layer.feature.properties.endDate + "</p>"
+                //         + "<a target='_blank' href=" + layer.feature.properties.directions + ">" + "Get Directions" + "</a>"
+                //         + "<br>"
+                //         + (layer.feature.properties.url ? "<a target='_blank' href=" + layer.feature.properties.url + ">" + "Visit Dealer Website" + "</a>" : "")
+                //         + "<a href='single-event'>Event Page</a>"
+                //         + "</div>";
+                //         layer.bindPopup(content);
+                //     });
 
                     // $('.'+currMonth+1).toggle();
                     // $('.'+currMonth).toggle();
-                })
+                // })
 
-                $(".owl-prev").click(function(){
-                    $(".item").css('opacity', 1);
-                    myLayer.setFilter(function(f) {
-                        return f.properties.startDate.substr(0, f.properties.startDate.indexOf('/')) == currMonth+1;
-                    })
-                    myLayer.eachLayer(function(layer) {
-                        var content = "<div class='map-tooltip'>"
-                        + "<h5 class='text-center bold'>" + layer.feature.properties.title + "</h5>" 
-                        + "<p>" + layer.feature.properties.address + "</p>"
-                        + "<p>" + layer.feature.properties.startDate + "-" + layer.feature.properties.endDate + "</p>"
-                        + "<a target='_blank' href=" + layer.feature.properties.directions + ">" + "Get Directions" + "</a>"
-                        + "<br>"
-                        + (layer.feature.properties.url ? "<a target='_blank' href=" + layer.feature.properties.url + ">" + "Visit Dealer Website" + "</a>" : "")
-                        + "<a href='single-event'>Event Page</a>"
-                        + "</div>";
-                        layer.bindPopup(content);
-                    });
+                // $(".owl-prev").click(function(){
+                //     $(".item").css('opacity', 1);
+                //     myLayer.setFilter(function(f) {
+                //         return f.properties.startDate.substr(0, f.properties.startDate.indexOf('/')) == currMonth+1;
+                //     })
+                //     myLayer.eachLayer(function(layer) {
+                //         var content = "<div class='map-tooltip'>"
+                //         + "<h5 class='text-center bold'>" + layer.feature.properties.title + "</h5>" 
+                //         + "<p>" + layer.feature.properties.address + "</p>"
+                //         + "<p>" + layer.feature.properties.startDate + "-" + layer.feature.properties.endDate + "</p>"
+                //         + "<a target='_blank' href=" + layer.feature.properties.directions + ">" + "Get Directions" + "</a>"
+                //         + "<br>"
+                //         + (layer.feature.properties.url ? "<a target='_blank' href=" + layer.feature.properties.url + ">" + "Visit Dealer Website" + "</a>" : "")
+                //         + "<a href='single-event'>Event Page</a>"
+                //         + "</div>";
+                //         layer.bindPopup(content);
+                //     });
 
                     // $('.'+currMonth+1).toggle();
                     // $('.'+currMonth+2).toggle();
 
-                })
+                // })
 
                 $("#showall").click(function(e) {
                     e.preventDefault();
-                    $(".item").css('opacity', '.3');
+                    // $(".item").css('display', 'none');
+                    // $(".owl-buttons").css('display', 'none')
                     myLayer.setFilter(function(f) {
                         return true;
                     })
@@ -332,18 +333,21 @@ var currMonth;
 
         $(document).ready(function() {
          
-          $("#owl-demo").owlCarousel({
+            setTimeout(function() {
+                $("#showall").trigger('click');
+            },100);
+          // $("#owl-demo").owlCarousel({
          
-              navigation : true, // Show next and prev buttons
-              slideSpeed : 300,
-              paginationSpeed : 400,
-              singleItem:true,
-              afterAction: afterAction
+          //     navigation : true, // Show next and prev buttons
+          //     slideSpeed : 300,
+          //     paginationSpeed : 400,
+          //     singleItem:true,
+          //     afterAction: afterAction
          
-          });
+          // });
 
-          var owl = $("#owl-demo").data("owlCarousel");
-          owl.jumpTo(10);
+          // var owl = $("#owl-demo").data("owlCarousel");
+          // owl.jumpTo(10);
 
         function afterAction() {
             currMonth = this.owl.currentItem;
