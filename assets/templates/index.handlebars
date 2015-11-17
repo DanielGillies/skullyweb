@@ -59,20 +59,24 @@
                 </div>
             </section> -->
             <!-- TEMPLATES -->
+            {{> footer}}
             {{> scripts}}
             <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
             <script type="text/javascript">
 
             $("html").css("overflow", "hidden");
+            $("footer").css("display", "none");
+            // $("body").css("overflow", "hidden");
 
             $('document').ready(function () {
                 $('#vidholder').css('height',$('#hero').height());
-                wistiaJQuery(document).bind("wistia-popover", function(event, iframe) {
-                    iframe.wistiaApi.bind("end", function() {
-                        $(".fancybox-inner").append("<a target='_blank' href='index' class='ctabutton'>AR-1</a>");
+                wistiaJQuery(document).bind('wistia-popover', function(event, iframe) {
+                    iframe.wistiaApi.bind('end', function() {
+                        $('.fancybox-inner').append("<a target='_blank' href='index' class='ctabutton'>AR-1</a>");
                     });
                 });
-            });
+            });            
+
             </script>
 </body>
 
