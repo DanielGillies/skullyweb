@@ -8897,6 +8897,12 @@ Main components
     width: 30%;
 }
 
+@media all and (max-width: 576px) {
+    .btn-mega {
+        width: 70%;
+    }
+}
+
 /* PRESS SHIT */
 #press1::after {
     padding: 32px 32px;
