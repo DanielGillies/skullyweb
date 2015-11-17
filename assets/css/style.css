@@ -9128,3 +9128,10 @@ Main components
      background-size: 80%; 
      background-position: center center;
 }
+
+.bg-white td{
+    color: black;
+}
+.bg-white th{
+    color: black;
+}
