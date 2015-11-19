@@ -32,8 +32,6 @@
                     <img src="static/img/vid_title.png" alt="text">
                     </span>
                 </div> -->
-            </section>
-            <section class="pb0 pt72">
                 <div class="indexvidbar">
                     <div class="row halved" style="left: 6%">
                         <div class="col-sm-3 col-md-3 col-xs-3">
@@ -50,7 +48,25 @@
                         </div>
                     </div>
                 </div>
-                </section>
+            </section>
+            <!-- <section class="pb0 pt72">
+                <div class="indexvidbar">
+                    <div class="row halved" style="left: 6%">
+                        <div class="col-sm-3 col-md-3 col-xs-3">
+                            <a style="cursor:pointer;" id="show1"><img alt="pic" class="image-xxs" src="static/img/press1.png"></a>
+                        </div>
+                        <div class="col-sm-3 col-md-3 col-xs-3">
+                            <a style="cursor:pointer;" id="show2"><img alt="pic" class="image-xxs" src="static/img/press5.png"></a>
+                        </div>
+                        <div class="col-sm-2 col-md-3 col-xs-2">
+                            <a style="cursor:pointer;" id="show3"><img alt="pic" class="image-xxs" src="static/img/press3.png"></a>
+                        </div>
+                        <div class="col-sm-3 col-md-3 col-xs-3">
+                            <a style="cursor:pointer;" id="show4"><img alt="pic" class="image-xxs" src="static/img/press4.png"></a>
+                        </div>
+                    </div>
+                </div>
+                </section> -->
                 <section class="scroll fullheight image-bg fullscreen bg-dark" style="min-height: 900px">
                 <div class="background-image-holder">
                     <img src="/static/img/kyle1.jpeg">
@@ -157,7 +173,7 @@
                         </div>
                         </section>
             </section>
-            <section class="fullheight bg-secondary pt48">
+            <section class="scroll fullheight bg-secondary pt48">
                 <div class="container">
                     <h2 class="mb0 mb-xs-0 black text-center">Blind Spots are the Enemy</h2>
                     <h4 class="mb48 mb-xs-32 black text-center">
@@ -237,7 +253,7 @@
                     </div>
                     <!--end of container-->
             </section>
-            <section class="fullheight image-bg overlay">
+            <section class="scroll fullheight image-bg overlay">
                 <div class="background-image-holder">
                     <img alt="image" class="background-image" src="static/img/home12.jpg">
                 </div>
@@ -277,9 +293,9 @@
             <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
             <script type="text/javascript">
 
-            $(window).resize(function() {
-                $('#vidholder').css('height',$('#hero').height());
-            });
+            // $(window).resize(function() {
+            //     $('#vidholder').css('height',$('#hero').height());
+            // });
 
             if (document.getElementById("hero").currentTime < 20) {
                 document.getElementById("hero").currentTime = 20;
@@ -411,8 +427,7 @@
 
             $(function() {
     $.scrollify({
-        section:".scroll",
-        offset: -55
+        section:".scroll"
     });
 
     // $(".scroll,.scroll-btn").click(function(e) {
@@ -445,7 +460,7 @@
                     $(this).get(0).play();
                     $(this).get(0).currentTime = 20;
                 })
-                $('#vidholder').css('height',$('#hero').height());
+                // $('#vidholder').css('height',$('#hero').height());
                 // wistiaJQuery(document).bind("wistia-popover", function(event, iframe) {
                 //     iframe.wistiaApi.bind("end", function() {
                 //         $(".fancybox-inner").append("<a target='_blank' href='http://skullysystems.myshopify.com/' class='ctabutton'>Get Yours</a>");

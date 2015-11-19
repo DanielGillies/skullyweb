@@ -34,9 +34,9 @@ $(document).ready(function() {
 
     // Update scroll variable for scrolling functions
 
-    addEventListener('scroll', function() {
-        mr_scrollTop = window.pageYOffset;
-    }, false);
+    // addEventListener('scroll', function() {
+    //     mr_scrollTop = window.pageYOffset;
+    // }, false);
 
     // Append .background-image-holder <img>'s as CSS backgrounds
 
@@ -63,15 +63,15 @@ $(document).ready(function() {
 
     // Checkboxes
 
-    $('.checkbox-option').click(function() {
-        $(this).toggleClass('checked');
-        var checkbox = $(this).find('input');
-        if (checkbox.prop('checked') === false) {
-            checkbox.prop('checked', true);
-        } else {
-            checkbox.prop('checked', false);
-        }
-    });
+    // $('.checkbox-option').click(function() {
+    //     $(this).toggleClass('checked');
+    //     var checkbox = $(this).find('input');
+    //     if (checkbox.prop('checked') === false) {
+    //         checkbox.prop('checked', true);
+    //     } else {
+    //         checkbox.prop('checked', false);
+    //     }
+    // });
 
     // Radio Buttons
 
@@ -84,14 +84,14 @@ $(document).ready(function() {
 
     // Accordions
 
-    $('.accordion li').click(function() {
-        if ($(this).closest('.accordion').hasClass('one-open')) {
-            $(this).closest('.accordion').find('li').removeClass('active');
-            $(this).addClass('active');
-        } else {
-            $(this).toggleClass('active');
-        }
-    });
+    // $('.accordion li').click(function() {
+    //     if ($(this).closest('.accordion').hasClass('one-open')) {
+    //         $(this).closest('.accordion').find('li').removeClass('active');
+    //         $(this).addClass('active');
+    //     } else {
+    //         $(this).toggleClass('active');
+    //     }
+    // });
 
     // Tabbed Content
 
@@ -119,9 +119,9 @@ $(document).ready(function() {
 
     // Progress Bars
 
-    $('.progress-bar').each(function() {
-        $(this).css('width', $(this).attr('data-progress') + '%');
-    });
+    // $('.progress-bar').each(function() {
+    //     $(this).css('width', $(this).attr('data-progress') + '%');
+    // });
 
     // Navigation
 
@@ -137,15 +137,15 @@ $(document).ready(function() {
 
         // Compensate the height of parallax element for inline nav
 
-        if ($(window).width() > 768) {
-            $('.parallax:nth-of-type(1) .background-image-holder').css('top', -($('nav').outerHeight(true)));
-        }
+        // if ($(window).width() > 768) {
+        //     $('.parallax:nth-of-type(1) .background-image-holder').css('top', -($('nav').outerHeight(true)));
+        // }
 
         // Adjust fullscreen elements
 
-        if ($(window).width() > 768) {
-            $('section.fullscreen:nth-of-type(1)').css('height', ($(window).height() - $('nav').outerHeight(true)));
-        }
+        // if ($(window).width() > 768) {
+            // $('section.fullscreen:nth-of-type(1)').css('height', ($(window).height() - $('nav').outerHeight(true)));
+        // }
 
     } else {
         $('body').addClass('nav-is-overlay');
@@ -160,7 +160,7 @@ $(document).ready(function() {
 
     mr_nav = $('body .nav-container nav:first');
     mr_navOuterHeight = $('body .nav-container nav:first').outerHeight();
-    window.addEventListener("scroll", updateNav, false);
+    // window.addEventListener("scroll", updateNav, false);
 
     // Menu dropdown positioning
 
@@ -200,90 +200,90 @@ $(document).ready(function() {
     
     // Offscreen Nav
     
-    if($('.offscreen-toggle').length){
-    	$('body').addClass('has-offscreen-nav');
-    }
+    // if($('.offscreen-toggle').length){
+    // 	$('body').addClass('has-offscreen-nav');
+    // }
     
-    $('.offscreen-toggle').click(function(){
-    	$('.main-container').toggleClass('reveal-nav');
-    	$('.offscreen-container').toggleClass('reveal-nav');
-    });
+    // $('.offscreen-toggle').click(function(){
+    // 	$('.main-container').toggleClass('reveal-nav');
+    // 	$('.offscreen-container').toggleClass('reveal-nav');
+    // });
     
-    $('.main-container').click(function(){
-    	if($(this).hasClass('reveal-nav')){
-    		$(this).removeClass('reveal-nav');
-    		$('.offscreen-container').removeClass('reveal-nav');
-    	}
-    });
+    // $('.main-container').click(function(){
+    // 	if($(this).hasClass('reveal-nav')){
+    // 		$(this).removeClass('reveal-nav');
+    // 		$('.offscreen-container').removeClass('reveal-nav');
+    // 	}
+    // });
     
-    $('.offscreen-container a').click(function(){
-    	$('.offscreen-container').removeClass('reveal-nav');
-    	$('.main-container').removeClass('reveal-nav');
-    });
+    // $('.offscreen-container a').click(function(){
+    // 	$('.offscreen-container').removeClass('reveal-nav');
+    // 	$('.main-container').removeClass('reveal-nav');
+    // });
 
     // Populate filters
     
-    $('.projects').each(function() {
+    // $('.projects').each(function() {
 
-        var filters = "";
+    //     var filters = "";
 
-        $(this).find('.project').each(function() {
+    //     $(this).find('.project').each(function() {
 
-            var filterTags = $(this).attr('data-filter').split(',');
+    //         var filterTags = $(this).attr('data-filter').split(',');
 
-            filterTags.forEach(function(tagName) {
-                if (filters.indexOf(tagName) == -1) {
-                    filters += '<li data-filter="' + tagName + '" class="active">' + capitaliseFirstLetter(tagName) + '</li>';
-                }
-            });
-            $(this).closest('.projects')
-                .find('ul.filters').empty().append(filters);
-        });
-    });
+    //         filterTags.forEach(function(tagName) {
+    //             if (filters.indexOf(tagName) == -1) {
+    //                 filters += '<li data-filter="' + tagName + '" class="active">' + capitaliseFirstLetter(tagName) + '</li>';
+    //             }
+    //         });
+    //         $(this).closest('.projects')
+    //             .find('ul.filters').empty().append(filters);
+    //     });
+    // });
 
-    $('.filters li').click(function() {
-        var filter = $(this).attr('data-filter');
-        $(this).closest('.filters').find('li').removeClass('active');
-        $(this).addClass('active');
+    // $('.filters li').click(function() {
+    //     var filter = $(this).attr('data-filter');
+    //     $(this).closest('.filters').find('li').removeClass('active');
+    //     $(this).addClass('active');
 
-        $(this).closest('.projects').find('.project').each(function() {
-            var filters = $(this).data('filter');
+    //     $(this).closest('.projects').find('.project').each(function() {
+    //         var filters = $(this).data('filter');
 
-            if (filters.indexOf(filter) == -1) {
-                $(this).addClass('inactive');
-            } else {
-                $(this).removeClass('inactive');
-            }
-        });
+    //         if (filters.indexOf(filter) == -1) {
+    //             $(this).addClass('inactive');
+    //         } else {
+    //             $(this).removeClass('inactive');
+    //         }
+    //     });
 
-        if (filter == 'all') {
-            $(this).closest('.projects').find('.project').removeClass('inactive');
-        }
-    });
+    //     if (filter == 'all') {
+    //         $(this).closest('.projects').find('.project').removeClass('inactive');
+    //     }
+    // });
 
     // Twitter Feed
 
-    $('.tweets-feed').each(function(index) {
-        $(this).attr('id', 'tweets-' + index);
-    }).each(function(index) {
+    // $('.tweets-feed').each(function(index) {
+    //     $(this).attr('id', 'tweets-' + index);
+    // }).each(function(index) {
 
-        function handleTweets(tweets) {
-            var x = tweets.length;
-            var n = 0;
-            var element = document.getElementById('tweets-' + index);
-            var html = '<ul class="slides">';
-            while (n < x) {
-                html += '<li>' + tweets[n] + '</li>';
-                n++;
-            }
-            html += '</ul>';
-            element.innerHTML = html;
-            return html;
-        }
+    //     function handleTweets(tweets) {
+    //         var x = tweets.length;
+    //         var n = 0;
+    //         var element = document.getElementById('tweets-' + index);
+    //         var html = '<ul class="slides">';
+    //         while (n < x) {
+    //             html += '<li>' + tweets[n] + '</li>';
+    //             n++;
+    //         }
+    //         html += '</ul>';
+    //         element.innerHTML = html;
+    //         return html;
+    //     }
 
-        twitterFetcher.fetch($('#tweets-' + index).attr('data-widget-id'), '', 5, true, true, true, '', false, handleTweets);
+    //     twitterFetcher.fetch($('#tweets-' + index).attr('data-widget-id'), '', 5, true, true, true, '', false, handleTweets);
 
-    });
+    // });
 
     // Instagram Feed
     
@@ -304,23 +304,23 @@ $(document).ready(function() {
 
     // Image Sliders
 
-    $('.slider-all-controls').flexslider({});
-    $('.slider-paging-controls').flexslider({
-        animation: "slide",
-        directionNav: false
-    });
-    $('.slider-arrow-controls').flexslider({
-        controlNav: false
-    });
-    $('.slider-thumb-controls .slides li').each(function() {
-        var imgSrc = $(this).find('img').attr('src');
-        $(this).attr('data-thumb', imgSrc);
-    });
-    $('.slider-thumb-controls').flexslider({
-        animation: "slide",
-        controlNav: "thumbnails",
-        directionNav: true
-    });
+    // $('.slider-all-controls').flexslider({});
+    // $('.slider-paging-controls').flexslider({
+    //     animation: "slide",
+    //     directionNav: false
+    // });
+    // $('.slider-arrow-controls').flexslider({
+    //     controlNav: false
+    // });
+    // $('.slider-thumb-controls .slides li').each(function() {
+    //     var imgSrc = $(this).find('img').attr('src');
+    //     $(this).attr('data-thumb', imgSrc);
+    // });
+    // $('.slider-thumb-controls').flexslider({
+    //     animation: "slide",
+    //     controlNav: "thumbnails",
+    //     directionNav: true
+    // });
     $('.logo-carousel').flexslider({
         minItems: 1,
         maxItems: 4,
@@ -402,11 +402,11 @@ $(document).ready(function() {
         $(this).addClass('interact');
     });
 
-    $(window).scroll(function() {
-        if ($('.map-holder.interact').length) {
-            $('.map-holder.interact').removeClass('interact');
-        }
-    });
+    // $(window).scroll(function() {
+    //     if ($('.map-holder.interact').length) {
+    //         $('.map-holder.interact').removeClass('interact');
+    //     }
+    // });
 
     // Countdown Timers
 
@@ -703,7 +703,7 @@ function prepcta() {
 
 function resizeVid() {
 
-    $('.fs-vid-background2 video').each(function() {
+    $('.fs-vid-background video').each(function() {
         var vid = $(this);
             var ratio = (vid.width() / vid.height());
             var section = vid.closest('section');
@@ -762,6 +762,7 @@ function updateNav() {
             }
 
             if (scrollY > mr_navOuterHeight * 2) {
+                console.log("FFFFF");
                 if (!mr_outOfSight &&!mobile) {
                     mr_nav.addClass('outOfSight');
                     mr_outOfSight = true;
@@ -795,18 +796,18 @@ function capitaliseFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-function masonryFlyIn() {
-    var $items = $('.masonryFlyIn .masonry-item');
-    var time = 0;
+// function masonryFlyIn() {
+//     var $items = $('.masonryFlyIn .masonry-item');
+//     var time = 0;
 
-    $items.each(function() {
-        var item = $(this);
-        setTimeout(function() {
-            item.addClass('fadeIn');
-        }, time);
-        time += 170;
-    });
-}
+//     $items.each(function() {
+//         var item = $(this);
+//         setTimeout(function() {
+//             item.addClass('fadeIn');
+//         }, time);
+//         time += 170;
+//     });
+// }
 
 function setupFloatingProjectFilters() {
     mr_floatingProjectSections = [];
