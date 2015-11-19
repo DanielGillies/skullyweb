@@ -58,6 +58,10 @@ body {
   color: #666;
 }
 
+p {
+    font-size: 18px;
+}
+
 body.boxed-layout {
   background: #eee;
 }
@@ -9012,11 +9016,11 @@ div[id^='press-']:hover span{
 }
 
 div[id^='press-']:hover:before{
-    opacity: .2;
+    opacity: .1;
 }
 
 div[id^='press-'] h4, div[id^='press-'] span{
-    opacity: 0;
+    opacity: .0;
 }
 
 .bg-white td{
