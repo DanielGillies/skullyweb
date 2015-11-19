@@ -886,6 +886,8 @@ transition: background 2s ease;
 
 .background-image-holder img {
   display: none;
+  position: absolute;
+  bottom: 0;
 }
 
 .background-multiply .background-image-holder {
@@ -5201,6 +5203,8 @@ video {
 .fs-vid-background video {
   max-width: 900000px;
   width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .fs-vid-background iframe {
