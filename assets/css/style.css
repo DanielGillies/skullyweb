@@ -7382,6 +7382,10 @@ header h1 {
      min-height: 95vh;
 }
 
+.fullheight {
+    height: 100vh;
+}
+
 
 .minh570 {
     min-height: 570px;
@@ -8904,229 +8908,115 @@ Main components
 }
 
 /* PRESS SHIT */
-#press1::after {
+
+div[id^='press-']::before {
     padding: 32px 32px;
     content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+#press-reuters::before {
     background: url(../../static/img/reuters.png);
-    opacity: .3;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-     background-repeat: no-repeat; 
-     background-size: 80%; 
-     background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: 80%; 
+    background-position: center center;
 }
 
-#press2::after {
-    padding: 32px 32px;
-    content: "";
+#press-nytimes::before {
     background: url(../../static/img/nytimes.png);
-    opacity: .3;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
      background-repeat: no-repeat; 
      background-size: 80%; 
      background-position: center center;
 }
 
-#press3::after {
-    padding: 32px 32px;
-    content: "";
+#press-engadget::before {
     background: url(../../static/img/engadget.png);
-    opacity: .3;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-     background-repeat: no-repeat; 
-     background-size: 80%; 
-     background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: 80%; 
+    background-position: center center;
 }
 
-#press4::after {
-    padding: 32px 32px;
-    content: "";
-    background: url(../../static/img/venturebeat.png);
-    opacity: .3;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-     background-repeat: no-repeat; 
-     background-size: 80%; 
-     background-position: center center;
-}
-
-#press5::after {
-    padding: 32px 32px;
-    content: "";
+#press-digitaltrends::before {
     background: url(../../static/img/digitaltrends.png);
-    opacity: .3;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
      background-repeat: no-repeat; 
      background-size: 80%; 
      background-position: center center;
 }
 
-#press6::after {
-    padding: 32px 32px;
-    content: "";
+#press-usa::before {
     background: url(../../static/img/usatoday.png);
-    opacity: .3;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
      background-repeat: no-repeat; 
      background-size: 80%; 
      background-position: center center;
 }
 
-#press7::after {
-    padding: 32px 32px;
-    content: "";
-    background: url(../../static/img/svbj.jpg);
-    opacity: .3;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-     background-repeat: no-repeat; 
-     background-size: 80%; 
-     background-position: center center;
-}
-
-#press8::after {
-    padding: 32px 32px;
-    content: "";
+#press-vb::before {
     background: url(../../static/img/venturebeat.png);
-    opacity: .3;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
      background-repeat: no-repeat; 
      background-size: 80%; 
      background-position: center center;
 }
 
-#press9::after {
-    padding: 32px 32px;
-    content: "";
+#press-bloomberg::before {
     background: url(../../static/img/bloomberg.png);
-    opacity: .3;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
      background-repeat: no-repeat; 
      background-size: 80%; 
      background-position: center center;
 }
 
-#press10::after {
-    padding: 32px 32px;
-    content: "";
+#press-wsj::before {
     background: url(../../static/img/WSJ.png);
-    opacity: .3;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
      background-repeat: no-repeat; 
      background-size: 80%; 
      background-position: center center;
 }
 
-#press11::after {
-    padding: 32px 32px;
-    content: "";
+#press-forbes::before {
     background: url(../../static/img/forbes.png);
-    opacity: .3;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
      background-repeat: no-repeat; 
      background-size: 80%; 
      background-position: center center;
 }
 
-#press12::after {
-    padding: 32px 32px;
-    content: "";
+#press-fox::before {
     background: url(../../static/img/fox.png);
-    opacity: .3;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
      background-repeat: no-repeat; 
      background-size: 80%; 
      background-position: center center;
 }
 
-#press13::after {
-    padding: 32px 32px;
-    content: "";
+#press-tc::before {
     background: url(../../static/img/TC.png);
-    opacity: .3;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
      background-repeat: no-repeat; 
      background-size: 80%; 
      background-position: center center;
 }
 
-#press14::after {
-    padding: 32px 32px;
-    content: "";
-    background: url(../../static/img/TC.png);
-    opacity: .3;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-     background-repeat: no-repeat; 
-     background-size: 80%; 
-     background-position: center center;
-}
-
-#press15::after {
-    padding: 32px 32px;
-    content: "";
+#press-svbj::before {
     background: url(../../static/img/svbj.jpg);
-    opacity: .3;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
      background-repeat: no-repeat; 
      background-size: 80%; 
      background-position: center center;
+}
+
+div[id^='press-']:hover h4{
+    opacity: 1;
+}
+
+div[id^='press-']:hover span{
+    opacity: 1;
+}
+
+div[id^='press-']:hover:before{
+    opacity: .2;
+}
+
+div[id^='press-'] h4, div[id^='press-'] span{
+    opacity: 0;
 }
 
 .bg-white td{

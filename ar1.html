@@ -215,7 +215,7 @@
 
         <!-- ACTUAL PAGE CONTENT -->
         <div class="main-container">
-            <section id="vidholder" class="image-bg fullscreen overlay mh700 bg-dark">
+            <section id="vidholder" class="scroll image-bg fullscreen overlay mh700 bg-dark">
                 <div class="background-image-holder indeximage">
                     <img alt="Background Image" class="indexgif background-image" src="static/img/550.gif">
                     <div class="fs-vid-background">
@@ -261,7 +261,7 @@
                     </div>
                 </div>
                 </section>
-                <section class="image-bg fullscreen bg-dark" style="min-height: 900px">
+                <section class="scroll fullheight image-bg fullscreen bg-dark" style="min-height: 900px">
                 <div class="background-image-holder">
                     <img src="/static/img/kyle1.jpeg">
                 </div>
@@ -307,7 +307,7 @@
                     <!-- </div> -->
                     <!--end of container-->
             </section>
-            <section class="bg-white pb0 pt0">
+            <section class="scroll fullheight bg-white pb0 pt0">
                 <div class="text-center" style="height: 700px;">
                     <video autoplay muted loop style="height: 700px;">
                         <source src="http://dg6vcgn2vehm4.cloudfront.net/exploded_withtags.webm" type="video/webm">
@@ -316,7 +316,7 @@
                     </video>
                 </div>
             </section>
-            <section class="bg-primary">
+            <section class="scroll bg-primary">
                 <div class="container">
                     <h2 class="mb0 mb-xs-0 text-center">Heads-Up Display</h2>
                     <h4 class="mb48 mb-xs-32 text-center">for <strong>Total Awareness</strong></h4>
@@ -367,7 +367,7 @@
                         </div>
                         </section>
             </section>
-            <section class="bg-secondary pt48">
+            <section class="fullheight bg-secondary pt48">
                 <div class="container">
                     <h2 class="mb0 mb-xs-0 black text-center">Blind Spots are the Enemy</h2>
                     <h4 class="mb48 mb-xs-32 black text-center">
@@ -378,10 +378,10 @@
                             <div class="product-features sep-top">
                                 <input id="fov-toggle" class="hidden" type="checkbox">
                                 <input id="mobile-conventional-fov" name="fov" class="hidden" type="radio" checked>
-                                <input id="mobile-skully-fov" name="fov" class="hidden" type="radio">
+                                <input id="mobile-skully-fov" name="fov" class="hidden ar1font" type="radio">
                                 <div class="mobile-fov-buttons">
                                     <label for="mobile-conventional-fov" class="mobile-fov-button mobile-conventional-fov-button">Conventional</label>
-                                    <label for="mobile-skully-fov" class="mobile-fov-button mobile-skully-fov-button">SKULLY</label>
+                                    <label for="mobile-skully-fov" class="mobile-fov-button mobile-skully-fov-button ar1font">SKULLY</label>
                                 </div>
                                 <div class="fov-wrapper">
                                     <div class="fov-infographics">
@@ -447,11 +447,11 @@
                     </div>
                     <!--end of container-->
             </section>
-            <section class="image-bg overlay">
+            <section class="fullheight image-bg overlay">
                 <div class="background-image-holder">
                     <img alt="image" class="background-image" src="static/img/home12.jpg">
                 </div>
-                <div class="container">
+                <div class="v-align-transform container">
                     <a name="signup">
                         <div class="row mb40 mb-xs-24">
                             <div class="col-sm-12 text-center">
@@ -561,6 +561,7 @@
             <script src="static/js/main.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.2/handlebars.js"></script>
             <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+            <script src="http://projects.lukehaas.me/scrollify/script/jquery.scrollify.js"></script>
             <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
             <script type="text/javascript">
 
@@ -695,6 +696,21 @@
                 alert("ITS SCATMAN TIME!!!!");
 
             });
+
+            $(function() {
+    $.scrollify({
+        section:".scroll",
+        offset: -55
+    });
+
+    // $(".scroll,.scroll-btn").click(function(e) {
+    //     e.preventDefault();
+
+    //     $.scrollify.next();
+    // });
+
+    
+});
 
             /* CHECK FOR DIV IN VIEW */
             function isScrolledIntoView(elem)
