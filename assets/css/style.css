@@ -9051,3 +9051,7 @@ div[id^='press-'] h4, div[id^='press-'] span{
 .bg-white th{
     color: black;
 }
+
+.modal-dialog {
+    margin-top: 30vh;
+}
