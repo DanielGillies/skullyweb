@@ -25,12 +25,12 @@ $(document).ready(function() {
 
     // Smooth scroll to inner links
 
-	// if($('.inner-link').length){
-	// 	$('.inner-link').smoothScroll({
-	// 		offset: -55,
-	// 		speed: 800
-	// 	});
- //    }
+	if($('.inner-link').length){
+		$('.inner-link').smoothScroll({
+			offset: -55,
+			speed: 800
+		});
+    }
 
     // Update scroll variable for scrolling functions
 
@@ -263,27 +263,27 @@ $(document).ready(function() {
 
     // Twitter Feed
 
-    // $('.tweets-feed').each(function(index) {
-    //     $(this).attr('id', 'tweets-' + index);
-    // }).each(function(index) {
+    $('.tweets-feed').each(function(index) {
+        $(this).attr('id', 'tweets-' + index);
+    }).each(function(index) {
 
-    //     function handleTweets(tweets) {
-    //         var x = tweets.length;
-    //         var n = 0;
-    //         var element = document.getElementById('tweets-' + index);
-    //         var html = '<ul class="slides">';
-    //         while (n < x) {
-    //             html += '<li>' + tweets[n] + '</li>';
-    //             n++;
-    //         }
-    //         html += '</ul>';
-    //         element.innerHTML = html;
-    //         return html;
-    //     }
+        function handleTweets(tweets) {
+            var x = tweets.length;
+            var n = 0;
+            var element = document.getElementById('tweets-' + index);
+            var html = '<ul class="slides">';
+            while (n < x) {
+                html += '<li>' + tweets[n] + '</li>';
+                n++;
+            }
+            html += '</ul>';
+            element.innerHTML = html;
+            return html;
+        }
 
-    //     twitterFetcher.fetch($('#tweets-' + index).attr('data-widget-id'), '', 5, true, true, true, '', false, handleTweets);
+        twitterFetcher.fetch($('#tweets-' + index).attr('data-widget-id'), '', 5, true, true, true, '', false, handleTweets);
 
-    // });
+    });
 
     // Instagram Feed
     

@@ -1,20 +1,25 @@
-{{> header title="SKULLY"}}
+{{> header title="SKULLY AR-1"}}
 <body>
     <div class="nav-container">
     {{> navbar}}
 
         <!-- ACTUAL PAGE CONTENT -->
         <div class="main-container">
-            <section class="image-bg fullscreen overlay bg-dark mh700-2 pt0">
+            <section id="vidholder" data-section-name="header" class="scroll image-bg fullscreen overlay mh700 bg-dark">
                 <div class="background-image-holder indeximage">
-                    <img src="/static/img/index3.jpg" alt="index3">
-                    <img src="/static/img/index1.jpg" alt="index1">
-                    <img src="/static/img/index4.jpg" alt="index4">
+                    <img alt="Background Image" class="indexgif background-image" src="static/img/550.gif">
+                    <div class="fs-vid-background">
+                        <video id="hero" autoplay muted>
+                            <source src="http://dg6vcgn2vehm4.cloudfront.net/EPIC4site.webm" type="video/webm">
+                            <source src="http://dg6vcgn2vehm4.cloudfront.net/EPIC4site.mp4" type="video/mp4">
+                            <source src="http://dg6vcgn2vehm4.cloudfront.net/EPIC4site.ogv" type="video/ogv">
+                        </video>
+                    </div>
                 </div>
                 <div class="centered">
                         <div class="row">
                             <div class="text-center">
-                                <h1 class="uppercase"><span class="index">SUPERHUMAN</span><br/></h1><span class="indexdesign">BY DESIGN</span>
+                                <h1 class="uppercase"><span class="indexdesign">SUPERHUMAN</span><br/></h1><span class="indexdesign" style="font-weight: 300">BY DESIGN</span>
                             </div>
                             <div class="text-center">
                                 <!-- <a href="ar1" id="ar1index" class="mt24 btn ar1font bold">AR-1</a> -->
@@ -32,15 +37,6 @@
                     <img src="static/img/vid_title.png" alt="text">
                     </span>
                 </div> -->
-                <!-- <div class="botright">
-                    <a href="//fast.wistia.net/embed/iframe/1nwzz5fh0t?popover=true" id="wistiavid" class="wistia-popover[height=720,playerColor=414141,width=1280]">Watch Video <i class="bold skullyred ti-arrow-circle-right icon-xs"></i></a>
-                    <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js"></script>
-                </div> -->
-                <div class="botrow">
-                {{> subnav}}
-                </div>
-            </section>
-            <!-- <section class="indexbar">
                 <div class="indexvidbar">
                     <div class="row halved" style="left: 6%">
                         <div class="col-sm-3 col-md-3 col-xs-3">
@@ -57,25 +53,548 @@
                         </div>
                     </div>
                 </div>
-            </section> -->
+            </section>
+            <!-- <section class="pb0 pt72">
+                <div class="indexvidbar">
+                    <div class="row halved" style="left: 6%">
+                        <div class="col-sm-3 col-md-3 col-xs-3">
+                            <a style="cursor:pointer;" id="show1"><img alt="pic" class="image-xxs" src="static/img/press1.png"></a>
+                        </div>
+                        <div class="col-sm-3 col-md-3 col-xs-3">
+                            <a style="cursor:pointer;" id="show2"><img alt="pic" class="image-xxs" src="static/img/press5.png"></a>
+                        </div>
+                        <div class="col-sm-2 col-md-3 col-xs-2">
+                            <a style="cursor:pointer;" id="show3"><img alt="pic" class="image-xxs" src="static/img/press3.png"></a>
+                        </div>
+                        <div class="col-sm-3 col-md-3 col-xs-3">
+                            <a style="cursor:pointer;" id="show4"><img alt="pic" class="image-xxs" src="static/img/press4.png"></a>
+                        </div>
+                    </div>
+                </div>
+                </section> -->
+                <section data-section-name="beauty"class="scroll fullheight image-bg fullscreen bg-dark" style="min-height: 900px">
+                <div class="background-image-holder">
+                    <img src="/static/img/kyle1.jpeg">
+                </div>
+                <div class="container">
+                <div class="row">
+                        <div class="col-sm-4 mb-xs-24 col-md-4 pt72">
+                            <h2 class="mb48 mb-xs-32">The First of Its Kind</h2>
+                            <div class="mb48 mb-xs-24">
+                                <h4>
+                                    The SKULLY <span class="ar1font">AR-1</span> is an augmented reality motorcycle helmet that will change the way you ride. An infinite focus heads-up display, rear-view camera, and companion app for hands-free control enhance your safety and heighten your senses. Total awareness is total freedom. 
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <!-- <div class="container mt64">
+                    <div class="row v-align-children">
+                        <div class="col-sm-4 mb-xs-24">
+                            <h2 class="mb48 mb-xs-32">The First of Its Kind</h2>
+                            <div class="mb40 mb-xs-24">
+                                <h4 class="fade-1-4">
+                                    The SKULLY AR-1 is an augmented reality motorcycle helmet that will change the way you ride. An infinite focus heads-up display, rear-view camera, and companion app for hands-free control enhance your safety and heighten your senses. Total awareness is total freedom. 
+                                <br>
+
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-sm-5 col-sm-6 col-sm-offset-1 text-center helmvid">
+                        <a href="//fast.wistia.net/embed/iframe/1nwzz5fh0t?popover=true" id="wistiavid" class="wistia-popover[height=720,playerColor=414141,width=1280]">
+                            <img class="playbtn" src="static/img/play-button.png">
+                            <video autoplay muted loop>
+                                <source src="http://dg6vcgn2vehm4.cloudfront.net/video3.webm" type="video/webm">
+                                <source src="http://dg6vcgn2vehm4.cloudfront.net/video3.mp4" type="video/mp4">
+                                <source src="http://dg6vcgn2vehm4.cloudfront.net/video3.ogv" type="video/ogv">
+                            </video></a>
+                    <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js"></script>
+                        </div>
+                        <div class="pl0 pr0 col-md-5 col-sm-5 col-sm-6 col-sm-offset-1 text-center gif">
+                            <a href="//fast.wistia.net/embed/iframe/1nwzz5fh0t?popover=true" class="wistia-popover[height=720,playerColor=414141,width=1280]"><img src="https://embed-ssl.wistia.com/deliveries/d8c87a7982ca461396b93a1ea5626869fa315d80.jpg?image_play_button=true&image_play_button_color=414141e0&image_crop_resized=300x169" alt="" /></a>
+<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js"></script>
+                        </div> -->
+                        <!--end of row-->
+                    <!-- </div> -->
+                    <!--end of container-->
+            </section>
+            <section data-section-name="explosive" class="scroll fullheight bg-white pb0 pt0">
+                    <video autoplay muted loop style="height: 100%;">
+                        <source src="http://dg6vcgn2vehm4.cloudfront.net/exploded_withtags.webm" type="video/webm">
+                        <source src="http://dg6vcgn2vehm4.cloudfront.net/exploded_withtags.m4v" type="video/mp4">
+                        <source src="http://dg6vcgn2vehm4.cloudfront.net/exploded_withtags.ogv" type="video/ogv">
+                    </video>
+            </section>
+            <section data-section-name="hud" class="scroll bg-primary">
+                <div class="container">
+                    <h2 class="mb0 mb-xs-0 text-center">Heads-Up Display</h2>
+                    <h4 class="mb48 mb-xs-32 text-center">for <strong>Total Awareness</strong></h4>
+                    <div class="row">
+                        <div class="col-sm-3 mb-xs-24">
+                            <h4 class="mb8 mb-xs-8">Super-Wide Field of View</h4>
+                            <div class="mb40 mb-xs-24">
+                                <p class="fade-1-4">
+                                    All of the road is in your sights with increased peripheral vision.
+                                </p>
+                            </div>
+                            <h4 class="mb8 mb-xs-8">180&deg; Blindspot Camera</h4>
+                            <div class="mb40 mb-xs-24">
+                                <p class="fade-1-4">
+                                    Check the road behind you with a rear camera feed that streams live.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-5 col-sm-6 hud-animation">
+                        <div class="hud-background">
+                            <img id="hud-bg" class="hud" src="static/img/HUD01_BG.png"></img>
+                            <img id="hud-nose" class="hud" src="static/img/HUD01_nose.png"></img>
+                        </div>
+                        <div class="hud-rearsection">
+                            <img id="hud-rear" class="hud" src="static/img/HUD01_rearview.png"></img>
+                            <img id="hud-mph" class="hud" src="static/img/HUD01_mph.png"></img>
+                        </div>
+                            
+                    </div>
+                    <div class="col-sm-3 mb-xs-24">
+                            <h4 class="mb8 mb-xs-8">GPS Navigation</h4>
+                            <div class="mb40 mb-xs-24">
+                                <p class="fade-1-4">
+                                    Turn-by-turn directions make checking your phone a thing of the past.
+                                </p>
+                            </div>
+                            <h4 class="mb8 mb-xs-8">Infinite Focus</h4>
+                            <div class="mb40 mb-xs-24">
+                                <p class="fade-1-4">
+                                    Advanced optics adjust to your eye, so what you see is always in focus.
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="text-center">
+                            <a class="btn btn-lg btn-filled mt32 mb0" href="store">I want one</a>
+                        </div>
+                        </section>
+            </section>
+            <section data-section-name="rearview" class="scroll fullheight bg-secondary pt48">
+                <div class="container">
+                    <h2 class="mb0 mb-xs-0 black text-center">Blind Spots are the Enemy</h2>
+                    <h4 class="mb48 mb-xs-32 black text-center">
+                        Up the ante with a new layer of safety—a 180&deg; view of what’s happening behind you at any moment. 
+                    </h4>              
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="product-features sep-top">
+                                <input id="fov-toggle" class="hidden" type="checkbox">
+                                <input id="mobile-conventional-fov" name="fov" class="hidden" type="radio" checked>
+                                <input id="mobile-skully-fov" name="fov" class="hidden ar1font" type="radio">
+                                <div class="mobile-fov-buttons">
+                                    <label for="mobile-conventional-fov" class="mobile-fov-button mobile-conventional-fov-button">Conventional</label>
+                                    <label for="mobile-skully-fov" class="mobile-fov-button mobile-skully-fov-button ar1font">SKULLY</label>
+                                </div>
+                                <div class="fov-wrapper">
+                                    <div class="fov-infographics">
+                                        <img class="traditional-fov" src="static/img/fov_conventional.png">
+                                        <img class="skully-fov transparent" src="static/img/fov.png">
+                                    </div>
+                                    <!-- <div class="fov-info circle-info">
+                                        <img class="circle" src="static/img/180_circle-072.png">
+                                        <div class="circle-description">
+                                            <h4 class="black">Reinforced Shell</h4>
+                                            <p class="black">Lightweight yet ultra-strong, and reinforced with a carbon fiber inlay.</p>
+                                        </div>
+                                        <br><br>
+                                    </div> -->
+                                </div>
+                                <!-- <div class="misc-features">
+                                    <div class="circle-info">
+                                        <img class="circle" src="static/img/180_circle-01.png">
+                                        <div class="circle-description">
+                                            <h4 class="black">Laser-Cut EPS Protection</h4>
+                                            <p class="black">Enhances safety and absorbs impact energy.</p>
+                                        </div>
+                                    </div>
+                                    <div class="circle-info">
+                                        <img class="circle" src="static/img/180_circle-02.png">
+                                        <div class="circle-description">
+                                            <h4 class="black">All-Weather Photochromic Visor</h4>
+                                            <p class="black">Automatically and gradually transitions as UV light conditions change.</p>
+                                        </div>
+                                    </div>
+                                    <div class="circle-info">
+                                        <img class="circle" src="static/img/180_circle-04.png">
+                                        <div class="circle-description">
+                                            <h4 class="black">Outlast&reg; Technical Liner </h4>
+                                            <p class="black">Superior comfort, fit, and temperature regulation with technology pioneered by NASA.</p>
+                                        </div>
+                                    </div>
+                                    <div class="circle-info">
+                                        <img class="circle" src="static/img/180_circle-05.png">
+                                        <div class="circle-description">
+                                            <h4 class="black">In-Helmet Speakers</h4>
+                                            <p class="black">High-quality, immersive sound supported by Bluetooth&reg;.</p>
+                                        </div>
+                                    </div>
+                                    <div class="circle-info">
+                                        <img class="circle" src="static/img/180_circle-03.png">
+                                        <div class="circle-description">
+                                            <h4 class="black">SKULLY Synapse&trade;</h4>
+                                            <p class="black">An award-winning technology platform that links advanced optics with cameras, sensors, and microprocessors.</p>
+                                        </div>
+                                    </div>
+                                    <div class="circle-info">
+                                        <img class="circle" src="static/img/180_circle-062.png">
+                                        <div class="circle-description">
+                                            <h4 class="black">Voice Control</h4>
+                                            <p class="black">Mobile app commands for hands-free music streaming, calls, and GPS navigation. </p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <!--end of row-->
+                    </div>
+                    <!--end of container-->
+            </section>
+            <section data-section-name="signup" class="scroll fullheight image-bg overlay">
+                <div class="background-image-holder">
+                    <img alt="image" class="background-image" src="static/img/ar1black1.jpeg">
+                </div>
+                <div class="v-align-transform container">
+                    <a name="signup">
+                        <div class="row mb40 mb-xs-24">
+                            <div class="col-sm-12 text-center">
+                                <h3 class="mb8">BE THE FIRST TO KNOW</h3>
+                                <p>Get exclusive updates, learn about demo opportunities, and RSVP to special events. </p>
+                            </div>
+                        </div>
+                        <div class="row mb80 mb-xs-24">
+                            <div class="col-xs-12">
+                                <form class="form-newsletter halves" data-success="Thanks for your registration, we will be in touch shortly." data-error="Please fill all fields correctly.">
+                                    <input type="text" name="email" id="hovertext" class="mb0 transparent validate-email validate-required signup-email-field" placeholder="yourname@example.com" onfocus="this.placeholder = ''" onblur="this.placeholder='yourname@example.com'">
+                                    <input type="submit" class="mb0" value="SIGN UP">
+                                    <iframe srcdoc="<!-- Begin MailChimp Signup Form --><link href=&quot;https://cdn-images.mailchimp.com/embedcode/classic-081711.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;><style type=&quot;text/css&quot;> #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }   /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */</style><div id=&quot;mc_embed_signup&quot;><form action=&quot;//skullysystems.us3.list-manage.com/subscribe/post?u=bc1d6c276527db0df1053fc13&amp;id=ff82cb5526&quot; method=&quot;post&quot; id=&quot;mc-embedded-subscribe-form&quot; name=&quot;mc-embedded-subscribe-form&quot; class=&quot;validate&quot; target=&quot;_blank&quot; novalidate>    <div id=&quot;mc_embed_signup_scroll&quot;>   <h2>Subscribe to our mailing list</h2><div class=&quot;indicates-required&quot;><span class=&quot;asterisk&quot;>*</span> indicates required</div><div class=&quot;mc-field-group&quot;>    <label for=&quot;mce-EMAIL&quot;>Email Address  <span class=&quot;asterisk&quot;>*</span></label>   <input type=&quot;email&quot; value=&quot;&quot; name=&quot;EMAIL&quot; class=&quot;required email&quot; id=&quot;mce-EMAIL&quot;></div><div class=&quot;mc-field-group&quot;>  <label for=&quot;mce-FNAME&quot;>First Name </label>    <input type=&quot;text&quot; value=&quot;&quot; name=&quot;FNAME&quot; class=&quot;&quot; id=&quot;mce-FNAME&quot;></div><div class=&quot;mc-field-group&quot;> <label for=&quot;mce-LNAME&quot;>Last Name </label> <input type=&quot;text&quot; value=&quot;&quot; name=&quot;LNAME&quot; class=&quot;&quot; id=&quot;mce-LNAME&quot;></div>   <div id=&quot;mce-responses&quot; class=&quot;clear&quot;>      <div class=&quot;response&quot; id=&quot;mce-error-response&quot; style=&quot;display:none&quot;></div>     <div class=&quot;response&quot; id=&quot;mce-success-response&quot; style=&quot;display:none&quot;></div>   </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->    <div style=&quot;position: absolute; left: -5000px;&quot;><input type=&quot;text&quot; name=&quot;b_77142ece814d3cff52058a51f_94d040322a&quot; tabindex=&quot;-1&quot; value=&quot;&quot;></div>    <div class=&quot;clear&quot;><input type=&quot;submit&quot; value=&quot;Subscribe&quot; name=&quot;subscribe&quot; id=&quot;mc-embedded-subscribe&quot; class=&quot;button&quot;></div>    </div></form></div><script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script><!--End mc_embed_signup-->" class="mail-list-form"> </iframe>
+                                </form>
+                            </div>
+                        </div>
+                </div>
+            </section>
+            <section data-section-name="app" class="fullheight scroll bg-primary pb0">
+                <div class="container pt20">
+                    <div class="row mb24 mb-xs-0">
+                        <div class="col-sm-10 col-sm-offset-1 text-center">
+                            <h3 class="large">Download the App</h3>
+                            <!-- <p>
+                                With the AR-1’s companion app on your iPhone or Android, you can stream music, see and hear turn-by-turn directions, and use voice commands to communicate with your helmet.
+                            </p> -->
+                        </div>
+                    </div>
+                    <div class="row mb64">
+                            <div class="col-sm-6 col-md-4 col-md-offset-2">
+                                <div class="feature feature-3 text-center">
+                                        <a id="btn2" data-content="Coming Soon" rel="popover" data-placement="bottom" data-trigger="hover"><img class="disabled" src="static/img/google_play_badge.svg"></a>
+                                </div>
+                                <div class="comingsoon mt8 text-center mb48 white">Coming Soon</div>
+                                <!--end of feature-->
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="feature feature-3 text-center">
+                                    <a id="btn3" data-content="Coming Soon" rel="popover" data-placement="bottom" data-trigger="hover"><img class="disabled" src="static/img/app_store_badge.svg"></a>
+                                </div>
+                                <div class="comingsoon mt8 text-center mb48 white">Coming Soon</div>
+                                <!--end of feature-->
+                            </div>
+                        </div>
+                    <!--end of row-->
+                    <div class="row">
+                        <img alt="image" src="static/img/app1.png" />
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            </div>
+            {{> footer extra='<button class="scatbutton">SCAT</button>'}}
+            </div>
+            <audio id="scatman">
+                <source src="http://dg6vcgn2vehm4.cloudfront.net/scatman.mp3" type="audio/mpeg">
+                <source src="http://dg6vcgn2vehm4.cloudfront.net/scatman.ogg" type="audio/ogg">
+            </audio>
+            <audio id="hoversound">
+                <source src="http://dg6vcgn2vehm4.cloudfront.net/motorcycle.mp3" type="audio/mpeg">
+                <source src="http://dg6vcgn2vehm4.cloudfront.net/motorcycle.ogg" type="audio/ogg">
+            </audio>
             <!-- TEMPLATES -->
-            {{> footer}}
+
             {{> scripts}}
             <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
             <script type="text/javascript">
+            var $btn2 = $('#btn2');
+$btn2.data('state', 'hover');
 
-            $("html").css("overflow", "hidden");
-            $("footer").css("display", "none");
-            // $("body").css("overflow", "hidden");
+var enterShow = function () {
+    if ($btn2.data('state') === 'hover') {
+        $btn2.popover('show');
+    }
+};
+var exitHide = function () {
+    if ($btn2.data('state') === 'hover') {
+        $btn2.popover('hide');
+    }
+};
 
-            $('document').ready(function () {
-                $('#vidholder').css('height',$('#hero').height());
-                wistiaJQuery(document).bind('wistia-popover', function(event, iframe) {
-                    iframe.wistiaApi.bind('end', function() {
-                        $('.fancybox-inner').append("<a target='_blank' href='index' class='ctabutton'>AR-1</a>");
-                    });
+var clickToggle = function () {
+    if ($btn2.data('state') === 'hover') {
+        $btn2.data('state', 'pinned');
+    } else {
+        $btn2.data('state', 'hover')
+        $btn3.popover('hover');
+    }
+};
+
+$btn2.popover({trigger: 'manual'})
+    .on('mouseenter', enterShow)
+    .on('mouseleave', exitHide)
+    .on('click', clickToggle);
+
+
+
+            var $btn3 = $('#btn3');
+$btn3.data('state', 'hover');
+
+var enterShow = function () {
+    if ($btn3.data('state') === 'hover') {
+        $btn3.popover('show');
+    }
+};
+var exitHide = function () {
+    if ($btn3.data('state') === 'hover') {
+        $btn3.popover('hide');
+    }
+};
+
+var clickToggle = function () {
+    if ($btn3.data('state') === 'hover') {
+        $btn3.data('state', 'pinned');
+    } else {
+        $btn3.data('state', 'hover')
+        $btn3.popover('hover');
+    }
+};
+
+$btn3.popover({trigger: 'manual'})
+    .on('mouseenter', enterShow)
+    .on('mouseleave', exitHide)
+    .on('click', clickToggle);
+
+        </script>
+            <script type="text/javascript">
+
+            // $(window).resize(function() {
+            //     $('#vidholder').css('height',$('#hero').height());
+            // });
+
+            if (document.getElementById("hero").currentTime < 20) {
+                document.getElementById("hero").currentTime = 20;
+            }
+    
+
+            function detectmob() {
+                if (window.innerWidth <= 997) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+            if (!detectmob()) {
+                $('#show1').avgrund({
+                    height: 360,
+                    width: 500,
+                    holderClass: 'custom',
+                    showClose: true,
+                    showCloseText: 'X',
+                    enableStackAnimation: true,
+                    template: '<div class="article-title">The CNN Top 10 Inventions</div>' +
+                        '<p>“Augmented reality is getting a lot of talk in the gaming world, with products like Sony\'s and the Oculus Rift promising to make play time more fun. But what if it could make the roads safer? That\'s what the makers of Skully promise with what they\'re..."</p>' +
+                        '<div class="text-center">' +
+                        '<a class="btn btn-filled" target="_blank" href="http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/">READ MORE</a>' +
+                        '</div>' +
+                        '<hr style="margin: 0 !important;">' +
+                        '<div class="social-buttons">' +
+                        '<div id="social-platforms">' +
+                        '<a class="button button-icon button-facebook" target="_blank"href="http://www.facebook.com/sharer.php?u=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>' +
+                        '<a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>' +
+                        '<a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>' +
+                        '</div>' +
+                        '<a href="#" class="avgrund-close">X' +
+                        '</div>'
                 });
-            });            
+
+                $('#show2').avgrund({
+                    height: 360,
+                    width: 500,
+                    holderClass: 'custom',
+                    showClose: true,
+                    showCloseText: 'X',
+                    enableStackAnimation: true,
+                    template: '<div class="article-title">A Motorcycle Helmet for the Digital World</div>' +
+                        '<p>“At a time when screens are being integrated into everything, Skully engineers saw an opportunity to upgrade something that’s remained largely unchanged for decades: the motorcycle helmet. The P-1 is the first helmet with a digital head-up display..."</p>' +
+                        '<div class="text-center">' +
+                        '<a class="btn btn-filled" target="_blank" href="http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world">READ MORE</a>' +
+                        '</div>' +
+                        '<hr style="margin: 0 !important;">' +
+                        '<div class="social-buttons">' +
+                        '<div id="social-platforms">' +
+                        '<a class="button button-icon button-facebook" target="_blank"href="http://www.facebook.com/sharer.php?u=http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>' +
+                        '<a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>' +
+                        '<a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>' +
+                        '</div>' +
+                        '<a href="#" class="avgrund-close">X' +
+                        '</div>'
+                });
+
+                $('#show3').avgrund({
+                    height: 360,
+                    width: 500,
+                    holderClass: 'custom',
+                    showClose: true,
+                    showCloseText: 'X',
+                    enableStackAnimation: true,
+                    template: '<div class="article-title">The Skully Smart Motorcycle Helmet Sharpens <br> Your Senses On The Road</div>' +
+                        '<p>“The stats around motorcycle safety in the United States are pretty bleak, but the folks at Skully are looking to give an added layer of safety to the bike-riding thrill-seekers of the world. The Skully <span class="ar1font">AR-1</span> helmet started..."</p>' +
+                        '<div class="text-center">' +
+                        '<a class="btn btn-filled" target="_blank" href="http://techcrunch.com/2014/08/11/skully/">READ MORE</a>' +
+                        '</div>' +
+                        '<hr style="margin: 0 !important;">' +
+                        '<div class="social-buttons">' +
+                        '<div id="social-platforms">' +
+                        '<a class="button button-icon button-facebook" target="_blank"href="http://www.facebook.com/sharer.php?u=http://techcrunch.com/2014/08/11/skully/"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>' +
+                        '<a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://techcrunch.com/2014/08/11/skully/"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>' +
+                        '<a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://techcrunch.com/2014/08/11/skully/"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>' +
+                        '</div>' +
+                        '<a href="#" class="avgrund-close">X' +
+                        '</div>'
+                });
+
+                $('#show4').avgrund({
+                    height: 360,
+                    width: 500,
+                    holderClass: 'custom',
+                    showClose: true,
+                    showCloseText: 'X',
+                    enableStackAnimation: true,
+                    template: '<div class="article-title">This Slick Augmented-reality Helmet Has A Rearview Camera, Weather Reports</div>' +
+                        '<p>“Motorcycle helmets with head-up displays and augmented reality were science fiction just a few years ago. But now major helmet manufacturers and startups are working to incorporate Google Glass-like..."</p>' +
+                        '<div class="text-center">' +
+                        '<a class="btn btn-filled" target="_blank" href="http://www.wired.com/2013/10/skully-helmet/">READ MORE</a>' +
+                        '</div>' +
+                        '<hr style="margin: 0 !important;">' +
+                        '<div class="social-buttons">' +
+                        '<div id="social-platforms">' +
+                        '<a class="button button-icon button-facebook" target="_blank"href="http://www.facebook.com/sharer.php?u=http://www.wired.com/2013/10/skully-helmet/"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>' +
+                        '<a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://www.wired.com/2013/10/skully-helmet/"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>' +
+                        '<a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://www.wired.com/2013/10/skully-helmet/"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>' +
+                        '</div>' +
+                        '<a href="#" class="avgrund-close">X' +
+                        '</div>'
+                });
+            }
+
+            // HOVER SOUND
+            var audio = $("#hoversound")[0];
+            $("#hovertext").mouseenter(function() {
+                audio.play();
+            });
+
+            // SCATMAN!!! (Bottom right)
+            var audio2 = $("#scatman")[0];
+            $(".scatbutton").click(function() {
+
+                audio2.currentTime = 6;
+                audio2.volume = .3;
+                audio2.play();
+                // setTimeout(function() {audio.pause();}, 7150);
+                setTimeout(function() {
+                    audio2.pause();
+                }, 7950);
+                alert("ITS SCATMAN TIME!!!!");
+
+            });
+
+            $(function() {
+    $.scrollify({
+        section:".scroll",
+        sectionName: "section-name",
+        scrollSpeed: 1300,
+        easing: "easeOutExpo"
+    });
+
+    // $(".scroll,.scroll-btn").click(function(e) {
+    //     e.preventDefault();
+
+    //     $.scrollify.next();
+    // });
+
+    
+});
+
+            $("#app").click(function(e) {
+                console.log("FFFF")
+                e.preventDefault();
+                $.scrollify.move("#app");
+            });
+
+            /* CHECK FOR DIV IN VIEW */
+            function isScrolledIntoView(elem)
+            {
+                var $elem = $(elem);
+                var $window = $(window);
+
+                var docViewTop = $window.scrollTop();
+                var docViewBottom = docViewTop + $window.height();
+
+                var elemTop = $elem.offset().top;
+                var elemBottom = elemTop + $elem.height();
+
+                return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+            }
+            /* END DIV VIEW CHECK */
+            // WISTIA CTA BUTTON
+            $('document').ready(function () {
+                $('#hero').on('ended', function() {
+                    $(this).get(0).play();
+                    $(this).get(0).currentTime = 20;
+                })
+                // $('#vidholder').css('height',$('#hero').height());
+                // wistiaJQuery(document).bind("wistia-popover", function(event, iframe) {
+                //     iframe.wistiaApi.bind("end", function() {
+                //         $(".fancybox-inner").append("<a target='_blank' href='http://skullysystems.myshopify.com/' class='ctabutton'>Get Yours</a>");
+                //     });
+                // });
+
+                $(window).scroll(function() {
+                if (isScrolledIntoView($(".hud-animation"))) {
+                    $(window).unbind("scroll");
+                    TweenLite.set(".hud-animation", {perspective: 500});
+                // var t1 = new TimelineMax({delay: 1});
+                //     t1.to(".hud-background", 1, {rotationY: 15, transformOrigin: "left 50%", left: "-=20%", opacity: .8, ease: Power1.easeInOut});
+                //     t1.to("#hud-nose", 1, {left: "+=10%"}, "-=.6");
+                //     t1.to("#hud-rear", 1, {rotationY: 15, transformOrigin: "left 50%", scale: 2, left: "-= 30%", top:"-=30%"}, "-=1.6");
+                    TweenMax.to("#hud-bg", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .7, ease: Power1.easeInOut, delay: .3});
+                    TweenMax.to("#hud-nose", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .9, ease: Power1.easeInOut, delay: .3});
+                    TweenMax.to("#hud-rear", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: .3});
+                    TweenMax.to("#hud-mph", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: .3});
+
+                    TweenMax.to("#hud-nose", 1, {left: "+=1%", delay: 1.3, ease: Power2.easeInOut});
+                    TweenMax.to("#hud-rear", 1.5, {scale: 2, top: "-=35%", left:"-=55%", ease: Power2.easeInOut, delay: .8});
+                    TweenMax.to("#hud-mph", 1.5, {scale: 2.5, top: "-=55%", left: "-=80%", ease: Power2.easeInOut, delay: .8});
+                }
+            });
+
+                // $.preloadImages();
+
+            });
 
             </script>
 </body>

@@ -819,7 +819,7 @@ footer.bg-dark li,
   top: 0;
   left: 0;
   background: #282828;
-  opacity: 0.5;
+  opacity: 0.2;
   z-index: 3;
 }
 
@@ -871,9 +871,10 @@ footer.bg-dark li,
   top: 0;
   left: 0;
   /*z-index: 1;*/
-  background: #B22222;
+  /*background: #B22222;*/
   background-size: cover !important;
   background-position: 50% 50% !important;
+  background-repeat: no-repeat !important; 
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -882,6 +883,46 @@ footer.bg-dark li,
 -moz-transition: background 2s ease;
 -o-transition: background 2s ease;
 transition: background 2s ease;
+}
+
+.press-image-background {
+    background-position: 70% 50% !important;
+}
+
+.press-image-background-2 {
+    background-position: 100% 50% !important;
+    background-size: auto 100% !important;
+}
+
+@media all and (max-width: 1800px) {
+    .press-image-background-2 {
+        background-position: -100% 50% !important;
+        background-size: auto 100% !important;
+    }
+}
+
+@media all and (max-width: 1500px) {
+    .press-image-background-2 {
+        background-position: -50% 50% !important;
+    }
+}
+
+@media all and (max-width: 1350px) {
+    .press-image-background-2 {
+        background-position: 0% 50% !important;
+    }
+}
+
+@media all and (max-width: 1180px) {
+    .press-image-background-2 {
+        background-position: 25% 50% !important;
+    }
+}
+
+@media all and (max-width: 662px) {
+    .press-image-background-2 {
+        background-position: 50% 50% !important;
+    }
 }
 
 .background-image-holder img {
@@ -3012,6 +3053,12 @@ form iframe.mail-list-form {
   height: 375px;
   background-color: #eee;
   color: #000;
+  transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+}
+
+.mason img {
 }
 
 .mason .title {
@@ -3021,11 +3068,20 @@ form iframe.mail-list-form {
 
 .mason:hover h6 {
     opacity: 1;
+     color: white;
 }
 
 .mason:hover a {
     opacity: 1;
-    background-color: #FF0000;
+    background-color: #B22222;
+}
+
+.mason:hover {
+    background-color: #555555;
+}
+
+.mason:hover h4 {
+    color: white;
 }
 
 .mason h4 {
@@ -3042,7 +3098,7 @@ form iframe.mail-list-form {
 }
 
 .mason .fade-1-4 {
-    color: black;
+    color: white;
 }
 
 .mason a {
@@ -3051,7 +3107,7 @@ form iframe.mail-list-form {
     bottom: 30px;
     right: 15px;
     display: block;
-    background-color: #B22222;
+    background-color: #fff;
     width: 100px;
     height: 70px;
     text-align: left;
@@ -8925,6 +8981,8 @@ Main components
 
 .btn-mega {
     width: 30%;
+    border-color: black !important;
+    background-color: rgba(255, 255, 255, .3);
 }
 
 @media all and (max-width: 576px) {
@@ -8943,6 +9001,8 @@ div[id^='press-']::before {
     bottom: 0;
     right: 0;
     position: absolute;
+    -webkit-filter: grayscale(100%);
+filter: grayscale(100%);
 }
 
 #press-reuters::before {
@@ -9038,7 +9098,7 @@ div[id^='press-']:hover span{
 }
 
 div[id^='press-']:hover:before{
-    opacity: .3;
+    opacity: .1;
 }
 
 div[id^='press-'] h4, div[id^='press-'] span{
