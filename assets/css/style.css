@@ -8985,6 +8985,11 @@ Main components
     background-color: rgba(255, 255, 255, .3);
 }
 
+.btn-mega:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
 @media all and (max-width: 576px) {
     .btn-mega {
         width: 70%;
@@ -9003,6 +9008,9 @@ div[id^='press-']::before {
     position: absolute;
     -webkit-filter: grayscale(100%);
 filter: grayscale(100%);
+ transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
 }
 
 #press-reuters::before {
@@ -9114,4 +9122,20 @@ div[id^='press-'] h4, div[id^='press-'] span{
 
 .modal-dialog {
     margin-top: 30vh;
+}
+
+.modal-body input::-webkit-input-placeholder {
+color: black !important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color: black !important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: black !important;  
+}
+ 
+input:-ms-input-placeholder {  
+color: black !important;  
 }
