@@ -25,12 +25,12 @@ $(document).ready(function() {
 
     // Smooth scroll to inner links
 
-	if($('.inner-link').length){
-		$('.inner-link').smoothScroll({
-			offset: -55,
-			speed: 800
-		});
-    }
+	// if($('.inner-link').length){
+	// 	$('.inner-link').smoothScroll({
+	// 		offset: -55,
+	// 		speed: 800
+	// 	});
+ //    }
 
     // Update scroll variable for scrolling functions
 

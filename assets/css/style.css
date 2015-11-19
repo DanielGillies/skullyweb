@@ -9020,11 +9020,11 @@ div[id^='press-']:hover span{
 }
 
 div[id^='press-']:hover:before{
-    opacity: .1;
+    opacity: .3;
 }
 
 div[id^='press-'] h4, div[id^='press-'] span{
-    opacity: .0;
+    opacity: 0;
 }
 
 .bg-white td{
