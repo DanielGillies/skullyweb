@@ -326,6 +326,10 @@ hr {
   }
 }
 
+h2 {
+    font-weight: bold !important;
+}
+
 h1,
 h2,
 h3,
@@ -819,7 +823,7 @@ footer.bg-dark li,
   top: 0;
   left: 0;
   background: #282828;
-  opacity: 0.2;
+  opacity: 0.5;
   z-index: 3;
 }
 
@@ -7433,8 +7437,22 @@ header h1 {
 
 #hovertext:focus {
     background: #fff;
-        color: black !important;
+    color: black !important;
     opacity: .9;
+}
+
+#hovertext:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+#signup {
+    background-color: rgba(255, 255, 255, 0) !important;
+    border: 1px solid rgba(255, 255, 255, .5) !important;
+    text-decoration: underline;
+}
+
+#signup:hover {
+        background-color: rgba(255, 255, 255, .3) !important;
 }
 
 @media (max-width: 990px) {
@@ -7488,9 +7506,13 @@ header h1 {
     position: absolute;
     bottom: 0;
     height:75px;
-    background-color: #10112A;
+    background-color: #ffffff;
     width: 100%;
     z-index: 5;
+}
+
+.indexvidbar img {
+    filter: invert(100%);
 }
 
 .indexbar {
@@ -8965,6 +8987,7 @@ Main components
 
 .ar1font {
     font-family: 'Michroma' !important;
+    font-weight: bold;
 }
 
 .bg-secondary .ar1font {
@@ -8982,7 +9005,7 @@ Main components
 .btn-mega {
     width: 30%;
     border-color: black !important;
-    background-color: rgba(255, 255, 255, .3);
+    background-color: rgba(255, 255, 255, .3) !important;
 }
 
 .btn-mega:hover {

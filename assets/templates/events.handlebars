@@ -4,7 +4,7 @@
      {{> navbar}}
         <!-- ACTUAL PAGE CONTENT -->
         <div class="main-container">
-            <section class="bg-dark pb0 pt48">
+            <section class="bg-dark pb0">
                 <div class="container">
                     <row>
                         <div class="col-sm-8 col-sm-offset-2">
@@ -216,7 +216,7 @@ var currMonth;
                     + "</div>";
                     layer.bindPopup(content);
                     var item = markerList.appendChild(document.createElement('li'));
-                      item.innerHTML = layer.toGeoJSON().properties.title + "<br><span class=\"font10\">" + layer.toGeoJSON().properties.startDate + " - " + layer.toGeoJSON().properties.endDate + "</span>";
+                      item.innerHTML = layer.toGeoJSON().properties.title + "<br><span class=\"font14\">" + layer.toGeoJSON().properties.startDate + " - " + layer.toGeoJSON().properties.endDate + "</span>";
                       item.className += layer.toGeoJSON().properties.startDate.substr(0, layer.toGeoJSON().properties.startDate.indexOf('/'))
                       item.className += " mb8";
                       item.onclick = function() {

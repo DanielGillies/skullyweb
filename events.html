@@ -71,7 +71,7 @@
                                  </li>
                                  <hr>
                                  <li>
-                                     <a href="app">
+                                     <a href="index#app">
                         APP
                       </a>
                                  </li>
@@ -100,17 +100,18 @@
                                          </li>
                                          <hr>
                                  </li>
+                                 <li>
+                                     <a target="_blank" href="https://skully.zendesk.com/hc/en-us">
+                             FAQ
+                      </a>
+                      <hr>
+                      </li>
                                   <li>
-                         <a href="faq">
-                            FAQ
+                         <a href="userguide">
+                            USER GUIDE
                           </a>
                                          </li>
                                          <hr>
-                                 <li>
-                                     <a target="_blank" href="https://skully.zendesk.com/hc/en-us">
-                        SUPPORT
-                      </a>
-                      <hr>
                          </div>
                          <!--end of menu module-->
                          <div id="storebutton" class="module right">
@@ -144,7 +145,7 @@
                                  </li>
                                  <hr>
                                  <li>
-                                     <a id="app" href="/#app">
+                                     <a id="app" href="index#app">
                         APP
                       </a>
                                  </li>
@@ -175,7 +176,7 @@
                                          <hr>
                                          <li>
                                              <a href="aboutus">
-                        ABOUT
+                        OUR STORY
                       </a>
                                          </li>
                                          <hr>
@@ -188,14 +189,14 @@
                       <hr>
                                      <ul>
                                          <li>
-                                             <a href="faq">
+                                             <a target="_blank" href="https://skully.zendesk.com/hc/en-us">
                             FAQ
                           </a>
                                          </li>
                                          <hr>
                                          <li>
-                                             <a target="_blank" href="https://skully.zendesk.com/hc/en-us">
-                        SUPPORT
+                                             <a target="_blank" href="userguide">
+                        USER GUIDE
                       </a>
                                          </li>
                                          <hr>
@@ -214,7 +215,7 @@
              </nav>
         <!-- ACTUAL PAGE CONTENT -->
         <div class="main-container">
-            <section class="bg-dark pb0 pt48">
+            <section class="bg-dark pb0">
                 <div class="container">
                     <row>
                         <div class="col-sm-8 col-sm-offset-2">
@@ -504,7 +505,7 @@ var currMonth;
                     + "</div>";
                     layer.bindPopup(content);
                     var item = markerList.appendChild(document.createElement('li'));
-                      item.innerHTML = layer.toGeoJSON().properties.title + "<br><span class=\"font10\">" + layer.toGeoJSON().properties.startDate + " - " + layer.toGeoJSON().properties.endDate + "</span>";
+                      item.innerHTML = layer.toGeoJSON().properties.title + "<br><span class=\"font14\">" + layer.toGeoJSON().properties.startDate + " - " + layer.toGeoJSON().properties.endDate + "</span>";
                       item.className += layer.toGeoJSON().properties.startDate.substr(0, layer.toGeoJSON().properties.startDate.indexOf('/'))
                       item.className += " mb8";
                       item.onclick = function() {
