@@ -330,6 +330,12 @@
             {{> scripts}}
             <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
             <script type="text/javascript">
+
+            jQuery(function($) {
+                console.log("FFF")
+                $('.main-container').panelSnap();
+              });
+
             var $btn2 = $('#btn2');
 $btn2.data('state', 'hover');
 

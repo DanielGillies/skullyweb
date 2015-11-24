@@ -9146,6 +9146,24 @@ div[id^='press-'] h4, div[id^='press-'] span{
 .bg-white th{
     color: black;
 }
+.bg-white p {
+    color: black;
+}
+.bg-white .ar1font {
+    color: black;
+}
+.bg-white span {
+    color: black;
+}
+
+.bg-white h1,
+.bg-white h2,
+.bg-white h3,
+.bg-white h4,
+.bg-white h5,
+.bg-white h6 {
+    color: black;
+}
 
 .modal-dialog {
     margin-top: 30vh;
