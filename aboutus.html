@@ -194,7 +194,7 @@
                                          </li>
                                          <hr>
                                          <li>
-                                             <a target="_blank" href="userguide">
+                                             <a  href="userguide">
                         USER GUIDE
                       </a>
                                          </li>
@@ -214,25 +214,24 @@
              </nav>
         <!-- ACTUAL PAGE CONTENT -->
         <div class="main-container">
-            <section id="vidholder" class="image-bg fullscreen overlay bg-dark mh700">
-            <div class="background-image-holder">
-                    <img alt="Background Image" class="background-image" src="static/img/aboutheader.jpg">
-                <div class="fs-vid-background">
-                    <video id="hero" autoplay muted loop>
-                        <source src="http://dg6vcgn2vehm4.cloudfront.net/video2.webm" type="video/webm">
-                        <source src="http://dg6vcgn2vehm4.cloudfront.net/video2.mp4" type="video/mp4">
-                        <source src="http://dg6vcgn2vehm4.cloudfront.net/video2.ogv" type="video/ogv">
-                    </video>
+        <section id="vidholder" class="scroll image-bg fullscreen mh700 bg-dark">
+                <div class="background-image-holder indeximage">
+                    <img alt="Background Image" class="indexgif background-image" src="static/img/aboutheader.jpg">
+                    <div class="fs-vid-background">
+                        <video id="hero" autoplay loop muted>
+                            <source src="http://dg6vcgn2vehm4.cloudfront.net/video2.webm" type="video/webm">
+                            <source src="http://dg6vcgn2vehm4.cloudfront.net/video2.mp4" type="video/mp4">
+                            <source src="http://dg6vcgn2vehm4.cloudfront.net/video2.ogv" type="video/ogv">
+                        </video>
+                    </div>
                 </div>
-                </div>
-                                <div class="centered">
+                <div class="centered">
                     <div class="row">
-                        <div class="col-sm-12 text-center">
-                            <h1 class="uppercase headertext">Our Story</h1>
+                        <div class="text-center">
+                            <h1 class="uppercase">Our Story</h1>
                         </div>
                     </div>
-                    <!--end of row-->
-                    </div>
+                 </div>
             </section>
             <!--end of container-->
             <section class="bg-dark pb0">
@@ -470,13 +469,6 @@ the boundaries of human-centered design in other sectors.</p>
         <script src="http://projects.lukehaas.me/scrollify/script/jquery.scrollify.js"></script>
         <script>
 
-        $(window).resize(function() {
-                $('#vidholder').css('height',$('#hero').height());
-            });
-
-        $(document).ready(function($){
-                            $('#vidholder').css('height',$('#hero').height());
-
     var $timeline_block = $('.cd-timeline-block');
 
     //hide timeline blocks which are outside the viewport
@@ -494,7 +486,6 @@ the boundaries of human-centered design in other sectors.</p>
             }
         });
     });
-});
         </script>
 </body>
 

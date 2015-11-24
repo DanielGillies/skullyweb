@@ -195,7 +195,7 @@
                                         </li>
                                         <hr>
                                         <li>
-                                            <a target="_blank" href="userguide">
+                                            <a  href="userguide">
                        USER GUIDE
                      </a>
                                         </li>
@@ -216,7 +216,7 @@
 
         <!-- ACTUAL PAGE CONTENT -->
         <div class="main-container">
-            <section id="vidholder" data-section-name="header" class="scroll image-bg fullscreen mh700 bg-dark">
+            <section id="vidholder" data-section-name="header" class="image-bg fullscreen mh700 bg-dark">
                 <div class="background-image-holder indeximage">
                     <img alt="Background Image" class="indexgif background-image" src="static/img/550.gif">
                     <div class="fs-vid-background">
@@ -283,7 +283,7 @@
                     </div>
                 </div>
                 </section> -->
-                <section data-section-name="beauty"class="scroll fullheight image-bg fullscreen bg-dark" style="min-height: 900px">
+                <section data-section-name="beauty"class="fullheight image-bg fullscreen bg-dark" style="min-height: 900px">
                 <div class="background-image-holder">
                     <img src="/static/img/kyle1.jpeg">
                 </div>
@@ -329,14 +329,14 @@
                     <!-- </div> -->
                     <!--end of container-->
             </section>
-            <section data-section-name="explosive" class="scroll fullheight bg-white pb0 pt0">
+            <section data-section-name="explosive" class="fullheight bg-white pb0 pt0">
                     <video autoplay muted loop style="height: 100%;">
                         <source src="http://dg6vcgn2vehm4.cloudfront.net/exploded_withtags.webm" type="video/webm">
                         <source src="http://dg6vcgn2vehm4.cloudfront.net/exploded_withtags.m4v" type="video/mp4">
                         <source src="http://dg6vcgn2vehm4.cloudfront.net/exploded_withtags.ogv" type="video/ogv">
                     </video>
             </section>
-            <section data-section-name="hud" class="scroll bg-primary">
+            <section data-section-name="hud" class="bg-primary">
                 <div class="container">
                     <h2 class="mb0 mb-xs-0 text-center">Heads-Up Display</h2>
                     <h4 class="mb48 mb-xs-32 text-center">for <strong>Total Awareness</strong></h4>
@@ -387,7 +387,7 @@
                         </div>
                         </section>
             </section>
-            <section data-section-name="rearview" class="scroll fullheight bg-secondary">
+            <section data-section-name="rearview" class="fullheight bg-secondary">
                 <div class="container">
                     <h2 class="mb0 mb-xs-0 black text-center">Blind Spots are the Enemy</h2>
                     <h4 class="mb48 mb-xs-32 black text-center">
@@ -466,8 +466,9 @@
                         <!--end of row-->
                     </div>
                     <!--end of container-->
+                </div>
             </section>
-            <section data-section-name="signup" class="scroll fullheight image-bg overlay">
+            <section data-section-name="signup" class="fullheight image-bg overlay">
                 <div class="background-image-holder">
                     <img alt="image" class="background-image" src="static/img/signup.jpeg">
                 </div>
@@ -480,7 +481,7 @@
                         </div>
                         <div class="row mb80 mb-xs-24">
                             <div class="col-xs-12">
-                                <form class="form-newsletter" data-success="Thanks for your registration, we will be in touch shortly." data-error="Please fill all fields correctly.">
+                                <form class="form-newsletter" data-success="Thanks for your registration, we will be in touch shortly." data-error="Please enter your email.">
                                     <div class="row">
                                     <!-- <div class="col-md-1"></div> -->
                                         <div class="col-md-5 col-md-offset-1">
@@ -496,7 +497,7 @@
                         </div>
                 </div>
             </section>
-            <section data-section-name="app" class="scroll fullheight image-bg overlay">
+            <section data-section-name="app" class="fullheight image-bg overlay">
                 <div class="background-image-holder">
                     <img alt="image" class="background-image" src="static/img/phone_apple.jpg">
                 </div>
@@ -811,27 +812,6 @@ $btn3.popover({trigger: 'manual'})
 
             });
 
-            $(function() {
-    $.scrollify({
-        section:".scroll",
-        sectionName: "section-name",
-        scrollSpeed: 1300
-    });
-
-    // $(".scroll,.scroll-btn").click(function(e) {
-    //     e.preventDefault();
-
-    //     $.scrollify.next();
-    // });
-
-    
-});
-
-            $("#app").click(function(e) {
-                console.log("FFFF")
-                e.preventDefault();
-                $.scrollify.instantMove("#app");
-            });
 
             /* CHECK FOR DIV IN VIEW */
             function isScrolledIntoView(elem)
@@ -861,20 +841,20 @@ $btn3.popover({trigger: 'manual'})
                 //     });
                 // });
 
-                // $(window).scroll(function() {
-                // if (isScrolledIntoView($(".hud-animation"))) {
-                    // $(window).unbind("scroll");
-                    // TweenLite.set(".hud-animation", {perspective: 500});
-                //     TweenMax.to("#hud-bg", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .7, ease: Power1.easeInOut, delay: .3});
-                //     TweenMax.to("#hud-nose", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .9, ease: Power1.easeInOut, delay: .3});
-                //     TweenMax.to("#hud-rear", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: .3});
-                //     TweenMax.to("#hud-mph", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: .3});
+                $(window).scroll(function() {
+                if (isScrolledIntoView($(".hud-animation"))) {
+                    $(window).unbind("scroll");
+                    TweenLite.set(".hud-animation", {perspective: 500});
+                    TweenMax.to("#hud-bg", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .7, ease: Power1.easeInOut, delay: .3});
+                    TweenMax.to("#hud-nose", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .9, ease: Power1.easeInOut, delay: .3});
+                    TweenMax.to("#hud-rear", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: .3});
+                    TweenMax.to("#hud-mph", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: .3});
 
-                //     TweenMax.to("#hud-nose", 1, {left: "+=1%", delay: 1.3, ease: Power2.easeInOut});
-                //     TweenMax.to("#hud-rear", 1.5, {scale: 2, top: "-=35%", left:"-=55%", ease: Power2.easeInOut, delay: .8});
-                //     TweenMax.to("#hud-mph", 1.5, {scale: 2.5, top: "-=55%", left: "-=80%", ease: Power2.easeInOut, delay: .8});
-                // }
-            // });
+                    TweenMax.to("#hud-nose", 1, {left: "+=1%", delay: 1.3, ease: Power2.easeInOut});
+                    TweenMax.to("#hud-rear", 1.5, {scale: 2, top: "-=35%", left:"-=55%", ease: Power2.easeInOut, delay: .8});
+                    TweenMax.to("#hud-mph", 1.5, {scale: 2.5, top: "-=55%", left: "-=80%", ease: Power2.easeInOut, delay: .8});
+                }
+            });
 
                 // $.preloadImages();
 

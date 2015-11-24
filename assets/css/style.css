@@ -7435,6 +7435,10 @@ header h1 {
     text-align: center;
 }
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0) inset;
+}
+
 #hovertext:focus {
     background: #fff;
     color: black !important;
