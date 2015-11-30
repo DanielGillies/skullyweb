@@ -213,10 +213,9 @@
                     <!--end of menu module-->
                 </div>
             </nav>
-
         <!-- ACTUAL PAGE CONTENT -->
         <div class="main-container">
-            <section id="vidholder" data-section-name="header" class="image-bg fullscreen mh700 bg-dark">
+            <section id="vidholder" data-section-name="header" class="panelSnap image-bg fullscreen mh700 bg-dark">
                 <div class="background-image-holder indeximage">
                     <img alt="Background Image" class="indexgif background-image" src="static/img/550.gif">
                     <div class="fs-vid-background">
@@ -283,7 +282,7 @@
                     </div>
                 </div>
                 </section> -->
-                <section data-section-name="beauty"class="fullheight image-bg fullscreen bg-dark" style="min-height: 900px">
+                <section data-section-name="beauty"class="panelSnap fullheight image-bg fullscreen bg-dark" style="min-height: 900px">
                 <div class="background-image-holder">
                     <img src="/static/img/kyle1.jpeg">
                 </div>
@@ -329,14 +328,14 @@
                     <!-- </div> -->
                     <!--end of container-->
             </section>
-            <section data-section-name="explosive" class="fullheight bg-white pb0 pt0">
+            <section data-section-name="explosive" class="panelSnap fullheight bg-white pb0 pt0">
                     <video autoplay muted loop style="height: 100%;">
                         <source src="http://dg6vcgn2vehm4.cloudfront.net/exploded_withtags.webm" type="video/webm">
                         <source src="http://dg6vcgn2vehm4.cloudfront.net/exploded_withtags.m4v" type="video/mp4">
                         <source src="http://dg6vcgn2vehm4.cloudfront.net/exploded_withtags.ogv" type="video/ogv">
                     </video>
             </section>
-            <section data-section-name="hud" class="bg-primary">
+            <section data-section-name="hud" class="panelSnap bg-primary">
                 <div class="container">
                     <h2 class="mb0 mb-xs-0 text-center">Heads-Up Display</h2>
                     <h4 class="mb48 mb-xs-32 text-center">for <strong>Total Awareness</strong></h4>
@@ -619,11 +618,6 @@
             <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
             <script type="text/javascript">
 
-            jQuery(function($) {
-                console.log("FFF")
-                $('.main-container').panelSnap();
-              });
-
             var $btn2 = $('#btn2');
 $btn2.data('state', 'hover');
 
@@ -835,6 +829,9 @@ $btn3.popover({trigger: 'manual'})
             /* END DIV VIEW CHECK */
             // WISTIA CTA BUTTON
             $('document').ready(function () {
+                 console.log("FFF")
+                $('.main-container').panelSnap();
+                console.log("FFFF")
                 // $('#hero').on('ended', function() {
                 //     $(this).get(0).play();
                 //     $(this).get(0).currentTime = 20;
@@ -864,7 +861,6 @@ $btn3.popover({trigger: 'manual'})
                 // $.preloadImages();
 
             });
-
             </script>
 </body>
 

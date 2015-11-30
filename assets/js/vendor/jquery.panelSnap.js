@@ -55,6 +55,9 @@ if ( typeof Object.create !== 'function' ) {
 
     init: function(options, container) {
 
+              console.log("init")
+
+
       var self = this;
 
       self.container = container;
@@ -89,6 +92,7 @@ if ( typeof Object.create !== 'function' ) {
     },
 
     bind: function() {
+      console.log("bind")
 
       var self = this;
 
@@ -119,6 +123,7 @@ if ( typeof Object.create !== 'function' ) {
 
     bindProxied: function($element, event, method, selector) {
 
+
       var self = this;
 
       selector = typeof selector === 'string' ? selector : null;
@@ -132,6 +137,7 @@ if ( typeof Object.create !== 'function' ) {
     },
 
     destroy: function() {
+
 
       var self = this;
 
@@ -149,6 +155,7 @@ if ( typeof Object.create !== 'function' ) {
     },
 
     scrollStop: function(e) {
+
 
       var self = this;
 
@@ -191,6 +198,7 @@ if ( typeof Object.create !== 'function' ) {
       var maxOffset = self.$container[0].scrollHeight - self.scrollInterval;
 
       if (offset <= 0 || offset >= maxOffset) {
+        console.log("FFFFFFFFFFFFF");
         // Only activate, prevent stuttering
         self.activatePanel($target);
         // Set scrollOffset to a sane number for next scroll
@@ -202,6 +210,7 @@ if ( typeof Object.create !== 'function' ) {
     },
 
     getPanelsInViewport: function() {
+        console.log("GET THEM PANELS")
 
       var self = this;
 
@@ -349,6 +358,7 @@ if ( typeof Object.create !== 'function' ) {
     },
 
     snapToPanel: function($target) {
+        console.log("SNAP TO " + $target)
 
       var self = this;
 
@@ -534,6 +544,8 @@ if ( typeof Object.create !== 'function' ) {
   $.fn[pluginName] = function(options) {
 
     var args = Array.prototype.slice.call(arguments);
+
+        console.log(arguments);
 
     return this.each(function() {
 
