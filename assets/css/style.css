@@ -3062,6 +3062,10 @@ form iframe.mail-list-form {
     -moz-transition: all .3s ease;
 }
 
+.mason .ar1font {
+    color: white;
+}
+
 .mason img {
 }
 
