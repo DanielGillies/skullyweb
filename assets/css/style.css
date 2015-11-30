@@ -542,7 +542,7 @@ p.lead {
 }
 
 .skullyred {
-    color: #b22222 !important;
+    color: #D52424 !important;
 }
 
 .gray {
@@ -721,7 +721,7 @@ a:hover {
 }
 
 .color-primary {
-  color: #B22222 !important;
+  color: #D52424 !important;
 }
 
 .color-red {
@@ -874,7 +874,7 @@ footer.bg-dark li,
   top: 0;
   left: 0;
   /*z-index: 1;*/
-  /*background: #B22222;*/
+  /*background: #D52424;*/
   background-size: cover !important;
   background-position: 50% 50% !important;
   background-repeat: no-repeat !important; 
@@ -1002,7 +1002,7 @@ transition: background 2s ease;
 
 .btn {
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border: 2px solid #b5252c;
+  border: 2px solid #D52424;
   padding: 0 26px;
   height: 40px;
   min-width: 150px;
@@ -1012,7 +1012,7 @@ transition: background 2s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
   border-radius: 0;
-  color: #b5252c;
+  color: #D52424;
   text-align: center;
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -1071,7 +1071,7 @@ transition: background 2s ease;
 }
 
 .btn-filled {
-  background: #B22222;
+  background: #D52424;
   color: #fff !important;
 }
 
@@ -1130,7 +1130,7 @@ body.btn-rounded .btn {
 }
 
 .btn-filled:visited {
-  color: #B22222;
+  color: #D52424;
 }
 
 .btn.bg-dark {
@@ -1976,7 +1976,7 @@ nav.transparent.fixed.bg-dark .module.widget-handle i {
 }
 
 .image-bg.bg-light .icon {
-  color: #B22222;
+  color: #D52424;
 }
 
 .image-bg .icon,
@@ -2180,7 +2180,7 @@ input[type="submit"] {
 }
 
 .bg-primary input[type="submit"] {
-  background: #B22222;
+  background: #D52424;
   color: #fff;
 }
 
@@ -2629,7 +2629,7 @@ form iframe.mail-list-form {
 }
 
 .button-tabs .active .tab-title {
-  background: #B22222;
+  background: #D52424;
   color: #e7e7e7;
 }
 
@@ -3080,7 +3080,7 @@ form iframe.mail-list-form {
 
 .mason:hover a {
     opacity: 1;
-    background-color: #B22222;
+    background-color: #D52424;
 }
 
 .mason:hover {
@@ -5497,7 +5497,7 @@ video {
   height: 50px;
   margin: 0 auto;
   border-radius: 50%;
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 2px 1px 0px #B22222;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 2px 1px 0px #D52424;
   -moz-animation: spin 0.7s linear infinite;
   -webkit-animation: spin 0.7s linear infinite;
   animation: spin 0.7s linear infinite;
@@ -7609,7 +7609,7 @@ font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .product-features .fov-wrapper .fov-info h4 {
-  color: #B22222;
+  color: #D52424;
 }
 .product-features .fov-wrapper .fov-info span {
   padding: 5px 9px 5px 11px;
@@ -7629,8 +7629,8 @@ font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
 }
    .product-features input#mobile-skully-fov:checked ~ .mobile-fov-buttons .mobile-skully-fov-button {
-    border: 2px solid #B22222;
-    color: #B22222;
+    border: 2px solid #D52424;
+    color: #D52424;
     font-weight: 800;
   }
   .product-features input#mobile-skully-fov:checked ~ .fov-wrapper .skully-fov {
@@ -7651,8 +7651,8 @@ font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   .product-features input#fov-toggle:checked ~ .fov-wrapper .fov-info label {
     margin: 20px 0 0 106px;
     padding: 5px 10px 5px 0px;
-    color: #B22222;
-    border: 2px solid #B22222;
+    color: #D52424;
+    border: 2px solid #D52424;
   }
 }
 .product-features .circle-info {
@@ -7673,7 +7673,7 @@ font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: table;
 }
 .product-features .misc-features h4 {
-  color: #B22222;
+  color: #D52424;
   margin-bottom: 0 !important;
 }
 .collage {
@@ -8065,7 +8065,7 @@ letter-spacing: 2px
 }
 
 #Confirmation {
-    color: #B22222;
+    color: #D52424;
     text-align: center;
     display: none;
 }
@@ -8224,15 +8224,15 @@ ol {
 }
 
 .picker-wrapper input:checked+label {
-    border: 2px solid #B22222;
-    color: #B22222;
+    border: 2px solid #D52424;
+    color: #D52424;
     font-weight: 600;
 }
 
 .size-picker input:checked+label .pictograph {
-    background-color: #B22222;
-    border: 1px solid #B22222;
-    color: #B22222;
+    background-color: #D52424;
+    border: 1px solid #D52424;
+    color: #D52424;
 }
 
 .size-picker input:checked+label p {
@@ -8670,7 +8670,7 @@ Main components
 }
 
 .cd-timeline-img.cd-skully {
-    background: #b22222;
+    background: #D52424;
 }
 
 @media only screen and (min-width: 1170px) {
