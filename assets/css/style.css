@@ -9009,6 +9009,10 @@ Main components
     color: black;
 }
 
+.bg-primary .btn-mega {
+    background-color: #fff !important;
+}
+
 .btn-mega {
     width: 30%;
     border-color: black !important;
