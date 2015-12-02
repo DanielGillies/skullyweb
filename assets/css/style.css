@@ -8595,6 +8595,7 @@ Main components
 #cd-timeline::before {
   /* this is the vertical line */
   content: '';
+  z-index: 3;
   position: absolute;
   top: 0;
   left: 18px;
@@ -8613,7 +8614,13 @@ Main components
   }
 }
 
+#cd-timeline-header {
+    z-index: 100;
+    position: relative;
+}
+
 .cd-timeline-block {
+  z-index: 4;
   position: relative;
   margin: 2em 0;
 }
@@ -8754,7 +8761,7 @@ Main components
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: #13181d;
+  background: rgba(19, 24, 29, .5);
   border-radius: 0.25em;
   padding: 1em;
   box-shadow: 0 3px 0 #d7e4ed;
@@ -9198,4 +9205,10 @@ color: black !important;
 -o-transform: scale(-1, 1);
 transform: scale(-1, 1);
 filter: FlipH;
+}
+
+#timeline-back {
+    position: absolute;
+    top: 0;
+    width: 100vw;
 }
