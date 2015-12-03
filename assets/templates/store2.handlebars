@@ -4,28 +4,6 @@
     {{> navbar}}
                    
         <div class="main-container">
-                <div class="cart-dropdown">
-                    <table>
-                    <thead>
-                    <th>Item</th>
-                    <th>Color</th>
-                    <th>Size</th>
-                    <th>Price</th>
-                    <th>Qty</th>
-                    </thead>
-                    <tbody id="cart-dropdown-content">
-                    </tbody>
-                    </table>
-                    <!-- <p data-fc-id="minicart">
-                        <ul>
-                            <li><span data-fc-id="minicart-quantity">0</span>
-                            <span data-fc-id="minicart-singular"> item </span>
-                            <span data-fc-id="minicart-plural"> items </span></li>
-                            <li>$<span data-fc-id="minicart-order-total">0</span></li>
-                            </ul>
-                    </p> -->
-                </div>
-            </div>
             <section class="bg-white">
                 <div class="container">
 
@@ -68,24 +46,21 @@
                                     <input type="submit" value="Add To Cart" />
                                 </form> 
                                 -->
-                                <form action="https://skully.foxycart.com/cart" method="post" accept-charset="utf-8" class="add-to-cart foxycart">
-                                <input type="hidden" name="code||5a00076acf9fa013e9d70febb3e73d819002052a119530d4abeabddd4304e16c" value="SKU1">
-                                <input type="hidden" name="price||7ab2ca47d9a4d4067cf7b05381f50ca096f347e63449d7a5c33fcd23d9d92464" value="1499.99">
-                                <input type="hidden" name="name||072c83a64869497ecf0092791f0326df75ae5f4de7c9fc2d868ffe6b961e15a3" value="SKULLY AR-1">
+                                <form>
 
         <div class="color-picker picker-wrapper">
             
             <div class="instructions emphasis">Choose a color:</div>
             <div class="picker">
                 <div class="col-1-2">
-                    <input type="radio" id="black" name="color" class="color" value="Matte Black||e2397a5dfdd1e1b632391ac7ade4211cae973e6cb0c579be444db01d6e11de42" checked>
+                    <input type="radio" id="black" name="color" class="color" value="b" checked>
                     <label for="black">
                         <img class="display-small-hide" src="static/img/blackhelmet_store.png">
                         <div class="display-small-only mobile-color-picker-circle"></div><p>Matte Black</p>
                     </label>
                 </div>
                 <div class="col-1-2">
-                    <input type="radio" id="white" name="color" class="color" value="Gloss White||30aa9f422dacc34ad17419b4f7f8cbaa517232fb80fd9f81d4c802cd48b1fe17">
+                    <input type="radio" id="white" name="color" class="color" value="w">
                     <label for="white">
                         <img class="display-small-hide" src="static/img/whitehelmet_store.png">
                         <div class="display-small-only mobile-color-picker-circle"><div></div></div><p>Gloss White</p>
@@ -102,7 +77,7 @@
         <div class="instructions emphasis">Choose a size:</div>
             <div class="picker">
                 <div class="col-1-5 small">
-                    <input type="radio" id="small" name="size" value="Small||8e5dad98f10ac6b1014333c1555faff856b5c1503a73cf7c3f9cc5d9776b634c">
+                    <input type="radio" id="small" name="size" value="s">
                     <label for="small">
                         <div class="sizing">
                             <div class="pictograph"></div>
@@ -111,7 +86,7 @@
                     </label>
                 </div>
                 <div class="col-1-5 medium">
-                    <input type="radio" id="medium" name="size" value="Medium||12aa0d14154da0a95258314197237a4dbed5bd73cf69a3d751c4e643c94779ff" checked>
+                    <input type="radio" id="medium" name="size" value="m" checked>
                     <label for="medium">
                         <div class="sizing">
                             <div class="pictograph"></div>
@@ -120,7 +95,7 @@
                     </label>
                 </div>
                 <div class="col-1-5 large">
-                    <input type="radio" id="large" name="size" value="Large||3580d87a0c7c40bea6fec883bda6d6671f95aa64753b107052a1626379a2ce33">
+                    <input type="radio" id="large" name="size" value="l">
                     <label for="large">
                         <div class="sizing">
                             <div class="pictograph"></div>
@@ -129,7 +104,7 @@
                     </label>
                 </div>
                 <div class="col-1-5 x-large">
-                    <input type="radio" id="x-large" name="size" value="X-Large||c3eae101e90b0e487e56cde26d2cb1def3af2b429df78b2c2370a768d0e1168f">
+                    <input type="radio" id="x-large" name="size" value="xl">
                     <label for="x-large">
                         <div class="sizing">
                             <div class="pictograph"></div>
@@ -138,7 +113,7 @@
                     </label>
                 </div>
                 <div class="col-1-5 xx-large">
-                    <input type="radio" id="xx-large" name="size" value="XX-Large||8efd63ec299061aee922dfc51fc6e5d38992fe55eea03189a34f3605855a013e">
+                    <input type="radio" id="xx-large" name="size" value="xl">
                     <label for="xx-large">
                         <div class="sizing">
                             <div class="pictograph"></div>
@@ -148,21 +123,14 @@
                 </div>
             </div>
             </div>
-<!--                                 <select id="size" name="size">
-                                    <option value="Small||8e5dad98f10ac6b1014333c1555faff856b5c1503a73cf7c3f9cc5d9776b634c">Small</option>
-                                    <option value="Medium||12aa0d14154da0a95258314197237a4dbed5bd73cf69a3d751c4e643c94779ff">Medium</option>
-                                    <option value="Large||3580d87a0c7c40bea6fec883bda6d6671f95aa64753b107052a1626379a2ce33">Large</option>
-                                    <option value="X-Large||c3eae101e90b0e487e56cde26d2cb1def3af2b429df78b2c2370a768d0e1168f">X-Large</option>
-                                    <option value="XX-Large||8efd63ec299061aee922dfc51fc6e5d38992fe55eea03189a34f3605855a013e">XX-Large</option>
-                                </select> -->
-                                    <input name="quantity||1bedd40e033b55a2f490584ff5fb899a2f3b85dc1b01a58492c31c97c45d65b5||open" class="gray" id="quantity" type="text" placeholder="QTY" />
-                                    <input type="submit" value="Add To Cart" />
+                                    <!-- <input name="quantity" class="gray" id="quantity" type="text" placeholder="QTY" />
+                                    <input type="submit" value="Add To Cart" /> -->
 
-                                    <div data-embed_type="product" data-shop="skullysystems.myshopify.com" data-product_name="SKULLY AR-1" data-product_handle="skully-ar-1" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="Add to cart" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="b22222" data-button_text_color="ffffff" data-product_modal="false" data-product_title_color="000000" data-next_page_button_text="Next page" data-variant_id="5972989700"></div>
-<script type="text/javascript">
-document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');
-</script>
-<noscript><a href="https://skullysystems.myshopify.com/cart/5972989700:1" target="_blank">Buy SKULLY AR-1</a></noscript>
+                                    <div class="shopify-button" id="b-s" data-embed_type="product" data-shop="skullysystems.myshopify.com" data-product_name="SKULLY AR-1" data-product_handle="skully-ar-1" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="Add to cart" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="b22222" data-button_text_color="ffffff" data-product_modal="false" data-product_title_color="000000" data-next_page_button_text="Next page" data-variant_id="5972989700"></div>
+
+                                    <div class="shopify-button" id="b-m" data-embed_type="product" data-shop="skullysystems.myshopify.com" data-product_name="SKULLY AR-1" data-product_handle="skully-ar-1" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="Add to cart" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="b22222" data-button_text_color="ffffff" data-product_modal="false" data-button_width="5px" data-product_title_color="000000" data-next_page_button_text="Next page" data-variant_id="5972989764"></div>
+
+                                    <div class="shopify-button" id="b-l" data-embed_type="product" data-shop="skullysystems.myshopify.com" data-product_name="SKULLY AR-1" data-product_handle="skully-ar-1" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="Add to cart" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="b22222" data-button_text_color="ffffff" data-product_modal="false" data-product_title_color="000000" data-next_page_button_text="Next page" data-variant_id="5972989828"></div>
 
                                 </form> 
                             </div>
@@ -180,7 +148,6 @@ document.getElementById('ShopifyEmbedScript') || document.write('<script type="t
                                                 <table class="table table-bordered">
                                                     <thead>
                                                         <tr>
-                                                            <th style="opacity: .5">SHOEI RF-1200</th>
                                                             <th>SKULLY AR-1</th>
                                                             <th>HAT SIZE</th>
                                                             <th>CM</th>
@@ -189,35 +156,30 @@ document.getElementById('ShopifyEmbedScript') || document.write('<script type="t
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td style="opacity: .5">S</td>
-                                                            <td style="font-weight: bold" >M</td>
+                                                            <td style="font-weight: bold" >S</td>
                                                             <td>6<sup>7/8</sup> - 7</td>
                                                             <td>55 - 56</td>
                                                             <td>21<sup>5/8</sup> - 22</td>
                                                         </tr>
                                                         <tr>
-                                                            <td style="opacity: .5">M</td>
-                                                            <td style="font-weight: bold">L</td>
+                                                            <td style="font-weight: bold">M</td>
                                                             <td>7<sup>1/8</sup> - 7<sup>1/4</sup></td>
                                                             <td>57 - 58</td>
                                                             <td>22<sup>1/2</sup> - 22<sup>7/8</sup></td>
                                                         </tr>
                                                         <tr>
-                                                            <td style="opacity: .5">L</td>
-                                                            <td style="font-weight: bold">XL</td>
+                                                            <td style="font-weight: bold">L</td>
                                                             <td>7<sup>3/8</sup> - 7<sup>1/2</sup></td>
                                                             <td>59 - 60</td>
                                                             <td>23<sup>1/4</sup> - 23<sup>5/8</sup></td>
                                                         </tr>
                                                         <tr>
-                                                            <td style="opacity: .5">XL</td>
-                                                            <td style="font-weight: bold">XXL</td>
+                                                            <td style="font-weight: bold">XL</td>
                                                             <td>7<sup>1/2</sup> - 7<sup>5/8</sup></td>
                                                             <td>60 - 61</td>
                                                             <td>23<sup>5/8</sup> - 24</td>
                                                         </tr>
                                                         <tr>
-                                                            <td style="opacity: .5">XXL</td>
                                                             <td style="font-weight: bold">XXL</td>
                                                             <td>7<sup>5/8</sup> - 7<sup>3/4</sup></td>
                                                             <td>61 - 62</td>
@@ -264,109 +226,28 @@ document.getElementById('ShopifyEmbedScript') || document.write('<script type="t
             {{> footer}}
         </div>
         {{> scripts}}
-        <!-- FOXYCART -->
-<script src="//cdn.foxycart.com/skully/loader.js" async defer></script>
-<!-- /FOXYCART -->
+
+        <script type="text/javascript">
+            document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');
+        </script>
+        <noscript><a href="https://skullysystems.myshopify.com/cart/5972989700:1" target="_blank">Buy SKULLY AR-1</a></noscript>
 
 <script type="text/javascript">
+var origSize = $("input[type='radio'][name='size']:checked");
+var origColor = $("input[type='radio'][name='color']:checked");
+var selectedSize = origSize;
+var selectedColor = origColor;
+$("#" + selectedColor.val() + "-" + selectedSize.val()).removeClass('shopify-button');
 
-var temp = false;
-
-$('#cart').hover(function(){
-    if (temp)
-        $('.cart-dropdown').fadeIn(200);
-},
-    function() {
-        $('.cart-dropdown').fadeOut(200);
+$("input[name='size']:radio").change(function() {
+    origSize = selectedSize;
+    origColor = selectedColor;
+    selectedSize = $("input[type='radio'][name='size']:checked");
+    selectedColor = $("input[type='radio'][name='color']:checked");
+    $("#" + origColor.val() + "-" + origSize.val()).addClass('shopify-button');
+    $("#" + selectedColor.val() + "-" + selectedSize.val()).removeClass('shopify-button');
 });
 
-$('input[name=color]:radio').change(function(){
-    if ($('input[name=color]:checked').attr('id') == 'black') {
-        $('#helmet_img').fadeOut(200, function() {
-            $('#helmet_img').attr('src', 'static/img/blackhelmet_store.png');
-        }).fadeIn(200);
-    }
-    else {
-        $('#helmet_img').fadeOut(200, function() {
-            $('#helmet_img').attr('src', 'static/img/whitehelmet_store.png');
-        }).fadeIn(200);
-    }
-})
-
-var FC = FC || {};
-FC.onLoad = function () {
-
-    FC.client.on('ready.done', function () {
-
-        FC.client.request('https://'+FC.settings.storedomain+'/cart?').done(function(dataJSON) {
-            if (dataJSON.item_count > 0) {
-                $('.cart2').css('display', 'inline');
-                $('.cart1').css('display', 'none');
-                temp = true;
-            } else {
-                $('.cart2').css('display', 'none');
-                $('.cart1').css('display', 'inline');
-            }
-        });
-
-
-        FC.client.on("cart-item-remove.done", function() {
-            FC.client.request('https://'+FC.settings.storedomain+'/cart?').done(function(dataJSON) {
-                if (dataJSON.item_count < 1) {
-                    $('.cart2').css('display', 'none');
-                    $('.cart1').css('display', 'inline');
-                    buildMini();
-                }
-            });  
-        })
-
-        FC.client.on("cart-submit.done", function() {
-            temp = true;
-            $('.cart2').css('display', 'inline');
-            $('.cart1').css('display', 'none');
-            buildMini();
-        })
-
-        var rows = "";
-        buildMini();
-})
-}
-
-function buildMini() {
-    var rows = "";
-        FC.client.request('https://'+FC.settings.storedomain+'/cart?').done(function(dataJSON) {
-            rows = "";
-            for (var i = 0; i < dataJSON.items.length; i++) {
-                buildMiniCart(dataJSON.items[i].name, dataJSON.items[i].price_each, dataJSON.items[i].options, dataJSON.items[i].quantity)
-            }
-
-            rows += "<tr>";
-            rows += "<td></td>";
-            rows += "<td></td>";
-            rows += "<td>Total:</td>";
-            rows += "<td>$" + dataJSON.total_order + "</td>";
-            rows += "<td></td>";
-            rows += "</tr>";
-
-            $("#cart-dropdown-content").html(rows);
-        });
-
-        function buildMiniCart(name, price, options, quantity) {
-            rows += "<tr>";
-            rows += "<td>" + name + "</td>";
-            rows += "<td>" + options[0].value + "</td>";
-            rows += "<td>" + options[1].value + "</td>";
-            rows += "<td>$" + price + "</td>";
-            rows += "<td>x" + quantity + "</td>";
-            rows += "</tr>";
-        }
-
-}
-
-setTimeout(function() {
-    console.log("X");
-    // $("iframe").css("display", "none")
-}, 5000);
 
 </script>
     </body>

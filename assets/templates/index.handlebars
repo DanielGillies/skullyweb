@@ -86,45 +86,19 @@
                             </div>
                         </div>
                     </div>
-                    </div>
-                <!-- <div class="container mt64">
-                    <div class="row v-align-children">
-                        <div class="col-sm-4 mb-xs-24">
-                            <h2 class="mb48 mb-xs-32">The First of Its Kind</h2>
-                            <div class="mb40 mb-xs-24">
-                                <h4 class="fade-1-4">
-                                    The SKULLY AR-1 is an augmented reality motorcycle helmet that will change the way you ride. An infinite focus heads-up display, rear-view camera, and companion app for hands-free control enhance your safety and heighten your senses. Total awareness is total freedom. 
-                                <br>
-
-                                </h4>
-                            </div>
-                        </div>
-                        <div class="col-md-7 col-sm-5 col-sm-6 col-sm-offset-1 text-center helmvid">
-                        <a href="//fast.wistia.net/embed/iframe/1nwzz5fh0t?popover=true" id="wistiavid" class="wistia-popover[height=720,playerColor=414141,width=1280]">
-                            <img class="playbtn" src="static/img/play-button.png">
-                            <video autoplay muted loop>
-                                <source src="http://dg6vcgn2vehm4.cloudfront.net/video3.webm" type="video/webm">
-                                <source src="http://dg6vcgn2vehm4.cloudfront.net/video3.mp4" type="video/mp4">
-                                <source src="http://dg6vcgn2vehm4.cloudfront.net/video3.ogv" type="video/ogv">
-                            </video></a>
-                    <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js"></script>
-                        </div>
-                        <div class="pl0 pr0 col-md-5 col-sm-5 col-sm-6 col-sm-offset-1 text-center gif">
-                            <a href="//fast.wistia.net/embed/iframe/1nwzz5fh0t?popover=true" class="wistia-popover[height=720,playerColor=414141,width=1280]"><img src="https://embed-ssl.wistia.com/deliveries/d8c87a7982ca461396b93a1ea5626869fa315d80.jpg?image_play_button=true&image_play_button_color=414141e0&image_crop_resized=300x169" alt="" /></a>
-<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js"></script>
-                        </div> -->
-                        <!--end of row-->
-                    <!-- </div> -->
-                    <!--end of container-->
+                </div>
             </section>
-            <section data-section-name="explosive" class="panelSnap fullheight bg-white pb0 pt0">
-                    <video autoplay muted loop style="height: 100%;">
-                        <source src="explode.webm" type="video/webm">
+            <section id="explosive" class="panelSnap fullheight bg-white pb0 pt0">
+                    <video id="explosive-treatment" preload="auto">
+                    <!-- <source type="video/webm;" src="http://www.html5rocks.com/tutorials/video/basics/Chrome_ImF.webm"></source> -->
                         <!-- <source src="http://dg6vcgn2vehm4.cloudfront.net/exploded_withtags.m4v" type="video/mp4"> -->
+                                                <source src="testexplode.mp4" type="video/mp4">
+
+                        <!-- <source src="http://dg6vcgn2vehm4.cloudfront.net/explosive.webm" type="video/webm"> -->
                         <!-- <source src="http://dg6vcgn2vehm4.cloudfront.net/exploded_withtags.ogv" type="video/ogv"> -->
                     </video>
             </section>
-            <section data-section-name="hud" class="panelSnap bg-primary">
+            <section class="panelSnap bg-primary">
                 <div class="container">
                     <h2 class="mb0 mb-xs-0 text-center">Heads-Up Display</h2>
                     <h4 class="mb48 mb-xs-32 text-center">for <strong>Total Awareness</strong></h4>
@@ -173,7 +147,6 @@
                         <div class="text-center">
                             <a class="btn btn-lg btn-filled mt32 mb0" href="store">I want one</a>
                         </div>
-                        </section>
             </section>
             <section data-section-name="rearview" class="fullheight bg-secondary">
                 <div class="container">
@@ -285,14 +258,16 @@
                         </div>
                 </div>
             </section>
-            <section data-section-name="app" class="fullheight image-bg overlay">
+            <a id="app"></a>
+            <section class="fullheight image-bg overlay">
                 <div class="background-image-holder">
                     <img alt="image" class="background-image" src="static/img/phone_apple.jpg">
                 </div>
                 <div class="v-align-transform container">
                         <div class="row mb40 mb-xs-24">
                             <div class="col-sm-12 text-center">
-                                <h2 class="mb16">Get the app</h2>
+                                <h2 class="mb16">Pair Up</h2>
+                                <p>Connect, navigate, listen, and communicate by downloading the SKULLY companion app, the heartbeat of the AR-1.</p>
                             </div>
                         </div>
                         <div class="row mb64">
@@ -387,6 +362,20 @@ $btn3.popover({trigger: 'manual'})
     .on('mouseenter', enterShow)
     .on('mouseleave', exitHide)
     .on('click', clickToggle);
+
+    // select video element
+var vid = document.getElementById('explosive-treatment');
+//var vid = $('#v0')[0]; // jquery option
+
+// pause video on load
+vid.pause();
+
+// alternative & optimized implementation  thanks to http://codepen.io/daveroma/
+window.onscroll = function(){
+  vid.currentTime = window.pageYOffset/400;
+};
+
+
 
         </script>
             <script type="text/javascript">
@@ -540,10 +529,10 @@ $btn3.popover({trigger: 'manual'})
             }
             /* END DIV VIEW CHECK */
             // WISTIA CTA BUTTON
-            $('document').ready(function () {
-                 console.log("FFF")
-                $('.main-container').panelSnap();
-                console.log("FFFF")
+            // $('document').ready(function () {
+                 // console.log("FFF")
+                // $('.main-container').panelSnap();
+                // console.log("FFFF")
                 // $('#hero').on('ended', function() {
                 //     $(this).get(0).play();
                 //     $(this).get(0).currentTime = 20;
@@ -555,24 +544,24 @@ $btn3.popover({trigger: 'manual'})
                 //     });
                 // });
 
-                $(window).scroll(function() {
-                if (isScrolledIntoView($(".hud-animation"))) {
-                    $(window).unbind("scroll");
-                    TweenLite.set(".hud-animation", {perspective: 500});
-                    TweenMax.to("#hud-bg", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .7, ease: Power1.easeInOut, delay: .3});
-                    TweenMax.to("#hud-nose", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .9, ease: Power1.easeInOut, delay: .3});
-                    TweenMax.to("#hud-rear", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: .3});
-                    TweenMax.to("#hud-mph", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: .3});
+            //     $(window).scroll(function() {
+            //     if (isScrolledIntoView($(".hud-animation"))) {
+            //         // $(window).unbind("scroll");
+            //         TweenLite.set(".hud-animation", {perspective: 500});
+            //         TweenMax.to("#hud-bg", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .7, ease: Power1.easeInOut, delay: .3});
+            //         TweenMax.to("#hud-nose", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .9, ease: Power1.easeInOut, delay: .3});
+            //         TweenMax.to("#hud-rear", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: .3});
+            //         TweenMax.to("#hud-mph", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: .3});
 
-                    TweenMax.to("#hud-nose", 1, {left: "+=1%", delay: 1.3, ease: Power2.easeInOut});
-                    TweenMax.to("#hud-rear", 1.5, {scale: 2, top: "-=35%", left:"-=55%", ease: Power2.easeInOut, delay: .8});
-                    TweenMax.to("#hud-mph", 1.5, {scale: 2.5, top: "-=55%", left: "-=80%", ease: Power2.easeInOut, delay: .8});
-                }
-            });
+            //         TweenMax.to("#hud-nose", 1, {left: "+=1%", delay: 1.3, ease: Power2.easeInOut});
+            //         TweenMax.to("#hud-rear", 1.5, {scale: 2, top: "-=35%", left:"-=55%", ease: Power2.easeInOut, delay: .8});
+            //         TweenMax.to("#hud-mph", 1.5, {scale: 2.5, top: "-=55%", left: "-=80%", ease: Power2.easeInOut, delay: .8});
+            //     }
+            // });
 
                 // $.preloadImages();
 
-            });
+            // });
             </script>
 </body>
 

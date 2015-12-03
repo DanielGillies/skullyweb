@@ -9212,3 +9212,28 @@ filter: FlipH;
     top: 0;
     width: 100vw;
 }
+
+#explosive-treatment {
+  position: fixed;
+  top: 55px;  
+  left: 0; 
+  height: 100%;
+}
+
+#explosive {
+    height: 9000px;
+}
+
+#testt {
+    height: 100%;
+}
+
+#testt2 {
+
+    height: 97vh;
+
+}
+
+.shopify-button {
+    display: none !important;
+}

@@ -145,7 +145,7 @@
                                  </li>
                                  <hr>
                                  <li>
-                                     <a id="app" href="index#app">
+                                     <a id="app" href="#app">
                         APP
                       </a>
                                  </li>
@@ -220,8 +220,8 @@
                     <row>
                         <div class="col-sm-8 col-sm-offset-2">
                             <div class="text-center">
-                                <h2 class="mb24"><span class="ar1font">SKULLY</span> Events - Come Visit Us</h2>
-                                <h4>We invite the <span class="ar1font">SKULLY</span> Nation to visit us at the following events.  Experience the <span class="ar1font">SKULLY</span> helmet, give us feedback and maybe get some free swag. Come join us! </h4>
+                                <h2 class="mb24">Meetups, Demos, and Q&A's</h2>
+                                <h4>Meet the brains behind <span class="ar1font">SKULLY</span> products and experience Augmented Reality firsthand at our nationwide events.</h4>
                             </div>
                             </div>
                     </row>
@@ -252,7 +252,7 @@
                         </div>
                         <div class="col-md-4 col-sm-12">
                             <ul id='marker-list'>
-                                <h4 class="text-center">Events List</h4>
+                                <h4 class="text-center">Upcoming Events</h4>
                             </ul>
                         </div>
                     </div>
@@ -263,8 +263,8 @@
                     <row>
                         <div class="col-sm-8 col-sm-offset-2">
                             <div class="text-center">
-                                <h2 class="mb24">Hosting An Event? Tell Us!</h2>
-                                <h4>We're always looking for events to attend.</h4>
+                                <h2 class="mb24">Invite Us to Your City</h2>
+                                <h4>Hosting an event? Tell us what you have in mind and why we should attend.</h4>
                                 <h3 id="Confirmation">Thank You For Letting Us Know</h2>
                             </div>
 
@@ -416,6 +416,9 @@ onload="if(submitted) {$('#dealerForm').css('display', 'none');$('#Confirmation'
             <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.2/handlebars.js"></script>
             <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
             <script src="static/js/vendor.js"></script>
+            <script>
+                !function(t){var i=t(window);t.fn.visible=function(t,e,o){if(!(this.length<1)){var r=this.length>1?this.eq(0):this,n=r.get(0),f=i.width(),h=i.height(),o=o?o:"both",l=e===!0?n.offsetWidth*n.offsetHeight:!0;if("function"==typeof n.getBoundingClientRect){var g=n.getBoundingClientRect(),u=g.top>=0&&g.top<h,s=g.bottom>0&&g.bottom<=h,c=g.left>=0&&g.left<f,a=g.right>0&&g.right<=f,v=t?u||s:u&&s,b=t?c||a:c&&a;if("both"===o)return l&&v&&b;if("vertical"===o)return l&&v;if("horizontal"===o)return l&&b}else{var d=i.scrollTop(),p=d+h,w=i.scrollLeft(),m=w+f,y=r.offset(),z=y.top,B=z+r.height(),C=y.left,R=C+r.width(),j=t===!0?B:z,q=t===!0?z:B,H=t===!0?R:C,L=t===!0?C:R;if("both"===o)return!!l&&p>=q&&j>=d&&m>=L&&H>=w;if("vertical"===o)return!!l&&p>=q&&j>=d;if("horizontal"===o)return!!l&&m>=L&&H>=w}}}}(jQuery);
+            </script>
             <script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
             <script>
             'use strict';
