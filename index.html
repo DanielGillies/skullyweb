@@ -299,13 +299,13 @@
                     </div>
                 </div>
             </section>
-            <section id="explosive" class="panelSnap fullheight bg-white pb0 pt0">
-                    <video id="explosive-treatment" preload="auto">
+            <section class="panelSnap fullheight bg-white pb0 pt0">
+                    <video autoplay loop preload="auto">
                     <!-- <source type="video/webm;" src="http://www.html5rocks.com/tutorials/video/basics/Chrome_ImF.webm"></source> -->
                         <!-- <source src="http://dg6vcgn2vehm4.cloudfront.net/exploded_withtags.m4v" type="video/mp4"> -->
-                                                <source src="testexplode.mp4" type="video/mp4">
+                                                <!-- <source src="testexplode.mp4" type="video/mp4"> -->
 
-                        <!-- <source src="http://dg6vcgn2vehm4.cloudfront.net/explosive.webm" type="video/webm"> -->
+                        <source src="http://dg6vcgn2vehm4.cloudfront.net/explosive.webm" type="video/webm">
                         <!-- <source src="http://dg6vcgn2vehm4.cloudfront.net/exploded_withtags.ogv" type="video/ogv"> -->
                     </video>
             </section>
@@ -591,7 +591,7 @@
             <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
             <script src="static/js/vendor.js"></script>
             <script>
-                !function(t){var i=t(window);t.fn.visible=function(t,e,o){if(!(this.length<1)){var r=this.length>1?this.eq(0):this,n=r.get(0),f=i.width(),h=i.height(),o=o?o:"both",l=e===!0?n.offsetWidth*n.offsetHeight:!0;if("function"==typeof n.getBoundingClientRect){var g=n.getBoundingClientRect(),u=g.top>=0&&g.top<h,s=g.bottom>0&&g.bottom<=h,c=g.left>=0&&g.left<f,a=g.right>0&&g.right<=f,v=t?u||s:u&&s,b=t?c||a:c&&a;if("both"===o)return l&&v&&b;if("vertical"===o)return l&&v;if("horizontal"===o)return l&&b}else{var d=i.scrollTop(),p=d+h,w=i.scrollLeft(),m=w+f,y=r.offset(),z=y.top,B=z+r.height(),C=y.left,R=C+r.width(),j=t===!0?B:z,q=t===!0?z:B,H=t===!0?R:C,L=t===!0?C:R;if("both"===o)return!!l&&p>=q&&j>=d&&m>=L&&H>=w;if("vertical"===o)return!!l&&p>=q&&j>=d;if("horizontal"===o)return!!l&&m>=L&&H>=w}}}}(jQuery);
+                // !function(t){var i=t(window);t.fn.visible=function(t,e,o){if(!(this.length<1)){var r=this.length>1?this.eq(0):this,n=r.get(0),f=i.width(),h=i.height(),o=o?o:"both",l=e===!0?n.offsetWidth*n.offsetHeight:!0;if("function"==typeof n.getBoundingClientRect){var g=n.getBoundingClientRect(),u=g.top>=0&&g.top<h,s=g.bottom>0&&g.bottom<=h,c=g.left>=0&&g.left<f,a=g.right>0&&g.right<=f,v=t?u||s:u&&s,b=t?c||a:c&&a;if("both"===o)return l&&v&&b;if("vertical"===o)return l&&v;if("horizontal"===o)return l&&b}else{var d=i.scrollTop(),p=d+h,w=i.scrollLeft(),m=w+f,y=r.offset(),z=y.top,B=z+r.height(),C=y.left,R=C+r.width(),j=t===!0?B:z,q=t===!0?z:B,H=t===!0?R:C,L=t===!0?C:R;if("both"===o)return!!l&&p>=q&&j>=d&&m>=L&&H>=w;if("vertical"===o)return!!l&&p>=q&&j>=d;if("horizontal"===o)return!!l&&m>=L&&H>=w}}}}(jQuery);
             </script>
             <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
             <script type="text/javascript">
@@ -655,16 +655,16 @@ $btn3.popover({trigger: 'manual'})
     .on('click', clickToggle);
 
     // select video element
-var vid = document.getElementById('explosive-treatment');
-//var vid = $('#v0')[0]; // jquery option
+// var vid = document.getElementById('explosive-treatment');
+// //var vid = $('#v0')[0]; // jquery option
 
-// pause video on load
-vid.pause();
+// // pause video on load
+// vid.pause();
 
-// alternative & optimized implementation  thanks to http://codepen.io/daveroma/
-window.onscroll = function(){
-  vid.currentTime = window.pageYOffset/400;
-};
+// // alternative & optimized implementation  thanks to http://codepen.io/daveroma/
+// window.onscroll = function(){
+//   vid.currentTime = window.pageYOffset/400;
+// };
 
 
 

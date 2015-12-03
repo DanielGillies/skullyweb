@@ -88,13 +88,13 @@
                     </div>
                 </div>
             </section>
-            <section id="explosive" class="panelSnap fullheight bg-white pb0 pt0">
-                    <video id="explosive-treatment" preload="auto">
+            <section class="panelSnap fullheight bg-white pb0 pt0">
+                    <video autoplay loop preload="auto">
                     <!-- <source type="video/webm;" src="http://www.html5rocks.com/tutorials/video/basics/Chrome_ImF.webm"></source> -->
                         <!-- <source src="http://dg6vcgn2vehm4.cloudfront.net/exploded_withtags.m4v" type="video/mp4"> -->
-                                                <source src="testexplode.mp4" type="video/mp4">
+                                                <!-- <source src="testexplode.mp4" type="video/mp4"> -->
 
-                        <!-- <source src="http://dg6vcgn2vehm4.cloudfront.net/explosive.webm" type="video/webm"> -->
+                        <source src="http://dg6vcgn2vehm4.cloudfront.net/explosive.webm" type="video/webm">
                         <!-- <source src="http://dg6vcgn2vehm4.cloudfront.net/exploded_withtags.ogv" type="video/ogv"> -->
                     </video>
             </section>
@@ -364,16 +364,16 @@ $btn3.popover({trigger: 'manual'})
     .on('click', clickToggle);
 
     // select video element
-var vid = document.getElementById('explosive-treatment');
-//var vid = $('#v0')[0]; // jquery option
+// var vid = document.getElementById('explosive-treatment');
+// //var vid = $('#v0')[0]; // jquery option
 
-// pause video on load
-vid.pause();
+// // pause video on load
+// vid.pause();
 
-// alternative & optimized implementation  thanks to http://codepen.io/daveroma/
-window.onscroll = function(){
-  vid.currentTime = window.pageYOffset/400;
-};
+// // alternative & optimized implementation  thanks to http://codepen.io/daveroma/
+// window.onscroll = function(){
+//   vid.currentTime = window.pageYOffset/400;
+// };
 
 
 
