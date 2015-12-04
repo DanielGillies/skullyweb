@@ -892,15 +892,15 @@ transition: background 2s ease;
     background-position: 70% 50% !important;
 }
 
+@media
 .press-image-background-2 {
-    background-position: 100% 50% !important;
+    background-position: 400% 50% !important;
     background-size: auto 100% !important;
 }
 
 @media all and (max-width: 1800px) {
     .press-image-background-2 {
         background-position: -100% 50% !important;
-        background-size: auto 100% !important;
     }
 }
 
@@ -916,11 +916,11 @@ transition: background 2s ease;
     }
 }
 
-@media all and (max-width: 1180px) {
+/*@media all and (max-width: 1180px) {
     .press-image-background-2 {
-        background-position: 25% 50% !important;
+        background-position: 0% 50% !important;
     }
-}
+}*/
 
 @media all and (max-width: 662px) {
     .press-image-background-2 {
@@ -9236,4 +9236,12 @@ filter: FlipH;
 
 .shopify-button {
     display: none !important;
+}
+
+.modal h1, .modal h2, .modal h3, .modal h4, .modal p{
+    color: black;
+}
+
+.mason .ar1font {
+    color: white;
 }

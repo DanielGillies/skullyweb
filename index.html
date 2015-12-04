@@ -250,7 +250,7 @@
                 <div class="indexvidbar">
                     <div class="row halved" style="left: 6%">
                         <div class="col-sm-3 col-md-3 col-xs-3">
-                            <a style="cursor:pointer;" id="show1"><img alt="pic" class="image-xxs" src="static/img/press1.png"></a>
+                            <a data-target="#modal1" data-toggle="modal" style="cursor:pointer;"><img alt="pic" class="image-xxs" src="static/img/press1.png"></a>
                         </div>
                         <div class="col-sm-3 col-md-3 col-xs-3">
                             <a style="cursor:pointer;" id="show2"><img alt="pic" class="image-xxs" src="static/img/press5.png"></a>
@@ -263,6 +263,33 @@
                         </div>
                     </div>
                 </div>
+                <div id="modal1" class="modal fade" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">The CNN Top 10 Inventions</h4>
+                  </div>
+                  <div class="modal-body">
+                        <p>“Augmented reality is getting a lot of talk in the gaming world, with products like Sony\'s and the Oculus Rift promising to make play time more fun. But what if it could make the roads safer? That\'s what the makers of Skully promise with what they're..."</p>
+                        <div class="text-center">
+                        <a class="btn btn-mega black" target="_blank" href="http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/">READ MORE</a>
+                        </div>
+                            <div id="social-platforms">
+                            <a class="button button-icon button-facebook" target="_blank"href="http://www.facebook.com/sharer.php?u=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>
+                            <a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>
+                            <a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>
+                            </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
             </section>
             <!-- <section class="pb0 pt72">
                 <div class="indexvidbar">
@@ -440,14 +467,14 @@
                     <!--end of container-->
                 </div>
             </section>
-            <section data-section-name="signup" class="fullheight image-bg overlay">
+            <section class="fullheight image-bg overlay">
                 <div class="background-image-holder">
                     <img alt="image" class="background-image" src="static/img/signup.jpeg">
                 </div>
                 <div class="v-align-transform container">
                         <div class="row mb40 mb-xs-24">
                             <div class="col-sm-12 text-center">
-                                <h2 class="mb16">Be the first to know</h2>
+                                <h2 class="mb16">Be the First to Know</h2>
                                 <p>Get exclusive updates, learn about demo opportunities, and RSVP for special events. </p>
                             </div>
                         </div>
@@ -478,7 +505,7 @@
                         <div class="row mb40 mb-xs-24">
                             <div class="col-sm-12 text-center">
                                 <h2 class="mb16">Pair Up</h2>
-                                <p>Connect, navigate, listen, and communicate by downloading the SKULLY companion app, the heartbeat of the AR-1.</p>
+                                <h4>Connect, navigate, listen, and communicate by downloading the <br><span class="ar1font">SKULLY</span> companion app, the heartbeat of the <span class="ar1font">AR-<span class="skullyred">1</span></span>.</h4>
                             </div>
                         </div>
                         <div class="row mb64">
