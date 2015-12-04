@@ -4,11 +4,11 @@
     {{> navbar}}
         <!-- ACTUAL PAGE CONTENT -->
         <div class="main-container">
-            <section id="vidholder" data-section-name="header" class="panelSnap overlay image-bg fullscreen mh700 bg-dark">
+            <section id="vidholder" class="overlay image-bg fullscreen mh700 bg-dark">
                 <div class="background-image-holder indeximage">
-                    <img alt="Background Image" class="indexgif background-image" src="static/img/550.gif">
+                    <!-- <img alt="Background Image" class="indexgif background-image" src="static/img/550.gif"> -->
                     <div class="fs-vid-background">
-                        <video id="hero" autoplay loop muted>
+                        <video id="hero" autoplay loop muted preload="auto">
                             <source src="http://dg6vcgn2vehm4.cloudfront.net/indexhero.webm" type="video/webm">
                             <source src="http://dg6vcgn2vehm4.cloudfront.net/indexhero.mp4" type="video/mp4">
                             <source src="http://dg6vcgn2vehm4.cloudfront.net/indexhero.ogv" type="video/ogv">
@@ -178,17 +178,18 @@
                     </div>
                 </div>
             </section>
-            <section class="panelSnap fullheight bg-white pb0 pt0">
-                    <video autoplay loop preload="auto">
+            <section id="explosive" class="bg-white pb0 pt0">
+                    <video id="explosive-vid" muted preload="auto">
                     <!-- <source type="video/webm;" src="http://www.html5rocks.com/tutorials/video/basics/Chrome_ImF.webm"></source> -->
                         <!-- <source src="http://dg6vcgn2vehm4.cloudfront.net/exploded_withtags.m4v" type="video/mp4"> -->
                                                 <!-- <source src="testexplode.mp4" type="video/mp4"> -->
+                                                <source src="http://dg6vcgn2vehm4.cloudfront.net/expl2.webm" type="video/webm">
 
-                        <source src="http://dg6vcgn2vehm4.cloudfront.net/explosive.webm" type="video/webm">
+                        <!-- <source src="http://dg6vcgn2vehm4.cloudfront.net/Chrome_ImF.webm" type="video/webm"> -->
                         <!-- <source src="http://dg6vcgn2vehm4.cloudfront.net/exploded_withtags.ogv" type="video/ogv"> -->
                     </video>
             </section>
-            <section class="bg-primary">
+            <section id="hud" class="bg-primary">
                 <div class="container">
                     <h2 class="mb0 mb-xs-0 text-center">Heads-Up Display</h2>
                     <h4 class="mb48 mb-xs-32 text-center">for <strong>Total Awareness</strong></h4>
@@ -453,18 +454,6 @@ $btn3.popover({trigger: 'manual'})
     .on('mouseleave', exitHide)
     .on('click', clickToggle);
 
-    // select video element
-// var vid = document.getElementById('explosive-treatment');
-// //var vid = $('#v0')[0]; // jquery option
-
-// // pause video on load
-// vid.pause();
-
-// // alternative & optimized implementation  thanks to http://codepen.io/daveroma/
-// window.onscroll = function(){
-//   vid.currentTime = window.pageYOffset/400;
-// };
-
 
 
         </script>
@@ -500,24 +489,45 @@ $btn3.popover({trigger: 'manual'})
             });
 
 
-            /* CHECK FOR DIV IN VIEW */
-            /* END DIV VIEW CHECK */
-            // WISTIA CTA BUTTON
-            // $('document').ready(function () {
-                 // console.log("FFF")
-                // $('.main-container').panelSnap();
-                // console.log("FFFF")
-                // $('#hero').on('ended', function() {
-                //     $(this).get(0).play();
-                //     $(this).get(0).currentTime = 20;
-                // })
-               // $('#vidholder').css('height',$('#hero').height());
+                var vid = document.getElementById("explosive-vid")
+                vid.pause();
+               var fixmeTop = $('#explosive-vid').offset().top;       // get initial position of the element
+               var nextSection = $('#hud').offset().top;
+               var fixmeBot = fixmeTop + $('#explosive-vid').height();;
+
+$(window).scroll(function() {                  // assign scroll event listener
+
+    var currentScroll = $(window).scrollTop(); // get current position
+    if (currentScroll >= fixmeTop-55 && currentScroll <= nextSection+(fixmeTop - fixmeBot)) {           // apply position: fixed if you
+        vid.currentTime = (window.pageYOffset-fixmeTop)/400;
+        console.log(vid.currentTime);
+        $('#explosive-vid').css({                      // scroll to that element or below it
+            position: 'fixed',
+            top: '55px',
+            left: '0'
+        });
+    } else if (currentScroll < fixmeTop-55) {                                   // apply position: static
+        console.log("Above")
+        $('#explosive-vid').attr("style","");  
+        $('#explosive-vid').css({                      // if you scroll above it
+            position: 'absolute',
+            top: '0'
+        });
+    } else {
+        console.log("Below")
+        $('#explosive-vid').attr("style","");  
+        $('#explosive-vid').css({                      // if you scroll above it
+            position: 'absolute',
+            bottom: '0',
+        });
+    }
+
+});
+
 
 window._wq = window._wq || [];
-console.log("FF")
 _wq.push({ "1nw": function(video) {
-  console.log("I got a handle to the video!", video);
-  video.bind("end", function() {
+    video.bind("end", function() {
     $("#wistia_26_romulus").append("<a target='_blank' href='http://skullysystems.myshopify.com/' class='ctabutton'>Get Yours</a>");
   })
 }});

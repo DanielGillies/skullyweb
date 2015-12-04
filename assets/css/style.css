@@ -9336,14 +9336,14 @@ filter: FlipH;
     width: 100vw;
 }
 
-#explosive-treatment {
-  position: fixed;
-  top: 55px;  
-  left: 0; 
-  height: 100%;
+#explosive-vid {
+    height: calc(100vh - 55px);
+    width: 99%;
+    margin: 0 auto;
 }
 
 #explosive {
+    position: relative;
     height: 9000px;
 }
 
