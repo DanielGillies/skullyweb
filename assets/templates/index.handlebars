@@ -4,7 +4,7 @@
     {{> navbar}}
         <!-- ACTUAL PAGE CONTENT -->
         <div class="main-container">
-            <section id="vidholder" data-section-name="header" class="panelSnap image-bg fullscreen mh700 bg-dark">
+            <section id="vidholder" data-section-name="header" class="panelSnap overlay image-bg fullscreen mh700 bg-dark">
                 <div class="background-image-holder indeximage">
                     <img alt="Background Image" class="indexgif background-image" src="static/img/550.gif">
                     <div class="fs-vid-background">
@@ -23,8 +23,11 @@
                             <div class="text-center">
                                 <!-- <a href="ar1" id="ar1index" class="mt24 btn ar1font bold">AR-1</a> -->
                                 <br>
-                                <a href="//fast.wistia.net/embed/iframe/1nwzz5fh0t?popover=true" id="wistiavid" class="wistia-popover[height=720,playerColor=414141,width=1280]">See the <span class="ar1font">AR-<span class="skullyred">1</span></span> in action <i class="bold skullyred ti-arrow-circle-right icon-xs"></i></a>
-                    <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js"></script>
+
+<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script><span class="wistia_embed wistia_async_1nwzz5fh0t popover=true popoverContent=link" style="display:inline"><a class="btn btn-middle" id="wistiavid" href="#"><i class="bold skullyred ti-arrow-circle-right icon-xs"></i> See <span class="ar1font">AR-<span class="skullyred">1</span></span> in action</a></span>
+
+
+                    <a id="store" class="btn btn-middle" href="/store2">Buy Now</a>
                             </div>
                         </div>
                         <!--end of row-->
@@ -42,63 +45,123 @@
                             <a data-target="#modal1" data-toggle="modal" style="cursor:pointer;"><img alt="pic" class="image-xxs" src="static/img/press1.png"></a>
                         </div>
                         <div class="col-sm-3 col-md-3 col-xs-3">
-                            <a style="cursor:pointer;" id="show2"><img alt="pic" class="image-xxs" src="static/img/press5.png"></a>
+                            <a data-target="#modal2" data-toggle="modal" style="cursor:pointer;" ><img alt="pic" class="image-xxs" src="static/img/press5.png"></a>
                         </div>
                         <div class="col-sm-2 col-md-3 col-xs-2">
-                            <a style="cursor:pointer;" id="show3"><img alt="pic" class="image-xxs" src="static/img/press3.png"></a>
+                            <a data-target="#modal3" data-toggle="modal" style="cursor:pointer;"><img alt="pic" class="image-xxs" src="static/img/press3.png"></a>
                         </div>
                         <div class="col-sm-3 col-md-3 col-xs-3">
-                            <a style="cursor:pointer;" id="show4"><img alt="pic" class="image-xxs" src="static/img/press4.png"></a>
+                            <a data-target="#modal4" data-toggle="modal" style="cursor:pointer;"><img alt="pic" class="image-xxs" src="static/img/press4.png"></a>
                         </div>
                     </div>
                 </div>
+                <!-- ****************************MODALS*************************** -->
                 <div id="modal1" class="modal fade" role="dialog">
-              <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">The CNN Top 10 Inventions</h4>
-                  </div>
-                  <div class="modal-body">
-                        <p>“Augmented reality is getting a lot of talk in the gaming world, with products like Sony\'s and the Oculus Rift promising to make play time more fun. But what if it could make the roads safer? That\'s what the makers of Skully promise with what they're..."</p>
-                        <div class="text-center">
-                        <a class="btn btn-mega black" target="_blank" href="http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/">READ MORE</a>
-                        </div>
-                            <div id="social-platforms">
-                            <a class="button button-icon button-facebook" target="_blank"href="http://www.facebook.com/sharer.php?u=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>
-                            <a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>
-                            <a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">The CNN Top 10 Inventions</h4>
                             </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            </section>
-            <!-- <section class="pb0 pt72">
-                <div class="indexvidbar">
-                    <div class="row halved" style="left: 6%">
-                        <div class="col-sm-3 col-md-3 col-xs-3">
-                            <a style="cursor:pointer;" id="show1"><img alt="pic" class="image-xxs" src="static/img/press1.png"></a>
-                        </div>
-                        <div class="col-sm-3 col-md-3 col-xs-3">
-                            <a style="cursor:pointer;" id="show2"><img alt="pic" class="image-xxs" src="static/img/press5.png"></a>
-                        </div>
-                        <div class="col-sm-2 col-md-3 col-xs-2">
-                            <a style="cursor:pointer;" id="show3"><img alt="pic" class="image-xxs" src="static/img/press3.png"></a>
-                        </div>
-                        <div class="col-sm-3 col-md-3 col-xs-3">
-                            <a style="cursor:pointer;" id="show4"><img alt="pic" class="image-xxs" src="static/img/press4.png"></a>
+                            <div class="modal-body">
+                                <p>“Augmented reality is getting a lot of talk in the gaming world, with products like Sony's and the Oculus Rift promising to make play time more fun. But what if it could make the roads safer? That\'s what the makers of Skully promise with what they're..."</p>
+                                <div class="text-center">
+                                    <a class="btn btn-mega black" target="_blank" href="http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/">READ MORE</a>
+                                </div>
+                                <div id="social-platforms">
+                                    <a class="button button-icon button-facebook" target="_blank"href="http://www.facebook.com/sharer.php?u=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>
+                                    <a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>
+                                    <a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-mega black mb0" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
-                </section> -->
-                <section data-section-name="beauty"class="panelSnap fullheight image-bg fullscreen bg-dark" style="min-height: 900px">
+            </div>
+
+            <div id="modal2" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">A Motorcycle Helmet for the Digital World</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>“At a time when screens are being integrated into everything, Skully engineers saw an opportunity to upgrade something that’s remained largely unchanged for decades: the motorcycle helmet. The P-1 is the first helmet with a digital head-up display..."</p>
+                                <div class="text-center">
+                                    <a class="btn btn-mega black" target="_blank" href="http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world">READ MORE</a>
+                                </div>
+                                <div id="social-platforms">
+                                    <a class="button button-icon button-facebook" target="_blank"href="http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>
+                                    <a class="button button-icon button-twitter" target="_blank" href="http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>
+                                    <a class="button button-icon button-googleplus" target="_blank" href="http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-mega black mb0" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal3" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">The Skully Smart Motorcycle Helmet Sharpens Your Senses On The Road</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>“The stats around motorcycle safety in the United States are pretty bleak, but the folks at Skully are looking to give an added layer of safety to the bike-riding thrill-seekers of the world. The Skully <span class="ar1font">AR-<span class="skullyred">1</span></span> helmet started..."</p>
+                                <div class="text-center">
+                                    <a class="btn btn-mega black" target="_blank" href="http://techcrunch.com/2014/08/11/skully/">READ MORE</a>
+                                </div>
+                                <div id="social-platforms">
+                                    <a class="button button-icon button-facebook" target="_blank"href="http://techcrunch.com/2014/08/11/skully/"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>
+                                    <a class="button button-icon button-twitter" target="_blank" href="http://techcrunch.com/2014/08/11/skully/"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>
+                                    <a class="button button-icon button-googleplus" target="_blank" href="http://techcrunch.com/2014/08/11/skully/"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>
+                                </div>
+                            </div>
+                            <div class="text-center modal-footer">
+                            <button type="button" class="btn btn-mega black mb0" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal4" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">This Slick Augmented-reality Helmet Has A Rearview Camera, Weather Reports</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>“Motorcycle helmets with head-up displays and augmented reality were science fiction just a few years ago. But now major helmet manufacturers and startups are working to incorporate Google Glass-like..."</p>
+                                <div class="text-center">
+                                    <a class="btn btn-mega black" target="_blank" href="http://www.wired.com/2013/10/skully-helmet/">READ MORE</a>
+                                </div>
+                                <div id="social-platforms">
+                                    <a class="button button-icon button-facebook" target="_blank"href="http://www.wired.com/2013/10/skully-helmet/"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>
+                                    <a class="button button-icon button-twitter" target="_blank" href="http://www.wired.com/2013/10/skully-helmet/"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>
+                                    <a class="button button-icon button-googleplus" target="_blank" href="http://www.wired.com/2013/10/skully-helmet/"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>
+                                </div>
+                            </div>
+                            <div class="text-center modal-footer">
+                            <button type="button" class="btn btn-mega black mb0" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </section>
+            <section class="fullheight image-bg fullscreen bg-dark" style="min-height: 900px">
                 <div class="background-image-holder">
                     <img src="/static/img/kyle1.jpeg">
                 </div>
@@ -125,7 +188,7 @@
                         <!-- <source src="http://dg6vcgn2vehm4.cloudfront.net/exploded_withtags.ogv" type="video/ogv"> -->
                     </video>
             </section>
-            <section class="panelSnap bg-primary">
+            <section class="bg-primary">
                 <div class="container">
                     <h2 class="mb0 mb-xs-0 text-center">Heads-Up Display</h2>
                     <h4 class="mb48 mb-xs-32 text-center">for <strong>Total Awareness</strong></h4>
@@ -175,7 +238,7 @@
                             <a class="btn btn-lg btn-filled mt32 mb0" href="store">I want one</a>
                         </div>
             </section>
-            <section data-section-name="rearview" class="fullheight bg-secondary">
+            <section class="fullheight bg-secondary">
                 <div class="container">
                     <h2 class="mb0 mb-xs-0 black text-center">Blind Spots are the Enemy</h2>
                     <h4 class="mb48 mb-xs-32 black text-center">
@@ -258,7 +321,7 @@
             </section>
             <section class="fullheight image-bg overlay">
                 <div class="background-image-holder">
-                    <img alt="image" class="background-image" src="static/img/signup.jpeg">
+                    <img alt="image" class="background-image" src="static/img/cinemagraph-website.gif">
                 </div>
                 <div class="v-align-transform container">
                         <div class="row mb40 mb-xs-24">
@@ -286,7 +349,7 @@
                 </div>
             </section>
             <a id="app"></a>
-            <section class="fullheight image-bg overlay">
+            <section class="fullheight image-bg overlay7">
                 <div class="background-image-holder">
                     <img alt="image" class="background-image" src="static/img/phone_apple.jpg">
                 </div>
@@ -407,115 +470,12 @@ $btn3.popover({trigger: 'manual'})
         </script>
             <script type="text/javascript">
 
-            // $(window).resize(function() {
-            //     $('#vidholder').css('height',$('#hero').height());
-            // });
-
-            // if (document.getElementById("hero").currentTime < 20) {
-            //     document.getElementById("hero").currentTime = 20;
-            // }
-    
-
             function detectmob() {
                 if (window.innerWidth <= 997) {
                     return true;
                 } else {
                     return false;
                 }
-            }
-
-            if (!detectmob()) {
-                $('#show1').avgrund({
-                    height: 360,
-                    width: 500,
-                    holderClass: 'custom',
-                    showClose: true,
-                    showCloseText: 'X',
-                    enableStackAnimation: true,
-                    template: '<div class="article-title">The CNN Top 10 Inventions</div>' +
-                        '<p>“Augmented reality is getting a lot of talk in the gaming world, with products like Sony\'s and the Oculus Rift promising to make play time more fun. But what if it could make the roads safer? That\'s what the makers of Skully promise with what they\'re..."</p>' +
-                        '<div class="text-center">' +
-                        '<a class="btn btn-filled" target="_blank" href="http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/">READ MORE</a>' +
-                        '</div>' +
-                        '<hr style="margin: 0 !important;">' +
-                        '<div class="social-buttons">' +
-                        '<div id="social-platforms">' +
-                        '<a class="button button-icon button-facebook" target="_blank"href="http://www.facebook.com/sharer.php?u=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>' +
-                        '<a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>' +
-                        '<a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>' +
-                        '</div>' +
-                        '<a href="#" class="avgrund-close">X' +
-                        '</div>'
-                });
-
-                $('#show2').avgrund({
-                    height: 360,
-                    width: 500,
-                    holderClass: 'custom',
-                    showClose: true,
-                    showCloseText: 'X',
-                    enableStackAnimation: true,
-                    template: '<div class="article-title">A Motorcycle Helmet for the Digital World</div>' +
-                        '<p>“At a time when screens are being integrated into everything, Skully engineers saw an opportunity to upgrade something that’s remained largely unchanged for decades: the motorcycle helmet. The P-1 is the first helmet with a digital head-up display..."</p>' +
-                        '<div class="text-center">' +
-                        '<a class="btn btn-filled" target="_blank" href="http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world">READ MORE</a>' +
-                        '</div>' +
-                        '<hr style="margin: 0 !important;">' +
-                        '<div class="social-buttons">' +
-                        '<div id="social-platforms">' +
-                        '<a class="button button-icon button-facebook" target="_blank"href="http://www.facebook.com/sharer.php?u=http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>' +
-                        '<a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>' +
-                        '<a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>' +
-                        '</div>' +
-                        '<a href="#" class="avgrund-close">X' +
-                        '</div>'
-                });
-
-                $('#show3').avgrund({
-                    height: 360,
-                    width: 500,
-                    holderClass: 'custom',
-                    showClose: true,
-                    showCloseText: 'X',
-                    enableStackAnimation: true,
-                    template: '<div class="article-title">The Skully Smart Motorcycle Helmet Sharpens <br> Your Senses On The Road</div>' +
-                        '<p>“The stats around motorcycle safety in the United States are pretty bleak, but the folks at Skully are looking to give an added layer of safety to the bike-riding thrill-seekers of the world. The Skully <span class="ar1font">AR-<span class="skullyred">1</span></span> helmet started..."</p>' +
-                        '<div class="text-center">' +
-                        '<a class="btn btn-filled" target="_blank" href="http://techcrunch.com/2014/08/11/skully/">READ MORE</a>' +
-                        '</div>' +
-                        '<hr style="margin: 0 !important;">' +
-                        '<div class="social-buttons">' +
-                        '<div id="social-platforms">' +
-                        '<a class="button button-icon button-facebook" target="_blank"href="http://www.facebook.com/sharer.php?u=http://techcrunch.com/2014/08/11/skully/"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>' +
-                        '<a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://techcrunch.com/2014/08/11/skully/"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>' +
-                        '<a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://techcrunch.com/2014/08/11/skully/"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>' +
-                        '</div>' +
-                        '<a href="#" class="avgrund-close">X' +
-                        '</div>'
-                });
-
-                $('#show4').avgrund({
-                    height: 360,
-                    width: 500,
-                    holderClass: 'custom',
-                    showClose: true,
-                    showCloseText: 'X',
-                    enableStackAnimation: true,
-                    template: '<div class="article-title">This Slick Augmented-reality Helmet Has A Rearview Camera, Weather Reports</div>' +
-                        '<p>“Motorcycle helmets with head-up displays and augmented reality were science fiction just a few years ago. But now major helmet manufacturers and startups are working to incorporate Google Glass-like..."</p>' +
-                        '<div class="text-center">' +
-                        '<a class="btn btn-filled" target="_blank" href="http://www.wired.com/2013/10/skully-helmet/">READ MORE</a>' +
-                        '</div>' +
-                        '<hr style="margin: 0 !important;">' +
-                        '<div class="social-buttons">' +
-                        '<div id="social-platforms">' +
-                        '<a class="button button-icon button-facebook" target="_blank"href="http://www.facebook.com/sharer.php?u=http://www.wired.com/2013/10/skully-helmet/"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>' +
-                        '<a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://www.wired.com/2013/10/skully-helmet/"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>' +
-                        '<a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://www.wired.com/2013/10/skully-helmet/"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>' +
-                        '</div>' +
-                        '<a href="#" class="avgrund-close">X' +
-                        '</div>'
-                });
             }
 
             // HOVER SOUND
@@ -541,19 +501,6 @@ $btn3.popover({trigger: 'manual'})
 
 
             /* CHECK FOR DIV IN VIEW */
-            function isScrolledIntoView(elem)
-            {
-                var $elem = $(elem);
-                var $window = $(window);
-
-                var docViewTop = $window.scrollTop();
-                var docViewBottom = docViewTop + $window.height();
-
-                var elemTop = $elem.offset().top;
-                var elemBottom = elemTop + $elem.height();
-
-                return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-            }
             /* END DIV VIEW CHECK */
             // WISTIA CTA BUTTON
             // $('document').ready(function () {
@@ -564,12 +511,16 @@ $btn3.popover({trigger: 'manual'})
                 //     $(this).get(0).play();
                 //     $(this).get(0).currentTime = 20;
                 // })
-                // $('#vidholder').css('height',$('#hero').height());
-                // wistiaJQuery(document).bind("wistia-popover", function(event, iframe) {
-                //     iframe.wistiaApi.bind("end", function() {
-                //         $(".fancybox-inner").append("<a target='_blank' href='http://skullysystems.myshopify.com/' class='ctabutton'>Get Yours</a>");
-                //     });
-                // });
+               // $('#vidholder').css('height',$('#hero').height());
+
+window._wq = window._wq || [];
+console.log("FF")
+_wq.push({ "1nw": function(video) {
+  console.log("I got a handle to the video!", video);
+  video.bind("end", function() {
+    $("#wistia_26_romulus").append("<a target='_blank' href='http://skullysystems.myshopify.com/' class='ctabutton'>Get Yours</a>");
+  })
+}});
 
             //     $(window).scroll(function() {
             //     if (isScrolledIntoView($(".hud-animation"))) {
