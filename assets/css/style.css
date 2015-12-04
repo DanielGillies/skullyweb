@@ -9154,6 +9154,12 @@ Main components
     margin-bottom: 12px ;
 }
 
+@media all and (max-width: 1350px) {
+    .btn-middle {
+        width: 30%;
+    }
+}
+
 @media all and (max-width: 991px) {
     .btn-middle {
         width: 50%;
