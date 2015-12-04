@@ -9143,10 +9143,27 @@ Main components
     }
 }
 
+.respbr {
+    display: none;
+}
+
 .btn-middle {
-    width: 15%;
+    width: 30%;
     border-color: black !important;
     background-color: rgba(255, 255, 255, .3) !important;
+    margin-bottom: 12px ;
+}
+
+@media all and (max-width: 991px) {
+    .btn-middle {
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 730px) {
+    .respbr {
+        display: block !important;
+    }
 }
 
 .btn-middle:hover {
