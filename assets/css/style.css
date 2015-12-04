@@ -9148,7 +9148,7 @@ Main components
 }
 
 .btn-middle {
-    width: 30%;
+    width: 15%;
     border-color: black !important;
     background-color: rgba(255, 255, 255, .3) !important;
     margin-bottom: 12px ;
@@ -9339,6 +9339,8 @@ input:-ms-input-placeholder {
 color: black !important;  
 }
 
+
+
 #userguide-img {
     -moz-transform: scale(-1, 1);
 -webkit-transform: scale(-1, 1);
@@ -9369,9 +9371,7 @@ filter: FlipH;
 }
 
 #testt2 {
-
     height: 97vh;
-
 }
 
 .shopify-button {
