@@ -558,6 +558,18 @@ $("input[name='color']:radio").change(function() {
     selectedColor = $("input[type='radio'][name='color']:checked");
     $("#" + origColor.val() + "-" + origSize.val()).addClass('shopify-button');
     $("#" + selectedColor.val() + "-" + selectedSize.val()).removeClass('shopify-button');
+
+    if ($('input[name=color]:checked').attr('id') == 'black') {
+        $('#helmet_img').fadeOut(200, function() {
+            $('#helmet_img').attr('src', 'static/img/blackhelmet_store.png');
+        }).fadeIn(200);
+    }
+    else {
+        $('#helmet_img').fadeOut(200, function() {
+            $('#helmet_img').attr('src', 'static/img/whitehelmet_store.png');
+        }).fadeIn(200);
+    }
+
 });
 
 
