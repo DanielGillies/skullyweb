@@ -9373,7 +9373,11 @@ filter: FlipH;
 
 #explosive {
     position: relative;
-    height: 9000px;
+}
+
+#explosive2 {
+    position: relative;
+    height: 5500vh;
 }
 
 #testt {
@@ -9398,6 +9402,7 @@ filter: FlipH;
 
 #hud {
     position:relative;
+    z-index: 1;
 }
 
 #hudtext2 {
@@ -9412,4 +9417,8 @@ filter: FlipH;
     right:0;
     position: absolute;
     display: none;
+}
+
+#exp-canvas {
+    height: 100%;
 }

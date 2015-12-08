@@ -401,8 +401,8 @@
 
 
 
-            <section id="explosive" class="fullheight bg-white pb0 pt0">
-                <canvas id="exp-canvas"></canvas>
+            <section id="explosive2" class="bg-white pb0 pt0">
+                <canvas id="explosive-vid2"></canvas>
             </section>
 
 
@@ -774,47 +774,48 @@ $btn3.popover({trigger: 'manual'})
             });
 
 
-                // var vid = document.getElementById("explosive-vid")
-                // vid.pause();
+                var vid = document.getElementById("explosive-vid2")
                  var hudvid = $("#hudvid")[0];
                  hudvid.pause();
                  hudvid.currentTime = 1;
                 var hudTop = $('#hudvid').offset().top;
-               var fixmeTop = $('#exp-canvas').offset().top;       // get initial position of the element
+               var fixmeTop = $('#explosive-vid2').offset().top;       // get initial position of the element
                var nextSection = $('#hud').offset().top;
-               var fixmeBot = fixmeTop + $('#exp-canvas').height();
                var playing = 0;
 
 $(window).scroll(function() {                  // assign scroll event listener
 
+               var fixmeBot = fixmeTop + $('#explosive-vid2').height();
+
     var currentScroll = $(window).scrollTop(); // get current position
     if (currentScroll >= fixmeTop-55 && currentScroll <= nextSection+(fixmeTop - fixmeBot)) {           // apply position: fixed if you
-        console.log("FFFF")
-        window.moveTo(0, fixmeTop);
-    // IE9, Chrome, Safari, Opera
-    window.addEventListener("mousewheel", MouseWheelHandler, false);
-    // Firefox
-    window.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
 
-        // $('#exp-canvas').css({                      // scroll to that element or below it
-        //     overflow: 'fixed',
-        //     top: '55px',
-        //     left: '0'
-        // });
+    // IE9, Chrome, Safari, Opera
+    // window.addEventListener("mousewheel", MouseWheelHandler, false);
+    // Firefox
+    // window.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
+ console.log(Math.floor((window.pageYOffset-fixmeTop)/100))
+            setImage(Math.floor((window.pageYOffset-fixmeTop)/100));
+
+        $('#explosive-vid2').css({                      // scroll to that element or below it
+            position: 'fixed',
+            top: '55px',
+            left: '0'
+        });
     } else if (currentScroll < fixmeTop-55) {                                   // apply position: static
         console.log("Above")
-        // $('#exp-canvas').attr("style","");  
-        // $('#exp-canvas').css({                      // if you scroll above it
-        //     position: 'absolute',
-        //     top: '0'
-        // });
+        $('#explosive-vid2').attr("style","");  
+        $('#explosive-vid2').css({                      // if you scroll above it
+            position: 'absolute',
+            top: '0'
+        });
     } else {
         console.log("Below")
-        // $('#exp-canvas').attr("style","");  
-        // $('#exp-canvas').css({                      // if you scroll above it
-        //     position: 'absolute',
-        //     bottom: '0',
-        // });
+        $('#explosive-vid2').attr("style","");  
+        $('#explosive-vid2').css({                      // if you scroll above it
+            position: 'absolute',
+            bottom: '0',
+        });
     }
     if (currentScroll >= hudTop-55 && playing===0) {
         playing = 1;
@@ -863,7 +864,7 @@ _wq.push({ "1nw": function(video) {
 
             // });<div class="instructions">Scroll up and down with your mouse to see the demo</div>
 
-    var canv = document.getElementById('exp-canvas');
+    var canv = document.getElementById('explosive-vid2');
     var context = canv.getContext('2d');
 
     var currentLocation = 0;
@@ -876,13 +877,6 @@ _wq.push({ "1nw": function(video) {
         if (currentLocation < 0) currentLocation = 0;
         if (currentLocation > images.length) currentLocation = images.length;
         console.log(currentLocation + " / " + images.length);
-        if (currentLocation === images.length || currentLocation === 0){
-            console.log("ffff")
-            // IE9, Chrome, Safari, Opera
-            window.removeEventListener("mousewheel", MouseWheelHandler, false);
-            // Firefox
-            window.removeEventListener("DOMMouseScroll", MouseWheelHandler, false);
-        }
         setImage(currentLocation);
     }
 
@@ -891,13 +885,12 @@ _wq.push({ "1nw": function(video) {
     }
 
         function resizeCanvas() {
-            canv.width = $("#explosive").innerWidth();
-            canv.height = $("#explosive").innerHeight();
+            canv.width = $("#explosive2").innerWidth();
+            canv.height = (canv.width / 1.7777777);
         }
         resizeCanvas();
-        // resize the canvas to fill browser window dynamically
-    window.addEventListener('resize', resizeCanvas, false);
     </script>
+            </script>
 </body>
 
 </html>
