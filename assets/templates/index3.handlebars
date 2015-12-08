@@ -387,9 +387,10 @@ what's happening? the id isn't linking?
             <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
             <script type="text/javascript">
 
+if (!window.mobilecheck) {
             var totalImages = 1200;
     var images = new Array();
-    for (var i = 1; i <= totalImages; i += 5) {
+    for (var i = 1; i <= totalImages; i += 4) {
         var filename = 'movie_';
         // if(i < 10) filename += '00';
         // else if(i < 100) filename += '0';
@@ -401,6 +402,7 @@ what's happening? the id isn't linking?
         images.push(img);
         images.push(img);
     }
+}
 
             var $btn2 = $('#btn2');
 $btn2.data('state', 'hover');
@@ -507,8 +509,8 @@ $(window).scroll(function() {                  // assign scroll event listener
     // window.addEventListener("mousewheel", MouseWheelHandler, false);
     // Firefox
     // window.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
- console.log(Math.floor((window.pageYOffset-fixmeTop)/100))
-            setImage(Math.floor((window.pageYOffset-fixmeTop)/100));
+ console.log(Math.floor((window.pageYOffset-fixmeTop)/50))
+            setImage(Math.floor((window.pageYOffset-fixmeTop)/50));
 
         $('#explosive-vid2').css({                      // scroll to that element or below it
             position: 'fixed',
