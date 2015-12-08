@@ -325,10 +325,10 @@ hr {
     font-weight: 300 !important;
   }
 }
-
+/*
 h2 {
     font-weight: bold !important;
-}
+}*/
 
 h1,
 h2,
@@ -9373,6 +9373,8 @@ filter: FlipH;
 
 #explosive {
     position: relative;
+    height: 10000px;
+
 }
 
 #explosive2 {
