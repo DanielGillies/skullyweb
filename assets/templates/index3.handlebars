@@ -387,22 +387,6 @@ what's happening? the id isn't linking?
             <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
             <script type="text/javascript">
 
-if (!window.mobilecheck) {
-            var totalImages = 1200;
-    var images = new Array();
-    for (var i = 1; i <= totalImages; i += 4) {
-        var filename = 'movie_';
-        // if(i < 10) filename += '00';
-        // else if(i < 100) filename += '0';
-        filename += i + '.jpg';
-        var img = new Image;
-        img.src = 'http://dg6vcgn2vehm4.cloudfront.net/exp_img/' + filename;
-        // img.src="img2/" + filename;
-        images.push(img);
-        images.push(img);
-        images.push(img);
-    }
-}
 
             var $btn2 = $('#btn2');
 $btn2.data('state', 'hover');
@@ -462,10 +446,22 @@ $btn3.popover({trigger: 'manual'})
     .on('mouseleave', exitHide)
     .on('click', clickToggle);
 
-
-
-        </script>
-            <script type="text/javascript">
+            if (window.mobilecheck) {
+            var totalImages = 1200;
+    var images = new Array();
+    for (var i = 1; i <= totalImages; i += 4) {
+        var filename = 'movie_';
+        // if(i < 10) filename += '00';
+        // else if(i < 100) filename += '0';
+        filename += i + '.jpg';
+        var img = new Image;
+        img.src = 'http://dg6vcgn2vehm4.cloudfront.net/img/' + filename;
+        // img.src="img2/" + filename;
+        images.push(img);
+        images.push(img);
+        images.push(img);
+    }
+}
 
             // HOVER SOUND
             var audio = $("#hoversound")[0];
@@ -595,7 +591,7 @@ _wq.push({ "1nw": function(video) {
         setImage(currentLocation);
     }
 
-        function setImage(newLocation) {
+    function setImage(newLocation) {
         context.drawImage(images[newLocation], 0, 0, canv.width, canv.height);
     }
 

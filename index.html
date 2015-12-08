@@ -401,7 +401,7 @@
 
 
 
-            <section id="explosive" class="fullheight bg-white pb0 pt0">
+            <section id="explosive3" class="fullheight bg-white pb0 pt0">
                 <canvas id="exp-canvas"></canvas>
             </section>
 
@@ -439,7 +439,7 @@
                         <div class="container" id="hudtext">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h2 style="font-weight:300">Experience 360&deg;<br>Every Second.</h2>
+                                    <h2>Experience 360&deg;<br>Every Second.</h2>
                                     <h4>This way of seeing is the future</h4>
                                 </div>
                             </div>
@@ -460,7 +460,7 @@
                         <div class="container" id="hudtext2">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <h2>Glance once for vital, real-time information</h2>
+                                    <h2>Glance Once for Vital, Real-Time Information</h2>
                                     <h4>The past and present float right in front of you.</h4>
                                 </div>
                             </div>
@@ -483,6 +483,57 @@
 <!--                         <div class="text-center">
                             <a class="btn btn-lg btn-filled mt32 mb0" href="store">I want one</a>
                         </div> -->
+            </section>
+            <section data-section-name="hud" class="bg-primary">
+                <div class="container">
+                    <h2 class="mb0 mb-xs-0 text-center">Heads-Up Display</h2>
+                    <h4 class="mb48 mb-xs-32 text-center">for <strong>Total Awareness</strong></h4>
+                    <div class="row">
+                        <div class="col-sm-3 mb-xs-24">
+                            <h4 class="mb8 mb-xs-8">Super-Wide Field of View</h4>
+                            <div class="mb40 mb-xs-24">
+                                <p class="fade-1-4">
+                                    All of the road is in your sights with increased peripheral vision.
+                                </p>
+                            </div>
+                            <h4 class="mb8 mb-xs-8">180&deg; Blindspot Camera</h4>
+                            <div class="mb40 mb-xs-24">
+                                <p class="fade-1-4">
+                                    Check the road behind you with a rear camera feed that streams live.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-5 col-sm-6 hud-animation">
+                        <div class="hud-background">
+                            <img id="hud-bg" class="hud" src="static/img/HUD01_BG.png"></img>
+                            <img id="hud-nose" class="hud" src="static/img/HUD01_nose.png"></img>
+                        </div>
+                        <div class="hud-rearsection">
+                            <img id="hud-rear" class="hud" src="static/img/HUD01_rearview.png"></img>
+                            <img id="hud-mph" class="hud" src="static/img/HUD01_mph.png"></img>
+                        </div>
+                            
+                    </div>
+                    <div class="col-sm-3 mb-xs-24">
+                            <h4 class="mb8 mb-xs-8">GPS Navigation</h4>
+                            <div class="mb40 mb-xs-24">
+                                <p class="fade-1-4">
+                                    Turn-by-turn directions make checking your phone a thing of the past.
+                                </p>
+                            </div>
+                            <h4 class="mb8 mb-xs-8">Infinite Focus</h4>
+                            <div class="mb40 mb-xs-24">
+                                <p class="fade-1-4">
+                                    Advanced optics adjust to your eye, so what you see is always in focus.
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="text-center">
+                            <a class="btn btn-lg btn-filled mt32 mb0" href="store">I want one</a>
+                        </div>
+                        </section>
             </section>
             <section class="fullheight image-bg overlay">
                 <div class="background-image-holder">
@@ -653,7 +704,7 @@ what's happening? the id isn't linking?
         // else if(i < 100) filename += '0';
         filename += i + '.jpg';
         var img = new Image;
-        img.src = 'http://dg6vcgn2vehm4.cloudfront.net/exp_img/' + filename;
+        img.src = 'http://dg6vcgn2vehm4.cloudfront.net/img/' + filename;
         // img.src="img2/" + filename;
         images.push(img);
         images.push(img);
@@ -718,10 +769,6 @@ $btn3.popover({trigger: 'manual'})
     .on('mouseleave', exitHide)
     .on('click', clickToggle);
 
-
-
-        </script>
-            <script type="text/javascript">
 
             // HOVER SOUND
             var audio = $("#hoversound")[0];
@@ -862,8 +909,8 @@ _wq.push({ "1nw": function(video) {
     }
 
         function resizeCanvas() {
-            canv.width = $("#explosive").innerWidth();
-            canv.height = $("#explosive").innerHeight();
+            canv.width = $("#explosive3").innerWidth();
+            canv.height = canv.width / 1.7777777;
         }
         resizeCanvas();
         // resize the canvas to fill browser window dynamically
