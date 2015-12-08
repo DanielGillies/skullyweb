@@ -184,61 +184,65 @@
                     <!-- <source type="video/webm;" src="http://www.html5rocks.com/tutorials/video/basics/Chrome_ImF.webm"></source> -->
                         <!-- <source src="http://dg6vcgn2vehm4.cloudfront.net/exploded_withtags.m4v" type="video/mp4"> -->
                                                 <!-- <source src="testexplode.mp4" type="video/mp4"> -->
-                                                <source src="http://dg6vcgn2vehm4.cloudfront.net/expl2.webm" type="video/webm">
+                                                <!-- <source src="http://dg6vcgn2vehm4.cloudfront.net/expl2.webm" type="video/webm"> -->
 
-                        <!-- <source src="http://dg6vcgn2vehm4.cloudfront.net/Chrome_ImF.webm" type="video/webm"> -->
+                        <source src="http://dg6vcgn2vehm4.cloudfront.net/Chrome_ImF.webm" type="video/webm">
                         <!-- <source src="http://dg6vcgn2vehm4.cloudfront.net/exploded_withtags.ogv" type="video/ogv"> -->
                     </video>
             </section>
-            <section id="hud" class="bg-primary">
-                <div class="container">
-                    <h2 class="mb0 mb-xs-0 text-center">Heads-Up Display</h2>
-                    <h4 class="mb48 mb-xs-32 text-center">for <strong>Total Awareness</strong></h4>
-                    <div class="row">
-                        <div class="col-sm-3 mb-xs-24">
-                            <h4 class="mb8 mb-xs-8">Super-Wide Field of View</h4>
-                            <div class="mb40 mb-xs-24">
-                                <p class="fade-1-4">
-                                    All of the road is in your sights with increased peripheral vision.
-                                </p>
+            <section id="hud" class="fullheight bg-black">                        
+                     <video id="hudvid" muted style="height:100%; position:absolute; right: 0; top: 0;">
+                            <source src="http://dg6vcgn2vehm4.cloudfront.net/HUD.webm" type="video/webm">
+                            <source src="http://dg6vcgn2vehm4.cloudfront.net/HUD.mp4" type="video/mp4">
+                            <source src="http://dg6vcgn2vehm4.cloudfront.net/HUD.ogv" type="video/ogv">
+                        </video>
+                        <div class="container" id="hudtext">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <h2>Experience 360&deg; awareness every second.</h2>
+                                    <h4>This way of seeing is the future</h4>
+                                </div>
                             </div>
-                            <h4 class="mb8 mb-xs-8">180&deg; Blindspot Camera</h4>
-                            <div class="mb40 mb-xs-24">
-                                <p class="fade-1-4">
-                                    Check the road behind you with a rear camera feed that streams live.
-                                </p>
+                            <div class="row mt64">
+                                <div class="col-md-4">
+                                    <h4>Hyperfocus on the Road</h4>
+                                    <p>A Heads-Up Display that's always in focus minimizes distractions.</p>
+                                    <hr>
+                                </div>
+                                <div class="col-md-4 col-md-offset-4">
+                                    <h4>Blast Blindspots</h4>
+                                    <p>An ultra-wide rear camera sees more than conventional mirrors.</p>
+                                    <hr>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-5 col-sm-6 hud-animation">
-                        <div class="hud-background">
-                            <img id="hud-bg" class="hud" src="static/img/HUD01_BG.png"></img>
-                            <img id="hud-nose" class="hud" src="static/img/HUD01_nose.png"></img>
-                        </div>
-                        <div class="hud-rearsection">
-                            <img id="hud-rear" class="hud" src="static/img/HUD01_rearview.png"></img>
-                            <img id="hud-mph" class="hud" src="static/img/HUD01_mph.png"></img>
+
+                        <div class="container" id="hudtext2">
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <h2>Glance once for vital, real-time information</h2>
+                                    <h4>The past and present float right in front of you.</h4>
+                                </div>
+                            </div>
+                            <div class="row mt64">
+                                <div class="col-md-4">
+                                    <h4>Check Tech</h4>
+                                    <p>Telemetry, GPS, and the rear camera feed are all within your field of view.</p>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h4>Ride Superhuman</h4>
+                                    <p>Heads-Up Display data helps you anticipate danger and ride safer.</p>
+                                    <hr>
+                                </div>
+                            </div>
                         </div>
                             
-                    </div>
-                    <div class="col-sm-3 mb-xs-24">
-                            <h4 class="mb8 mb-xs-8">GPS Navigation</h4>
-                            <div class="mb40 mb-xs-24">
-                                <p class="fade-1-4">
-                                    Turn-by-turn directions make checking your phone a thing of the past.
-                                </p>
-                            </div>
-                            <h4 class="mb8 mb-xs-8">Infinite Focus</h4>
-                            <div class="mb40 mb-xs-24">
-                                <p class="fade-1-4">
-                                    Advanced optics adjust to your eye, so what you see is always in focus.
-                                </p>
-                            </div>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="text-center">
+<!--                         <div class="text-center">
                             <a class="btn btn-lg btn-filled mt32 mb0" href="store">I want one</a>
-                        </div>
+                        </div> -->
             </section>
             <section class="fullheight bg-secondary">
                 <div class="container">
@@ -261,59 +265,7 @@
                                         <img class="traditional-fov" src="static/img/fov_conventional.png">
                                         <img class="skully-fov transparent" src="static/img/fov.png">
                                     </div>
-                                    <!-- <div class="fov-info circle-info">
-                                        <img class="circle" src="static/img/180_circle-072.png">
-                                        <div class="circle-description">
-                                            <h4 class="black">Reinforced Shell</h4>
-                                            <p class="black">Lightweight yet ultra-strong, and reinforced with a carbon fiber inlay.</p>
-                                        </div>
-                                        <br><br>
-                                    </div> -->
                                 </div>
-                                <!-- <div class="misc-features">
-                                    <div class="circle-info">
-                                        <img class="circle" src="static/img/180_circle-01.png">
-                                        <div class="circle-description">
-                                            <h4 class="black">Laser-Cut EPS Protection</h4>
-                                            <p class="black">Enhances safety and absorbs impact energy.</p>
-                                        </div>
-                                    </div>
-                                    <div class="circle-info">
-                                        <img class="circle" src="static/img/180_circle-02.png">
-                                        <div class="circle-description">
-                                            <h4 class="black">All-Weather Photochromic Visor</h4>
-                                            <p class="black">Automatically and gradually transitions as UV light conditions change.</p>
-                                        </div>
-                                    </div>
-                                    <div class="circle-info">
-                                        <img class="circle" src="static/img/180_circle-04.png">
-                                        <div class="circle-description">
-                                            <h4 class="black">Outlast&reg; Technical Liner </h4>
-                                            <p class="black">Superior comfort, fit, and temperature regulation with technology pioneered by NASA.</p>
-                                        </div>
-                                    </div>
-                                    <div class="circle-info">
-                                        <img class="circle" src="static/img/180_circle-05.png">
-                                        <div class="circle-description">
-                                            <h4 class="black">In-Helmet Speakers</h4>
-                                            <p class="black">High-quality, immersive sound supported by Bluetooth&reg;.</p>
-                                        </div>
-                                    </div>
-                                    <div class="circle-info">
-                                        <img class="circle" src="static/img/180_circle-03.png">
-                                        <div class="circle-description">
-                                            <h4 class="black">SKULLY Synapse&trade;</h4>
-                                            <p class="black">An award-winning technology platform that links advanced optics with cameras, sensors, and microprocessors.</p>
-                                        </div>
-                                    </div>
-                                    <div class="circle-info">
-                                        <img class="circle" src="static/img/180_circle-062.png">
-                                        <div class="circle-description">
-                                            <h4 class="black">Voice Control</h4>
-                                            <p class="black">Mobile app commands for hands-free music streaming, calls, and GPS navigation. </p>
-                                        </div>
-                                    </div>
-                                </div> -->
                             </div>
                         </div>
                         <!--end of row-->
@@ -500,9 +452,14 @@ $btn3.popover({trigger: 'manual'})
 
                 var vid = document.getElementById("explosive-vid")
                 vid.pause();
+                 var hudvid = $("#hudvid")[0];
+                 hudvid.pause();
+                 hudvid.currentTime = 1;
+                var hudTop = $('#hudvid').offset().top;
                var fixmeTop = $('#explosive-vid').offset().top;       // get initial position of the element
                var nextSection = $('#hud').offset().top;
-               var fixmeBot = fixmeTop + $('#explosive-vid').height();;
+               var fixmeBot = fixmeTop + $('#explosive-vid').height();
+               var playing = 0;
 
 $(window).scroll(function() {                  // assign scroll event listener
 
@@ -530,8 +487,25 @@ $(window).scroll(function() {                  // assign scroll event listener
             bottom: '0',
         });
     }
+    if (currentScroll+screen.height >= hudTop-55 && playing===0) {
+        playing = 1;
+        hudvid.play();
+        $("#hudtext").fadeIn(600);
+        $("#hudtext2").fadeOut(600);
+        setTimeout(function() {
+            $("#hudtext").fadeOut(1600);
+            $("#hudtext2").fadeIn(1600);
+        }, 11000);
+        console.log("FFFF")
+    }
+
 
 });
+
+$("#hudvid").on('ended', function() {
+    playing = 0;
+    console.log("ENDED")
+})
 
 
 window._wq = window._wq || [];

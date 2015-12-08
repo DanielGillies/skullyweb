@@ -9395,3 +9395,21 @@ filter: FlipH;
 .mason .ar1font {
     color: white;
 }
+
+#hud {
+    position:relative;
+}
+
+#hudtext2 {
+    left:0;
+    right:0;
+    position:absolute;
+    display: none;
+}
+
+#hudtext {
+    left:0;
+    right:0;
+    position: absolute;
+    display: none;
+}
