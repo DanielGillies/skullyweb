@@ -412,7 +412,7 @@ h3 {
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 22px;
   line-height: 32px;
 }
 
@@ -1104,7 +1104,7 @@ transition: background 2s ease;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 2px solid #D52424;
   padding: 0 26px;
-  height: 40px;
+  height: 46px;
   min-width: 150px;
   line-height: 36px;
   font-size: 12px;
@@ -9387,7 +9387,7 @@ filter: FlipH;
 
 #explosive2 {
     position: relative;
-    height: 5500vh;
+    height: 3100vh;
 }
 
 #testt {
@@ -9431,4 +9431,8 @@ filter: FlipH;
 
 #exp-canvas {
     height: 100%;
+}
+
+.subheader {
+    color: #898989;
 }

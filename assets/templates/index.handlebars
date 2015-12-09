@@ -230,20 +230,20 @@
                             <div class="mb56 row">
                                 <div class="col-md-12">
                                     <h2 class="bold">Experience 360&deg; Awareness,<br>Every Second.</h2>
-                                    <h4 style="font-size: 22px; color: #898989">This way of riding is the future</h4>
+                                    <h4 class="subhead">This way of riding is the future</h4>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-4">
                                     <h5 class="uppercase xbold">Hyperfocus on the Road</h5>
-                                    <p style=" color: #898989">A Heads-Up Display that's always in focus minimizes distractions.</p>
+                                    <p class="subhead">A Heads-Up Display that's always in focus minimizes distractions.</p>
                                     <hr>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-4">
                                     <h5 class="uppercase xbold">Blast Blindspots</h5>
-                                    <p style=" color: #898989">An ultra-wide rear camera sees more than conventional mirrors.</p>
+                                    <p class="subhead">An ultra-wide rear camera sees more than conventional mirrors.</p>
                                     <hr>
                                 </div>
                             </div>
@@ -253,20 +253,20 @@
                             <div class="row mb56">
                                 <div class="col-md-12">
                                     <h2 class="bold">Glance Once for Vital,<br>Real-Time Information</h2>
-                                    <h4 style="font-size: 22px; color: #898989">The past and present float right in front of you.</h4>
+                                    <h4 class="subhead">The past and present float right in front of you.</h4>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-4">
                                     <h5 class="uppercase xbold">Check Tech</h5>
-                                    <p style="color: #898989">Telemetry, GPS, and the rear camera feed are all within your field of view.</p>
+                                    <p class="subhead">Telemetry, GPS, and the rear camera feed are all within your field of view.</p>
                                     <hr>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-4">
                                     <h5 class="uppercase xbold">Ride Superhuman</h5>
-                                    <p style="color: #898989">Heads-Up Display data helps you anticipate danger and ride safer.</p>
+                                    <p class="subhead">Heads-Up Display data helps you anticipate danger and ride safer.</p>
                                     <hr>
                                 </div>
                             </div>
@@ -276,10 +276,10 @@
                             <a class="btn btn-lg btn-filled mt32 mb0" href="store">I want one</a>
                         </div> -->
             </section>
-            <section data-section-name="hud" class="bg-primary">
+            <section id="pov" class="fullheight bg-primary">
                 <div class="container">
-                    <h2 class="mb0 mb-xs-0 text-center">Heads-Up Display</h2>
-                    <h4 class="mb48 mb-xs-32 text-center">for <strong>Total Awareness</strong></h4>
+                    <h2 class="mb0 mb-xs-0 bold text-center">Heads-Up Display</h2>
+                    <h4 class="subhead mb48 mb-xs-32 text-center">for <strong>Total Awareness</strong></h4>
                     <div class="row">
                         <div class="col-sm-3 mb-xs-24">
                             <h4 class="mb8 mb-xs-8">Super-Wide Field of View</h4>
@@ -411,7 +411,6 @@ what's happening? the id isn't linking?
             <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
             <script type="text/javascript">
 
-            if (window.mobilecheck) {
             var totalImages = 1200;
     var images = new Array();
     for (var i = 1; i <= totalImages; i += 4) {
@@ -424,9 +423,7 @@ what's happening? the id isn't linking?
         // img.src="img2/" + filename;
         images.push(img);
         images.push(img);
-        images.push(img);
     }
-}
 
             var $btn2 = $('#btn2');
 $btn2.data('state', 'hover');
@@ -586,36 +583,19 @@ _wq.push({ "1nw": function(video) {
 
             // });<div class="instructions">Scroll up and down with your mouse to see the demo</div>
 
-    var canv = document.getElementById('exp-canvas');
+    var canv = document.getElementById('explosive-vid2');
     var context = canv.getContext('2d');
 
-    var currentLocation = 0;
+    var currentLocation = 6;
+    setImage(currentLocation);
 
-     function MouseWheelHandler(e) {
-        e.preventDefault();
-        var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-        if (delta == -1) currentLocation += 1;
-        if (delta == 1) currentLocation -= 1;
-        if (currentLocation < 0) currentLocation = 0;
-        if (currentLocation > images.length) currentLocation = images.length;
-        console.log(currentLocation + " / " + images.length);
-        if (currentLocation === images.length || currentLocation === 0){
-            console.log("ffff")
-            // IE9, Chrome, Safari, Opera
-            window.removeEventListener("mousewheel", MouseWheelHandler, false);
-            // Firefox
-            window.removeEventListener("DOMMouseScroll", MouseWheelHandler, false);
-        }
-        setImage(currentLocation);
-    }
-
-        function setImage(newLocation) {
+    function setImage(newLocation) {
         context.drawImage(images[newLocation], 0, 0, canv.width, canv.height);
     }
 
         function resizeCanvas() {
-            canv.width = $("#explosive3").innerWidth();
-            canv.height = canv.width / 1.7777777;
+            canv.width = $("#explosive2").innerWidth();
+            canv.height = canv.width / (window.innerWidth / window.innerHeight);
         }
         resizeCanvas();
         // resize the canvas to fill browser window dynamically
