@@ -9473,3 +9473,10 @@ filter: FlipH;
 .subheader {
     color: #898989;
 }
+
+#beautybuybutton {
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    right: 0;
+}

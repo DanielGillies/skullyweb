@@ -343,7 +343,7 @@
                 <div class="background-image-holder">
                     <img alt="image" class="background-image" src="static/img/buynowbeauty.jpg">
                 </div>
-                    <div class="text-center centered">
+                    <div id="beautybuybutton" class="text-center">
                         <a href="store" class="btn btn-filled">I Want One</a>
                     </div>
             </section>
@@ -430,7 +430,7 @@ what's happening? the id isn't linking?
             {{> scripts}}
             <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
             <script type="text/javascript">
-
+if (window.mobilecheck) {
             var totalImages = 1200;
     var images = new Array();
     for (var i = 1; i <= totalImages; i += 4) {
@@ -444,6 +444,7 @@ what's happening? the id isn't linking?
         images.push(img);
         images.push(img);
     }
+}
 
             var $btn2 = $('#btn2');
 $btn2.data('state', 'hover');
@@ -503,6 +504,7 @@ $btn3.popover({trigger: 'manual'})
     .on('mouseleave', exitHide)
     .on('click', clickToggle);
 
+if (window.mobilecheck) {
 
             var hudSwap = 1;
                 var vid = document.getElementById("explosive-vid2")
@@ -586,6 +588,7 @@ function swapHUD() {
         $("#hudtext").fadeIn(600);
     }
 }
+}
 
 window._wq = window._wq || [];
 _wq.push({ "1nw": function(video) {
@@ -613,6 +616,8 @@ _wq.push({ "1nw": function(video) {
 
             // });<div class="instructions">Scroll up and down with your mouse to see the demo</div>
 
+if (window.mobilecheck) {
+
     var canv = document.getElementById('explosive-vid2');
     var context = canv.getContext('2d');
 
@@ -630,7 +635,7 @@ _wq.push({ "1nw": function(video) {
         resizeCanvas();
         // resize the canvas to fill browser window dynamically
     window.addEventListener('resize', resizeCanvas, false);
-
+}
 
 // HOVER SOUND
             var audio = $("#hoversound")[0];
