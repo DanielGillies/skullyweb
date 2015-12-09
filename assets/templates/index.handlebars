@@ -180,6 +180,131 @@
                 </div>
             </section>
 
+            <section id="hud" class="pt120 fullheight bg-black">                        
+                     <video id="hudvid" muted style="height:100%; position:absolute; right: 0; top: 0;">
+                            <source id="hudwebm" src="http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.webm" type="video/webm">
+                            <source id="hudmp4" src="http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.mp4" type="video/mp4">
+                            <source id="hudogv" src="http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.ogv" type="video/ogv">
+                        </video>
+                        <div class="container" id="hudtext">
+                            <div class="mb56 row">
+                                <div class="col-md-12">
+                                    <h2 class="bold">Experience 360&deg; Awareness,<br>Every Second.</h2>
+                                    <h4 class="subhead">This way of riding is the future</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5 class="uppercase xbold">Hyperfocus on the Road</h5>
+                                    <p class="subhead">A Heads-Up Display that's always in focus minimizes distractions.</p>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row mb56">
+                                <div class="col-md-4">
+                                    <h5 class="uppercase xbold">Blast Blindspots</h5>
+                                    <p class="subhead">An ultra-wide rear camera sees more than conventional mirrors.</p>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <a class="btn btn-hud active-hud" onclick="swapHUD()"></a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="btn btn-hud" onclick="swapHUD()"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container" id="hudtext2">
+                            <div class="row mb56">
+                                <div class="col-md-12">
+                                    <h2 class="bold">Glance Once for Vital,<br>Real-Time Information</h2>
+                                    <h4 class="subhead">The past and present float right in front of you.</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5 class="uppercase xbold">Check Tech</h5>
+                                    <p class="subhead">Telemetry, GPS, and the rear camera feed are all within your field of view.</p>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row mb56">
+                                <div class="col-md-4">
+                                    <h5 class="uppercase xbold">Ride Superhuman</h5>
+                                    <p class="subhead">Heads-Up Display data helps you anticipate danger and ride safer.</p>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <a class="btn btn-hud" onclick="swapHUD()"></a>
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="btn btn-hud active-hud" onclick="swapHUD()"></a>
+                                </div>
+                            </div>  
+                        </div>
+            </section>
+
+
+
+
+
+
+            <section id="pov" class="fullheight bg-primary">
+                <div class="container">
+                    <h2 class="mb0 mb-xs-0 bold text-center">Heads-Up Display</h2>
+                    <h4 class="subhead mb48 mb-xs-32 text-center">for <strong>Total Awareness</strong></h4>
+                    <div class="row">
+                        <div class="col-sm-3 mb-xs-24">
+                            <h5 class="uppercase xbold mb8 mb-xs-8">Super-Wide Field of View</h5>
+                            <div class="mb40 mb-xs-24">
+                                <p class="subhead">
+                                    All of the road is in your sights with increased peripheral vision.
+                                </p>
+                            </div>
+                            <h5 class="uppercase xbold mb8 mb-xs-8">180&deg; Blindspot Camera</h5>
+                            <div class="mb40 mb-xs-24">
+                                <p class="subhead">
+                                    Check the road behind you with a rear camera feed that streams live.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-5 col-sm-6 hud-animation">
+                        <div class="hud-background">
+                            <img id="hud-bg" class="hud" src="static/img/HUD01_BG.png"></img>
+                            <img id="hud-nose" class="hud" src="static/img/HUD01_nose.png"></img>
+                        </div>
+                        <div class="hud-rearsection">
+                            <img id="hud-rear" class="hud" src="static/img/HUD01_rearview.png"></img>
+                            <img id="hud-mph" class="hud" src="static/img/HUD01_mph.png"></img>
+                        </div>
+                            
+                    </div>
+                    <div class="col-sm-3 mb-xs-24">
+                            <h5 class="uppercase xbold mb8 mb-xs-8">GPS Navigation</h5>
+                            <div class="mb40 mb-xs-24">
+                                <p class="subhead">
+                                    Turn-by-turn directions make checking your phone a thing of the past.
+                                </p>
+                            </div>
+                            <h5 class="uppercase xbold mb8 mb-xs-8">Infinite Focus</h5>
+                            <div class="mb40 mb-xs-24">
+                                <p class="subhead">
+                                    Advanced optics adjust to your eye, so what you see is always in focus.
+                                </p>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="text-center">
+                            <a class="btn btn-lg btn-filled mt32 mb0" href="store">I want one</a>
+                    </div>
+            </section>
+
 
 
 
@@ -218,123 +343,15 @@
 
 
 
-
-
-            <section id="hud" class="pt120 fullheight bg-black">                        
-                     <video id="hudvid" muted style="height:100%; position:absolute; right: 0; top: 0;">
-                            <source id="hudwebm" src="http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.webm" type="video/webm">
-                            <source id="hudmp4" src="http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.mp4" type="video/mp4">
-                            <source id="hudogv" src="http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.ogv" type="video/ogv">
-                        </video>
-                        <div class="container" id="hudtext">
-                            <div class="mb56 row">
-                                <div class="col-md-12">
-                                    <h2 class="bold">Experience 360&deg; Awareness,<br>Every Second.</h2>
-                                    <h4 class="subhead">This way of riding is the future</h4>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <h5 class="uppercase xbold">Hyperfocus on the Road</h5>
-                                    <p class="subhead">A Heads-Up Display that's always in focus minimizes distractions.</p>
-                                    <hr>
-                                </div>
-                            </div>
-                            <div class="row mb56">
-                                <div class="col-md-4">
-                                    <h5 class="uppercase xbold">Blast Blindspots</h5>
-                                    <p class="subhead">An ultra-wide rear camera sees more than conventional mirrors.</p>
-                                    <hr>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4 text-center">
-                                    <a class="btn mega-btn" onclick="swapHUD()">Next</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="container" id="hudtext2">
-                            <div class="row mb56">
-                                <div class="col-md-12">
-                                    <h2 class="bold">Glance Once for Vital,<br>Real-Time Information</h2>
-                                    <h4 class="subhead">The past and present float right in front of you.</h4>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <h5 class="uppercase xbold">Check Tech</h5>
-                                    <p class="subhead">Telemetry, GPS, and the rear camera feed are all within your field of view.</p>
-                                    <hr>
-                                </div>
-                            </div>
-                            <div class="row mb56">
-                                <div class="col-md-4">
-                                    <h5 class="uppercase xbold">Ride Superhuman</h5>
-                                    <p class="subhead">Heads-Up Display data helps you anticipate danger and ride safer.</p>
-                                    <hr>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4 text-center">
-                                    <a class="btn mega-btn" onclick="swapHUD()">Prev</a>
-                                </div>
-                            </div>
-                        </div>
-                                    
-            </section>
-            <section id="pov" class="fullheight bg-primary">
-                <div class="container">
-                    <h2 class="mb0 mb-xs-0 bold text-center">Heads-Up Display</h2>
-                    <h4 class="subhead mb48 mb-xs-32 text-center">for <strong>Total Awareness</strong></h4>
-                    <div class="row">
-                        <div class="col-sm-3 mb-xs-24">
-                            <h4 class="mb8 mb-xs-8">Super-Wide Field of View</h4>
-                            <div class="mb40 mb-xs-24">
-                                <p class="fade-1-4">
-                                    All of the road is in your sights with increased peripheral vision.
-                                </p>
-                            </div>
-                            <h4 class="mb8 mb-xs-8">180&deg; Blindspot Camera</h4>
-                            <div class="mb40 mb-xs-24">
-                                <p class="fade-1-4">
-                                    Check the road behind you with a rear camera feed that streams live.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-5 col-sm-6 hud-animation">
-                        <div class="hud-background">
-                            <img id="hud-bg" class="hud" src="static/img/HUD01_BG.png"></img>
-                            <img id="hud-nose" class="hud" src="static/img/HUD01_nose.png"></img>
-                        </div>
-                        <div class="hud-rearsection">
-                            <img id="hud-rear" class="hud" src="static/img/HUD01_rearview.png"></img>
-                            <img id="hud-mph" class="hud" src="static/img/HUD01_mph.png"></img>
-                        </div>
-                            
+            <section id="beautycta" class="fullheight bg-dark">
+                <div class="background-image-holder">
+                    <img alt="image" class="background-image" src="static/img/buynowbeauty.jpg">
+                </div>
+                    <div class="text-center centered">
+                        <a href="store" class="btn btn-filled">I Want One</a>
                     </div>
-                    <div class="col-sm-3 mb-xs-24">
-                            <h4 class="mb8 mb-xs-8">GPS Navigation</h4>
-                            <div class="mb40 mb-xs-24">
-                                <p class="fade-1-4">
-                                    Turn-by-turn directions make checking your phone a thing of the past.
-                                </p>
-                            </div>
-                            <h4 class="mb8 mb-xs-8">Infinite Focus</h4>
-                            <div class="mb40 mb-xs-24">
-                                <p class="fade-1-4">
-                                    Advanced optics adjust to your eye, so what you see is always in focus.
-                                </p>
-                            </div>
-                        </div>
-                        </div>
-                        </div>
-                        <div class="text-center">
-                            <a class="btn btn-lg btn-filled mt32 mb0" href="store">I want one</a>
-                        </div>
-                        </section>
             </section>
-            <section class="fullheight image-bg overlay">
+            <section id="mail" class="fullheight image-bg overlay">
                 <div class="background-image-holder">
                     <!-- <img alt="image" class="background-image" src="static/img/cinemagraph-website.gif"> -->
                     <img alt="image" class="background-image" src="static/img/signup.jpeg">
@@ -491,52 +508,32 @@ $btn3.popover({trigger: 'manual'})
     .on('click', clickToggle);
 
 
-            // HOVER SOUND
-            var audio = $("#hoversound")[0];
-            $("#hovertext").mouseenter(function() {
-                audio.play();
-            });
-
-            // SCATMAN!!! (Bottom right)
-            var audio2 = $("#scatman")[0];
-            $(".scatbutton").click(function() {
-
-                audio2.currentTime = 6;
-                audio2.volume = .3;
-                audio2.play();
-                // setTimeout(function() {audio.pause();}, 7150);
-                setTimeout(function() {
-                    audio2.pause();
-                }, 7950);
-                alert("ITS SCATMAN TIME!!!!");
-
-            });
-
             var hudSwap = 1;
                 var vid = document.getElementById("explosive-vid2")
                  var hudvid = $("#hudvid")[0];
                  hudvid.pause();
                  hudvid.currentTime = 1;
                 var hudTop = $('#hudvid').offset().top;
-               var fixmeTop = $('#explosive-vid2').offset().top;       // get initial position of the element
-               var nextSection = $('#hud').offset().top;
+               var explosiveTop = $('#explosive-vid2').offset().top;
+               var nextSectionTop = $('#explosive2').next('section').offset().top;
+               console.log(nextSectionTop);
                var playing = 0;
 
 $(window).scroll(function() {                  // assign scroll event listener
 
-               var fixmeBot = fixmeTop + $('#explosive-vid2').height();
+               var explosiveBot = explosiveTop + $('#explosive-vid2').height();
 
     var currentScroll = $(window).scrollTop(); // get current position
-    if (currentScroll >= fixmeTop-55 && currentScroll <= nextSection+(fixmeTop - fixmeBot)) {           // apply position: fixed if you
-        console.log(Math.floor((window.pageYOffset-fixmeTop)/50))
-        setImage(Math.floor((window.pageYOffset-fixmeTop)/50));
+    if (currentScroll >= explosiveTop-55 && currentScroll <= nextSectionTop+(explosiveTop - explosiveBot)-55) {           // apply position: fixed if you
+        console.log(Math.floor((window.pageYOffset-explosiveTop)/50))
+        setImage(Math.floor((window.pageYOffset-explosiveTop)/50));
 
         $('#explosive-vid2').css({                      // scroll to that element or below it
             position: 'fixed',
             top: '55px',
             left: '0'
         });
-    } else if (currentScroll < fixmeTop-55) {                                   // apply position: static
+    } else if (currentScroll < explosiveTop-55) {                                   // apply position: static
         console.log("Above")
         $('#explosive-vid2').attr("style","");  
         $('#explosive-vid2').css({                      // if you scroll above it
@@ -623,6 +620,30 @@ _wq.push({ "1nw": function(video) {
         resizeCanvas();
         // resize the canvas to fill browser window dynamically
     window.addEventListener('resize', resizeCanvas, false);
+
+
+// HOVER SOUND
+            var audio = $("#hoversound")[0];
+            $("#hovertext").mouseenter(function() {
+                audio.play();
+            });
+
+            // SCATMAN!!! (Bottom right)
+            var audio2 = $("#scatman")[0];
+            $(".scatbutton").click(function() {
+
+                audio2.currentTime = 6;
+                audio2.volume = .3;
+                audio2.play();
+                // setTimeout(function() {audio.pause();}, 7150);
+                setTimeout(function() {
+                    audio2.pause();
+                }, 7950);
+                alert("ITS SCATMAN TIME!!!!");
+
+            });
+
+
     </script>
 </body>
 

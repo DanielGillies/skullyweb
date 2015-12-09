@@ -9139,19 +9139,47 @@ Main components
     color: black;
 }
 
-.bg-primary .btn-mega {
-    background-color: #fff !important;
-}
-
 .btn-mega {
-    width: 30%;
-    border-color: black !important;
-    background-color: rgba(255, 255, 255, .3) !important;
+        background-color: rgba(255, 255, 255, .3);
+            width: 30%;
 }
 
-.btn-mega:hover {
-    background-color: #000 !important;
-    color: #fff !important;
+.bg-white .btn-mega {
+    width: 30%;
+    color: black;
+    border-color: black;
+}
+
+.bg-primary .btn-mega {
+        border-color: white;
+        color: white;
+}
+
+.bg-black .btn-mega {
+        border-color: white;
+        color: white;
+        background-color: rgba(255, 255, 255, 0);
+}
+
+.bg-black .btn-mega:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.bg-white .btn-mega:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-hud {
+    width: 10%;
+    height: 5px;
+    background-color: #fff;
+    border: none;
+}
+
+.active-hud {
+    background-color: #D52424;
 }
 
 @media all and (max-width: 576px) {
