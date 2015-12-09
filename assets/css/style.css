@@ -59,7 +59,7 @@ body {
 }
 
 p {
-    font-size: 18px;
+    font-size: 15px;
 }
 
 body.boxed-layout {
@@ -986,6 +986,10 @@ transition: background 2s ease;
 
 .press-image-background {
     background-position: 70% 50% !important;
+}
+
+.xxbackground {
+    background-position: 100% 50% !important;
 }
 
 .press-image-background-2 {
@@ -9383,7 +9387,7 @@ filter: FlipH;
 
 #explosive2 {
     position: relative;
-    height: 4600vh;
+    height: 5500vh;
 }
 
 #testt {

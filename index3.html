@@ -787,13 +787,8 @@ $(window).scroll(function() {                  // assign scroll event listener
 
     var currentScroll = $(window).scrollTop(); // get current position
     if (currentScroll >= fixmeTop-55 && currentScroll <= nextSection+(fixmeTop - fixmeBot)) {           // apply position: fixed if you
-
-    // IE9, Chrome, Safari, Opera
-    // window.addEventListener("mousewheel", MouseWheelHandler, false);
-    // Firefox
-    // window.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
- console.log(Math.floor((window.pageYOffset-fixmeTop)/50))
-            setImage(Math.floor((window.pageYOffset-fixmeTop)/50));
+        console.log(Math.floor((window.pageYOffset-fixmeTop)/50))
+        setImage(Math.floor((window.pageYOffset-fixmeTop)/50));
 
         $('#explosive-vid2').css({                      // scroll to that element or below it
             position: 'fixed',
@@ -826,8 +821,6 @@ $(window).scroll(function() {                  // assign scroll event listener
         }, 11000);
         console.log("FFFF")
     }
-
-
 });
 
 $("#hudvid").on('ended', function() {
@@ -846,15 +839,15 @@ _wq.push({ "1nw": function(video) {
             //     $(window).scroll(function() {
             //     if (isScrolledIntoView($(".hud-animation"))) {
             //         // $(window).unbind("scroll");
-            //         TweenLite.set(".hud-animation", {perspective: 500});
-            //         TweenMax.to("#hud-bg", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .7, ease: Power1.easeInOut, delay: .3});
-            //         TweenMax.to("#hud-nose", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .9, ease: Power1.easeInOut, delay: .3});
-            //         TweenMax.to("#hud-rear", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: .3});
-            //         TweenMax.to("#hud-mph", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: .3});
+                    // TweenLite.set(".hud-animation", {perspective: 500});
+                    // TweenMax.to("#hud-bg", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .7, ease: Power1.easeInOut, delay: .3});
+                    // TweenMax.to("#hud-nose", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .9, ease: Power1.easeInOut, delay: .3});
+                    // TweenMax.to("#hud-rear", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: .3});
+                    // TweenMax.to("#hud-mph", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: .3});
 
-            //         TweenMax.to("#hud-nose", 1, {left: "+=1%", delay: 1.3, ease: Power2.easeInOut});
-            //         TweenMax.to("#hud-rear", 1.5, {scale: 2, top: "-=35%", left:"-=55%", ease: Power2.easeInOut, delay: .8});
-            //         TweenMax.to("#hud-mph", 1.5, {scale: 2.5, top: "-=55%", left: "-=80%", ease: Power2.easeInOut, delay: .8});
+                    // TweenMax.to("#hud-nose", 1, {left: "+=1%", delay: 1.3, ease: Power2.easeInOut});
+                    // TweenMax.to("#hud-rear", 1.5, {scale: 2, top: "-=35%", left:"-=55%", ease: Power2.easeInOut, delay: .8});
+                    // TweenMax.to("#hud-mph", 1.5, {scale: 2.5, top: "-=55%", left: "-=80%", ease: Power2.easeInOut, delay: .8});
             //     }
             // });
 
@@ -866,17 +859,6 @@ _wq.push({ "1nw": function(video) {
     var context = canv.getContext('2d');
 
     var currentLocation = 0;
-
-     function MouseWheelHandler(e) {
-        e.preventDefault();
-        var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-        if (delta == -1) currentLocation += 1;
-        if (delta == 1) currentLocation -= 1;
-        if (currentLocation < 0) currentLocation = 0;
-        if (currentLocation > images.length) currentLocation = images.length;
-        console.log(currentLocation + " / " + images.length);
-        setImage(currentLocation);
-    }
 
     function setImage(newLocation) {
         context.drawImage(images[newLocation], 0, 0, canv.width, canv.height);
