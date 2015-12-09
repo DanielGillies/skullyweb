@@ -4,7 +4,7 @@
     {{> navbar}}
         <!-- ACTUAL PAGE CONTENT -->
         <div class="main-container">
-            <section id="vidholder" class="overlay image-bg fullscreen mh700 bg-dark">
+            <section id="vidholder" class="overlay image-bg fullheight bg-dark">
                 <div class="background-image-holder indeximage">
                     <img alt="Background Image" class="background-image" src="static/img/img-2.jpg">
                     <div class="fs-vid-background">
@@ -430,21 +430,6 @@ what's happening? the id isn't linking?
             {{> scripts}}
             <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
             <script type="text/javascript">
-if (window.mobilecheck) {
-            var totalImages = 1200;
-    var images = new Array();
-    for (var i = 1; i <= totalImages; i += 4) {
-        var filename = 'movie_';
-        // if(i < 10) filename += '00';
-        // else if(i < 100) filename += '0';
-        filename += i + '.jpg';
-        var img = new Image;
-        img.src = 'http://dg6vcgn2vehm4.cloudfront.net/img/' + filename;
-        // img.src="img2/" + filename;
-        images.push(img);
-        images.push(img);
-    }
-}
 
             var $btn2 = $('#btn2');
 $btn2.data('state', 'hover');
@@ -657,6 +642,22 @@ if (window.mobilecheck) {
                 alert("ITS SCATMAN TIME!!!!");
 
             });
+
+            if (window.mobilecheck) {
+            var totalImages = 1200;
+    var images = new Array();
+    for (var i = 1; i <= totalImages; i += 4) {
+        var filename = 'movie_';
+        // if(i < 10) filename += '00';
+        // else if(i < 100) filename += '0';
+        filename += i + '.jpg';
+        var img = new Image;
+        img.src = 'http://dg6vcgn2vehm4.cloudfront.net/img/' + filename;
+        // img.src="img2/" + filename;
+        images.push(img);
+        images.push(img);
+    }
+}
 
 
     </script>

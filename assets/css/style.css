@@ -7622,6 +7622,11 @@ input:-webkit-autofill {
 .index {
     letter-spacing: 8px !important;
 }
+@media all and (max-width: 993px) {
+    .indexvidbar {
+        display: none;
+    }
+}
 
 .indexvidbar {
     position: absolute;
@@ -9425,6 +9430,16 @@ filter: FlipH;
 #explosive2 {
     position: relative;
     height: 3100vh;
+}
+
+@media all and (max-width: 993px) {
+    #explosve2 {
+        display: none;
+    }
+
+    #explosive {
+        display: none;
+    }
 }
 
 #testt {
