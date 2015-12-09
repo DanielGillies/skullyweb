@@ -450,11 +450,16 @@
                                     <hr>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row mb56">
                                 <div class="col-md-4">
                                     <h5 class="uppercase xbold">Blast Blindspots</h5>
                                     <p class="subhead">An ultra-wide rear camera sees more than conventional mirrors.</p>
                                     <hr>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 text-center">
+                                    <a class="btn mega-btn" onclick="swapHUD()">Next</a>
                                 </div>
                             </div>
                         </div>
@@ -473,11 +478,16 @@
                                     <hr>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row mb56">
                                 <div class="col-md-4">
                                     <h5 class="uppercase xbold">Ride Superhuman</h5>
                                     <p class="subhead">Heads-Up Display data helps you anticipate danger and ride safer.</p>
                                     <hr>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 text-center">
+                                    <a class="btn mega-btn" onclick="swapHUD()">Prev</a>
                                 </div>
                             </div>
                         </div>
@@ -789,6 +799,7 @@ $btn3.popover({trigger: 'manual'})
 
             });
 
+            var hudSwap = 1;
                 var vid = document.getElementById("explosive-vid2")
                  var hudvid = $("#hudvid")[0];
                  hudvid.pause();
@@ -830,30 +841,30 @@ $(window).scroll(function() {                  // assign scroll event listener
     if (currentScroll >= hudTop-55 && playing===0) {
         playing = 1;
         hudvid.play();
-        $("#hudtext").fadeIn(300);
-        $("#hudtext2").fadeOut(300);
-        $("#hudvid").on("ended", playHudVid2);
+        $("#hudtext").fadeIn(600);
+        $("#hudvid").on("ended", swapHUD);
     }
 });
 
-function playHudVid2() {
-    $("#hudvid").find("#hudwebm").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD2.webm")
-    $("#hudvid").find("#hudmp4").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD2.mp4")
-    $("#hudvid").find("#hudogv").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD2.ogv")
-    hudvid.play();
-    $("#hudtext").fadeOut(600);
-    $("#hudtext2").fadeIn(600);
-    $("#hudvid").on("ended", playHudVid1);
-}
-
-function playHudVid1() {
-    $("#hudvid").find("#hudwebm").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.webm")
-    $("#hudvid").find("#hudmp4").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.mp4")
-    $("#hudvid").find("#hudogv").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.ogv")
-    hudvid.play();
-    $("#hudtext2").fadeOut(600);
-    $("#hudtext").fadeIn(600);
-    $("#hudvid").on("ended", playHudVid2);
+function swapHUD() {
+    hudSwap *= -1;
+    if (hudSwap < 0) {
+        $("#hudvid").find("#hudwebm").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD2.webm")
+        $("#hudvid").find("#hudmp4").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD2.mp4")
+        $("#hudvid").find("#hudogv").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD2.ogv")
+        $("#hudvid").load();
+        $("#hudvid")[0].play();
+        $("#hudtext").fadeOut(600);
+        $("#hudtext2").fadeIn(600);
+    } else {
+        $("#hudvid").find("#hudwebm").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.webm")
+        $("#hudvid").find("#hudmp4").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.mp4")
+        $("#hudvid").find("#hudogv").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.ogv")
+                $("#hudvid").load();
+        $("#hudvid")[0].play();
+        $("#hudtext2").fadeOut(600);
+        $("#hudtext").fadeIn(600);
+    }
 }
 
 window._wq = window._wq || [];
