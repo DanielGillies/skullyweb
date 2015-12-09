@@ -8155,7 +8155,7 @@ letter-spacing: 2px
  }
 
 .hud-animation {
-    min-height: 350px;
+    height: 100vh;
     overflow: hidden;
 }
 
