@@ -1319,6 +1319,7 @@ nav .btn,
     .menu hr {
         display: none;
     }
+
 }
 
 @media all and (max-width:992px) {
@@ -1338,6 +1339,10 @@ nav .btn,
 
     #storebutton {
         text-align: right;
+    }
+
+    #hud hr {
+        display: none;
     }
 }
 
@@ -7630,6 +7635,14 @@ input:-webkit-autofill {
 .indexbar {
     height: 75px;
     padding: 0;
+}
+
+.indexvidbar img {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
 }
 
 .halved {
