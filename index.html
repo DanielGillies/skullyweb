@@ -432,9 +432,9 @@
 
             <section id="hud" class="pt120 fullheight bg-black">                        
                      <video id="hudvid" muted style="height:100%; position:absolute; right: 0; top: 0;">
-                            <source src="http://dg6vcgn2vehm4.cloudfront.net/HUD.webm" type="video/webm">
-                            <source src="http://dg6vcgn2vehm4.cloudfront.net/HUD.mp4" type="video/mp4">
-                            <source src="http://dg6vcgn2vehm4.cloudfront.net/HUD.ogv" type="video/ogv">
+                            <source id="hudwebm" src="http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.webm" type="video/webm">
+                            <source id="hudmp4" src="http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.mp4" type="video/mp4">
+                            <source id="hudogv" src="http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.ogv" type="video/ogv">
                         </video>
                         <div class="container" id="hudtext">
                             <div class="mb56 row">
@@ -481,7 +481,7 @@
                                 </div>
                             </div>
                         </div>
-                            
+                                    
             </section>
             <section id="pov" class="fullheight bg-primary">
                 <div class="container">
@@ -789,7 +789,6 @@ $btn3.popover({trigger: 'manual'})
 
             });
 
-
                 var vid = document.getElementById("explosive-vid2")
                  var hudvid = $("#hudvid")[0];
                  hudvid.pause();
@@ -831,15 +830,31 @@ $(window).scroll(function() {                  // assign scroll event listener
     if (currentScroll >= hudTop-55 && playing===0) {
         playing = 1;
         hudvid.play();
-        $("#hudtext").fadeIn(600);
-        $("#hudtext2").fadeOut(600);
-        setTimeout(function() {
-            $("#hudtext").fadeOut(1600);
-            $("#hudtext2").fadeIn(1600);
-        }, 11000);
-        console.log("FFFF")
+        $("#hudtext").fadeIn(300);
+        $("#hudtext2").fadeOut(300);
+        $("#hudvid").on("ended", playHudVid2);
     }
 });
+
+function playHudVid2() {
+    $("#hudvid").find("#hudwebm").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD2.webm")
+    $("#hudvid").find("#hudmp4").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD2.mp4")
+    $("#hudvid").find("#hudogv").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD2.ogv")
+    hudvid.play();
+    $("#hudtext").fadeOut(600);
+    $("#hudtext2").fadeIn(600);
+    $("#hudvid").on("ended", playHudVid1);
+}
+
+function playHudVid1() {
+    $("#hudvid").find("#hudwebm").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.webm")
+    $("#hudvid").find("#hudmp4").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.mp4")
+    $("#hudvid").find("#hudogv").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.ogv")
+    hudvid.play();
+    $("#hudtext2").fadeOut(600);
+    $("#hudtext").fadeIn(600);
+    $("#hudvid").on("ended", playHudVid2);
+}
 
 window._wq = window._wq || [];
 _wq.push({ "1nw": function(video) {

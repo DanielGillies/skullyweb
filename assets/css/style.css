@@ -1106,7 +1106,7 @@ transition: background 2s ease;
   padding: 0 26px;
   height: 46px;
   min-width: 150px;
-  line-height: 36px;
+  line-height: 42px;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -7625,10 +7625,6 @@ input:-webkit-autofill {
     background-color: #ffffff;
     width: 100%;
     z-index: 5;
-}
-
-.indexvidbar img {
-    filter: invert(100%);
 }
 
 .indexbar {
