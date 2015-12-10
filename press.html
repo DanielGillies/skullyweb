@@ -390,24 +390,26 @@
             </div>
             <!--end of container-->
         </section>
-        <section class="image-bg fullscreen bg-white mh700-2 pt128">
-            <div class="background-image-holder">
-                <img src="static/img/userguide.jpeg" alt="index3">
+        <section id="presspacket-section" class="image-bg fullscreen bg-white mh700-2 pt128">
+            <div id="presspacket-background" class="background-image-holder">
+                <img id="presspacket-image" src="static/img/userguide.jpeg" alt="index3">
             </div>
             <div class="container" style="height: 60vh">
                 <div class="row">
                     <div class="text-center">
-                        <h2 class="black uppercase">Press packet</h2>
+                        <h2 class="uppercase">Press packet</h2>
                         <p>Scenes from the road, lab, our headquarters, and around the world.</p>
                         </div>
                 </div>
-                <div class="v-align-transform">
-                <div class="text-center">
-                <a href="https://www.dropbox.com/sh/au3umwb5v8e9oqq/AAChU3dc4VMg2etsE5KzbL3qa?dl=1&s=sl
-                 target="_blank" class="btn btn-mega">Download Press Packet</a>
-                <a class="btn btn-mega" data-toggle="modal" data-target="#myModal">Request an Exclusive</a>
+                <div class="row v-align-transform">
+                        <div class="col-md-5 col-md-offset-1 col-xs-12">
+                            <a href="https://www.dropbox.com/sh/au3umwb5v8e9oqq/AAChU3dc4VMg2etsE5KzbL3qa?dl=1&s=sl"
+                             target="_blank" class="btn btn-mega btn-full">Download Press Packet</a>
+                        </div>
+                        <div class="col-md-5 col-xs-12">
+                            <a class="btn btn-mega btn-full" data-toggle="modal" data-target="#myModal">Request an Exclusive</a>
+                        </div>
                 </div>
-            </div>
         </section>
                     <footer class="footer-1 bg-dark">
                         <div class="container">
@@ -519,6 +521,13 @@
     <script src="static/js/vendor.js"></script>
 
 <script type="text/javascript">
+
+if (window.mobilecheck()) {
+    
+    $("#presspacket-background").css("background", "url('/static/img/presslowerbg.jpg')");
+    $("#presspacket-image").attr("src", "/static/img/presslowerbg.jpg")
+    $("#presspacket-section").addClass("overlay3").removeClass("bg-white").addClass("bg-black");
+}
 
     var contactform =  document.getElementById('contactform');
     contactform.setAttribute('action', '//formspree.io/' + 'danny' + '@' + 'skully' + '.' + 'com');

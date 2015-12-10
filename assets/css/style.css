@@ -1185,6 +1185,10 @@ transition: background 2s ease;
   color: #fff;
 }
 
+.btn-full {
+    width: 100% !important;
+}
+
 .btn-white,
 .image-bg .btn,
 .image-bg .btn:visited {
