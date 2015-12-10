@@ -8183,7 +8183,7 @@ letter-spacing: 2px
  }
 
 .hud-animation {
-    height: 100vh;
+    min-height: 450px;
     overflow: hidden;
 }
 
