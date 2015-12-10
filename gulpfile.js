@@ -81,7 +81,6 @@ gulp.task('watchpartials', function() {
 gulp.task('watchimg', function() {
     watch(paths.img.src, batch(function(events, done) {
         gulp.start('compress');
-        del(paths.img.src);
         done();
     }));
 });
@@ -120,6 +119,7 @@ gulp.task('compress', function () {
             use: [pngquant()]
         }))
         .pipe(gulp.dest(paths.img.dest));
+        del(paths.img.src);
 });
 
 gulp.task('cleancss', function() {

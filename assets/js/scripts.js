@@ -304,7 +304,7 @@ $(document).ready(function() {
     	var feedID = $(this).attr('data-user-name') + '-';
         $(this).children('ul').spectragram('getUserFeed', {
             query: feedID,
-            max: 12
+            max: 15
         });
     });
 

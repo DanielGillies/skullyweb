@@ -1182,7 +1182,7 @@ transition: background 2s ease;
 
 .btn-filled {
   background: #D52424;
-  color: #fff !important;
+  color: #fff;
 }
 
 .btn-white,
@@ -1201,7 +1201,8 @@ transition: background 2s ease;
 
 .image-bg .btn.btn-filled,
 .image-bg .btn-filled:visited {
-  border-color: #060431;
+  border-color: #000;
+  color: #fff;
 }
 
 .image-bg .btn-filled:hover {
@@ -1240,7 +1241,7 @@ body.btn-rounded .btn {
 }
 
 .btn-filled:visited {
-  color: #D52424;
+  color: #fff;
 }
 
 .btn.bg-dark {
@@ -3765,9 +3766,9 @@ form iframe.mail-list-form {
     overflow: hidden;
 }
 
-.widget .instafeed li:nth-of-type(n+7) {
+/*.widget .instafeed li:nth-of-type(n+10) {
   display: none;
-}
+}*/
 
 .widget .cart-overview img {
   width: 25%;
@@ -9549,6 +9550,18 @@ filter: FlipH;
     right: 0;
 }
 
-#purchase {
-    margin-top: 58vh;
+#hudmobile {
+    display: none;
+}
+
+#povmobile {
+    display: none;
+}
+
+/*#hud-background {
+    background-position: 50% 100% !important;
+}*/
+
+#hudmobiletext2 {
+    display: none;
 }
