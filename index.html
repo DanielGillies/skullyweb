@@ -467,28 +467,30 @@
                             <source id="hudogv" src="http://dg6vcgn2vehm4.cloudfront.net/HUD1.ogv" type="video/ogv">
                         </video>
                         <div class="container" id="hudtext">
-                            <div class="mb56 row">
+                            <div id="hudheader" class="mb56 row">
                                 <div class="col-md-12">
                                     <h2 class="bold">360&deg; Awareness,<br>Every Second</h2>
                                     <h4 class="opensans subhead">This way of riding is the future.</h4>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="hudbody row">
                                 <div class="col-md-4">
                                     <h5 class="uppercase xbold">Hyperfocus on the Road</h5>
                                     <p class="subhead">A Heads-Up Display that's always in focus minimizes distractions.</p>
                                     <hr>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="hudbody row">
                                 <div class="col-md-4">
                                     <h5 class="uppercase xbold">Blast Blindspots</h5>
                                     <p class="subhead">An ultra-wide rear camera sees more than conventional mirrors.</p>
                                     <hr>
                                 </div>
                             </div>
+                            <div id="hudbuttons">
                                     <a class="btn btn-hud active-hud" onclick="swapHUD()"></a>
                                     <a class="btn btn-hud" onclick="swapHUD()"></a>
+                                </div>
                         </div>
 
                         <div class="container" id="hudtext2">
@@ -885,7 +887,7 @@ $(window).scroll(function() {                  // assign scroll event listener
             forwards = true;
         }
         $(".explosive-active")[0].play();
-        $(".explosive-active")[0].playbackRate = 3;
+        // $(".explosive-active")[0].playbackRate = 3;
         inVideo = true;
         $("[id^='explosive-vid'").on("ended", function() {
             inVideo = false;
@@ -917,21 +919,25 @@ $(window).scroll(function() {                  // assign scroll event listener
     if (currentScroll >= hudTop-55 && hudPlaying===0) {
         hudPlaying = 1;
         hudvid.play();
-        $("#hudtext").fadeIn(600);
+        $("#hudtext").fadeIn(100);
+        $("#hudheader").fadeIn(500, function() {
+            $(".hudbody").fadeIn(500);
+            $("#hudbuttons").fadeIn(500);
+        });
         $("#hudvid").on("ended", swapHUD);
     }
     if (currentScroll >= povTop-55 && currentScroll <= explosiveTop-55 && povComplete===0) {
         console.log("ffff")
         povComplete = 1;
         TweenLite.set(".hud-animation", {perspective: 500});
-        TweenMax.to("#hud-bg", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .7, ease: Power1.easeInOut, delay: .3});
-        TweenMax.to("#hud-nose", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .9, ease: Power1.easeInOut, delay: .3});
-        TweenMax.to("#hud-rear", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: .3});
-        TweenMax.to("#hud-mph", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: .3});
+        TweenMax.to("#hud-bg", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .7, ease: Power1.easeInOut});
+        TweenMax.to("#hud-nose", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .9, ease: Power1.easeInOut});
+        TweenMax.to("#hud-rear", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut});
+        TweenMax.to("#hud-mph", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut});
 
-        TweenMax.to("#hud-nose", 1, {left: "+=1%", delay: 1.3, ease: Power2.easeInOut});
-        TweenMax.to("#hud-rear", 1.5, {scale: 2, top: "-=35%", left:"-=55%", ease: Power2.easeInOut, delay: .8});
-        TweenMax.to("#hud-mph", 1.5, {scale: 2.5, top: "-=55%", left: "-=80%", ease: Power2.easeInOut, delay: .8});
+        TweenMax.to("#hud-nose", 1, {left: "+=1%", delay: 1, ease: Power2.easeInOut});
+        TweenMax.to("#hud-rear", 1.5, {scale: 2, top: "-=35%", left:"-=55%", ease: Power2.easeInOut, delay: .5});
+        TweenMax.to("#hud-mph", 1.5, {scale: 2.5, top: "-=55%", left: "-=80%", ease: Power2.easeInOut, delay: .5});
     }
 });
 }
@@ -983,7 +989,7 @@ function nextExplosion() {
         }
         $("#explosive-vid" + count).addClass("explosive-active");
         $(".explosive-active")[0].play();
-        $(".explosive-active")[0].playbackRate = 3;
+        // $(".explosive-active")[0].playbackRate = 3;
         forwards = true;
     } else {
         // IE9, Chrome, Safari, Opera
@@ -1005,7 +1011,7 @@ function prevExplosion() {
         }
         $("#explosive-vid" + (count) + "b").addClass("explosive-active");
         $(".explosive-active")[0].play();
-        $(".explosive-active")[0].playbackRate = 3;
+        // $(".explosive-active")[0].playbackRate = 3;
         count--;
         forwards = false
     } else {

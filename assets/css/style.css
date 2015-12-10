@@ -9536,6 +9536,18 @@ filter: FlipH;
     left:0;
     right:0;
     position: absolute;
+    /*display: none;*/
+}
+
+#hudheader {
+    display: none;
+}
+
+.hudbody {
+    display: none;
+}
+
+#hudbuttons {
     display: none;
 }
 
