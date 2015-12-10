@@ -230,7 +230,7 @@
                                         <span class="number">Starting at <span class="skullyred">$132</span> per month with Affirm</span>
                                     </div>
                                     <p>
-                                        SKULLY <span class="ar1font">AR-<span class="skullyred">1</span></span> is the world's smartest motorcycle helmet. With a blind spot camera and transparent heads up display (HUD), the SKULLY <span class="ar1font">AR-<span class="skullyred">1</span></span> not only eliminates blind spots but gives you the most important information right when you need it. 
+                                        The <span class="ar1font">SKULLY AR-<span class="skullyred">1</span></span> is the first helmet to feature a built-in 180&deg; Blindspot Camera and Heads-Up Display for unparalleled situational awareness and safety. Focus on what matters most: the road ahead.
                                         </p>
                                         <p>
                                     <span class="ar1font">AR-<span class="skullyred">1</span></span> allows you to focus on what matters most: the road ahead.
@@ -528,6 +528,12 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.2/handlebars.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
         <script src="static/js/vendor.js"></script>
+        <script>
+        if (window.mobilecheck()) {
+                console.log("FFFF")
+                $("nav").addClass("absolute");
+            }
+            </script>
 
         <script type="text/javascript">
             document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');

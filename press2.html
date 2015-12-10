@@ -470,6 +470,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.2/handlebars.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="static/js/vendor.js"></script>
+    <script>
+    if (window.mobilecheck()) {
+            console.log("FFFF")
+            $("nav").addClass("absolute");
+        }
+        </script>
 
 </body>
 </html>

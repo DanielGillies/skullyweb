@@ -487,7 +487,7 @@
                                     <hr>
                                 </div>
                             </div>
-                            <div id="hudbuttons">
+                            <div class="mb32" id="hudbuttons">
                                     <a class="btn btn-hud active-hud" onclick="swapHUD()"></a>
                                     <a class="btn btn-hud" onclick="swapHUD()"></a>
                                 </div>
@@ -565,14 +565,14 @@
                 </div>
             </section>
 
-            <section id="povmobile" class="pt64 image-bg overlay bg-dark">
+            <section id="povmobile" class="pt64 pt-xs-16 image-bg overlay bg-dark">
                 <div class="background-image-holder">
                     <img src="static/img/povmobilebg.jpg">
                 </div>
                 <div class="container">
                     <h2 class="mt80 mb48 mb-xs-32 bold">Complete Situational Awareness</h2>
                     <div class="row">
-                        <div class="col-sm-12 mb-xs-24">
+                        <div class="col-xs-8 mb-xs-24">
                             <h5 class="uppercase xbold mb8 mb-xs-8">Infinite Focus&trade;</h5>
                             <div class="mb40 mb-xs-24">
                                 <p class="subhead">
@@ -820,6 +820,12 @@ what's happening? the id isn't linking?
             <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.2/handlebars.js"></script>
             <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
             <script src="static/js/vendor.js"></script>
+            <script>
+            if (window.mobilecheck()) {
+                    console.log("FFFF")
+                    $("nav").addClass("absolute");
+                }
+                </script>
             <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
             <script type="text/javascript">
 

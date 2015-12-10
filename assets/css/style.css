@@ -1326,6 +1326,7 @@ nav .btn,
   display: inline-block;
   height: 55px;
 }
+
 @media all and (min-width: 993px){
     .mob {
         display: none;
@@ -1334,6 +1335,7 @@ nav .btn,
     .menu hr {
         display: none;
     }
+
 
 }
 
