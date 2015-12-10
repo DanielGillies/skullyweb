@@ -465,8 +465,7 @@
 
             <section id="pov" class="fullheight bg-primary">
                 <div class="container">
-                    <h2 class="mb0 mb-xs-0 bold text-center">One-second Glances</h2>
-                    <h4 class="subhead mb48 mb-xs-32 text-center">for complete Situational Awareness.</h4>
+                    <h2 class="mb48 mb-xs-32 bold">One-second Glances For Complete Situational Awareness.</h2>
                     <div class="row">
                         <div class="col-sm-3 mb-xs-24">
                             <h5 class="uppercase xbold mb8 mb-xs-8">Infinite Focus&trade;</h5>
@@ -720,6 +719,22 @@ what's happening? the id isn't linking?
             <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
             <script type="text/javascript">
 
+            if (window.mobilecheck) {
+            var totalImages = 1200;
+    var images = new Array();
+    for (var i = 1; i <= totalImages; i += 4) {
+        var filename = 'movie_';
+        // if(i < 10) filename += '00';
+        // else if(i < 100) filename += '0';
+        filename += i + '.jpg';
+        var img = new Image;
+        img.src = 'http://dg6vcgn2vehm4.cloudfront.net/img/' + filename;
+        // img.src="img2/" + filename;
+        images.push(img);
+        images.push(img);
+    }
+}
+
             var $btn2 = $('#btn2');
 $btn2.data('state', 'hover');
 
@@ -789,7 +804,6 @@ if (window.mobilecheck) {
                 var povTop = $('#pov').offset().top;
                var explosiveTop = $('#explosive-vid2').offset().top;
                var nextSectionTop = $('#explosive2').next('section').offset().top;
-               console.log(nextSectionTop);
                var hudPlaying = 0;
                var povComplete = 0;
 
@@ -808,14 +822,12 @@ $(window).scroll(function() {                  // assign scroll event listener
             left: '0'
         });
     } else if (currentScroll < explosiveTop-55) {                                   // apply position: static
-        console.log("Above")
         $('#explosive-vid2').attr("style","");  
         $('#explosive-vid2').css({                      // if you scroll above it
             position: 'absolute',
             top: '0'
         });
     } else {
-        console.log("Below")
         $('#explosive-vid2').attr("style","");  
         $('#explosive-vid2').css({                      // if you scroll above it
             position: 'absolute',
@@ -931,22 +943,6 @@ if (window.mobilecheck) {
                 alert("ITS SCATMAN TIME!!!!");
 
             });
-
-            if (window.mobilecheck) {
-            var totalImages = 1200;
-    var images = new Array();
-    for (var i = 1; i <= totalImages; i += 4) {
-        var filename = 'movie_';
-        // if(i < 10) filename += '00';
-        // else if(i < 100) filename += '0';
-        filename += i + '.jpg';
-        var img = new Image;
-        img.src = 'http://dg6vcgn2vehm4.cloudfront.net/img/' + filename;
-        // img.src="img2/" + filename;
-        images.push(img);
-        images.push(img);
-    }
-}
 
 
     </script>
