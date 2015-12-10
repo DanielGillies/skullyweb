@@ -373,7 +373,7 @@
             </div>
 
             </section>
-            <section class="fullheight image-bg overlay fullscreen bg-dark pt-xs-32">
+            <section class="fullheight image-bg overlay bg-dark pt-xs-32">
                 <div class="background-image-holder xxbackground">
                     <img src="/static/img/skully_background.jpg">
                 </div>
@@ -396,7 +396,7 @@
                 </div>
             </section>
 
-            <section id="hudmobile" class="image-bg overlay3 fullheight bg-black">
+            <section id="hudmobile" class="image-bg overlay3 bg-black">
                 <div id="hudmobile-background" class="background-image-holder">
                     <img id="hudmobile-image" src="/static/img/HUD1.png">
                 </div>
@@ -563,7 +563,7 @@
                 </div>
             </section>
 
-            <section id="povmobile" class="pt64 image-bg overlay ullheight bg-dark">
+            <section id="povmobile" class="pt64 image-bg overlay bg-dark">
                 <div class="background-image-holder">
                     <img src="static/img/povmobilebg.jpg">
                 </div>
@@ -700,7 +700,7 @@ what's happening? the id isn't linking?
                 <div class="background-image-holder">
                     <img alt="image" class="background-image" src="static/img/kyle1.jpg">
                 </div>
-                <div class="v-align-transform container">
+                <div class="container">
                         <div class="row mb40 mb-xs-24">
                             <div class="col-sm-12 text-center">
                                 <h2 class="bold mb16">Pair Up</h2>
@@ -833,6 +833,7 @@ if (window.mobilecheck()) {
     $("#hudmobile").toggle();
     $("#pov").toggle();
     $("#povmobile").toggle();
+    $("section").removeClass("fullheight");
 }
 
             var hudSwap = 1;
