@@ -373,7 +373,7 @@
             </div>
 
             </section>
-            <section class="fullheight image-bg overlay bg-dark pt-xs-32">
+            <section id="beauty" class="fullheight image-bg bg-dark pt120 pt-xs-32">
                 <div class="background-image-holder xxbackground">
                     <img src="/static/img/skully_background.jpg">
                 </div>
@@ -480,7 +480,7 @@
                                     <hr>
                                 </div>
                             </div>
-                            <div class="row mb56">
+                            <div class="row">
                                 <div class="col-md-4">
                                     <h5 class="uppercase xbold">Blast Blindspots</h5>
                                     <p class="subhead">An ultra-wide rear camera sees more than conventional mirrors.</p>
@@ -505,7 +505,7 @@
                                     <hr>
                                 </div>
                             </div>
-                            <div class="row mb56">
+                            <div class="row">
                                 <div class="col-md-4">
                                     <h5 class="uppercase xbold">Ride Superhuman</h5>
                                     <p class="subhead">Heads-Up Display data helps you anticipate danger and ride safer.</p>
@@ -834,6 +834,7 @@ if (window.mobilecheck()) {
     $("#pov").toggle();
     $("#povmobile").toggle();
     $("section").removeClass("fullheight");
+    $("#beauty").addClass("overlay4");
 }
 
             var hudSwap = 1;
