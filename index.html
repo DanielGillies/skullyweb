@@ -214,7 +214,7 @@
             </nav>
         <!-- ACTUAL PAGE CONTENT -->
         <div class="main-container">
-            <section id="vidholder" class="overlay image-bg fullheight bg-black">
+            <section id="vidholder" class="overlay image-bg fullheight2 bg-black">
                 <div class="background-image-holder indeximage">
                     <img alt="Background Image" class="background-image" src="static/img/indexmobile.jpg">
                     <div class="fs-vid-background">
@@ -458,7 +458,7 @@
 
 
 
-            <!-- <section id="pov" class="pt64 fullheight bg-white">
+            <section id="pov" class="pt64 fullheight bg-white">
                 <div class="container">
                     <h2 class="mt80 mb48 mb-xs-32 bold">Complete Situational Awareness</h2>
                     <div class="row">
@@ -501,11 +501,38 @@
                         </div>
                     </div>
                 </div>
-            </section> -->
+            </section>
 
             <section id="explosive" class="fullheight2 bg-white pb0 pt0">
-                <video id="explosive-vid">
-                    <source id="explosivewebm" src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1.webm" type="video/webm">
+                <video id="explosive-vid1" class="explosive-active">
+                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1.webm" type="video/webm">
+                </video>
+                <video id="explosive-vid2">
+                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2.webm" type="video/webm">
+                </video>
+                <video id="explosive-vid3">
+                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3.webm" type="video/webm">
+                </video>
+                <video id="explosive-vid4">
+                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4.webm" type="video/webm">
+                </video>
+                <video  id="explosive-vid5">
+                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5.webm" type="video/webm">
+                </video>
+                <video id="explosive-vid1b">
+                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1backwards.webm" type="video/webm">
+                </video>
+                <video id="explosive-vid2b">
+                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2backwards.webm" type="video/webm">
+                </video>
+                <video id="explosive-vid3b">
+                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3backwards.webm" type="video/webm">
+                </video>
+                <video id="explosive-vid4b">
+                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4backwards.webm" type="video/webm">
+                </video>
+                <video  id="explosive-vid5b">
+                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5backwards.webm" type="video/webm">
                 </video>
             </section>
 
@@ -786,28 +813,50 @@ _wq.push({ "1nw": function(video) {
                  hudvid.pause();
                  hudvid.currentTime = 1;
                 
-               var explosiveTop = $('#explosive').offset().top;
-               var nextSectionTop = $('#explosive').next('section').offset().top;
+            var explosiveTop = $('#explosive').offset().top;
+            var explosiveBot = explosiveTop + $('#explosive-vid').height();
+            var appTop = $('#app').offset().top;
+            var appBot = appTop + $('#app').height();
+            var signupTop = $('#signup').offset().top;
+            var signupBot = signupTop + $('#signup').height();
+            var hudTop = $('#hudvid').offset().top;
+            var povTop = $('#pov').offset().top;
+            var nextSectionTop = $('#explosive').next('section').offset().top;
                var hudPlaying = 0;
+               var goingBack = false;
                var povComplete = 0;
                var count = 1;
+               var forwards;
                var inExplosive = false;
-               var hudTop = $('#hudvid').offset().top;
-                // var povTop = $('#pov').offset().top;
+               var inVideo = true;
 
 $(window).scroll(function() {                  // assign scroll event listener
 
-    var explosiveBot = explosiveTop + $('#explosive-vid').height();
-
     var currentScroll = $(window).scrollTop(); // get current position
-    if (currentScroll >= explosiveTop-55 && currentScroll <= nextSectionTop+(explosiveTop - explosiveBot)-55 && !inExplosive) {
+    if (currentScroll >= explosiveTop-55 && currentScroll <= explosiveBot && !inExplosive) {
+        // $.scrollify.disable();
         // IE9, Chrome, Safari, Opera
         window.addEventListener("mousewheel", MouseWheelHandler, false);
         // Firefox
         window.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
         inExplosive = true;
-        $("#explosive-vid")[0].play();
-        $("#explosive-vid").on("ended", nextExplosion)
+        if (count > 1) {
+            count = 4;
+            $("#explosive-vid5").removeClass("explosive-active");
+            $("#explosive-vid5b").addClass("explosive-active");
+            forwards = false;
+        } else {
+            count = 1;
+            $("#explosive-vid1b").removeClass("explosive-active");
+            $("#explosive-vid1").addClass("explosive-active");
+            forwards = true;
+        }
+        $(".explosive-active")[0].play();
+        $(".explosive-active")[0].playbackRate = 3;
+        inVideo = true;
+        $("[id^='explosive-vid'").on("ended", function() {
+            inVideo = false;
+        })
     //     console.log(Math.floor((window.pageYOffset-explosiveTop)/50))
     //     setImage(Math.floor((window.pageYOffset-explosiveTop)/50));
 
@@ -829,24 +878,28 @@ $(window).scroll(function() {                  // assign scroll event listener
     //         bottom: '0',
     //     });
     }
+    if (currentScroll >= nextSectionTop-55 || currentScroll <= explosiveTop-55) {
+        inExplosive = false;
+    }
     if (currentScroll >= hudTop-55 && hudPlaying===0) {
         hudPlaying = 1;
         hudvid.play();
         $("#hudtext").fadeIn(600);
         $("#hudvid").on("ended", swapHUD);
     }
-    // if (currentScroll >= povTop-55 && povComplete===0) {
-    //     povComplete = 1;
-    //     TweenLite.set(".hud-animation", {perspective: 600});
-    //     TweenMax.to("#hud-bg", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .7, ease: Power1.easeInOut, delay: .3});
-    //     TweenMax.to("#hud-nose", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .9, ease: Power1.easeInOut, delay: .3});
-    //     TweenMax.to("#hud-rear", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: .3});
-    //     TweenMax.to("#hud-mph", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: .3});
+    if (currentScroll >= povTop-55 && currentScroll <= explosiveTop-55 && povComplete===0) {
+        console.log("ffff")
+        povComplete = 1;
+        TweenLite.set(".hud-animation", {perspective: 500});
+        TweenMax.to("#hud-bg", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .7, ease: Power1.easeInOut, delay: .3});
+        TweenMax.to("#hud-nose", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .9, ease: Power1.easeInOut, delay: .3});
+        TweenMax.to("#hud-rear", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: .3});
+        TweenMax.to("#hud-mph", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut, delay: .3});
 
-    //     TweenMax.to("#hud-nose", 1, {left: "+=1%", delay: 1.3, ease: Power2.easeInOut});
-    //     TweenMax.to("#hud-rear", 1.5, {scale: 2, top: "-=35%", left:"-=55%", ease: Power2.easeInOut, delay: .8});
-    //     TweenMax.to("#hud-mph", 1.5, {scale: 2.5, top: "-=55%", left: "-=80%", ease: Power2.easeInOut, delay: .8});
-    // }
+        TweenMax.to("#hud-nose", 1, {left: "+=1%", delay: 1.3, ease: Power2.easeInOut});
+        TweenMax.to("#hud-rear", 1.5, {scale: 2, top: "-=35%", left:"-=55%", ease: Power2.easeInOut, delay: .8});
+        TweenMax.to("#hud-mph", 1.5, {scale: 2.5, top: "-=55%", left: "-=80%", ease: Power2.easeInOut, delay: .8});
+    }
 });
 
 function swapHUD() {
@@ -871,19 +924,62 @@ function swapHUD() {
 }
 
 function nextExplosion() {
-    if (count < 5) {
-        count++;
-        $("#explosive-vid").find("#explosivewebm").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive" + count + ".webm");
-        $("#explosive-vid").load();
-        $("#explosive-vid")[0].play();
-        console.log("playing video " + count);
+    if (count < 6) {
+        inVideo=true;
+        if (forwards) {
+            $("#explosive-vid" + (count - 1)).attr("class", "");
+        } else {
+            $("#explosive-vid" + (count) + "b").attr("class", "");
+        }
+        $("#explosive-vid" + count).addClass("explosive-active");
+        $(".explosive-active")[0].play();
+        $(".explosive-active")[0].playbackRate = 3;
+        forwards = true;
     } else {
         // IE9, Chrome, Safari, Opera
         window.removeEventListener("mousewheel", MouseWheelHandler, false);
         // Firefox
         window.removeEventListener("DOMMouseScroll", MouseWheelHandler, false);
+        // $.scrollify.enable();
     }
 }
+
+function prevExplosion() {
+    console.log(count);
+    if (count > 0) {
+        inVideo=true;
+        if (forwards) {
+            $("#explosive-vid" + (count)).attr("class", "");
+        } else {
+            $("#explosive-vid" + (count+1) + "b").attr("class", "");
+        }
+        $("#explosive-vid" + (count) + "b").addClass("explosive-active");
+        $(".explosive-active")[0].play();
+        $(".explosive-active")[0].playbackRate = 3;
+        count--;
+        forwards = false
+    } else {
+        // IE9, Chrome, Safari, Opera
+        window.removeEventListener("mousewheel", MouseWheelHandler, false);
+        // Firefox
+        window.removeEventListener("DOMMouseScroll", MouseWheelHandler, false);
+        // $.scrollify.enable();
+    }
+}
+
+            function MouseWheelHandler(e) {
+                e.preventDefault();
+                if (!inVideo) {
+                    var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+                    if (delta == -1) {
+                        count++;
+                        nextExplosion();
+                    }
+                    if (delta == 1) {
+                        prevExplosion();
+                    }
+                }
+            }
 
             //     $(window).scroll(function() {
             //     if (isScrolledIntoView($(".hud-animation"))) {
@@ -945,24 +1041,6 @@ function nextExplosion() {
                 alert("ITS SCATMAN TIME!!!!");
 
             });
-
-            function MouseWheelHandler(e) {
-                e.preventDefault();
-                // var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-                // if (delta == -1) currentLocation += 1;
-                // if (delta == 1) currentLocation -= 1;
-                // if (currentLocation < 0) currentLocation = 0;
-                // if (currentLocation > images.length) currentLocation = images.length;
-                // console.log(currentLocation + " / " + images.length);
-                // if (currentLocation === images.length || currentLocation === 0){
-                //     console.log("ffff")
-                //     // IE9, Chrome, Safari, Opera
-                //     window.removeEventListener("mousewheel", MouseWheelHandler, false);
-                //     // Firefox
-                //     window.removeEventListener("DOMMouseScroll", MouseWheelHandler, false);
-                // }
-                // setImage(currentLocation);
-            }
 
 
     </script>
