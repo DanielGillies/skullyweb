@@ -435,6 +435,13 @@ what's happening? the id isn't linking?
             {{> scripts}}
             <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
             <script type="text/javascript">
+            $('.main-container').panelSnap();
+
+            // $(function() {
+            //         $.scrollify({
+            //             section : "section"
+            //         });
+            //     });
 
             window._wq = window._wq || [];
 _wq.push({ "1nw": function(video) {
@@ -527,6 +534,8 @@ _wq.push({ "1nw": function(video) {
                  hudvid.currentTime = 1;
                 
                var explosiveTop = $('#explosive').offset().top;
+               var appTop = $('#app').offset().top;
+               var signupTop = $('#signup').offset().top;
                var nextSectionTop = $('#explosive').next('section').offset().top;
                var hudPlaying = 0;
                var goingBack = false;
@@ -543,18 +552,29 @@ $(window).scroll(function() {                  // assign scroll event listener
     var explosiveBot = explosiveTop + $('#explosive-vid').height();
 
     var currentScroll = $(window).scrollTop(); // get current position
-    if (currentScroll >= explosiveTop-55 && currentScroll <= nextSectionTop+(explosiveTop - explosiveBot)-55 && !inExplosive) {
+    if (currentScroll >= explosiveTop-55 && currentScroll <= explosiveBot && !inExplosive) {
+        // $.scrollify.disable();
         // IE9, Chrome, Safari, Opera
         window.addEventListener("mousewheel", MouseWheelHandler, false);
         // Firefox
         window.addEventListener("DOMMouseScroll", MouseWheelHandler, false);
         inExplosive = true;
+        if (count > 1) {
+            count = 4;
+            $("#explosive-vid5").removeClass("explosive-active");
+            $("#explosive-vid5b").addClass("explosive-active");
+            forwards = false;
+        } else {
+            count = 1;
+            $("#explosive-vid1b").removeClass("explosive-active");
+            $("#explosive-vid1").addClass("explosive-active");
+            forwards = true;
+        }
         $(".explosive-active")[0].play();
         $(".explosive-active")[0].playbackRate = 3;
         inVideo = true;
         $("[id^='explosive-vid'").on("ended", function() {
-            if (!goingBack)
-                inVideo = false;
+            inVideo = false;
         })
     //     console.log(Math.floor((window.pageYOffset-explosiveTop)/50))
     //     setImage(Math.floor((window.pageYOffset-explosiveTop)/50));
@@ -576,6 +596,9 @@ $(window).scroll(function() {                  // assign scroll event listener
     //         position: 'absolute',
     //         bottom: '0',
     //     });
+    }
+    if (currentScroll >= nextSectionTop-55 || currentScroll <= explosiveTop-55) {
+        inExplosive = false;
     }
     if (currentScroll >= hudTop-55 && hudPlaying===0) {
         hudPlaying = 1;
@@ -624,41 +647,41 @@ function nextExplosion() {
         if (forwards) {
             $("#explosive-vid" + (count - 1)).removeClass("explosive-active");
         } else {
-            $("#explosive-vid" + (count - 1) + "b").removeClass("explosive-active");
+            $("#explosive-vid" + (count) + "b").removeClass("explosive-active");
         }
-        console.log($("#explosive-vid" + (count-1)))
-        $("#explosive-vid" + (count-1)).removeClass("explosive-active");
-        console.log($("#explosive-vid" + count))
         $("#explosive-vid" + count).addClass("explosive-active");
         $(".explosive-active")[0].play();
-        $(".explosive-active")[0].playbackRate = 3;
+        $(".explosive-active")[0].playbackRate = 4;
         forwards = true;
     } else {
         // IE9, Chrome, Safari, Opera
         window.removeEventListener("mousewheel", MouseWheelHandler, false);
         // Firefox
         window.removeEventListener("DOMMouseScroll", MouseWheelHandler, false);
+        // $.scrollify.enable();
     }
 }
 
 function prevExplosion() {
-    if (count > -1) {
+    console.log(count);
+    if (count > 0) {
         inVideo=true;
-        goingBack=true;
         if (forwards) {
-            $("#explosive-vid" + (count + 1)).removeClass("explosive-active");
+            $("#explosive-vid" + (count)).removeClass("explosive-active");
         } else {
-            $("#explosive-vid" + (count + 2) + "b").removeClass("explosive-active");
+            $("#explosive-vid" + (count+1) + "b").removeClass("explosive-active");
         }
-        $("#explosive-vid" + (count + 1) + "b").addClass("explosive-active");
+        $("#explosive-vid" + (count) + "b").addClass("explosive-active");
         $(".explosive-active")[0].play();
         $(".explosive-active")[0].playbackRate = 4;
+        count--;
         forwards = false
     } else {
         // IE9, Chrome, Safari, Opera
         window.removeEventListener("mousewheel", MouseWheelHandler, false);
         // Firefox
         window.removeEventListener("DOMMouseScroll", MouseWheelHandler, false);
+        // $.scrollify.enable();
     }
 }
 
@@ -671,7 +694,6 @@ function prevExplosion() {
                         nextExplosion();
                     }
                     if (delta == 1) {
-                        count--;
                         prevExplosion();
                     }
                 }
