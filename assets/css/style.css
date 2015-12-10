@@ -58,8 +58,18 @@ body {
   color: #666;
 }
 
+.opensans {
+    font-family: "Open Sans" !important;
+    letter-spacing: 1px;
+    line-height: 34px;
+}
+
+.opensansplain {
+    font-family: "Open Sans" !important;
+}
+
 p {
-    font-size: 15px;
+    font-size: 17px;
 }
 
 body.boxed-layout {
@@ -395,7 +405,7 @@ h1.large2 {
 
 @media all and (max-width: 990px) {
   h1.large {
-    font-size: 56px;
+    font-size: 48px;
     line-height: 64px;
   }
 
@@ -417,7 +427,7 @@ h4 {
 }
 
 h5 {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   font-weight: 400;
 }
@@ -1347,7 +1357,7 @@ nav .btn,
 }
 
 .logo {
-  max-height: 60%;
+  max-height: 40%;
 }
 .logo-light {
   display: none;
@@ -3733,7 +3743,7 @@ form iframe.mail-list-form {
 }
 
 .widget .instafeed li {
-  width: 50%;
+  width: 33%;
   display: inline-block;
   padding: 0 4px 4px 0;
 }
@@ -7548,6 +7558,14 @@ header h1 {
     z-index: 100;
 }
 
+.centered2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 23%;
+    z-index: 100;
+}
+
 #hovertext {
     text-align: center;
 }
@@ -7604,6 +7622,10 @@ input:-webkit-autofill {
 }
 
 .fullheight {
+    height: calc(100vh - 55px);
+}
+
+.fullheight2 {
     height: 100vh;
 }
 
@@ -7937,20 +7959,21 @@ font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 .ctabutton {
     border: 1px solid white;
+    text-transform: uppercase;
 position: absolute;
 top: 50%;
 left: 50%;
-margin-left:-115px;
+margin-left:-200px;
 margin-top:-38px;
 height: 76px;
-width: 230px;
+width: 400px;
 z-index: 1000;
 background-color: #000000;
 color: white;
 text-align: center;
 font-size: 40px;
 line-height: 76px;
-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-family: "Raleway", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 letter-spacing: 2px
 
 }
@@ -9130,6 +9153,8 @@ Main components
 .ar1font {
     font-family: 'Michroma' !important;
     font-weight: bold;
+    font-size: .80em;
+
 }
 
 .bg-secondary .ar1font {
@@ -9177,11 +9202,22 @@ Main components
 }
 
 .btn-hud {
-    width: 10%;
+    width: 47px !important;
+    min-width: 0px;
     height: 5px;
     background-color: #fff;
     border: none;
+    margin-right: 20px;
+    padding: 0 1px;
 }
+
+/*.btn-hud:hover {
+      -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}*/
 
 .active-hud {
     background-color: #D52424;
@@ -9417,10 +9453,27 @@ filter: FlipH;
     margin: 0 auto;
 }
 
+.explosive-active {
+    position: absolute;
+    top: 0;
+    display: block !important;
+    height: calc(100vh - 55px);
+    width: 99%;
+    margin: 0 auto;
+}
+
+#explosive video {
+    position: absolute;
+    top: 0;
+    display: none;
+    height: calc(100vh - 55px);
+    width: 99%;
+    margin: 0 auto;
+}
+
+
 #explosive {
     position: relative;
-    height: 10000px;
-
 }
 
 #explosve3 {
@@ -9494,4 +9547,8 @@ filter: FlipH;
     bottom: 3%;
     left: 0;
     right: 0;
+}
+
+#purchase {
+    margin-top: 58vh;
 }
