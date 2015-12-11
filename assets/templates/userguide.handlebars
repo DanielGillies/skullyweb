@@ -109,5 +109,11 @@
         {{> footer}}
     </div>
     {{> scripts}}
+    <script>
+    if (window.mobilecheck()) {
+        $('section').removeClass('image-bg');
+        $('.background-image-holder').css('display', 'none');
+    }
+    </script>
 </body>
 </html>

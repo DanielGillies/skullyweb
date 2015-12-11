@@ -412,5 +412,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             $("nav").addClass("absolute");
         }
         </script>
+    <script>
+    if (window.mobilecheck()) {
+        $('section').removeClass('image-bg');
+        $('.background-image-holder').css('display', 'none');
+    }
+    </script>
 </body>
 </html>
