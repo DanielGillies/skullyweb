@@ -7633,8 +7633,18 @@ input:-webkit-autofill {
 }
 
 .fullheight2 {
-    height: 100vh;
+    min-height: 100vh;
 }
+
+.mobilefullheight {
+    min-height: 100vh;
+}
+
+/*@media all and (max-width: 993px) {
+    .fullheight2 {
+        min-height: 140vh;
+    }
+}*/
 
 
 .minh570 {
@@ -9570,6 +9580,7 @@ filter: FlipH;
 
 #hudmobile {
     display: none;
+    position: relative;
 }
 
 #povmobile {
@@ -9580,6 +9591,26 @@ filter: FlipH;
     background-position: 50% 100% !important;
 }*/
 
+#hudmobiletext {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
 #hudmobiletext2 {
+    position: absolute;
     display: none;
+    left: 0;
+    right: 0;
+}
+
+#hudmobile-background2 {
+    display: none;
+}
+
+.hudmobile-buttons {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25px;
 }
