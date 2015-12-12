@@ -122,7 +122,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </div>
                         <!--end of menu module-->
                         <div id="storebutton" class="module right">
-                            <a class="btn btn-sm btn-filled" target="_blank" href="http://skullysystems.myshopify.com/">STORE</a>
+                            <a class="btn btn-sm btn-filled" target="_blank" href="store">STORE</a>
                         </div>
                         <!-- <div id="storebutton" class="module right">
                             <a class="btn btn-sm btn-filled" href="http://store.skully.com/">PRE-ORDER</a>
@@ -212,7 +212,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </div>
                         <!--end of menu module-->
                         <div id="storebutton" class="module right">
-                            <a class="btn btn-sm btn-filled" target="_blank" href="http://skullysystems.myshopify.com/">STORE</a>
+                            <a class="btn btn-sm btn-filled" target="_blank" href="store">STORE</a>
                         </div>
                         <!-- <div id="storebutton" class="module right">
                             <a class="btn btn-sm btn-filled" href="http://store.skully.com/">PRE-ORDER</a>
@@ -406,7 +406,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
             </section>
 
-            <section id="hudmobile" class="image-bg overlay3 bg-black">
+            <section id="hudmobile" class="pt32 image-bg overlay3 bg-black">
                 <div id="hudmobile-background" class="background-image-holder">
                     <img id="hudmobile-image" src="/static/img/HUD1.png">
                 </div>
@@ -415,7 +415,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 </div>
 
                 <div id="hudmobiletext" class="container">
-                    <div class="row mb32">
+                    <div class="row mb8">
                         <div class="col-xs-12">
                             <h2 class="bold">360&deg; Awareness, Every Second</h2>
                             <h4 class="opensans subhead">This way of riding is the future.</h4>
@@ -436,32 +436,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </div>
                     </div>
                 </div>
-                <div id="hudmobiletext2" class="container">
-                    <div class="row mb32">
-                        <div class="col-xs-12">
-                            <h2 class="bold">Glance Once for Vital, <br>Real-Time Information</h2>
-                            <h4 class="opensans subhead">The past and present float in front of you.</h4>
+
+                        <div id="hudmobiletext2" class="container">
+                            <div class="row mb8">
+                                <div class="col-xs-12">
+                                    <h2 class="bold">Glance Once for Vital, <br>Real-Time Information</h2>
+                                    <h4 class="opensans subhead">The past and present float in front of you.</h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-8">
+                                    <h5 class="uppercase xbold">Check Tech</h5>
+                                    <p class="subhead">Telemetry, GPS, and the rear camera feed are all within your field of view.</p>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-8">
+                                    <h5 class="uppercase xbold">Ride Superhuman</h5>
+                                    <p class="subhead">Heads-Up Display data helps you anticipate danger and ride safer.</p>
+                                    <hr>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-8">
-                            <h5 class="uppercase xbold">Check Tech</h5>
-                            <p class="subhead">Telemetry, GPS, and the rear camera feed are all within your field of view.</p>
-                            <hr>
+                        <div class="hudmobile-buttons text-center">
+                            <a id="hudmobile-slide1" class="btn btn-hud active-hud" onclick="swapHUD()"></a>
+                            <a id="hudmobile-slide2" class="btn btn-hud" onclick="swapHUD()"></a>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-8">
-                            <h5 class="uppercase xbold">Ride Superhuman</h5>
-                            <p class="subhead">Heads-Up Display data helps you anticipate danger and ride safer.</p>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-                <div class="hudmobile-buttons text-center">
-                    <a id="hudmobile-slide1" class="btn btn-hud active-hud" onclick="swapHUD()"></a>
-                    <a id="hudmobile-slide2" class="btn btn-hud" onclick="swapHUD()"></a>
-                </div>
             </section>
 
 
@@ -1077,10 +1078,14 @@ function prevExplosion() {
 
             });
 
-            $(function() {
+$(function() {
   $("#hudmobile").swipe( {
     //Generic swipe handler for all directions
-    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+    swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
+      console.log("You swiped " + direction );  
+      swapHUD();
+    },
+    swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
       console.log("You swiped " + direction );  
       swapHUD();
     }
@@ -1088,6 +1093,7 @@ function prevExplosion() {
 
   //Set some options later
   // $("#test").swipe( {fingers:2} );
+  console.log("FFFFF")
 });
 
 
