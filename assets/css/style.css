@@ -388,8 +388,8 @@ h6 {
 
 h1,
 .h1 {
-  font-size: 56px;
-  line-height: 64px;
+  font-size: 75px;
+  line-height: 78px;
 }
 
 h1.large {
@@ -415,7 +415,7 @@ h1.large2 {
 h2 {
   font-size: 40px;
   line-height: 48px;
-letter-spacing: 6px;
+letter-spacing: 5px;
 }
 
 h3 {
@@ -432,14 +432,15 @@ h4 {
 
 h5 {
     font-size: 22px;
-    letter-spacing: 2px;
-    line-height: 26px;
+    letter-spacing: 1px;
+    line-height: 32px;
+    font-weight: 600;
 }
 
 h6,
 .h6 {
   font-size: 12px;
-  line-height: 24px;
+  line-height: 14px;
   font-weight: 700;
 }
 
@@ -497,8 +498,8 @@ h1.uppercase {
 }
 
 h2.uppercase {
-  letter-spacing: 10px;
-  margin-right: -10px;
+  /*letter-spacing: 10px;
+  margin-right: -10px;*/
 }
 
 h3.uppercase {
@@ -2237,9 +2238,10 @@ input[type="password"] {
 }
 
 input.transparent {
-  background: none;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.5);
+  /*border: 1px solid rgba(255, 255, 255, 0.5);*/
   color: #fff !important;
+  font-size: 22px;
 }
 
 input[type="text"]:focus,
@@ -2261,11 +2263,9 @@ textarea:focus {
 }
 
 ::-webkit-input-placeholder {
-  text-transform: uppercase;
-  font-weight: bold;
   letter-spacing: 1px;
   color: #777;
-  font-size: 11px;
+  font-size: 22px;
 }
 
 :-moz-placeholder {
@@ -2273,7 +2273,7 @@ textarea:focus {
   font-weight: bold;
   letter-spacing: 1px;
   color: #777;
-  font-size: 11px;
+  font-size: 22px;
 }
 
 ::-moz-placeholder {
@@ -2281,7 +2281,7 @@ textarea:focus {
   font-weight: bold;
   letter-spacing: 1px;
   color: #777;
-  font-size: 11px;
+  font-size: 22px;
 }
 
 :-ms-input-placeholder {
@@ -2289,7 +2289,7 @@ textarea:focus {
   font-weight: bold;
   letter-spacing: 1px;
   color: #777;
-  font-size: 11px;
+  font-size: 22px;
 }
 
 input.transparent::-webkit-input-placeholder {
@@ -3621,14 +3621,9 @@ form iframe.mail-list-form {
 }
 
 .widget .title {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 700;
+  font-family: 'Rajdhani', "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 12px;
+  font-size: 16px;
 }
 
 .widget hr {
@@ -7602,9 +7597,15 @@ input:-webkit-autofill {
 }
 
 #signup {
-    background-color: rgba(255, 255, 255, 0) !important;
-    border: 1px solid rgba(255, 255, 255, .5) !important;
+    background-color: rgba(255, 255, 255, .5) !important;
+    /*border: 1px solid rgba(255, 255, 255, .5) !important;*/
     text-decoration: underline;
+    font-size: 22px;
+    text-transform: none;
+    line-height: 26px;
+    color: white !important;
+    padding-bottom: 12px;
+    font-weight: 400 !important;
 }
 
 #signup:hover {
@@ -7987,7 +7988,6 @@ font-family: 'Rajdhani', "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-s
 }
 
 .ctabutton {
-    border: 1px solid white;
     text-transform: uppercase;
 position: absolute;
 top: 50%;
@@ -7997,7 +7997,7 @@ margin-top:-38px;
 height: 76px;
 width: 400px;
 z-index: 1000;
-background-color: #000000;
+background-color: #D52424;
 color: white;
 text-align: center;
 font-size: 40px;
@@ -9268,7 +9268,12 @@ Main components
     color: black !important;
     border-color: black !important;
     background-color: rgba(255, 255, 255, 1) !important;
-    margin-bottom: 12px ;
+    margin-bottom: 15px ;
+}
+
+.bg-white .btn-middle {
+    background-color: rgba(0, 0, 0, .3) !important;
+    color: white !important;
 }
 
 .btn-middle h5 {
@@ -9657,7 +9662,7 @@ filter: FlipH;
 
 .dot {
     background-color: #eee;
-    border: 1px solid #666;
+    /*border: 1px solid #666;*/
     border-radius: 5px;
     box-shadow: inset 1px 1px 1px #888;
     display: none;
@@ -9667,7 +9672,7 @@ filter: FlipH;
 }
 
 .dot.active {
-    background-color: #41ABE5;
+    background-color: #d52424;
     box-shadow: inset 2px 0px 2px -2px #333;
 }
 
