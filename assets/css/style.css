@@ -54,22 +54,23 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-size: 13px;
   line-height: 24px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Rajdhani', "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #666;
 }
 
 .opensans {
-    font-family: "Open Sans" !important;
+    font-family: 'Rajdhani', "Open Sans" !important;
     letter-spacing: 1px;
     line-height: 34px;
 }
 
 .opensansplain {
-    font-family: "Open Sans" !important;
+    font-family: 'Rajdhani', "Open Sans" !important;
 }
 
 p {
-    font-size: 17px;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 
 body.boxed-layout {
@@ -372,7 +373,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Rajdhani', "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1,
@@ -414,22 +415,25 @@ h1.large2 {
 h2 {
   font-size: 40px;
   line-height: 48px;
+letter-spacing: 6px;
 }
 
 h3 {
   font-size: 32px;
   line-height: 40px;
+
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 25px;
   line-height: 32px;
+  letter-spacing: 3px;
 }
 
 h5 {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: 26px;
 }
 
 h6,
@@ -519,7 +523,7 @@ h6.uppercase,
 }
 
 .bold-h6 {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Rajdhani', "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   line-height: 24px;
   font-weight: 400;
@@ -619,7 +623,7 @@ a:hover {
 }
 
 .label {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Rajdhani', "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   line-height: 24px;
   font-weight: 400;
@@ -659,7 +663,7 @@ a:hover {
 }*/
 
 .number {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Rajdhani', "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @media all and (max-width: 767px) {
@@ -1111,8 +1115,9 @@ transition: background 2s ease;
 /*---------- 6. BUTTONS ----------*/
 
 .btn {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border: 2px solid #D52424;
+  font-family: 'Rajdhani', "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*border: 2px solid #D52424;*/
+  border: none !important;
   padding: 0 26px;
   height: 46px;
   min-width: 150px;
@@ -1259,6 +1264,11 @@ body.btn-rounded .btn {
 
 #store {
     background: #D52424 !important;
+    color: white !important;
+}
+
+#store h5 {
+    color: white !important;
 }
 
 #store:hover {
@@ -1394,7 +1404,7 @@ nav.bg-dark .logo-dark {
 .menu {
   width: 100%;
   height: 55px;
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Rajdhani', "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .menu.inline-block {
   width: auto;
@@ -1582,7 +1592,7 @@ nav.bg-dark .logo-dark {
   visibility: visible;
 }
 .module.widget-handle .title {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Rajdhani', "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 11px;
@@ -2170,7 +2180,7 @@ nav.transparent.fixed.bg-dark .module.widget-handle i {
 input,
 select,
 textarea {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Rajdhani', "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 input[type="text"],
@@ -2195,7 +2205,7 @@ input[type="password"] {
 }
 
 .input-with-label span {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Rajdhani', "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 11px;
   text-transform: uppercase;
   color: #292929;
@@ -2622,7 +2632,7 @@ form iframe.mail-list-form {
 }
 
 .accordion-1 .title span {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Rajdhani', "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   line-height: 24px;
   font-weight: 400;
@@ -2752,7 +2762,7 @@ form iframe.mail-list-form {
 }
 
 .button-tabs .tab-title span {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Rajdhani', "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   line-height: 24px;
   font-weight: 400;
@@ -2856,7 +2866,7 @@ form iframe.mail-list-form {
 }
 
 .text-tabs .tab-title span {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Rajdhani', "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   line-height: 24px;
   font-weight: 400;
@@ -2949,7 +2959,7 @@ form iframe.mail-list-form {
 }
 
 .icon-tabs .tab-title span {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Rajdhani', "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   line-height: 24px;
   font-weight: 400;
@@ -3009,7 +3019,7 @@ form iframe.mail-list-form {
 }
 
 .progress-1 .progress-bar span {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Rajdhani', "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   line-height: 24px;
   font-weight: 400;
@@ -3027,7 +3037,7 @@ form iframe.mail-list-form {
 }
 
 .progress-2 span {
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Rajdhani', "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   line-height: 24px;
   font-weight: 400;
@@ -3863,7 +3873,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: 'Open Sans','Raleway',"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Rajdhani', 'Open Sans','Raleway',"Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #262626;
   background-color: #f5f4f3;
 }
@@ -4233,7 +4243,7 @@ header h1 {
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'Rajdhani', "PT Sans", sans-serif;
   font-size: 1.6rem;
   font-weight: thin;
   text-transform: uppercase;
@@ -5873,7 +5883,7 @@ video {
   float: left;
   margin-right: 32px;
   cursor: pointer;
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Rajdhani', "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   border: 2px solid #d7d7d7;
   padding: 0 26px;
   height: 40px;
@@ -7630,6 +7640,8 @@ input:-webkit-autofill {
 
 .fullheight {
     height: calc(100vh - 55px);
+        min-height: 100vh;
+
 }
 
 .fullheight2 {
@@ -7720,12 +7732,12 @@ input:-webkit-autofill {
   max-width: 500px;
 }
 .product-features .mobile-fov-buttons .mobile-skully-fov-button {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Rajdhani', "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
 }
 
 .product-features .mobile-fov-buttons .mobile-conventional-fov-button {
-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: 'Rajdhani', "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
 }
 
@@ -7990,7 +8002,7 @@ color: white;
 text-align: center;
 font-size: 40px;
 line-height: 76px;
-font-family: "Raleway", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-family: 'Rajdhani', "Raleway", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 letter-spacing: 2px
 
 }
@@ -9251,22 +9263,20 @@ Main components
 }
 
 .btn-middle {
-    width: 15%;
+    padding-top: 10px;
+    width: 100%;
+    color: black !important;
     border-color: black !important;
-    background-color: rgba(255, 255, 255, .3) !important;
+    background-color: rgba(255, 255, 255, 1) !important;
     margin-bottom: 12px ;
 }
 
-@media all and (max-width: 1350px) {
-    .btn-middle {
-        width: 30%;
-    }
+.btn-middle h5 {
+    color: black !important;
 }
 
-@media all and (max-width: 991px) {
-    .btn-middle {
-        width: 50%;
-    }
+.btn-middle:hover h5 {
+    color: white !important;
 }
 
 @media all and (max-width: 730px) {
@@ -9280,11 +9290,6 @@ Main components
     color: #fff !important;
 }
 
-@media all and (max-width: 576px) {
-    .btn-middle {
-        width: 70%;
-    }
-}
 
 /* PRESS SHIT */
 
@@ -9419,6 +9424,14 @@ div[id^='press-'] h4, div[id^='press-'] span{
     color: black;
 }
 
+.btn-middle .ar1font {
+    color: black;
+}
+
+.btn-middle:hover .ar1font {
+    color: white;
+}
+
 .bg-white h1,
 .bg-white h2,
 .bg-white h3,
@@ -9465,8 +9478,8 @@ filter: FlipH;
 }
 
 #explosive-vid {
-    height: calc(100vh - 55px);
-    width: 99%;
+    height: 100vh;
+    /*width: 99%;*/
     margin: 0 auto;
 }
 
@@ -9474,8 +9487,8 @@ filter: FlipH;
     position: absolute;
     top: 0;
     display: block !important;
-    height: calc(100vh - 55px);
-    width: 99%;
+    height: 100vh;
+    /*width: 100%;*/
     margin: 0 auto;
 }
 
@@ -9483,8 +9496,8 @@ filter: FlipH;
     position: absolute;
     top: 0;
     display: none;
-    height: calc(100vh - 55px);
-    width: 99%;
+    height: 100vh;
+    /*width: 100%;*/
     margin: 0 auto;
 }
 
@@ -9568,7 +9581,7 @@ filter: FlipH;
 }
 
 .subheader {
-    color: #898989;
+  color: #bbbdc0 !important;
 }
 
 #beautybuybutton {
@@ -9613,4 +9626,65 @@ filter: FlipH;
     left: 0;
     right: 0;
     bottom: 25px;
+}
+
+#newthing {
+    font-size: 40px !important;
+    letter-spacing: 6px !important;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#newthing2 {
+    font-size: 25px !important;
+    letter-spacing: 3px !important;
+    color: #bbbdc0 !important;
+}
+
+#newthing3 {
+    font-size: 22px !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+#newthing4 {
+    font-size: 18px !important;
+    letter-spacing: 1px;
+    color: #bbbdc0 !important;
+}
+
+.dot {
+    background-color: #eee;
+    border: 1px solid #666;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 1px #888;
+    display: none;
+    height: 10px;
+    width: 10px;
+    z-index: 1000;
+}
+
+.dot.active {
+    background-color: #41ABE5;
+    box-shadow: inset 2px 0px 2px -2px #333;
+}
+
+#explosive ul {
+    position: absolute;
+    right: 20px;
+    top: 40%;
+    z-index: 1000;
+}
+
+#ctaoverlay {
+    display: none;
+    height: 100vh;
+}
+
+#ctaoverlay h2,
+#ctaoverlay h5,
+#ctaoverlay a {
+    color: white;
 }
