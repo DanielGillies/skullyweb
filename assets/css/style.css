@@ -7580,6 +7580,7 @@ header h1 {
 
 #hovertext {
     text-align: center;
+    border: 1px white solid;
 }
 
 input:-webkit-autofill {
@@ -7597,15 +7598,14 @@ input:-webkit-autofill {
 }
 
 #signup {
-    background-color: rgba(255, 255, 255, .5) !important;
+    background-color: #d52424!important;
     /*border: 1px solid rgba(255, 255, 255, .5) !important;*/
-    text-decoration: underline;
     font-size: 22px;
     text-transform: none;
     line-height: 26px;
     color: white !important;
     padding-bottom: 12px;
-    font-weight: 400 !important;
+    font-weight: 700 !important;
 }
 
 #signup:hover {
@@ -7640,8 +7640,8 @@ input:-webkit-autofill {
 }
 
 .fullheight {
-    height: calc(100vh - 55px);
-        min-height: 100vh;
+    height: calc(100vh - 30px);
+        /*min-height: 100vh;*/
 
 }
 
@@ -7812,16 +7812,19 @@ font-family: 'Rajdhani', "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-s
   font-weight: 600;
 }
    .product-features input#mobile-skully-fov:checked ~ .mobile-fov-buttons .mobile-skully-fov-button {
-    border: 2px solid #D52424;
-    color: #D52424;
+    /*border: 2px solid #D52424;
+    color: #D52424;*/
+    background: black;
     font-weight: 800;
+    color: white;
   }
   .product-features input#mobile-skully-fov:checked ~ .fov-wrapper .skully-fov {
     opacity: 1;
   }
   .product-features input#mobile-conventional-fov:checked ~ .mobile-fov-buttons .mobile-conventional-fov-button {
     border: 2px solid black;
-    color: black;
+    color: white;
+    background: black;
     font-weight: 800;
   }
 @media all and (min-width: 415px) and (max-width: 1000px) {
@@ -9191,7 +9194,8 @@ Main components
     font-family: 'Michroma' !important;
     font-weight: bold;
     font-size: .80em;
-
+/*    background-color: black;
+    color: white !important;*/
 }
 
 .bg-secondary .ar1font {
@@ -9733,6 +9737,10 @@ filter: FlipH;
     color: white;
 }
 
+#explosivemobile {
+    display: none;
+}
+
 @media all and (max-width: 992px) {
     #mobile-indexheaderbuttons {
         display: block;
@@ -9750,4 +9758,29 @@ filter: FlipH;
     #desktop-experiencebutton {
         display: block;
     }
+}
+
+#explosive-previous-holder {
+    z-index: 1000;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    text-align: center;
+}
+
+#explosive-previous {
+    width: 30%;
+    display: none;
+}
+
+#explosive-next-holder {
+    z-index: 1000;
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+    text-align: center;
+}
+
+#explosive-next {
+    width: 30%;
 }
