@@ -9289,11 +9289,11 @@ Main components
 #desktop-experiencebutton .btn-middle{
         margin-bottom: 0;
         width: 30%;
-        background-color: black !important;
-        color: white !important;
+/*        background-color: black !important;
+        color: white !important;*/
 }
 
-#desktop-experiencebutton .btn-middle:hover {
+/*#desktop-experiencebutton .btn-middle:hover {
         background-color: white !important;
         color: black !important;
 }
@@ -9312,7 +9312,7 @@ Main components
 
 #desktop-experiencebutton .btn-middle .ar1font{
         color: white;
-}
+}*/
 
 .bg-white .btn-middle {
     background-color: rgba(0, 0, 0, .3) !important;
