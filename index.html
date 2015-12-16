@@ -10,6 +10,7 @@
     <link href="static/css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link href="static/css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
     <link href="static/css/budicon.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="static/css/custom-icons.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Michroma:400,400italic,700normal,700italic|PT+Serif:400,400italic,700normal,700italic">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700' rel='stylesheet' type='text/css'>
@@ -229,7 +230,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <img alt="Background Image" class="background-image" src="static/img/indexmobile.jpg">
                     <div class="fs-vid-background">
                         <video id="hero" autoplay loop muted preload="auto">
-                            <source id="hudwebm" src="http://dg6vcgn2vehm4.cloudfront.net/videos/indexheader.webm" type="video/webm">
+                            <source id="hudwebm" src="http://dg6vcgn2vehm4.cloudfront.net/exp_img/indexheader.webm" type="video/webm">
                             <!-- <source id="hudmp4" src="http://dg6vcgn2vehm4.cloudfront.net/videos/HUD2.mp4" type="video/mp4">
                             <source id="hudogv" src="http://dg6vcgn2vehm4.cloudfront.net/videos/HUD2.ogv" type="video/ogv"> -->
                         </video>
@@ -238,39 +239,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 <div class="centered">
                         <div class="row mb120 mt-xs-80 mb-xs-32">
                             <div class="text-center">
-                                <h1 class="xbold uppercase">SUPERHUMAN</h1>
-                                <h2 style="letter-spacing: 14px">BY<span style="letter-spacing: 22px"> </span>DESIGN</h2>
+                                <h1 id="superhuman" class="uppercase">SUPERHUMAN</h1>
+                                <h2 id="bydesign" style="letter-spacing: 14px">BY<span style="letter-spacing: 22px"> </span>DESIGN</h2>
                             </div>
                         </div>
                         <div id="mobile-indexheaderbuttons" class="container">
                             <div class="row">
                                 <div class="col-md-6 col-md-offset-2 col-xs-12 col-sm-12">
                                     <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
-                                    <span class="wistia_embed wistia_async_1nwzz5fh0t popover=true popoverContent=link" style="display:inline; margin-right:30px;"><a class="btn btn-middle" id="wistiavid" href="#"><h5>&#9658; Experience the <span class="ar1font">AR-<span class="skullyred">1</span></span></h5></a></span></script>
+                                    <span class="wistia_embed wistia_async_1nwzz5fh0t popover=true popoverContent=link" style="display:inline; margin-right:30px;"><a class="btn btn-middle" id="wistiavid" href="#"><h5>&#9658; Experience the <span class="ar1font">SKULLY AR-<span class="skullyred">1</span></span></h5></a></span></script>
                                 </div>
                                 <div class="col-md-2 col-xs-12 col-sm-12">
-                                    <a id="store" class="btn btn-middle" href="/store"><h5>Buy Now</h5></a>
+                                    <a id="store" class="btn btn-middle" href="/store"><h5>Shop Now</h5></a>
                                 </div>
                         </div>
                     </div>
                 </div>
                 <div id="desktop-experiencebutton">
                     <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
-                    <span class="wistia_embed wistia_async_1nwzz5fh0t popover=true popoverContent=link" style="display:inline; margin-right:30px;"><a class="btn btn-middle" id="wistiavid" href="#"><h5>&#9658; Experience the <span class="ar1font">AR-<span class="skullyred">1</span></span></h5></a></span>
+                    <span class="wistia_embed wistia_async_1nwzz5fh0t popover=true popoverContent=link" style="display:inline; margin-right:30px;"><a class="btn btn-middle" id="wistiavid" href="#"><h5><i class="icon-play2"></i> Experience the <span class="ar1font">SKULLY AR-<span class="skullyred">1</span></span></h5></a></span>
                 </div>
                 <div class="indexvidbar">
                     <div class="row halved" style="left: 6%">
                         <div class="col-sm-3 col-md-3 col-xs-3">
-                            <a data-target="#modal1" data-toggle="modal" style="cursor:pointer;"><img alt="pic" class="image-xxs" src="static/img/press1.png"></a>
+                            <a data-target="#modal1" data-toggle="modal" style="cursor:pointer;"><img alt="pic" id="press-cnn" onmouseover="hover(this);" onmouseout="unhover(this);" class="image-xxs" src="static/img/cnn-black.png"></a>
                         </div>
                         <div class="col-sm-3 col-md-3 col-xs-3">
-                            <a data-target="#modal2" data-toggle="modal" style="cursor:pointer;" ><img alt="pic" class="image-xxs" src="static/img/press5.png"></a>
-                        </div>
-                        <div class="col-sm-2 col-md-3 col-xs-2">
-                            <a data-target="#modal3" data-toggle="modal" style="cursor:pointer;"><img alt="pic" class="image-xxs" src="static/img/press3.png"></a>
+                            <a data-target="#modal2" data-toggle="modal" style="cursor:pointer;" ><img alt="pic" id="press-popsci" onmouseover="hover(this);" onmouseout="unhover(this);" class="image-xxs" src="static/img/popsci-black.png"></a>
                         </div>
                         <div class="col-sm-3 col-md-3 col-xs-3">
-                            <a data-target="#modal4" data-toggle="modal" style="cursor:pointer;"><img alt="pic" class="image-xxs" src="static/img/press4.png"></a>
+                            <a data-target="#modal3" data-toggle="modal" style="cursor:pointer;"><img alt="pic" id="press-reuters" onmouseover="hover(this);" onmouseout="unhover(this);" class="image-xxs" src="static/img/reuters-black.png"></a>
+                        </div>
+                        <div class="col-sm-3 col-md-3 col-xs-3">
+                            <a data-target="#modal4" data-toggle="modal" style="cursor:pointer;"><img alt="pic" id="press-wired" onmouseover="hover(this);" onmouseout="unhover(this);" class="image-xxs" src="static/img/wired-black.png"></a>
                         </div>
                     </div>
                 </div>
@@ -284,7 +285,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <h4 class="modal-title">The CNN Top 10 Inventions</h4>
                             </div>
                             <div class="modal-body">
-                                <p>“Augmented reality is getting a lot of talk in the gaming world, with products like Sony's and the Oculus Rift promising to make play time more fun. But what if it could make the roads safer? That\'s what the makers of Skully promise with what they're..."</p>
+                                <p>“Augmented reality is getting a lot of talk in the gaming world, with products like Sony's and the Oculus Rift promising to make play time more fun. But what if it could make the roads safer? That's what the makers of Skully promise with what they're..."</p>
                                 <div class="text-center">
                                     <a class="btn btn-mega black" target="_blank" href="http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/">READ MORE</a>
                                 </div>
@@ -399,7 +400,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </div>
                 </section>
 
-            <section class="fullheight image-bg bg-white pt120 pt-xs-32">
+            <section id="beauty" class="fullheight image-bg bg-white pt120 pt-xs-32">
                 <div class="background-image-holder xxbackground">
                     <img src="/static/img/beauty_background.jpeg">
                 </div>
@@ -411,13 +412,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </div>
                     <div class="row">
                         <div class="col-md-5">
-                             <h5>
-                                    The <span class="ar1font"> SKULLY AR-<span class="skullyred">1</span></span> is the first helmet to feature a built-in 180&deg; Blindspot Camera and Heads-Up Display for unparalleled situational awareness and safety. </h5>
-                                    <h5>Focus on what matters most: the road ahead.
-                                </h5>
-                                <h5>
+                             <p>
+                                    The <span class="ar1font"> SKULLY AR-<span class="skullyred">1</span></span> is the first helmet to feature a built-in 180&deg; Blindspot Camera and Heads-Up Display for unparalleled situational awareness and safety. </p>
+                                    <p>Focus on what matters most: the road ahead.
+                                </p>
+                                <p class="bold">
                                 Total awareness is total freedom.
-                                </h5>
+                                </p>
                                 </div>
                                 </div>
                 </div>
@@ -439,7 +440,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </div>
                     <div class="row">
                         <div class="col-xs-8">
-                            <h5 class="uppercase xbold">Heads-Up Display</h5>
+                            <h5 class="uppercase xbold">Heads-Up Display<i class="icon-hud-w2"></i></h5>
                             <p class="subheader">Always in focus and floating right in front of you.</p>
                         <!-- <hr> -->
                         </div>
@@ -498,14 +499,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             </div>
                             <div class="hudbody row">
                                 <div class="col-md-4">
-                                   <h5 class="uppercase xbold">Heads-Up Display</h5>
+                                   <h5 class="uppercase xbold"><i class="icon-HUD_3 icon-sm2"></i> Heads-Up Display</h5>
                             <p class="subheader">Always in focus and floating <br>right in front of you.</p>
                                     <hr>
                                 </div>
                             </div>
                             <div class="hudbody row">
                                 <div class="col-md-4">
-                                    <h5 class="uppercase xbold">180° Blindspot Camera</h5>
+                                    <h5 class="uppercase xbold"><i class="icon-blindspot_w2 icon-sm2"></i> 180° Blindspot Camera</h5>
                             <p class="subheader">An ultra-wide rear camera sees more<br> than conventional mirrors.</p>
                                     <hr>
                                 </div>
@@ -524,7 +525,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             </div>
                             <div class="row">
                                 <div class="col-md-4">
-                                    <h5 class="xbold uppercase">Speed</h5>
+                                    <h5 class="xbold uppercase"><i class="icon-mph_w2 icon-sm2"></i> Speed</h5>
                                     <p class="subheader">Instantly glanceable MPH
                in <br>your Heads-Up Display. </p>
                                     <hr>
@@ -532,7 +533,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                             </div>
                             <div class="row">
                                 <div class="col-md-4">
-                                    <h5 class="bold uppercase">Turn-by-Turn GPS</h5>
+                                    <h5 class="bold uppercase"><i class="icon-checktech_w2 icon-sm2"></i> Turn-by-Turn GPS</h5>
                                     <p class="subheader">Audio and visual navigation
                <br>when you need it.</p>
                                     <hr>
@@ -611,7 +612,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 </p>
                             </div>
                         </div>
-                        <!-- <div class="col-md-offset-1 col-md-7 hud-animation">
+                        <div class="col-md-offset-1 col-md-7 hud-animation">
                             <div class="hud-background">
                                 <img id="hud-bg" class="hud" src="static/img/HUD01_BG.png"></img>
                                 <img id="hud-nose" class="hud" src="static/img/HUD01_nose.png"></img>
@@ -620,7 +621,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <img id="hud-rear" class="hud" src="static/img/HUD01_rearview.png"></img>
                                 <img id="hud-mph" class="hud" src="static/img/HUD01_mph.png"></img>
                             </div>          
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </section>
@@ -920,6 +921,9 @@ if (window.mobilecheck()) {
     $("section").removeClass("fullheight2");
     $("section").addClass("mobilefullheight");
     $("#beauty").addClass("overlay4");
+    $("#beauty").removeClass("bg-white");
+    $("#beauty").addClass("bg-black");
+    $("#vidholder").addClass("overlay");
 }
 
             var hudSwap = 1;
@@ -940,7 +944,7 @@ if (!window.mobilecheck()) {
             var signupTop = $('#signup').offset().top;
             var signupBot = signupTop + $('#signup').height();
             var hudTop = $('#hudvid').offset().top;
-            // var povTop = $('#pov').offset().top;
+            var povTop = $('#pov').offset().top;
             var nextSectionTop = $('#explosive').next('section').offset().top;
                var hudPlaying = 0;
                var povComplete = 0;
@@ -984,19 +988,19 @@ $(window).scroll(function() {                  // assign scroll event listener
         });
         $("#hudvid").on("ended", swapHUD);
     }
-    // if (currentScroll >= povTop-55 && currentScroll <= explosiveTop-55 && povComplete===0) {
-    //     console.log("ffff")
-    //     povComplete = 1;
-    //     TweenLite.set(".hud-animation", {perspective: 500});
-    //     TweenMax.to("#hud-bg", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .7, ease: Power1.easeInOut});
-    //     TweenMax.to("#hud-nose", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .9, ease: Power1.easeInOut});
-    //     TweenMax.to("#hud-rear", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut});
-    //     TweenMax.to("#hud-mph", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut});
+    if (currentScroll >= povTop-55 && currentScroll <= explosiveTop-55 && povComplete===0) {
+        console.log("ffff")
+        povComplete = 1;
+        TweenLite.set(".hud-animation", {perspective: 500});
+        TweenMax.to("#hud-bg", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .7, ease: Power1.easeInOut});
+        TweenMax.to("#hud-nose", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .9, ease: Power1.easeInOut});
+        TweenMax.to("#hud-rear", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut});
+        TweenMax.to("#hud-mph", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut});
 
-    //     TweenMax.to("#hud-nose", 1, {left: "+=1%", delay: 1, ease: Power2.easeInOut});
-    //     TweenMax.to("#hud-rear", 1.5, {scale: 2, top: "-=35%", left:"-=55%", ease: Power2.easeInOut, delay: .5});
-    //     TweenMax.to("#hud-mph", 1.5, {scale: 2.5, top: "-=55%", left: "-=80%", ease: Power2.easeInOut, delay: .5});
-    // }
+        TweenMax.to("#hud-nose", 1, {left: "+=1%", delay: 1, ease: Power2.easeInOut});
+        TweenMax.to("#hud-rear", 1.5, {scale: 2, top: "-=35%", left:"-=55%", ease: Power2.easeInOut, delay: .5});
+        TweenMax.to("#hud-mph", 1.5, {scale: 2.5, top: "-=55%", left: "-=80%", ease: Power2.easeInOut, delay: .5});
+    }
 });
 }
 
@@ -1138,6 +1142,14 @@ $(function() {
   // $("#test").swipe( {fingers:2} );
   console.log("FFFFF")
 });
+
+function hover(element) {
+    element.setAttribute("src", element.getAttribute("src").replace("-black", "-red"));
+}
+
+function unhover(element) {
+    element.setAttribute("src", element.getAttribute("src").replace("-red", "-black"));
+}
 
 
     </script>

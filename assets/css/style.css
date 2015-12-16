@@ -48,6 +48,10 @@
 }
 
 /*---------- 1. GLOBAL STYLES ----------*/
+::-webkit-scrollbar { 
+    display: none; 
+}
+
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -1189,6 +1193,7 @@ transition: background 2s ease;
 .btn-filled {
   background: #D52424;
   color: #fff;
+  padding-top: 3px;
 }
 
 .btn-full {
@@ -1414,7 +1419,7 @@ nav.bg-dark .logo-dark {
   font-size: 13px !important;
   text-transform: uppercase;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   color: #292929;
   opacity: 0.5;
   transition: all 0.3s ease;
@@ -1423,6 +1428,12 @@ nav.bg-dark .logo-dark {
     width: 100%;
 
 }
+
+.menu li .ar1font {
+    font-size: 10px !important;
+    padding-bottom: 2px;
+}
+
 .menu li a:hover {
   opacity: 1 !important;
 }
@@ -5415,7 +5426,7 @@ video {
 
 @media all and (max-width: 1570px) {
     .fs-vid-background video {
-        bottom: -30%;
+        bottom: -28%;
     }
 }
 
@@ -9192,8 +9203,9 @@ Main components
 
 .ar1font {
     font-family: 'Michroma' !important;
-    font-weight: bold;
+    font-weight: 800;
     font-size: .80em;
+    padding: 0 10px;
 /*    background-color: black;
     color: white !important;*/
 }
@@ -9288,9 +9300,17 @@ Main components
 
 #desktop-experiencebutton .btn-middle{
         margin-bottom: 0;
-        width: 30%;
+        width: 50%;
 /*        background-color: black !important;
         color: white !important;*/
+}
+
+#desktop-experiencebutton .glyphicon {
+    color: black;
+}
+
+#desktop-experiencebutton .btn-middle:hover .glyphicon {
+    color: white;
 }
 
 /*#desktop-experiencebutton .btn-middle:hover {
@@ -9783,4 +9803,33 @@ filter: FlipH;
 
 #explosive-next {
     width: 30%;
+}
+
+#superhuman {
+        font-size: 8em;
+        font-weight: 500;
+    }
+
+@media all and (max-width: 992px) {
+    #superhuman {
+        font-size: 3em;
+        font-weight: 500;
+    }
+}
+
+#bydesign {
+    font-weight: 500;
+}
+
+#desktop-experiencebutton h5 {
+    letter-spacing: 3px;
+}
+
+#wistiavid h5 {
+    font-weight: 400;
+}
+
+.glyphicon {
+    /*padding-top: 3px;*/
+    top: 4px;
 }
