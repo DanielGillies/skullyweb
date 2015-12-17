@@ -12,7 +12,7 @@
 [class*='icon-']:before{
     position: relative;
     top: 8px;
-    margin-right: 10px;
+    margin-right: 3px;
     display: inline-block;
    font-family: 'Glyphter';
    font-style: normal;
@@ -21,6 +21,7 @@
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale
 }
+
 .icon-HUD_3:before{content:'\0041';}
 .icon-checktech_w2:before{content:'\0042';}
 .icon-blindspot_w2:before{content:'\0043';}

@@ -48,9 +48,6 @@
 }
 
 /*---------- 1. GLOBAL STYLES ----------*/
-::-webkit-scrollbar { 
-    display: none; 
-}
 
 
 body {
@@ -467,13 +464,14 @@ h6,
     line-height: 32px;
   }
   h4 {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 26px;
   }
   h5 {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 26px;
     font-weight: 400;
+    letter-spacing: 0px;
   }
   h6,
   .h6 {
@@ -582,7 +580,8 @@ p.lead {
     line-height: 24px;
   }
   p {
-    font-size: 12px;
+    font-size: 26px;
+    line-height: 33px;
   }
 }
 
@@ -1007,7 +1006,7 @@ transition: background 2s ease;
     background-position: 70% 50% !important;
 }
 
-.xxbackground {
+#beauty-background {
     background-position: 100% 50% !important;
 }
 
@@ -1277,6 +1276,20 @@ body.btn-rounded .btn {
     color: white !important;
 }
 
+@media all and (max-width: 576px) {
+    #store h5 {
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+
+    #signup {
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+}
+
 #store:hover {
     background: #FF0000 !important;
 }
@@ -1429,7 +1442,7 @@ nav.bg-dark .logo-dark {
 
 }
 
-.menu li .ar1font {
+.menu li .font {
     font-size: 10px !important;
     padding-bottom: 2px;
 }
@@ -7751,6 +7764,17 @@ input:-webkit-autofill {
   margin: 20px auto 0 auto;
   max-width: 500px;
 }
+
+@media all and (max-width: 767px) {
+    .product-features .mobile-fov-buttons {
+      width: 90%;
+      margin: 10px auto 0 auto;
+    }
+    #conventionalbutton-180 {
+        font-weight: 600 !important;
+    }
+}
+
 .product-features .mobile-fov-buttons .mobile-skully-fov-button {
   font-family: 'Rajdhani', "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -9205,7 +9229,7 @@ Main components
     font-family: 'Michroma' !important;
     font-weight: 800;
     font-size: .80em;
-    padding: 0 10px;
+    padding: 0 3px;
 /*    background-color: black;
     color: white !important;*/
 }
@@ -9347,7 +9371,7 @@ Main components
     color: white !important;
 }
 
-@media all and (max-width: 730px) {
+@media all and (max-width: 767px) {
     .respbr {
         display: block !important;
     }
@@ -9662,6 +9686,7 @@ filter: FlipH;
 #hudmobile {
     display: none;
     position: relative;
+    min-height: 600px;
 }
 
 #povmobile {
@@ -9812,13 +9837,22 @@ filter: FlipH;
 
 @media all and (max-width: 992px) {
     #superhuman {
-        font-size: 3em;
+        font-size: 13vw;
         font-weight: 500;
+        /*letter-spacing: 5px;*/
+    }
+
+    #bydesign {
+        font-size: 10vw;
+        font-weight: 500;
+        letter-spacing: 8px;
     }
 }
 
+
 #bydesign {
     font-weight: 500;
+    letter-spacing: 14px;
 }
 
 #desktop-experiencebutton h5 {
@@ -9833,3 +9867,19 @@ filter: FlipH;
     /*padding-top: 3px;*/
     top: 4px;
 }
+
+@media all and (max-width: 767px) {
+    #sub180 {
+        font-size: 26px;
+        line-height: 33px;
+    }
+
+    #sub180 .ar1font {
+        font-size: 18px;
+    }
+}
+
+#ar1button-180 {
+    font-size: 11px;
+}
+
