@@ -157,18 +157,19 @@
 
             </section>
 
-            <section id="beautypurchase" class="image-bg fullheight overlay3 pt-xs-24 pb-xs-12 pt120">
+            <section id="beautypurchase" class="image-bg fullheight overlay3 pt-xs-24 pb-xs-8 pt120">
                     <div id="beautypurchaseimageholder" class="background-image-holder">
                         <img id="beautypurchaseimage" alt="image" class="background-image" src="static/img/buynowbeauty.jpg">
                     </div>
-                    <div class="container pt-xs-160">
+                    <div class="container">
                         <div class="row mb-xs-24 mb160">
                             <div class="col-md-12 text-center">
-                                <h2 class="uppercase bold">Available now from our <br class="respbr">online store. <br><br class="respbr"><br class="respbr">Ships worldwide.</h2>
+                                <h2 class="uppercase bold">Available now from our <br class="respbr">online store.</h2>
                             </div>
                         </div>
-                        <div class="row pt-xs-160 mb-xs-0 mb160">
+                        <div class="row pt-xs-280 mb-xs-0 mb160">
                             <div class="col-md-offset-5 col-md-2 text-center">
+                                <h2 class="uppercase bold">Ships Worldwide</h2>
                                 <a id="store" href="store" class="btn btn-middle"><h5>SHOP NOW</h5></a>
                             </div>
                         </div>
@@ -508,9 +509,9 @@
 
             <section id="explosivemobile">
                 <video controls>
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/explodedfull.webm" type="video/webm">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/explodedfull.mp4" type="video/mp4">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/explodedfull.ogv" type="video/ogv">
+                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosivemobile.webm" type="video/webm">
+                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosivemobile.mp4" type="video/mp4">
+                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosivemobile.ogv" type="video/ogv">
                 </video>
             </section>
 
@@ -610,8 +611,8 @@ if (window.mobilecheck()) {
     $("#hudmobile").toggle();
     $("#pov").toggle();
     $("#povmobile").toggle();
-    // $("#explosive").toggle();
-    // $("#explosivemobile").toggle();
+    $("#explosive").toggle();
+    $("#explosivemobile").toggle();
     $("section").removeClass("fullheight");
     $("section").removeClass("fullheight2");
     $("section").addClass("mobilefullheight");
@@ -619,6 +620,7 @@ if (window.mobilecheck()) {
     $("#beauty").removeClass("bg-white");
     $("#beauty").addClass("bg-black");
     $("#vidholder").addClass("overlay");
+    $("#vidholder").addClass("mh600px");
     $("#beautypurchaseimage").attr("src", "static/img/beauty-cta-mobile.jpg");
     $("#beautypurchaseimageholder").css("background", "url('static/img/beauty-cta-mobile.jpg')");
     $("#appbackground").attr("src", "static/img/kyle1bwmobile.jpg");

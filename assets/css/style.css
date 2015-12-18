@@ -7081,6 +7081,9 @@ footer.bg-dark a {
   .pt-xs-240 {
     padding-top: 240px !important;
   }
+  .pt-xs-280 {
+    padding-top: 280px !important;
+  }
   .pb-xs-0 {
     padding-bottom: 0;
   }
@@ -9958,4 +9961,8 @@ filter: FlipH;
 
 #affirmtext {
     font-size: 14px;
+}
+
+.mh600px {
+    min-height: 600px;
 }
