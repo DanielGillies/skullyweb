@@ -9870,6 +9870,14 @@ filter: FlipH;
     #sub180 .ar1font {
         font-size: 18px;
     }
+
+    #androidlogo, #applelogo {
+        display: inline;
+    }
+}
+
+#androidlogo, #applelogo {
+        display: none;
 }
 
 #ar1button-180 {
@@ -9882,13 +9890,18 @@ filter: FlipH;
   vertical-align: middle;
   cursor: pointer;
   backface-visibility: hidden;
+  zoom: .7;
+    -moz-transform: scale(.7);
+    -o-transform: scale(.7);
+    -webkit-transform: scale(.7);
+    transform: scale(.7); /* Standard Property */
 }
 .arrow:before,
 .arrow:after {
   content: "";
   display: block;
   position: absolute;
-  border-radius: 100px;
+  border-radius: 200px;
   background: #000;
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
   transition: all 100ms ease-in-out;
@@ -9930,8 +9943,8 @@ filter: FlipH;
 .arrow.bottom:before,
 .arrow.top:after,
 .arrow.bottom:after {
-  height: 45px;
-  width: 2px;
+  height: 50px;
+  width: 5px;
   top: 0;
   left: 50%;
 }
@@ -9960,9 +9973,32 @@ filter: FlipH;
 }
 
 #affirmtext {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .mh600px {
     min-height: 600px;
+}
+
+#footerlist {
+    padding-top: 7px;
+}
+
+#storemobile {
+    display: none;
+}
+
+#storemobile p {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
+}
+
+@media all and (max-width: 993px) {
+    #storemobile {
+        display: block;
+    }
+    #storedesk {
+        display: none;
+    }
 }
