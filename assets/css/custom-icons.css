@@ -28,5 +28,5 @@
 .icon-mph_w2:before{content:'\0044';}
 .icon-play1:before{content:'\0045';}
 .icon-play2:before{content:'\0046';
-top: 4px;}
+top: 4px; height: 200%;}
 .icon-play3:before{content:'\0047';}

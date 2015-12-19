@@ -7748,6 +7748,18 @@ input:-webkit-autofill {
     text-align: center;
 }
 
+#desktop-experiencebutton .btn-middle {
+    background-color: black !important;
+}
+
+#desktop-experiencebutton h5 {
+    color: white !important;
+}
+
+#desktop-experiencebutton h5 .ar1font {
+    color: white;
+}
+
 .indexbar {
     height: 75px;
     padding: 0;
@@ -10025,10 +10037,10 @@ filter: FlipH;
 }
 
 @media all and (max-width: 993px) {
+    #storedesktop {
+        display: none;
+    }
     #storemobile {
         display: block;
-    }
-    #storedesk {
-        display: none;
     }
 }
