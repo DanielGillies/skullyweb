@@ -1,7 +1,5 @@
 FROM nginx
 
-COPY .htpasswd /etc/nginx/.htpasswd
-
 # delete default nginx config
 RUN rm /etc/nginx/nginx.conf
 
