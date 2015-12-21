@@ -1165,20 +1165,21 @@ function goToExplosion(i) {
 
             });
 
-// $(function() {
-//   $("#hudmobile").swipe( {
-//     //Generic swipe handler for all directions
-//     swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
-//       console.log("You swiped " + direction );  
-//       swapHUD();
-//     },
-//     swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
-//       console.log("You swiped " + direction );  
-//       swapHUD();
-//     },
-//     allowPageScroll: 'vertical'
-//   });
-// });
+$(function() {
+  $("#hudmobile").swipe( {
+    //Generic swipe handler for all directions
+    swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
+      console.log("You swiped " + direction );  
+      swapHUD();
+    },
+    swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
+      console.log("You swiped " + direction );  
+      swapHUD();
+    },
+    allowPageScroll: 'vertical',
+    preventDefaultEvents: false
+  });
+});
 
 function hover(element) {
     element.setAttribute("src", element.getAttribute("src").replace("-black", "-red"));
