@@ -1,3 +1,5 @@
+require('./lazyload')
+
 window._wq = window._wq || [];
 _wq.push({
   "1nw": function(video) {
@@ -289,6 +291,7 @@ function goToExplosion(i) {
   nextExplosion();
   // }
 }
+
 // HOVER SOUND
 var audio = $("#hoversound")[0];
 $("#hovertext").mouseenter(function() {

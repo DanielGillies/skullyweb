@@ -63,22 +63,22 @@
         <div class="row halved" style="left: 6%">
           <div class="col-sm-3 col-md-3 col-xs-3">
             <a data-target="#modal1" data-toggle="modal" style="cursor:pointer;">
-              <img alt="pic" id="press-cnn" onmouseover="hover(this);" onmouseout="unhover(this);" class="image-xxs" src="static/img/cnn-black.png">
+              <img alt="pic" id="press-cnn" onmouseover="hover(this);" onmouseout="unhover(this);" class="image-xxs" class="lazy" data-src="static/img/cnn-black.png">
             </a>
           </div>
           <div class="col-sm-3 col-md-3 col-xs-3">
             <a data-target="#modal2" data-toggle="modal" style="cursor:pointer;">
-              <img alt="pic" id="press-popsci" onmouseover="hover(this);" onmouseout="unhover(this);" class="image-xxs" src="static/img/popsci-black.png">
+              <img alt="pic" id="press-popsci" onmouseover="hover(this);" onmouseout="unhover(this);" class="image-xxs" class="lazy" data-src="static/img/popsci-black.png">
             </a>
           </div>
           <div class="col-sm-3 col-md-3 col-xs-3">
             <a data-target="#modal3" data-toggle="modal" style="cursor:pointer;">
-              <img alt="pic" id="press-reuters" onmouseover="hover(this);" onmouseout="unhover(this);" class="image-xxs" src="static/img/reuters-black.png">
+              <img alt="pic" id="press-reuters" onmouseover="hover(this);" onmouseout="unhover(this);" class="image-xxs" class="lazy" data-src="static/img/reuters-black.png">
             </a>
           </div>
           <div class="col-sm-3 col-md-3 col-xs-3">
             <a data-target="#modal4" data-toggle="modal" style="cursor:pointer;">
-              <img alt="pic" id="press-wired" onmouseover="hover(this);" onmouseout="unhover(this);" class="image-xxs" src="static/img/wired-black.png">
+              <img alt="pic" id="press-wired" onmouseover="hover(this);" onmouseout="unhover(this);" class="image-xxs" class="lazy" data-src="static/img/wired-black.png">
             </a>
           </div>
         </div>
@@ -232,7 +232,7 @@
 
     <section id="beautypurchase" class="image-bg fullheight overlay3 pt-xs-24 pb-xs-8 pt120">
       <div id="beautypurchaseimageholder" class="background-image-holder">
-        <img id="beautypurchaseimage" alt="image" class="background-image" src="static/img/buynowbeauty.jpg">
+        <img id="beautypurchaseimage" alt="image" class="background-image" class="lazy" data-src="static/img/buynowbeauty.jpg">
       </div>
       <div class="container">
         <div class="row mb-xs-24">
@@ -258,7 +258,7 @@
 
     <section id="beauty" class="fullheight image-bg bg-white pt120 pt-xs-32">
       <div class="background-image-holder ">
-        <img src="/static/img/beauty_background.jpeg">
+        <img class="lazy" data-src="/static/img/beauty_background.jpeg">
       </div>
       <div class="container">
         <div class="row">
@@ -285,10 +285,10 @@
 
     <section id="hudmobile" class="pt32 image-bg overlay3 bg-black">
       <div id="hudmobile-background" class="background-image-holder">
-        <img id="hudmobile-image" src="/static/img/HUD1.png">
+        <img id="hudmobile-image" class="lazy" data-src="/static/img/HUD1.png">
       </div>
       <div id="hudmobile-background2" class="background-image-holder">
-        <img id="hudmobile-image" src="/static/img/HUD2.png">
+        <img id="hudmobile-image" class="lazy" data-src="/static/img/HUD2.png">
       </div>
 
       <div id="hudmobiletext" class="container">
@@ -444,8 +444,8 @@
               </div>
               <div class="fov-wrapper">
                 <div class="fov-infographics">
-                  <img class="traditional-fov" src="static/img/fov_conventional.png">
-                  <img class="skully-fov transparent" src="static/img/fov.png">
+                  <img class="traditional-fov lazy" data-src="static/img/fov_conventional.png">
+                  <img class="skully-fov transparent lazy" data-src="static/img/fov.png">
                 </div>
                 <!-- <div class="fov-info circle-info">
                                         <img class="circle" src="static/img/180_circle-07.png">
@@ -491,12 +491,12 @@
           </div>
           <div class="col-md-offset-1 col-md-7 hud-animation">
             <div class="hud-background">
-              <img id="hud-bg" class="hud" src="static/img/HUD01_BG.png"></img>
-              <img id="hud-nose" class="hud" src="static/img/HUD01_nose.png"></img>
+              <img id="hud-bg" class="hud lazy" data-src="static/img/HUD01_BG.png"></img>
+              <img id="hud-nose" class="hud lazy" data-src="static/img/HUD01_nose.png"></img>
             </div>
             <div class="hud-rearsection">
-              <img id="hud-rear" class="hud" src="static/img/HUD01_rearview.png"></img>
-              <img id="hud-mph" class="hud" src="static/img/HUD01_mph.png"></img>
+              <img id="hud-rear" class="hud lazy" data-src="static/img/HUD01_rearview.png"></img>
+              <img id="hud-mph" class="hud lazy" data-src="static/img/HUD01_mph.png"></img>
             </div>
           </div>
         </div>
@@ -505,7 +505,7 @@
 
     <section id="povmobile" class="pt64 pt-xs-16 image-bg overlay bg-dark">
       <div class="background-image-holder">
-        <img src="static/img/povmobilebg.jpg">
+        <img class="lazy" data-src="static/img/povmobilebg.jpg">
       </div>
       <div class="container">
         <h2 class="mt80 mb48 mb-xs-32 bold uppercase">Complete Situational Awareness</h2>
@@ -625,7 +625,7 @@
 
     <section id="mail" class="fullheight image-bg overlay">
       <div class="background-image-holder">
-        <img alt="image" class="background-image" src="static/img/cinemagraph-website.gif">
+        <img alt="image" class="background-image lazy" data-src="static/img/cinemagraph-website.gif">
         <!-- <img alt="image" class="background-image" src="static/img/signup.jpeg"> -->
       </div>
       <div class="centered2 container">
@@ -663,7 +663,7 @@
     </section>
     <section id="app" name="app" class="fullheight image-bg bg-black">
       <div id="appbackgroundholder" class="background-image-holder">
-        <img id="appbackground" alt="image" class="background-image" src="static/img/kyle1.jpg">
+        <img id="appbackground" alt="image" class="background-image lazy" data-src="static/img/kyle1.jpg">
       </div>
       <div class="container">
         <div class="row mb40 mb-xs-24">
@@ -678,7 +678,7 @@
           <div class=" col-xs-3 col-xs-offset-2 col-md-1 col-md-offset-3">
             <div class="feature feature-3 text-center">
               <!-- set to class disabled to gray out again -->
-              <img id="androidlogo" src="static/img/androidlogo.png">
+              <img id="androidlogo" class="lazy" data-src="static/img/androidlogo.png">
             </div>
             <div class="comingsoon mt8 text-center mb48 white"></div>
             <!--end of feature-->
@@ -686,7 +686,7 @@
           <div class="col-xs-3 col-xs-offset-2 col-md-offset-4 col-md-1">
             <div class="feature feature-3 text-center">
               <!-- set to class disabled to gray out again -->
-              <img id="applelogo" src="static/img/applelogo.png">
+              <img id="applelogo" class="lazy" data-src="static/img/applelogo.png">
             </div>
             <div class="comingsoon mt8 text-center mb48 white"></div>
             <!--end of feature-->
@@ -699,10 +699,10 @@
     {{> footer extra='<button class="scatbutton">SCAT</button>'}}
   </div>
 
-  <audio id="scatman">
-    <source src="http://dg6vcgn2vehm4.cloudfront.net/scatman.mp3" type="audio/mpeg">
-    <source src="http://dg6vcgn2vehm4.cloudfront.net/scatman.ogg" type="audio/ogg">
-  </audio>
+  <!-- <audio id="scatman"> -->
+  <!--   <source src="http://dg6vcgn2vehm4.cloudfront.net/scatman.mp3" type="audio/mpeg"> -->
+  <!--   <source src="http://dg6vcgn2vehm4.cloudfront.net/scatman.ogg" type="audio/ogg"> -->
+  <!-- </audio> -->
 
   <audio id="hoversound">
     <source src="http://dg6vcgn2vehm4.cloudfront.net/motorcycle.mp3" type="audio/mpeg">
