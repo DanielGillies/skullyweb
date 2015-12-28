@@ -10044,3 +10044,7 @@ filter: FlipH;
         display: block;
     }
 }
+
+.sumome-scrollbox-popup div {
+    background: #fff !important;
+}
