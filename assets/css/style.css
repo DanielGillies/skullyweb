@@ -1006,7 +1006,7 @@ footer.bg-dark li,
   transition: all 3s cubic-bezier(0.755, 0.05, 0.855, 0.06) !important;
 }
 
-video {
+.index-page video {
   -webkit-transition: all 0.1s ease !important;
   -moz-transition: all 0.1s ease !important;
   -o-transition: all 0.1s ease !important;
