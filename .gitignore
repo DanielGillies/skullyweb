@@ -4,3 +4,4 @@
 !.elasticbeanstalk/*.global.yml
 /node_modules/
 test.html
+*.map

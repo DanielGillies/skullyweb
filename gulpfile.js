@@ -16,6 +16,7 @@ var pngquant     = require('imagemin-pngquant');
 var postcss      = require('gulp-postcss');
 var rename       = require('gulp-rename');
 var source       = require('vinyl-source-stream');
+var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
 var watchify     = require('watchify');
 
@@ -72,6 +73,7 @@ function Bundle(src) {
       })
       .pipe(source(src))
       .pipe(buffer())
+      .pipe(sourcemaps.init({loadMaps: true}))
       .pipe(rename(path.basename(src)))
   }
 
@@ -84,9 +86,13 @@ var mainjs  = new Bundle(paths.mainjs.src)
 var indexjs = new Bundle(paths.indexjs.src)
 
 // JS TASK
+gulp.task('js',     ['mainjs', 'indexjs', 'vendorjs'])
+gulp.task('js:min', ['mainjs:min', 'indexjs:min', 'vendorjs'])
+
 gulp.task('mainjs', function() {
   function build() {
     return mainjs.bundle()
+      .pipe(sourcemaps.write('./'))
       .pipe(gulp.dest(paths.mainjs.dest))
       .pipe(browserSync.reload({
         stream: true
@@ -106,6 +112,7 @@ gulp.task('mainjs:min', function() {
 gulp.task('indexjs', function() {
   function build() {
     return indexjs.bundle()
+      .pipe(sourcemaps.write('./'))
       .pipe(gulp.dest(paths.indexjs.dest))
       .pipe(browserSync.reload({
         stream: true
@@ -200,4 +207,5 @@ gulp.task('watch', function() {
   gulp.watch(paths.vendorjs.src, ['vendorjs'])
 });
 
-gulp.task('default', ['vendorjs', 'mainjs', 'indexjs', 'css', 'templates', 'watch', 'browser-sync']);
+gulp.task('default', ['js', 'css', 'templates', 'watch', 'browser-sync']);
+gulp.task('build',   ['js:min', 'css', 'templates']);
