@@ -208,4 +208,4 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['js', 'css', 'templates', 'watch', 'browser-sync']);
-gulp.task('build',   ['js:min', 'css', 'templates']);
+gulp.task('build',   ['js:min', 'css', 'templates'], process.exit);
