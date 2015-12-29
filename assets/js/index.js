@@ -171,6 +171,8 @@ function swapHUD() {
   }
 }
 
+window.swapHUD = swapHUD
+
 // function nextExplosion() {
 //     if (count < 6) {
 //         if (count === 5) {
