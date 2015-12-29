@@ -1,6 +1,6 @@
 var layzer = require('layzr.js');
 
-layzer.prototype._getOffset = function(node){
+layzer.prototype._getOffset = function(node) {
   var n = node;
   if (node.tagName == 'SOURCE') {
     while (n.getBoundingClientRect().top === 0 && n.tagName != 'BODY') {
@@ -11,7 +11,7 @@ layzer.prototype._getOffset = function(node){
 }
 
 $(document).ready(function() {
-  new (layzer)({
+  new(layzer)({
     attr: 'data-src',
     selector: '[data-src]',
     threshold: 50,
