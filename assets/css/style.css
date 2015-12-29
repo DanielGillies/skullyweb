@@ -992,10 +992,25 @@ footer.bg-dark li,
   background-size: cover !important;
   background-position: 50% 50% !important;
   background-repeat: no-repeat !important;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease !important;
+  -moz-transition: all 0.3s ease !important;
+  -o-transition: all 0.3s ease !important;
+  transition: all 0.3s ease !important;
+  opacity: 0;
+}
+
+#vidholder .background-image-holder {
+  -webkit-transition: all 3s cubic-bezier(0.755, 0.05, 0.855, 0.06) !important;
+  -moz-transition: all 3s cubic-bezier(0.755, 0.05, 0.855, 0.06) !important;
+  -o-transition: all 3s cubic-bezier(0.755, 0.05, 0.855, 0.06) !important;
+  transition: all 3s cubic-bezier(0.755, 0.05, 0.855, 0.06) !important;
+}
+
+video {
+  -webkit-transition: all 0.1s ease !important;
+  -moz-transition: all 0.1s ease !important;
+  -o-transition: all 0.1s ease !important;
+  transition: all 0.1s ease !important;
   opacity: 0;
 }
 

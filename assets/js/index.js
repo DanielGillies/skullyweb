@@ -226,8 +226,11 @@ function nextExplosion() {
   inExplosive = true;
   if (count > 0) {
     if ($(".explosive-active").length != 0) {
-      $(".explosive-active")[0].pause();
-      $(".explosive-active")[0].currentTime = 0;
+      var exp = $(".explosive-active")[0]
+      exp.pause();
+      setTimeout( function(){
+       exp.currentTime = 0;
+      }, 3000)
     }
     if (forwards) {
       $("#explosive-vid" + (count)).removeClass("explosive-active");
@@ -248,10 +251,15 @@ function nextExplosion() {
   forwards = true;
 }
 
+window.nextExplosion = nextExplosion
+
 function prevExplosion() {
   if (count < 6) {
-    $(".explosive-active")[0].pause();
-    $(".explosive-active")[0].currentTime = 0;
+    var exp = $(".explosive-active")[0]
+    exp.pause();
+    setTimeout( function(){
+     exp.currentTime = 0;
+    }, 3000)
     if (forwards) {
       $("#explosive-vid" + (count)).removeClass("explosive-active");
     } else {
@@ -269,6 +277,8 @@ function prevExplosion() {
   forwards = false;
 }
 
+window.prevExplosion = prevExplosion
+
 function goToExplosion(i) {
   // console.log(count-i);
   // if (count-i == 1) {
@@ -282,8 +292,11 @@ function goToExplosion(i) {
   //     count++;
   //     nextExplosion();
   // } else {
-  $(".explosive-active")[0].pause();
-  $(".explosive-active")[0].currentTime = 0;
+  var exp = $(".explosive-active")[0]
+  exp.pause();
+  setTimeout( function(){
+   exp.currentTime = 0;
+  }, 3000)
   $("#explosive-vid" + (count)).attr("class", "");
   $("#exp" + (count)).removeClass("active");
   count = i;
@@ -291,6 +304,8 @@ function goToExplosion(i) {
   nextExplosion();
   // }
 }
+
+window.goToExplosion = goToExplosion
 
 // HOVER SOUND
 var audio = $("#hoversound")[0];

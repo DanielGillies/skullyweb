@@ -3,7 +3,19 @@ new (require('layzr.js'))({
   selector: '[data-src]',
   threshold: 25,
   callback: function() {
-    $(this).css('opacity', 1)
+    var $el = $(this);
+
+    if ($el.prop('tagName') == 'SOURCE') {
+      var v = $el.closest('video')[0]
+      if (v) {
+        v.load();
+        v.play();
+      }
+      $(v).css('opacity', 1);
+    } else {
+      $el.css('opacity', 1);
+    }
+
     return this.classList.add('loaded');
   }
 });

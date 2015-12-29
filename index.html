@@ -243,14 +243,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="main-container">
     <section id="vidholder" class="image-bg fullheight2 bg-black">
       <div class="background-image-holder indeximage lazy" data-src="static/img/indexmobile.jpg" data-layzr-bg>
-
-        <img alt="Background Image" class="background-image" >
-
         <div class="fs-vid-background">
           <video id="hero" autoplay loop muted preload="auto">
-            <source id="hudwebm" src="http://dg6vcgn2vehm4.cloudfront.net/videos/indexvid.webm" type="video/webm">
-            <source id="hudmp4" src="http://dg6vcgn2vehm4.cloudfront.net/videos/indexvid.mp4" type="video/mp4">
-            <source id="hudogv" src="http://dg6vcgn2vehm4.cloudfront.net/videos/indexvid.ogv" type="video/ogv">
+            <source id="hudwebm" class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/indexvid.webm" type="video/webm">
+            <source id="hudmp4" class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/indexvid.mp4" type="video/mp4">
+            <source id="hudogv" class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/indexvid.ogv" type="video/ogv">
           </video>
         </div>
       </div>
@@ -580,9 +577,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <section id="hud" class="pt120 fullheight bg-black">
       <video id="hudvid" muted style="height:100%; position:absolute; right: 0; top: 0;">
-        <source id="hudwebm" src="http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.webm" type="video/webm">
-        <source id="hudmp4" src="http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.mp4" type="video/mp4">
-        <source id="hudogv" src="http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.ogv" type="video/ogv">
+        <source id="hudwebm" class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.webm" type="video/webm">
+        <source id="hudmp4" class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.mp4" type="video/mp4">
+        <source id="hudogv" class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.ogv" type="video/ogv">
       </video>
       <div class="container" id="hudtext">
         <div id="hudheader" class="mb56 row">
@@ -775,54 +772,54 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
 
       <video id="explosive-vid1">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1.webm" type="video/webm">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1.ogv" type="video/ogv">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1.mp4" type="video/mp4">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1.webm" type="video/webm">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1.ogv" type="video/ogv">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1.mp4" type="video/mp4">
       </video>
       <video id="explosive-vid2">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2.webm" type="video/webm">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2.ogv" type="video/ogv">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2.mp4" type="video/mp4">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2.webm" type="video/webm">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2.ogv" type="video/ogv">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2.mp4" type="video/mp4">
       </video>
       <video id="explosive-vid3">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3.webm" type="video/webm">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3.ogv" type="video/ogv">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3.mp4" type="video/mp4">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3.webm" type="video/webm">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3.ogv" type="video/ogv">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3.mp4" type="video/mp4">
       </video>
       <video id="explosive-vid4">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4.webm" type="video/webm">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4.ogv" type="video/ogv">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4.mp4" type="video/mp4">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4.webm" type="video/webm">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4.ogv" type="video/ogv">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4.mp4" type="video/mp4">
       </video>
       <video id="explosive-vid5">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5.webm" type="video/webm">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5.ogv" type="video/ogv">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5.mp4" type="video/mp4">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5.webm" type="video/webm">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5.ogv" type="video/ogv">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5.mp4" type="video/mp4">
       </video>
       <video id="explosive-vid1b">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1backwards.webm" type="video/webm">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1backwards.ogv" type="video/ogv">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1backwards.mp4" type="video/mp4">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1backwards.webm" type="video/webm">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1backwards.ogv" type="video/ogv">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1backwards.mp4" type="video/mp4">
       </video>
       <video id="explosive-vid2b">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2backwards.webm" type="video/webm">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2backwards.ogv" type="video/ogv">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2backwards.mp4" type="video/mp4">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2backwards.webm" type="video/webm">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2backwards.ogv" type="video/ogv">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2backwards.mp4" type="video/mp4">
       </video>
       <video id="explosive-vid3b">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3backwards.webm" type="video/webm">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3backwards.ogv" type="video/ogv">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3backwards.mp4" type="video/mp4">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3backwards.webm" type="video/webm">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3backwards.ogv" type="video/ogv">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3backwards.mp4" type="video/mp4">
       </video>
       <video id="explosive-vid4b">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4backwards.webm" type="video/webm">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4backwards.ogv" type="video/ogv">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4backwards.mp4" type="video/mp4">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4backwards.webm" type="video/webm">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4backwards.ogv" type="video/ogv">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4backwards.mp4" type="video/mp4">
       </video>
       <video id="explosive-vid5b">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5backwards.webm" type="video/webm">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5backwards.ogv" type="video/ogv">
-        <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5backwards.mp4" type="video/mp4">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5backwards.webm" type="video/webm">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5backwards.ogv" type="video/ogv">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5backwards.mp4" type="video/mp4">
       </video>
 
       <ul>
