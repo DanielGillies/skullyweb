@@ -1,900 +1,691 @@
 {{> header title="SKULLY AR-1"}}
-    <div class="nav-container">
-    {{> navbar}}
-        <!-- ACTUAL PAGE CONTENT -->
-        <div class="main-container">
-            <section id="vidholder" class="image-bg fullheight2 bg-black">
-                <div class="background-image-holder indeximage">
-                    <img alt="Background Image" class="background-image" src="static/img/indexmobile.jpg">
-                    <div class="fs-vid-background">
-                        <video id="hero" autoplay loop muted preload="auto">
-                            <source id="hudwebm" src="http://dg6vcgn2vehm4.cloudfront.net/videos/indexvid.webm" type="video/webm">
-                            <source id="hudmp4" src="http://dg6vcgn2vehm4.cloudfront.net/videos/indexvid.mp4" type="video/mp4">
-                            <source id="hudogv" src="http://dg6vcgn2vehm4.cloudfront.net/videos/indexvid.ogv" type="video/ogv">
-                        </video>
-                    </div>
-                </div>
-                <div class="centered">
-                        <div class="row mb120 mt-xs-80 mb-xs-32">
-                            <div class="text-center">
-                                <h1 id="superhuman" class="uppercase">SUPERHUMAN</h1>
-                                <h2 id="bydesign">BY<span style="letter-spacing: 22px"> </span>DESIGN</h2>
-                            </div>
-                        </div>
-                        <div id="mobile-indexheaderbuttons" class="container">
-                            <div class="row">
-                                <div class="col-md-6 col-md-offset-2 col-xs-12 col-sm-12">
-                                    <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
-                                    <span class="wistia_embed wistia_async_1nwzz5fh0t popover=true popoverContent=link" style="display:inline; margin-right:30px;"><a class="btn btn-middle" id="wistiavid" href="#"><h5>Experience <i class="icon-play2"></i><span class="ar1font">SKULLY AR-<span class="skullyred">1</span></span></h5></a></span></script>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="desktop-experiencebutton">
-                    <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
-                    <span class="wistia_embed wistia_async_1nwzz5fh0t popover=true popoverContent=link" style="display:inline; margin-right:30px;"><a class="btn btn-middle" id="wistiavid" href="#"><h5>Experience <i class="icon-play2"></i> <span class="ar1font">SKULLY AR-<span class="skullyred">1</span></span></h5></a></span>
-                </div>
-                <div class="indexvidbar">
-                    <div class="row halved" style="left: 6%">
-                        <div class="col-sm-3 col-md-3 col-xs-3">
-                            <a data-target="#modal1" data-toggle="modal" style="cursor:pointer;"><img alt="pic" id="press-cnn" onmouseover="hover(this);" onmouseout="unhover(this);" class="image-xxs" src="static/img/cnn-black.png"></a>
-                        </div>
-                        <div class="col-sm-3 col-md-3 col-xs-3">
-                            <a data-target="#modal2" data-toggle="modal" style="cursor:pointer;" ><img alt="pic" id="press-popsci" onmouseover="hover(this);" onmouseout="unhover(this);" class="image-xxs" src="static/img/popsci-black.png"></a>
-                        </div>
-                        <div class="col-sm-3 col-md-3 col-xs-3">
-                            <a data-target="#modal3" data-toggle="modal" style="cursor:pointer;"><img alt="pic" id="press-reuters" onmouseover="hover(this);" onmouseout="unhover(this);" class="image-xxs" src="static/img/reuters-black.png"></a>
-                        </div>
-                        <div class="col-sm-3 col-md-3 col-xs-3">
-                            <a data-target="#modal4" data-toggle="modal" style="cursor:pointer;"><img alt="pic" id="press-wired" onmouseover="hover(this);" onmouseout="unhover(this);" class="image-xxs" src="static/img/wired-black.png"></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- ****************************MODALS*************************** -->
-                <div id="modal1" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">The CNN Top 10 Inventions</h4>
-                            </div>
-                            <div class="modal-body">
-                                <p>“Augmented reality is getting a lot of talk in the gaming world, with products like Sony's and the Oculus Rift promising to make play time more fun. But what if it could make the roads safer? That's what the makers of Skully promise with what they're..."</p>
-                                <div class="text-center">
-                                    <a class="btn btn-mega black" target="_blank" href="http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/">READ MORE</a>
-                                </div>
-                                <div id="social-platforms">
-                                    <a class="button button-icon button-facebook" target="_blank"href="http://www.facebook.com/sharer.php?u=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>
-                                    <a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>
-                                    <a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-mega black mb0" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
+
+<div class="nav-container">
+  {{> navbar}}
+
+  <!-- ACTUAL PAGE CONTENT -->
+  <div class="main-container">
+    <section id="vidholder" class="image-bg fullheight2 bg-black">
+      <div class="background-image-holder indeximage lazy" data-src="static/img/indexmobile.jpg" data-layzr-bg>
+        <div class="fs-vid-background">
+          <video id="hero" autoplay loop muted preload="auto">
+            <source id="hudwebm" class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/indexvid.webm" type="video/webm">
+            <source id="hudmp4" class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/indexvid.mp4" type="video/mp4">
+            <source id="hudogv" class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/indexvid.ogv" type="video/ogv">
+          </video>
+        </div>
+      </div>
+
+      <div class="centered">
+        <div class="row mb120 mt-xs-80 mb-xs-32">
+          <div class="text-center">
+            <h1 id="superhuman" class="uppercase">SUPERHUMAN</h1>
+            <h2 id="bydesign">BY
+              <span style="letter-spacing: 22px"> </span>DESIGN</h2>
+          </div>
+        </div>
+
+        <div id="mobile-indexheaderbuttons" class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-2 col-xs-12 col-sm-12">
+              <span class="wistia_embed wistia_async_1nwzz5fh0t popover=true popoverContent=link" style="display:inline; margin-right:30px;">
+                <a class="btn btn-middle" id="wistiavid" href="#">
+                  <h5>
+                    Experience <i class="icon-play2"></i>
+                    <span class="ar1font">
+                      SKULLY AR-<span class="skullyred">1</span>
+                    </span>
+                  </h5>
+                </a>
+              </span>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <div id="modal2" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">A Motorcycle Helmet for the Digital World</h4>
-                            </div>
-                            <div class="modal-body">
-                                <p>“At a time when screens are being integrated into everything, Skully engineers saw an opportunity to upgrade something that’s remained largely unchanged for decades: the motorcycle helmet. The P-1 is the first helmet with a digital head-up display..."</p>
-                                <div class="text-center">
-                                    <a class="btn btn-mega black" target="_blank" href="http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world">READ MORE</a>
-                                </div>
-                                <div id="social-platforms">
-                                    <a class="button button-icon button-facebook" target="_blank"href="http://www.facebook.com/sharer.php?u=http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>
-                                    <a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>
-                                    <a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-mega black mb0" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
+      <div id="desktop-experiencebutton">
+        <span class="wistia_embed wistia_async_1nwzz5fh0t popover=true popoverContent=link" style="display:inline; margin-right:30px;">
+          <a class="btn btn-middle" id="wistiavid" href="#">
+            <h5>
+              Experience <i class="icon-play2"></i>
+              <span class="ar1font">
+                SKULLY AR-<span class="skullyred">1</span>
+              </span>
+            </h5>
+          </a>
+        </span>
+      </div>
+      <div class="indexvidbar">
+        <div class="row halved" style="left: 6%">
+          <div class="col-sm-3 col-md-3 col-xs-3">
+            <a data-target="#modal1" data-toggle="modal" style="cursor:pointer;">
+              <img alt="pic" id="press-cnn" onmouseover="hover(this);" onmouseout="unhover(this);" class="image-xxs" class="lazy" data-src="static/img/cnn-black.png">
+            </a>
+          </div>
+          <div class="col-sm-3 col-md-3 col-xs-3">
+            <a data-target="#modal2" data-toggle="modal" style="cursor:pointer;">
+              <img alt="pic" id="press-popsci" onmouseover="hover(this);" onmouseout="unhover(this);" class="image-xxs" class="lazy" data-src="static/img/popsci-black.png">
+            </a>
+          </div>
+          <div class="col-sm-3 col-md-3 col-xs-3">
+            <a data-target="#modal3" data-toggle="modal" style="cursor:pointer;">
+              <img alt="pic" id="press-reuters" onmouseover="hover(this);" onmouseout="unhover(this);" class="image-xxs" class="lazy" data-src="static/img/reuters-black.png">
+            </a>
+          </div>
+          <div class="col-sm-3 col-md-3 col-xs-3">
+            <a data-target="#modal4" data-toggle="modal" style="cursor:pointer;">
+              <img alt="pic" id="press-wired" onmouseover="hover(this);" onmouseout="unhover(this);" class="image-xxs" class="lazy" data-src="static/img/wired-black.png">
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- ****************************MODALS*************************** -->
+      <div id="modal1" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">The CNN Top 10 Inventions</h4>
             </div>
-
-            <div id="modal3" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">The Skully Smart Motorcycle Helmet Sharpens Your Senses On The Road</h4>
-                            </div>
-                            <div class="modal-body">
-                                <p>“For Marcus Weller the idea started off with an accident. He was riding a motorcycle in Barcelona when he took his eyes off the road to look at a road sign and smashed into the back of a car. A couple of years later..."</p>
-                                <div class="text-center">
-                                    <a class="btn btn-mega black" target="_blank" href="http://www.reuters.com/article/us-smart-helmet-idUSKCN0T11ZZ20151112#sZfI4qzbzbhByzVB.97">READ MORE</a>
-                                </div>
-                                <div id="social-platforms">
-                                    <a class="button button-icon button-facebook" target="_blank"href="http://www.facebook.com/sharer.php?u=http://www.reuters.com/article/us-smart-helmet-idUSKCN0T11ZZ20151112#sZfI4qzbzbhByzVB.97"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>
-                                    <a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://www.reuters.com/article/us-smart-helmet-idUSKCN0T11ZZ20151112#sZfI4qzbzbhByzVB.97"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>
-                                    <a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://www.reuters.com/article/us-smart-helmet-idUSKCN0T11ZZ20151112#sZfI4qzbzbhByzVB.97"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>
-                                </div>
-                            </div>
-                            <div class="text-center modal-footer">
-                            <button type="button" class="btn btn-mega black mb0" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="modal-body">
+              <p>“Augmented reality is getting a lot of talk in the gaming world, with products like Sony's and the Oculus Rift promising to make play time more fun. But what if it could make the roads safer?
+                That's what the makers of Skully promise with what they're..."</p>
+              <div class="text-center">
+                <a class="btn btn-mega black" target="_blank" href="http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/">READ MORE</a>
+              </div>
+              <div id="social-platforms">
+                <a class="button button-icon button-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/">
+                  <i class="ti-facebook2"></i>
+                  <span class="sharebut">Facebook</span>
+                </a>
+                <a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/">
+                  <i class="ti-twitter-alt2"></i>
+                  <span class="sharebut">Twitter</span>
+                </a>
+                <a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://www.cnn.com/interactive/2014/06/tech/cnn10-inventions/">
+                  <i class="ti-google2"></i>
+                  <span class="sharebut">Google+</span>
+                </a>
+              </div>
             </div>
-
-            <div id="modal4" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">This Slick Augmented-reality Helmet Has A Rearview Camera, Weather Reports</h4>
-                            </div>
-                            <div class="modal-body">
-                                <p>“Motorcycle helmets with head-up displays and augmented reality were science fiction just a few years ago. But now major helmet manufacturers and startups are working to incorporate Google Glass-like..."</p>
-                                <div class="text-center">
-                                    <a class="btn btn-mega black" target="_blank" href="http://www.wired.com/2013/10/skully-helmet/">READ MORE</a>
-                                </div>
-                                <div id="social-platforms">
-                                    <a class="button button-icon button-facebook" target="_blank"href="http://www.facebook.com/sharer.php?u=http://www.wired.com/2013/10/skully-helmet/"><i class="ti-facebook2"></i><span class="sharebut">Facebook</span></a>
-                                    <a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://www.wired.com/2013/10/skully-helmet/"><i class="ti-twitter-alt2"></i><span class="sharebut">Twitter</span></a>
-                                    <a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://www.wired.com/2013/10/skully-helmet/"><i class="ti-google2"></i><span class="sharebut">Google+</span></a>
-                                </div>
-                            </div>
-                            <div class="text-center modal-footer">
-                            <button type="button" class="btn btn-mega black mb0" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-mega black mb0" data-dismiss="modal">Close</button>
             </div>
+          </div>
+        </div>
+      </div>
 
-            </section>
+      <div id="modal2" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">A Motorcycle Helmet for the Digital World</h4>
+            </div>
+            <div class="modal-body">
+              <p>“At a time when screens are being integrated into everything, Skully engineers saw an opportunity to upgrade something that’s remained largely unchanged for decades: the motorcycle helmet.
+                The P-1 is the first helmet with a digital head-up display..."</p>
+              <div class="text-center">
+                <a class="btn btn-mega black" target="_blank" href="http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world">READ MORE</a>
+              </div>
+              <div id="social-platforms">
+                <a class="button button-icon button-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world">
+                  <i class="ti-facebook2"></i>
+                  <span class="sharebut">Facebook</span>
+                </a>
+                <a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world">
+                  <i class="ti-twitter-alt2"></i>
+                  <span class="sharebut">Twitter</span>
+                </a>
+                <a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://www.popsci.com/article/gadgets/motorcycle-helmet-digital-world">
+                  <i class="ti-google2"></i>
+                  <span class="sharebut">Google+</span>
+                </a>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-mega black mb0" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-            <section id="beautypurchase" class="image-bg fullheight overlay3 pt-xs-24 pb-xs-8 pt120">
-                    <div id="beautypurchaseimageholder" class="background-image-holder">
-                        <img id="beautypurchaseimage" alt="image" class="background-image" src="static/img/buynowbeauty.jpg">
-                    </div>
-                    <div class="container">
-                        <div class="row mb-xs-24">
-                            <div class="col-md-12 text-center mt-xs-80 mt112">
-                                <h2 class="uppercase bold">Available now from our <br class="respbr">online store</h2>
-                            </div>
-                        </div>
-                        <div class="row pt-xs-200 mb-xs-0 mb160">
-                            <div class="col-md-12 col-md-offset-0 col-xs-8 col-xs-offset-2 text-center">
-                                <h2 class="uppercase bold">Ships Worldwide</h2>
-                            </div>
-                        </div>
-                        <div class="row pt-xs-40 mb-xs-0 mb160">
-                            <div class="col-md-4 col-md-offset-4 text-center">
-                                <a id="store" href="store" class="btn btn-middle"><h5>SHOP NOW</h5></a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+      <div id="modal3" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">The Skully Smart Motorcycle Helmet Sharpens Your Senses On The Road</h4>
+            </div>
+            <div class="modal-body">
+              <p>“For Marcus Weller the idea started off with an accident. He was riding a motorcycle in Barcelona when he took his eyes off the road to look at a road sign and smashed into the back of a
+                car. A couple of years later..."</p>
+              <div class="text-center">
+                <a class="btn btn-mega black" target="_blank" href="http://www.reuters.com/article/us-smart-helmet-idUSKCN0T11ZZ20151112#sZfI4qzbzbhByzVB.97">READ MORE</a>
+              </div>
+              <div id="social-platforms">
+                <a class="button button-icon button-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=http://www.reuters.com/article/us-smart-helmet-idUSKCN0T11ZZ20151112#sZfI4qzbzbhByzVB.97">
+                  <i class="ti-facebook2"></i>
+                  <span class="sharebut">Facebook</span>
+                </a>
+                <a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://www.reuters.com/article/us-smart-helmet-idUSKCN0T11ZZ20151112#sZfI4qzbzbhByzVB.97">
+                  <i class="ti-twitter-alt2"></i>
+                  <span class="sharebut">Twitter</span>
+                </a>
+                <a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://www.reuters.com/article/us-smart-helmet-idUSKCN0T11ZZ20151112#sZfI4qzbzbhByzVB.97">
+                  <i class="ti-google2"></i>
+                  <span class="sharebut">Google+</span>
+                </a>
+              </div>
+            </div>
+            <div class="text-center modal-footer">
+              <button type="button" class="btn btn-mega black mb0" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-            <section id="beauty" class="fullheight image-bg bg-white pt120 pt-xs-32">
-                <div class="background-image-holder ">
-                    <img src="/static/img/beauty_background.jpeg">
+      <div id="modal4" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">This Slick Augmented-reality Helmet Has A Rearview Camera, Weather Reports</h4>
+            </div>
+            <div class="modal-body">
+              <p>“Motorcycle helmets with head-up displays and augmented reality were science fiction just a few years ago. But now major helmet manufacturers and startups are working to incorporate Google
+                Glass-like..."
+              </p>
+              <div class="text-center">
+                <a class="btn btn-mega black" target="_blank" href="http://www.wired.com/2013/10/skully-helmet/">READ MORE</a>
+              </div>
+              <div id="social-platforms">
+                <a class="button button-icon button-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u=http://www.wired.com/2013/10/skully-helmet/">
+                  <i class="ti-facebook2"></i>
+                  <span class="sharebut">Facebook</span>
+                </a>
+                <a class="button button-icon button-twitter" target="_blank" href="https://twitter.com/share?url=http://www.wired.com/2013/10/skully-helmet/">
+                  <i class="ti-twitter-alt2"></i>
+                  <span class="sharebut">Twitter</span>
+                </a>
+                <a class="button button-icon button-googleplus" target="_blank" href="https://plus.google.com/share?url=http://www.wired.com/2013/10/skully-helmet/">
+                  <i class="ti-google2"></i>
+                  <span class="sharebut">Google+</span>
+                </a>
+              </div>
+            </div>
+            <div class="text-center modal-footer">
+              <button type="button" class="btn btn-mega black mb0" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="beautypurchase" class="image-bg fullheight overlay3 pt-xs-24 pb-xs-8 pt120">
+      <div id="beautypurchaseimageholder" class="background-image-holder lazy" data-src="static/img/buynowbeauty.jpg" data-layzr-bg></div>
+      <div class="container">
+        <div class="row mb-xs-24">
+          <div class="col-md-12 text-center mt-xs-80 mt112">
+            <h2 class="uppercase bold">Available now from our
+              <br class="respbr">online store</h2>
+          </div>
+        </div>
+        <div class="row pt-xs-200 mb-xs-0 mb160">
+          <div class="col-md-12 col-md-offset-0 col-xs-8 col-xs-offset-2 text-center">
+            <h2 class="uppercase bold">Ships Worldwide</h2>
+          </div>
+        </div>
+        <div class="row pt-xs-40 mb-xs-0 mb160">
+          <div class="col-md-4 col-md-offset-4 text-center">
+            <a id="store" href="store" class="btn btn-middle">
+              <h5>SHOP NOW</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="beauty" class="fullheight image-bg bg-white pt120 pt-xs-32">
+      <div class="background-image-holder lazy" data-src="/static/img/beauty_background2.jpg" data-layzr-bg></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 mb-xs-24 col-md-6 pt72">
+            <h2 class="xbold uppercase mb16 mb-xs-32">The First Augmented Reality Helmet</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <p>
+              The
+              <span class="ar1font"> SKULLY AR-
+                <span class="skullyred">1</span>
+              </span> is the first helmet to feature a built-in 180&deg; Blindspot Camera and Heads-Up Display for unparalleled situational awareness and safety. </p>
+            <p>Focus on what matters most: the road ahead.
+            </p>
+            <p class="bold">
+              Total awareness is total freedom.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hudmobile" class="pt32 image-bg overlay3 bg-black">
+      <div id="hudmobile-background" class="background-image-holder lazy" data-src="/static/img/HUD1.png" data-layzr-bg></div>
+      <div id="hudmobile-background2" class="background-image-holder lazy" data-src="/static/img/HUD2.png" data-layzr-bg></div>
+      <div id="hudmobiletext" class="container">
+        <div class="row mb24">
+          <div class="col-xs-12">
+            <h2 class="xbold uppercase">360&deg; Awareness, Every Second</h2>
+          </div>
+        </div>
+        <div class="row mb8">
+          <div class="col-xs-12">
+            <h5 class="uppercase xbold mb0">Heads-Up Display
+              <i class="icon-hud-w2"></i>
+            </h5>
+            <p class="subheader">Always in focus and floating right in front of you.</p>
+            <!-- <hr> -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h5 class="uppercase xbold mb0">180° Blindspot Camera</h5>
+            <p class="subheader">Ultra-wide to show you more than conventional mirrors.</p>
+            <!-- <hr> -->
+          </div>
+        </div>
+      </div>
+
+      <div id="hudmobiletext2" class="container">
+        <div class="row mb24">
+          <div class="col-xs-12">
+            <h2 class="xbold uppercase">Vital, Real-time Data
+              <br>at
+              <br class="respbr">a Glance</h2>
+          </div>
+        </div>
+        <div class="row mb8">
+          <div class="col-xs-12">
+            <h5 class="uppercase xbold mb0">Speed</h5>
+            <p class="subheader">Instantly glanceable MPH in
+              <br>your Heads-Up Display. </p>
+            <!-- <hr> -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <h5 class="uppercase xbold mb0">Turn-by-Turn GPS</h5>
+            <p class="subheader">Audio and visual navigation
+              <br> when you need it.</p>
+            <!-- <hr> -->
+          </div>
+        </div>
+      </div>
+      <div class="hudmobile-buttons text-center">
+        <a id="hudmobile-slide1" class="btn btn-hud active-hud" onclick="swapHUD()"></a>
+        <a id="hudmobile-slide2" class="btn btn-hud" onclick="swapHUD()"></a>
+      </div>
+    </section>
+
+    <section id="hud" class="pt120 fullheight bg-black">
+      <video id="hudvid" muted style="height:100%; position:absolute; right: 0; top: 0;">
+        <source id="hudwebm" class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.webm" type="video/webm">
+        <source id="hudmp4" class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.mp4" type="video/mp4">
+        <source id="hudogv" class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.ogv" type="video/ogv">
+      </video>
+      <div class="container" id="hudtext">
+        <div id="hudheader" class="mb56 row">
+          <div class="col-md-12">
+            <h2 class="xbold uppercase">360&deg; Awareness,
+              <br>Every Second</h2>
+          </div>
+        </div>
+        <div class="hudbody row">
+          <div class="col-md-4">
+            <h5 class="uppercase xbold">
+              <i class="icon-HUD_3 icon-sm2"></i> Heads-Up Display</h5>
+            <p class="subheader">Always in focus and floating
+              <br>right in front of you.</p>
+            <hr>
+          </div>
+        </div>
+        <div class="hudbody row">
+          <div class="col-md-4">
+            <h5 class="uppercase xbold">
+              <i class="icon-blindspot_w2 icon-sm2"></i> 180° Blindspot Camera</h5>
+            <p class="subheader">Ultra-wide to show you more
+              <br> than conventional mirrors.</p>
+            <hr>
+          </div>
+        </div>
+        <div class="mb32" id="hudbuttons">
+          <a class="btn btn-hud active-hud" onclick="swapHUD()"></a>
+          <a class="btn btn-hud" onclick="swapHUD()"></a>
+        </div>
+      </div>
+
+      <div class="container" id="hudtext2">
+        <div class="row mb56">
+          <div class="col-md-12">
+            <h2 class="xbold uppercase">Vital, Real-time Data
+              <br> at a Glance</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="xbold uppercase">
+              <i class="icon-mph_w2 icon-sm2"></i> Speed</h5>
+            <p class="subheader">Instantly glanceable MPH in
+              <br>your Heads-Up Display. </p>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="bold uppercase">
+              <i class="icon-checktech_w2 icon-sm2"></i> Turn-by-Turn GPS</h5>
+            <p class="subheader">Audio and visual navigation
+              <br>when you need it.</p>
+            <hr>
+          </div>
+        </div>
+        <a class="btn btn-hud" onclick="swapHUD()"></a>
+        <a class="btn btn-hud active-hud" onclick="swapHUD()"></a>
+      </div>
+    </section>
+
+    <section class="bg-white pt48 pb-xs-32">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-xs-12">
+            <h2 class="uppercase xbold">180&deg;
+              <br class="respbr">Blindspot Camera</h2>
+            <h5 class="uppercase xbold">Situational Awareness</h5>
+            <p>An ultra-wide, glanceable view of the road behind you enhances your overall safety.</p>
+            <hr>
+            <h5 class="uppercase xbold">Sport and Touring Modes</h5>
+            <p>Adjust the viewing angle presented in the Heads-Up Display with the
+              <span class="ar1font">SKULLY</span> app.</p>
+            <hr>
+            <h5 class="uppercase xbold">Two-Up Riding</h5>
+            <p>Your passenger is a small fraction of the ultra-wide 180&deg; Blindspot Camera view.</p>
+          </div>
+          <div class="col-md-8 col-xs-12">
+            <div class="product-features sep-top">
+              <input id="fov-toggle" class="hidden" type="checkbox">
+              <input id="mobile-skully-fov" name="fov" class="hidden" type="radio" checked>
+              <input id="mobile-conventional-fov" name="fov" class="hidden" type="radio">
+              <div class="mobile-fov-buttons">
+                <label id="ar1button-180" for="mobile-skully-fov" class="mobile-fov-button mobile-skully-fov-button ar1font">SKULLY AR-
+                  <span class="skullyred">1</span>
+                </label>
+                <label id="conventionalbutton-180" for="mobile-conventional-fov" class="mobile-fov-button mobile-conventional-fov-button">Conventional</label>
+              </div>
+              <div class="fov-wrapper">
+                <div class="fov-infographics">
+                  <img class="traditional-fov lazy" data-src="static/img/fov_conventional.png">
+                  <img class="skully-fov transparent lazy" data-src="static/img/fov.png">
                 </div>
-                <div class="container">
-                <div class="row">
-                        <div class="col-sm-4 mb-xs-24 col-md-6 pt72">
-                            <h2 class="xbold uppercase mb16 mb-xs-32">The First Augmented Reality Helmet</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-5">
-                             <p>
-                                    The <span class="ar1font"> SKULLY AR-<span class="skullyred">1</span></span> is the first helmet to feature a built-in 180&deg; Blindspot Camera and Heads-Up Display for unparalleled situational awareness and safety. </p>
-                                    <p>Focus on what matters most: the road ahead.
-                                </p>
-                                <p class="bold">
-                                Total awareness is total freedom.
-                                </p>
-                                </div>
-                                </div>
-                </div>
-            </section>
-
-            <section id="hudmobile" class="pt32 image-bg overlay3 bg-black">
-                <div id="hudmobile-background" class="background-image-holder">
-                    <img id="hudmobile-image" src="/static/img/HUD1.png">
-                </div>
-                <div id="hudmobile-background2" class="background-image-holder">
-                    <img id="hudmobile-image" src="/static/img/HUD2.png">
-                </div>
-
-                <div id="hudmobiletext" class="container">
-                    <div class="row mb24">
-                        <div class="col-xs-12">
-                            <h2 class="xbold uppercase">360&deg; Awareness, Every Second</h2>
-                        </div>
-                    </div>
-                    <div class="row mb8">
-                        <div class="col-xs-12">
-                            <h5 class="uppercase xbold mb0">Heads-Up Display<i class="icon-hud-w2"></i></h5>
-                            <p class="subheader">Always in focus and floating right in front of you.</p>
-                        <!-- <hr> -->
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <h5 class="uppercase xbold mb0">180° Blindspot Camera</h5>
-                            <p class="subheader">Ultra-wide to show you more than conventional mirrors.</p>
-                        <!-- <hr> -->
-                        </div>
-                    </div>
-                </div>
-
-                        <div id="hudmobiletext2" class="container">
-                            <div class="row mb24">
-                                <div class="col-xs-12">
-                                    <h2 class="xbold uppercase">Vital, Real-time Data <br>at <br class="respbr">a Glance</h2>
-                                </div>
-                            </div>
-                            <div class="row mb8">
-                                <div class="col-xs-12">
-                                    <h5 class="uppercase xbold mb0">Speed</h5>
-                                    <p class="subheader">Instantly glanceable MPH
-               in <br>your Heads-Up Display. </p>
-                                    <!-- <hr> -->
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <h5 class="uppercase xbold mb0">Turn-by-Turn GPS</h5>
-                                    <p class="subheader">Audio and visual navigation<br>
-               when you need it.</p>
-                                    <!-- <hr> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hudmobile-buttons text-center">
-                            <a id="hudmobile-slide1" class="btn btn-hud active-hud" onclick="swapHUD()"></a>
-                            <a id="hudmobile-slide2" class="btn btn-hud" onclick="swapHUD()"></a>
-                        </div>
-            </section>
-
-
-
-            <section id="hud" class="pt120 fullheight bg-black">                        
-                     <video id="hudvid" muted style="height:100%; position:absolute; right: 0; top: 0;">
-                            <source id="hudwebm" src="http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.webm" type="video/webm">
-                            <source id="hudmp4" src="http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.mp4" type="video/mp4">
-                            <source id="hudogv" src="http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.ogv" type="video/ogv">
-                        </video>
-                        <div class="container" id="hudtext">
-                            <div id="hudheader" class="mb56 row">
-                                <div class="col-md-12">
-                                    <h2 class="xbold uppercase">360&deg; Awareness,<br>Every Second</h2>
-                                </div>
-                            </div>
-                            <div class="hudbody row">
-                                <div class="col-md-4">
-                                   <h5 class="uppercase xbold"><i class="icon-HUD_3 icon-sm2"></i> Heads-Up Display</h5>
-                            <p class="subheader">Always in focus and floating <br>right in front of you.</p>
-                                    <hr>
-                                </div>
-                            </div>
-                            <div class="hudbody row">
-                                <div class="col-md-4">
-                                    <h5 class="uppercase xbold"><i class="icon-blindspot_w2 icon-sm2"></i> 180° Blindspot Camera</h5>
-                            <p class="subheader">Ultra-wide to show you more<br> than conventional mirrors.</p>
-                                    <hr>
-                                </div>
-                            </div>
-                            <div class="mb32" id="hudbuttons">
-                                    <a class="btn btn-hud active-hud" onclick="swapHUD()"></a>
-                                    <a class="btn btn-hud" onclick="swapHUD()"></a>
-                                </div>
-                        </div>
-
-                        <div class="container" id="hudtext2">
-                            <div class="row mb56">
-                                <div class="col-md-12">
-                                    <h2 class="xbold uppercase">Vital, Real-time Data<br> at a Glance</h2>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <h5 class="xbold uppercase"><i class="icon-mph_w2 icon-sm2"></i> Speed</h5>
-                                    <p class="subheader">Instantly glanceable MPH
-               in <br>your Heads-Up Display. </p>
-                                    <hr>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <h5 class="bold uppercase"><i class="icon-checktech_w2 icon-sm2"></i> Turn-by-Turn GPS</h5>
-                                    <p class="subheader">Audio and visual navigation
-               <br>when you need it.</p>
-                                    <hr>
-                                </div>
-                            </div>
-                                    <a class="btn btn-hud" onclick="swapHUD()"></a>
-                                    <a class="btn btn-hud active-hud" onclick="swapHUD()"></a>
-                        </div>
-            </section>
-
-            <section class="bg-white pt48 pb-xs-32">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 col-xs-12">
-                            <h2 class="uppercase xbold">180&deg; <br class="respbr">Blindspot Camera</h2>
-                            <h5 class="uppercase xbold">Situational Awareness</h5>
-                            <p>An ultra-wide, glanceable view of the road behind you enhances your overall safety.</p>
-                            <hr>
-                            <h5 class="uppercase xbold">Sport and Touring Modes</h5>
-                            <p>Adjust the viewing angle presented in the Heads-Up Display with the <span class="ar1font">SKULLY</span> app.</p>
-                            <hr>
-                            <h5 class="uppercase xbold">Two-Up Riding</h5>
-                            <p>Your passenger is a small fraction of the ultra-wide 180&deg; Blindspot Camera view.</p>
-                        </div>
-                        <div class="col-md-8 col-xs-12">
-                            <div class="product-features sep-top">
-                                <input id="fov-toggle" class="hidden" type="checkbox">
-                                <input id="mobile-skully-fov" name="fov" class="hidden" type="radio" checked>
-                                <input id="mobile-conventional-fov" name="fov" class="hidden" type="radio">
-                                <div class="mobile-fov-buttons">
-                                    <label id="ar1button-180" for="mobile-skully-fov" class="mobile-fov-button mobile-skully-fov-button ar1font">SKULLY AR-<span class="skullyred">1</span></label>
-                                    <label id="conventionalbutton-180" for="mobile-conventional-fov" class="mobile-fov-button mobile-conventional-fov-button">Conventional</label>
-                                </div>
-                                <div class="fov-wrapper">
-                                    <div class="fov-infographics">
-                                        <img class="traditional-fov" src="static/img/fov_conventional.png">
-                                        <img class="skully-fov transparent" src="static/img/fov.png">
-                                    </div>
-                                    <!-- <div class="fov-info circle-info">
+                <!-- <div class="fov-info circle-info">
                                         <img class="circle" src="static/img/180_circle-07.png">
                                         <div class="circle-description">
                                             <h4 class="black">180&deg; Blind Spot Camera</h4>
                                             <p class="black">Conventional mirrors show you a thin slice of reality, a blind spot camera shows <b>everything</b> happening around you.</p>
                                         </div>
                                     </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <!--end of row-->
-                    </div>
-                    <!--end of container-->
-            </section>
-
-
-            <section id="pov" class="pt64 fullheight bg-black">
-                <div class="container">
-                    <h2 class="mb48 mb-xs-32 bold uppercase">Complete Situational Awareness</h2>
-                    <div class="row">
-                        <div class="col-sm-4 mb-xs-24">
-                            <h5 class="uppercase xbold mb8 mb-xs-8">Semi-Transparent Display</h5>
-                            <div class="mb40 mb-xs-24">
-                                <p>
-                                    Stay focused during your ride with a clear
-                                    view of everything happening around you.
-                                </p>
-                            </div>
-                            <hr>
-                            <h5 class="uppercase xbold mb8 mb-xs-8">180&deg; Blindspot Camera</h5>
-                            <div class="mb40 mb-xs-24">
-                                <p>
-                                    Make safer decisions with 180&deg; Blindspot Camera footage that streams live to the Heads-Up Display. 
-                                </p>
-                            </div>
-                            <hr>
-                            <h5 class="uppercase xbold mb8 mb-xs-8">Infinite Focus&trade;</h5>
-                            <div class="mb40 mb-xs-24">
-                                <p>
-                                    Look ahead, glance at the Heads-Up Display, then look ahead again without refocusing your eyes.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-offset-1 col-md-7 hud-animation">
-                            <div class="hud-background">
-                                <img id="hud-bg" class="hud" src="static/img/HUD01_BG.png"></img>
-                                <img id="hud-nose" class="hud" src="static/img/HUD01_nose.png"></img>
-                            </div>
-                            <div class="hud-rearsection">
-                                <img id="hud-rear" class="hud" src="static/img/HUD01_rearview.png"></img>
-                                <img id="hud-mph" class="hud" src="static/img/HUD01_mph.png"></img>
-                            </div>          
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="povmobile" class="pt64 pt-xs-16 image-bg overlay bg-dark">
-                <div class="background-image-holder">
-                    <img src="static/img/povmobilebg.jpg">
-                </div>
-                <div class="container">
-                    <h2 class="mt80 mb48 mb-xs-32 bold uppercase">Complete Situational Awareness</h2>
-                    <div class="row">
-                        <div class="col-xs-12 mb-xs-24">
-                            <h5 class="uppercase xbold mb8 mb-xs-8">Infinite Focus&trade;</h5>
-                            <div class="mb40 mb-xs-40">
-                                <p class="subhead">
-                                    Look down the road and simultaneously 
-                                    glance at the Heads-Up Display without 
-                                    refocusing your eyes.
-                                </p>
-                            </div>
-                            <h5 class="uppercase xbold mb8 mb-xs-8">180&deg; Blindspot Camera</h5>
-                            <div class="mb40 mb-xs-40">
-                                <p class="opensansplain subhead">
-                                    Make safer decisions with rear camera
-                                    footage that streams live to the Heads-Up
-                                    Display. 
-                                </p>
-                            </div>
-                            <h5 class="uppercase xbold mb8 mb-xs-8">Semi-Transparent Display</h5>
-                            <div class="mb40 mb-xs-24">
-                                <p class="opensansplain subhead">
-                                    Stay focused during your ride with a clear
-                                    view of everything happening around you.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="explosive" class="fullheight2 bg-white pb0 pt0">
-                <div id="explosive-previous-holder">
-                    <a id="explosive-previous" onclick="prevExplosion()"><i class="arrow top"></i></a>
-                </div>
-                 <div id="explosive-next-holder">
-                    <a id="explosive-next" onclick="nextExplosion()"><i class="arrow bottom"></i></a>
-                </div>
-                <video id="explosive-vid1">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1.webm" type="video/webm">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1.ogv" type="video/ogv">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1.mp4" type="video/mp4">
-                </video>
-                <video id="explosive-vid2">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2.webm" type="video/webm">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2.ogv" type="video/ogv">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2.mp4" type="video/mp4">
-                </video>
-                <video id="explosive-vid3">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3.webm" type="video/webm">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3.ogv" type="video/ogv">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3.mp4" type="video/mp4">
-                </video>
-                <video id="explosive-vid4">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4.webm" type="video/webm">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4.ogv" type="video/ogv">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4.mp4" type="video/mp4">
-                </video>
-                <video  id="explosive-vid5">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5.webm" type="video/webm">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5.ogv" type="video/ogv">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5.mp4" type="video/mp4">
-                </video>
-                <video id="explosive-vid1b">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1backwards.webm" type="video/webm">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1backwards.ogv" type="video/ogv">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1backwards.mp4" type="video/mp4">
-                </video>
-                <video id="explosive-vid2b">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2backwards.webm" type="video/webm">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2backwards.ogv" type="video/ogv"> 
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2backwards.mp4" type="video/mp4">
-                </video>
-                <video id="explosive-vid3b">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3backwards.webm" type="video/webm">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3backwards.ogv" type="video/ogv">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3backwards.mp4" type="video/mp4">
-                </video>
-                <video id="explosive-vid4b">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4backwards.webm" type="video/webm">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4backwards.ogv" type="video/ogv">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4backwards.mp4" type="video/mp4">
-                </video>
-                <video  id="explosive-vid5b">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5backwards.webm" type="video/webm">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5backwards.ogv" type="video/ogv">
-                    <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5backwards.mp4" type="video/mp4">
-                </video>
-                <ul>
-                    <li><span id="exp1" class="dot active" onclick="goToExplosion(1)"></span></li>
-                    <li><span id="exp2" class="dot" onclick="goToExplosion(2)"></span></li>
-                    <li><span id="exp3" class="dot" onclick="goToExplosion(3)"></span></li>
-                    <li><span id="exp4" class="dot" onclick="goToExplosion(4)"></span></li>
-                    <li><span id="exp5" class="dot" onclick="goToExplosion(5)"></span></li>
-                </span>
-            </section>
-
-            <section id="explosivemobile" class="pt0 pb0">
-                <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_mvshun9q70 videoFoam=true" style="height:100%;width:100%">&nbsp;</div></div></div>
-            </section>
-
-            <section id="mail" class="fullheight image-bg overlay">
-                <div class="background-image-holder">
-                    <!-- <img alt="image" class="background-image" src="static/img/cinemagraph-website.gif"> -->
-                    <img alt="image" class="background-image" src="static/img/signup.jpeg">
-                </div>
-                <div class="centered2 container">
-                        <div class="row mb80 mb-xs-24">
-                            <div class="col-sm-12 text-center">
-                                <h2 class="bold uppercase mb16">Be the First <br class="respbr">to Know</h2>
-                                <h5 id="sub180" class="subheader">Try it on, RSVP for special events, and get exclusive updates.</p>
-                            </div>
-                        </div>
-                        <div class="row mb80 pt-xs-24 mb-xs-24">
-                            <div class="col-xs-12">
-                                <form class="form-newsletter" data-success="Thanks for your registration, we will be in touch shortly." data-error="Please enter your email.">
-                                    <div class="row">
-                                    <!-- <div class="col-md-1"></div> -->
-                                        <div class="col-md-offset-3 col-md-4 mb24">
-                                            <input type="text" name="email" id="hovertext" class="mb0 transparent validate-email validate-required signup-email-field" placeholder="Enter Email Here" onfocus="this.placeholder = ''" onblur="this.placeholder='Enter Email Here'">
-                                        </div>
-                                        <div class="col-md-2">
-                                            <input type="submit" id="signup" class="btn btn-middle mb0" value="SUBMIT">
-                                        </div>
-                                    </div>
-                                        <iframe srcdoc="<!-- Begin MailChimp Signup Form --><link href=&quot;https://cdn-images.mailchimp.com/embedcode/classic-081711.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;><style type=&quot;text/css&quot;> #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }   /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */</style><div id=&quot;mc_embed_signup&quot;><form action=&quot;//skullysystems.us3.list-manage.com/subscribe/post?u=bc1d6c276527db0df1053fc13&amp;id=ff82cb5526&quot; method=&quot;post&quot; id=&quot;mc-embedded-subscribe-form&quot; name=&quot;mc-embedded-subscribe-form&quot; class=&quot;validate&quot; target=&quot;_blank&quot; novalidate>    <div id=&quot;mc_embed_signup_scroll&quot;>   <h2>Subscribe to our mailing list</h2><div class=&quot;indicates-required&quot;><span class=&quot;asterisk&quot;>*</span> indicates required</div><div class=&quot;mc-field-group&quot;>    <label for=&quot;mce-EMAIL&quot;>Email Address  <span class=&quot;asterisk&quot;>*</span></label>   <input type=&quot;email&quot; value=&quot;&quot; name=&quot;EMAIL&quot; class=&quot;required email&quot; id=&quot;mce-EMAIL&quot;></div><div class=&quot;mc-field-group&quot;>  <label for=&quot;mce-FNAME&quot;>First Name </label>    <input type=&quot;text&quot; value=&quot;&quot; name=&quot;FNAME&quot; class=&quot;&quot; id=&quot;mce-FNAME&quot;></div><div class=&quot;mc-field-group&quot;> <label for=&quot;mce-LNAME&quot;>Last Name </label> <input type=&quot;text&quot; value=&quot;&quot; name=&quot;LNAME&quot; class=&quot;&quot; id=&quot;mce-LNAME&quot;></div>   <div id=&quot;mce-responses&quot; class=&quot;clear&quot;>      <div class=&quot;response&quot; id=&quot;mce-error-response&quot; style=&quot;display:none&quot;></div>     <div class=&quot;response&quot; id=&quot;mce-success-response&quot; style=&quot;display:none&quot;></div>   </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->    <div style=&quot;position: absolute; left: -5000px;&quot;><input type=&quot;text&quot; name=&quot;b_77142ece814d3cff52058a51f_94d040322a&quot; tabindex=&quot;-1&quot; value=&quot;&quot;></div>    <div class=&quot;clear&quot;><input type=&quot;submit&quot; value=&quot;Subscribe&quot; name=&quot;subscribe&quot; id=&quot;mc-embedded-subscribe&quot; class=&quot;button&quot;></div>    </div></form></div><script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script><!--End mc_embed_signup-->" class="mail-list-form"> </iframe>
-                                </form>
-                            </div>
-                        </div>
-                </div>
-<!-- might have to just like, do angular.... no seriously. why you laugh? ... but like, it would be so easy w angular lmao you can use boostrap w angular oh shit kk nvm lol. welp. shoulda done angular :P IM KIDDING chill. talk louder can you change the nvm. angular. you cange change the state. in angular. like the state ref. want me to ask jeremy? lmao jk
-HAHAHAHAH. what do i ask? internal link isnt linking? i might be like: IM DOING A SIDE PROJECT, JEREMY. HELP ME. LOVE ME. trolol. i missed your laugh. you cute af psh. wtf is up w that music tho. it's fucking minight chill. i can tell. 
-so like, ok 
-what's happening? the id isn't linking?
- -->
-
-            </section>
-            <section id="app" name="app" class="fullheight image-bg bg-black">
-                <div id="appbackgroundholder" class="background-image-holder">
-                    <img id="appbackground" alt="image" class="background-image" src="static/img/kyle1.jpg">
-                </div>
-                <div class="container">
-                        <div class="row mb40 mb-xs-24">
-                            <div class="col-sm-12 text-center">
-                                <h2 class="bold uppercase mb16">Pair Up</h2>
-                                <h5 id="sub180">Connect, navigate, listen, and communicate with the <br><span class="ar1font">SKULLY</span> app, available for Android and iOS.</h5>
-                            </div>
-                        </div>
-                        <div class="row mb64">
-                            <div class=" col-xs-3 col-xs-offset-2 col-md-1 col-md-offset-3">
-                                <div class="feature feature-3 text-center">
-                                <!-- set to class disabled to gray out again -->
-                                        <img id="androidlogo" src="static/img/androidlogo.png">
-                                </div>
-                                <div class="comingsoon mt8 text-center mb48 white"></div>
-                                <!--end of feature-->
-                            </div>
-                            <div class="col-xs-3 col-xs-offset-2 col-md-offset-4 col-md-1">
-                                <div class="feature feature-3 text-center">
-                                    <!-- set to class disabled to gray out again -->
-                                    <img id="applelogo" src="static/img/applelogo.png">
-                                </div>
-                                <div class="comingsoon mt8 text-center mb48 white"></div>
-                                <!--end of feature-->
-                            </div>
-                        </div>
-                </div>
-            </section>
+              </div>
             </div>
-            {{> footer extra='<button class="scatbutton">SCAT</button>'}}
+          </div>
+          <!--end of row-->
+        </div>
+        <!--end of container-->
+    </section>
+
+
+    <section id="pov" class="pt64 fullheight bg-black">
+      <div class="container">
+        <h2 class="mb48 mb-xs-32 bold uppercase">Complete Situational Awareness</h2>
+        <div class="row">
+          <div class="col-sm-4 mb-xs-24">
+            <h5 class="uppercase xbold mb8 mb-xs-8">Semi-Transparent Display</h5>
+            <div class="mb40 mb-xs-24">
+              <p>
+                Stay focused during your ride with a clear view of everything happening around you.
+              </p>
             </div>
-            <audio id="scatman">
-                <source src="http://dg6vcgn2vehm4.cloudfront.net/scatman.mp3" type="audio/mpeg">
-                <source src="http://dg6vcgn2vehm4.cloudfront.net/scatman.ogg" type="audio/ogg">
-            </audio>
-            <audio id="hoversound">
-                <source src="http://dg6vcgn2vehm4.cloudfront.net/motorcycle.mp3" type="audio/mpeg">
-                <source src="http://dg6vcgn2vehm4.cloudfront.net/motorcycle.ogg" type="audio/ogg">
-            </audio>
-            <!-- TEMPLATES -->
+            <hr>
+            <h5 class="uppercase xbold mb8 mb-xs-8">180&deg; Blindspot Camera</h5>
+            <div class="mb40 mb-xs-24">
+              <p>
+                Make safer decisions with 180&deg; Blindspot Camera footage that streams live to the Heads-Up Display.
+              </p>
+            </div>
+            <hr>
+            <h5 class="uppercase xbold mb8 mb-xs-8">Infinite Focus&trade;</h5>
+            <div class="mb40 mb-xs-24">
+              <p>
+                Look ahead, glance at the Heads-Up Display, then look ahead again without refocusing your eyes.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-offset-1 col-md-7 hud-animation">
+            <div class="hud-background">
+              <img id="hud-bg" class="hud lazy" data-src="static/img/HUD01_BG.png"></img>
+              <img id="hud-nose" class="hud lazy" data-src="static/img/HUD01_nose.png"></img>
+            </div>
+            <div class="hud-rearsection">
+              <img id="hud-rear" class="hud lazy" data-src="static/img/HUD01_rearview.png"></img>
+              <img id="hud-mph" class="hud lazy" data-src="static/img/HUD01_mph.png"></img>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            {{> scripts}}
-            <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-            <script type="text/javascript">
+    <section id="povmobile" class="pt64 pt-xs-16 image-bg overlay bg-dark">
+      <div class="background-image-holder lazy" data-src="static/img/povmobilebg.jpg" data-layzr-bg></div>
+      <div class="container">
+        <h2 class="mt80 mb48 mb-xs-32 bold uppercase">Complete Situational Awareness</h2>
+        <div class="row">
+          <div class="col-xs-12 mb-xs-24">
+            <h5 class="uppercase xbold mb8 mb-xs-8">Infinite Focus&trade;</h5>
+            <div class="mb40 mb-xs-40">
+              <p class="subhead">
+                Look down the road and simultaneously glance at the Heads-Up Display without refocusing your eyes.
+              </p>
+            </div>
+            <h5 class="uppercase xbold mb8 mb-xs-8">180&deg; Blindspot Camera</h5>
+            <div class="mb40 mb-xs-40">
+              <p class="opensansplain subhead">
+                Make safer decisions with rear camera footage that streams live to the Heads-Up Display.
+              </p>
+            </div>
+            <h5 class="uppercase xbold mb8 mb-xs-8">Semi-Transparent Display</h5>
+            <div class="mb40 mb-xs-24">
+              <p class="opensansplain subhead">
+                Stay focused during your ride with a clear view of everything happening around you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            window._wq = window._wq || [];
-_wq.push({ "1nw": function(video) {
-    video.bind("end", function() {
-    $("#wistia_26_romulus").append("<a target='_blank' href='store' class='ctabutton'>Shop Now</a>");
-  })
-}});
+    <section id="explosive" class="fullheight2 bg-white pb0 pt0">
+      <div id="explosive-previous-holder">
+        <a id="explosive-previous" onclick="prevExplosion()">
+          <i class="arrow top"></i>
+        </a>
+      </div>
+      <div id="explosive-next-holder">
+        <a id="explosive-next" onclick="nextExplosion()">
+          <i class="arrow bottom"></i>
+        </a>
+      </div>
 
-if (window.mobilecheck()) {
-    $("#hud").toggle();
-    $("#hudmobile").toggle();
-    $("#pov").toggle();
-    $("#povmobile").toggle();
-    $("#explosive").toggle();
-    $("#explosivemobile").toggle();
-    $("section").removeClass("fullheight");
-    $("section").removeClass("fullheight2");
-    $("section").addClass("mobilefullheight");
-    $("#explosivemobile").removeClass("mobilefullheight");
-    $("#beauty").addClass("overlay4");
-    $("#beauty").removeClass("bg-white");
-    $("#beauty").addClass("bg-black");
-    $("#vidholder").addClass("overlay");
-    $("#vidholder").addClass("mh600px");
-    $("#beautypurchaseimage").attr("src", "static/img/beauty-cta-mobile.jpg");
-    $("#beautypurchaseimageholder").css("background", "url('static/img/beauty-cta-mobile.jpg')");
-    $("#app").removeClass("bg-black");
-    $("#app").addClass("bg-white");
-    $("#appbackground").attr("src", "static/img/kyle1bwmobile.jpg");
-    $("#appbackgroundholder").css("background", "url('static/img/kyle1bwmobile.jpg')");
-}
+      <video id="explosive-vid1" class="explosive-active">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1.webm" type="video/webm">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1.ogv" type="video/ogv">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1.mp4" type="video/mp4">
+      </video>
+      <video id="explosive-vid2">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2.webm" type="video/webm">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2.ogv" type="video/ogv">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2.mp4" type="video/mp4">
+      </video>
+      <video id="explosive-vid3">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3.webm" type="video/webm">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3.ogv" type="video/ogv">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3.mp4" type="video/mp4">
+      </video>
+      <video id="explosive-vid4">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4.webm" type="video/webm">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4.ogv" type="video/ogv">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4.mp4" type="video/mp4">
+      </video>
+      <video id="explosive-vid5">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5.webm" type="video/webm">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5.ogv" type="video/ogv">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5.mp4" type="video/mp4">
+      </video>
+      <video id="explosive-vid1b">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1backwards.webm" type="video/webm">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1backwards.ogv" type="video/ogv">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive1backwards.mp4" type="video/mp4">
+      </video>
+      <video id="explosive-vid2b">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2backwards.webm" type="video/webm">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2backwards.ogv" type="video/ogv">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive2backwards.mp4" type="video/mp4">
+      </video>
+      <video id="explosive-vid3b">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3backwards.webm" type="video/webm">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3backwards.ogv" type="video/ogv">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive3backwards.mp4" type="video/mp4">
+      </video>
+      <video id="explosive-vid4b">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4backwards.webm" type="video/webm">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4backwards.ogv" type="video/ogv">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive4backwards.mp4" type="video/mp4">
+      </video>
+      <video id="explosive-vid5b">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5backwards.webm" type="video/webm">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5backwards.ogv" type="video/ogv">
+        <source class="lazy" data-src="http://dg6vcgn2vehm4.cloudfront.net/videos/Explosive5backwards.mp4" type="video/mp4">
+      </video>
 
-            var hudSwap = 1;
+      <ul>
+        <li>
+          <span id="exp1" class="dot active" onclick="goToExplosion(1)"></span>
+        </li>
+        <li>
+          <span id="exp2" class="dot" onclick="goToExplosion(2)"></span>
+        </li>
+        <li>
+          <span id="exp3" class="dot" onclick="goToExplosion(3)"></span>
+        </li>
+        <li>
+          <span id="exp4" class="dot" onclick="goToExplosion(4)"></span>
+        </li>
+        <li>
+          <span id="exp5" class="dot" onclick="goToExplosion(5)"></span>
+        </li>
+      </ul>
+    </section>
 
+    <section id="explosivemobile" class="pt0 pb0">
+      <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+          <div class="wistia_embed wistia_async_mvshun9q70 videoFoam=true" style="height:100%;width:100%">&nbsp;</div>
+        </div>
+      </div>
+    </section>
 
-               //  var vid = document.getElementById("explosive-vid2")
-                 var hudvid = $("#hudvid")[0];
-                 // hudvid.pause();
-                 // hudvid.currentTime = 1;
-                
-                var nextButton = $('#explosive-next');
-                var prevButton = $('#explosive-previous');
-            var explosiveTop = $('#explosive').offset().top;
-            var explosiveBot = explosiveTop + $('#explosive-vid').height();
-            var appTop = $('#app').offset().top;
-            var appBot = appTop + $('#app').height();
-            var signupTop = $('#signup').offset().top;
-            var signupBot = signupTop + $('#signup').height();
-            var hudTop = $('#hudvid').offset().top;
-            var povTop = $('#pov').offset().top;
-            var nextSectionTop = $('#explosive').next('section').offset().top;
-               var hudPlaying = 0;
-               var povComplete = 0;
-               var count = 0;
-               var inExplosive = false;
-               var forwards = true;
-if (!window.mobilecheck()) {
+    <section id="mail" class="fullheight image-bg overlay">
+      <div class="background-image-holder lazy" data-src="static/img/cinemagraph-website.gif" data-layzr-bg></div>
+      <div class="centered2 container">
+        <div class="row mb80 mb-xs-24">
+          <div class="col-sm-12 text-center">
+            <h2 class="bold uppercase mb16">Be the First
+              <br class="respbr">to Know</h2>
+            <h5 id="sub180" class="subheader">Try it on, RSVP for special events, and get exclusive updates.</p>
+          </div>
+        </div>
+        <div class="row mb80 pt-xs-24 mb-xs-24">
+          <div class="col-xs-12">
+            <form class="form-newsletter" data-success="Thanks for your registration, we will be in touch shortly." data-error="Please enter your email.">
+              <div class="row">
+                <!-- <div class="col-md-1"></div> -->
+                <div class="col-md-offset-3 col-md-4 mb24">
+                  <input type="text" name="email" id="hovertext" class="mb0 transparent validate-email validate-required signup-email-field" placeholder="Enter Email Here" onfocus="this.placeholder = ''" onblur="this.placeholder='Enter Email Here'">
+                </div>
+                <div class="col-md-2">
+                  <input type="submit" id="signup" class="btn btn-middle mb0" value="SUBMIT">
+                </div>
+              </div>
+              <iframe srcdoc="<!-- Begin MailChimp Signup Form --><link href=&quot;https://cdn-images.mailchimp.com/embedcode/classic-081711.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;><style type=&quot;text/css&quot;> #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }   /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */</style><div id=&quot;mc_embed_signup&quot;><form action=&quot;//skullysystems.us3.list-manage.com/subscribe/post?u=bc1d6c276527db0df1053fc13&amp;id=ff82cb5526&quot; method=&quot;post&quot; id=&quot;mc-embedded-subscribe-form&quot; name=&quot;mc-embedded-subscribe-form&quot; class=&quot;validate&quot; target=&quot;_blank&quot; novalidate>    <div id=&quot;mc_embed_signup_scroll&quot;>   <h2>Subscribe to our mailing list</h2><div class=&quot;indicates-required&quot;><span class=&quot;asterisk&quot;>*</span> indicates required</div><div class=&quot;mc-field-group&quot;>    <label for=&quot;mce-EMAIL&quot;>Email Address  <span class=&quot;asterisk&quot;>*</span></label>   <input type=&quot;email&quot; value=&quot;&quot; name=&quot;EMAIL&quot; class=&quot;required email&quot; id=&quot;mce-EMAIL&quot;></div><div class=&quot;mc-field-group&quot;>  <label for=&quot;mce-FNAME&quot;>First Name </label>    <input type=&quot;text&quot; value=&quot;&quot; name=&quot;FNAME&quot; class=&quot;&quot; id=&quot;mce-FNAME&quot;></div><div class=&quot;mc-field-group&quot;> <label for=&quot;mce-LNAME&quot;>Last Name </label> <input type=&quot;text&quot; value=&quot;&quot; name=&quot;LNAME&quot; class=&quot;&quot; id=&quot;mce-LNAME&quot;></div>   <div id=&quot;mce-responses&quot; class=&quot;clear&quot;>      <div class=&quot;response&quot; id=&quot;mce-error-response&quot; style=&quot;display:none&quot;></div>     <div class=&quot;response&quot; id=&quot;mce-success-response&quot; style=&quot;display:none&quot;></div>   </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->    <div style=&quot;position: absolute; left: -5000px;&quot;><input type=&quot;text&quot; name=&quot;b_77142ece814d3cff52058a51f_94d040322a&quot; tabindex=&quot;-1&quot; value=&quot;&quot;></div>    <div class=&quot;clear&quot;><input type=&quot;submit&quot; value=&quot;Subscribe&quot; name=&quot;subscribe&quot; id=&quot;mc-embedded-subscribe&quot; class=&quot;button&quot;></div>    </div></form></div><script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script><!--End mc_embed_signup-->"
+              class="mail-list-form"> </iframe>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
-$(window).scroll(function() {                  // assign scroll event listener
-    var currentScroll = $(window).scrollTop(); // get current position
-    if (currentScroll >= explosiveTop-55 && currentScroll <= explosiveBot && !inExplosive) {
-        inExplosive = true;
-        nextExplosion();
-    }
-    if (currentScroll >= hudTop-55 && hudPlaying===0) {
-        hudPlaying = 1;
-        hudvid.play();
-        $("#hudtext").fadeIn(100);
-        $("#hudheader").fadeIn(500, function() {
-            $(".hudbody").fadeIn(500);
-            $("#hudbuttons").fadeIn(500);
-        });
-        $("#hudvid").on("ended", swapHUD);
-    }
-    if (currentScroll >= povTop-55 && currentScroll <= explosiveTop-55 && povComplete===0) {
-        povComplete = 1;
-        TweenLite.set(".hud-animation", {perspective: 500});
-        TweenMax.to("#hud-bg", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .7, ease: Power1.easeInOut});
-        TweenMax.to("#hud-nose", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", opacity: .9, ease: Power1.easeInOut});
-        TweenMax.to("#hud-rear", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut});
-        TweenMax.to("#hud-mph", 1.5, {rotationY: 20, transformOrigin: "left 50%", left: "-=20%", ease: Power1.easeInOut});
+    <section id="app" name="app" class="fullheight image-bg bg-black">
+      <div id="appbackgroundholder" class="background-image-holder lazy" data-src="static/img/kyle1.jpg" data-layzr-bg></div>
+      <div class="container">
+        <div class="row mb40 mb-xs-24">
+          <div class="col-sm-12 text-center">
+            <h2 class="bold uppercase mb16">Pair Up</h2>
+            <h5 id="sub180">Connect, navigate, listen, and communicate with the
+              <br>
+              <span class="ar1font">SKULLY</span> app, available for Android and iOS.</h5>
+          </div>
+        </div>
+        <div class="row mb64">
+          <div class=" col-xs-3 col-xs-offset-2 col-md-1 col-md-offset-3">
+            <div class="feature feature-3 text-center">
+              <!-- set to class disabled to gray out again -->
+              <img id="androidlogo" class="lazy" data-src="static/img/androidlogo.png">
+            </div>
+            <div class="comingsoon mt8 text-center mb48 white"></div>
+            <!--end of feature-->
+          </div>
+          <div class="col-xs-3 col-xs-offset-2 col-md-offset-4 col-md-1">
+            <div class="feature feature-3 text-center">
+              <!-- set to class disabled to gray out again -->
+              <img id="applelogo" class="lazy" data-src="static/img/applelogo.png">
+            </div>
+            <div class="comingsoon mt8 text-center mb48 white"></div>
+            <!--end of feature-->
+          </div>
+        </div>
+      </div>
+    </section>
 
-        TweenMax.to("#hud-nose", 1, {left: "+=1%", delay: 1, ease: Power2.easeInOut});
-        TweenMax.to("#hud-rear", 1.5, {scale: 2, top: "-=35%", left:"-=55%", ease: Power2.easeInOut, delay: .5});
-        TweenMax.to("#hud-mph", 1.5, {scale: 2.5, top: "-=55%", left: "-=80%", ease: Power2.easeInOut, delay: .5});
-    }
-});
-}
+    {{> footer extra='<button class="scatbutton">SCAT</button>'}}
+  </div>
 
-function swapHUD() {
-    if (!window.mobilecheck()) {
-        hudSwap *= -1;
-        if (hudSwap < 0) {
-            $("#hudvid").find("#hudwebm").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD2.webm")
-            $("#hudvid").find("#hudmp4").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD2.mp4")
-            $("#hudvid").find("#hudogv").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD2.ogv")
-            $("#hudvid").load();
-            $("#hudvid")[0].play();
-            $("#hudtext").fadeOut(600);
-            $("#hudtext2").fadeIn(600);
-        } else {
-            $("#hudvid").find("#hudwebm").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.webm")
-            $("#hudvid").find("#hudmp4").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.mp4")
-            $("#hudvid").find("#hudogv").attr("src", "http://dg6vcgn2vehm4.cloudfront.net/videos/HUD1.ogv")
-                    $("#hudvid").load();
-            $("#hudvid")[0].play();
-            $("#hudtext2").fadeOut(600);
-            $("#hudtext").fadeIn(600);
-        }
-    } else {
-        hudSwap *= -1;
-        if (hudSwap < 0) {
-            $("#hudmobile-background").fadeOut(600);
-            $("#hudmobile-background2").fadeIn(600);
-            $("#hudmobiletext").fadeOut(600);
-            $("#hudmobiletext2").fadeIn(600);
-            $("#hudmobile-slide1").removeClass("active-hud");
-            $("#hudmobile-slide2").addClass("active-hud");
-         } else {
-            $("#hudmobile-background2").fadeOut(600);
-            $("#hudmobile-background").fadeIn(600);
-            $("#hudmobiletext2").fadeOut(600);
-            $("#hudmobiletext").fadeIn(600);
-            $("#hudmobile-slide2").removeClass("active-hud");
-            $("#hudmobile-slide1").addClass("active-hud");
-         }       
+  <!-- <audio id="scatman"> -->
+  <!--   <source src="http://dg6vcgn2vehm4.cloudfront.net/scatman.mp3" type="audio/mpeg"> -->
+  <!--   <source src="http://dg6vcgn2vehm4.cloudfront.net/scatman.ogg" type="audio/ogg"> -->
+  <!-- </audio> -->
 
-    }
-}
+  <audio id="hoversound">
+    <source src="http://dg6vcgn2vehm4.cloudfront.net/motorcycle.mp3" type="audio/mpeg">
+    <source src="http://dg6vcgn2vehm4.cloudfront.net/motorcycle.ogg" type="audio/ogg">
+  </audio>
+</div>
 
-// function nextExplosion() {
-//     if (count < 6) {
-//         if (count === 5) {
-//             nextButton.css('display', 'none');
-//         } else if (count >= 3) {
-//             prevButton.css('display', 'inline');
-//         }
-//         console.log("Playing video " + count + ". FORWARDS: " + forwards);
-//         if (forwards) {
-//             $("#explosive-vid" + (count - 1)).attr("class", "");
-//             $("#exp" + (count - 1)).removeClass("active");
-//         } else {
-//             $("#explosive-vid" + (count) + "b").attr("class", "");
-//             $("#exp" + (count-1)).removeClass("active");
-//         }
-//         $("#explosive-vid" + count).addClass("explosive-active");
-//         $("#exp" + (count)).addClass("active");
-//         $(".explosive-active")[0].play();
-//         // $(".explosive-active")[0].playbackRate = 3;
-//         count++;
-//         forwards = true;
-//     } else {
-//     }
-// }
+<!-- TEMPLATES -->
+{{> scripts}}
 
-// function prevExplosion() {
-//     if (count > 0) {
-//         if (count === 2) {
-//             prevButton.css('display', 'none');
-//         } else if (count <= 5) {
-//             nextButton.css('display', 'inline');
-//         }
-//         console.log("Playing video " + count + ". FORWARDS: " + forwards);
-//         if (forwards) {
-//             $("#explosive-vid" + (count)).attr("class", "");
-//             $("#exp" + (count)).removeClass("active");
-//         } else {
-//             $("#explosive-vid" + (count+1) + "b").attr("class", "");
-//             $("#exp" + (count)).removeClass("active");
-//         }       
-//         $("#explosive-vid" + (count-1) + "b").addClass("explosive-active");
-//         $("#exp" + (count-1)).addClass("active");
-//         $(".explosive-active")[0].play();
-//         // $(".explosive-active")[0].playbackRate = 3;
-//         count--;
-//         forwards = false
-//     } else {
-//     }
-// }
-
-function nextExplosion() {
-    console.log(count);
-    inExplosive = true;
-        if (count > 0) {
-            if ($(".explosive-active").length != 0) {
-                $(".explosive-active")[0].pause();
-                $(".explosive-active")[0].currentTime = 0;
-            }
-            if (forwards) {
-                $("#explosive-vid" + (count)).removeClass("explosive-active");
-                count++;
-            } else {
-                $("#explosive-vid" + count + "b").removeClass("explosive-active");
-            }
-        } else {
-            count++;
-        }
-        $("#explosive-vid" + count).addClass("explosive-active");
-        $(".explosive-active")[0].play();
-        if (count === 5) {
-            nextButton.css('display', 'none');
-        } else if (count >= 1) {
-            prevButton.css('display', 'inline');
-        }
-        forwards = true;
-}
-
-function prevExplosion() {
-        if (count < 6) {
-            $(".explosive-active")[0].pause();
-            $(".explosive-active")[0].currentTime = 0;
-            if (forwards) {
-                $("#explosive-vid" + (count)).removeClass("explosive-active");
-            } else {
-                $("#explosive-vid" + (count) + "b").removeClass("explosive-active");
-                count--;
-            }
-        }
-        $("#explosive-vid" + count + "b").addClass("explosive-active");
-        $(".explosive-active")[0].play();
-        if (count === 1) {
-            prevButton.css('display', 'none');
-        } else if (count <= 5) {
-            nextButton.css('display', 'inline');
-        }
-        forwards = false;
-}
-
-function goToExplosion(i) {
-    // console.log(count-i);
-        // if (count-i == 1) {
-        //     $("#explosive-vid" + (count) + "b").attr("class", "");
-        //     $("#exp" + (count)).removeClass("active");
-        //     count = i;
-        //     console.log("PREV")
-        //     prevExplosion();
-        // } 
-        // if (count-i == -1) {
-        //     count++;
-        //     nextExplosion();
-        // } else {
-            $(".explosive-active")[0].pause();
-            $(".explosive-active")[0].currentTime = 0;
-            $("#explosive-vid" + (count)).attr("class", "");
-            $("#exp" + (count)).removeClass("active");
-            count = i;
-            console.log(count)
-            nextExplosion();
-        // }
-}
-// HOVER SOUND
-            var audio = $("#hoversound")[0];
-            $("#hovertext").mouseenter(function() {
-                audio.play();
-            });
-
-            // SCATMAN!!! (Bottom right)
-            var audio2 = $("#scatman")[0];
-            $(".scatbutton").click(function() {
-
-                audio2.currentTime = 6;
-                audio2.volume = .3;
-                audio2.play();
-                // setTimeout(function() {audio.pause();}, 7150);
-                setTimeout(function() {
-                    audio2.pause();
-                }, 7950);
-                alert("ITS SCATMAN TIME!!!!");
-
-            });
-
-$(function() {
-  $("#hudmobile").swipe( {
-    //Generic swipe handler for all directions
-    swipeRight:function(event, direction, distance, duration, fingerCount, fingerData) {
-      console.log("You swiped " + direction );  
-      swapHUD();
-    },
-    swipeLeft:function(event, direction, distance, duration, fingerCount, fingerData) {
-      console.log("You swiped " + direction );  
-      swapHUD();
-    },
-    allowPageScroll: 'vertical',
-    preventDefaultEvents: false
-  });
-});
-
-function hover(element) {
-    element.setAttribute("src", element.getAttribute("src").replace("-black", "-red"));
-}
-
-function unhover(element) {
-    element.setAttribute("src", element.getAttribute("src").replace("-red", "-black"));
-}
-
-
-    </script>
-</body>
-
-</html>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="/static/js/index.js"></script>

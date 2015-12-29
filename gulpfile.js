@@ -1,155 +1,231 @@
-var gulp = require('gulp');
-var concat = require('gulp-concat');
-var uglify = require('gulp-uglify');
-var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
-var mqpacker = require('css-mqpacker');
-var csswring = require('csswring');
-var imagemin = require('gulp-imagemin');
-var pngquant = require('imagemin-pngquant')
-var del = require('del');
-var watch = require('gulp-watch');
-var batch = require('gulp-batch');
-var handlebars = require('gulp-compile-handlebars');
-var ext_replace = require('gulp-ext-replace');
+var browserSync  = require('browser-sync');
+var browserify   = require('browserify');
+var buffer       = require('gulp-buffer');
+var concat       = require('gulp-concat');
+var csswring     = require('csswring');
+var del          = require('del');
+var extReplace   = require('gulp-ext-replace');
+var gulp         = require('gulp');
+var handlebars   = require('gulp-compile-handlebars');
+var imagemin     = require('gulp-imagemin');
+var mqpacker     = require('css-mqpacker');
+var notify       = require('gulp-notify');
+var path         = require('path');
+var pngquant     = require('imagemin-pngquant');
+var postcss      = require('gulp-postcss');
+var rename       = require('gulp-rename');
+var source       = require('vinyl-source-stream');
+var sourcemaps   = require('gulp-sourcemaps');
+var uglify       = require('gulp-uglify');
+var watchify     = require('watchify');
 
 var paths = {
-   src: __dirname + 'assets',
-   dest: __dirname + 'static',
+  src:  './assets',
+  dest: './static',
 
-   css: {
-     src: __dirname + '/assets/css/*.css',
-     dest: __dirname + '/static/css'
-   },
-   vendorjs: {
-     src: __dirname + '/assets/js/vendor/*.js',
-     dest: __dirname + '/static/js'
-   },
-   userjs: {
-     src: __dirname + '/assets/js/*.js',
-     dest: __dirname + '/static/js'
-   },
-   img: {
-    src: __dirname + '/assets/img/*',
-    dest: __dirname + '/static/img'
-    },
-    templates: {
-        src: __dirname + '/assets/templates',
-        dest: __dirname + '/'
-    },
-    partials: __dirname + '/assets/templates/partials'
+  css: {
+    src:  './assets/css/*.css',
+    dest: './static/css'
+  },
+  mainjs: {
+    src:  './assets/js/main.js',
+    dest: './static/js'
+  },
+  indexjs: {
+    src:  './assets/js/index.js',
+    dest: './static/js'
+  },
+  vendorjs: {
+    src:  [
+      './assets/js/vendor/jquery.min.js',
+      './assets/js/vendor/bootstrap.min.js',
+      './assets/js/vendor/E-v1.js',
+      './assets/js/vendor/TweenMax.min.js',
+      './assets/js/vendor/jquery.flexslider.js',
+      './assets/js/vendor/jquery.imagesloaded.js',
+      './assets/js/vendor/jquery.touchSwipe.min.js',
+      './assets/js/vendor/jquery.wookmark.js',
+      './assets/js/vendor/jquery.youmax.js',
+      './assets/js/vendor/lightbox.min.js',
+      './assets/js/vendor/magnific_popup_iframe_gallery.js',
+      './assets/js/vendor/modernizr.js',
+      './assets/js/vendor/parallax.js',
+      './assets/js/vendor/share.js',
+      './assets/js/vendor/spectragram.min.js',
+      './assets/js/vendor/tabletop.js',
+      './assets/js/vendor/twitterfetcher.min.js',
+      './assets/js/vendor/velocity.min.js',
+      './assets/js/vendor/ytplayer.min.js',
+    ],
+    dest: './static/js'
+  },
+  img: {
+    src:  './assets/img/*',
+    dest: './static/img'
+  },
+  templates: {
+    src:  './assets/templates',
+    dest: './'
+  },
+  partials: './assets/templates/partials'
 };
 
-// WATCH TASK
-gulp.task('watch', ['watchcss', 'watchjs', 'watchimg', 'watchvendor', 'watchtemplates', 'watchpartials']);
+// BROWSERIFY BUNDLES
+function Bundle(src) {
+  var browserified = watchify(browserify(src, {
+    debug: true,
+    cache: {},
+    packageCache: {},
+    fullpaths: true, // watchify args
+  }))
 
-gulp.task('watchvendor', function() {
-    watch(paths.vendorjs.src, batch(function(events, done) {
-        gulp.start('vendorjs');
-        done();
-    }))
+  this.bundle = function() {
+    return browserified.bundle()
+      .on('error', function(err) {
+        // Send error to notification center with gulp-notify
+        notify.onError(function(error) {
+          return 'Compile Error: ' + err.message
+        }).call(this, err)
+
+        // Keep gulp from hanging on this task
+        this.emit('end');
+      })
+      .pipe(source(src))
+      .pipe(buffer())
+      .pipe(sourcemaps.init({loadMaps: true}))
+      .pipe(rename(path.basename(src)))
+  }
+
+  this.on = function(event, cb) {
+    browserified.on(event, cb)
+  }
+}
+
+var mainjs  = new Bundle(paths.mainjs.src)
+var indexjs = new Bundle(paths.indexjs.src)
+
+// JS TASK
+gulp.task('js',     ['mainjs', 'indexjs', 'vendorjs'])
+gulp.task('js:min', ['mainjs:min', 'indexjs:min', 'vendorjs'])
+
+gulp.task('mainjs', function() {
+  function build() {
+    return mainjs.bundle()
+      .pipe(sourcemaps.write('./'))
+      .pipe(gulp.dest(paths.mainjs.dest))
+      .pipe(browserSync.reload({
+        stream: true
+      }))
+  }
+
+  mainjs.on('update', build)
+  return build()
 })
 
-gulp.task('watchcss', function() {
-    watch(paths.css.src, batch(function(events, done) {
-        gulp.start('css');
-        done();
-    }));
-});
+gulp.task('mainjs:min', function() {
+  return mainjs.bundle()
+    .pipe(uglify())
+    .pipe(gulp.dest(paths.mainjs.dest))
+})
 
-gulp.task('watchjs', function() {
-    watch(paths.userjs.src, batch(function(events, done){
-        gulp.start('js');
-        done();
-    }));
-});
+gulp.task('indexjs', function() {
+  function build() {
+    return indexjs.bundle()
+      .pipe(sourcemaps.write('./'))
+      .pipe(gulp.dest(paths.indexjs.dest))
+      .pipe(browserSync.reload({
+        stream: true
+      }))
+  }
 
-gulp.task('watchtemplates', function() {
-    watch(paths.templates.src+'/*', batch(function(evnets, done){
-        gulp.start('templates');
-        done();
-    }));
-});
+  indexjs.on('update', build)
+  return build()
+})
 
-gulp.task('watchpartials', function() {
-    watch(paths.partials+'/*', batch(function(evnets, done){
-        gulp.start('templates');
-        done();
-    }));
-});
+gulp.task('indexjs:min', function() {
+  return indexjs.bundle()
+    .pipe(uglify())
+    .pipe(gulp.dest(paths.indexjs.dest))
+})
 
-gulp.task('watchimg', function() {
-    watch(paths.img.src, batch(function(events, done) {
-        gulp.start('compress');
-        del(paths.img.src);
-        done();
-    }));
-});
-
+// VENDOR JS TASK
 gulp.task('vendorjs', function() {
-    return gulp.src(paths.vendorjs.src)
+  return gulp.src(paths.vendorjs.src)
     .pipe(concat('vendor.js'))
     .pipe(uglify())
     .pipe(gulp.dest(paths.vendorjs.dest))
 });
 
-gulp.task('js', function() {
-    return gulp.src(paths.userjs.src)
-    .pipe(concat('main.js'))
-    .pipe(uglify())
-    .pipe(gulp.dest(paths.userjs.dest))
-});
-
-gulp.task('css', function () {
-    var processors = [
-        autoprefixer({browsers: ['last 1 version']}),
-        mqpacker,
-        csswring
-    ];
-    return gulp.src(paths.css.src)
-        .pipe(postcss(processors))
-        .pipe(gulp.dest(paths.css.dest));
+// CSS TASK
+gulp.task('css', function() {
+  var processors = [
+    autoprefixer({
+      browsers: ['last 1 version']
+    }),
+    mqpacker,
+    csswring
+  ];
+  return gulp.src(paths.css.src)
+    .pipe(postcss(processors))
+    .pipe(gulp.dest(paths.css.dest));
 
 });
 
-gulp.task('compress', function () {
-    return gulp.src(paths.img.src)
-        .pipe(imagemin({
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()]
-        }))
-        .pipe(gulp.dest(paths.img.dest));
+// IMG MINIFICATION TASK
+gulp.task('img-min', function() {
+  return gulp.src(paths.img.src)
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [{
+        removeViewBox: false
+      }],
+      use: [pngquant()]
+    }))
+    .pipe(gulp.dest(paths.img.dest));
 });
 
-gulp.task('cleancss', function() {
-    return del(paths.css.dest, function() {
-    });
-});
-
-gulp.task('cleanjs', function() {
-    return del(paths.userjs.dest, function() {
-    });
-});
-
-gulp.task('clean', function() {
-    del([paths.css.dest, paths.userjs.dest], function() {
-    process.exit(0)
-    });
-});
-
+// TEMPLATES TASKS
 gulp.task('templates', function() {
-    var templateData = {
-    },
-    options = {
-        ignorePartials: true, //ignores the unknown footer2 partial in the handlebars template, defaults to false 
-        batch : [paths.partials]
-    }
-    console.log(paths.templates.src);
-    return gulp.src(paths.templates.src+'/*')
-        .pipe(handlebars(templateData, options))
-        .pipe(ext_replace('.html'))
-        .pipe(gulp.dest(''));
+  var templateData = {},
+      options = {
+        ignorePartials: true, // ignores the unknown footer2 partial in the handlebars template, defaults to false
+        batch: [paths.partials]
+      };
+  return gulp.src(paths.templates.src + '/*')
+    .pipe(handlebars(templateData, options))
+    .pipe(extReplace('.html'))
+    .pipe(gulp.dest(''));
 });
 
-gulp.task('default', ['vendorjs', 'js', 'css', 'templates', 'watch']);
+// CLEAN TASK
+gulp.task('cleancss', function(cb) {
+  return del(paths.css.dest, cb)
+});
+
+gulp.task('cleanjs', function(cb) {
+  return del(paths.mainjs.dest, cb)
+});
+
+gulp.task('clean', ['cleancss', 'cleanjs'])
+
+// BROWSERSYNC TASK
+gulp.task('browser-sync', function() {
+  browserSync({
+    server: {
+      baseDir: __dirname
+    }
+  });
+})
+
+// WATCH TASK
+gulp.task('watch', function() {
+  gulp.watch(paths.css.src, ['css'])
+  gulp.watch(paths.img.src, ['img-min'])
+  gulp.watch(paths.partials + '/*', ['templates'])
+  gulp.watch(paths.templates.src + '/*', ['templates'])
+  gulp.watch(paths.vendorjs.src, ['vendorjs'])
+});
+
+gulp.task('default', ['js', 'css', 'templates', 'watch', 'browser-sync']);
+gulp.task('build',   ['js:min', 'css', 'templates'], process.exit);
