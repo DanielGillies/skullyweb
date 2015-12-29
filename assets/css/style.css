@@ -10059,3 +10059,7 @@ filter: FlipH;
 .lazy.loaded {
   opacity: 1;
 }
+
+.sumome-scrollbox-popup div {
+    background: #fff !important;
+}
