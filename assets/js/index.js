@@ -1,5 +1,3 @@
-require('./lazyload')
-
 window._wq = window._wq || [];
 _wq.push({
   "1nw": function(video) {
@@ -353,3 +351,5 @@ function hover(element) {
 function unhover(element) {
   element.setAttribute("src", element.getAttribute("src").replace("-red", "-black"));
 }
+
+require('./lazyload')

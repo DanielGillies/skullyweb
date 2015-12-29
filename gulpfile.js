@@ -21,34 +21,54 @@ var uglify       = require('gulp-uglify');
 var watchify     = require('watchify');
 
 var paths = {
-  src:  __dirname + 'assets',
-  dest: __dirname + 'static',
+  src:  './assets',
+  dest: './static',
 
   css: {
-    src:  __dirname + '/assets/css/*.css',
-    dest: __dirname + '/static/css'
+    src:  './assets/css/*.css',
+    dest: './static/css'
   },
   mainjs: {
-    src:  __dirname + '/assets/js/main.js',
-    dest: __dirname + '/static/js'
+    src:  './assets/js/main.js',
+    dest: './static/js'
   },
   indexjs: {
-    src:  __dirname + '/assets/js/index.js',
-    dest: __dirname + '/static/js'
+    src:  './assets/js/index.js',
+    dest: './static/js'
   },
   vendorjs: {
-    src:  __dirname + '/assets/js/vendor/*.js',
-    dest: __dirname + '/static/js'
+    src:  [
+      './assets/js/vendor/jquery.min.js',
+      './assets/js/vendor/bootstrap.min.js',
+      './assets/js/vendor/E-v1.js',
+      './assets/js/vendor/TweenMax.min.js',
+      './assets/js/vendor/jquery.flexslider.js',
+      './assets/js/vendor/jquery.imagesloaded.js',
+      './assets/js/vendor/jquery.touchSwipe.min.js',
+      './assets/js/vendor/jquery.wookmark.js',
+      './assets/js/vendor/jquery.youmax.js',
+      './assets/js/vendor/lightbox.min.js',
+      './assets/js/vendor/magnific_popup_iframe_gallery.js',
+      './assets/js/vendor/modernizr.js',
+      './assets/js/vendor/parallax.js',
+      './assets/js/vendor/share.js',
+      './assets/js/vendor/spectragram.min.js',
+      './assets/js/vendor/tabletop.js',
+      './assets/js/vendor/twitterfetcher.min.js',
+      './assets/js/vendor/velocity.min.js',
+      './assets/js/vendor/ytplayer.min.js',
+    ],
+    dest: './static/js'
   },
   img: {
-    src:  __dirname + '/assets/img/*',
-    dest: __dirname + '/static/img'
+    src:  './assets/img/*',
+    dest: './static/img'
   },
   templates: {
-    src:  __dirname + '/assets/templates',
-    dest: __dirname + '/'
+    src:  './assets/templates',
+    dest: './'
   },
-  partials: __dirname + '/assets/templates/partials'
+  partials: './assets/templates/partials'
 };
 
 // BROWSERIFY BUNDLES
