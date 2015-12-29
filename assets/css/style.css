@@ -7797,7 +7797,7 @@ input:-webkit-autofill {
   display: none;
 }
 .product-features .transparent {
-  opacity: 0;
+  opacity: 0 !important;
 }
 .product-features .circle {
   width: 86px;
@@ -7891,7 +7891,7 @@ font-family: 'Rajdhani', "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-s
   cursor: pointer;
   font-weight: 600;
 }
-   .product-features input#mobile-skully-fov:checked ~ .mobile-fov-buttons .mobile-skully-fov-button {
+  .product-features input#mobile-skully-fov:checked ~ .mobile-fov-buttons .mobile-skully-fov-button {
     /*border: 2px solid #D52424;
     color: #D52424;*/
     background: black;
@@ -7899,7 +7899,7 @@ font-family: 'Rajdhani', "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-s
     color: white;
   }
   .product-features input#mobile-skully-fov:checked ~ .fov-wrapper .skully-fov {
-    opacity: 1;
+    opacity: 1 !important;
   }
   .product-features input#mobile-conventional-fov:checked ~ .mobile-fov-buttons .mobile-conventional-fov-button {
     border: 2px solid black;

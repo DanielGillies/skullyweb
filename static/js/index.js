@@ -172,6 +172,8 @@ function swapHUD() {
   }
 }
 
+window.swapHUD = swapHUD
+
 // function nextExplosion() {
 //     if (count < 6) {
 //         if (count === 5) {
@@ -354,7 +356,19 @@ function unhover(element) {
 }
 
 },{"./lazyload":2}],2:[function(require,module,exports){
-new (require('layzr.js'))({
+var layzer = require('layzr.js');
+
+layzer.prototype._getOffset = function(node){
+  var n = node;
+  if (node.tagName == 'SOURCE') {
+    while (n.getBoundingClientRect().top === 0 && n.tagName != 'BODY') {
+      n = n.parentNode;
+    }
+  }
+  return n.getBoundingClientRect().top + window.pageYOffset;
+}
+
+new (layzer)({
   attr: 'data-src',
   selector: '[data-src]',
   threshold: 25,
