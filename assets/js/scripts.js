@@ -48,16 +48,16 @@ $(document).ready(function() {
 
   // Append .background-image-holder <img>'s as CSS backgrounds
 
-  $('.background-image-holder').each(function() {
-    var imgSrc = $(this).children('img').attr('src');
-    $(this).css('background', 'url("' + imgSrc + '")');
-    $(this).children('img').hide();
-    $(this).css('background-position', 'initial');
-    $(this).css('opacity', '1');
-    if ($(this).children('img').length > 1) {
-      swapImage($(this), 1);
-    }
-  });
+  // $('.background-image-holder').each(function() {
+  //   var imgSrc = $(this).children('img').attr('src');
+  //   $(this).css('background', 'url("' + imgSrc + '")');
+  //   $(this).children('img').hide();
+  //   $(this).css('background-position', 'initial');
+  //   $(this).css('opacity', '1');
+  //   if ($(this).children('img').length > 1) {
+  //     swapImage($(this), 1);
+  //   }
+  // });
 
   // Fade in background images
 

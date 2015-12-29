@@ -992,14 +992,11 @@ footer.bg-dark li,
   background-size: cover !important;
   background-position: 50% 50% !important;
   background-repeat: no-repeat !important;
-  transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   opacity: 0;
-  -webkit-transition: background 2s ease;
--moz-transition: background 2s ease;
--o-transition: background 2s ease;
-transition: background 2s ease;
 }
 
 .press-image-background {
@@ -1044,12 +1041,6 @@ transition: background 2s ease;
     .press-image-background-2 {
         background-position: 50% 50% !important;
     }
-}
-
-.background-image-holder img {
-  display: none;
-  position: absolute;
-  bottom: 0;
 }
 
 .background-multiply .background-image-holder {

@@ -3,6 +3,7 @@ new (require('layzr.js'))({
   selector: '[data-src]',
   threshold: 25,
   callback: function() {
+    $(this).css('opacity', 1)
     return this.classList.add('loaded');
   }
 });
