@@ -10059,6 +10059,7 @@ input:-ms-input-placeholder {
 @media all and (max-width: 1024px) {
     #mobile-indexheaderbuttons {
         display: block;
+        width: 80%;
     }
     #desktop-experiencebutton {
         display: none;

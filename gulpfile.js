@@ -36,6 +36,10 @@ var paths = {
     src:  './assets/js/index.js',
     dest: './static/js'
   },
+  videosjs: {
+    src:  './assets/js/videos.js',
+    dest: './static/js'
+  },
   vendorjs: {
     src:  [
       './assets/js/vendor/jquery.min.js',
@@ -104,11 +108,13 @@ function Bundle(src) {
 
 var mainjs  = new Bundle(paths.mainjs.src)
 var indexjs = new Bundle(paths.indexjs.src)
+var videosjs = new Bundle(paths.videosjs.src)
 
 // JS TASK
-gulp.task('js',     ['mainjs', 'indexjs', 'vendorjs'])
-gulp.task('js:min', ['mainjs:min', 'indexjs:min', 'vendorjs'])
+gulp.task('js',     ['mainjs', 'indexjs', 'videosjs', 'vendorjs'])
+gulp.task('js:min', ['mainjs:min', 'indexjs:min', 'videosjs:min', 'vendorjs'])
 
+// MAIN JS BUILD
 gulp.task('mainjs', function() {
   function build() {
     return mainjs.bundle()
@@ -129,6 +135,7 @@ gulp.task('mainjs:min', function() {
     .pipe(gulp.dest(paths.mainjs.dest))
 })
 
+// INDEX JS BUILD
 gulp.task('indexjs', function() {
   function build() {
     return indexjs.bundle()
@@ -148,6 +155,28 @@ gulp.task('indexjs:min', function() {
     .pipe(uglify())
     .pipe(gulp.dest(paths.indexjs.dest))
 })
+
+// VIDEOS JS BUILD
+gulp.task('videosjs', function() {
+  function build() {
+    return videosjs.bundle()
+      .pipe(sourcemaps.write('./'))
+      .pipe(gulp.dest(paths.videosjs.dest))
+      .pipe(browserSync.reload({
+        stream: true
+      }))
+  }
+
+  videosjs.on('update', build)
+  return build()
+})
+
+gulp.task('videosjs:min', function() {
+  return videosjs.bundle()
+    .pipe(uglify())
+    .pipe(gulp.dest(paths.videosjs.dest))
+})
+
 
 // VENDOR JS TASK
 gulp.task('vendorjs', function() {
