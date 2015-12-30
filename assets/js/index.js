@@ -147,55 +147,15 @@ function swapHUD() {
 
 window.swapHUD = swapHUD
 
-// function nextExplosion() {
-//     if (count < 6) {
-//         if (count === 5) {
-//             nextButton.css('display', 'none');
-//         } else if (count >= 3) {
-//             prevButton.css('display', 'inline');
-//         }
-//         console.log("Playing video " + count + ". FORWARDS: " + forwards);
-//         if (forwards) {
-//             $("#explosive-vid" + (count - 1)).attr("class", "");
-//             $("#exp" + (count - 1)).removeClass("active");
-//         } else {
-//             $("#explosive-vid" + (count) + "b").attr("class", "");
-//             $("#exp" + (count-1)).removeClass("active");
-//         }
-//         $("#explosive-vid" + count).addClass("explosive-active");
-//         $("#exp" + (count)).addClass("active");
-//         $(".explosive-active")[0].play();
-//         // $(".explosive-active")[0].playbackRate = 3;
-//         count++;
-//         forwards = true;
-//     } else {
-//     }
-// }
-
-// function prevExplosion() {
-//     if (count > 0) {
-//         if (count === 2) {
-//             prevButton.css('display', 'none');
-//         } else if (count <= 5) {
-//             nextButton.css('display', 'inline');
-//         }
-//         console.log("Playing video " + count + ". FORWARDS: " + forwards);
-//         if (forwards) {
-//             $("#explosive-vid" + (count)).attr("class", "");
-//             $("#exp" + (count)).removeClass("active");
-//         } else {
-//             $("#explosive-vid" + (count+1) + "b").attr("class", "");
-//             $("#exp" + (count)).removeClass("active");
-//         }
-//         $("#explosive-vid" + (count-1) + "b").addClass("explosive-active");
-//         $("#exp" + (count-1)).addClass("active");
-//         $(".explosive-active")[0].play();
-//         // $(".explosive-active")[0].playbackRate = 3;
-//         count--;
-//         forwards = false
-//     } else {
-//     }
-// }
+var minipress = document.getElementsByClassName("minipress");
+for (i = 0; i < minipress.length; i++) {
+    minipress[i].addEventListener("mouseover", function() {
+        this.setAttribute("src", this.getAttribute("src").replace("-black", "-red"));
+    })
+    minipress[i].addEventListener("mouseout", function() {
+        this.setAttribute("src", this.getAttribute("src").replace("-red", "-black"));
+    })
+}
 
 function nextExplosion() {
   console.log(count);
@@ -319,13 +279,5 @@ $(function() {
     preventDefaultEvents: false
   });
 });
-
-function hover(element) {
-  element.setAttribute("src", element.getAttribute("src").replace("-black", "-red"));
-}
-
-function unhover(element) {
-  element.setAttribute("src", element.getAttribute("src").replace("-red", "-black"));
-}
 
 require('./lazyload')
