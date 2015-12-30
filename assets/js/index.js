@@ -7,30 +7,6 @@ _wq.push({
   }
 });
 
-if (window.mobilecheck()) {
-  $("#hud").toggle();
-  $("#hudmobile").toggle();
-  $("#pov").toggle();
-  $("#povmobile").toggle();
-  $("#explosive").toggle();
-  $("#explosivemobile").toggle();
-  $("section").removeClass("fullheight");
-  $("section").removeClass("fullheight2");
-  $("section").addClass("mobilefullheight");
-  $("#explosivemobile").removeClass("mobilefullheight");
-  $("#beauty").addClass("overlay4");
-  $("#beauty").removeClass("bg-white");
-  $("#beauty").addClass("bg-black");
-  $("#vidholder").addClass("overlay");
-  $("#vidholder").addClass("mh600px");
-  $("#beautypurchaseimage").attr("src", "static/img/beauty-cta-mobile.jpg");
-  $("#beautypurchaseimageholder").css("background", "url('static/img/beauty-cta-mobile.jpg')");
-  $("#app").removeClass("bg-black");
-  $("#app").addClass("bg-white");
-  $("#appbackground").attr("src", "static/img/kyle1bwmobile.jpg");
-  $("#appbackgroundholder").css("background", "url('static/img/kyle1bwmobile.jpg')");
-}
-
 var hudSwap = 1;
 
 //  var vid = document.getElementById("explosive-vid2")
