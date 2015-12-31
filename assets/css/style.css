@@ -464,8 +464,9 @@ h6,
         line-height: 40px;
     }
     h3 {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: bold;
     }
     h4 {
         font-size: 20px;
@@ -10356,5 +10357,9 @@ input:-ms-input-placeholder {
         background: #282828;
         opacity: 0.4;
         z-index: 3;
+    }
+
+    #userguide .background-image-holder {
+        background-image: none !important;
     }
 }

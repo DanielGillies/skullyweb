@@ -200,28 +200,5 @@
 
 {{> scripts}}
 
-<script type="text/javascript">
-  function detectmob() {
-    if (window.innerWidth <= 997) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  if (detectmob()) {
-    $(".tab-content").removeClass("tab-content");
-    $(".tabs").removeClass("tabs").addClass("text-left");
-    $(".tab-title").removeClass("tab-title").addClass("h4").addClass("uppercase");
-  }
-
-  //                     $(window).resize(function() {
-  //     $('#vidholder').css('height',$('#hero').height());
-  // });
-  //                     $('document').ready(function () {
-  //     $('#vidholder').css('height',$('#hero').height());
-  // });
-</script>
-
 </body>
 </html>

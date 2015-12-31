@@ -15,3 +15,5 @@ $(window).on('scroll', function() {
         }
     });
 });
+
+require('./lazyload')

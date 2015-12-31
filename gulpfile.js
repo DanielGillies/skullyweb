@@ -40,6 +40,18 @@ var paths = {
     src:  './assets/js/videos.js',
     dest: './static/js'
   },
+  aboutusjs: {
+    src: './assets/js/aboutus.js',
+    dest: './static/js'
+  },
+  pressjs: {
+    src: './assets/js/press.js',
+    dest: './static/js'
+  },
+  storejs: {
+    src: './assets/js/store.js',
+    dest: './static/js'
+  },
   vendorjs: {
     src:  [
       './assets/js/vendor/jquery.min.js',
@@ -109,10 +121,13 @@ function Bundle(src) {
 var mainjs  = new Bundle(paths.mainjs.src)
 var indexjs = new Bundle(paths.indexjs.src)
 var videosjs = new Bundle(paths.videosjs.src)
+var aboutusjs = new Bundle(paths.aboutusjs.src)
+var pressjs = new Bundle(paths.pressjs.src)
+var storejs = new Bundle(paths.storejs.src)
 
 // JS TASK
-gulp.task('js',     ['mainjs', 'indexjs', 'videosjs', 'vendorjs'])
-gulp.task('js:min', ['mainjs:min', 'indexjs:min', 'videosjs:min', 'vendorjs'])
+gulp.task('js',     ['mainjs', 'indexjs', 'videosjs', 'aboutusjs', 'pressjs', 'storejs', 'vendorjs'])
+gulp.task('js:min', ['mainjs:min', 'indexjs:min', 'videosjs:min', 'aboutusjs:min', 'pressjs:min', 'storejs:min', 'vendorjs'])
 
 // MAIN JS BUILD
 gulp.task('mainjs', function() {
@@ -177,6 +192,68 @@ gulp.task('videosjs:min', function() {
     .pipe(gulp.dest(paths.videosjs.dest))
 })
 
+// ABOUTUS JS BUILD
+gulp.task('aboutusjs', function() {
+  function build() {
+    return aboutusjs.bundle()
+      .pipe(sourcemaps.write('./'))
+      .pipe(gulp.dest(paths.aboutusjs.dest))
+      .pipe(browserSync.reload({
+        stream: true
+      }))
+  }
+
+  aboutusjs.on('update', build)
+  return build()
+})
+
+gulp.task('aboutusjs:min', function() {
+  return aboutusjs.bundle()
+    .pipe(uglify())
+    .pipe(gulp.dest(paths.aboutusjs.dest))
+})
+
+// PRESS JS BUILD
+gulp.task('pressjs', function() {
+  function build() {
+    return pressjs.bundle()
+      .pipe(sourcemaps.write('./'))
+      .pipe(gulp.dest(paths.pressjs.dest))
+      .pipe(browserSync.reload({
+        stream: true
+      }))
+  }
+
+  pressjs.on('update', build)
+  return build()
+})
+
+gulp.task('pressjs:min', function() {
+  return pressjs.bundle()
+    .pipe(uglify())
+    .pipe(gulp.dest(paths.pressjs.dest))
+})
+
+// STORE JS BUILD
+gulp.task('storejs', function() {
+  function build() {
+    return storejs.bundle()
+      .pipe(sourcemaps.write('./'))
+      .pipe(gulp.dest(paths.storejs.dest))
+      .pipe(browserSync.reload({
+        stream: true
+      }))
+  }
+
+  storejs.on('update', build)
+  return build()
+})
+
+gulp.task('storejs:min', function() {
+  return storejs.bundle()
+    .pipe(uglify())
+    .pipe(gulp.dest(paths.storejs.dest))
+})
 
 // VENDOR JS TASK
 gulp.task('vendorjs', function() {
