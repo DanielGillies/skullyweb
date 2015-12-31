@@ -1,8 +1,8 @@
 if (window.mobilecheck()) {
-
     $("#presspacket-background").css("background", "url('/static/img/presslowerbg.jpg')");
     $("#presspacket-image").attr("src", "/static/img/presslowerbg.jpg")
     $("#presspacket-section").addClass("overlay3").removeClass("bg-white").addClass("bg-black");
+    $("#inthepress").addClass("overlay3").removeClass("bg-white").addClass("bg-black");
 }
 
 var contactform = document.getElementById('contactform');

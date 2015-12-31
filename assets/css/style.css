@@ -5987,7 +5987,7 @@ video {
     .image-square .content {
         transform: none;
         -webkit-transform: none;
-        padding: 0 20%;
+        padding: 0 5%;
     }
     .image-square.left.small {
         height: auto;
@@ -9540,6 +9540,10 @@ Main components
 .bg-black .btn-mega:hover {
     background-color: #fff;
     color: #000;
+}
+
+.bg-black h1 {
+    color: white;
 }
 
 .bg-white .btn-mega:hover {
