@@ -302,6 +302,8 @@ gulp.task('templates', function() {
     .pipe(handlebars(templateData, options))
     .pipe(extReplace('.html'))
     .pipe(gulp.dest(''));
+    .pipe(extReplace('', '', true))
+    .pipe(gulp.dest(''));
 });
 
 // CLEAN TASK

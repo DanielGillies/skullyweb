@@ -30,3 +30,7 @@
 .icon-play2:before{content:'\0046';
 top: 4px; height: 200%;}
 .icon-play3:before{content:'\0047';}
+.icon-wrench:before{content:'\0048';}
+.icon-briefcase:before{content:'\0049';}
+.icon-ruler:before{content:'\004A';}
+.icon-code:before{content:'\004B';}

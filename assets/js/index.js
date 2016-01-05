@@ -253,13 +253,9 @@ $("#hovertext").mouseenter(function() {
 var audio2 = $("#scatman")[0];
 $(".scatbutton").click(function() {
 
-  audio2.currentTime = 6;
   audio2.volume = .3;
   audio2.play();
-  // setTimeout(function() {audio.pause();}, 7150);
-  setTimeout(function() {
-    audio2.pause();
-  }, 7950);
+
   alert("ITS SCATMAN TIME!!!!");
 
 });

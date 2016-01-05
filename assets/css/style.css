@@ -9633,7 +9633,8 @@ Main components
         color: white;
 }*/
 
-.bg-white .btn-middle {
+.bg-white .btn-middle,
+.modal .btn-middle {
     background-color: rgba(0, 0, 0, .3) !important;
     color: white !important;
 }
@@ -10350,7 +10351,6 @@ input:-ms-input-placeholder {
     #beauty .ar1font {
         color: white;
     }
-
     #vidholder:before {
         position: absolute;
         content: '';
@@ -10362,8 +10362,48 @@ input:-ms-input-placeholder {
         opacity: 0.4;
         z-index: 3;
     }
-
     #userguide .background-image-holder {
         background-image: none !important;
+    }
+    #presspacket-section:before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #282828;
+        opacity: 0.4;
+        z-index: 3;
+    }
+    #presspacket-section h2,
+    #presspacket-section h5,
+    #presspacket-section p,
+    #presspacket-section h4,
+    #presspacket-section .ar1font {
+        color: white;
+    }
+
+    #inthepress:before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #282828;
+        opacity: 0.4;
+        z-index: 3;
+    }
+    #inthepress h2,
+    #inthepress h5,
+    #inthepress p,
+    #inthepress h4,
+    #inthepress .ar1font {
+        color: white;
+    }
+
+    .ignoreheight {
+        min-height: 0;
     }
 }
