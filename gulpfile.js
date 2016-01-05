@@ -52,6 +52,10 @@ var paths = {
     src: './assets/js/store.js',
     dest: './static/js'
   },
+  careersjs: {
+    src: './assets/js/careers.js',
+    dest: './static/js'
+  },
   vendorjs: {
     src:  [
       './assets/js/vendor/jquery.min.js',
@@ -124,10 +128,11 @@ var videosjs = new Bundle(paths.videosjs.src)
 var aboutusjs = new Bundle(paths.aboutusjs.src)
 var pressjs = new Bundle(paths.pressjs.src)
 var storejs = new Bundle(paths.storejs.src)
+var careersjs = new Bundle(paths.careersjs.src)
 
 // JS TASK
-gulp.task('js',     ['mainjs', 'indexjs', 'videosjs', 'aboutusjs', 'pressjs', 'storejs', 'vendorjs'])
-gulp.task('js:min', ['mainjs:min', 'indexjs:min', 'videosjs:min', 'aboutusjs:min', 'pressjs:min', 'storejs:min', 'vendorjs'])
+gulp.task('js',     ['mainjs', 'indexjs', 'videosjs', 'aboutusjs', 'pressjs', 'storejs', 'careersjs', 'vendorjs'])
+gulp.task('js:min', ['mainjs:min', 'indexjs:min', 'videosjs:min', 'aboutusjs:min', 'pressjs:min', 'careersjs:min', 'storejs:min', 'vendorjs'])
 
 // MAIN JS BUILD
 gulp.task('mainjs', function() {
@@ -253,6 +258,27 @@ gulp.task('storejs:min', function() {
   return storejs.bundle()
     .pipe(uglify())
     .pipe(gulp.dest(paths.storejs.dest))
+})
+
+// CAREERS JS BUILD
+gulp.task('careersjs', function() {
+  function build() {
+    return careersjs.bundle()
+      .pipe(sourcemaps.write('./'))
+      .pipe(gulp.dest(paths.careersjs.dest))
+      .pipe(browserSync.reload({
+        stream: true
+      }))
+  }
+
+  careersjs.on('update', build)
+  return build()
+})
+
+gulp.task('careersjs:min', function() {
+  return careersjs.bundle()
+    .pipe(uglify())
+    .pipe(gulp.dest(paths.careersjs.dest))
 })
 
 // VENDOR JS TASK
