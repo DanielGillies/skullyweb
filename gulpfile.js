@@ -301,9 +301,9 @@ gulp.task('templates', function() {
   return gulp.src(paths.templates.src + '/*')
     .pipe(handlebars(templateData, options))
     .pipe(extReplace('.html'))
-    .pipe(gulp.dest(''));
-    .pipe(extReplace('', '', true))
-    .pipe(gulp.dest(''));
+    .pipe(gulp.dest(''))
+//    .pipe(extReplace('', '', true))
+//    .pipe(gulp.dest(''));
 });
 
 // CLEAN TASK

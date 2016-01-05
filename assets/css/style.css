@@ -10381,7 +10381,7 @@ input:-ms-input-placeholder {
     #presspacket-section p,
     #presspacket-section h4,
     #presspacket-section .ar1font {
-        color: white;
+        color: white !important;
     }
 
     #inthepress:before {
@@ -10395,11 +10395,7 @@ input:-ms-input-placeholder {
         opacity: 0.4;
         z-index: 3;
     }
-    #inthepress h2,
-    #inthepress h5,
-    #inthepress p,
-    #inthepress h4,
-    #inthepress .ar1font {
+    #inthepress h1 {
         color: white;
     }
 
