@@ -10313,7 +10313,11 @@ input:-ms-input-placeholder {
 }
 
 .sumome-scrollbox-popup div {
-    background: #fff !important;
+    background: #555 !important;
+}
+.sumome-scrollbox-popup div p,
+.sumome-scrollbox-popup div h3{
+    color: #fff !important;
 }
 
 @media all and (max-width: 1024px) {
