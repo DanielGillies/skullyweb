@@ -186,6 +186,11 @@ function nextExplosion() {
     prevButton.css('display', 'inline');
   }
   forwards = true;
+  // if (count < 5) {
+  //     $(".explosive-active").on('ended', function() {
+  //       nextExplosion();
+  //     });
+  // }
 }
 
 window.nextExplosion = nextExplosion
