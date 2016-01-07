@@ -34,3 +34,5 @@ top: 4px; height: 200%;}
 .icon-briefcase:before{content:'\0049';}
 .icon-ruler:before{content:'\004A';}
 .icon-code:before{content:'\004B';}
+.icon-downarrow:before{content:'\004C';}
+.icon-uparrow:before{content:'\004D';}
