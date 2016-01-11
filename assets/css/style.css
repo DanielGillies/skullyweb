@@ -10320,6 +10320,18 @@ input:-ms-input-placeholder {
     color: #fff !important;
 }
 
+.progress-circle {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px; 
+    color: #fff;
+    /* width and height can be anything, as long as they're equal */
+}
+
+#explosive video {
+    opacity: 1;
+}
+
 @media all and (max-width: 1024px) {
     #hud,
     #pov,
