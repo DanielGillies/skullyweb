@@ -45,6 +45,14 @@ RUN mkdir fonts
 WORKDIR fonts
 COPY ./static/fonts/* ./
 
+# Go back to static dir
+WORKDIR ..
+
+# Move over audio
+RUN mkdir audio
+WORKDIR audio
+COP ./static/audio/* ./
+
 ####### DONE WITH STUFF IN STATIC #########
 
 EXPOSE 80
