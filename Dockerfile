@@ -51,7 +51,7 @@ WORKDIR ..
 # Move over audio
 RUN mkdir audio
 WORKDIR audio
-COP ./static/audio/* ./
+COPY ./static/audio/* ./
 
 ####### DONE WITH STUFF IN STATIC #########
 
