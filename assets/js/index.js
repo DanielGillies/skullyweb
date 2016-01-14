@@ -1,11 +1,16 @@
 window._wq = window._wq || [];
 _wq.push({
     "1nw": function(video) {
-        video.bind("end", function() {
-            $("#wistia_26_romulus").append("<a target='_blank' href='store' class='ctabutton'>Shop Now</a>");
+        console.log(video.name())
+        video.bind("play", function() {
+            console.log("START THIS BISH");
         })
     }
 });
+
+window.wistiaEmbedShepherdReady = function() {
+    console.log("THE SHEPHERD IS READY MOFO");
+}
 
 var hudSwap = 1;
 
