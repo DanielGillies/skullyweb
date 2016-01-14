@@ -110,16 +110,6 @@ hr {
     width: 100%;
 }
 
-.image-bg hr {
-    border-color: #fff;
-    opacity: .6;
-}
-
-.image-bg.bg-light hr {
-    border-color: #ccc;
-    opacity: 1;
-}
-
 .bg-dark hr {
     border-color: #555;
 }
@@ -608,15 +598,6 @@ a {
     cursor: pointer;
 }
 
-.image-bg a {
-    color: #fff;
-}
-
-.image-bg a:hover {
-    color: #fff;
-    opacity: .9;
-}
-
 .bg-light a {
     color: #47b475;
 }
@@ -966,50 +947,6 @@ footer.bg-dark li,
     z-index: 2;
 }
 
-.image-bg h1,
-.image-bg h2,
-.image-bg h3,
-.image-bg h4,
-.image-bg h5,
-.image-bg h6 {
-    color: #ffffff;
-}
-
-.image-bg p,
-.image-bg span,
-.image-bg li {
-    color: #ffffff;
-}
-
-.image-bg .container {
-    position: relative;
-    z-index: 3;
-}
-
-.container.image-bg .row {
-    position: relative;
-    z-index: 3;
-}
-
-.background-image-holder {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    /*z-index: 1;*/
-    /*background: #D52424;*/
-    background-size: cover !important;
-    background-position: 50% 50% !important;
-    background-repeat: no-repeat !important;
-    -webkit-transition: all 0.3s ease !important;
-    -moz-transition: all 0.3s ease !important;
-    -o-transition: all 0.3s ease !important;
-    transition: all 0.3s ease !important;
-    opacity: 0;
-    vertical-align: middle;
-}
-
 #vidholder .background-image-holder {
     -webkit-transition: all 3s cubic-bezier(0.755, 0.05, 0.855, 0.06) !important;
     -moz-transition: all 3s cubic-bezier(0.755, 0.05, 0.855, 0.06) !important;
@@ -1017,79 +954,10 @@ footer.bg-dark li,
     transition: all 3s cubic-bezier(0.755, 0.05, 0.855, 0.06) !important;
 }
 
-.index-page video {
-    -webkit-transition: all 0.1s ease !important;
-    -moz-transition: all 0.1s ease !important;
-    -o-transition: all 0.1s ease !important;
-    transition: all 0.1s ease !important;
-    opacity: 0;
-}
-
-.press-image-background {
-    background-position: 70% 50% !important;
-}
-
-#beauty-background {
-    background-position: 100% 50% !important;
-}
-
-.press-image-background-2 {
-    background-position: 400% 50% !important;
-    background-size: auto 100% !important;
-}
-
-@media all and (max-width: 1800px) {
-    .press-image-background-2 {
-        background-position: -100% 50% !important;
-        background-size: auto 100% !important;
-    }
-}
-
-@media all and (max-width: 1500px) {
-    .press-image-background-2 {
-        background-position: -50% 50% !important;
-    }
-}
-
-@media all and (max-width: 1350px) {
-    .press-image-background-2 {
-        background-position: 0% 50% !important;
-    }
-}
-
-
-/*@media all and (max-width: 1180px) {
-    .press-image-background-2 {
-        background-position: 0% 50% !important;
-    }
-}*/
-
 @media all and (max-width: 662px) {
     .press-image-background-2 {
         background-position: 50% 50% !important;
     }
-}
-
-.background-multiply .background-image-holder {
-    background-color: #47b475 !important;
-    background-blend-mode: multiply;
-}
-
-.background-image-holder.fadeIn {
-    opacity: 1;
-}
-
-.background-image {
-    display: block;
-}
-
-.parallax > .background-image-holder,
-.parallax .slides li > .background-image-holder {
-    height: 100vh;
-    top: -50vh;
-    transition: all 0s ease !important;
-    transition: opacity 0.3s ease !important;
-    -webkit-transform-style: preserve-3d;
 }
 
 .parallax:first-child .slides li > .background-image-holder,
@@ -1099,18 +967,6 @@ footer.bg-dark li,
 
 .main-container > a:first-child + .parallax .background-image-holder {
     top: 0;
-}
-
-@media all and (max-width: 990px) {
-    .background-image-holder {
-        display: block;
-    }
-    .background-image {
-        display: block;
-    }
-    .fs-vid-background {
-        display: none;
-    }
 }
 
 @media all and (max-width: 767px) {
@@ -5278,7 +5134,7 @@ iframe {
 }
 
 video {
-    max-width: 100%;
+    /*max-width: 100%;*/
 }
 
 .local-video-container {
@@ -5296,11 +5152,6 @@ video {
     -moz-transition: all 0.3s ease;
     top: 0;
     box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.26);
-}
-
-.background-image-holder.fadeout {
-    opacity: 0 !important;
-    z-index: 0;
 }
 
 .play-button {
@@ -9532,6 +9383,10 @@ Main components
     color: white;
 }
 
+.bg-black {
+    background-color: #000;
+}
+
 .bg-black .btn-mega {
     border-color: white;
     color: white;
@@ -9543,7 +9398,13 @@ Main components
     color: #000;
 }
 
-.bg-black h1 {
+.bg-black h1,
+.bg-black h2,
+.bg-black h3,
+.bg-black h4,
+.bg-black h5,
+.bg-black h6,
+.bg-black p {
     color: white;
 }
 
