@@ -2,15 +2,15 @@
 window._wq = window._wq || [];
 _wq.push({
     "1nw": function(video) {
-        console.log(video.name())
+        // console.log(video.name())
         video.bind("play", function() {
-            console.log("START THIS BISH");
+            // console.log("START THIS BISH");
         })
     }
 });
 
 window.wistiaEmbedShepherdReady = function() {
-    console.log("THE SHEPHERD IS READY MOFO");
+    // console.log("THE SHEPHERD IS READY MOFO");
 }
 
 var hudSwap = 1;
