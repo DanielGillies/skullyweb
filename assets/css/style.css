@@ -186,6 +186,7 @@ hr {
 
 .container {
     position: relative;
+    z-index: 1000;
 }
 
 .vnu {
@@ -6520,7 +6521,7 @@ footer.bg-dark a {
 }
 
 .pt64 {
-    padding-top: 64px;
+    padding-top: 64px !important;
 }
 
 .pt72 {
@@ -10279,5 +10280,113 @@ input:-ms-input-placeholder {
 
     .ignoreheight {
         min-height: 0;
+    }
+}
+
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-container .title-container {
+    z-index: 1000;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.video-container .description .inner {
+    font-size: 1em;
+    width: 45%;
+    margin: 0 auto;
+}
+
+.video-container .link {
+    position: absolute;
+    bottom: 3em;
+    width: 100%;
+    text-align: center;
+    z-index: 1001;
+    font-size: 2em;
+    color: #fff;
+}
+
+.video-container .link a {
+    color: #fff;
+}
+
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    min-width: 100%;
+}
+
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+#index1img div {
+    background-image: url('../../static/img/indexmobile.jpg');
+}
+
+#index2img div {
+    background-image: url('../../static/img/buynowbeauty.jpg');
+}
+
+#index3img div {
+    background-image: url('../../static/img/beauty_background2.jpeg');
+}
+
+.mobile-image {
+    display: none;
+}
+
+.bg-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-image div{
+    background-size: cover;
+    background-position: 50% 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-background {
+    padding: 0;
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+
+.filter {
+  z-index: 100;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+}
+
+@media all and (max-width: 990px) {
+    .video-container video {
+        display: none;
+    }
+    .mobile-image {
+        display: block;
     }
 }

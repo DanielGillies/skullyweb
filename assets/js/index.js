@@ -1,15 +1,15 @@
 window._wq = window._wq || [];
 _wq.push({
     "1nw": function(video) {
-        console.log(video.name())
+        // console.log(video.name())
         video.bind("play", function() {
-            console.log("START THIS BISH");
+            // console.log("START THIS BISH");
         })
     }
 });
 
 window.wistiaEmbedShepherdReady = function() {
-    console.log("THE SHEPHERD IS READY MOFO");
+    // console.log("THE SHEPHERD IS READY MOFO");
 }
 
 var hudSwap = 1;
@@ -70,58 +70,58 @@ if (!window.mobilecheck()) {
             $("#hudvid").on("ended", swapHUD);
         }
 
-        if (currentScroll >= povTop - 55 && currentScroll <= explosiveTop - 55 && povComplete === 0) {
-            povComplete = 1;
-            TweenLite.set(".hud-animation", {
-                perspective: 500
-            });
-            TweenMax.to("#hud-bg", 1.5, {
-                rotationY: 20,
-                transformOrigin: "left 50%",
-                left: "-=20%",
-                opacity: .7,
-                ease: Power1.easeInOut
-            });
-            TweenMax.to("#hud-nose", 1.5, {
-                rotationY: 20,
-                transformOrigin: "left 50%",
-                left: "-=20%",
-                opacity: .9,
-                ease: Power1.easeInOut
-            });
-            TweenMax.to("#hud-rear", 1.5, {
-                rotationY: 20,
-                transformOrigin: "left 50%",
-                left: "-=20%",
-                ease: Power1.easeInOut
-            });
-            TweenMax.to("#hud-mph", 1.5, {
-                rotationY: 20,
-                transformOrigin: "left 50%",
-                left: "-=20%",
-                ease: Power1.easeInOut
-            });
+        // if (currentScroll >= povTop - 55 && currentScroll <= explosiveTop - 55 && povComplete === 0) {
+        //     povComplete = 1;
+        //     TweenLite.set(".hud-animation", {
+        //         perspective: 500
+        //     });
+        //     TweenMax.to("#hud-bg", 1.5, {
+        //         rotationY: 20,
+        //         transformOrigin: "left 50%",
+        //         left: "-=20%",
+        //         opacity: .7,
+        //         ease: Power1.easeInOut
+        //     });
+        //     TweenMax.to("#hud-nose", 1.5, {
+        //         rotationY: 20,
+        //         transformOrigin: "left 50%",
+        //         left: "-=20%",
+        //         opacity: .9,
+        //         ease: Power1.easeInOut
+        //     });
+        //     TweenMax.to("#hud-rear", 1.5, {
+        //         rotationY: 20,
+        //         transformOrigin: "left 50%",
+        //         left: "-=20%",
+        //         ease: Power1.easeInOut
+        //     });
+        //     TweenMax.to("#hud-mph", 1.5, {
+        //         rotationY: 20,
+        //         transformOrigin: "left 50%",
+        //         left: "-=20%",
+        //         ease: Power1.easeInOut
+        //     });
 
-            TweenMax.to("#hud-nose", 1, {
-                left: "+=1%",
-                delay: 1,
-                ease: Power2.easeInOut
-            });
-            TweenMax.to("#hud-rear", 1.5, {
-                scale: 2,
-                top: "-=35%",
-                left: "-=55%",
-                ease: Power2.easeInOut,
-                delay: .5
-            });
-            TweenMax.to("#hud-mph", 1.5, {
-                scale: 2.5,
-                top: "-=55%",
-                left: "-=80%",
-                ease: Power2.easeInOut,
-                delay: .5
-            });
-        }
+        //     TweenMax.to("#hud-nose", 1, {
+        //         left: "+=1%",
+        //         delay: 1,
+        //         ease: Power2.easeInOut
+        //     });
+        //     TweenMax.to("#hud-rear", 1.5, {
+        //         scale: 2,
+        //         top: "-=35%",
+        //         left: "-=55%",
+        //         ease: Power2.easeInOut,
+        //         delay: .5
+        //     });
+        //     TweenMax.to("#hud-mph", 1.5, {
+        //         scale: 2.5,
+        //         top: "-=55%",
+        //         left: "-=80%",
+        //         ease: Power2.easeInOut,
+        //         delay: .5
+        //     });
+        // }
     })
 }
 

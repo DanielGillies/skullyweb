@@ -14,6 +14,82 @@ window.mobilecheck = function() {
   return check;
 }
 
+/** Document Ready Functions **/
+/********************************************************************/
+
+$(document).ready(function() {
+
+    // Resive video
+    scaleVideoContainer();
+
+    initBannerVideoSize('.video-container video');
+
+    $(window).on('resize', function() {
+        scaleVideoContainer();
+        scaleBannerVideoSize('.video-container video');
+    });
+
+});
+
+/** Reusable Functions **/
+/********************************************************************/
+
+function scaleVideoContainer() {
+
+    var height = $(window).height();
+    var unitHeight = parseInt(height) + 'px';
+    $('.video-background').css('height', unitHeight);
+
+}
+
+function initBannerVideoSize(element) {
+
+    $(element).each(function() {
+        $(this).data('height', $(this).height());
+        $(this).data('width', $(this).width());
+    });
+
+    scaleBannerVideoSize(element);
+
+}
+
+function scaleBannerVideoSize(element) {
+
+    var windowWidth = $(window).width(),
+        windowHeight = $(window).height(),
+        videoWidth,
+        videoHeight;
+
+    console.log(windowHeight);
+
+    $(element).each(function() {
+        var videoAspectRatio = $(this).data('height') / $(this).data('width'),
+            windowAspectRatio = windowHeight / windowWidth;
+
+        if (videoAspectRatio > windowAspectRatio) {
+            videoWidth = windowWidth;
+            videoHeight = videoWidth * videoAspectRatio;
+            $(this).css({
+                'top': -(videoHeight - windowHeight) / 2 + 'px',
+                'margin-left': 0
+            });
+        } else {
+            videoHeight = windowHeight;
+            videoWidth = videoHeight / videoAspectRatio;
+            $(this).css({
+                'margin-top': 0,
+                'margin-left': -(videoWidth - windowWidth) / 2 + 'px'
+            });
+        }
+
+        $(this).width(videoWidth).height(videoHeight);
+
+        $('.video-background .video-container video').addClass('fadeIn animated');
+
+
+    });
+}
+
 function swapImage(element, index) {
   setTimeout(function() {
     var currSrc = element.children('img').eq(index).attr('src');
@@ -398,9 +474,9 @@ $(document).ready(function() {
 
   // FS Vid Background
 
-  $(window).resize(function() {
-    resizeVid();
-  });
+  // $(window).resize(function() {
+  //   resizeVid();
+  // });
 
   // Interact with Map once the user has clicked (to prevent scrolling the page = zooming the map
 
@@ -693,9 +769,9 @@ $(window).load(function() {
 
 });
 
-$('document').ready(function() {
-  resizeVid();
-})
+// $('document').ready(function() {
+//   resizeVid();
+// })
 
 function prepcta() {
   console.log(document.body);
@@ -709,23 +785,23 @@ function prepcta() {
   };
 }
 
-function resizeVid() {
+// function resizeVid() {
 
-  $('.fs-vid-background video').each(function() {
-    var vid = $(this);
-    var ratio = (vid.width() / vid.height());
-    var section = vid.closest('section');
-    if (section.width() > section.outerHeight()) {
-      vid.css('width', (section.width() * ratio) * .95);
-      vid.css('margin-left', -((section.width() * ratio) / 4) * .8);
-      vid.css('height', 'auto');
-    } else {
-      vid.css('width', 'auto');
-      vid.css('height', (section.outerHeight() * ratio));
-      vid.css('margin-left', '0');
-    }
-  });
-}
+//   $('.fs-vid-background video').each(function() {
+//     var vid = $(this);
+//     var ratio = (vid.width() / vid.height());
+//     var section = vid.closest('section');
+//     if (section.width() > section.outerHeight()) {
+//       vid.css('width', (section.width() * ratio) * .95);
+//       vid.css('margin-left', -((section.width() * ratio) / 4) * .8);
+//       vid.css('height', 'auto');
+//     } else {
+//       vid.css('width', 'auto');
+//       vid.css('height', (section.outerHeight() * ratio));
+//       vid.css('margin-left', '0');
+//     }
+//   });
+// }
 
 function detectmob() {
   if (window.innerWidth <= 997) {
