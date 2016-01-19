@@ -442,7 +442,7 @@ h6,
     h1,
     h1.large,
     .h1 {
-        font-size: 32px;
+        font-size: 50px;
         line-height: 32px;
         font-weight: 300;
     }
@@ -808,7 +808,7 @@ footer.bg-dark li,
     background: #1a1d24;
     border-bottom: 2px solid black;
     border-top: 2px solid black;
-    height: 640px
+    /*height: 840px*/
 }
 
 .image-square.left.small {
@@ -5773,7 +5773,7 @@ video {
 
 .image-square {
     height: 50vw;
-    max-height: 640px;
+    /*max-height: 840px;*/
     padding: 0;
 }
 
@@ -9955,6 +9955,11 @@ input:-ms-input-placeholder {
 #explosive-previous {
     /*width: 30%;*/
     display: none;
+    color: black;
+}
+
+#explosive-previous:hover {
+    color: #D52424;
 }
 
 #explosive-next-holder {
@@ -9967,6 +9972,11 @@ input:-ms-input-placeholder {
 
 #explosive-next {
     /*width: 30%;*/
+    color: black;
+}
+
+#explosive-next:hover {
+    color: #D52424;
 }
 
 #superhuman {
@@ -10197,12 +10207,10 @@ input:-ms-input-placeholder {
 
 @media all and (max-width: 1024px) {
     #hud,
-    #pov,
     #explosive {
         display: none;
     }
     #hudmobile,
-    #povmobile,
     #explosivemobile {
         display: block;
     }
@@ -10326,6 +10334,7 @@ input:-ms-input-placeholder {
     z-index: 0;
     bottom: 0;
     min-width: 100%;
+    object-fit: cover;
 }
 
 .video-container video.fillWidth {
@@ -10344,6 +10353,49 @@ input:-ms-input-placeholder {
     background-image: url('../../static/img/beauty_background2.jpeg');
 }
 
+#index6img div {
+    background-image: url('../../static/img/povmobilebg.jpg');
+}
+
+#index8img div {
+    background-image: url('../../static/img/signup.jpg');
+}
+
+#index9img div {
+    background-image: url('../../static/img/kyle1.jpeg');
+}
+
+#about1img div {
+    background-image: url('../../static/img/project-single-2.jpg');
+}
+
+#about3img div {
+    background-image: url('../../static/img/marcus.jpg');
+}
+
+#about4img div {
+    background-image: url('../../static/img/team-2.jpg');
+}
+
+#careers1img div {
+    background-image: url('../../static/img/officeimage.png');
+}
+
+#careers2img div {
+    background-image: url('../../static/img/careers1.jpeg');
+}
+
+#press1img div {
+    background-image: url('../../static/img/pressheader2.jpeg');
+}
+
+#press3img div {
+    background-image: url('../../static/img/userguide.jpeg');
+}
+
+#myskully1img div {
+    background-image:url(../../static/img/careersheader.jpg);
+}
 .mobile-image {
     display: none;
 }
@@ -10388,5 +10440,24 @@ input:-ms-input-placeholder {
     }
     .mobile-image {
         display: block;
+    }
+}
+
+.mobileoverlay:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #282828;
+    opacity: 0.5;
+    z-index: 900;
+    display: none;
+}
+
+@media all and (max-width: 993px) {
+    .mobileoverlay:before {
+        display: inline;
     }
 }

@@ -60,8 +60,6 @@ function scaleBannerVideoSize(element) {
         videoWidth,
         videoHeight;
 
-    console.log(windowHeight);
-
     $(element).each(function() {
         var videoAspectRatio = $(this).data('height') / $(this).data('width'),
             windowAspectRatio = windowHeight / windowWidth;
@@ -69,6 +67,8 @@ function scaleBannerVideoSize(element) {
         if (videoAspectRatio > windowAspectRatio) {
             videoWidth = windowWidth;
             videoHeight = videoWidth * videoAspectRatio;
+            console.log(windowWidth);
+            console.log(videoWidth);
             $(this).css({
                 'top': -(videoHeight - windowHeight) / 2 + 'px',
                 'margin-left': 0
