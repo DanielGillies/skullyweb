@@ -9830,6 +9830,9 @@ input:-ms-input-placeholder {
     display: none;
 }
 
+#pov {
+    padding: 0;
+}
 
 /*#hud-background {
     background-position: 50% 100% !important;
@@ -9923,6 +9926,7 @@ input:-ms-input-placeholder {
 
 #explosivemobile {
     display: none;
+    position: relative;
 }
 
 @media all and (max-width: 1024px) {
@@ -10396,6 +10400,15 @@ input:-ms-input-placeholder {
 #myskully1img div {
     background-image:url(../../static/img/careersheader.jpg);
 }
+
+#hudmobile-background div {
+    background-image: url('../../static/img/HUD1.png');
+}
+
+#hudmobile-background2 div {
+    background-image: url('../../static/img/HUD2.png');
+}
+
 .mobile-image {
     display: none;
 }
