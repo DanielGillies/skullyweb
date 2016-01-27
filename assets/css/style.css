@@ -443,7 +443,7 @@ h6,
     h1.large,
     .h1 {
         font-size: 50px;
-        line-height: 32px;
+        line-height: 52px;
         font-weight: 300;
     }
     .indexdesign {
@@ -10392,7 +10392,7 @@ input:-ms-input-placeholder {
 }
 
 #press1img div {
-    background-image: url('../../static/img/pressheader2.jpeg');
+    background-image: url('../../static/img/pressheader.jpeg');
 }
 
 #press3img div {
@@ -10409,6 +10409,16 @@ input:-ms-input-placeholder {
 
 #hudmobile-background2 div {
     background-image: url('../../static/img/HUD2.png');
+}
+
+@media all and (max-width: 900px) {
+    #press1img div {
+        background-image: url('../../static/img/pressheader-420x720.jpeg');
+    }
+
+    #press3img div {
+        background-image: url('../../static/img/pressfooter-420x720.jpeg');
+    }
 }
 
 .mobile-image {

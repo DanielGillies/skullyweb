@@ -361,5 +361,5 @@ gulp.task('watch', function() {
   gulp.watch(paths.vendorjs.src, ['vendorjs'])
 });
 
-gulp.task('default', ['js', 'css', 'templates', 'watch', 'browser-sync']);
+gulp.task('default', ['js', 'css', 'templates', 'watch']);
 gulp.task('build',   ['js:min', 'css', 'templates'], process.exit);
