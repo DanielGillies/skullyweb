@@ -9931,12 +9931,8 @@ input:-ms-input-placeholder {
 }
 
 @media all and (max-width: 1024px) {
-    #mobile-indexheaderbuttons {
-        display: block;
-        width: 80%;
-    }
-    #desktop-experiencebutton {
-        display: none;
+    #desktop-experiencebutton .btn-middle {
+        width: 90%;
     }
 }
 
@@ -10485,4 +10481,10 @@ input:-ms-input-placeholder {
     .mobileoverlay:before {
         display: inline;
     }
+}
+
+
+#navstore {
+    position: relative;
+    /*right: 55px;*/
 }
