@@ -9932,7 +9932,8 @@ input:-ms-input-placeholder {
 
 @media all and (max-width: 1024px) {
     #desktop-experiencebutton .btn-middle {
-        width: 90%;
+        width: 94%;
+        margin: 3% 0;
     }
 }
 
