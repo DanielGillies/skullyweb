@@ -9935,6 +9935,10 @@ input:-ms-input-placeholder {
         width: 94%;
         margin: 3% 0;
     }
+
+    #desktop-experiencebutton {
+        bottom: 15px;
+    }
 }
 
 @media all and (min-width: 1025px) {
@@ -10487,5 +10491,6 @@ input:-ms-input-placeholder {
 
 #navstore {
     position: relative;
-    /*right: 55px;*/
+    /*left: 100px;*/
+    /*right: -10%;*/
 }
