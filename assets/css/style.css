@@ -10488,9 +10488,8 @@ input:-ms-input-placeholder {
     }
 }
 
-
 #navstore {
     position: relative;
     /*left: 100px;*/
-    /*right: -10%;*/
+    /*right: -10vw;*/
 }
