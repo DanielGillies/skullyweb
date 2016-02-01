@@ -380,10 +380,9 @@ $(document).ready(function() {
     var feedID = $(this).attr('data-user-name') + '-';
     $(this).children('ul').spectragram('getUserFeed', {
       query: feedID,
-      max: 15
+      max: 12
     });
   });
-
   // Image Sliders
 
   // $('.slider-all-controls').flexslider({});

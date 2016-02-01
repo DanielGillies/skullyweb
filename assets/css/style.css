@@ -3750,7 +3750,7 @@ form iframe.mail-list-form {
 .widget .instafeed li {
     width: 33%;
     display: inline-block;
-    padding: 0 4px 4px 0;
+    padding: 0 8px 0 0;
 }
 
 
@@ -3767,7 +3767,7 @@ form iframe.mail-list-form {
     padding-bottom: 100%;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 200% 200%;
+    background-size: 100% 100%; /*CHANGE THIS TO 200% 200% to re-enable cropping instafeed insta*/
     overflow: hidden;
 }
 
@@ -10486,6 +10486,23 @@ input:-ms-input-placeholder {
     .mobileoverlay:before {
         display: inline;
     }
+
+    #beautypurchase {
+        display: none;
+    }
+
+    #beauty {
+        display: none;
+    }
+
+    #rearview {
+        display: none;
+    }
+
+    #pov {
+        display: none;
+    }
+
 }
 
 #navstore {

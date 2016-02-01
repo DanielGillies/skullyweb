@@ -30,8 +30,6 @@ function test() {
 
 var explosiveTop = $('#explosive').offset().top;
 var explosiveBot = explosiveTop + $('#explosive-vid').height();
-var appTop = $('#app').offset().top;
-var appBot = appTop + $('#app').height();
 var signupTop = $('#signup').offset().top;
 var signupBot = signupTop + $('#signup').height();
 var povTop = $('#pov').offset().top;
@@ -106,24 +104,25 @@ function swapHUD() {
             $("#hudtext2").fadeOut(600);
             $("#hudtext").fadeIn(600);
         }
-    } else {
-        hudSwap *= -1;
-        if (hudSwap < 0) {
-            $("#hudmobile-background").fadeOut(600);
-            $("#hudmobile-background2").fadeIn(600);
-            $("#hudmobiletext").fadeOut(600);
-            $("#hudmobiletext2").fadeIn(600);
-            $("#hudmobile-slide1").removeClass("active-hud");
-            $("#hudmobile-slide2").addClass("active-hud");
-        } else {
-            $("#hudmobile-background2").fadeOut(600);
-            $("#hudmobile-background").fadeIn(600);
-            $("#hudmobiletext2").fadeOut(600);
-            $("#hudmobiletext").fadeIn(600);
-            $("#hudmobile-slide2").removeClass("active-hud");
-            $("#hudmobile-slide1").addClass("active-hud");
-        }
-    }
+    } 
+    // else {
+    //     hudSwap *= -1;
+    //     if (hudSwap < 0) {
+    //         $("#hudmobile-background").fadeOut(600);
+    //         $("#hudmobile-background2").fadeIn(600);
+    //         $("#hudmobiletext").fadeOut(600);
+    //         $("#hudmobiletext2").fadeIn(600);
+    //         $("#hudmobile-slide1").removeClass("active-hud");
+    //         $("#hudmobile-slide2").addClass("active-hud");
+    //     } else {
+    //         $("#hudmobile-background2").fadeOut(600);
+    //         $("#hudmobile-background").fadeIn(600);
+    //         $("#hudmobiletext2").fadeOut(600);
+    //         $("#hudmobiletext").fadeIn(600);
+    //         $("#hudmobile-slide2").removeClass("active-hud");
+    //         $("#hudmobile-slide1").addClass("active-hud");
+    //     }
+    // }
 }
 
 window.swapHUD = swapHUD
