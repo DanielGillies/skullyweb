@@ -5,3 +5,4 @@
 /node_modules/
 test.html
 *.map
+/static/img/*.mp4

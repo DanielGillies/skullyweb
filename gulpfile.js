@@ -77,6 +77,7 @@ var paths = {
       './assets/js/vendor/twitterfetcher.min.js',
       './assets/js/vendor/velocity.min.js',
       './assets/js/vendor/ytplayer.min.js',
+      './assets/js/vendor/canvid.js'
     ],
     dest: './static/js'
   },

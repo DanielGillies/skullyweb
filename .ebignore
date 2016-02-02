@@ -7,3 +7,4 @@ package.json
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 test.html
+/static/img/*.mp4

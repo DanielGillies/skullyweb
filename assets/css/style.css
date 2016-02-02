@@ -10510,3 +10510,7 @@ input:-ms-input-placeholder {
     /*left: 100px;*/
     /*right: -10vw;*/
 }
+
+canvas.canvid {
+    width: 100%;
+}

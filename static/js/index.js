@@ -105,7 +105,7 @@ function swapHUD() {
             $("#hudtext2").fadeOut(600);
             $("#hudtext").fadeIn(600);
         }
-    } 
+    }
     // else {
     //     hudSwap *= -1;
     //     if (hudSwap < 0) {
@@ -262,6 +262,72 @@ $(function() {
         preventDefaultEvents: false
     });
 });
+
+var canvidControl = canvid({
+    selector: '#index1img',
+    videos: {
+        clip1: {
+            src: '/static/img/indexvid.jpg',
+            frames: 203,
+            cols: 6,
+            loops: 10,
+            onEnd: function() {
+                console.log('clip1 ended.');
+            }
+        },
+    },
+    loaded: function() {
+        initCanvas("#index1img canvas");
+        canvidControl.play('clip1');
+        // reverse playback
+        // canvidControl.play('clip1', true);
+    }
+});
+
+function initCanvas(element) {
+    $(element).each(function() {
+        $(this).data('height', $(this).height());
+        $(this).data('width', $(this).width());
+    });
+
+    console.log($(this).data('width'))
+
+    scaleCanvas(element);
+}
+
+function scaleCanvas(element) {
+
+    var windowWidth = $(window).width(),
+        windowHeight = $(window).height(),
+        videoWidth,
+        videoHeight;
+
+    $(element).each(function() {
+        var videoAspectRatio = $(this).data('height') / $(this).data('width'),
+            windowAspectRatio = windowHeight / windowWidth;
+
+        if (videoAspectRatio > windowAspectRatio) {
+            videoWidth = windowWidth;
+            videoHeight = videoWidth * videoAspectRatio;
+            console.log(windowWidth);
+            console.log(videoWidth);
+            $(this).css({
+                'top': -(videoHeight - windowHeight) / 2 + 'px',
+                'margin-left': 0
+            });
+        } else {
+            videoHeight = windowHeight;
+            videoWidth = videoHeight / videoAspectRatio;
+            // console.log(videoWidth);
+            $(this).css({
+                'margin-top': 0,
+                'margin-left': -(videoWidth - windowWidth) / 2 + 'px'
+            });
+        }
+
+        $(this).width(videoWidth).height(videoHeight);
+    })
+}
 
 require('./lazyload')
 

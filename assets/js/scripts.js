@@ -33,7 +33,6 @@ $(document).ready(function() {
 
 /** Reusable Functions **/
 /********************************************************************/
-
 function scaleVideoContainer() {
 
     var height = $(window).height();
