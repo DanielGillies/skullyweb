@@ -382,75 +382,7 @@ $(document).ready(function() {
       max: 12
     });
   });
-  // Image Sliders
-
-  // $('.slider-all-controls').flexslider({});
-  // $('.slider-paging-controls').flexslider({
-  //     animation: "slide",
-  //     directionNav: false
-  // });
-  // $('.slider-arrow-controls').flexslider({
-  //     controlNav: false
-  // });
-  // $('.slider-thumb-controls .slides li').each(function() {
-  //     var imgSrc = $(this).find('img').attr('src');
-  //     $(this).attr('data-thumb', imgSrc);
-  // });
-  // $('.slider-thumb-controls').flexslider({
-  //     animation: "slide",
-  //     controlNav: "thumbnails",
-  //     directionNav: true
-  // });
-  $('.logo-carousel').flexslider({
-    minItems: 1,
-    maxItems: 4,
-    move: 1,
-    itemWidth: 200,
-    itemMargin: 0,
-    animation: "slide",
-    slideshow: true,
-    slideshowSpeed: 3000,
-    directionNav: false,
-    controlNav: false
-  });
-
-  // Lightbox gallery titles
-
-  $('.lightbox-grid li a').each(function() {
-    var galleryTitle = $(this).closest('.lightbox-grid').attr('data-gallery-title');
-    $(this).attr('data-lightbox', galleryTitle);
-  });
-
-
-  // Video Modals
-  $('section').closest('body').find('.modal-video[video-link]').remove();
-
-  $('.modal-video-container').each(function(index) {
-    $(this).find('.play-button').attr('video-link', index);
-    $(this).find('.modal-video').clone().appendTo('body').attr('video-link', index);
-  });
-
-  $('.modal-video-container .play-button').click(function() {
-    var linkedVideo = $('section').closest('body').find('.modal-video[video-link="' + $(this).attr('video-link') + '"]');
-    linkedVideo.toggleClass('reveal-modal');
-
-    if (linkedVideo.find('video').length) {
-      linkedVideo.find('video').get(0).play();
-    }
-
-    if (linkedVideo.find('iframe').length) {
-      var iframe = linkedVideo.find('iframe');
-      var iframeSrc = iframe.attr('data-src') + '&autoplay=1';
-      iframe.attr('src', iframeSrc);
-    }
-  });
-
-  $('section').closest('body').find('.close-iframe').click(function() {
-    $(this).closest('.modal-video').toggleClass('reveal-modal');
-    $(this).siblings('iframe').attr('src', '');
-    $(this).siblings('video').get(0).pause();
-  });
-
+  
   // Local Videos
 
   $('section').closest('body').find('.local-video-container .play-button').click(function() {
@@ -459,22 +391,6 @@ $(document).ready(function() {
     $(this).css('opacity', 0);
     $(this).siblings('video').get(0).play();
   });
-
-  // Youtube Videos
-
-  $('section').closest('body').find('.player').each(function() {
-    var src = $(this).attr('data-video-id');
-    var startat = $(this).attr('data-start-at');
-    $(this).attr('data-property', "{videoURL:'http://youtu.be/" + src + "',containment:'self',autoPlay:true, mute:true, startAt:" + startat + ", opacity:1, showControls:false}");
-  });
-
-  $('section').closest('body').find(".player").YTPlayer();
-
-  // FS Vid Background
-
-  // $(window).resize(function() {
-  //   resizeVid();
-  // });
 
   // Interact with Map once the user has clicked (to prevent scrolling the page = zooming the map
 

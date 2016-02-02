@@ -56,6 +56,9 @@ if (!window.mobilecheck()) {
 
     document.getElementById("pov-vid").innerHTML = '<video autoplay loop class="fillWidth"> <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/pov.webm" type="video/webm"> <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/pov.ogv" type="video/ogv"> <source src="http://dg6vcgn2vehm4.cloudfront.net/videos/pov.mp4" type="video/mp4"> </video>'
 
+        document.getElementById("rearview-img").innerHTML = '<img class="traditional-fov lazy" data-src="static/img/fov_conventional.png"><img class="skully-fov transparent lazy" data-src="static/img/fov.png">'
+
+
     $("#pov").addClass('video-background');
 
     var hudTop = $('#hudvid').offset().top;
@@ -245,22 +248,6 @@ $(".scatbutton").click(function() {
 
     alert("ITS SCATMAN TIME!!!!");
 
-});
-
-$(function() {
-    $("#hudmobile").swipe({
-        //Generic swipe handler for all directions
-        swipeRight: function(event, direction, distance, duration, fingerCount, fingerData) {
-            console.log("You swiped " + direction);
-            swapHUD();
-        },
-        swipeLeft: function(event, direction, distance, duration, fingerCount, fingerData) {
-            console.log("You swiped " + direction);
-            swapHUD();
-        },
-        allowPageScroll: 'vertical',
-        preventDefaultEvents: false
-    });
 });
 
 var canvidControl = canvid({
