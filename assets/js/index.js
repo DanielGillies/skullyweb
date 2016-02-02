@@ -269,7 +269,6 @@ var canvidControl = canvid({
             src: '/static/img/indexvid.jpg',
             frames: 203,
             cols: 6,
-            loops: 10,
             onEnd: function() {
                 console.log('clip1 ended.');
             }
