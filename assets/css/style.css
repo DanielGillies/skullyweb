@@ -7703,8 +7703,8 @@ input:-webkit-autofill {
 
 @media all and (min-width: 1024px) {
     .fullheight {
-        height: calc(100vh - 30px);
-        /*min-height: 100vh;*/
+        /*height: calc(100vh - 30px);*/
+        min-height: 100vh;
     }
     .fullheight2 {
         min-height: 100vh;
@@ -10225,9 +10225,6 @@ input:-ms-input-placeholder {
     }
     #explosivemobile {
         min-height: 0;
-    }
-    section {
-        min-height: 100vh;
     }
     #beauty:before {
         position: absolute;

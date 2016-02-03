@@ -30,8 +30,6 @@ function test() {
 
 var explosiveTop = $('#explosive').offset().top;
 var explosiveBot = explosiveTop + $('#explosive-vid').height();
-var signupTop = $('#signup').offset().top;
-var signupBot = signupTop + $('#signup').height();
 var povTop = $('#pov').offset().top;
 var nextSectionTop = $('#explosive').next('section').offset().top;
 var hudPlaying = 0;

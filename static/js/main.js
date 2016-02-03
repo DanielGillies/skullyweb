@@ -997,6 +997,28 @@ function updateFloatingFilters() {
   }
 }
 
+function greedyJumbotron() {
+    var HEIGHT_CHANGE_TOLERANCE = 100; // Approximately URL bar height in Chrome on tablet
+
+    var jumbotron = $(this);
+    var viewportHeight = $(window).height();
+
+    $(window).resize(function () {
+        if (Math.abs(viewportHeight - $(window).height()) > HEIGHT_CHANGE_TOLERANCE) {
+            viewportHeight = $(window).height();
+            update();
+        }
+    });
+
+    function update() {
+        jumbotron.css('min-height', viewportHeight + 60 + 'px');
+    }
+
+    update();
+}
+
+$('.fullheight').each(greedyJumbotron);
+
 },{}]},{},[1])
 
 
