@@ -216,7 +216,7 @@ var canvidControl = canvid({
     videos: {
         clip1: {
             src: '/static/img/indexvid.jpg',
-            frames: 180,
+            frames: 100,
             cols: 6,
             width: 1920,
             height: 1080,
