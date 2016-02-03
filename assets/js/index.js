@@ -24,23 +24,10 @@ function test() {
     }
 }
 
-//  var vid = document.getElementById("explosive-vid2")
-// hudvid.pause();
-// hudvid.currentTime = 1;
-
-var explosiveTop = $('#explosive').offset().top;
-var explosiveBot = explosiveTop + $('#explosive-vid').height();
-var povTop = $('#pov').offset().top;
-var nextSectionTop = $('#explosive').next('section').offset().top;
 var hudPlaying = 0;
-var povComplete = 0;
 var count = 1;
 var inExplosive = false;
 var forwards = true;
-// document.getElementsByClassName("explosive-active")[0].addEventListener('ended', function() {
-//     nextExplosion();
-// });
-// document.getElementsByClassName("explosive-active")[0].addEventListener('play', test);
 
 if (!window.mobilecheck()) {
     document.getElementById("explosive").innerHTML =
@@ -66,11 +53,6 @@ if (!window.mobilecheck()) {
 
     $(window).scroll(function() { // assign scroll event listener
         var currentScroll = $(window).scrollTop(); // get current position
-        if (currentScroll >= explosiveTop - 55 && currentScroll <= explosiveBot && !inExplosive) {
-            inExplosive = true;
-            // console.log("IN EXPLOSIVE")
-            // nextExplosion();
-        }
 
         if (currentScroll >= hudTop - 55 && hudPlaying === 0) {
             hudPlaying = 1;
@@ -106,24 +88,6 @@ function swapHUD() {
             $("#hudtext").fadeIn(600);
         }
     }
-    // else {
-    //     hudSwap *= -1;
-    //     if (hudSwap < 0) {
-    //         $("#hudmobile-background").fadeOut(600);
-    //         $("#hudmobile-background2").fadeIn(600);
-    //         $("#hudmobiletext").fadeOut(600);
-    //         $("#hudmobiletext2").fadeIn(600);
-    //         $("#hudmobile-slide1").removeClass("active-hud");
-    //         $("#hudmobile-slide2").addClass("active-hud");
-    //     } else {
-    //         $("#hudmobile-background2").fadeOut(600);
-    //         $("#hudmobile-background").fadeIn(600);
-    //         $("#hudmobiletext2").fadeOut(600);
-    //         $("#hudmobiletext").fadeIn(600);
-    //         $("#hudmobile-slide2").removeClass("active-hud");
-    //         $("#hudmobile-slide1").addClass("active-hud");
-    //     }
-    // }
 }
 
 window.swapHUD = swapHUD

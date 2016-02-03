@@ -9813,13 +9813,6 @@ input:-ms-input-placeholder {
     color: #bbbdc0 !important;
 }
 
-#beautybuybutton {
-    position: absolute;
-    bottom: 3%;
-    left: 0;
-    right: 0;
-}
-
 #hudmobile {
     display: none;
     position: relative;
@@ -10349,10 +10342,6 @@ input:-ms-input-placeholder {
     background-image: url('../../static/img/indexmobile.jpg');
 }
 
-#index2img div {
-    background-image: url('../../static/img/buynowbeauty.jpg');
-}
-
 #index3img div {
     background-image: url('../../static/img/beauty_background2.jpeg');
 }
@@ -10490,10 +10479,6 @@ input:-ms-input-placeholder {
 
     .mobileoverlay:before {
         display: inline;
-    }
-
-    #beautypurchase {
-        display: none;
     }
 
     #beauty {
