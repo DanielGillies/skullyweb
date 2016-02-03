@@ -10483,6 +10483,14 @@ input:-ms-input-placeholder {
 }
 
 @media all and (max-width: 993px) {
+    #scatman {
+        display: none;
+    }
+
+    #hoversound {
+        display: none;
+    }
+    
     .mobileoverlay:before {
         display: inline;
     }
