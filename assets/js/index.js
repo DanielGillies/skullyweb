@@ -254,8 +254,10 @@ var canvidControl = canvid({
     videos: {
         clip1: {
             src: '/static/img/indexvid.jpg',
-            frames: 203,
+            frames: 100,
             cols: 6,
+            width: 1920,
+            height: 1080,
             onEnd: function() {
                 console.log('clip1 ended.');
             }
@@ -263,6 +265,7 @@ var canvidControl = canvid({
     },
     loaded: function() {
         initCanvas("#index1img canvas");
+        console.log("LOADED")
         canvidControl.play('clip1');
         // reverse playback
         // canvidControl.play('clip1', true);

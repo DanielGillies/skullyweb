@@ -10,8 +10,8 @@
 
     function canvid(params) {
         var defaultOptions = {
-                width : 800,
-                height : 450,
+                width : 1920,
+                height : 1080,
                 selector: '.canvid-wrapper'
             },
             firstPlay = true,

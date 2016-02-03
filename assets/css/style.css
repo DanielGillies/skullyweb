@@ -10490,7 +10490,7 @@ input:-ms-input-placeholder {
     #hoversound {
         display: none;
     }
-    
+
     .mobileoverlay:before {
         display: inline;
     }
@@ -10517,8 +10517,4 @@ input:-ms-input-placeholder {
     position: relative;
     /*left: 100px;*/
     /*right: -10vw;*/
-}
-
-canvas.canvid {
-    width: 100%;
 }
