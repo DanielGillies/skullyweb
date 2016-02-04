@@ -9926,11 +9926,11 @@ input:-ms-input-placeholder {
 @media all and (max-width: 1024px) {
     #desktop-experiencebutton .btn-middle {
         width: 94%;
-        margin: 3% 0;
     }
 
     #desktop-experiencebutton {
-        bottom: 15px;
+        position: fixed;
+        bottom: 0;
     }
 }
 

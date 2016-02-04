@@ -279,4 +279,8 @@ function scaleCanvas(element) {
     })
 }
 
+$(window).on('resize', function() {
+        scaleCanvas('#index1img canvas');
+    });
+
 require('./lazyload')
