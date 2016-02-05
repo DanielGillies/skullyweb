@@ -6,3 +6,9 @@
 test.html
 *.map
 /static/img/*.mp4
+
+
+# OSX stuff
+.DS_Store
+.AppleDouble
+.LSOverride
