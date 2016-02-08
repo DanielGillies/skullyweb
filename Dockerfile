@@ -11,6 +11,7 @@ COPY nginx.conf /etc/nginx/nginx.conf
 # Copy our html files and favicon to server
 COPY *.html /etc/nginx/html/
 COPY favicon.ico /etc/nginx/html/
+COPY robots.txt /etc/nginx/html/
 
 RUN chmod +r /etc/nginx/html/favicon.ico
 
