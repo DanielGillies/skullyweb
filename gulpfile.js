@@ -9,6 +9,7 @@ var extReplace   = require('gulp-ext-replace');
 var gulp         = require('gulp');
 var handlebars   = require('gulp-compile-handlebars');
 var imagemin     = require('gulp-imagemin');
+var merge        = require('merge-stream');
 var mqpacker     = require('css-mqpacker');
 var notify       = require('gulp-notify');
 var path         = require('path');
@@ -24,8 +25,20 @@ var paths = {
   src:  './assets',
   dest: './static',
 
-  css: {
-    src:  './assets/css/*.css',
+  sharedcss: {
+    src:  [
+      './assets/css/style.css',
+      './assets/css/themify-icons.css',
+      './assets/css/budicon.css',
+      './assets/css/custom-icons.css'
+    ],
+    dest: './static/css'
+  },
+  additionalcss: {
+    src:  [
+      './assets/css/tufte.css',
+      './assets/css/youmax_blue_custom.css'
+    ],
     dest: './static/css'
   },
   mainjs: {
@@ -299,9 +312,17 @@ gulp.task('css', function() {
     mqpacker,
     csswring
   ];
-  return gulp.src(paths.css.src)
+
+  var sharedCSS = gulp.src(paths.sharedcss.src)
     .pipe(postcss(processors))
-    .pipe(gulp.dest(paths.css.dest));
+    .pipe(concat('bundle.css'))
+    .pipe(gulp.dest(paths.sharedcss.dest));
+
+  var additionalCSS = gulp.src(paths.additionalcss.src)
+    .pipe(postcss(processors))
+    .pipe(gulp.dest(paths.additionalcss.dest));
+
+  return merge(sharedCSS, additionalCSS);
 
 });
 
@@ -335,7 +356,7 @@ gulp.task('templates', function() {
 
 // CLEAN TASK
 gulp.task('cleancss', function(cb) {
-  return del(paths.css.dest, cb)
+  return del(paths.sharedcss.dest, cb)
 });
 
 gulp.task('cleanjs', function(cb) {
@@ -355,7 +376,7 @@ gulp.task('browser-sync', function() {
 
 // WATCH TASK
 gulp.task('watch', function() {
-  gulp.watch(paths.css.src, ['css'])
+  gulp.watch(paths.sharedcss.src, ['css'])
   gulp.watch(paths.img.src, ['img-min'])
   gulp.watch(paths.partials + '/*', ['templates'])
   gulp.watch(paths.templates.src + '/*', ['templates'])
