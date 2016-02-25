@@ -40,7 +40,7 @@
  36. Spacing
  */
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+@import url(//fonts.googleapis.com/css?family=Roboto:400,300);
 @font-face {
     font-family: manifoldCF;
     src: url(../fonts/ManifoldCF-Regular-webfont.ttf);
@@ -7151,7 +7151,7 @@ footer.bg-dark a {
 
 /* SHARING BUTTONS */
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+@import url(//fonts.googleapis.com/css?family=Roboto:400,300);
 .social-buttons {
     background: #555555;
 }
