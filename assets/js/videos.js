@@ -27,7 +27,7 @@ $("#youmax").youmax({
       commentOrder: "relevance", //time|relevance
       featuredVideo: '',
       playlistSearchFile: './json/searchlist.json',
-      userWebsite: "http://www.skully.com",
+      userWebsite: "https://www.skully.com",
       videoMode: "wide",
       shareLink: "youtube",
       facebookAppId: "",
