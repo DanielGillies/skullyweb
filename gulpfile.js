@@ -1,5 +1,5 @@
 var autoprefixer = require('autoprefixer');
-var browserSync  = require('browser-sync');
+var browserSync  = require('browser-sync').create();
 var browserify   = require('browserify');
 var buffer       = require('gulp-buffer');
 var concat       = require('gulp-concat');
@@ -316,7 +316,8 @@ gulp.task('css', function() {
   var sharedCSS = gulp.src(paths.sharedcss.src)
     .pipe(postcss(processors))
     .pipe(concat('bundle.css'))
-    .pipe(gulp.dest(paths.sharedcss.dest));
+    .pipe(gulp.dest(paths.sharedcss.dest))
+    .pipe(browserSync.stream());
 
   var additionalCSS = gulp.src(paths.additionalcss.src)
     .pipe(postcss(processors))
@@ -365,23 +366,20 @@ gulp.task('cleanjs', function(cb) {
 
 gulp.task('clean', ['cleancss', 'cleanjs'])
 
-// BROWSERSYNC TASK
-gulp.task('browser-sync', function() {
-  browserSync({
+// BROWSERSYNC / WATCH TASK
+gulp.task('serve', function() {
+  browserSync.init({
     server: {
       baseDir: __dirname
     }
   });
-})
 
-// WATCH TASK
-gulp.task('watch', function() {
-  gulp.watch(paths.sharedcss.src, ['css'])
-  gulp.watch(paths.img.src, ['img-min'])
-  gulp.watch(paths.partials + '/*', ['templates'])
-  gulp.watch(paths.templates.src + '/*', ['templates'])
-  gulp.watch(paths.vendorjs.src, ['vendorjs'])
+  gulp.watch(paths.sharedcss.src, ['css']);
+  gulp.watch(paths.img.src, ['img-min']);
+  gulp.watch(paths.partials + '/*', ['templates']);
+  gulp.watch(paths.templates.src + '/*', ['templates']);
+  gulp.watch(paths.vendorjs.src, ['vendorjs']);
 });
 
-gulp.task('default', ['js', 'css', 'templates', 'watch']);
+gulp.task('default', ['js', 'css', 'templates', 'serve']);
 gulp.task('build',   ['js:min', 'css', 'templates'], process.exit);
