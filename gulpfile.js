@@ -379,6 +379,9 @@ gulp.task('serve', function() {
   gulp.watch(paths.partials + '/*', ['templates']);
   gulp.watch(paths.templates.src + '/*', ['templates']);
   gulp.watch(paths.vendorjs.src, ['vendorjs']);
+
+  // since the templates task touches all html files, we can just watch one for reload
+  gulp.watch('./index.html').on('change', browserSync.reload);
 });
 
 gulp.task('default', ['js', 'css', 'templates', 'serve']);
