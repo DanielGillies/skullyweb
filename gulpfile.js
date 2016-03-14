@@ -30,7 +30,8 @@ var paths = {
       './assets/css/style.css',
       './assets/css/themify-icons.css',
       './assets/css/budicon.css',
-      './assets/css/custom-icons.css'
+      './assets/css/custom-icons.css',
+      './assets/css/fa-custom-embedded.css'
     ],
     dest: './static/css'
   },
