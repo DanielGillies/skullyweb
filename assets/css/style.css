@@ -10504,6 +10504,11 @@ input:-ms-input-placeholder {
 
 /* --- support page additions --- */
 
+/* remove popup on support page(s) */
+.support-page .sumome-scrollbox-popup {
+    display: none !important;
+}
+
 .page-header {
     text-transform: uppercase;
 }
@@ -10531,6 +10536,7 @@ input:-ms-input-placeholder {
 
 .page-header a > span {
     font-size: 21px;
+    font-weight: 500;
 }
 
 .support-page .page-header {
@@ -10560,6 +10566,10 @@ input:-ms-input-placeholder {
     background-color: #404040;
 }
 
+.sidebar a:hover > i {
+    color: #fff;
+}
+
 .sidebar a > i {
     position: absolute;
     font-size: 46px;
@@ -10578,7 +10588,85 @@ input:-ms-input-placeholder {
     color: #fff;
 }
 
-/* remove popup on support page(s) */
-.support-page .sumome-scrollbox-popup {
-    display: none !important;
+.articles .section {
+    float: left;
+    width: 50%;
+}
+
+.articles .section:nth-child(2n+1) {
+    clear: both;
+}
+
+.articles .section > h3 {
+    font-size: 21px;
+    margin-bottom: 0;
+}
+
+.articles .section > h3 > a {
+    color: #000;
+}
+
+.article-list li > a {
+    color: #337ab7;
+}
+
+@media all and (max-width: 991px) {
+
+    .articles .section {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 767px) {
+
+    .support-page .page-header {
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+
+    .support-page .page-title {
+        display: none;
+    }
+
+    .page-header a > i {
+        font-size: 41px;
+        padding-bottom: 18px;
+    }
+
+    .page-header a > span {
+        font-size: 15px;
+    }
+
+    .sidebar a {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .sidebar a > i {
+        display: none;
+    }
+
+    .support-body {
+        padding: 20px 0;
+    }
+}
+
+@media all and (max-width: 374px) {
+    .page-header a > span {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    .page-header .row > .col1 {
+        width: 43%;
+    }
+    .page-header .row > .col2 {
+        width: 26%;
+    }
+    .page-header .row > .col3 {
+        width: 31%;
+    }
+}
+
+@media all and (max-width: 350px) {
 }
