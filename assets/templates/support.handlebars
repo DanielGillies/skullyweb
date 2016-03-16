@@ -1,4 +1,5 @@
 {{> header title="SKULLY Support" bodyClass="support-page"}}
+{{> chat-widget}}
 <div class="nav-container">
   {{> navbar}}
 
@@ -15,13 +16,16 @@
           </ul>
         </div>
         <div class="col-sm-8 col-md-9">
+          <div class="search-box">
+            <form role="search" class="search" data-search="" action="https://skully.zendesk.com/hc/en-us/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="search" name="query" id="query" placeholder="Search FAQ's" />
+            <input type="submit" name="commit" value="Search" /></form>
+          </div>
           <div id="zendeskArticles" class="articles"></div>
         </div>
       </div>
     </div>
   </section>
 
-  {{> chat-widget}}
   {{> footer-minimal}}
 </div>
 {{> scripts}}
