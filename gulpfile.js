@@ -70,6 +70,10 @@ var paths = {
     src: './assets/js/careers.js',
     dest: './static/js'
   },
+  supportjs: {
+    src: './assets/js/support.js',
+    dest: './static/js'
+  },
   vendorjs: {
     src:  [
       './assets/js/vendor/jquery.min.js',
@@ -144,10 +148,11 @@ var aboutusjs = new Bundle(paths.aboutusjs.src)
 var pressjs = new Bundle(paths.pressjs.src)
 var storejs = new Bundle(paths.storejs.src)
 var careersjs = new Bundle(paths.careersjs.src)
+var supportjs = new Bundle(paths.supportjs.src)
 
 // JS TASK
-gulp.task('js',     ['mainjs', 'indexjs', 'videosjs', 'aboutusjs', 'pressjs', 'storejs', 'careersjs', 'vendorjs'])
-gulp.task('js:min', ['mainjs:min', 'indexjs:min', 'videosjs:min', 'aboutusjs:min', 'pressjs:min', 'careersjs:min', 'storejs:min', 'vendorjs'])
+gulp.task('js',     ['mainjs', 'indexjs', 'videosjs', 'aboutusjs', 'pressjs', 'storejs', 'careersjs', 'supportjs', 'vendorjs'])
+gulp.task('js:min', ['mainjs:min', 'indexjs:min', 'videosjs:min', 'aboutusjs:min', 'pressjs:min', 'careersjs:min', 'supportjs:min', 'storejs:min', 'vendorjs'])
 
 // MAIN JS BUILD
 gulp.task('mainjs', function() {
@@ -294,6 +299,27 @@ gulp.task('careersjs:min', function() {
   return careersjs.bundle()
     .pipe(uglify())
     .pipe(gulp.dest(paths.careersjs.dest))
+})
+
+// SUPPORT JS BUILD
+gulp.task('supportjs', function() {
+  function build() {
+    return supportjs.bundle()
+      .pipe(sourcemaps.write('./'))
+      .pipe(gulp.dest(paths.supportjs.dest))
+      .pipe(browserSync.reload({
+        stream: true
+      }))
+  }
+
+  supportjs.on('update', build)
+  return build()
+})
+
+gulp.task('supportjs:min', function() {
+  return supportjs.bundle()
+    .pipe(uglify())
+    .pipe(gulp.dest(paths.supportjs.dest))
 })
 
 // VENDOR JS TASK
