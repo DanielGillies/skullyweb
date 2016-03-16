@@ -10577,3 +10577,8 @@ input:-ms-input-placeholder {
 .sidebar .active > a > i {
     color: #fff;
 }
+
+/* remove popup on support page(s) */
+.support-page .sumome-scrollbox-popup {
+    display: none !important;
+}
