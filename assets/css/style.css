@@ -10532,11 +10532,22 @@ input:-ms-input-placeholder {
 .page-header a > i {
     font-size: 76px;
     padding-bottom: 24px;
+    transition: color .3s ease;
+}
+
+.page-header a:hover > i {
+    color: #d42323;
 }
 
 .page-header a > span {
     font-size: 21px;
     font-weight: 500;
+    transform: scale(1);
+    transition: transform .3s ease;
+}
+
+.page-header a:hover > span {
+    transform: scale(1.1);
 }
 
 .support-page .page-header {
