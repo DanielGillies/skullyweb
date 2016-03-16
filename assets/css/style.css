@@ -10532,22 +10532,26 @@ input:-ms-input-placeholder {
 .page-header a > i {
     font-size: 76px;
     padding-bottom: 24px;
-    transition: color .3s ease;
+    transform: scale(1);
+    transition: 
+        color .3s ease,
+        transform .3s ease;
 }
 
 .page-header a:hover > i {
     color: #d42323;
+    transform: scale(1.1);
 }
 
 .page-header a > span {
     font-size: 21px;
     font-weight: 500;
-    transform: scale(1);
-    transition: transform .3s ease;
+    /*transform: scale(1);*/
+    /*transition: transform .3s ease;*/
 }
 
 .page-header a:hover > span {
-    transform: scale(1.1);
+    /*transform: scale(1.1);*/
 }
 
 .support-page .page-header {
@@ -10598,6 +10602,15 @@ input:-ms-input-placeholder {
 
 .sidebar .active > a > i {
     color: #fff;
+}
+
+.search-box input[type="search"] {
+    width: 100%;
+    padding: .75em .75em;
+}
+
+.search-box input[type="submit"] {
+    display: none;
 }
 
 .articles .section {
