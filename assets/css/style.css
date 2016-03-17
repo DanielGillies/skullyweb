@@ -10505,6 +10505,14 @@ input:-ms-input-placeholder {
 /* --- support page additions --- */
 
 /* remove popup on support page(s) */
+
+.support-body a {
+    color: #000;
+}
+.support-body a:hover {
+    color: #d42323;
+}
+
 .support-page .sumome-scrollbox-popup {
     display: none !important;
 }
@@ -10633,6 +10641,12 @@ input:-ms-input-placeholder {
 
 .article-list li > a {
     color: #337ab7;
+}
+
+.thumbnail.ebook {
+    max-width: 100%;
+    display: inline-block;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
 }
 
 @media all and (max-width: 991px) {
