@@ -10691,7 +10691,7 @@ input:-ms-input-placeholder {
     }
 }
 
-@media all and (max-width: 374px) {
+@media all and (max-width: 450px) {
     .page-header a > span {
         font-size: 14px;
         white-space: nowrap;
@@ -10705,7 +10705,20 @@ input:-ms-input-placeholder {
     .page-header .row > .col3 {
         width: 31%;
     }
+    
+}
+
+@media all and (max-width: 374px) {
 }
 
 @media all and (max-width: 350px) {
+    .page-header .row > .col1 {
+        width: 47%;
+    }
+    .page-header .row > .col2 {
+        width: 22%;
+    }
+    .page-header .row > .col3 {
+        width: 31%;
+    }
 }
