@@ -10649,6 +10649,15 @@ input:-ms-input-placeholder {
     box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
 }
 
+.standout {
+    background: #eee;
+    padding: 5px 10px;
+}
+
+br.display-all {
+    display: block;
+}
+
 @media all and (max-width: 991px) {
 
     .articles .section {
