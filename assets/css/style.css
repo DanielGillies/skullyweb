@@ -10649,6 +10649,15 @@ input:-ms-input-placeholder {
     box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
 }
 
+.standout {
+    background: #eee;
+    padding: 5px 10px;
+}
+
+br.display-all {
+    display: block;
+}
+
 @media all and (max-width: 991px) {
 
     .articles .section {
@@ -10691,7 +10700,7 @@ input:-ms-input-placeholder {
     }
 }
 
-@media all and (max-width: 374px) {
+@media all and (max-width: 450px) {
     .page-header a > span {
         font-size: 14px;
         white-space: nowrap;
@@ -10705,7 +10714,20 @@ input:-ms-input-placeholder {
     .page-header .row > .col3 {
         width: 31%;
     }
+    
+}
+
+@media all and (max-width: 374px) {
 }
 
 @media all and (max-width: 350px) {
+    .page-header .row > .col1 {
+        width: 47%;
+    }
+    .page-header .row > .col2 {
+        width: 22%;
+    }
+    .page-header .row > .col3 {
+        width: 31%;
+    }
 }
