@@ -10705,7 +10705,7 @@ br.display-all {
         font-size: 14px;
         white-space: nowrap;
     }
-    .page-header .row > .col1 {
+/*    .page-header .row > .col1 {
         width: 43%;
     }
     .page-header .row > .col2 {
@@ -10713,7 +10713,7 @@ br.display-all {
     }
     .page-header .row > .col3 {
         width: 31%;
-    }
+    }*/
     
 }
 
@@ -10721,7 +10721,7 @@ br.display-all {
 }
 
 @media all and (max-width: 350px) {
-    .page-header .row > .col1 {
+/*    .page-header .row > .col1 {
         width: 47%;
     }
     .page-header .row > .col2 {
@@ -10729,5 +10729,5 @@ br.display-all {
     }
     .page-header .row > .col3 {
         width: 31%;
-    }
+    }*/
 }
