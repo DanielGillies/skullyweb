@@ -31,7 +31,8 @@ var paths = {
       './assets/css/themify-icons.css',
       './assets/css/budicon.css',
       './assets/css/custom-icons.css',
-      './assets/css/fa-custom-embedded.css'
+      './assets/css/fa-custom-embedded.css',
+      './assets/css/shopify.css'
     ],
     dest: './static/css'
   },

@@ -10758,3 +10758,8 @@ br.display-all {
         width: 31%;
     }*/
 }
+
+.buy-button {
+    background-color: #c30404;
+    color: white;
+}
