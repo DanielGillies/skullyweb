@@ -94,7 +94,7 @@ input[type=submit].btn--cart-checkout {
 
 .cart {
   position: fixed;
-  z-index: 3;
+  z-index: 15000;
   width: 100%;
   max-width: 350px;
   height: 100%;
@@ -114,7 +114,7 @@ input[type=submit].btn--cart-checkout {
   padding: 20px; }
 
 .cart-section--top {
-  z-index: 5; }
+  z-index: 50000; }
 
 .cart-title {
   color: #767676;
