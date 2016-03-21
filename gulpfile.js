@@ -375,7 +375,8 @@ gulp.task('css', function() {
 
   var additionalCSS = gulp.src(paths.additionalcss.src)
     .pipe(postcss(processors))
-    .pipe(gulp.dest(paths.additionalcss.dest));
+    .pipe(gulp.dest(paths.additionalcss.dest))
+    .pipe(browserSync.stream());
 
   return merge(sharedCSS, additionalCSS);
 
@@ -429,6 +430,7 @@ gulp.task('serve', function() {
   });
 
   gulp.watch(paths.sharedcss.src, ['css']);
+  gulp.watch(paths.additionalcss.src, ['css']);
   gulp.watch(paths.img.src, ['img-min']);
   gulp.watch(paths.partials + '/*', ['templates']);
   gulp.watch(paths.templates.src + '/*', ['templates']);
