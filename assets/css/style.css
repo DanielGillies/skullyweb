@@ -10525,6 +10525,7 @@ input:-ms-input-placeholder {
     font-size: 66px;
     text-align: center;
     font-weight: 500;
+    margin-bottom: 2px;
 }
 
 .page-header a {
@@ -10610,6 +10611,32 @@ input:-ms-input-placeholder {
 
 .sidebar .active > a > i {
     color: #fff;
+}
+
+.sidebar > .sidebar-extra {
+    text-align: center;
+    border-bottom: 1px solid #e3e3e3;
+}
+.sidebar > .sidebar-extra:first-of-type {
+    border-top: 1px solid #e3e3e3;
+}
+
+.sidebar > .sidebar-extra > a {
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.sidebar > .sidebar-extra > a:hover > i,
+.sidebar > .sidebar-extra > a:hover > span {
+    color: #fff;
+}
+
+.sidebar > .sidebar-extra > a > i {
+    position: static;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 60px;
+    color: #757575;
 }
 
 .search-box input[type="search"] {
