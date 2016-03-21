@@ -31,15 +31,15 @@ var paths = {
       './assets/css/themify-icons.css',
       './assets/css/budicon.css',
       './assets/css/custom-icons.css',
-      './assets/css/fa-custom-embedded.css',
-      './assets/css/shopify.css'
+      './assets/css/fa-custom-embedded.css'
     ],
     dest: './static/css'
   },
   additionalcss: {
     src:  [
       './assets/css/tufte.css',
-      './assets/css/youmax_blue_custom.css'
+      './assets/css/youmax_blue_custom.css',
+      './assets/css/shopify.css'
     ],
     dest: './static/css'
   },
@@ -73,6 +73,10 @@ var paths = {
   },
   faqjs: {
     src: './assets/js/faq.js',
+    dest: './static/js'
+  },
+  shopifyjs: {
+    src: './assets/js/shopify.js',
     dest: './static/js'
   },
   vendorjs: {
@@ -150,10 +154,11 @@ var pressjs = new Bundle(paths.pressjs.src)
 var storejs = new Bundle(paths.storejs.src)
 var careersjs = new Bundle(paths.careersjs.src)
 var faqjs = new Bundle(paths.faqjs.src)
+var shopifyjs = new Bundle(paths.shopifyjs.src);
 
 // JS TASK
-gulp.task('js',     ['mainjs', 'indexjs', 'videosjs', 'aboutusjs', 'pressjs', 'storejs', 'careersjs', 'faqjs', 'vendorjs'])
-gulp.task('js:min', ['mainjs:min', 'indexjs:min', 'videosjs:min', 'aboutusjs:min', 'pressjs:min', 'careersjs:min', 'faqjs:min', 'storejs:min', 'vendorjs'])
+gulp.task('js',     ['mainjs', 'indexjs', 'videosjs', 'aboutusjs', 'pressjs', 'storejs', 'careersjs', 'faqjs', 'shopifyjs', 'vendorjs'])
+gulp.task('js:min', ['mainjs:min', 'indexjs:min', 'videosjs:min', 'aboutusjs:min', 'pressjs:min', 'careersjs:min', 'faqjs:min', 'storejs:min', 'shopifyjs:min', 'vendorjs'])
 
 // MAIN JS BUILD
 gulp.task('mainjs', function() {
@@ -321,6 +326,27 @@ gulp.task('faqjs:min', function() {
   return faqjs.bundle()
     .pipe(uglify())
     .pipe(gulp.dest(paths.faqjs.dest))
+})
+
+// STORE JS BUILD
+gulp.task('shopifyjs', function() {
+  function build() {
+    return shopifyjs.bundle()
+      .pipe(sourcemaps.write('./'))
+      .pipe(gulp.dest(paths.shopifyjs.dest))
+      .pipe(browserSync.reload({
+        stream: true
+      }))
+  }
+
+  faqjs.on('update', build)
+  return build()
+})
+
+gulp.task('shopifyjs:min', function() {
+  return shopifyjs.bundle()
+    .pipe(uglify())
+    .pipe(gulp.dest(paths.shopifyjs.dest))
 })
 
 // VENDOR JS TASK
