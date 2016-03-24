@@ -22,7 +22,7 @@
 }
 */
  
- [class^="icon-"]:before, [class*=" icon-"]:before {
+ [class^="fa-icon-"]:before, [class*=" fa-icon-"]:before {
   font-family: "fa-custom";
   font-style: normal;
   font-weight: normal;
@@ -46,15 +46,15 @@
   /* remove if not needed */
   margin-left: .2em;
  
-  /* you can be more comfortable with increased icons size */
+  /* you can be more comfortable with increased fa-icons size */
   /* font-size: 120%; */
  
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
-.icon-comment:before { content: '\e800'; } /* '' */
-.icon-phone:before { content: '\e801'; } /* '' */
-.icon-mail-alt:before { content: '\e802'; } /* '' */
-.icon-search:before { content: '\e803'; } /* '' */
-.icon-angle-double-right:before { content: '\e807'; } /* '' */
-.icon-angle-right:before { content: '\e808'; } /* '' */
+.fa-icon-comment:before { content: '\e800'; } /* '' */
+.fa-icon-phone:before { content: '\e801'; } /* '' */
+.fa-icon-mail-alt:before { content: '\e802'; } /* '' */
+.fa-icon-search:before { content: '\e803'; } /* '' */
+.fa-icon-angle-double-right:before { content: '\e807'; } /* '' */
+.fa-icon-angle-right:before { content: '\e808'; } /* '' */
