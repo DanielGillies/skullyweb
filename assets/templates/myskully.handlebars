@@ -1,30 +1,29 @@
-{{> header title="My SKULLY"}}
+{{> header title="My SKULLY" bodyClass="support-page"}}
+{{> chat-widget}}
 <div class="nav-container">
     {{> navbar}}
-    <!-- ACTUAL PAGE CONTENT -->
-    <div class="main-container">
-        <section class="fullheight bg-black overlay7">
-            <div class="bg-image" id="myskully1img">
-                <div></div>
-            </div>
-            <div class="centered container">
-                <div class="row text-center">
-                    <div class="col-md-12">
-                        <h2 class="uppercase bold">This page is currently under construction.</h2>
-                        <p>If you need to update your address, helmet size, or color selection, please contact customer care at
-                            <a href="mailto:connect@skully.com">connect@skully.com</a>.</p>
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4 col-md-offset-4">
-                        <a href="/" class="btn btn-middle">
-                            <h5>Go Home</h5>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+
+    {{> support-header pageTitle="My SKULLY"}}
+
+    <section class="bg-white support-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-md-3 sidebar">
+          <ul>
+            <li><a href="/support">FAQ's <i class="fa-icon-angle-right"></i></a></li>
+            <li><a href="/how-to">How To <i class="fa-icon-angle-right"></i></a></li>
+            <li><a href="/manuals">Manuals <i class="fa-icon-angle-right"></i></a></li>
+          </ul>
+          {{> support-sidebar-extras}}
+        </div>
+        <div class="col-sm-8 col-md-9">
+            <h3>Update or Confirm Order Information</h3>
+            <p>If you need to update your address, helmet size/color or check on your order status, please contact customer care at <a href="mailto:connect@skully.com">connect@skully.com</a>.</p>
+        </div>
+      </div>
     </div>
+    </section>
+
     {{> footer}}
 </div>
 {{> scripts}}
