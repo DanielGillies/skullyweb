@@ -348,7 +348,8 @@ $(document).ready(function() {
     $(this).attr('id', 'tweets-' + index);
   }).each(function(index) {
 
-    function handleTweets(tweets) {
+    var handleTweets = function(tweets) {
+      console.log('handling tweets...');
       var x = tweets.length;
       var n = 0;
       var element = document.getElementById('tweets-' + index);
@@ -360,9 +361,21 @@ $(document).ready(function() {
       html += '</ul>';
       element.innerHTML = html;
       return html;
-    }
+    };
 
-    twitterFetcher.fetch($('#tweets-' + index).attr('data-widget-id'), '', 5, true, true, true, '', false, handleTweets);
+    var config = {
+      "id": '623173244095303680',
+      "domId": 'tweets-0',
+      "maxTweets": 5,
+      "showUser": true,
+      "enableLinks": true,
+      // "showImages" : true,
+      "showPermalinks": false,
+      "customCallback": handleTweets
+    };
+
+    //twitterFetcher.fetch($('#tweets-' + index).attr('data-widget-id'), '', 5, true, true, true, '', false, handleTweets);
+    twitterFetcher.fetch(config);
 
   });
 
