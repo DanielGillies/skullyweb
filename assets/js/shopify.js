@@ -291,7 +291,10 @@ $(function() {
     ============================================================ */
     function attachCheckoutButtonListeners() {
         $('.btn--cart-checkout').on('click', function() {
-            window.open(cart.checkoutUrl+'&_ga=' + getCookie('_ga'), '_self');
+            var url = cart.checkoutUrl;
+            var gaCookie = getCookie('_ga');
+            if (gaCookie) url += '&_ga=' + gaCookie;
+            window.open(url, '_self');
         });
     }
 
@@ -316,9 +319,13 @@ $(function() {
     /* Get cookie by name
     ============================================================ */
     function getCookie(name) {
-      var value = "; " + document.cookie;
-      var parts = value.split("; " + name + "=");
-      if (parts.length == 2) return parts.pop().split(";").shift();
+        var value = "; " + document.cookie;
+        var parts = value.split("; " + name + "=");
+        if (parts.length == 2) {
+            return parts.pop().split(";").shift();
+        } else {
+            console.log('_ga:'+value);
+        }
     }
 
 });
