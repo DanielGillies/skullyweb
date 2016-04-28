@@ -9617,7 +9617,7 @@ div[id^='press-']::before {
 }
 
 #press-svbj::before {
-    background: url(../../static/img/svbj.jpg);
+    background: url(../../static/img/SVBJ.jpg);
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center center;
