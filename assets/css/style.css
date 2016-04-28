@@ -9623,6 +9623,13 @@ div[id^='press-']::before {
     background-position: center center;
 }
 
+#press-huff::before {
+    background: url(../../static/img/huff.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center center;
+}
+
 div[id^='press-']:hover h4 {
     opacity: 1;
 }
