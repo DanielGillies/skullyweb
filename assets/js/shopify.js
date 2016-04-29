@@ -292,27 +292,19 @@ $(function() {
     function attachCheckoutButtonListeners() {
         $('.btn--cart-checkout').on('click', function() {
 
-            // var url = cart.checkoutUrl;
-            // var gaCookie = getCookie('_ga');
-            // if (gaCookie) url += '&_ga=' + gaCookie;
-            // window.open(url, '_self');
+            var url = cart.checkoutUrl;
 
-            // -----
+            // if the url doesn't already have a reference to the linkerParam, add it
+            if (url.indexOf('_ga') == -1) {
 
-            // var url = cart.checkoutUrl;
-            // var linkerParam;
+                var linkerParam = ga.getAll()[0].get('linkerParam');
+                if (linkerParam) {
+                    url += '&'+linkerParam; // linkerParam includes the query param name and value.
+                }
+            }
 
-            // ga(function(tracker) {
-            //     linkerParam = tracker.get('linkerParam');
-            // });
+            window.open(url, '_self');
 
-            // if (linkerParam) url += linkerParam; // linkerParam includes the query param name and value.
-
-            // window.open(url, '_self');
-
-            // -----
-
-            window.open(cart.checkoutUrl, '_self');
     });
     }
 
