@@ -291,8 +291,34 @@ $(function() {
     ============================================================ */
     function attachCheckoutButtonListeners() {
         $('.btn--cart-checkout').on('click', function() {
+<<<<<<< HEAD
             window.open(cart.checkoutUrl, '_self');
         });
+=======
+
+            // var url = cart.checkoutUrl;
+            // var gaCookie = getCookie('_ga');
+            // if (gaCookie) url += '&_ga=' + gaCookie;
+            // window.open(url, '_self');
+
+            // -----
+
+            // var url = cart.checkoutUrl;
+            // var linkerParam;
+
+            // ga(function(tracker) {
+            //     linkerParam = tracker.get('linkerParam');
+            // });
+
+            // if (linkerParam) url += linkerParam; // linkerParam includes the query param name and value.
+
+            // window.open(url, '_self');
+
+            // -----
+
+            window.open(cart.checkoutUrl, '_self');
+    });
+>>>>>>> parent of 9f5292c... Merge pull request #44 from tylerdurrett/master
     }
 
     /* Update cart tab button
