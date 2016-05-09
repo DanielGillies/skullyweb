@@ -31,11 +31,11 @@
                 <span id="viewerloading" style="position: relative;width: 0%;margin: -25px 2%;border-radius: 7px;height: 25px;line-height: 25px;background: red;color: white;font-family: sans-serif;display: block;text-align: right;vertical-align: center;min-width: 80px;opacity: 0;transition:width 0.2s ease, opacity 1s;">Loading&nbsp;</span>
                 <img src="static/img/360/perspective-arrow.png" id="viewerindicator" style="position: relative;width: 80%;margin: -15% 10% 0px 10%;opacity: 0;transition: opacity 1s;">
               </div>
-              <button onclick="switchToViewer()" style="margin-top:25px;">360 viewer</button>
+              <img src="static/img/360/360.svg" onclick="switchToViewer()" style="margin-top:25px;cursor:pointer;" width="75px" title="360 viewer, look at the helmet from every angle.">
   <script type="text/javascript">
   var image_element = document.getElementById("helmet_img");
   var loading = document.getElementById("viewerloading");
-  var wrap = document.getElementById("viewerwrap");
+  var viewerWrap = document.getElementById("viewerwrap");
   var indicator = document.getElementById("viewerindicator");
   var resolution = 8;
   var images = [];
@@ -43,7 +43,7 @@
   var mouseIsDown = false;
   var viewerIsActive = false;
 
-  var imagesURL = "static/img/360/blackonwhite/4_[[framex]].jpg"
+  var imagesURL = "static/img/360/blackonwhite/[[framey]]_[[framex]].jpg"
 
   function switchToViewer () {
     if (images.length >= resolution) {
@@ -86,8 +86,8 @@
       index--;
       loadimages();
     }
-    images[index].src = imagesURL.replace("[[framex]]", index);
-    //"/static/img/360/blackonwhite/4_"+index+".jpg";
+    images[index].src = imagesURL.replace("[[framex]]", index).replace("[[framey]]", Math.round(resolution/2));
+
     index++;
   }
 
@@ -105,8 +105,8 @@
   isJqueryLoadedYet();
 
   function initViewer () {
-  $(wrap).on("mousemove touchmove", function(e) {
-    if (!image_element.src.includes(imagesURL.substring(0, imagesURL.indexOf("[[framex]]")))) viewerIsActive = false;
+  $(viewerWrap).on("mousemove touchmove", function(e) {
+    if (!image_element.src.includes(imagesURL.substring(0, imagesURL.indexOf("[[framey]]")))) viewerIsActive = false;
 
     if (index <= resolution || !mouseIsDown || !viewerIsActive) return
     else indicator.style.opacity = "0";
@@ -128,7 +128,7 @@
   });
 
 
-  $(wrap).on("mousedown touchstart", function(e) {
+  $(viewerWrap).on("mousedown touchstart", function(e) {
     if (!viewerIsActive) return;
     e.preventDefault();
     mouseIsDown = true;
@@ -143,7 +143,7 @@
     while (lastPosition < 0) lastPosition = lastPosition+resolution;
   });
 
-  $(wrap).on("mouseup touchend mouseleave touchleave", function(e) {
+  $(viewerWrap).on("mouseup touchend mouseleave touchleave", function(e) {
     e.preventDefault();
     mouseIsDown = false;
     currentFrame = bufferPosition;
