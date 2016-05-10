@@ -26,9 +26,9 @@
           </div>
           <div class="row mb24 mb-xs-48">
             <div class="col-md-5 col-sm-6">
-              <div style="text-align:center;cursor:pointer;" onclick="switchToViewer()" ontap="if (!dragging) switchToViewer()">
+              <div style="text-align:center;cursor:pointer;" id="touchTo360" onclick="switchToViewer()" ontap="if (!dragging) switchToViewer()">
                 <img id="helmet_img" alt="Image">
-              <img src="static/img/360/360.svg" style="margin-top:25px;margin:auto;" width="75px" title="360 viewer, look at the helmet from every angle.">
+              <img src="static/img/360/360.svg" style="margin-top:25px;margin:auto;" width="75px" title="360 viewer, look at the helmet from every angle." ontap="switchToViewer()">
               <small style="color:#999;">Click for 360° view</small>
               </div>
             </div>
@@ -371,8 +371,21 @@
     if (!dontRepeat) resizeViewer(true);
   }
   //document.body.addEventListener("resize", function(){resizeViewer()}, false);
-
+  var lasttouchtime = 0;
   function initViewer () {
+    $('#touchTo360').on("tap", function(){switchToViewer()});
+    $('#touchTo360').on("touchstart", function(){
+      var d = new Date();
+      var n = d.getTime();
+      lasttouchtime = n;
+    });
+    $('#touchTo360').on("touchend", function(){
+      var d = new Date();
+      var n = d.getTime();
+      if(n-150 < lasttouchtime) switchToViewer()
+      //lasttouchtime = n;
+      //switchToViewer()
+    });
   $(window).resize(function() {resizeViewer();resizeViewer();})
 
   /*$('#viewerwrap').on('click',function () {
