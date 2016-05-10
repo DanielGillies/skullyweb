@@ -561,33 +561,33 @@
   var imagesURL = "static/img/360/blackonblack/[[framey]]_[[framex]].jpg"
 
   function switchToViewer () {
-    console.log("opening viewer");
+    //console.log("opening viewer");
     currentFrame = 18;
     if (images.length > resolution) {
-      console.log("viewer is loaded and ready, show it!");
+      //console.log("viewer is loaded and ready, show it!");
       viewerIsActive = true;
       image_element.src = images[currentFrame].src;
       viewerwrap.style.display = "block";
       indicator.style.opacity = "1";
-      console.log("Should be up now!");
+      //console.log("Should be up now!");
     } else if (images.length == 0) {
-      console.log("Images have not been loaded yet, show it!");
+      //console.log("Images have not been loaded yet, show it!");
       viewerwrap.style.display = "block";
       indicator.style.opacity = "0";
       loading.style.opacity = "1";
       viewerIsActive = true;
       loadimages();
-      console.log("Should be up now!");
+      //console.log("Should be up now!");
     } else {
-      console.log("Images are loading, show it!");
+      //console.log("Images are loading, show it!");
       viewerwrap.style.display = "block";
       image_element.src = images[images.length-1].src;
       indicator.style.opacity = "0";
       loading.style.opacity = "1";
       viewerIsActive = true;
-      console.log("Should be up now!");
+      //console.log("Should be up now!");
     }
-    console.log("Done!");
+    //console.log("Done!");
   }
 
   function switchFromViewer () {
@@ -656,8 +656,14 @@
   }
   //document.body.addEventListener("resize", function(){resizeViewer()}, false);
   var lasttouchtime = 0;
+  var origin = {x:0,y:0}
     document.getElementById('touchTo360').addEventListener("touchend", banana, false);
     document.getElementById('touchTo360').addEventListener("mouseup", banana, false);
+
+    function diff (a,b) {
+      return Math.abs(a - b)
+    }
+
   function initViewer () {
     /*$('#touchTo360').on("touchend mouseup", function(){
       var d = new Date();
@@ -667,18 +673,21 @@
         console.log("touched!");
       }
     });*/
+
   $(window).resize(function() {resizeViewer();resizeViewer();})
 
-  /*$('#viewerwrap').on('click',function () {
-    if (viewerIsActive) switchFromViewer();
-  });*/
 
     loadimages();
 
   $('body').on("mousemove touchmove", function(e) {
     draggingCount++;
-    if (draggingCount > 1) dragging = true;
-    //if (!image_element.src.includes(imagesURL.substring(0, imagesURL.indexOf("[[framey]]")))) viewerIsActive = false;
+    var cpos = ptXY(e);
+    var sensitivity = 12.5;
+
+    //console.log(diff(cpos.x,origin.x) + " : " +diff(cpos.y,origin.y)+", "+sensitivity);
+
+    if ( diff(cpos.x,origin.x) > sensitivity || diff(cpos.y,origin.y) > sensitivity ) dragging = true;
+
 
     if (index <= resolution || !mouseIsDown || !viewerIsActive) return
     else indicator.style.opacity = "0";
@@ -701,6 +710,7 @@
   $('body').on("mousedown touchstart", function(e) {
     dragging = false;
     draggingCount = 0;
+    origin = ptXY(e);
 
     var d = new Date();
     var n = d.getTime();
