@@ -224,144 +224,12 @@
             </p>
           </div>
           <div class="row mb24 mb-xs-48">
-            <div class="col-md-5 col-sm-6">
-              <div id="viewerwrap" style="">
+            <div class="col-md-5 col-sm-6" id="touchTo360">
+              <div style="text-align:center;cursor:pointer;">
                 <img id="helmet_img" alt="Image">
-                <span id="viewerloading" style="position: relative;width: 0%;margin: -25px 2%;border-radius: 7px;height: 25px;line-height: 25px;background: red;color: white;font-family: sans-serif;display: block;text-align: right;vertical-align: center;min-width: 80px;opacity: 0;transition:width 0.2s ease, opacity 1s;">Loading&nbsp;</span>
-                <img src="static/img/360/perspective-arrow.png" id="viewerindicator" style="position: relative;width: 80%;margin: -15% 10% 0px 10%;opacity: 0;transition: opacity 1s;">
+                <img src="static/img/360/360.svg" style="margin-top:25px;margin:auto;" width="75px" title="360 viewer, look at the helmet from every angle.">
+                <small style="color:#999;">Click for 360° view</small>
               </div>
-              <img src="static/img/360/360.svg" onclick="switchToViewer()" style="margin-top:25px;cursor:pointer;" width="75px" title="360 viewer, look at the helmet from every angle.">
-  <script type="text/javascript">
-  var image_element = document.getElementById("helmet_img");
-  var loading = document.getElementById("viewerloading");
-  var viewerWrap = document.getElementById("viewerwrap");
-  var indicator = document.getElementById("viewerindicator");
-  var resolution = 8;
-  var images = [];
-  var index = 0;
-  var mouseIsDown = false;
-  var viewerIsActive = false;
-
-  var imagesURL = "static/img/360/blackonwhite/[[framey]]_[[framex]].jpg"
-
-  function switchToViewer () {
-    if (images.length > resolution) {
-      viewerIsActive = true;
-      image_element.src = images[currentFrame].src;
-      //setTimeout(function() {
-      //  console.log("asjldlak");
-      //  image_element.src = images[currentFrame].src;
-      //}, 50);
-      indicator.style.opacity = "1";
-    } else if (images.length == 0) {
-      indicator.style.opacity = "0";
-      loading.style.opacity = "1";
-      viewerIsActive = true;
-      loadimages();
-    } else {
-      image_element.src = images[images.length-1].src;
-      indicator.style.opacity = "0";
-      loading.style.opacity = "1";
-      viewerIsActive = true;
-    }
-  }
-
-  //loadimages();
-  function loadimages() {
-    if (index > resolution) {
-      index++;
-      loading.style.opacity = "0";
-      if (viewerIsActive) indicator.style.opacity = "1";
-      return;
-    }
-    loading.style.width = (Math.round((index/resolution)*100-4))+"%";
-    images[index] = new Image();
-    images[index].addEventListener("load", function() {
-      if (viewerIsActive) image_element.src = images[images.length-1].src;
-      loadimages();
-      }, false);
-    images[index].onerror = function () {
-      console.error("Cannot load image, retrying");
-      index--;
-      loadimages();
-    }
-    images[index].src = imagesURL.replace("[[framex]]", index).replace("[[framey]]", Math.round(resolution/2));
-
-    index++;
-  }
-
-  var lastPosition = resolution;
-  var currentFrame = resolution;
-  var bufferPosition = lastPosition;
-
-  var isJqueryLoadedYet = function () {
-    console.log("hi")
-    if (window.jQuery) {
-      initViewer();
-      return;
-    } else setTimeout(isJqueryLoadedYet, 100);
-  }
-  isJqueryLoadedYet();
-
-  function initViewer () {
-  $('body').on("mousemove touchmove", function(e) {
-    if (!image_element.src.includes(imagesURL.substring(0, imagesURL.indexOf("[[framey]]")))) viewerIsActive = false;
-
-    if (index <= resolution || !mouseIsDown || !viewerIsActive) return
-    else indicator.style.opacity = "0";
-
-      var position = ptXY(e);
-
-      var trigger = resolution;
-      var offsetL = image_element.getBoundingClientRect().left;
-      trigger = resolution - (((position.x-offsetL)/image_element.offsetWidth)*resolution);
-      var result = (trigger - lastPosition);
-      result = Math.round(result);
-
-      result = result + currentFrame;
-      while (result > resolution) result = result - resolution;
-      while (result < 0) result = result+resolution;
-
-      image_element.src = images[result].src;
-      bufferPosition = result;
-  });
-
-
-  $(viewerWrap).on("mousedown touchstart", function(e) {
-    if (!viewerIsActive) return;
-    e.preventDefault();
-    mouseIsDown = true;
-
-    var position = ptXY(e);
-
-    var offsetL = image_element.getBoundingClientRect().left;
-    var positionX = Math.round(resolution - (((position.x-offsetL)/image_element.offsetWidth)*resolution));
-    lastPosition = positionX;
-
-    while (lastPosition > resolution) lastPosition = lastPosition - resolution;
-    while (lastPosition < 0) lastPosition = lastPosition+resolution;
-  });
-
-  $('body').on("mouseup touchend", function(e) {
-    e.preventDefault();
-    mouseIsDown = false;
-    currentFrame = bufferPosition;
-  });
-};
-
-  function ptXY (e) {
-    var out = {x:0, y:0};
-    if(e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel'){
-      var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
-      out.x = touch.pageX;
-      out.y = touch.pageY;
-    } else if (e.type == 'mousedown' || e.type == 'mouseup' || e.type == 'mousemove' || e.type == 'mouseover'|| e.type=='mouseout' || e.type=='mouseenter' || e.type=='mouseleave') {
-      out.x = e.pageX;
-      out.y = e.pageY;
-    }
-    return out;
-  };
-  </script>
             </div>
             <div class="col-md-5 col-md-offset-1 col-sm-6">
               <div id="storedesktop" class="description">
@@ -665,6 +533,226 @@
   <noscript>
     <a href="https://skullysystems.myshopify.com/cart/5972989700:1" target="_blank">Buy SKULLY AR-1</a>
   </noscript>
+
+  <div id="viewerwrap" style="position:fixed;top:0px;left:0px;width:100vw;height:100vh;background-color:rgba(0,0,0,0.5);display:none;z-index:99;background-size:contain;background-position:center;">
+    <img src="static/img/360/blackonblack/18_18.jpg" id="viewerimage" style="width:auto;margin:auto;">
+    <img src="static/img/iconx.svg" width="50px" style="cursor:pointer;position:fixed; right:25px; top:60px; background:black; border-radius:100%;" onclick="switchFromViewer()">
+    <span id="viewerloading" style="position: relative;width: 0%;margin: -25px 2%;border-radius: 7px;height: 25px;line-height: 25px;background: red;color: white;font-family: sans-serif;display: block;text-align: right;vertical-align: center;min-width: 80px;opacity: 0;transition:width 0.2s ease, opacity 1s;">Loading&nbsp;</span>
+    <img src="static/img/360/perspective-arrow.png" id="viewerindicator" style="position: relative;width: 80%;margin: -15% 10% 0px 10%;opacity: 0;transition: opacity 1s;">
+  </div>
+  <script type="text/javascript">
+  var image_element = document.getElementById("viewerimage");
+  var loading = document.getElementById("viewerloading");
+  var viewerwrap = document.getElementById("viewerwrap");
+  var indicator = document.getElementById("viewerindicator");
+  var resolution = 35;
+  var images = [];
+  var index = 0;
+  var mouseIsDown = false;
+  var dragging = false;
+  var viewerIsActive = false;
+  var mousedowntime = 0;
+  var draggingCount = 0;
+
+  var lastPosition = resolution;
+  var currentFrame = resolution;
+  var bufferPosition = lastPosition;
+
+  var imagesURL = "static/img/360/blackonblack/[[framey]]_[[framex]].jpg"
+
+  function switchToViewer () {
+    //console.log("opening viewer");
+    currentFrame = 18;
+    if (images.length > resolution) {
+      //console.log("viewer is loaded and ready, show it!");
+      viewerIsActive = true;
+      image_element.src = images[currentFrame].src;
+      viewerwrap.style.display = "block";
+      indicator.style.opacity = "1";
+      //console.log("Should be up now!");
+    } else if (images.length == 0) {
+      //console.log("Images have not been loaded yet, show it!");
+      viewerwrap.style.display = "block";
+      indicator.style.opacity = "0";
+      loading.style.opacity = "1";
+      viewerIsActive = true;
+      loadimages();
+      //console.log("Should be up now!");
+    } else {
+      //console.log("Images are loading, show it!");
+      viewerwrap.style.display = "block";
+      image_element.src = images[images.length-1].src;
+      indicator.style.opacity = "0";
+      loading.style.opacity = "1";
+      viewerIsActive = true;
+      //console.log("Should be up now!");
+    }
+    //console.log("Done!");
+  }
+
+  function switchFromViewer () {
+    viewerIsActive = false;
+    viewerwrap.style.display = "none";
+  }
+
+  //loadimages();
+  function loadimages() {
+    if (index > resolution) {
+      index++;
+      loading.style.opacity = "0";
+      if (viewerIsActive) indicator.style.opacity = "1";
+      return;
+    }
+    loading.style.width = (Math.round((index/resolution)*100-4))+"%";
+    images[index] = new Image();
+    images[index].addEventListener("load", function() {
+      loadimages();
+      }, false);
+    images[index].onerror = function () {
+      console.error("Cannot load image, retrying");
+      index--;
+      loadimages();
+    }
+    images[index].src = imagesURL.replace("[[framex]]", index).replace("[[framey]]", Math.round(resolution/2));
+
+    index++;
+  }
+
+  var isJqueryLoadedYet = function () {
+    console.log("hi")
+    if (window.jQuery) {
+      setTimeout(initViewer, 100);
+      return;
+    } else setTimeout(isJqueryLoadedYet, 100);
+  }
+  isJqueryLoadedYet();
+
+  function resizeViewer (dontRepeat) {
+    dontRepeat = dontRepeat || false;
+    if (image_element.offsetHeight > window.innerHeight) {
+      //console.log("ioewpoir");
+      image_element.style.height = "100%";
+      image_element.style.width = Math.round(window.innerHeight/(images[0].height/images[0].width))+"px";
+    } else {
+      //console.log("lskjflakjs");
+      image_element.style.height = Math.round(window.innerWidth/(images[0].width/images[0].height))+"px";
+      image_element.style.width = "100%";
+    }
+    var marginTop = "0px";
+    if (window.innerHeight > images[0].offsetHeight) {
+      marginTop = Math.round(window.innerHeight/2-image_element.offsetHeight/2)+"px";
+    };
+
+    image_element.style.marginTop = marginTop;
+
+    if (!dontRepeat) resizeViewer(true);
+  }
+  function banana () { // I have no idea why I had to do this fix but it works so far
+      if(!dragging && !viewerIsActive) {
+        setTimeout(switchToViewer, 1);
+        setTimeout(resizeViewer, 5);
+        console.log("touched!");
+      } else console.log("dragged!")
+  }
+  //document.body.addEventListener("resize", function(){resizeViewer()}, false);
+  var lasttouchtime = 0;
+  var origin = {x:0,y:0}
+    document.getElementById('touchTo360').addEventListener("touchend", banana, false);
+    document.getElementById('touchTo360').addEventListener("mouseup", banana, false);
+
+    function diff (a,b) {
+      return Math.abs(a - b)
+    }
+
+  function initViewer () {
+    /*$('#touchTo360').on("touchend mouseup", function(){
+      var d = new Date();
+      var n = d.getTime();
+      if(!dragging && !viewerIsActive) {
+        switchToViewer();
+        console.log("touched!");
+      }
+    });*/
+
+  $(window).resize(function() {resizeViewer();resizeViewer();})
+
+
+    loadimages();
+
+  $('body').on("mousemove touchmove", function(e) {
+    draggingCount++;
+    var cpos = ptXY(e);
+    var sensitivity = 12.5;
+
+    //console.log(diff(cpos.x,origin.x) + " : " +diff(cpos.y,origin.y)+", "+sensitivity);
+
+    if ( diff(cpos.x,origin.x) > sensitivity || diff(cpos.y,origin.y) > sensitivity ) dragging = true;
+
+
+    if (index <= resolution || !mouseIsDown || !viewerIsActive) return
+    else indicator.style.opacity = "0";
+      var position = ptXY(e);
+
+      var trigger = resolution;
+      var offsetL = image_element.getBoundingClientRect().left;
+      trigger = resolution - (((position.x-offsetL)/image_element.offsetWidth)*resolution);
+      var result = (trigger - lastPosition);
+      result = Math.round(result);
+
+      result = result + currentFrame;
+      while (result > resolution) result = result - resolution;
+      while (result < 0) result = result+resolution;
+
+      image_element.src = images[result].src;
+      bufferPosition = result;
+  });
+
+  $('body').on("mousedown touchstart", function(e) {
+    dragging = false;
+    draggingCount = 0;
+    origin = ptXY(e);
+
+    var d = new Date();
+    var n = d.getTime();
+    mousedowntime = n;
+
+    if (!viewerIsActive) return;
+    else e.preventDefault();
+    mouseIsDown = true;
+
+    var position = ptXY(e);
+
+    var offsetL = image_element.getBoundingClientRect().left;
+    var positionX = Math.round(resolution - (((position.x-offsetL)/image_element.offsetWidth)*resolution));
+    lastPosition = positionX;
+
+    while (lastPosition > resolution) lastPosition = lastPosition - resolution;
+    while (lastPosition < 0) lastPosition = lastPosition+resolution;
+  });
+
+  $('body').on("mouseup touchend", function(e) {
+    if (!dragging && viewerIsActive) {
+      switchFromViewer();
+      e.preventDefault();
+    }
+    mouseIsDown = false;
+    currentFrame = bufferPosition;
+  });
+};
+
+  function ptXY (e) {
+    var out = {x:0, y:0};
+    if(e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel'){
+      var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+      out.x = touch.pageX;
+      out.y = touch.pageY;
+    } else if (e.type == 'mousedown' || e.type == 'mouseup' || e.type == 'mousemove' || e.type == 'mouseover'|| e.type=='mouseout' || e.type=='mouseenter' || e.type=='mouseleave') {
+      out.x = e.pageX;
+      out.y = e.pageY;
+    }
+    return out;
+  };
+  </script>
 
   <script src="static/js/shopify.js"></script>
   <script src="https://sdks.shopifycdn.com/js-buy-sdk/latest/shopify-buy.polyfilled.globals.min.js"></script>
