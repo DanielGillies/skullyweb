@@ -328,9 +328,12 @@
       loadimages();
       }, false);
     images[index].onerror = function () {
-      console.error("Cannot load image, retrying");
-      index--;
-      loadimages();
+      //console.error("Cannot load image, retrying");
+      //index--;
+      //loadimages();
+      images = [];
+      index = 0;
+      setTimeout(loadimages, 100);
     }
     images[index].src = imagesURL.replace("[[framex]]", index).replace("[[framey]]", Math.round(resolution/2));
 
