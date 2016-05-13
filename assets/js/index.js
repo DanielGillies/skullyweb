@@ -197,21 +197,21 @@ function goToExplosion(i) {
 window.goToExplosion = goToExplosion
 
 // HOVER SOUND
-var audio = $("#hoversound")[0];
-$("#hovertext").mouseenter(function() {
-    audio.play();
-});
+// var audio = $("#hoversound")[0];
+// $("#hovertext").mouseenter(function() {
+//     audio.play();
+// });
 
 // SCATMAN!!! (Bottom right)
-var audio2 = $("#scatman")[0];
-$(".scatbutton").click(function() {
+// var audio2 = $("#scatman")[0];
+// $(".scatbutton").click(function() {
 
-    audio2.volume = .3;
-    audio2.play();
+//     audio2.volume = .3;
+//     audio2.play();
 
-    alert("ITS SCATMAN TIME!!!!");
+//     alert("ITS SCATMAN TIME!!!!");
 
-});
+// });
 
 var canvidControl = canvid({
     selector: '#index1img',
