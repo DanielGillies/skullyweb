@@ -291,7 +291,8 @@
 
     var d = new Date();
     var n = d.getTime();
-    if (n-100 > lastswitchtime) {
+    if (n-250 > lastswitchtime) {
+      lastswitchtime = n;
       currentFrame = 18;
       if (images.length > resolution) {
         viewerIsActive = true;
@@ -309,7 +310,6 @@
         loading.style.opacity = "1";
         viewerIsActive = true;
       }
-      lastswitchtime = n;
     }
   }
 
