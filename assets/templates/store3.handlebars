@@ -268,7 +268,6 @@
   </div>
   <script src="static/js/Tocca.min.js"></script>
   <script type="text/javascript">
-  window.hasInitFunc = true;
   var image_element = document.getElementById("viewerimage");
   var loading = document.getElementById("viewerloading");
   var viewerwrap = document.getElementById("viewerwrap");
@@ -286,7 +285,7 @@
   var currentFrame = resolution;
   var bufferPosition = lastPosition;
 
-  var imagesURL = "static/img/360/blackonblack/[[framey]]_[[framex]].jpg"
+  var imagesURL = "static/img/360/blackonblack/[[framey]]_[[framex]].jpg";
 
   function switchToViewer () {
 
@@ -338,9 +337,6 @@
       loadimages();
       }, false);
     images[index].onerror = function () {
-      //console.error("Cannot load image, retrying");
-      //index--;
-      //loadimages();
       images = [];
       index = 0;
       setTimeout(loadimages, 100);
@@ -365,6 +361,9 @@
       image_element.style.width = window.innerHeight+"px";
       image_element.style.height = "auto";
       image_element.style.margin = "auto";
+      if (window.innerHeight > images[0].height) {
+        image_element.style.marginTop = (window.innerHeight/2 - image_element.offsetHeight/2) + "px";
+      };
       indicator.style.marginTop = -indicator.offsetHeight+"px";
     } else {
       image_element.style.maxHeight = images[0].height+"px";
@@ -404,10 +403,7 @@ function init () {
     draggingCount++;
     var cpos = ptXY(e);
     var sensitivity = 12.5;
-
     if ( diff(cpos.x,origin.x) > sensitivity || diff(cpos.y,origin.y) > sensitivity ) dragging = true;
-
-
     if (index <= resolution || !mouseIsDown || !viewerIsActive) return
     else indicator.style.opacity = "0";
       var position = ptXY(e);
