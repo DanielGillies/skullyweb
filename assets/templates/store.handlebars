@@ -25,8 +25,12 @@
             </p>
           </div>
           <div class="row mb24 mb-xs-48">
-            <div class="col-md-5 col-sm-6">
-              <img id="helmet_img" alt="Image">
+            <div class="col-md-5 col-sm-6" id="touchTo360">
+              <div style="text-align:center;cursor:pointer;">
+                <img id="helmet_img" alt="Image">
+                <img src="static/img/360/360.svg" style="margin-top:25px;margin:auto;" width="75px" title="360 viewer, look at the helmet from every angle.">
+                <small style="color:#999;">Click for 360° view</small>
+              </div>
             </div>
             <div class="col-md-5 col-md-offset-1 col-sm-6">
               <div id="storedesktop" class="description">
@@ -255,6 +259,231 @@
   <noscript>
     <a href="https://skullysystems.myshopify.com/cart/5972989700:1" target="_blank">Buy SKULLY AR-1</a>
   </noscript>
+
+  <div id="viewerwrap" style="position:fixed;top:0px;left:0px;width:100vw;height:100vh;background-color:rgba(0,0,0,0.5);display:none;z-index:99;background-size:contain;background-position:center;">
+    <img src="static/img/360/blackonblack/18_18.jpg" id="viewerimage" style="width:auto;margin:auto;">
+    <img src="static/img/iconx.svg" width="50px" style="cursor:pointer;position:fixed; right:25px; top:60px; background:black; border-radius:100%;" onclick="switchFromViewer()">
+    <div id="loadingContainer" style="width:90%;max-width:800px;margin:auto">
+      <span id="viewerloading" style="position: relative;width: 0%;margin: -25px 2%;border-radius: 7px;height: 25px;line-height: 25px;background: red;color: white;font-family: sans-serif;display: block;text-align: right;vertical-align: center;min-width: 80px;opacity: 0;transition:width 2s, opacity 1s;">Loading&nbsp;</span>
+    </div>
+    <img src="static/img/360/perspective-arrow.svg" id="viewerindicator" style="position: relative;width: 80%;max-width:400px;margin: -100px auto 0px auto;opacity: 0;transition: opacity 1s;">
+  </div>
+  <script src="static/js/Tocca.min.js"></script>
+  <script type="text/javascript">
+  var image_element = document.getElementById("viewerimage");
+  var loading = document.getElementById("viewerloading");
+  var viewerwrap = document.getElementById("viewerwrap");
+  var indicator = document.getElementById("viewerindicator");
+  var resolution = 35;
+  var images = [];
+  var index = 0;
+  var mouseIsDown = false;
+  var dragging = false;
+  var viewerIsActive = false;
+  var mousedowntime = 0;
+  var draggingCount = 0;
+
+  var lastPosition = resolution;
+  var currentFrame = resolution;
+  var bufferPosition = lastPosition;
+
+  var imagesURL = "static/img/360/blackonblack/[[framey]]_[[framex]].jpg";
+
+  function switchToViewer () {
+
+    var d = new Date();
+    var n = d.getTime();
+    if (n-500 > lastswitchtime) {
+      lastswitchtime = n;
+      currentFrame = 18;
+      if (index >= resolution) {
+        viewerIsActive = true;
+        viewerwrap.style.display = "block";
+        indicator.style.opacity = "1";
+      } else if (index == 0) {
+        viewerwrap.style.display = "block";
+        indicator.style.opacity = "0";
+        loading.style.opacity = "1";
+        viewerIsActive = true;
+        loadimages();
+      } else {
+        viewerwrap.style.display = "block";
+        indicator.style.opacity = "0";
+        loading.style.opacity = "1";
+        viewerIsActive = true;
+      }
+    }
+  }
+
+  function switchFromViewer () {
+
+    var d = new Date();
+    var n = d.getTime();
+    if (n-100 > lastswitchtime) {
+      viewerIsActive = false;
+      viewerwrap.style.display = "none";
+      lastswitchtime = n;
+    }
+  }
+
+  function loadimages() {
+    if (images.length > 0) return;
+    for (var i = 0; i <= resolution; i++) {
+      
+      images[i] = new Image();
+      images[i].addEventListener("load", function() {
+        index++;
+        loading.style.width = (Math.round((index/resolution)*100-4))+"%";
+        resizeViewer();
+        if (index >= resolution) {
+          loading.style.opacity = "0";
+          if (viewerIsActive) indicator.style.opacity = "1";
+        }
+      }, false);
+      images[i].onerror = function () {
+        images = [];
+        index = 0;
+        setTimeout(loadimages, 1000);
+      }
+      images[i].src = imagesURL.replace("[[framex]]", i).replace("[[framey]]", Math.round(resolution/2));
+
+    };
+  }
+
+  var isJqueryLoadedYet = function () {
+    if (window.jQuery) {
+      setTimeout(init, 100);
+      return;
+    } else setTimeout(isJqueryLoadedYet, 100);
+  }
+  isJqueryLoadedYet();
+
+  function resizeViewer (dontRepeat) {
+    if (window.innerWidth > window.innerHeight) {
+      image_element.style.maxWidth = images[0].width+"px";
+      image_element.style.width = window.innerHeight+"px";
+      image_element.style.height = window.innerHeight+"px";
+      image_element.style.margin = "auto";
+      if (window.innerHeight > images[0].height) {
+        image_element.style.marginTop = (window.innerHeight/2 - image_element.offsetHeight/2) + "px";
+      };
+      indicator.style.marginTop = -indicator.offsetHeight+"px";
+    } else {
+      image_element.style.maxHeight = images[0].height+"px";
+      image_element.style.height = window.innerWidth+"px";
+      image_element.style.width = window.innerWidth+"px";
+      image_element.style.margin = (window.innerHeight/2-image_element.offsetHeight/2)+"px auto";
+      indicator.style.marginTop = -((window.innerHeight/2-image_element.offsetHeight/2)+indicator.offsetHeight)+"px";
+    }
+  }
+
+  var lasttouchtime = 0;
+  var origin = {x:0,y:0};
+  var lastswitchtime = 0;
+
+    function diff (a,b) {
+      return Math.abs(a - b)
+    }
+
+    window.addEventListener("load", loadimages);
+
+function init () {
+  $(window).resize(function() {resizeViewer();resizeViewer();})
+
+
+  $('#touchTo360').on("tap click", function(e) {
+    var d = new Date();
+    var n = d.getTime();
+    if (n-100 > lastswitchtime) {
+      switchToViewer();
+      lastswitchtime = n;
+    }
+    resizeViewer();
+  })
+
+  $('body').on("mousemove touchmove", function(e) {
+    draggingCount++;
+    var cpos = ptXY(e);
+    var sensitivity = 12.5;
+    if ( diff(cpos.x,origin.x) > sensitivity || diff(cpos.y,origin.y) > sensitivity ) dragging = true;
+    if (index <= resolution || !mouseIsDown || !viewerIsActive) return
+    else indicator.style.opacity = "0";
+      var position = ptXY(e);
+
+      var trigger = resolution;
+      var offsetL = image_element.getBoundingClientRect().left;
+      trigger = resolution - (((position.x-offsetL)/image_element.offsetWidth)*resolution);
+      var result = (trigger - lastPosition);
+      result = Math.round(result);
+
+      result = result + currentFrame;
+      while (result > resolution) result = result - resolution;
+      while (result < 0) result = result+resolution;
+
+      image_element.src = images[result].src;
+      bufferPosition = result;
+  });
+
+  $('body').on("mousedown touchstart", function(e) {
+    dragging = false;
+    draggingCount = 0;
+    origin = ptXY(e);
+
+    var d = new Date();
+    var n = d.getTime();
+    mousedowntime = n;
+
+    if (!viewerIsActive) return;
+    else e.preventDefault();
+    mouseIsDown = true;
+
+    var position = ptXY(e);
+
+    var offsetL = image_element.getBoundingClientRect().left;
+    var positionX = Math.round(resolution - (((position.x-offsetL)/image_element.offsetWidth)*resolution));
+    lastPosition = positionX;
+
+    while (lastPosition > resolution) lastPosition = lastPosition - resolution;
+    while (lastPosition < 0) lastPosition = lastPosition+resolution;
+  });
+
+  $('body').on("mouseup touchend", function(e) {
+    mouseIsDown = false;
+    currentFrame = bufferPosition;
+  });
+  $(viewerwrap).on('tap', function (e) {
+    var d = new Date();
+    var n = d.getTime();
+    if (n-100 > lastswitchtime) {
+      switchFromViewer();
+      e.preventDefault();
+      lastswitchtime = n;
+    }
+  });
+  $(viewerwrap).on('click', function (e) {
+    var d = new Date();
+    var n = d.getTime();
+    if (n-100 > lastswitchtime && !dragging) {
+      switchFromViewer();
+      e.preventDefault();
+      lastswitchtime = n;
+    }
+  });
+};
+
+  function ptXY (e) {
+    var out = {x:0, y:0};
+    if(e.type == 'touchstart' || e.type == 'touchmove' || e.type == 'touchend' || e.type == 'touchcancel'){
+      var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+      out.x = touch.pageX;
+      out.y = touch.pageY;
+    } else if (e.type == 'mousedown' || e.type == 'mouseup' || e.type == 'mousemove' || e.type == 'mouseover'|| e.type=='mouseout' || e.type=='mouseenter' || e.type=='mouseleave') {
+      out.x = e.pageX;
+      out.y = e.pageY;
+    }
+    return out;
+  };
+  </script>
 
   <script src="static/js/shopify.js?v=1"></script>
   {{!-- // <script src="static/js/shopify-buy.polyfilled.globals.min.js"></script> --}}
