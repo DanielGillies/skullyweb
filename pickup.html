@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Thank You</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The SKULLY AR-1 is the first helmet to feature a built-in 180&deg; Blindspot Camera and Heads-Up Display for unparalleled situational awareness and safety.">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" /> -->
+    <link href="//fonts.googleapis.com/css?family=Michroma:400,400italic,700normal,700italic|PT+Serif:400,400italic,700normal,700italic" rel="stylesheet" type="text/css" >
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700" rel="stylesheet" type="text/css">
+
+    <style>
+    body {
+        margin: 0;
+        font-family: Rajdhani;
+    }
+    .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .header-bar {
+        width: 100%;
+        height: 55px;
+        background-color: black;
+    }
+    .header-bar img {
+        display: inline-block;
+        margin-left: 15px;
+        margin-right: auto;
+        height: 100%;
+    }
+    </style>
+
+</head>
+<body>
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5VJD34"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5VJD34');</script>
+    <!-- End Google Tag Manager -->
+    <div class="header-bar">
+        <img id="logo" src="static/img/logo-light.png">
+    </div>
+    <div class="container">
+        <section id="letter">
+            <p id="name">HELLO </p>
+            <p id="color">YOUR HELMET COLOR IS </p>
+        </section>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+<script>
+function parseURLParams(url) {
+    var queryStart = url.indexOf("?") + 1,
+        queryEnd = url.indexOf("#") + 1 || url.length + 1,
+        query = url.slice(queryStart, queryEnd - 1),
+        pairs = query.replace(/\+/g, " ").split("&"),
+        parms = {},
+        i, n, v, nv;
+
+    if (query === url || query === "") {
+        return;
+    }
+
+    for (i = 0; i < pairs.length; i++) {
+        nv = pairs[i].split("=");
+        n = decodeURIComponent(nv[0]);
+        v = decodeURIComponent(nv[1]);
+
+        if (!parms.hasOwnProperty(n)) {
+            parms[n] = [];
+        }
+
+        parms[n].push(nv.length === 2 ? v : null);
+    }
+    return parms;
+}
+
+var urlParams = parseURLParams(window.location.href);
+console.log(urlParams);
+$("#name").append(urlParams.name[0]);
+$("#color").append(urlParams.color[0]);
+
+// if (urlParams.color[0] == "black") {
+//     $(".header-bar").css("background-color", "white");
+//     $("#logo").attr("src", "static/img/logo-dark.png");
+//     $("body").css("background-color", "white");
+//     $("body").css("color", "black");
+// } else {
+//     $(".header-bar").css("background-color", "black");
+//     $("#logo").attr("src", "static/img/logo-light.png");
+//     $("body").css("background-color", "black");
+//     $("body").css("color", "white");
+// }
+</script>
+</body>
+
+</html>
