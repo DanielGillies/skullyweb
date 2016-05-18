@@ -44,7 +44,15 @@
     
     #letter {
         color: white;
-        font-size: 1.4em;
+        font-size: 1.5em;
+    }
+
+    #name {
+        font-size: 1.5em;
+    }
+
+    #signoff {
+        text-align: right;
     }
     
     .canvid-wrapper {
@@ -61,10 +69,13 @@
     <div class="canvid-wrapper"></div>
     <div class="container">
         <div id="letter">
-            Hi, <span id="name"></span>! We’re excited to have you here and can’t wait to get you on the road with your SKULLY AR-1. What started off as a dream is now a reality thanks to your support. If you have any questions throughout the evening, please ask. We’re here to help!   
+            <span id="name">Hi, </span><br><br>We’re excited to have you here and can’t wait to get you on the road with your SKULLY AR-1. What started off as a dream is now a reality thanks to your support. If you have any questions throughout the evening, please ask. We’re here to help!
+            <div id="signoff">
+                -Team SKULLY
+            </div>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
-        <script src="assets/js/vendor/canvid.js"></script>
+        <script src="canvid.js"></script>
         <script>
         // $("#letter").css("background-image", "url('static/img/360/blackonwhite/" + y + "_" + x + ".jpg')")
         var imgNum = 0;
@@ -122,7 +133,7 @@
         });
 
         var urlParams = parseURLParams(window.location.href);
-        $("#name").append(urlParams.name[0]);
+        $("#name").append(urlParams.name[0] + "!");
         // $("#color").append(urlParams.color[0]);
 
         // if (urlParams.color[0] == "black") {
