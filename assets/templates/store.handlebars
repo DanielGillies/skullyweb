@@ -292,7 +292,7 @@
   function pastTime () {
     var d = new Date();
     var n = d.getTime();
-    if (n-250 > lastswitchtime) {
+    if (n-1000 > lastswitchtime) {
       lastswitchtime = n;
       return true;
     } else return false;
