@@ -105,6 +105,7 @@ input[type=submit].btn--cart-checkout {
 
 .btn--cart-tab.js-active {
     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
     opacity: 1;
 }
 
@@ -131,11 +132,14 @@ input[type=submit].btn--cart-checkout {
     border-radius: 1px;
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
     transform: translateX(100%);
+    -webkit-transform: translateX(100%);
     transition: box-shadow 0.2s ease-out, transform 0.2s ease-out;
+    -webkit-transition: box-shadow 0.2s ease-out, transform 0.2s ease-out;
 }
 
 .cart.js-active {
     transform: translateX(0);
+    -webkit-transform: translateX(0);
     box-shadow: -5px 0 5px rgba(0, 0, 0, 0.1);
 }
 
