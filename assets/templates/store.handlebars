@@ -361,7 +361,6 @@
 
   function resizeViewer (dontRepeat) {
     if (window.innerWidth > window.innerHeight) {
-      image_element.style.maxWidth = images[0].width+"px";
       image_element.style.width = window.innerHeight+"px";
       image_element.style.height = window.innerHeight+"px";
       image_element.style.margin = "auto";
@@ -370,7 +369,6 @@
       };
       indicator.style.marginTop = -indicator.offsetHeight+"px";
     } else {
-      image_element.style.maxHeight = images[0].height+"px";
       image_element.style.height = window.innerWidth+"px";
       image_element.style.width = window.innerWidth+"px";
       image_element.style.margin = (window.innerHeight/2-image_element.offsetHeight/2)+"px auto";
