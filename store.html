@@ -533,7 +533,7 @@
   <div id="viewerwrap" style="position:fixed;top:0px;left:0px;width:100vw;height:100vh;background-color:rgba(0,0,0,0.5);display:none;z-index:99;background-size:contain;background-position:center;">
     <img src="static/img/360/blackonblack/18_18.jpg" id="viewerimage" style="width:auto;margin:auto;">
     <img src="static/img/iconx.svg" width="50px" style="cursor:pointer;position:fixed; right:25px; top:60px; background:black; border-radius:100%;" onclick="switchFromViewer()">
-    <div id="loadingContainer" style="width:90%;max-width:800px;margin:auto">
+    <div id="loadingContainer" style="width:90%;max-width:800px;max-height:800px;margin:auto">
       <span id="viewerloading" style="position: relative;width: 0%;margin: -25px 2%;border-radius: 7px;height: 25px;line-height: 25px;background: red;color: white;font-family: sans-serif;display: block;text-align: right;vertical-align: center;min-width: 80px;opacity: 0;transition:width 2s, opacity 1s;">Loading&nbsp;</span>
     </div>
     <img src="static/img/360/perspective-arrow.svg" id="viewerindicator" style="position: relative;width: 80%;max-width:400px;margin: -100px auto 0px auto;opacity: 0;transition: opacity 1s;">
@@ -559,12 +559,17 @@
 
   var imagesURL = "static/img/360/blackonblack/[[framey]]_[[framex]].jpg";
 
-  function switchToViewer () {
-
+  function pastTime () {
     var d = new Date();
     var n = d.getTime();
-    if (n-500 > lastswitchtime) {
+    if (n-100 > lastswitchtime) {
       lastswitchtime = n;
+      return true;
+    } else return false;
+  }
+
+  function switchToViewer () {
+    if (pastTime()) {
       currentFrame = 18;
       if (index >= resolution) {
         viewerIsActive = true;
@@ -586,13 +591,9 @@
   }
 
   function switchFromViewer () {
-
-    var d = new Date();
-    var n = d.getTime();
-    if (n-100 > lastswitchtime) {
+    if (pastTime()) {
       viewerIsActive = false;
       viewerwrap.style.display = "none";
-      lastswitchtime = n;
     }
   }
 
@@ -630,7 +631,6 @@
 
   function resizeViewer (dontRepeat) {
     if (window.innerWidth > window.innerHeight) {
-      image_element.style.maxWidth = images[0].width+"px";
       image_element.style.width = window.innerHeight+"px";
       image_element.style.height = window.innerHeight+"px";
       image_element.style.margin = "auto";
@@ -639,7 +639,6 @@
       };
       indicator.style.marginTop = -indicator.offsetHeight+"px";
     } else {
-      image_element.style.maxHeight = images[0].height+"px";
       image_element.style.height = window.innerWidth+"px";
       image_element.style.width = window.innerWidth+"px";
       image_element.style.margin = (window.innerHeight/2-image_element.offsetHeight/2)+"px auto";
@@ -662,16 +661,13 @@ function init () {
 
 
   $('#touchTo360').on("tap click", function(e) {
-    var d = new Date();
-    var n = d.getTime();
-    if (n-100 > lastswitchtime) {
+    if (true) {
       switchToViewer();
-      lastswitchtime = n;
     }
     resizeViewer();
   })
 
-  $('body').on("mousemove touchmove", function(e) {
+  $('#viewerwrap').on("mousemove touchmove", function(e) {
     draggingCount++;
     var cpos = ptXY(e);
     var sensitivity = 12.5;
@@ -722,21 +718,15 @@ function init () {
     currentFrame = bufferPosition;
   });
   $(viewerwrap).on('tap', function (e) {
-    var d = new Date();
-    var n = d.getTime();
-    if (n-100 > lastswitchtime) {
+    if (true) {
       switchFromViewer();
       e.preventDefault();
-      lastswitchtime = n;
     }
   });
   $(viewerwrap).on('click', function (e) {
-    var d = new Date();
-    var n = d.getTime();
-    if (n-100 > lastswitchtime && !dragging) {
+    if (!dragging) {
       switchFromViewer();
       e.preventDefault();
-      lastswitchtime = n;
     }
   });
 };
