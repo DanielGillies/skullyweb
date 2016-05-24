@@ -226,10 +226,23 @@ $(function() {
         // closeCart();
 
         var itemExists;
-        if (cart.lineItems.length > 0) {
-            itemExists = cart.lineItems.filter(function(cartItem) {
-                return (cartItem.variant_id === variant.id);
-            })[0];
+        // CHECK FOR CART AGAIN BECAUSE OF CART NOT EXISTING BUG WITH SOME IPHONE 6+
+        if (!cart) {
+            client.createCart().then(function(newCart) {
+                cart = newCart;
+                localStorage.lastCartId = cart.id;
+                if (cart.lineItems.length > 0) {
+                    itemExists = cart.lineItems.filter(function(cartItem) {
+                        return (cartItem.variant_id === variant.id);
+                    })[0];
+                }
+            });
+        } else {
+            if (cart.lineItems.length > 0) {
+                itemExists = cart.lineItems.filter(function(cartItem) {
+                    return (cartItem.variant_id === variant.id);
+                })[0];
+            }
         }
 
         cart.addVariants({ variant: variant, quantity: quantity }).then(function() {
@@ -299,13 +312,13 @@ $(function() {
 
                 var linkerParam = ga.getAll()[0].get('linkerParam');
                 if (linkerParam) {
-                    url += '&'+linkerParam; // linkerParam includes the query param name and value.
+                    url += '&' + linkerParam; // linkerParam includes the query param name and value.
                 }
             }
 
             window.open(url, '_self');
 
-    });
+        });
     }
 
     /* Update cart tab button
@@ -334,7 +347,7 @@ $(function() {
         if (parts.length == 2) {
             return parts.pop().split(";").shift();
         } else {
-            console.log('_ga:'+value);
+            console.log('_ga:' + value);
         }
     }
 
