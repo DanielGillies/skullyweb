@@ -40,7 +40,7 @@
  36. Spacing
  */
 
-@import url(//fonts.googleapis.com/css?family=Roboto:400,300);
+/*@import url(//fonts.googleapis.com/css?family=Roboto:400,300); added link tag in header.handlebars*/
 @font-face {
     font-family: manifoldCF;
     src: url(../fonts/ManifoldCF-Regular-webfont.ttf);
@@ -9540,91 +9540,91 @@ div[id^='press-']::before {
 }
 
 #press-reuters::before {
-    background: url(../../static/img/reuters.png);
+    background: url('../../static/img/reuters.png');
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center center;
 }
 
 #press-nytimes::before {
-    background: url(../../static/img/nytimes.png);
+    background: url('../../static/img/nytimes.png');
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center center;
 }
 
 #press-engadget::before {
-    background: url(../../static/img/engadget.png);
+    background: url('../../static/img/engadget.png');
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center center;
 }
 
 #press-digitaltrends::before {
-    background: url(../../static/img/digitaltrends.png);
+    background: url('../../static/img/digitaltrends.png');
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center center;
 }
 
 #press-usa::before {
-    background: url(../../static/img/usatoday.png);
+    background: url('../../static/img/usatoday.png');
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center center;
 }
 
 #press-vb::before {
-    background: url(../../static/img/venturebeat.png);
+    background: url('../../static/img/venturebeat.png');
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center center;
 }
 
 #press-bloomberg::before {
-    background: url(../../static/img/bloomberg.png);
+    background: url('../../static/img/bloomberg.png');
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center center;
 }
 
 #press-wsj::before {
-    background: url(../../static/img/WSJ.png);
+    background: url('../../static/img/WSJ.png');
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center center;
 }
 
 #press-forbes::before {
-    background: url(../../static/img/forbes.png);
+    background: url('../../static/img/forbes.png');
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center center;
 }
 
 #press-fox::before {
-    background: url(../../static/img/fox.png);
+    background: url('../../static/img/fox.png');
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center center;
 }
 
 #press-tc::before {
-    background: url(../../static/img/TC.png);
+    background: url('../../static/img/TC.png');
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center center;
 }
 
 #press-svbj::before {
-    background: url(../../static/img/SVBJ.jpg);
+    background: url('../../static/img/SVBJ.jpg');
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center center;
 }
 
 #press-huff::before {
-    background: url(../../static/img/huff.png);
+    background: url('../../static/img/huff.png');
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center center;
@@ -10394,7 +10394,7 @@ input:-ms-input-placeholder {
 }
 
 #myskully1img div {
-    background-image: url(../../static/img/careersheader.jpg);
+    background-image: url('../../static/img/careersheader.jpg');
 }
 
 #hudmobile-background div {
