@@ -275,6 +275,12 @@
       };
 
       for (var i = 0; i < data.length; i++) {
+        // if (data[i].URL.startsWith("www")) {
+        //     data[i].URL = "http://" + data[i].URL;
+        // }
+        if (!data[i].URL.startsWith("http://") && !data[i].URL.startsWith("https://")) {
+            data[i].URL = "http://" + data[i].URL;
+        }
         geojson.features.push({
           type: 'Feature',
           properties: {
@@ -338,6 +344,7 @@
           "<a target='_blank' href=" + layer.feature.properties.directions + ">" + "Get Directions" + "</a>" + "<br>" + (layer.feature.properties.url ? "<a target='_blank' href=" + layer.feature.properties
             .url + ">" + "Visit Dealer Website" + "</a>" : "") + "</div>";
         layer.bindPopup(content);
+        console.log(layer.feature.properties.url);
       });
       fade();
 
