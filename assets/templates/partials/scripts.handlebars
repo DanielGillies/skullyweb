@@ -1,6 +1,6 @@
 <script>
 	function loadScript (filename, async, secondscript) {
-		async = async || true;
+		async = async || false;
 		secondscript = secondscript || false;
 		var fileref=document.createElement('script')
 		fileref.setAttribute("type","text/javascript")
@@ -17,7 +17,7 @@
 		loadScript('//fast.wistia.net/assets/external/E-v1.js', true);
 	});
 </script>
-<script async src="static/js/vendor.js" onload="if (loadScript) {loadScript('static/js/main.js', true, pagescript)} else loadScript('static/js/main.js', false);"></script>
+<script src="static/js/vendor.js" onload="if (loadScript) {loadScript('static/js/main.js', false, pagescript)} else loadScript('static/js/main.js', false);"></script>
 <!--<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
 <script src="static/js/vendor.js"></script>
 <script src="static/js/main.js"></script>-->
