@@ -395,28 +395,9 @@
                   
               </footer>
 </div>
-<script>
-	function loadScript (filename, async, secondscript) {
-		async = async || false;
-		secondscript = secondscript || false;
-		var fileref=document.createElement('script')
-		fileref.setAttribute("type","text/javascript")
-		if (async) fileref.setAttribute("async", "");
-		if (secondscript) fileref.setAttribute("onload", "loadScript('"+secondscript+"')");
-		fileref.setAttribute("src", filename);
-		document.getElementsByTagName("head")[0].appendChild(fileref)
-	}
-	var pagescript = 'static/js/index.js';
-	window.addEventListener('load', function () {
-		//loadScript('static/js/vendor.js');
-		//loadScript('static/js/main.js');
-		//loadScript(pagescript);
-		loadScript('//fast.wistia.net/assets/external/E-v1.js', true);
-	});
-</script>
-<script src="static/js/vendor.js" onload="if (loadScript) {loadScript('static/js/main.js', false, pagescript)} else loadScript('static/js/main.js', false);"></script>
-<!--<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
+<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
 <script src="static/js/vendor.js"></script>
-<script src="static/js/main.js"></script>-->
+<script src="static/js/main.js"></script>
+
 </body>
 </html>
