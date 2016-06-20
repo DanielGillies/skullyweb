@@ -20,6 +20,7 @@ var source       = require('vinyl-source-stream');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
 var watchify     = require('watchify');
+var htmlmin      = require('gulp-htmlmin');
 
 var paths = {
   src:  './assets',
@@ -405,6 +406,7 @@ gulp.task('templates', function() {
   return gulp.src(paths.templates.src + '/*')
     .pipe(handlebars(templateData, options))
     .pipe(extReplace('.html'))
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest(''))
 //    .pipe(extReplace('', '', true))
 //    .pipe(gulp.dest(''));
