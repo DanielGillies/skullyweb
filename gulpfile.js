@@ -361,7 +361,7 @@ gulp.task('vendorjs', function() {
 gulp.task('css', function() {
   var processors = [
     autoprefixer({
-      browsers: ['last 1 version']
+      browsers: ['last 3 version']
     }),
     mqpacker,
     csswring
