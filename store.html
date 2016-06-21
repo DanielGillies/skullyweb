@@ -559,17 +559,12 @@
 
   var imagesURL = "static/img/360/blackonblack/[[framey]]_[[framex]].jpg";
 
-  function pastTime () {
+  function switchToViewer () {
+
     var d = new Date();
     var n = d.getTime();
-    if (n-50 > lastswitchtime) {
+    if (n-500 > lastswitchtime) {
       lastswitchtime = n;
-      return true;
-    } else return false;
-  }
-
-  function switchToViewer () {
-    if (pastTime()) {
       currentFrame = 18;
       if (index >= resolution) {
         viewerIsActive = true;
@@ -591,9 +586,13 @@
   }
 
   function switchFromViewer () {
-    if (pastTime()) {
+
+    var d = new Date();
+    var n = d.getTime();
+    if (n-100 > lastswitchtime) {
       viewerIsActive = false;
       viewerwrap.style.display = "none";
+      lastswitchtime = n;
     }
   }
 
@@ -663,13 +662,16 @@ function init () {
 
 
   $('#touchTo360').on("tap click", function(e) {
-    if (true) {
+    var d = new Date();
+    var n = d.getTime();
+    if (n-100 > lastswitchtime) {
       switchToViewer();
+      lastswitchtime = n;
     }
     resizeViewer();
   })
 
-  $('#viewerwrap').on("mousemove touchmove", function(e) {
+  $('body').on("mousemove touchmove", function(e) {
     draggingCount++;
     var cpos = ptXY(e);
     var sensitivity = 12.5;
@@ -720,15 +722,21 @@ function init () {
     currentFrame = bufferPosition;
   });
   $(viewerwrap).on('tap', function (e) {
-    if (true) {
+    var d = new Date();
+    var n = d.getTime();
+    if (n-100 > lastswitchtime) {
       switchFromViewer();
       e.preventDefault();
+      lastswitchtime = n;
     }
   });
   $(viewerwrap).on('click', function (e) {
-    if (!dragging) {
+    var d = new Date();
+    var n = d.getTime();
+    if (n-100 > lastswitchtime && !dragging) {
       switchFromViewer();
       e.preventDefault();
+      lastswitchtime = n;
     }
   });
 };
