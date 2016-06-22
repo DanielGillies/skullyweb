@@ -10785,7 +10785,7 @@ br.display-all {
 }
 .freeship_nav {
     min-width: 350px;
-    width: calc(100vw - 775px);
+    width: calc(100vw - 800px);
     text-align: center;
     vertical-align: middle;
     color: #fff;
