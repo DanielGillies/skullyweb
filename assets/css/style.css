@@ -10798,12 +10798,12 @@ br.display-all {
 .freeship_full {
     display: none;
 }
-@media (max-width: 1110px) {
+@media (max-width: 1125px) {
     .freeship_nav {
         display: none;
     }
 }
-@media (max-width: 1110px) {
+@media (max-width: 1125px) {
     .freeship_full {
         width: 100%;
         display: block;
