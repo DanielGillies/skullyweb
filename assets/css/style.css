@@ -10784,24 +10784,25 @@ br.display-all {
     display: block;
 }
 .freeship_nav {
-    width: 360px;
+    width: 350px;
     text-align: center;
     vertical-align: middle;
     color: #fff;
     background-color: #df3a2f;
     font-size: 16px;
-    line-height: 63px;
+    line-height: 55px;
     overflow: hidden;
+    padding:0px;
 }
 .freeship_full {
     display: none;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1110px) {
     .freeship_nav {
         display: none;
     }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1110px) {
     .freeship_full {
         width: 100%;
         display: block;
