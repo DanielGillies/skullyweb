@@ -10775,7 +10775,7 @@ br.display-all {
 .freeship_store {
     width: 100%;
     padding: 18px;
-    margin: 18px 0px;
+    margin: 0px 0px 18px 0px;
     color: #fff;
     background-color: #919191;
     font-size: 18px;
@@ -10784,12 +10784,13 @@ br.display-all {
     display: block;
 }
 .freeship_nav {
-    width: 350px;
+    min-width: 350px;
+    width: calc(100vw - 775px);
     text-align: center;
     vertical-align: middle;
     color: #fff;
     background-color: #df3a2f;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 55px;
     overflow: hidden;
     padding:0px;
