@@ -102,6 +102,7 @@ function goToExplosion(i) {
 
 window.goToExplosion = goToExplosion;
 var hudPlaying = 0;
+var hudSwap = 1;
 var count = 1;
 var inExplosive = false;
 var forwards = true;
@@ -144,9 +145,9 @@ function swapHUD() {
     if (!window.mobilecheck()) {
         hudSwap *= -1;
         if (hudSwap < 0) {
-            $("#hudvid").find("#hudwebm").attr("src", "//dg6vcgn2vehm4.cloudfront.net/videos/HUD2.webm")
-            $("#hudvid").find("#hudmp4").attr("src", "//dg6vcgn2vehm4.cloudfront.net/videos/HUD2.mp4")
-            $("#hudvid").find("#hudogv").attr("src", "//dg6vcgn2vehm4.cloudfront.net/videos/HUD2.ogv")
+            $("#hudvid").find("#hudwebm").attr("src", "//dg6vcgn2vehm4.cloudfront.net/videos/HUD1.webm")
+            $("#hudvid").find("#hudmp4").attr("src", "//dg6vcgn2vehm4.cloudfront.net/videos/HUD1.mp4")
+            $("#hudvid").find("#hudogv").attr("src", "//dg6vcgn2vehm4.cloudfront.net/videos/HUD1.ogv")
             $("#hudvid").load();
             $("#hudvid")[0].play();
             $("#hudtext").fadeOut(600);
