@@ -52,6 +52,10 @@ var paths = {
     src:  './assets/js/index.js',
     dest: './static/js'
   },
+  ar1js: {
+    src:  './assets/js/ar1.js',
+    dest: './static/js'
+  },
   videosjs: {
     src:  './assets/js/videos.js',
     dest: './static/js'
@@ -149,6 +153,7 @@ function Bundle(src) {
 
 var mainjs  = new Bundle(paths.mainjs.src)
 var indexjs = new Bundle(paths.indexjs.src)
+var ar1js = new Bundle(paths.ar1js.src)
 var videosjs = new Bundle(paths.videosjs.src)
 var aboutusjs = new Bundle(paths.aboutusjs.src)
 var pressjs = new Bundle(paths.pressjs.src)
@@ -158,8 +163,8 @@ var faqjs = new Bundle(paths.faqjs.src)
 var shopifyjs = new Bundle(paths.shopifyjs.src);
 
 // JS TASK
-gulp.task('js',     ['mainjs', 'indexjs', 'videosjs', 'aboutusjs', 'pressjs', 'storejs', 'careersjs', 'faqjs', 'shopifyjs', 'vendorjs'])
-gulp.task('js:min', ['mainjs:min', 'indexjs:min', 'videosjs:min', 'aboutusjs:min', 'pressjs:min', 'careersjs:min', 'faqjs:min', 'storejs:min', 'shopifyjs:min', 'vendorjs'])
+gulp.task('js',     ['mainjs', 'indexjs', 'ar1js', 'videosjs', 'aboutusjs', 'pressjs', 'storejs', 'careersjs', 'faqjs', 'shopifyjs', 'vendorjs'])
+gulp.task('js:min', ['mainjs:min', 'indexjs:min', 'ar1js:min', 'videosjs:min', 'aboutusjs:min', 'pressjs:min', 'careersjs:min', 'faqjs:min', 'storejs:min', 'shopifyjs:min', 'vendorjs'])
 
 // MAIN JS BUILD
 gulp.task('mainjs', function() {
@@ -197,10 +202,31 @@ gulp.task('indexjs', function() {
   return build()
 })
 
+// AR1 JS BUILD
+gulp.task('ar1js', function() {
+  function build() {
+    return ar1js.bundle()
+      .pipe(sourcemaps.write('./'))
+      .pipe(gulp.dest(paths.ar1js.dest))
+      .pipe(browserSync.reload({
+        stream: true
+      }))
+  }
+
+  ar1js.on('update', build)
+  return build()
+})
+
 gulp.task('indexjs:min', function() {
   return indexjs.bundle()
     .pipe(uglify())
     .pipe(gulp.dest(paths.indexjs.dest))
+})
+
+gulp.task('ar1js:min', function() {
+  return ar1js.bundle()
+    .pipe(uglify())
+    .pipe(gulp.dest(paths.ar1js.dest))
 })
 
 // VIDEOS JS BUILD
