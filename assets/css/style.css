@@ -10816,3 +10816,13 @@ br.display-all {
 body.store .freeship_nav {
     display: none;
 }
+
+#storebutton {
+    padding-left: 0;
+}
+
+@media (max-width: 348px) {
+    #navstore {
+        font-size: 15px !important;
+    }
+}
