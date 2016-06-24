@@ -5,7 +5,7 @@
     "Key": "dockercfg"
   },
   "Image": {
-    "Name": "skully/skullyweb",
+    "Name": "skully/skullyweb-staging",
     "Update": "true"
   },
   "Ports": [
