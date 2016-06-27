@@ -308,7 +308,7 @@ $(function() {
             var url = cart.checkoutUrl;
 
             // if the url doesn't already have a reference to the linkerParam, add it
-            if (url.indexOf('_ga') == -1) {
+            if (url.indexOf('_ga') == -1 && ga && ga.getAll) {
 
                 var linkerParam = ga.getAll()[0].get('linkerParam');
                 if (linkerParam) {

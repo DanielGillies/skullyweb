@@ -10770,3 +10770,59 @@ br.display-all {
     background-color: #c30404;
     color: white;
 }
+
+/* Free shipping promotion */
+.freeship_store {
+    width: 100%;
+    padding: 18px;
+    margin: 0px 0px 18px 0px;
+    color: #fff;
+    background-color: #919191;
+    font-size: 18px;
+}
+.freeship_store > div{
+    display: block;
+}
+.freeship_nav {
+    min-width: 350px;
+    width: calc(100vw - 800px);
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+    background-color: #df3a2f;
+    font-size: 18px;
+    line-height: 55px;
+    overflow: hidden;
+    padding:0px;
+}
+.freeship_full {
+    display: none;
+}
+@media (max-width: 1125px) {
+    .freeship_nav {
+        display: none;
+    }
+}
+@media (max-width: 1125px) {
+    .freeship_full {
+        width: 100%;
+        display: block;
+        height: auto;
+        margin-top: 55px;
+        background-color: #919191;
+    }
+}
+
+body.store .freeship_nav {
+    display: none;
+}
+
+#storebutton {
+    padding-left: 0;
+}
+
+@media (max-width: 348px) {
+    #navstore {
+        font-size: 15px !important;
+    }
+}
