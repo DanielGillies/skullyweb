@@ -1,4 +1,5 @@
-<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
+<!--<script src="//fast.wistia.net/assets/external/E-v1.js" async></script>
+-->
 <script src="static/js/vendor.js"></script>
 <script src="static/js/main.js"></script>
 
@@ -9,8 +10,8 @@ var google_custom_params = window.google_tag_params;
 var google_remarketing_only = true;
 /* ]]> */
 </script>
-<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-</script>
+<!--<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>-->
 <noscript>
 <div style="display:inline;">
 <img height="1" width="1" style="border­style:none;" alt=""
@@ -18,5 +19,40 @@ src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/945123010/?
 value=0&amp;guid=ON&amp;script=0"/>
 </div>
 </noscript>
+
+<script type="text/javascript">
+
+var mainscripts = [
+	"//fast.wistia.net/assets/external/E-v1.js",
+	//"static/js/vendor.js",
+	//"static/js/main.js",
+	"//www.googleadservices.com/pagead/conversion.js"
+	];
+
+function downloadJSAtOnload() {
+	if (beforescripts && beforescripts.length > 0) {
+		loadthesescripts(beforescripts);
+	};
+	if (mainscripts && mainscripts.length > 0) {
+		loadthesescripts(mainscripts);
+	};
+	if (afterscripts && afterscripts.length > 0) {
+		loadthesescripts(afterscripts);
+	};
+}
+function loadthesescripts (array) {
+	for (var i = 0; i < array.length; i++) {
+		var element = document.createElement("script");
+		element.src = array[i];
+		document.body.appendChild(element);
+	};
+}
+
+if (window.addEventListener)
+window.addEventListener("load", downloadJSAtOnload, false);
+else if (window.attachEvent)
+window.attachEvent("onload", downloadJSAtOnload);
+else window.onload = downloadJSAtOnload;
+</script>
 
 {{{extra}}}
