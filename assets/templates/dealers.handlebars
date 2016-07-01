@@ -1,44 +1,44 @@
 {{> header title="SKULLY Dealers" cssfile="
 <link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />"}}
 <div class="nav-container">
-  {{> navbar}}
-  <!-- ACTUAL PAGE CONTENT -->
-  <div class="main-container">
-    <section class="bg-dark">
-      <div class="container">
-        <row>
-          <div class="col-sm-8 col-sm-offset-2">
-            <div class="text-center">
-              <h2 class="mb24">Locate a Dealer</h2>
-              <h4>We’re excited to have a growing dealer network. Once all pre-orders are fulfilled in the summer of 2016, our dealers will have the
+    {{> navbar}}
+    <!-- ACTUAL PAGE CONTENT -->
+    <div class="main-container">
+        <section class="bg-dark">
+            <div class="container">
+                <row>
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="text-center">
+                            <h2 class="mb24">Locate a Dealer</h2>
+                            <h4>We’re excited to have a growing dealer network. Once all pre-orders are fulfilled in the summer of 2016, our dealers will have the
                 <span class="ar1font">AR-
                   <span class="skullyred">1</span>
                 </span> onsite to either try or buy. Do you have a favorite dealer? Let us know on any of our social media channels and we’ll reach out to them.</h4>
+                        </div>
+                    </div>
+                </row>
             </div>
-          </div>
-        </row>
-      </div>
-    </section>
-    <section class="bg-dark pt0 pb0">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-md-offset-0 col-sm-8 col-sm-offset-2">
-            <div id='map'>
-              <a href='#' id='geolocate' class='btn btn-filled ui-button'>Find Stores Near Me</a>
+        </section>
+        <section class="bg-dark pt0 pb0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-md-offset-0 col-sm-8 col-sm-offset-2">
+                        <div id='map'>
+                            <a href='#' id='geolocate' class='btn btn-filled ui-button'>Find Stores Near Me</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="bg-dark">
-      <div class="container">
-        <row>
-          <div class="col-sm-8 col-sm-offset-2">
-            <div class="text-center">
-              <h2 class="mb24">Become a Dealer</h2>
-              <h4>We’re actively looking for qualified dealers to help us expand our reach and deliver the smartest, safest motorcycle helmet on the market to new customers. Interested? Start the process by
+        </section>
+        <section class="bg-dark">
+            <div class="container">
+                <row>
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="text-center">
+                            <h2 class="mb24">Become a Dealer</h2>
+                            <h4>We’re actively looking for qualified dealers to help us expand our reach and deliver the smartest, safest motorcycle helmet on the market to new customers. Interested? Start the process by
                 filling out and submitting the form below. </h4>
-              <h3 id="Confirmation">Thank You For Your Application</h2>
+                            <h3 id="Confirmation">Thank You For Your Application</h2>
             </div>
 
 
@@ -218,10 +218,8 @@
   </div>
   {{> scripts}}
   <script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TimelineLite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TimelineLite.min.js"></script>
   <script>
-    'use strict';
-
     var userPosition;
 
     // getLocation();
@@ -267,7 +265,7 @@
 
     // BUILD MAP
     function buildMap(data, tabletop) {
-      console.log(data);
+      // console.log(data);
 
       var geojson = {
         type: 'FeatureCollection',
@@ -301,7 +299,7 @@
 
       map.on('locationfound', function(e) {
         $("#geolocate").css("display", "none");
-        console.log("locationfound");
+        // console.log("locationfound");
         userPosition = [e.latlng.lat, e.latlng.lng];
         geojson.features.push({
           type: 'Feature',
@@ -344,7 +342,7 @@
           "<a target='_blank' href=" + layer.feature.properties.directions + ">" + "Get Directions" + "</a>" + "<br>" + (layer.feature.properties.url ? "<a target='_blank' href=" + layer.feature.properties
             .url + ">" + "Visit Dealer Website" + "</a>" : "") + "</div>";
         layer.bindPopup(content);
-        console.log(layer.feature.properties.url);
+        // console.log(layer.feature.properties.url);
       });
       fade();
 
@@ -364,7 +362,7 @@
 
     function fade() {
       var temp = document.getElementsByClassName("leaflet-marker-icon")
-      console.log(temp);
+      // console.log(temp);
       var t1 = new TimelineLite();
       t1.staggerFrom(temp, .5, {
         y: 0,
@@ -384,7 +382,7 @@
       var inbounds = [];
 
       function run() {
-        console.log("Going again at i = " + i + ", Found = " + visible);
+        // console.log("Going again at i = " + i + ", Found = " + visible);
         if (i == 13) {
           map.setView(userPosition, i);
         }
