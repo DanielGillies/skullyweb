@@ -10826,3 +10826,14 @@ body.store .freeship_nav {
         font-size: 15px !important;
     }
 }
+
+.btn.main-buy-button {
+    float: left;
+    margin-right: 20px;
+}
+.shopify-secure {
+
+}
+.delivery-message {
+    clear: both;
+}
