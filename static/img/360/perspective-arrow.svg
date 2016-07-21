@@ -3,7 +3,7 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 500 200" style="enable-background:new 0 0 500 200;" xml:space="preserve">
 <style type="text/css">
-	.st0{opacity:0.7;fill:#FFFFFF;enable-background:new    ;}
+	.st0{opacity:0.7;fill:#000000;enable-background:new    ;}
 </style>
 <polyline class="st0" points="3.8,135.2 3.8,93.3 54.8,64.5 41.6,83 446.5,83 428.9,64.5 485.6,94.5 495.9,135.2 468.1,106.2 
 	25,106.2 "/>
